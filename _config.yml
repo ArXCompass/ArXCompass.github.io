@@ -2,9 +2,10 @@ markdown: kramdown
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
-title: arXiv Radar
-description: An intelligent system that monitors and curates cutting-edge AI research papers from arXiv.
-baseurl: "/arXivRadar"
+title: ArXCompass
+description: An intelligent system that monitors and curates cutting-edge AI research papers from arXiv, guiding you toward the most impactful discoveries.
+url: "https://arxcompass.github.io"
+
 kramdown:
   input: GFM
   hard_wrap: false
