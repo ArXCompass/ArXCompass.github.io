@@ -1,0 +1,59 @@
+markdown: kramdown
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+title: arXiv Radar
+description: An intelligent system that monitors and curates cutting-edge AI research papers from arXiv.
+baseurl: "/arXivRadar"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+relative_links:
+  enabled: true
+  collections: true
+# Custom CSS for better table display and readability
+style: |
+  .markdown-body table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .markdown-body table th {
+    background-color: #f6f8fa;
+    padding: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid #dfe2e5;
+  }
+  .markdown-body table td {
+    padding: 12px;
+    border: 1px solid #dfe2e5;
+    line-height: 1.5;
+  }
+  .markdown-body table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  .markdown-body table tr:hover {
+    background-color: #f1f4f7;
+  }
+  details {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+  }
+  details summary {
+    cursor: pointer;
+    color: #0366d6;
+    font-weight: 500;
+    padding: 4px 0;
+  }
+  details summary:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  details[open] {
+    padding-bottom: 15px;
+  }
