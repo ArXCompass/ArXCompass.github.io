@@ -195,9 +195,9 @@ def main(keywords: List[str], max_result: int, column_names: List[str]):
 
             # Write README.md to papers/README.md
             with open("papers/README.md", "w", encoding="utf-8") as f:
-                f.write(f"# arXivRadar - arXiv Research Tracking Hub\n")
+                f.write(f"# ArXCompass - Navigating the AI Research Frontier\n")
                 f.write(
-                    f"An intelligent system that monitors and curates cutting-edge AI research papers from arXiv, helping you stay at the forefront of innovation.\n\n"
+                    f"An intelligent system that monitors and curates cutting-edge AI research papers from arXiv, guiding you toward the most impactful discoveries.\n\n"
                 )
                 f.write(f"## Keywords\n\n")
                 for keyword in keywords:
