@@ -1,5 +1,5 @@
-# arXivRadar - arXiv Research Tracking Hub
-An intelligent system that monitors and curates cutting-edge AI research papers from arXiv, helping you stay at the forefront of innovation.
+# ArXCompass - Navigating the AI Research Frontier
+An intelligent system that monitors and curates cutting-edge AI research papers from arXiv, guiding you toward the most impactful discoveries.
 
 ## Keywords
 
@@ -7,7 +7,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 - [embodied ai](embodied_ai/)
 - [llm](llm/)
 
-Last update: 2025-01-31
+Last update: 2025-02-01
 
 ## Statistics
 
