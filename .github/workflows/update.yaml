@@ -50,6 +50,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'master'
         commit-message: '✏️ Update papers (${{ steps.date.outputs.date }})'
-        files: 'README.md papers
+        files: 'README.md papers/* papers/*/*'
         name: XinLi
         email: lixin.1997.lixin@gmail.com
