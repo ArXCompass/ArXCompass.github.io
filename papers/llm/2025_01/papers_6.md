@@ -14,6 +14,26 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.02552v1">Multi-LLM Collaborative Caption Generation in Scientific Documents</a></div>
+    <div class="paper-meta">
+      📅 2025-01-05
+      | 💬 Accepted to AAAI 2025 AI4Research Workshop
+    </div>
+    <details class="paper-abstract">
+      Scientific figure captioning is a complex task that requires generating contextually appropriate descriptions of visual content. However, existing methods often fall short by utilizing incomplete information, treating the task solely as either an image-to-text or text summarization problem. This limitation hinders the generation of high-quality captions that fully capture the necessary details. Moreover, existing data sourced from arXiv papers contain low-quality captions, posing significant challenges for training large language models (LLMs). In this paper, we introduce a framework called Multi-LLM Collaborative Figure Caption Generation (MLBCAP) to address these challenges by leveraging specialized LLMs for distinct sub-tasks. Our approach unfolds in three key modules: (Quality Assessment) We utilize multimodal LLMs to assess the quality of training data, enabling the filtration of low-quality captions. (Diverse Caption Generation) We then employ a strategy of fine-tuning/prompting multiple LLMs on the captioning task to generate candidate captions. (Judgment) Lastly, we prompt a prominent LLM to select the highest quality caption from the candidates, followed by refining any remaining inaccuracies. Human evaluations demonstrate that informative captions produced by our approach rank better than human-written captions, highlighting its effectiveness. Our code is available at https://github.com/teamreboott/MLBCAP
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.02531v1">Towards New Benchmark for AI Alignment & Sentiment Analysis in Socially Important Issues: A Comparative Study of Human and LLMs in the Context of AGI</a></div>
+    <div class="paper-meta">
+      📅 2025-01-05
+      | 💬 20 pages, 1 figure
+    </div>
+    <details class="paper-abstract">
+      With the expansion of neural networks, such as large language models, humanity is exponentially heading towards superintelligence. As various AI systems are increasingly integrated into the fabric of societies-through recommending values, devising creative solutions, and making decisions-it becomes critical to assess how these AI systems impact humans in the long run. This research aims to contribute towards establishing a benchmark for evaluating the sentiment of various Large Language Models in socially importan issues. The methodology adopted was a Likert scale survey. Seven LLMs, including GPT-4 and Bard, were analyzed and compared against sentiment data from three independent human sample populations. Temporal variations in sentiment were also evaluated over three consecutive days. The results highlighted a diversity in sentiment scores among LLMs, ranging from 3.32 to 4.12 out of 5. GPT-4 recorded the most positive sentiment score towards AGI, whereas Bard was leaning towards the neutral sentiment. The human samples, contrastingly, showed a lower average sentiment of 2.97. The temporal comparison revealed differences in sentiment evolution between LLMs in three days, ranging from 1.03% to 8.21%. The study's analysis outlines the prospect of potential conflicts of interest and bias possibilities in LLMs' sentiment formation. Results indicate that LLMs, akin to human cognitive processes, could potentially develop unique sentiments and subtly influence societies' perceptions towards various opinions formed within the LLMs.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.19616v2">Gradient Weight-normalized Low-rank Projection for Efficient LLM Training</a></div>
     <div class="paper-meta">
       📅 2025-01-05
