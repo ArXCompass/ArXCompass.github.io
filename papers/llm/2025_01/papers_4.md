@@ -14,6 +14,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.09948v2">BLEnD: A Benchmark for LLMs on Everyday Knowledge in Diverse Cultures and Languages</a></div>
+    <div class="paper-meta">
+      📅 2025-01-16
+      | 💬 Accepted to NeurIPS 2024 Datasets & Benchmark Track
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) often lack culture-specific knowledge of daily life, especially across diverse regions and non-English languages. Existing benchmarks for evaluating LLMs' cultural sensitivities are limited to a single language or collected from online sources such as Wikipedia, which do not reflect the mundane everyday lifestyles of diverse regions. That is, information about the food people eat for their birthday celebrations, spices they typically use, musical instruments youngsters play, or the sports they practice in school is common cultural knowledge but uncommon in easily collected online sources, especially for underrepresented cultures. To address this issue, we introduce BLEnD, a hand-crafted benchmark designed to evaluate LLMs' everyday knowledge across diverse cultures and languages. BLEnD comprises 52.6k question-answer pairs from 16 countries/regions, in 13 different languages, including low-resource ones such as Amharic, Assamese, Azerbaijani, Hausa, and Sundanese. We construct the benchmark to include two formats of questions: short-answer and multiple-choice. We show that LLMs perform better for cultures that are highly represented online, with a maximum 57.34% difference in GPT-4, the best-performing model, in the short-answer format. For cultures represented by mid-to-high-resource languages, LLMs perform better in their local languages, but for cultures represented by low-resource languages, LLMs perform better in English than the local languages. We make our dataset publicly available at: https://github.com/nlee0212/BLEnD.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.09213v1">FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training</a></div>
+    <div class="paper-meta">
+      📅 2025-01-16
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in large language models (LLMs) have shown promise in medical applications such as disease diagnosis and treatment planning. However, most existing medical LLMs struggle with the advanced reasoning required for complex clinical scenarios, such as differential diagnosis or personalized treatment suggestions. We proposed FineMedLM-o1, which leverages high-quality synthetic medical data and long-form reasoning data for Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO), enabling advanced dialogue and deep reasoning capabilities. Additionally, we introduced Test-Time Training (TTT) in the medical domain for the first time, facilitating domain adaptation and ensuring reliable, accurate reasoning. Experimental results demonstrate that FineMedLM-o1 achieves a 23% average performance improvement over prior models on key medical benchmarks. Furthermore, the introduction of TTT provides an additional 14% performance boost, highlighting its effectiveness in enhancing medical reasoning capabilities. To support this process, we also proposed a novel method for synthesizing medical dialogue. Compared to other open-source datasets, our dataset stands out as superior in both quality and complexity. The project and data will be released on GitHub.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.09210v1">Personalized Parsons Puzzles as Scaffolding Enhance Practice Engagement Over Just Showing LLM-Powered Solutions</a></div>
     <div class="paper-meta">
       📅 2025-01-16
@@ -944,23 +963,5 @@
     </div>
     <details class="paper-abstract">
       Making errors is part of the programming process -- even for the most seasoned professionals. Novices in particular are bound to make many errors while learning. It is well known that traditional (compiler/interpreter) programming error messages have been less than helpful for many novices and can have effects such as being frustrating, containing confusing jargon, and being downright misleading. Recent work has found that large language models (LLMs) can generate excellent error explanations, but that the effectiveness of these error messages heavily depends on whether the LLM has been provided with context -- typically the original source code where the problem occurred. Knowing that programming error messages can be misleading and/or contain that serves little-to-no use (particularly for novices) we explore the reverse: what happens when GPT-3.5 is prompted for error explanations on just the erroneous source code itself -- original compiler/interpreter produced error message excluded. We utilized various strategies to make more effective error explanations, including one-shot prompting and fine-tuning. We report the baseline results of how effective the error explanations are at providing feedback, as well as how various prompting strategies might improve the explanations' effectiveness. Our results can help educators by understanding how LLMs respond to such prompts that novices are bound to make, and hopefully lead to more effective use of Generative AI in the classroom.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.06386v1">Using Pre-trained LLMs for Multivariate Time Series Forecasting</a></div>
-    <div class="paper-meta">
-      📅 2025-01-10
-    </div>
-    <details class="paper-abstract">
-      Pre-trained Large Language Models (LLMs) encapsulate large amounts of knowledge and take enormous amounts of compute to train. We make use of this resource, together with the observation that LLMs are able to transfer knowledge and performance from one domain or even modality to another seemingly-unrelated area, to help with multivariate demand time series forecasting. Attention in transformer-based methods requires something worth attending to -- more than just samples of a time-series. We explore different methods to map multivariate input time series into the LLM token embedding space. In particular, our novel multivariate patching strategy to embed time series features into decoder-only pre-trained Transformers produces results competitive with state-of-the-art time series forecasting models. We also use recently-developed weight-based diagnostics to validate our findings.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.06370v1">Towards a Probabilistic Framework for Analyzing and Improving LLM-Enabled Software</a></div>
-    <div class="paper-meta">
-      📅 2025-01-10
-    </div>
-    <details class="paper-abstract">
-      Ensuring the reliability and verifiability of large language model (LLM)-enabled systems remains a significant challenge in software engineering. We propose a probabilistic framework for systematically analyzing and improving these systems by modeling and refining distributions over clusters of semantically equivalent outputs. This framework facilitates the evaluation and iterative improvement of Transference Models -- key software components that utilize LLMs to transform inputs into outputs for downstream tasks. To illustrate its utility, we apply the framework to the autoformalization problem, where natural language documentation is transformed into formal program specifications. Our case illustrates how probabilistic analysis enables the identification of weaknesses and guides focused alignment improvements, resulting in more reliable and interpretable outputs. This principled approach offers a foundation for addressing critical challenges in the development of robust LLM-enabled systems.
     </details>
 </div>

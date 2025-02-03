@@ -34,6 +34,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.08603v3">Monte Carlo Tree Search for Comprehensive Exploration in LLM-Based Automatic Heuristic Design</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+    </div>
+    <details class="paper-abstract">
+      Handcrafting heuristics for solving complex optimization tasks (e.g., route planning and task allocation) is a common practice but requires extensive domain knowledge. Recently, Large Language Model (LLM)-based automatic heuristic design (AHD) methods have shown promise in generating high-quality heuristics without manual interventions. Existing LLM-based AHD methods employ a population to maintain a fixed number of top-performing LLM-generated heuristics and introduce evolutionary computation (EC) to iteratively enhance the population. However, these population-based procedures cannot fully develop the potential of each heuristic and are prone to converge into local optima. To more comprehensively explore the space of heuristics, this paper proposes to use Monte Carlo Tree Search (MCTS) for LLM-based heuristic evolution. The proposed MCTS-AHD method organizes all LLM-generated heuristics in a tree structure and can better develop the potential of temporarily underperforming heuristics. In experiments, MCTS-AHD delivers significantly higher-quality heuristics on various complex tasks. Our code is available.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.04670v2">Are They the Same? Exploring Visual Correspondence Shortcomings of Multimodal LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+      | 💬 fix typos, figures, tables, and other details; additional results
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in multimodal models have shown a strong ability in visual perception, reasoning abilities, and vision-language understanding. However, studies on visual matching ability are missing, where finding the visual correspondence of objects is essential in vision research. Our research reveals that the matching capabilities in recent multimodal LLMs (MLLMs) still exhibit systematic shortcomings, even with current strong MLLMs models, GPT-4o. In particular, we construct a Multimodal Visual Matching (MMVM) benchmark to fairly benchmark over 30 different MLLMs. The MMVM benchmark is built from 15 open-source datasets and Internet videos with manual annotation. We categorize the data samples of MMVM benchmark into eight aspects based on the required cues and capabilities to more comprehensively evaluate and analyze current MLLMs. In addition, we have designed an automatic annotation pipeline to generate the MMVM SFT dataset, including 220K visual matching data with reasoning annotation. Finally, we present CoLVA, a novel contrastive MLLM with two novel technical designs: fine-grained vision expert with object-level contrastive learning and instruction augmentation strategy. CoLVA achieves 51.06\% overall accuracy (OA) on the MMVM benchmark, surpassing GPT-4o and baseline by 8.41\% and 23.58\% OA, respectively. The results show the effectiveness of our MMVM SFT dataset and our novel technical designs. Code, benchmark, dataset, and models are available at https://github.com/zhouyiks/CoLVA.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.18596v1">DeltaLLM: Compress LLMs with Low-Rank Deltas between Shared Weights</a></div>
     <div class="paper-meta">
       📅 2025-01-30
@@ -954,24 +973,5 @@
     </div>
     <details class="paper-abstract">
       Large Language Models (LLMs) have demonstrated remarkable performance across diverse tasks. LLMs continue to be vulnerable to external threats, particularly Denial-of-Service (DoS) attacks. Specifically, LLM-DoS attacks aim to exhaust computational resources and block services. However, prior works tend to focus on performing white-box attacks, overlooking black-box settings. In this work, we propose an automated algorithm designed for black-box LLMs, called Auto-Generation for LLM-DoS Attack (AutoDoS). AutoDoS introduces DoS Attack Tree and optimizes the prompt node coverage to enhance effectiveness under black-box conditions. Our method can bypass existing defense with enhanced stealthiness via semantic improvement of prompt nodes. Furthermore, we reveal that implanting Length Trojan in Basic DoS Prompt aids in achieving higher attack efficacy. Experimental results show that AutoDoS amplifies service response latency by over 250 $\times \uparrow$, leading to severe resource consumption in terms of GPU utilization and memory usage. Our code is available at https://github.com/shuita2333/AutoDoS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.15755v1">GraphICL: Unlocking Graph Learning Potential in LLMs through Structured Prompt Design</a></div>
-    <div class="paper-meta">
-      📅 2025-01-27
-    </div>
-    <details class="paper-abstract">
-      The growing importance of textual and relational systems has driven interest in enhancing large language models (LLMs) for graph-structured data, particularly Text-Attributed Graphs (TAGs), where samples are represented by textual descriptions interconnected by edges. While research has largely focused on developing specialized graph LLMs through task-specific instruction tuning, a comprehensive benchmark for evaluating LLMs solely through prompt design remains surprisingly absent. Without such a carefully crafted evaluation benchmark, most if not all, tailored graph LLMs are compared against general LLMs using simplistic queries (e.g., zero-shot reasoning with LLaMA), which can potentially camouflage many advantages as well as unexpected predicaments of them. To achieve more general evaluations and unveil the true potential of LLMs for graph tasks, we introduce Graph In-context Learning (GraphICL) Benchmark, a comprehensive benchmark comprising novel prompt templates designed to capture graph structure and handle limited label knowledge. Our systematic evaluation shows that general-purpose LLMs equipped with our GraphICL outperform state-of-the-art specialized graph LLMs and graph neural network models in resource-constrained settings and out-of-domain tasks. These findings highlight the significant potential of prompt engineering to enhance LLM performance on graph learning tasks without training and offer a strong baseline for advancing research in graph LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.15749v1">LLM-powered Multi-agent Framework for Goal-oriented Learning in Intelligent Tutoring System</a></div>
-    <div class="paper-meta">
-      📅 2025-01-27
-      | 💬 Accepted by WWW 2025 (Industry Track)
-    </div>
-    <details class="paper-abstract">
-      Intelligent Tutoring Systems (ITSs) have revolutionized education by offering personalized learning experiences. However, as goal-oriented learning, which emphasizes efficiently achieving specific objectives, becomes increasingly important in professional contexts, existing ITSs often struggle to deliver this type of targeted learning experience. In this paper, we propose GenMentor, an LLM-powered multi-agent framework designed to deliver goal-oriented, personalized learning within ITS. GenMentor begins by accurately mapping learners' goals to required skills using a fine-tuned LLM trained on a custom goal-to-skill dataset. After identifying the skill gap, it schedules an efficient learning path using an evolving optimization approach, driven by a comprehensive and dynamic profile of learners' multifaceted status. Additionally, GenMentor tailors learning content with an exploration-drafting-integration mechanism to align with individual learner needs. Extensive automated and human evaluations demonstrate GenMentor's effectiveness in learning guidance and content quality. Furthermore, we have deployed it in practice and also implemented it as an application. Practical human study with professional learners further highlights its effectiveness in goal alignment and resource targeting, leading to enhanced personalization. Supplementary resources are available at https://github.com/GeminiLight/gen-mentor.
     </details>
 </div>

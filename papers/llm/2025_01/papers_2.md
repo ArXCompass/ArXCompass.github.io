@@ -14,6 +14,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.15755v1">GraphICL: Unlocking Graph Learning Potential in LLMs through Structured Prompt Design</a></div>
+    <div class="paper-meta">
+      📅 2025-01-27
+    </div>
+    <details class="paper-abstract">
+      The growing importance of textual and relational systems has driven interest in enhancing large language models (LLMs) for graph-structured data, particularly Text-Attributed Graphs (TAGs), where samples are represented by textual descriptions interconnected by edges. While research has largely focused on developing specialized graph LLMs through task-specific instruction tuning, a comprehensive benchmark for evaluating LLMs solely through prompt design remains surprisingly absent. Without such a carefully crafted evaluation benchmark, most if not all, tailored graph LLMs are compared against general LLMs using simplistic queries (e.g., zero-shot reasoning with LLaMA), which can potentially camouflage many advantages as well as unexpected predicaments of them. To achieve more general evaluations and unveil the true potential of LLMs for graph tasks, we introduce Graph In-context Learning (GraphICL) Benchmark, a comprehensive benchmark comprising novel prompt templates designed to capture graph structure and handle limited label knowledge. Our systematic evaluation shows that general-purpose LLMs equipped with our GraphICL outperform state-of-the-art specialized graph LLMs and graph neural network models in resource-constrained settings and out-of-domain tasks. These findings highlight the significant potential of prompt engineering to enhance LLM performance on graph learning tasks without training and offer a strong baseline for advancing research in graph LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.15749v1">LLM-powered Multi-agent Framework for Goal-oriented Learning in Intelligent Tutoring System</a></div>
+    <div class="paper-meta">
+      📅 2025-01-27
+      | 💬 Accepted by WWW 2025 (Industry Track)
+    </div>
+    <details class="paper-abstract">
+      Intelligent Tutoring Systems (ITSs) have revolutionized education by offering personalized learning experiences. However, as goal-oriented learning, which emphasizes efficiently achieving specific objectives, becomes increasingly important in professional contexts, existing ITSs often struggle to deliver this type of targeted learning experience. In this paper, we propose GenMentor, an LLM-powered multi-agent framework designed to deliver goal-oriented, personalized learning within ITS. GenMentor begins by accurately mapping learners' goals to required skills using a fine-tuned LLM trained on a custom goal-to-skill dataset. After identifying the skill gap, it schedules an efficient learning path using an evolving optimization approach, driven by a comprehensive and dynamic profile of learners' multifaceted status. Additionally, GenMentor tailors learning content with an exploration-drafting-integration mechanism to align with individual learner needs. Extensive automated and human evaluations demonstrate GenMentor's effectiveness in learning guidance and content quality. Furthermore, we have deployed it in practice and also implemented it as an application. Practical human study with professional learners further highlights its effectiveness in goal alignment and resource targeting, leading to enhanced personalization. Supplementary resources are available at https://github.com/GeminiLight/gen-mentor.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.15674v1">TensorLLM: Tensorising Multi-Head Attention for Enhanced Reasoning and Compression in LLMs</a></div>
     <div class="paper-meta">
       📅 2025-01-26
@@ -647,6 +666,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.13299v1">Hypothesis Generation for Materials Discovery and Design Using Goal-Driven and Constraint-Guided LLM Agents</a></div>
+    <div class="paper-meta">
+      📅 2025-01-23
+      | 💬 Accepted in NAACL 2025
+    </div>
+    <details class="paper-abstract">
+      Materials discovery and design are essential for advancing technology across various industries by enabling the development of application-specific materials. Recent research has leveraged Large Language Models (LLMs) to accelerate this process. We explore the potential of LLMs to generate viable hypotheses that, once validated, can expedite materials discovery. Collaborating with materials science experts, we curated a novel dataset from recent journal publications, featuring real-world goals, constraints, and methods for designing real-world applications. Using this dataset, we test LLM-based agents that generate hypotheses for achieving given goals under specific constraints. To assess the relevance and quality of these hypotheses, we propose a novel scalable evaluation metric that emulates the process a materials scientist would use to evaluate a hypothesis critically. Our curated dataset, proposed method, and evaluation framework aim to advance future research in accelerating materials discovery and design with LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.02076v7">LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-23
+      | 💬 ICLR 2025; Github: https://github.com/mozhu621/LongGenBench/
+    </div>
+    <details class="paper-abstract">
+      Current benchmarks like Needle-in-a-Haystack (NIAH), Ruler, and Needlebench focus on models' ability to understand long-context input sequences but fail to capture a critical dimension: the generation of high-quality long-form text. Applications such as design proposals, technical documentation, and creative writing rely on coherent, instruction-following outputs over extended sequences - a challenge that existing benchmarks do not adequately address. To fill this gap, we introduce LongGenBench, a novel benchmark designed to rigorously evaluate large language models' (LLMs) ability to generate long text while adhering to complex instructions. Through tasks requiring specific events or constraints within generated text, LongGenBench evaluates model performance across four distinct scenarios, three instruction types, and two generation-lengths (16K and 32K tokens). Our evaluation of ten state-of-the-art LLMs reveals that, despite strong results on Ruler, all models struggled with long text generation on LongGenBench, particularly as text length increased. This suggests that current LLMs are not yet equipped to meet the demands of real-world, long-form text generation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.06394v4">GameArena: Evaluating LLM Reasoning through Live Computer Games</a></div>
     <div class="paper-meta">
       📅 2025-01-23
@@ -923,44 +962,5 @@
     </div>
     <details class="paper-abstract">
       For large language models (LLMs) like NLLB and GPT, translating idioms remains a challenge. Our goal is to enhance translation fidelity by improving LLM processing of idiomatic language while preserving the original linguistic style. This has a significant social impact, as it preserves cultural nuances and ensures translated texts retain their intent and emotional resonance, fostering better cross-cultural communication. Previous work has utilized knowledge bases like IdiomKB by providing the LLM with the meaning of an idiom to use in translation. Although this method yielded better results than a direct translation, it is still limited in its ability to preserve idiomatic writing style across languages. In this research, we expand upon the knowledge base to find corresponding idioms in the target language. Our research performs translations using two methods: The first method employs the SentenceTransformers model to semantically generate cosine similarity scores between the meanings of the original and target language idioms, selecting the best idiom (Cosine Similarity method). The second method uses an LLM to find a corresponding idiom in the target language for use in the translation (LLM-generated idiom method). As a baseline, we performed a direct translation without providing additional information. Human evaluations on the English -> Chinese, and Chinese -> English show the Cosine Similarity Lookup method out-performed others in all GPT4o translations. To further build upon IdiomKB, we developed a low-resource Urdu dataset containing Urdu idioms and their translations. Despite dataset limitations, the Cosine Similarity Lookup method shows promise, potentially overcoming language barriers and enabling the exploration of diverse literary works in Chinese and Urdu.(LoResLM @ COLING Preprint)
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.13331v1">Qrazor: Reliable and effortless 4-bit llm quantization by significant data razoring</a></div>
-    <div class="paper-meta">
-      📅 2025-01-23
-      | 💬 19 pages
-    </div>
-    <details class="paper-abstract">
-      Large-scale language models (LLMs) have demonstrated outstanding performance in language processing tasks, yet their deployment is often hindered by high memory demands and computational complexity. Although low-bit quantization techniques, such as 4-bit quantization, present a potential solution, they frequently lead to significant accuracy degradation or require substantial effort for such aggressive quantization approaches. To overcome these challenges, we introduce QRazor, a reliable and effortless quantization scheme designed to enable 4-bit quantization for weights, activations, and KV cache in transformer-based LLMs. The scheme involves two main stages: quantization and compression. During the quantization stage, weights, activations, and KV cache values are quantized with wider 8 or 16-bit integers as a basis to achieve nearly identical accuracy to the original full-precision LLM models, using the absolute max scaling. Subsequently, all data are compressed to 4-bit using our proposed significant data razoring (SDR) technique, which retains only the four most salient bits while discarding the others. Furthermore, we present an integer-based arithmetic unit dedicated to QRazor, enabling direct low-precision arithmetic operations without decompressing the SDR data. Despite the reduced quantization effort, QRazor achieves LLM accuracies better or comparable to state-of-the-art 4-bit methods. By also validating the hardware efficiency, our decompression-free arithmetic unit achieves 61.2% and 57.8% reduction in area and power consumption, respectively.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16372v1">Low-Rank Adapters Meet Neural Architecture Search for LLM Compression</a></div>
-    <div class="paper-meta">
-      📅 2025-01-23
-      | 💬 AAAI-25 Workshop on Connecting Low-rank Representations in AI
-    </div>
-    <details class="paper-abstract">
-      The rapid expansion of Large Language Models (LLMs) has posed significant challenges regarding the computational resources required for fine-tuning and deployment. Recent advancements in low-rank adapters have demonstrated their efficacy in parameter-efficient fine-tuning (PEFT) of these models. This retrospective paper comprehensively discusses innovative approaches that synergize low-rank representations with Neural Architecture Search (NAS) techniques, particularly weight-sharing super-networks. Robust solutions for compressing and fine-tuning large pre-trained models are developed by integrating these methodologies. Our analysis highlights the potential of these combined strategies to democratize the use of LLMs, making them more accessible for deployment in resource-constrained environments. The resulting models exhibit reduced memory footprints and faster inference times, paving the way for more practical and scalable applications of LLMs. Models and code are available at https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.10245v3">From Text to Emoji: How PEFT-Driven Personality Manipulation Unleashes the Emoji Potential in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-23
-      | 💬 Findings paper of NAACL 2025 and NeurIPS 2024 Workshop on Behavioral Machine Learning
-    </div>
-    <details class="paper-abstract">
-      The manipulation of the personality traits of large language models (LLMs) has emerged as a key area of research. Methods like prompt-based In-Context Knowledge Editing (IKE) and gradient-based Model Editor Networks (MEND) have been explored but show irregularity and variability; IKE depends on the prompt, leading to variability and sensitivity, while MEND yields inconsistent and gibberish outputs. To address this, we employed Opinion QA Based Parameter-Efficient Fine-Tuning (PEFT), specifically Quantized Low-Rank Adaptation (QLoRA), to manipulate the Big Five personality traits: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. After PEFT, models such as Mistral-7B-Instruct and LLaMA-2-7B-chat began generating emojis, even though no emojis were present in the PEFT data. For instance, LLaMA-2-7B-chat generated emojis in 99.5% of extraversion-related test instances, while Mistral-7B-Instruct did so in 92.5% of openness-related test instances. ICL Explainability analysis indicated that the LLMs used emojis intentionally to express these traits. Mechanistic Interpretability analysis showed that this latent behaviour of LLMs could be traced to specific neurons that became activated or amplified after PEFT. This paper provides a number of novel contributions. First, introducing an Opinion QA dataset for PEFT-driven personality manipulation; second, developing metric models to benchmark LLM personality traits; third, demonstrating PEFT's superiority over IKE in personality manipulation; and finally, analysing and validating emoji usage through explainability methods such as Mechanistic Interpretability and In-context learning Explainability methods.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.14876v2">Precise and Robust Sidewalk Detection: Leveraging Ensemble Learning to Surpass LLM Limitations in Urban Environments</a></div>
-    <div class="paper-meta">
-      📅 2025-01-23
-    </div>
-    <details class="paper-abstract">
-      This study aims to compare the effectiveness of a robust ensemble model with the state-of-the-art ONE-PEACE Large Language Model (LLM) for accurate detection of sidewalks. Accurate sidewalk detection is crucial in improving road safety and urban planning. The study evaluated the model's performance on Cityscapes, Ade20k, and the Boston Dataset. The results showed that the ensemble model performed better than the individual models, achieving mean Intersection Over Union (mIOU) scores of 93.1\%, 90.3\%, and 90.6\% on these datasets under ideal conditions. Additionally, the ensemble model maintained a consistent level of performance even in challenging conditions such as Salt-and-Pepper and Speckle noise, with only a gradual decrease in efficiency observed. On the other hand, the ONE-PEACE LLM performed slightly better than the ensemble model in ideal scenarios but experienced a significant decline in performance under noisy conditions. These findings demonstrate the robustness and reliability of the ensemble model, making it a valuable asset for improving urban infrastructure related to road safety and curb space management. This study contributes positively to the broader context of urban health and mobility.
     </details>
 </div>
