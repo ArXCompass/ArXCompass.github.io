@@ -92,6 +92,7 @@ def get_daily_papers_by_keyword_with_retries(
 ) -> List[Dict[str, str]]:
     for _ in range(retries):
         papers = get_daily_papers_by_keyword(keyword, column_names, max_result, link)
+        print(f"Retrieved {len(papers)} papers for keyword: {keyword}")
         if len(papers) > 0:
             return papers
         else:
@@ -108,7 +109,6 @@ def get_daily_papers_by_keyword(
     papers = request_paper_with_arXiv_api(
         keyword, max_result, link
     )  # NOTE default columns: Title, Authors, Abstract, Link, Tags, Comment, Date
-    # NOTE filtering tags: only keep the papers in cs field
     # TODO filtering more
     papers = filter_tags(papers)
     # select columns for display

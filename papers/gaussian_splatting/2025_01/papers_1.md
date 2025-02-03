@@ -18,6 +18,44 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.19319v1">Advancing Dense Endoscopic Reconstruction with Gaussian Splatting-driven Surface Normal-aware Tracking and Mapping</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+      | 💬 Accepted by ICRA 2025
+    </div>
+    <details class="paper-abstract">
+      Simultaneous Localization and Mapping (SLAM) is essential for precise surgical interventions and robotic tasks in minimally invasive procedures. While recent advancements in 3D Gaussian Splatting (3DGS) have improved SLAM with high-quality novel view synthesis and fast rendering, these systems struggle with accurate depth and surface reconstruction due to multi-view inconsistencies. Simply incorporating SLAM and 3DGS leads to mismatches between the reconstructed frames. In this work, we present Endo-2DTAM, a real-time endoscopic SLAM system with 2D Gaussian Splatting (2DGS) to address these challenges. Endo-2DTAM incorporates a surface normal-aware pipeline, which consists of tracking, mapping, and bundle adjustment modules for geometrically accurate reconstruction. Our robust tracking module combines point-to-point and point-to-plane distance metrics, while the mapping module utilizes normal consistency and depth distortion to enhance surface reconstruction quality. We also introduce a pose-consistent strategy for efficient and geometrically coherent keyframe sampling. Extensive experiments on public endoscopic datasets demonstrate that Endo-2DTAM achieves an RMSE of $1.87\pm 0.63$ mm for depth reconstruction of surgical scenes while maintaining computationally efficient tracking, high-quality visual appearance, and real-time rendering. Our code will be released at github.com/lastbasket/Endo-2DTAM.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.19196v1">RaySplats: Ray Tracing based Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) is a process that enables the direct creation of 3D objects from 2D images. This representation offers numerous advantages, including rapid training and rendering. However, a significant limitation of 3DGS is the challenge of incorporating light and shadow reflections, primarily due to the utilization of rasterization rather than ray tracing for rendering. This paper introduces RaySplats, a model that employs ray-tracing based Gaussian Splatting. Rather than utilizing the projection of Gaussians, our method employs a ray-tracing mechanism, operating directly on Gaussian primitives represented by confidence ellipses with RGB colors. In practice, we compute the intersection between ellipses and rays to construct ray-tracing algorithms, facilitating the incorporation of meshes with Gaussian Splatting models and the addition of lights, shadows, and other related effects.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.19088v1">JGHand: Joint-Driven Animatable Hand Avater via 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+    </div>
+    <details class="paper-abstract">
+      Since hands are the primary interface in daily interactions, modeling high-quality digital human hands and rendering realistic images is a critical research problem. Furthermore, considering the requirements of interactive and rendering applications, it is essential to achieve real-time rendering and driveability of the digital model without compromising rendering quality. Thus, we propose Jointly 3D Gaussian Hand (JGHand), a novel joint-driven 3D Gaussian Splatting (3DGS)-based hand representation that renders high-fidelity hand images in real-time for various poses and characters. Distinct from existing articulated neural rendering techniques, we introduce a differentiable process for spatial transformations based on 3D key points. This process supports deformations from the canonical template to a mesh with arbitrary bone lengths and poses. Additionally, we propose a real-time shadow simulation method based on per-pixel depth to simulate self-occlusion shadows caused by finger movements. Finally, we embed the hand prior and propose an animatable 3DGS representation of the hand driven solely by 3D key points. We validate the effectiveness of each component of our approach through comprehensive ablation studies. Experimental results on public datasets demonstrate that JGHand achieves real-time rendering speeds with enhanced quality, surpassing state-of-the-art methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.18672v1">Drag Your Gaussian: Effective Drag-Based Editing with Score Distillation for 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-01-30
+      | 💬 Visit our project page at https://quyans.github.io/Drag-Your-Gaussian
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in 3D scene editing have been propelled by the rapid development of generative models. Existing methods typically utilize generative models to perform text-guided editing on 3D representations, such as 3D Gaussian Splatting (3DGS). However, these methods are often limited to texture modifications and fail when addressing geometric changes, such as editing a character's head to turn around. Moreover, such methods lack accurate control over the spatial position of editing results, as language struggles to precisely describe the extent of edits. To overcome these limitations, we introduce DYG, an effective 3D drag-based editing method for 3D Gaussian Splatting. It enables users to conveniently specify the desired editing region and the desired dragging direction through the input of 3D masks and pairs of control points, thereby enabling precise control over the extent of editing. DYG integrates the strengths of the implicit triplane representation to establish the geometric scaffold of the editing results, effectively overcoming suboptimal editing outcomes caused by the sparsity of 3DGS in the desired editing regions. Additionally, we incorporate a drag-based Latent Diffusion Model into our method through the proposed Drag-SDS loss function, enabling flexible, multi-view consistent, and fine-grained editing. Extensive experiments demonstrate that DYG conducts effective drag-based editing guided by control point prompts, surpassing other baselines in terms of editing effect and quality, both qualitatively and quantitatively. Visit our project page at https://quyans.github.io/Drag-Your-Gaussian.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.09295v2">GEVO: Memory-Efficient Monocular Visual Odometry Using Gaussians</a></div>
     <div class="paper-meta">
       📅 2025-01-29
@@ -54,6 +92,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) has emerged as a powerful approach for 3D scene reconstruction using 3D Gaussians. However, neither the centers nor surfaces of the Gaussians are accurately aligned to the object surface, complicating their direct use in point cloud and mesh reconstruction. Additionally, 3DGS typically produces floater artifacts, increasing the number of Gaussians and storage requirements. To address these issues, we present FeatureGS, which incorporates an additional geometric loss term based on an eigenvalue-derived 3D shape feature into the optimization process of 3DGS. The goal is to improve geometric accuracy and enhance properties of planar surfaces with reduced structural entropy in local 3D neighborhoods.We present four alternative formulations for the geometric loss term based on 'planarity' of Gaussians, as well as 'planarity', 'omnivariance', and 'eigenentropy' of Gaussian neighborhoods. We provide quantitative and qualitative evaluations on 15 scenes of the DTU benchmark dataset focusing on following key aspects: Geometric accuracy and artifact-reduction, measured by the Chamfer distance, and memory efficiency, evaluated by the total number of Gaussians. Additionally, rendering quality is monitored by Peak Signal-to-Noise Ratio. FeatureGS achieves a 30 % improvement in geometric accuracy, reduces the number of Gaussians by 90 %, and suppresses floater artifacts, while maintaining comparable photometric rendering quality. The geometric loss with 'planarity' from Gaussians provides the highest geometric accuracy, while 'omnivariance' in Gaussian neighborhoods reduces floater artifacts and number of Gaussians the most. This makes FeatureGS a strong method for geometrically accurate, artifact-reduced and memory-efficient 3D scene reconstruction, enabling the direct use of Gaussian centers for geometric representation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.18643v1">3D Reconstruction of Shoes for Augmented Reality</a></div>
+    <div class="paper-meta">
+      📅 2025-01-29
+    </div>
+    <details class="paper-abstract">
+      This paper introduces a mobile-based solution that enhances online shoe shopping through 3D modeling and Augmented Reality (AR), leveraging the efficiency of 3D Gaussian Splatting. Addressing the limitations of static 2D images, the framework generates realistic 3D shoe models from 2D images, achieving an average Peak Signal-to-Noise Ratio (PSNR) of 0.32, and enables immersive AR interactions via smartphones. A custom shoe segmentation dataset of 3120 images was created, with the best-performing segmentation model achieving an Intersection over Union (IoU) score of 0.95. This paper demonstrates the potential of 3D modeling and AR to revolutionize online shopping by offering realistic virtual interactions, with applicability across broader fashion categories.
     </details>
 </div>
 <div class="paper-card">
@@ -113,6 +160,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) techniques have achieved satisfactory 3D scene representation. Despite their impressive performance, they confront challenges due to the limitation of structure-from-motion (SfM) methods on acquiring accurate scene initialization, or the inefficiency of densification strategy. In this paper, we introduce a novel framework EasySplat to achieve high-quality 3DGS modeling. Instead of using SfM for scene initialization, we employ a novel method to release the power of large-scale pointmap approaches. Specifically, we propose an efficient grouping strategy based on view similarity, and use robust pointmap priors to obtain high-quality point clouds and camera poses for 3D scene initialization. After obtaining a reliable scene structure, we propose a novel densification approach that adaptively splits Gaussian primitives based on the average shape of neighboring Gaussian ellipsoids, utilizing KNN scheme. In this way, the proposed method tackles the limitation on initialization and optimization, leading to an efficient and accurate 3DGS modeling. Extensive experiments demonstrate that EasySplat outperforms the current state-of-the-art (SOTA) in handling novel view synthesis.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.18630v1">Deformable Beta Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-01-27
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has advanced radiance field reconstruction by enabling real-time rendering. However, its reliance on Gaussian kernels for geometry and low-order Spherical Harmonics (SH) for color encoding limits its ability to capture complex geometries and diverse colors. We introduce Deformable Beta Splatting (DBS), a deformable and compact approach that enhances both geometry and color representation. DBS replaces Gaussian kernels with deformable Beta Kernels, which offer bounded support and adaptive frequency control to capture fine geometric details with higher fidelity while achieving better memory efficiency. In addition, we extended the Beta Kernel to color encoding, which facilitates improved representation of diffuse and specular components, yielding superior results compared to SH-based methods. Furthermore, Unlike prior densification techniques that depend on Gaussian properties, we mathematically prove that adjusting regularized opacity alone ensures distribution-preserved Markov chain Monte Carlo (MCMC), independent of the splatting kernel type. Experimental results demonstrate that DBS achieves state-of-the-art visual quality while utilizing only 45% of the parameters and rendering 1.5x faster than 3DGS-based methods. Notably, for the first time, splatting-based methods outperform state-of-the-art Neural Radiance Fields, highlighting the superior performance and efficiency of DBS for real-time radiance field rendering.
     </details>
 </div>
 <div class="paper-card">
