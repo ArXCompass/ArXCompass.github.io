@@ -14,6 +14,15 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.12039v2">Can LLM Prompting Serve as a Proxy for Static Analysis in Vulnerability Detection</a></div>
+    <div class="paper-meta">
+      📅 2025-01-18
+    </div>
+    <details class="paper-abstract">
+      Despite their remarkable success, large language models (LLMs) have shown limited ability on applied tasks such as vulnerability detection. We investigate various prompting strategies for vulnerability detection and, as part of this exploration, propose a prompting strategy that integrates natural language descriptions of vulnerabilities with a contrastive chain-of-thought reasoning approach, augmented using contrastive samples from a synthetic dataset. Our study highlights the potential of LLMs to detect vulnerabilities by integrating natural language descriptions, contrastive reasoning, and synthetic examples into a comprehensive prompting framework. Our results show that this approach can enhance LLM understanding of vulnerabilities. On a high-quality vulnerability detection dataset such as SVEN, our prompting strategies can improve accuracies, F1-scores, and pairwise accuracies by 23%, 11%, and 14%, respectively.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.10175v1">Multi-stage Training of Bilingual Islamic LLM for Neural Passage Retrieval</a></div>
     <div class="paper-meta">
       📅 2025-01-17
@@ -128,6 +137,25 @@
     </div>
     <details class="paper-abstract">
       Self-Admitted Technical Debt (SATD), cases where developers intentionally acknowledge suboptimal solutions in code through comments, poses a significant challenge to software maintainability. Left unresolved, SATD can degrade code quality and increase maintenance costs. While Large Language Models (LLMs) have shown promise in tasks like code generation and program repair, their potential in automated SATD repayment remains underexplored. In this paper, we identify three key challenges in training and evaluating LLMs for SATD repayment: (1) dataset representativeness and scalability, (2) removal of irrelevant SATD repayments, and (3) limitations of existing evaluation metrics. To address the first two dataset-related challenges, we adopt a language-independent SATD tracing tool and design a 10-step filtering pipeline to extract SATD repayments from repositories, resulting two large-scale datasets: 58,722 items for Python and 97,347 items for Java. To improve evaluation, we introduce two diff-based metrics, BLEU-diff and CrystalBLEU-diff, which measure code changes rather than whole code. Additionally, we propose another new metric, LEMOD, which is both interpretable and informative. Using our new benchmarks and evaluation metrics, we evaluate two types of automated SATD repayment methods: fine-tuning smaller models, and prompt engineering with five large-scale models. Our results reveal that fine-tuned small models achieve comparable Exact Match (EM) scores to prompt-based approaches but underperform on BLEU-based metrics and LEMOD. Notably, Gemma-2-9B leads in EM, addressing 10.1% of Python and 8.1% of Java SATDs, while Llama-3.1-70B-Instruct and GPT-4o-mini excel on BLEU-diff, CrystalBLEU-diff, and LEMOD metrics. Our work contributes a robust benchmark, improved evaluation metrics, and a comprehensive evaluation of LLMs, advancing research on automated SATD repayment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.10313v1">Addressing Popularity Bias in Third-Party Library Recommendations Using LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-17
+      | 💬 Accepted at the 1st International Workshop on Fairness in Software Systems, co-located with SANER2025
+    </div>
+    <details class="paper-abstract">
+      Recommender systems for software engineering (RSSE) play a crucial role in automating development tasks by providing relevant suggestions according to the developer's context. However, they suffer from the so-called popularity bias, i.e., the phenomenon of recommending popular items that might be irrelevant to the current task. In particular, the long-tail effect can hamper the system's performance in terms of accuracy, thus leading to false positives in the provided recommendations. Foundation models are the most advanced generative AI-based models that achieve relevant results in several SE tasks. This paper aims to investigate the capability of large language models (LLMs) to address the popularity bias in recommender systems of third-party libraries (TPLs). We conduct an ablation study experimenting with state-of-the-art techniques to mitigate the popularity bias, including fine-tuning and popularity penalty mechanisms. Our findings reveal that the considered LLMs cannot address the popularity bias in TPL recommenders, even though fine-tuning and post-processing penalty mechanism contributes to increasing the overall diversity of the provided recommendations. In addition, we discuss the limitations of LLMs in this context and suggest potential improvements to address the popularity bias in TPL recommenders, thus paving the way for additional experiments in this direction.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.10200v1">Test Wars: A Comparative Study of SBST, Symbolic Execution, and LLM-Based Approaches to Unit Test Generation</a></div>
+    <div class="paper-meta">
+      📅 2025-01-17
+    </div>
+    <details class="paper-abstract">
+      Generating tests automatically is a key and ongoing area of focus in software engineering research. The emergence of Large Language Models (LLMs) has opened up new opportunities, given their ability to perform a wide spectrum of tasks. However, the effectiveness of LLM-based approaches compared to traditional techniques such as search-based software testing (SBST) and symbolic execution remains uncertain. In this paper, we perform an extensive study of automatic test generation approaches based on three tools: EvoSuite for SBST, Kex for symbolic execution, and TestSpark for LLM-based test generation. We evaluate tools performance on the GitBug Java dataset and compare them using various execution-based and feature-based metrics. Our results show that while LLM-based test generation is promising, it falls behind traditional methods in terms of coverage. However, it significantly outperforms them in mutation scores, suggesting that LLMs provide a deeper semantic understanding of code. LLM-based approach also performed worse than SBST and symbolic execution-based approaches w.r.t. fault detection capabilities. Additionally, our feature-based analysis shows that all tools are primarily affected by the complexity and internal dependencies of the class under test (CUT), with LLM-based approaches being especially sensitive to the CUT size.
     </details>
 </div>
 <div class="paper-card">
@@ -793,6 +821,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.06980v1">Combining LLM decision and RL action selection to improve RL policy for adaptive interventions</a></div>
+    <div class="paper-meta">
+      📅 2025-01-13
+    </div>
+    <details class="paper-abstract">
+      Reinforcement learning (RL) is increasingly being used in the healthcare domain, particularly for the development of personalized health adaptive interventions. Inspired by the success of Large Language Models (LLMs), we are interested in using LLMs to update the RL policy in real time, with the goal of accelerating personalization. We use the text-based user preference to influence the action selection on the fly, in order to immediately incorporate the user preference. We use the term "user preference" as a broad term to refer to a user personal preference, constraint, health status, or a statement expressing like or dislike, etc. Our novel approach is a hybrid method that combines the LLM response and the RL action selection to improve the RL policy. Given an LLM prompt that incorporates the user preference, the LLM acts as a filter in the typical RL action selection. We investigate different prompting strategies and action selection strategies. To evaluate our approach, we implement a simulation environment that generates the text-based user preferences and models the constraints that impact behavioral dynamics. We show that our approach is able to take into account the text-based user preferences, while improving the RL policy, thus improving personalization in adaptive intervention.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.14634v3">Scideator: Human-LLM Scientific Idea Generation Grounded in Research-Paper Facet Recombination</a></div>
     <div class="paper-meta">
       📅 2025-01-13
@@ -921,43 +958,5 @@
     </div>
     <details class="paper-abstract">
       Deploying LLMs on edge devices presents serious technical challenges. Memory elasticity is crucial for edge devices with unified memory, where memory is shared and fluctuates dynamically. Existing solutions suffer from either poor transition granularity or high storage costs. We propose FlexQuant, a novel elasticity framework that generates an ensemble of quantized models, providing an elastic hosting solution with 15x granularity improvement and 10x storage reduction compared to SoTA methods. FlexQuant works with most quantization methods and creates a family of trade-off options under various storage limits through our pruning method. It brings great performance and flexibility to the edge deployment of LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.19943v3">Critical Tokens Matter: Token-Level Contrastive Estimation Enhances LLM's Reasoning Capability</a></div>
-    <div class="paper-meta">
-      📅 2025-01-13
-      | 💬 Work in progress
-    </div>
-    <details class="paper-abstract">
-      Mathematical reasoning tasks pose significant challenges for large language models (LLMs) because they require precise logical deduction and sequence analysis. In this work, we introduce the concept of critical tokens -- elements within reasoning trajectories that significantly influence incorrect outcomes. We present a novel framework for identifying these tokens through rollout sampling and demonstrate their substantial divergence from traditional error tokens. Through extensive experiments on datasets such as GSM8K and MATH500, we show that identifying and replacing critical tokens significantly improves model accuracy. We propose an efficient methodology for pinpointing these tokens in large-scale datasets using contrastive estimation and extend this framework to enhance model training processes with direct preference optimization (DPO). Experimental results on GSM8K and MATH500 benchmarks with the widely used models Llama-3 (8B and 70B) and Deepseek-math (7B) demonstrate the effectiveness of the proposed approach, cDPO. Our results underscore the potential of leveraging critical tokens to reduce errors in reasoning tasks, advancing the development of AI systems capable of robust logical deduction. Our code, annotated datasets, and trained models are available at https://github.com/chenzhiling9954/Critical-Tokens-Matter to support and encourage future research in this promising field.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.16185v3">LLM4Vuln: A Unified Evaluation Framework for Decoupling and Enhancing LLMs' Vulnerability Reasoning</a></div>
-    <div class="paper-meta">
-      📅 2025-01-13
-      | 💬 This is a technical report by Nanyang Technological University. Updated to support Solidity, Java and C/C++
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have demonstrated significant potential in various tasks, including those requiring human-level intelligence, such as vulnerability detection. However, recent efforts to use LLMs for vulnerability detection remain preliminary, as they lack a deep understanding of whether a subject LLM's vulnerability reasoning capability stems from the model itself or from external aids such as knowledge retrieval and tooling support. In this paper, we aim to decouple LLMs' vulnerability reasoning from other capabilities, such as vulnerability knowledge adoption, context information retrieval, and advanced prompt schemes. We introduce LLM4Vuln, a unified evaluation framework that separates and assesses LLMs' vulnerability reasoning capabilities and examines improvements when combined with other enhancements. We conduct controlled experiments using 147 ground-truth vulnerabilities and 147 non-vulnerable cases in Solidity, Java and C/C++, testing them in a total of 3,528 scenarios across four LLMs (GPT-3.5, GPT-4, Phi-3, and Llama 3). Our findings reveal the varying impacts of knowledge enhancement, context supplementation, and prompt schemes. We also identify 14 zero-day vulnerabilities in four pilot bug bounty programs, resulting in $3,576 in bounties.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.07071v1">Value Compass Leaderboard: A Platform for Fundamental and Validated Evaluation of LLMs Values</a></div>
-    <div class="paper-meta">
-      📅 2025-01-13
-    </div>
-    <details class="paper-abstract">
-      As Large Language Models (LLMs) achieve remarkable breakthroughs, aligning their values with humans has become imperative for their responsible development and customized applications. However, there still lack evaluations of LLMs values that fulfill three desirable goals. (1) Value Clarification: We expect to clarify the underlying values of LLMs precisely and comprehensively, while current evaluations focus narrowly on safety risks such as bias and toxicity. (2) Evaluation Validity: Existing static, open-source benchmarks are prone to data contamination and quickly become obsolete as LLMs evolve. Additionally, these discriminative evaluations uncover LLMs' knowledge about values, rather than valid assessments of LLMs' behavioral conformity to values. (3) Value Pluralism: The pluralistic nature of human values across individuals and cultures is largely ignored in measuring LLMs value alignment. To address these challenges, we presents the Value Compass Leaderboard, with three correspondingly designed modules. It (i) grounds the evaluation on motivationally distinct \textit{basic values to clarify LLMs' underlying values from a holistic view; (ii) applies a \textit{generative evolving evaluation framework with adaptive test items for evolving LLMs and direct value recognition from behaviors in realistic scenarios; (iii) propose a metric that quantifies LLMs alignment with a specific value as a weighted sum over multiple dimensions, with weights determined by pluralistic values.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.07058v1">Logic Meets Magic: LLMs Cracking Smart Contract Vulnerabilities</a></div>
-    <div class="paper-meta">
-      📅 2025-01-13
-    </div>
-    <details class="paper-abstract">
-      Smart contract vulnerabilities caused significant economic losses in blockchain applications. Large Language Models (LLMs) provide new possibilities for addressing this time-consuming task. However, state-of-the-art LLM-based detection solutions are often plagued by high false-positive rates. In this paper, we push the boundaries of existing research in two key ways. First, our evaluation is based on Solidity v0.8, offering the most up-to-date insights compared to prior studies that focus on older versions (v0.4). Second, we leverage the latest five LLM models (across companies), ensuring comprehensive coverage across the most advanced capabilities in the field. We conducted a series of rigorous evaluations. Our experiments demonstrate that a well-designed prompt can reduce the false-positive rate by over 60%. Surprisingly, we also discovered that the recall rate for detecting some specific vulnerabilities in Solidity v0.8 has dropped to just 13% compared to earlier versions (i.e., v0.4). Further analysis reveals the root cause of this decline: the reliance of LLMs on identifying changes in newly introduced libraries and frameworks during detection.
     </details>
 </div>
