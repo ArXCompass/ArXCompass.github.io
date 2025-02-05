@@ -249,6 +249,44 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.01657v1">Improving Rule-based Reasoning in LLMs via Neurosymbolic Representations</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) continue to face challenges in reliably solving reasoning tasks, particularly tasks that involve precise rule following, as often found in mathematical reasoning tasks. This paper introduces a novel neurosymbolic method that improves LLM reasoning by encoding hidden states into neurosymbolic vectors, allowing for problem-solving within a neurosymbolic vector space. The results are decoded and combined with the original hidden state, boosting the model's performance on numerical reasoning tasks. By offloading computation through neurosymbolic representations, this method improves efficiency, reliability, and interpretability. Our experimental results demonstrate an average of $82.86\%$ lower cross entropy loss and $24.50$ times more problems correctly solved on a suite of mathematical reasoning problems compared to chain-of-thought prompting and supervised fine-tuning (LoRA), while at the same time not hindering the performance of the LLM on other tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.00075v1">BTS: Harmonizing Specialized Experts into a Generalist LLM</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+    </div>
+    <details class="paper-abstract">
+      We present Branch-Train-Stitch (BTS), an efficient and flexible training algorithm for combining independently trained large language model (LLM) experts into a single, capable generalist model. Following Li et al., we start with a single seed language model which is branched into domain-specific (e.g., coding or math) experts with continual pretraining. BTS combines experts into a generalist model using lightweight stitch layers, which are inserted between frozen experts and the seed LLM, and trained on a small datamix of the expert domains. Stitch layers enable the seed LLM to integrate representations from any number of experts during the forward pass, allowing it to generalize to new domains, despite remaining frozen. Because BTS does not alter the constituent LLMs, BTS provides a modular and flexible approach: experts can be easily removed and new experts can be added with only a small amount of training. Compared to alternative model merging approaches, BTS yields the best generalist performance on a variety of downstream tasks, retaining the specialized capabilities of each of the experts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.00072v1">LLM Cyber Evaluations Don't Capture Real-World Risk</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+      | 💬 11 pages
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) are demonstrating increasing prowess in cybersecurity applications, creating creating inherent risks alongside their potential for strengthening defenses. In this position paper, we argue that current efforts to evaluate risks posed by these capabilities are misaligned with the goal of understanding real-world impact. Evaluating LLM cybersecurity risk requires more than just measuring model capabilities -- it demands a comprehensive risk assessment that incorporates analysis of threat actor adoption behavior and potential for impact. We propose a risk assessment framework for LLM cyber capabilities and apply it to a case study of language models used as cybersecurity assistants. Our evaluation of frontier models reveals high compliance rates but moderate accuracy on realistic cyber assistance tasks. However, our framework suggests that this particular use case presents only moderate risk due to limited operational advantages and impact potential. Based on these findings, we recommend several improvements to align research priorities with real-world impact assessment, including closer academia-industry collaboration, more realistic modeling of attacker behavior, and inclusion of economic metrics in evaluations. This work represents an important step toward more effective assessment and mitigation of LLM-enabled cybersecurity risks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.00070v1">Can AI Solve the Peer Review Crisis? A Large Scale Experiment on LLM's Performance and Biases in Evaluating Economics Papers</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+      | 💬 72 pages
+    </div>
+    <details class="paper-abstract">
+      We investigate whether artificial intelligence can address the peer review crisis in economics by analyzing 27,090 evaluations of 9,030 unique submissions using a large language model (LLM). The experiment systematically varies author characteristics (e.g., affiliation, reputation, gender) and publication quality (e.g., top-tier, mid-tier, low-tier, AI generated papers). The results indicate that LLMs effectively distinguish paper quality but exhibit biases favoring prominent institutions, male authors, and renowned economists. Additionally, LLMs struggle to differentiate high-quality AI-generated papers from genuine top-tier submissions. While LLMs offer efficiency gains, their susceptibility to bias necessitates cautious integration and hybrid peer review models to balance equity and accuracy.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.18596v1">DeltaLLM: Compress LLMs with Low-Rank Deltas between Shared Weights</a></div>
     <div class="paper-meta">
       📅 2025-01-30
@@ -753,6 +791,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.00055v1">Towards Recommender Systems LLMs Playground (RecSysLLMsP): Exploring Polarization and Engagement in Simulated Social Networks</a></div>
+    <div class="paper-meta">
+      📅 2025-01-29
+      | 💬 8 pages, 2 figures
+    </div>
+    <details class="paper-abstract">
+      Given the exponential advancement in AI technologies and the potential escalation of harmful effects from recommendation systems, it is crucial to simulate and evaluate these effects early on. Doing so can help prevent possible damage to both societies and technology companies. This paper introduces the Recommender Systems LLMs Playground (RecSysLLMsP), a novel simulation framework leveraging Large Language Models (LLMs) to explore the impacts of different content recommendation setups on user engagement and polarization in social networks. By creating diverse AI agents (AgentPrompts) with descriptive, static, and dynamic attributes, we assess their autonomous behaviour across three scenarios: Plurality, Balanced, and Similarity. Our findings reveal that the Similarity Scenario, which aligns content with user preferences, maximizes engagement while potentially fostering echo chambers. Conversely, the Plurality Scenario promotes diverse interactions but produces mixed engagement results. Our study emphasizes the need for a careful balance in recommender system designs to enhance user satisfaction while mitigating societal polarization. It underscores the unique value and challenges of incorporating LLMs into simulation environments. The benefits of RecSysLLMsP lie in its potential to calculate polarization effects, which is crucial for assessing societal impacts and determining user engagement levels with diverse recommender system setups. This advantage is essential for developing and maintaining a successful business model for social media companies. However, the study's limitations revolve around accurately emulating reality. Future efforts should validate the similarity in behaviour between real humans and AgentPrompts and establish metrics for measuring polarization scores.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.17330v1">Attribution analysis of legal language as used by LLM</a></div>
     <div class="paper-meta">
       📅 2025-01-28
@@ -913,53 +961,5 @@
     </div>
     <details class="paper-abstract">
       3D vision and spatial reasoning have long been recognized as preferable for accurately perceiving our three-dimensional world, especially when compared with traditional visual reasoning based on 2D images. Due to the difficulties in collecting high-quality 3D data, research in this area has only recently gained momentum. With the advent of powerful large language models (LLMs), multi-modal LLMs for 3D vision have been developed over the past few years. However, most of these models focus primarily on the vision encoder for 3D data. In this paper, we propose converting existing densely activated LLMs into mixture-of-experts (MoE) models, which have proven effective for multi-modal data processing. In addition to leveraging these models' instruction-following capabilities, we further enable embodied task planning by attaching a diffusion head, Pose-DiT, that employs a novel rectified flow diffusion scheduler. Experimental results on 3D question answering and task-planning tasks demonstrate that our 3D-MoE framework achieves improved performance with fewer activated parameters.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.09003v3">Refusal in LLMs is an Affine Function</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-    </div>
-    <details class="paper-abstract">
-      We propose affine concept editing (ACE) as an approach for steering language models' behavior by intervening directly in activations. We begin with an affine decomposition of model activation vectors and show that prior methods for steering model behavior correspond to subsets of terms of this decomposition. We then provide a derivation of ACE and use it to control refusal behavior on ten different models, including Llama 3 70B. ACE combines affine subspace projection and activation addition to reliably control the model's refusal responses across prompt types. We evaluate the results using LLM-based scoring on a collection of harmful and harmless prompts. Our experiments demonstrate that ACE consistently achieves more precise control over model behavior than existing methods and generalizes to models where directional ablation via affine subspace projection alone produces incoherent outputs. Code for reproducing our results is available at https://github.com/EleutherAI/steering-llama3 .
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16672v1">VeriFact: Verifying Facts in LLM-Generated Clinical Text with Electronic Health Records</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 62 pages, 5 figures, 1 table, pre-print manuscript
-    </div>
-    <details class="paper-abstract">
-      Methods to ensure factual accuracy of text generated by large language models (LLM) in clinical medicine are lacking. VeriFact is an artificial intelligence system that combines retrieval-augmented generation and LLM-as-a-Judge to verify whether LLM-generated text is factually supported by a patient's medical history based on their electronic health record (EHR). To evaluate this system, we introduce VeriFact-BHC, a new dataset that decomposes Brief Hospital Course narratives from discharge summaries into a set of simple statements with clinician annotations for whether each statement is supported by the patient's EHR clinical notes. Whereas highest agreement between clinicians was 88.5%, VeriFact achieves up to 92.7% agreement when compared to a denoised and adjudicated average human clinican ground truth, suggesting that VeriFact exceeds the average clinician's ability to fact-check text against a patient's medical record. VeriFact may accelerate the development of LLM-based EHR applications by removing current evaluation bottlenecks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16661v1">Jupybara: Operationalizing a Design Space for Actionable Data Analysis and Storytelling with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 Conditionally Accepted at CHI '25
-    </div>
-    <details class="paper-abstract">
-      Mining and conveying actionable insights from complex data is a key challenge of exploratory data analysis (EDA) and storytelling. To address this challenge, we present a design space for actionable EDA and storytelling. Synthesizing theory and expert interviews, we highlight how semantic precision, rhetorical persuasion, and pragmatic relevance underpin effective EDA and storytelling. We also show how this design space subsumes common challenges in actionable EDA and storytelling, such as identifying appropriate analytical strategies and leveraging relevant domain knowledge. Building on the potential of LLMs to generate coherent narratives with commonsense reasoning, we contribute Jupybara, an AI-enabled assistant for actionable EDA and storytelling implemented as a Jupyter Notebook extension. Jupybara employs two strategies -- design-space-aware prompting and multi-agent architectures -- to operationalize our design space. An expert evaluation confirms Jupybara's usability, steerability, explainability, and reparability, as well as the effectiveness of our strategies in operationalizing the design space framework with LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.18638v1">Graph of Attacks with Pruning: Optimizing Stealthy Jailbreak Prompt Generation for Enhanced LLM Content Moderation</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 15 pages, 7 figures
-    </div>
-    <details class="paper-abstract">
-      We present a modular pipeline that automates the generation of stealthy jailbreak prompts derived from high-level content policies, enhancing LLM content moderation. First, we address query inefficiency and jailbreak strength by developing Graph of Attacks with Pruning (GAP), a method that utilizes strategies from prior jailbreaks, resulting in 92% attack success rate on GPT-3.5 using only 54% of the queries of the prior algorithm. Second, we address the cold-start issue by automatically generating seed prompts from the high-level policy using LLMs. Finally, we demonstrate the utility of these generated jailbreak prompts of improving content moderation by fine-tuning PromptGuard, a model trained to detect jailbreaks, increasing its accuracy on the Toxic-Chat dataset from 5.1% to 93.89%.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16539v1">Generalized Mission Planning for Heterogeneous Multi-Robot Teams via LLM-constructed Hierarchical Trees</a></div>
-    <div class="paper-meta">
-      📅 2025-01-27
-    </div>
-    <details class="paper-abstract">
-      We present a novel mission-planning strategy for heterogeneous multi-robot teams, taking into account the specific constraints and capabilities of each robot. Our approach employs hierarchical trees to systematically break down complex missions into manageable sub-tasks. We develop specialized APIs and tools, which are utilized by Large Language Models (LLMs) to efficiently construct these hierarchical trees. Once the hierarchical tree is generated, it is further decomposed to create optimized schedules for each robot, ensuring adherence to their individual constraints and capabilities. We demonstrate the effectiveness of our framework through detailed examples covering a wide range of missions, showcasing its flexibility and scalability.
     </details>
 </div>

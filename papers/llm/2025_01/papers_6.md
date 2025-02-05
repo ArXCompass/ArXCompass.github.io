@@ -14,6 +14,53 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.03747v1">Context-Alignment: Activating and Enhancing LLM Capabilities in Time Series</a></div>
+    <div class="paper-meta">
+      📅 2025-01-07
+      | 💬 no comment
+    </div>
+    <details class="paper-abstract">
+      Recently, leveraging pre-trained Large Language Models (LLMs) for time series (TS) tasks has gained increasing attention, which involves activating and enhancing LLMs' capabilities. Many methods aim to activate LLMs' capabilities based on token-level alignment but overlook LLMs' inherent strength on natural language processing -- their deep understanding of linguistic logic and structure rather than superficial embedding processing. We propose Context-Alignment, a new paradigm that aligns TS with a linguistic component in the language environments familiar to LLMs to enable LLMs to contextualize and comprehend TS data, thereby activating their capabilities. Specifically, such context-level alignment comprises structural alignment and logical alignment, which is achieved by a Dual-Scale Context-Alignment GNNs (DSCA-GNNs) applied to TS-language multimodal inputs. Structural alignment utilizes dual-scale nodes to describe hierarchical structure in TS-language, enabling LLMs treat long TS data as a whole linguistic component while preserving intrinsic token features. Logical alignment uses directed edges to guide logical relationships, ensuring coherence in the contextual semantics. Demonstration examples prompt are employed to construct Demonstration Examples based Context-Alignment (DECA) following DSCA-GNNs framework. DECA can be flexibly and repeatedly integrated into various layers of pre-trained LLMs to improve awareness of logic and structure, thereby enhancing performance. Extensive experiments show the effectiveness of DECA and the importance of Context-Alignment across tasks, particularly in few-shot and zero-shot forecasting, confirming that Context-Alignment provide powerful prior knowledge on context.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.12761v2">BTGenBot: Behavior Tree Generation for Robotic Tasks with Lightweight LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-07
+    </div>
+    <details class="paper-abstract">
+      This paper presents a novel approach to generating behavior trees for robots using lightweight large language models (LLMs) with a maximum of 7 billion parameters. The study demonstrates that it is possible to achieve satisfying results with compact LLMs when fine-tuned on a specific dataset. The key contributions of this research include the creation of a fine-tuning dataset based on existing behavior trees using GPT-3.5 and a comprehensive comparison of multiple LLMs (namely llama2, llama-chat, and code-llama) across nine distinct tasks. To be thorough, we evaluated the generated behavior trees using static syntactical analysis, a validation system, a simulated environment, and a real robot. Furthermore, this work opens the possibility of deploying such solutions directly on the robot, enhancing its practical applicability. Findings from this study demonstrate the potential of LLMs with a limited number of parameters in generating effective and efficient robot behaviors.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.17624v2">Forecasting Credit Ratings: A Case Study where Traditional Methods Outperform Generative LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-07
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have been shown to perform well for many downstream tasks. Transfer learning can enable LLMs to acquire skills that were not targeted during pre-training. In financial contexts, LLMs can sometimes beat well-established benchmarks. This paper investigates how well LLMs perform in the task of forecasting corporate credit ratings. We show that while LLMs are very good at encoding textual information, traditional methods are still very competitive when it comes to encoding numeric and multimodal data. For our task, current LLMs perform worse than a more traditional XGBoost architecture that combines fundamental and macroeconomic data with high-density text-based embedding features.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.05475v1">Retrieval-Augmented Generation by Evidence Retroactivity in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-07
+    </div>
+    <details class="paper-abstract">
+      Retrieval-augmented generation has gained significant attention due to its ability to integrate relevant external knowledge, enhancing the accuracy and reliability of the LLMs' responses. Most of the existing methods apply a dynamic multiple retrieval-generating process, to address multi-hop complex questions by decomposing them into sub-problems. However, these methods rely on an unidirectional forward reasoning paradigm, where errors from insufficient reasoning steps or inherent flaws in current retrieval systems are irreversible, potentially derailing the entire reasoning chain. For the first time, this work introduces Retroactive Retrieval-Augmented Generation (RetroRAG), a novel framework to build a retroactive reasoning paradigm. RetroRAG revises and updates the evidence, redirecting the reasoning chain to the correct direction. RetroRAG constructs an evidence-collation-discovery framework to search, generate, and refine credible evidence. It synthesizes inferential evidence related to the key entities in the question from the existing source knowledge and formulates search queries to uncover additional information. As new evidence is found, RetroRAG continually updates and organizes this information, enhancing its ability to locate further necessary evidence. Paired with an Answerer to generate and evaluate outputs, RetroRAG is capable of refining its reasoning process iteratively until a reliable answer is obtained. Empirical evaluations show that RetroRAG significantly outperforms existing methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.03569v1">What Does a Software Engineer Look Like? Exploring Societal Stereotypes in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-01-07
+      | 💬 Accepted for publication in Software Engineering in Society (SEIS) in ICSE 2025
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have rapidly gained popularity and are being embedded into professional applications due to their capabilities in generating human-like content. However, unquestioned reliance on their outputs and recommendations can be problematic as LLMs can reinforce societal biases and stereotypes. This study investigates how LLMs, specifically OpenAI's GPT-4 and Microsoft Copilot, can reinforce gender and racial stereotypes within the software engineering (SE) profession through both textual and graphical outputs. We used each LLM to generate 300 profiles, consisting of 100 gender-based and 50 gender-neutral profiles, for a recruitment scenario in SE roles. Recommendations were generated for each profile and evaluated against the job requirements for four distinct SE positions. Each LLM was asked to select the top 5 candidates and subsequently the best candidate for each role. Each LLM was also asked to generate images for the top 5 candidates, providing a dataset for analysing potential biases in both text-based selections and visual representations. Our analysis reveals that both models preferred male and Caucasian profiles, particularly for senior roles, and favoured images featuring traits such as lighter skin tones, slimmer body types, and younger appearances. These findings highlight underlying societal biases influence the outputs of LLMs, contributing to narrow, exclusionary stereotypes that can further limit diversity and perpetuate inequities in the SE field. As LLMs are increasingly adopted within SE research and professional practices, awareness of these biases is crucial to prevent the reinforcement of discriminatory norms and to ensure that AI tools are leveraged to promote an inclusive and equitable engineering culture rather than hinder it.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.02155v2">CausalMob: Causal Human Mobility Prediction with LLMs-derived Human Intentions toward Public Events</a></div>
     <div class="paper-meta">
       📅 2025-01-07

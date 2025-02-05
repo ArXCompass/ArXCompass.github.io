@@ -46,6 +46,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.00173v1">Lifting by Gaussians: A Simple, Fast and Flexible Method for 3D Instance Segmentation</a></div>
+    <div class="paper-meta">
+      📅 2025-01-31
+      | 💬 Accepted to WACV 2025
+    </div>
+    <details class="paper-abstract">
+      We introduce Lifting By Gaussians (LBG), a novel approach for open-world instance segmentation of 3D Gaussian Splatted Radiance Fields (3DGS). Recently, 3DGS Fields have emerged as a highly efficient and explicit alternative to Neural Field-based methods for high-quality Novel View Synthesis. Our 3D instance segmentation method directly lifts 2D segmentation masks from SAM (alternately FastSAM, etc.), together with features from CLIP and DINOv2, directly fusing them onto 3DGS (or similar Gaussian radiance fields such as 2DGS). Unlike previous approaches, LBG requires no per-scene training, allowing it to operate seamlessly on any existing 3DGS reconstruction. Our approach is not only an order of magnitude faster and simpler than existing approaches; it is also highly modular, enabling 3D semantic segmentation of existing 3DGS fields without requiring a specific parametrization of the 3D Gaussians. Furthermore, our technique achieves superior semantic segmentation for 2D semantic novel view synthesis and 3D asset extraction results while maintaining flexibility and efficiency. We further introduce a novel approach to evaluate individually segmented 3D assets from 3D radiance field segmentation methods.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.18672v1">Drag Your Gaussian: Effective Drag-Based Editing with Score Distillation for 3D Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2025-01-30
