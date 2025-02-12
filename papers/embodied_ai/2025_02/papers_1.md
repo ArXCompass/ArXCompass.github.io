@@ -19,6 +19,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.06838v1">TorchResist: Open-Source Differentiable Resist Simulator</a></div>
+    <div class="paper-meta">
+      📅 2025-02-06
+      | 💬 SPIE Advanced Lithography + Patterning, 2025
+    </div>
+    <details class="paper-abstract">
+      Recent decades have witnessed remarkable advancements in artificial intelligence (AI), including large language models (LLMs), image and video generative models, and embodied AI systems. These advancements have led to an explosive increase in the demand for computational power, challenging the limits of Moore's Law. Optical lithography, a critical technology in semiconductor manufacturing, faces significant challenges due to its high costs. To address this, various lithography simulators have been developed. However, many of these simulators are limited by their inadequate photoresist modeling capabilities. This paper presents TorchResist, an open-source, differentiable photoresist simulator.TorchResist employs an analytical approach to model the photoresist process, functioning as a white-box system with at most twenty interpretable parameters. Leveraging modern differentiable programming techniques and parallel computing on GPUs, TorchResist enables seamless co-optimization with other tools across multiple related tasks. Our experimental results demonstrate that TorchResist achieves superior accuracy and efficiency compared to existing solutions. The source code is publicly available.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.20242v4">BadRobot: Jailbreaking Embodied LLMs in the Physical World</a></div>
     <div class="paper-meta">
       📅 2025-02-04
