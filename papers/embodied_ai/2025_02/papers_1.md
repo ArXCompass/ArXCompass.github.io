@@ -19,6 +19,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.09680v1">Object-Centric Latent Action Learning</a></div>
+    <div class="paper-meta">
+      📅 2025-02-13
+      | 💬 Preprint. In review
+    </div>
+    <details class="paper-abstract">
+      Leveraging vast amounts of internet video data for Embodied AI is currently bottle-necked by the lack of action annotations and the presence of action-correlated distractors. We propose a novel object-centric latent action learning approach, based on VideoSaur and LAPO, that employs self-supervised decomposition of scenes into object representations and annotates video data with proxy-action labels. This method effectively disentangles causal agent-object interactions from irrelevant background noise and reduces the performance degradation of latent action learning approaches caused by distractors. Our preliminary experiments with the Distracting Control Suite show that latent action pretraining based on object decompositions improve the quality of inferred latent actions by x2.7 and efficiency of downstream fine-tuning with a small set of labeled actions, increasing return by x2.6 on average.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.16633v2">POEX: Understanding and Mitigating Policy Executable Jailbreak Attacks against Embodied AI</a></div>
     <div class="paper-meta">
       📅 2025-02-10

@@ -38,6 +38,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.09624v1">Efficient and Trustworthy Block Propagation for Blockchain-enabled Mobile Embodied AI Networks: A Graph Resfusion Approach</a></div>
+    <div class="paper-meta">
+      📅 2025-01-26
+      | 💬 15 pages, 11 figures
+    </div>
+    <details class="paper-abstract">
+      By synergistically integrating mobile networks and embodied artificial intelligence (AI), Mobile Embodied AI Networks (MEANETs) represent an advanced paradigm that facilitates autonomous, context-aware, and interactive behaviors within dynamic environments. Nevertheless, the rapid development of MEANETs is accompanied by challenges in trustworthiness and operational efficiency. Fortunately, blockchain technology, with its decentralized and immutable characteristics, offers promising solutions for MEANETs. However, existing block propagation mechanisms suffer from challenges such as low propagation efficiency and weak security for block propagation, which results in delayed transmission of vehicular messages or vulnerability to malicious tampering, potentially causing severe traffic accidents in blockchain-enabled MEANETs. Moreover, current block propagation strategies cannot effectively adapt to real-time changes of dynamic topology in MEANETs. Therefore, in this paper, we propose a graph Resfusion model-based trustworthy block propagation optimization framework for consortium blockchain-enabled MEANETs. Specifically, we propose an innovative trust calculation mechanism based on the trust cloud model, which comprehensively accounts for randomness and fuzziness in the miner trust evaluation. Furthermore, by leveraging the strengths of graph neural networks and diffusion models, we develop a graph Resfusion model to effectively and adaptively generate the optimal block propagation trajectory. Simulation results demonstrate that the proposed model outperforms other routing mechanisms in terms of block propagation efficiency and trustworthiness. Additionally, the results highlight its strong adaptability to dynamic environments, making it particularly suitable for rapidly changing MEANETs.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.07468v2">From Screens to Scenes: A Survey of Embodied AI in Healthcare</a></div>
     <div class="paper-meta">
       📅 2025-01-24
