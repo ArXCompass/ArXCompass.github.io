@@ -9,6 +9,82 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11801v1">3D Gaussian Inpainting with Depth-Guided Cross-View Consistency</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+    </div>
+    <details class="paper-abstract">
+      When performing 3D inpainting using novel-view rendering methods like Neural Radiance Field (NeRF) or 3D Gaussian Splatting (3DGS), how to achieve texture and geometry consistency across camera views has been a challenge. In this paper, we propose a framework of 3D Gaussian Inpainting with Depth-Guided Cross-View Consistency (3DGIC) for cross-view consistent 3D inpainting. Guided by the rendered depth information from each training view, our 3DGIC exploits background pixels visible across different views for updating the inpainting mask, allowing us to refine the 3DGS for inpainting purposes.Through extensive experiments on benchmark datasets, we confirm that our 3DGIC outperforms current state-of-the-art 3D inpainting methods quantitatively and qualitatively.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11782v1">Exploring the Versal AI Engine for 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+    </div>
+    <details class="paper-abstract">
+      Dataflow-oriented spatial architectures are the emerging paradigm for higher computation performance and efficiency. AMD Versal AI Engine is a commercial spatial architecture consisting of tiles of VLIW processors supporting SIMD operations arranged in a two-dimensional mesh. The architecture requires the explicit design of task assignments and dataflow configurations for each tile to maximize performance, demanding advanced techniques and meticulous design. However, a few works revealed the performance characteristics of the Versal AI Engine through practical workloads. In this work, we provide the comprehensive performance evaluation of the Versal AI Engine using Gaussian feature computation in 3D Gaussian splatting as a practical workload, and we then propose a novel dedicated algorithm to fully exploit the hardware architecture. The computations of 3D Gaussian splatting include matrix multiplications and color computations utilizing high-dimensional spherical harmonic coefficients. These tasks are processed efficiently by leveraging the SIMD capabilities and their instruction-level parallelism. Additionally, pipelined processing is achieved by assigning different tasks to individual cores, thereby fully exploiting the spatial parallelism of AI Engines. The proposed method demonstrated a 226-fold throughput increase in simulation-based evaluation, outperforming a naive approach. These findings provide valuable insights for application development that effectively harnesses the spatial and architectural advantages of AI Engines.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11642v1">GaussianMotion: End-to-End Learning of Animatable Gaussian Avatars with Pose Guidance from Text</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+      | 💬 8 pages
+    </div>
+    <details class="paper-abstract">
+      In this paper, we introduce GaussianMotion, a novel human rendering model that generates fully animatable scenes aligned with textual descriptions using Gaussian Splatting. Although existing methods achieve reasonable text-to-3D generation of human bodies using various 3D representations, they often face limitations in fidelity and efficiency, or primarily focus on static models with limited pose control. In contrast, our method generates fully animatable 3D avatars by combining deformable 3D Gaussian Splatting with text-to-3D score distillation, achieving high fidelity and efficient rendering for arbitrary poses. By densely generating diverse random poses during optimization, our deformable 3D human model learns to capture a wide range of natural motions distilled from a pose-conditioned diffusion model in an end-to-end manner. Furthermore, we propose Adaptive Score Distillation that effectively balances realistic detail and smoothness to achieve optimal 3D results. Experimental results demonstrate that our approach outperforms existing baselines by producing high-quality textures in both static and animated results, and by generating diverse 3D human models from various textual inputs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.18643v2">3D Reconstruction of Shoes for Augmented Reality</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+    </div>
+    <details class="paper-abstract">
+      This paper introduces a mobile-based solution that enhances online shoe shopping through 3D modeling and Augmented Reality (AR), leveraging the efficiency of 3D Gaussian Splatting. Addressing the limitations of static 2D images, the framework generates realistic 3D shoe models from 2D images, achieving an average Peak Signal-to-Noise Ratio (PSNR) of 32, and enables immersive AR interactions via smartphones. A custom shoe segmentation dataset of 3120 images was created, with the best-performing segmentation model achieving an Intersection over Union (IoU) score of 0.95. This paper demonstrates the potential of 3D modeling and AR to revolutionize online shopping by offering realistic virtual interactions, with applicability across broader fashion categories.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.10988v1">OMG: Opacity Matters in Material Modeling with Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-02-16
+      | 💬 Published as a conference paper at ICLR 2025
+    </div>
+    <details class="paper-abstract">
+      Decomposing geometry, materials and lighting from a set of images, namely inverse rendering, has been a long-standing problem in computer vision and graphics. Recent advances in neural rendering enable photo-realistic and plausible inverse rendering results. The emergence of 3D Gaussian Splatting has boosted it to the next level by showing real-time rendering potentials. An intuitive finding is that the models used for inverse rendering do not take into account the dependency of opacity w.r.t. material properties, namely cross section, as suggested by optics. Therefore, we develop a novel approach that adds this dependency to the modeling itself. Inspired by radiative transfer, we augment the opacity term by introducing a neural network that takes as input material properties to provide modeling of cross section and a physically correct activation function. The gradients for material properties are therefore not only from color but also from opacity, facilitating a constraint for their optimization. Therefore, the proposed method incorporates more accurate physical properties compared to previous works. We implement our method into 3 different baselines that use Gaussian Splatting for inverse rendering and achieve significant improvements universally in terms of novel view synthesis and material modeling.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.10975v1">GS-GVINS: A Tightly-integrated GNSS-Visual-Inertial Navigation System Augmented by 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-02-16
+    </div>
+    <details class="paper-abstract">
+      Recently, the emergence of 3D Gaussian Splatting (3DGS) has drawn significant attention in the area of 3D map reconstruction and visual SLAM. While extensive research has explored 3DGS for indoor trajectory tracking using visual sensor alone or in combination with Light Detection and Ranging (LiDAR) and Inertial Measurement Unit (IMU), its integration with GNSS for large-scale outdoor navigation remains underexplored. To address these concerns, we proposed GS-GVINS: a tightly-integrated GNSS-Visual-Inertial Navigation System augmented by 3DGS. This system leverages 3D Gaussian as a continuous differentiable scene representation in largescale outdoor environments, enhancing navigation performance through the constructed 3D Gaussian map. Notably, GS-GVINS is the first GNSS-Visual-Inertial navigation application that directly utilizes the analytical jacobians of SE3 camera pose with respect to 3D Gaussians. To maintain the quality of 3DGS rendering in extreme dynamic states, we introduce a motionaware 3D Gaussian pruning mechanism, updating the map based on relative pose translation and the accumulated opacity along the camera ray. For validation, we test our system under different driving environments: open-sky, sub-urban, and urban. Both self-collected and public datasets are used for evaluation. The results demonstrate the effectiveness of GS-GVINS in enhancing navigation accuracy across diverse driving environments.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.10827v1">E-3DGS: Event-Based Novel View Rendering of Large-Scale Scenes Using 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-02-15
+      | 💬 15 pages, 10 figures and 3 tables; project page: https://4dqv.mpi-inf.mpg.de/E3DGS/; International Conference on 3D Vision (3DV) 2025
+    </div>
+    <details class="paper-abstract">
+      Novel view synthesis techniques predominantly utilize RGB cameras, inheriting their limitations such as the need for sufficient lighting, susceptibility to motion blur, and restricted dynamic range. In contrast, event cameras are significantly more resilient to these limitations but have been less explored in this domain, particularly in large-scale settings. Current methodologies primarily focus on front-facing or object-oriented (360-degree view) scenarios. For the first time, we introduce 3D Gaussians for event-based novel view synthesis. Our method reconstructs large and unbounded scenes with high visual quality. We contribute the first real and synthetic event datasets tailored for this setting. Our method demonstrates superior novel view synthesis and consistently outperforms the baseline EventNeRF by a margin of 11-25% in PSNR (dB) while being orders of magnitude faster in reconstruction and rendering.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.06019v2">GaussianSpa: An "Optimizing-Sparsifying" Simplification Framework for Compact and High-Quality 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-02-15
+      | 💬 Project page at https://noodle-lab.github.io/gaussianspa/
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has emerged as a mainstream for novel view synthesis, leveraging continuous aggregations of Gaussian functions to model scene geometry. However, 3DGS suffers from substantial memory requirements to store the multitude of Gaussians, hindering its practicality. To address this challenge, we introduce GaussianSpa, an optimization-based simplification framework for compact and high-quality 3DGS. Specifically, we formulate the simplification as an optimization problem associated with the 3DGS training. Correspondingly, we propose an efficient "optimizing-sparsifying" solution that alternately solves two independent sub-problems, gradually imposing strong sparsity onto the Gaussians in the training process. Our comprehensive evaluations on various datasets show the superiority of GaussianSpa over existing state-of-the-art approaches. Notably, GaussianSpa achieves an average PSNR improvement of 0.9 dB on the real-world Deep Blending dataset with 10$\times$ fewer Gaussians compared to the vanilla 3DGS. Our project page is available at https://noodle-lab.github.io/gaussianspa/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.09563v1">Self-Calibrating Gaussian Splatting for Large Field of View Reconstruction</a></div>
     <div class="paper-meta">
       📅 2025-02-13
@@ -65,6 +141,15 @@
     </div>
     <details class="paper-abstract">
       End-to-end autonomous driving with vision-only is not only more cost-effective compared to LiDAR-vision fusion but also more reliable than traditional methods. To achieve a economical and robust purely visual autonomous driving system, we propose RenderWorld, a vision-only end-to-end autonomous driving framework, which generates 3D occupancy labels using a self-supervised gaussian-based Img2Occ Module, then encodes the labels by AM-VAE, and uses world model for forecasting and planning. RenderWorld employs Gaussian Splatting to represent 3D scenes and render 2D images greatly improves segmentation accuracy and reduces GPU memory consumption compared with NeRF-based methods. By applying AM-VAE to encode air and non-air separately, RenderWorld achieves more fine-grained scene element representation, leading to state-of-the-art performance in both 4D occupancy forecasting and motion planning from autoregressive world model.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.10475v1">X-SG$^2$S: Safe and Generalizable Gaussian Splatting with X-dimensional Watermarks</a></div>
+    <div class="paper-meta">
+      📅 2025-02-13
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has been widely used in 3D reconstruction and 3D generation. Training to get a 3DGS scene often takes a lot of time and resources and even valuable inspiration. The increasing amount of 3DGS digital asset have brought great challenges to the copyright protection. However, it still lacks profound exploration targeted at 3DGS. In this paper, we propose a new framework X-SG$^2$S which can simultaneously watermark 1 to 3D messages while keeping the original 3DGS scene almost unchanged. Generally, we have a X-SG$^2$S injector for adding multi-modal messages simultaneously and an extractor for extract them. Specifically, we first split the watermarks into message patches in a fixed manner and sort the 3DGS points. A self-adaption gate is used to pick out suitable location for watermarking. Then use a XD(multi-dimension)-injection heads to add multi-modal messages into sorted 3DGS points. A learnable gate can recognize the location with extra messages and XD-extraction heads can restore hidden messages from the location recommended by the learnable gate. Extensive experiments demonstrated that the proposed X-SG$^2$S can effectively conceal multi modal messages without changing pretrained 3DGS pipeline or the original form of 3DGS parameters. Meanwhile, with simple and efficient model structure and high practicality, X-SG$^2$S still shows good performance in hiding and extracting multi-modal inner structured or unstructured messages. X-SG$^2$S is the first to unify 1 to 3D watermarking model for 3DGS and the first framework to add multi-modal watermarks simultaneous in one 3DGS which pave the wave for later researches.
     </details>
 </div>
 <div class="paper-card">

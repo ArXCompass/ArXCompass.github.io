@@ -9,6 +9,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.09278v2">ConsistentDreamer: View-Consistent Meshes Through Balanced Multi-View Gaussian Optimization</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+      | 💬 Manuscript accepted by Pattern Recognition Letters
+    </div>
+    <details class="paper-abstract">
+      Recent advances in diffusion models have significantly improved 3D generation, enabling the use of assets generated from an image for embodied AI simulations. However, the one-to-many nature of the image-to-3D problem limits their use due to inconsistent content and quality across views. Previous models optimize a 3D model by sampling views from a view-conditioned diffusion prior, but diffusion models cannot guarantee view consistency. Instead, we present ConsistentDreamer, where we first generate a set of fixed multi-view prior images and sample random views between them with another diffusion model through a score distillation sampling (SDS) loss. Thereby, we limit the discrepancies between the views guided by the SDS loss and ensure a consistent rough shape. In each iteration, we also use our generated multi-view prior images for fine-detail reconstruction. To balance between the rough shape and the fine-detail optimizations, we introduce dynamic task-dependent weights based on homoscedastic uncertainty, updated automatically in each iteration. Additionally, we employ opacity, depth distortion, and normal alignment losses to refine the surface for mesh extraction. Our method ensures better view consistency and visual quality compared to the state-of-the-art.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11859v1">Defining and Evaluating Visual Language Models' Basic Spatial Abilities: A Perspective from Psychometrics</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+    </div>
+    <details class="paper-abstract">
+      The Theory of Multiple Intelligences underscores the hierarchical nature of cognitive capabilities. To advance Spatial Artificial Intelligence, we pioneer a psychometric framework defining five Basic Spatial Abilities (BSAs) in Visual Language Models (VLMs): Spatial Perception, Spatial Relation, Spatial Orientation, Mental Rotation, and Spatial Visualization. Benchmarking 13 mainstream VLMs through nine validated psychometric experiments reveals significant gaps versus humans (average score 24.95 vs. 68.38), with three key findings: 1) VLMs mirror human hierarchies (strongest in 2D orientation, weakest in 3D rotation) with independent BSAs (Pearson's r<0.4); 2) Smaller models such as Qwen2-VL-7B surpass larger counterparts, with Qwen leading (30.82) and InternVL2 lagging (19.6); 3) Interventions like chain-of-thought (0.100 accuracy gain) and 5-shot training (0.259 improvement) show limits from architectural constraints. Identified barriers include weak geometry encoding and missing dynamic simulation. By linking psychometric BSAs to VLM capabilities, we provide a diagnostic toolkit for spatial intelligence evaluation, methodological foundations for embodied AI development, and a cognitive science-informed roadmap for achieving human-like spatial intelligence.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11518v1">Generative Multi-Agent Collaboration in Embodied AI: A Systematic Review</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+      | 💬 18 pages
+    </div>
+    <details class="paper-abstract">
+      Embodied multi-agent systems (EMAS) have attracted growing attention for their potential to address complex, real-world challenges in areas such as logistics and robotics. Recent advances in foundation models pave the way for generative agents capable of richer communication and adaptive problem-solving. This survey provides a systematic examination of how EMAS can benefit from these generative capabilities. We propose a taxonomy that categorizes EMAS by system architectures and embodiment modalities, emphasizing how collaboration spans both physical and virtual contexts. Central building blocks, perception, planning, communication, and feedback, are then analyzed to illustrate how generative techniques bolster system robustness and flexibility. Through concrete examples, we demonstrate the transformative effects of integrating foundation models into embodied, multi-agent frameworks. Finally, we discuss challenges and future directions, underlining the significant promise of EMAS to reshape the landscape of AI-driven collaboration.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.09278v1">ConsistentDreamer: View-Consistent Meshes Through Balanced Multi-View Gaussian Optimization</a></div>
     <div class="paper-meta">
       📅 2025-02-13
