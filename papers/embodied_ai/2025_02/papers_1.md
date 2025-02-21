@@ -9,12 +9,30 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.11859v2">Defining and Evaluating Visual Language Models' Basic Spatial Abilities: A Perspective from Psychometrics</a></div>
+    <div class="paper-meta">
+      📅 2025-02-20
+    </div>
+    <details class="paper-abstract">
+      The Theory of Multiple Intelligences underscores the hierarchical nature of cognitive capabilities. To advance Spatial Artificial Intelligence, we pioneer a psychometric framework defining five Basic Spatial Abilities (BSAs) in Visual Language Models (VLMs): Spatial Perception, Spatial Relation, Spatial Orientation, Mental Rotation, and Spatial Visualization. Benchmarking 13 mainstream VLMs through nine validated psychometric experiments reveals significant gaps versus humans (average score 24.95 vs. 68.38), with three key findings: 1) VLMs mirror human hierarchies (strongest in 2D orientation, weakest in 3D rotation) with independent BSAs (Pearson's r<0.4); 2) Smaller models such as Qwen2-VL-7B surpass larger counterparts, with Qwen leading (30.82) and InternVL2 lagging (19.6); 3) Interventions like chain-of-thought (0.100 accuracy gain) and 5-shot training (0.259 improvement) show limits from architectural constraints. Identified barriers include weak geometry encoding and missing dynamic simulation. By linking psychometric BSAs to VLM capabilities, we provide a diagnostic toolkit for spatial intelligence evaluation, methodological foundations for embodied AI development, and a cognitive science-informed roadmap for achieving human-like spatial intelligence.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.13451v1">MapNav: A Novel Memory Representation via Annotated Semantic Maps for VLM-based Vision-and-Language Navigation</a></div>
     <div class="paper-meta">
       📅 2025-02-19
     </div>
     <details class="paper-abstract">
       Vision-and-language navigation (VLN) is a key task in Embodied AI, requiring agents to navigate diverse and unseen environments while following natural language instructions. Traditional approaches rely heavily on historical observations as spatio-temporal contexts for decision making, leading to significant storage and computational overhead. In this paper, we introduce MapNav, a novel end-to-end VLN model that leverages Annotated Semantic Map (ASM) to replace historical frames. Specifically, our approach constructs a top-down semantic map at the start of each episode and update it at each timestep, allowing for precise object mapping and structured navigation information. Then, we enhance this map with explicit textual labels for key regions, transforming abstract semantics into clear navigation cues and generate our ASM. MapNav agent using the constructed ASM as input, and use the powerful end-to-end capabilities of VLM to empower VLN. Extensive experiments demonstrate that MapNav achieves state-of-the-art (SOTA) performance in both simulated and real-world environments, validating the effectiveness of our method. Moreover, we will release our ASM generation source code and dataset to ensure reproducibility, contributing valuable resources to the field. We believe that our proposed MapNav can be used as a new memory representation method in VLN, paving the way for future research in this field.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.12977v3">MindForge: Empowering Embodied Agents with Theory of Mind for Lifelong Collaborative Learning</a></div>
+    <div class="paper-meta">
+      📅 2025-02-19
+    </div>
+    <details class="paper-abstract">
+      Contemporary embodied agents powered by large language models (LLMs), such as Voyager, have shown promising capabilities in individual learning within open-ended environments like Minecraft. However, when powered by open LLMs, they struggle with basic tasks even after domain-specific fine-tuning. We present MindForge, a generative-agent framework for collaborative lifelong learning through explicit perspective taking. We introduce three key innovations: (1) a structured theory of mind representation linking percepts, beliefs, desires, and actions; (2) natural interagent communication; and (3) a multicomponent memory system. In Minecraft experiments, MindForge agents powered by open-weight LLMs significantly outperform their Voyager counterparts in basic tasks where traditional Voyager fails without GPT-4, collecting $2.3\times$ more unique items and achieving $3\times$ more tech-tree milestones, advancing from basic wood tools to advanced iron equipment. MindForge agents demonstrate sophisticated behaviors, including expert-novice knowledge transfer, collaborative problem solving, and adaptation to out-of-distribution tasks through accumulated collaborative experiences. MindForge advances the democratization of embodied AI development through open-ended social learning, enabling peer-to-peer knowledge sharing.
     </details>
 </div>
 <div class="paper-card">
