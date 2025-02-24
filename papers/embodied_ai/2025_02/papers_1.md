@@ -9,6 +9,15 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.13451v2">MapNav: A Novel Memory Representation via Annotated Semantic Maps for VLM-based Vision-and-Language Navigation</a></div>
+    <div class="paper-meta">
+      📅 2025-02-21
+    </div>
+    <details class="paper-abstract">
+      Vision-and-language navigation (VLN) is a key task in Embodied AI, requiring agents to navigate diverse and unseen environments while following natural language instructions. Traditional approaches rely heavily on historical observations as spatio-temporal contexts for decision making, leading to significant storage and computational overhead. In this paper, we introduce MapNav, a novel end-to-end VLN model that leverages Annotated Semantic Map (ASM) to replace historical frames. Specifically, our approach constructs a top-down semantic map at the start of each episode and update it at each timestep, allowing for precise object mapping and structured navigation information. Then, we enhance this map with explicit textual labels for key regions, transforming abstract semantics into clear navigation cues and generate our ASM. MapNav agent using the constructed ASM as input, and use the powerful end-to-end capabilities of VLM to empower VLN. Extensive experiments demonstrate that MapNav achieves state-of-the-art (SOTA) performance in both simulated and real-world environments, validating the effectiveness of our method. Moreover, we will release our ASM generation source code and dataset to ensure reproducibility, contributing valuable resources to the field. We believe that our proposed MapNav can be used as a new memory representation method in VLN, paving the way for future research in this field.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.11859v2">Defining and Evaluating Visual Language Models' Basic Spatial Abilities: A Perspective from Psychometrics</a></div>
     <div class="paper-meta">
       📅 2025-02-20
@@ -33,6 +42,15 @@
     </div>
     <details class="paper-abstract">
       Contemporary embodied agents powered by large language models (LLMs), such as Voyager, have shown promising capabilities in individual learning within open-ended environments like Minecraft. However, when powered by open LLMs, they struggle with basic tasks even after domain-specific fine-tuning. We present MindForge, a generative-agent framework for collaborative lifelong learning through explicit perspective taking. We introduce three key innovations: (1) a structured theory of mind representation linking percepts, beliefs, desires, and actions; (2) natural interagent communication; and (3) a multicomponent memory system. In Minecraft experiments, MindForge agents powered by open-weight LLMs significantly outperform their Voyager counterparts in basic tasks where traditional Voyager fails without GPT-4, collecting $2.3\times$ more unique items and achieving $3\times$ more tech-tree milestones, advancing from basic wood tools to advanced iron equipment. MindForge agents demonstrate sophisticated behaviors, including expert-novice knowledge transfer, collaborative problem solving, and adaptation to out-of-distribution tasks through accumulated collaborative experiences. MindForge advances the democratization of embodied AI development through open-ended social learning, enabling peer-to-peer knowledge sharing.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2502.14917v1">Sce2DriveX: A Generalized MLLM Framework for Scene-to-Drive Learning</a></div>
+    <div class="paper-meta">
+      📅 2025-02-19
+    </div>
+    <details class="paper-abstract">
+      End-to-end autonomous driving, which directly maps raw sensor inputs to low-level vehicle controls, is an important part of Embodied AI. Despite successes in applying Multimodal Large Language Models (MLLMs) for high-level traffic scene semantic understanding, it remains challenging to effectively translate these conceptual semantics understandings into low-level motion control commands and achieve generalization and consensus in cross-scene driving. We introduce Sce2DriveX, a human-like driving chain-of-thought (CoT) reasoning MLLM framework. Sce2DriveX utilizes multimodal joint learning from local scene videos and global BEV maps to deeply understand long-range spatiotemporal relationships and road topology, enhancing its comprehensive perception and reasoning capabilities in 3D dynamic/static scenes and achieving driving generalization across scenes. Building on this, it reconstructs the implicit cognitive chain inherent in human driving, covering scene understanding, meta-action reasoning, behavior interpretation analysis, motion planning and control, thereby further bridging the gap between autonomous driving and human thought processes. To elevate model performance, we have developed the first extensive Visual Question Answering (VQA) driving instruction dataset tailored for 3D spatial understanding and long-axis task reasoning. Extensive experiments demonstrate that Sce2DriveX achieves state-of-the-art performance from scene understanding to end-to-end driving, as well as robust generalization on the CARLA Bench2Drive benchmark.
     </details>
 </div>
 <div class="paper-card">
