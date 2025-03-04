@@ -306,6 +306,34 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.09724v2">Taming Overconfidence in LLMs: Reward Calibration in RLHF</a></div>
+    <div class="paper-meta">
+      📅 2025-02-28
+    </div>
+    <details class="paper-abstract">
+      Language model calibration refers to the alignment between the confidence of the model and the actual performance of its responses. While previous studies point out the overconfidence phenomenon in Large Language Models (LLMs) and show that LLMs trained with Reinforcement Learning from Human Feedback (RLHF) are overconfident with a more sharpened output probability, in this study, we reveal that RLHF tends to lead models to express verbalized overconfidence in their own responses. We investigate the underlying cause of this overconfidence and demonstrate that reward models used for Proximal Policy Optimization (PPO) exhibit inherent biases towards high-confidence scores regardless of the actual quality of responses. Building upon this insight, we propose two PPO variants: PPO-M: PPO with Calibrated Reward Modeling and PPO-C: PPO with Calibrated Reward Calculation. PPO-M integrates explicit confidence scores in reward model training, which calibrates reward models to better capture the alignment between response quality and verbalized confidence. PPO-C adjusts the reward score during PPO based on the difference between the current reward and the exponential average of past rewards. Both PPO-M and PPO-C can be seamlessly integrated into the current PPO pipeline and do not require additional golden labels. We evaluate our methods on both Llama3-8B and Mistral-7B across six diverse datasets including multiple-choice and open-ended generation. Experimental results demonstrate that both of our methods can reduce calibration error and maintain performance comparable to standard PPO. We further show that they could preserve model capabilities in open-ended conversational settings.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.10860v2">Zero-shot and Few-shot Learning with Instruction-following LLMs for Claim Matching in Automated Fact-checking</a></div>
+    <div class="paper-meta">
+      📅 2025-02-28
+      | 💬 Published at the 31st International Conference on Computational Linguistics (COLING 2025). Compared to the conference version of the paper, the dataset link is added here & 2 minor typos fixed
+    </div>
+    <details class="paper-abstract">
+      The claim matching (CM) task can benefit an automated fact-checking pipeline by putting together claims that can be resolved with the same fact-check. In this work, we are the first to explore zero-shot and few-shot learning approaches to the task. We consider CM as a binary classification task and experiment with a set of instruction-following large language models (GPT-3.5-turbo, Gemini-1.5-flash, Mistral-7B-Instruct, and Llama-3-8B-Instruct), investigating prompt templates. We introduce a new CM dataset, ClaimMatch, which will be released upon acceptance. We put LLMs to the test in the CM task and find that it can be tackled by leveraging more mature yet similar tasks such as natural language inference or paraphrase detection. We also propose a pipeline for CM, which we evaluate on texts of different lengths.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.14953v4">MallowsPO: Fine-Tune Your LLM with Preference Dispersions</a></div>
+    <div class="paper-meta">
+      📅 2025-02-28
+    </div>
+    <details class="paper-abstract">
+      Direct Preference Optimization (DPO) has recently emerged as a popular approach to improve reinforcement learning with human feedback (RLHF), leading to better techniques to fine-tune large language models (LLM). A weakness of DPO, however, lies in its lack of capability to characterize the diversity of human preferences. Inspired by Mallows' theory of preference ranking, we develop in this paper a new approach, the MallowsPO. A distinct feature of this approach is a dispersion index, which reflects the dispersion of human preference to prompts. We show that existing DPO models can be reduced to special cases of this dispersion index, thus unified with MallowsPO. More importantly, we demonstrate (empirically) how to use this dispersion index to enhance the performance of DPO in a broad array of benchmark tasks, from synthetic bandit selection to controllable generations and dialogues, while maintaining great generalization capabilities. MallowsPO is also compatible with other SOTA offline preference optimization methods, boosting nearly 2\% extra LC win rate when used as a plugin for fine-tuning Llama3-Instruct.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.20383v1">Why Are Web AI Agents More Vulnerable Than Standalone LLMs? A Security Analysis</a></div>
     <div class="paper-meta">
       📅 2025-02-27
@@ -930,34 +958,5 @@
     </div>
     <details class="paper-abstract">
       Large language models (LLMs) should undergo rigorous audits to identify potential risks, such as copyright and privacy infringements. Once these risks emerge, timely updates are crucial to remove undesirable responses, ensuring legal and safe model usage. It has spurred recent research into LLM unlearning, focusing on erasing targeted undesirable knowledge without compromising the integrity of other, non-targeted responses. Existing studies have introduced various unlearning objectives to pursue LLM unlearning without necessitating complete retraining. However, each of these objectives has unique properties, and no unified framework is currently available to comprehend them thoroughly. To fill the gap, we propose a toolkit of the gradient effect (G-effect), quantifying the impacts of unlearning objectives on model performance from a gradient perspective. A notable advantage is its broad ability to detail the unlearning impacts from various aspects across instances, updating steps, and LLM layers. Accordingly, the G-effect offers new insights into identifying drawbacks of existing unlearning objectives, further motivating us to explore a series of new solutions for their mitigation and improvements. Finally, we outline promising directions that merit further studies, aiming at contributing to the community to advance this important field.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2502.19295v1">Complex LLM Planning via Automated Heuristics Discovery</a></div>
-    <div class="paper-meta">
-      📅 2025-02-26
-    </div>
-    <details class="paper-abstract">
-      We consider enhancing large language models (LLMs) for complex planning tasks. While existing methods allow LLMs to explore intermediate steps to make plans, they either depend on unreliable self-verification or external verifiers to evaluate these steps, which demand significant data and computations. Here, we propose automated heuristics discovery (AutoHD), a novel approach that enables LLMs to explicitly generate heuristic functions to guide inference-time search, allowing accurate evaluation of intermediate states. These heuristic functions are further refined through a heuristic evolution process, improving their robustness and effectiveness. Our proposed method requires no additional model training or fine-tuning, and the explicit definition of heuristic functions generated by the LLMs provides interpretability and insights into the reasoning process. Extensive experiments across diverse benchmarks demonstrate significant gains over multiple baselines, including nearly twice the accuracy on some datasets, establishing our approach as a reliable and interpretable solution for complex planning tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.02764v2">Drawing Pandas: A Benchmark for LLMs in Generating Plotting Code</a></div>
-    <div class="paper-meta">
-      📅 2025-02-26
-      | 💬 5 pages
-    </div>
-    <details class="paper-abstract">
-      This paper introduces the human-curated PandasPlotBench dataset, designed to evaluate language models' effectiveness as assistants in visual data exploration. Our benchmark focuses on generating code for visualizing tabular data - such as a Pandas DataFrame - based on natural language instructions, complementing current evaluation tools and expanding their scope. The dataset includes 175 unique tasks. Our experiments assess several leading Large Language Models (LLMs) across three visualization libraries: Matplotlib, Seaborn, and Plotly. We show that the shortening of tasks has a minimal effect on plotting capabilities, allowing for the user interface that accommodates concise user input without sacrificing functionality or accuracy. Another of our findings reveals that while LLMs perform well with popular libraries like Matplotlib and Seaborn, challenges persist with Plotly, highlighting areas for improvement. We hope that the modular design of our benchmark will broaden the current studies on generating visualizations. Our dataset and benchmark code are available online: https://huggingface.co/datasets/JetBrains-Research/PandasPlotBench; https://github.com/JetBrains-Research/PandasPlotBench.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2502.19211v1">Negation-Induced Forgetting in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-02-26
-      | 💬 ISCA/ITG Workshop on Diversity in Large Speech and Language Models
-    </div>
-    <details class="paper-abstract">
-      The study explores whether Large Language Models (LLMs) exhibit negation-induced forgetting (NIF), a cognitive phenomenon observed in humans where negating incorrect attributes of an object or event leads to diminished recall of this object or event compared to affirming correct attributes (Mayo et al., 2014; Zang et al., 2023). We adapted Zang et al. (2023) experimental framework to test this effect in ChatGPT-3.5, GPT-4o mini and Llama3-70b-instruct. Our results show that ChatGPT-3.5 exhibits NIF, with negated information being less likely to be recalled than affirmed information. GPT-4o-mini showed a marginally significant NIF effect, while LLaMA-3-70B did not exhibit NIF. The findings provide initial evidence of negation-induced forgetting in some LLMs, suggesting that similar cognitive biases may emerge in these models. This work is a preliminary step in understanding how memory-related phenomena manifest in LLMs.
     </details>
 </div>
