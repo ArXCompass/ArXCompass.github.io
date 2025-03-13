@@ -45,6 +45,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.08158v2">EmBARDiment: an Embodied AI Agent for Productivity in XR</a></div>
+    <div class="paper-meta">
+      📅 2025-03-11
+    </div>
+    <details class="paper-abstract">
+      XR devices running chat-bots powered by Large Language Models (LLMs) have the to become always-on agents that enable much better productivity scenarios. Current screen based chat-bots do not take advantage of the the full-suite of natural inputs available in XR, including inward facing sensor data, instead they over-rely on explicit voice or text prompts, sometimes paired with multi-modal data dropped as part of the query. We propose a solution that leverages an attention framework that derives context implicitly from user actions, eye-gaze, and contextual memory within the XR environment. Our work minimizes the need for engineered explicit prompts, fostering grounded and intuitive interactions that glean user insights for the chat-bot.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.18041v4">OpenFly: A Versatile Toolchain and Large-scale Benchmark for Aerial Vision-Language Navigation</a></div>
     <div class="paper-meta">
       📅 2025-03-08
