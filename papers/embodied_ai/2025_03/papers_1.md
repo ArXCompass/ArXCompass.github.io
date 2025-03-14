@@ -9,6 +9,53 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.14993v2">Making Every Frame Matter: Continuous Activity Recognition in Streaming Video via Adaptive Video Context Modeling</a></div>
+    <div class="paper-meta">
+      📅 2025-03-13
+    </div>
+    <details class="paper-abstract">
+      Video activity recognition has become increasingly important in robots and embodied AI. Recognizing continuous video activities poses considerable challenges due to the fast expansion of streaming video, which contains multi-scale and untrimmed activities. We introduce a novel system, CARS, to overcome these issues through adaptive video context modeling. Adaptive video context modeling refers to selectively maintaining activity-related features in temporal and spatial dimensions. CARS has two key designs. The first is an activity spatial feature extraction by eliminating irrelevant visual features while maintaining recognition accuracy. The second is an activity-aware state update introducing dynamic adaptability to better preserve the video context for multi-scale activity recognition. Our CARS runs at speeds $>$30 FPS on typical edge devices and outperforms all baselines by 1.2\% to 79.7\% in accuracy. Moreover, we explore applying CARS to a large video model as a video encoder. Experimental results show that our CARS can result in a 0.46-point enhancement (on a 5-point scale) on the in-distribution video activity dataset, and an improvement ranging from 1.19\% to 4\% on zero-shot video activity datasets.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.10307v1">6D Object Pose Tracking in Internet Videos for Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-03-13
+      | 💬 Accepted to ICLR 2025. Project page available at https://ponimatkin.github.io/wildpose/
+    </div>
+    <details class="paper-abstract">
+      We seek to extract a temporally consistent 6D pose trajectory of a manipulated object from an Internet instructional video. This is a challenging set-up for current 6D pose estimation methods due to uncontrolled capturing conditions, subtle but dynamic object motions, and the fact that the exact mesh of the manipulated object is not known. To address these challenges, we present the following contributions. First, we develop a new method that estimates the 6D pose of any object in the input image without prior knowledge of the object itself. The method proceeds by (i) retrieving a CAD model similar to the depicted object from a large-scale model database, (ii) 6D aligning the retrieved CAD model with the input image, and (iii) grounding the absolute scale of the object with respect to the scene. Second, we extract smooth 6D object trajectories from Internet videos by carefully tracking the detected objects across video frames. The extracted object trajectories are then retargeted via trajectory optimization into the configuration space of a robotic manipulator. Third, we thoroughly evaluate and ablate our 6D pose estimation method on YCB-V and HOPE-Video datasets as well as a new dataset of instructional videos manually annotated with approximate 6D object trajectories. We demonstrate significant improvements over existing state-of-the-art RGB 6D pose estimation methods. Finally, we show that the 6D object motion estimated from Internet videos can be transferred to a 7-axis robotic manipulator both in a virtual simulator as well as in a real world set-up. We also successfully apply our method to egocentric videos taken from the EPIC-KITCHENS dataset, demonstrating potential for Embodied AI applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.15658v2">Long-horizon Embodied Planning with Implicit Logical Inference and Hallucination Mitigation</a></div>
+    <div class="paper-meta">
+      📅 2025-03-13
+    </div>
+    <details class="paper-abstract">
+      Long-horizon embodied planning underpins embodied AI. To accomplish long-horizon tasks, one of the most feasible ways is to decompose abstract instructions into a sequence of actionable steps. Foundation models still face logical errors and hallucinations in long-horizon planning, unless provided with highly relevant examples to the tasks. However, providing highly relevant examples for any random task is unpractical. Therefore, we present ReLEP, a novel framework for Real-time Long-horizon Embodied Planning. ReLEP can complete a wide range of long-horizon tasks without in-context examples by learning implicit logical inference through fine-tuning. The fine-tuned large vision-language model formulates plans as sequences of skill functions. These functions are selected from a carefully designed skill library. ReLEP is also equipped with a Memory module for plan and status recall, and a Robot Configuration module for versatility across robot types. In addition, we propose a data generation pipeline to tackle dataset scarcity. When constructing the dataset, we considered the implicit logical relationships, enabling the model to learn implicit logical relationships and dispel hallucinations. Through comprehensive evaluations across various long-horizon tasks, ReLEP demonstrates high success rates and compliance to execution even on unseen tasks and outperforms state-of-the-art baseline methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.10070v1">AhaRobot: A Low-Cost Open-Source Bimanual Mobile Manipulator for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-03-13
+      | 💬 The first two authors contributed equally. Website: https://aha-robot.github.io
+    </div>
+    <details class="paper-abstract">
+      Navigation and manipulation in open-world environments remain unsolved challenges in the Embodied AI. The high cost of commercial mobile manipulation robots significantly limits research in real-world scenes. To address this issue, we propose AhaRobot, a low-cost and fully open-source dual-arm mobile manipulation robot system with a hardware cost of only $1,000 (excluding optional computational resources), which is less than 1/15 of the cost of popular mobile robots. The AhaRobot system consists of three components: (1) a novel low-cost hardware architecture primarily composed of off-the-shelf components, (2) an optimized control solution to enhance operational precision integrating dual-motor backlash control and static friction compensation, and (3) a simple remote teleoperation method RoboPilot. We use handles to control the dual arms and pedals for whole-body movement. The teleoperation process is low-burden and easy to operate, much like piloting. RoboPilot is designed for remote data collection in embodied scenarios. Experimental results demonstrate that RoboPilot significantly enhances data collection efficiency in complex manipulation tasks, achieving a 30% increase compared to methods using 3D mouse and leader-follower systems. It also excels at completing extremely long-horizon tasks in one go. Furthermore, AhaRobot can be used to learn end-to-end policies and autonomously perform complex manipulation tasks, such as pen insertion and cleaning up the floor. We aim to build an affordable yet powerful platform to promote the development of embodied tasks on real devices, advancing more robust and reliable embodied AI. All hardware and software systems are available at https://aha-robot.github.io.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.08306v2">Reasoning in visual navigation of end-to-end trained agents: a dynamical systems approach</a></div>
+    <div class="paper-meta">
+      📅 2025-03-12
+    </div>
+    <details class="paper-abstract">
+      Progress in Embodied AI has made it possible for end-to-end-trained agents to navigate in photo-realistic environments with high-level reasoning and zero-shot or language-conditioned behavior, but benchmarks are still dominated by simulation. In this work, we focus on the fine-grained behavior of fast-moving real robots and present a large-scale experimental study involving \numepisodes{} navigation episodes in a real environment with a physical robot, where we analyze the type of reasoning emerging from end-to-end training. In particular, we study the presence of realistic dynamics which the agent learned for open-loop forecasting, and their interplay with sensing. We analyze the way the agent uses latent memory to hold elements of the scene structure and information gathered during exploration. We probe the planning capabilities of the agent, and find in its memory evidence for somewhat precise plans over a limited horizon. Furthermore, we show in a post-hoc analysis that the value function learned by the agent relates to long-term planning. Put together, our experiments paint a new picture on how using tools from computer vision and sequential decision making have led to new capabilities in robotics and control. An interactive tool is available at europe.naverlabs.com/research/publications/reasoning-in-visual-navigation-of-end-to-end-trained-agents.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.06843v4">HO-Cap: A Capture System and Dataset for 3D Reconstruction and Pose Tracking of Hand-Object Interaction</a></div>
     <div class="paper-meta">
       📅 2025-03-11
