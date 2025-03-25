@@ -9,6 +9,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.18016v1">Retrieval Augmented Generation and Understanding in Vision: A Survey and New Outlook</a></div>
+    <div class="paper-meta">
+      📅 2025-03-23
+      | 💬 19 pages, 10 figures
+    </div>
+    <details class="paper-abstract">
+      Retrieval-augmented generation (RAG) has emerged as a pivotal technique in artificial intelligence (AI), particularly in enhancing the capabilities of large language models (LLMs) by enabling access to external, reliable, and up-to-date knowledge sources. In the context of AI-Generated Content (AIGC), RAG has proven invaluable by augmenting model outputs with supplementary, relevant information, thus improving their quality. Recently, the potential of RAG has extended beyond natural language processing, with emerging methods integrating retrieval-augmented strategies into the computer vision (CV) domain. These approaches aim to address the limitations of relying solely on internal model knowledge by incorporating authoritative external knowledge bases, thereby improving both the understanding and generation capabilities of vision models. This survey provides a comprehensive review of the current state of retrieval-augmented techniques in CV, focusing on two main areas: (I) visual understanding and (II) visual generation. In the realm of visual understanding, we systematically review tasks ranging from basic image recognition to complex applications such as medical report generation and multimodal question answering. For visual content generation, we examine the application of RAG in tasks related to image, video, and 3D generation. Furthermore, we explore recent advancements in RAG for embodied AI, with a particular focus on applications in planning, task execution, multimodal perception, interaction, and specialized domains. Given that the integration of retrieval-augmented techniques in CV is still in its early stages, we also highlight the key limitations of current approaches and propose future research directions to drive the development of this promising area.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.07376v2">NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2025-03-22
+      | 💬 Accepted by TPAMI 2025
+    </div>
+    <details class="paper-abstract">
+      Vision-and-Language Navigation (VLN), as a crucial research problem of Embodied AI, requires an embodied agent to navigate through complex 3D environments following natural language instructions. Recent research has highlighted the promising capacity of large language models (LLMs) in VLN by improving navigational reasoning accuracy and interpretability. However, their predominant use in an offline manner usually suffers from substantial domain gap between the VLN task and the LLM training corpus. This paper introduces a novel strategy called Navigational Chain-of-Thought (NavCoT), where we fulfill parameter-efficient in-domain training to enable self-guided navigational decision, leading to a significant mitigation of the domain gap in a cost-effective manner. Specifically, at each timestep, the LLM is prompted to forecast the navigational chain-of-thought by: 1) acting as a world model to imagine the next observation according to the instruction, 2) selecting the candidate observation that best aligns with the imagination, and 3) determining the action based on the reasoning from the prior steps. Through constructing formalized labels for training, the LLM can learn to generate desired and reasonable chain-of-thought outputs for improving the action decision. Experimental results across various training settings and popular VLN benchmarks (e.g., Room-to-Room (R2R), Room-across-Room (RxR), Room-for-Room (R4R)) show the significant superiority of NavCoT over the direct action prediction variants. Through simple parameter-efficient finetuning, our NavCoT outperforms a recent GPT4-based approach with ~7% relative improvement on the R2R dataset. We believe that NavCoT will help unlock more task-adaptive and scalable LLM-based embodied agents, which are helpful for developing real-world robotics applications. Code is available at https://github.com/expectorlin/NavCoT.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.13927v2">Multimodal 3D Reasoning Segmentation with Complex Scenes</a></div>
+    <div class="paper-meta">
+      📅 2025-03-22
+    </div>
+    <details class="paper-abstract">
+      The recent development in multimodal learning has greatly advanced the research in 3D scene understanding in various real-world tasks such as embodied AI. However, most existing work shares two typical constraints: 1) they are short of reasoning ability for interaction and interpretation of human intension and 2) they focus on scenarios with single-category objects only which leads to over-simplified textual descriptions due to the negligence of multi-object scenarios and spatial relations among objects. We bridge the research gaps by proposing a 3D reasoning segmentation task for multiple objects in scenes. The task allows producing 3D segmentation masks and detailed textual explanations as enriched by 3D spatial relations among objects. To this end, we create ReasonSeg3D, a large-scale and high-quality benchmark that integrates 3D segmentation masks and 3D spatial relations with generated question-answer pairs. In addition, we design MORE3D, a novel 3D reasoning network that works with queries of multiple objects and tailored 3D scene understanding designs. MORE3D learns detailed explanations on 3D relations and employs them to capture spatial information of objects and reason textual outputs. Extensive experiments show that MORE3D excels in reasoning and segmenting complex multi-object 3D scenes, and the created ReasonSeg3D offers a valuable platform for future exploration of 3D reasoning segmentation. The dataset and code will be released.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.18600v2">ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</a></div>
     <div class="paper-meta">
       📅 2025-03-21
