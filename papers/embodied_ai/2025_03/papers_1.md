@@ -9,6 +9,24 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.21232v1">Knowledge Graphs as World Models for Semantic Material-Aware Obstacle Handling in Autonomous Vehicles</a></div>
+    <div class="paper-meta">
+      📅 2025-03-27
+    </div>
+    <details class="paper-abstract">
+      The inability of autonomous vehicles (AVs) to infer the material properties of obstacles limits their decision-making capacity. While AVs rely on sensor systems such as cameras, LiDAR, and radar to detect obstacles, this study suggests combining sensors with a knowledge graph (KG)-based world model to improve AVs' comprehension of physical material qualities. Beyond sensor data, AVs can infer qualities such as malleability, density, and elasticity using a semantic KG that depicts the relationships between obstacles and their attributes. Using the CARLA autonomous driving simulator, we evaluated AV performance with and without KG integration. The findings demonstrate that the KG-based method improves obstacle management, which allows AVs to use material qualities to make better decisions about when to change lanes or apply emergency braking. For example, the KG-integrated AV changed lanes for hard impediments like traffic cones and successfully avoided collisions with flexible items such as plastic bags by passing over them. Compared to the control system, the KG framework demonstrated improved responsiveness to obstacles by resolving conflicting sensor data, causing emergency stops for 13.3% more cases. In addition, our method exhibits a 6.6% higher success rate in lane-changing maneuvers in experimental scenarios, particularly for larger, high-impact obstacles. While we focus particularly on autonomous driving, our work demonstrates the potential of KG-based world models to improve decision-making in embodied AI systems and scale to other domains, including robotics, healthcare, and environmental simulation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.21056v1">Online Reasoning Video Segmentation with Just-in-Time Digital Twins</a></div>
+    <div class="paper-meta">
+      📅 2025-03-27
+    </div>
+    <details class="paper-abstract">
+      Reasoning segmentation (RS) aims to identify and segment objects of interest based on implicit text queries. As such, RS is a catalyst for embodied AI agents, enabling them to interpret high-level commands without requiring explicit step-by-step guidance. However, current RS approaches rely heavily on the visual perception capabilities of multimodal large language models (LLMs), leading to several major limitations. First, they struggle with queries that require multiple steps of reasoning or those that involve complex spatial/temporal relationships. Second, they necessitate LLM fine-tuning, which may require frequent updates to maintain compatibility with contemporary LLMs and may increase risks of catastrophic forgetting during fine-tuning. Finally, being primarily designed for static images or offline video processing, they scale poorly to online video data. To address these limitations, we propose an agent framework that disentangles perception and reasoning for online video RS without LLM fine-tuning. Our innovation is the introduction of a just-in-time digital twin concept, where -- given an implicit query -- a LLM plans the construction of a low-level scene representation from high-level video using specialist vision models. We refer to this approach to creating a digital twin as "just-in-time" because the LLM planner will anticipate the need for specific information and only request this limited subset instead of always evaluating every specialist model. The LLM then performs reasoning on this digital twin representation to identify target objects. To evaluate our approach, we introduce a new comprehensive video reasoning segmentation benchmark comprising 200 videos with 895 implicit text queries. The benchmark spans three reasoning categories (semantic, spatial, and temporal) with three different reasoning chain complexity.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.20220v1">DINeMo: Learning Neural Mesh Models with no 3D Annotations</a></div>
     <div class="paper-meta">
       📅 2025-03-26
