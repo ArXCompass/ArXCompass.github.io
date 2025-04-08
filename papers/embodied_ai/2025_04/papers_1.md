@@ -9,6 +9,15 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.22869v2">SIGHT: Single-Image Conditioned Generation of Hand Trajectories for Hand-Object Interaction</a></div>
+    <div class="paper-meta">
+      📅 2025-04-05
+    </div>
+    <details class="paper-abstract">
+      We introduce a novel task of generating realistic and diverse 3D hand trajectories given a single image of an object, which could be involved in a hand-object interaction scene or pictured by itself. When humans grasp an object, appropriate trajectories naturally form in our minds to use it for specific tasks. Hand-object interaction trajectory priors can greatly benefit applications in robotics, embodied AI, augmented reality and related fields. However, synthesizing realistic and appropriate hand trajectories given a single object or hand-object interaction image is a highly ambiguous task, requiring to correctly identify the object of interest and possibly even the correct interaction among many possible alternatives. To tackle this challenging problem, we propose the SIGHT-Fusion system, consisting of a curated pipeline for extracting visual features of hand-object interaction details from egocentric videos involving object manipulation, and a diffusion-based conditional motion generation model processing the extracted features. We train our method given video data with corresponding hand trajectory annotations, without supervision in the form of action labels. For the evaluation, we establish benchmarks utilizing the first-person FPHAB and HOI4D datasets, testing our method against various baselines and using multiple metrics. We also introduce task simulators for executing the generated hand trajectories and reporting task success rates as an additional metric. Experiments show that our method generates more appropriate and realistic hand trajectories than baselines and presents promising generalization capability on unseen objects. The accuracy of the generated hand trajectories is confirmed in a physics simulation setting, showcasing the authenticity of the created sequences and their applicability in downstream uses.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.03629v1">SeGuE: Semantic Guided Exploration for Mobile Robots</a></div>
     <div class="paper-meta">
       📅 2025-04-04
@@ -35,6 +44,16 @@
     </div>
     <details class="paper-abstract">
       We propose MORAL (a multimodal reinforcement learning framework for decision making in autonomous laboratories) that enhances sequential decision-making in autonomous robotic laboratories through the integration of visual and textual inputs. Using the BridgeData V2 dataset, we generate fine-tuned image captions with a pretrained BLIP-2 vision-language model and combine them with visual features through an early fusion strategy. The fused representations are processed using Deep Q-Network (DQN) and Proximal Policy Optimization (PPO) agents. Experimental results demonstrate that multimodal agents achieve a 20% improvement in task completion rates and significantly outperform visual-only and textual-only baselines after sufficient training. Compared to transformer-based and recurrent multimodal RL models, our approach achieves superior performance in cumulative reward and caption quality metrics (BLEU, METEOR, ROUGE-L). These results highlight the impact of semantically aligned language cues in enhancing agent learning efficiency and generalization. The proposed framework contributes to the advancement of multimodal reinforcement learning and embodied AI systems in dynamic, real-world environments.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.03800v1">Decision SpikeFormer: Spike-Driven Transformer for Decision Making</a></div>
+    <div class="paper-meta">
+      📅 2025-04-04
+      | 💬 This work has been accepted to CVPR 2025
+    </div>
+    <details class="paper-abstract">
+      Offline reinforcement learning (RL) enables policy training solely on pre-collected data, avoiding direct environment interaction - a crucial benefit for energy-constrained embodied AI applications. Although Artificial Neural Networks (ANN)-based methods perform well in offline RL, their high computational and energy demands motivate exploration of more efficient alternatives. Spiking Neural Networks (SNNs) show promise for such tasks, given their low power consumption. In this work, we introduce DSFormer, the first spike-driven transformer model designed to tackle offline RL via sequence modeling. Unlike existing SNN transformers focused on spatial dimensions for vision tasks, we develop Temporal Spiking Self-Attention (TSSA) and Positional Spiking Self-Attention (PSSA) in DSFormer to capture the temporal and positional dependencies essential for sequence modeling in RL. Additionally, we propose Progressive Threshold-dependent Batch Normalization (PTBN), which combines the benefits of LayerNorm and BatchNorm to preserve temporal dependencies while maintaining the spiking nature of SNNs. Comprehensive results in the D4RL benchmark show DSFormer's superiority over both SNN and ANN counterparts, achieving 78.4% energy savings, highlighting DSFormer's advantages not only in energy efficiency but also in competitive performance. Code and models are public at https://wei-nijuan.github.io/DecisionSpikeFormer.
     </details>
 </div>
 <div class="paper-card">
