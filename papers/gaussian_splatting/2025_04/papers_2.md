@@ -10,6 +10,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.15491v3">GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-04-10
+      | 💬 Project Page: https://jhuangbu.github.io/gsdeformer, Video: https://www.youtube.com/watch?v=-ecrj48-MqM
+    </div>
+    <details class="paper-abstract">
+      We present GSDeformer, a method that enables cage-based deformation on 3D Gaussian Splatting (3DGS). Our approach bridges cage-based deformation and 3DGS by using a proxy point-cloud representation. This point cloud is generated from 3D Gaussians, and deformations applied to the point cloud are translated into transformations on the 3D Gaussians. To handle potential bending caused by deformation, we incorporate a splitting process to approximate it. Our method does not modify or extend the core architecture of 3D Gaussian Splatting, making it compatible with any trained vanilla 3DGS or its variants. Additionally, we automate cage construction for 3DGS and its variants using a render-and-reconstruct approach. Experiments demonstrate that GSDeformer delivers superior deformation results compared to existing methods, is robust under extreme deformations, requires no retraining for editing, runs in real-time, and can be extended to other 3DGS variants. Project Page: https://jhuangbu.github.io/gsdeformer/
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.07370v1">View-Dependent Uncertainty Estimation of 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-04-10
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has become increasingly popular in 3D scene reconstruction for its high visual accuracy. However, uncertainty estimation of 3DGS scenes remains underexplored and is crucial to downstream tasks such as asset extraction and scene completion. Since the appearance of 3D gaussians is view-dependent, the color of a gaussian can thus be certain from an angle and uncertain from another. We thus propose to model uncertainty in 3DGS as an additional view-dependent per-gaussian feature that can be modeled with spherical harmonics. This simple yet effective modeling is easily interpretable and can be integrated into the traditional 3DGS pipeline. It is also significantly faster than ensemble methods while maintaining high accuracy, as demonstrated in our experiments.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.06019v3">GaussianSpa: An "Optimizing-Sparsifying" Simplification Framework for Compact and High-Quality 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-04-10
+      | 💬 CVPR 2025. Project page at https://noodle-lab.github.io/gaussianspa/
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has emerged as a mainstream for novel view synthesis, leveraging continuous aggregations of Gaussian functions to model scene geometry. However, 3DGS suffers from substantial memory requirements to store the multitude of Gaussians, hindering its practicality. To address this challenge, we introduce GaussianSpa, an optimization-based simplification framework for compact and high-quality 3DGS. Specifically, we formulate the simplification as an optimization problem associated with the 3DGS training. Correspondingly, we propose an efficient "optimizing-sparsifying" solution that alternately solves two independent sub-problems, gradually imposing strong sparsity onto the Gaussians in the training process. Our comprehensive evaluations on various datasets show the superiority of GaussianSpa over existing state-of-the-art approaches. Notably, GaussianSpa achieves an average PSNR improvement of 0.9 dB on the real-world Deep Blending dataset with 10$\times$ fewer Gaussians compared to the vanilla 3DGS. Our project page is available at https://noodle-lab.github.io/gaussianspa/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.08100v1">ContrastiveGaussian: High-Fidelity 3D Generation with Contrastive Learning and Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2025-04-10
