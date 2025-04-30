@@ -19,6 +19,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.20109v1">Personalized Artificial General Intelligence (AGI) via Neuroscience-Inspired Continuous Learning Systems</a></div>
+    <div class="paper-meta">
+      📅 2025-04-27
+      | 💬 39 pages, 16 figures
+    </div>
+    <details class="paper-abstract">
+      Artificial Intelligence has made remarkable advancements in recent years, primarily driven by increasingly large deep learning models. However, achieving true Artificial General Intelligence (AGI) demands fundamentally new architectures rather than merely scaling up existing models. Current approaches largely depend on expanding model parameters, which improves task-specific performance but falls short in enabling continuous, adaptable, and generalized learning. Achieving AGI capable of continuous learning and personalization on resource-constrained edge devices is an even bigger challenge. This paper reviews the state of continual learning and neuroscience-inspired AI, and proposes a novel architecture for Personalized AGI that integrates brain-like learning mechanisms for edge deployment. We review literature on continuous lifelong learning, catastrophic forgetting, and edge AI, and discuss key neuroscience principles of human learning, including Synaptic Pruning, Hebbian plasticity, Sparse Coding, and Dual Memory Systems, as inspirations for AI systems. Building on these insights, we outline an AI architecture that features complementary fast-and-slow learning modules, synaptic self-optimization, and memory-efficient model updates to support on-device lifelong adaptation. Conceptual diagrams of the proposed architecture and learning processes are provided. We address challenges such as catastrophic forgetting, memory efficiency, and system scalability, and present application scenarios for mobile AI assistants and embodied AI systems like humanoid robots. We conclude with key takeaways and future research directions toward truly continual, personalized AGI on the edge. While the architecture is theoretical, it synthesizes diverse findings and offers a roadmap for future implementation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.18945v1">Generative AI in Embodied Systems: System-Level Analysis of Performance, Efficiency and Scalability</a></div>
     <div class="paper-meta">
       📅 2025-04-26
