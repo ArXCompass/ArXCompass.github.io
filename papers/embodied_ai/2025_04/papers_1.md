@@ -28,6 +28,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.00055v1">TinyMA-IEI-PPO: Exploration Incentive-Driven Multi-Agent DRL with Self-Adaptive Pruning for Vehicular Embodied AI Agent Twins Migration</a></div>
+    <div class="paper-meta">
+      📅 2025-04-30
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (EAI) addresses autonomous driving challenges in Vehicular Embodied AI Networks (VEANETs) through multi-modal perception, adaptive decision-making, and hardware-software co-scheduling. However, the computational demands of virtual services and the inherent mobility of autonomous vehicles (AVs) necessitate real-time migration of Vehicular Embodied Agent AI Twins (VEAATs) between resource-constrained Roadside Units (RSUs). This paper proposes a novel framework for efficient VEAAT migration in VEANETs, combining a multi-leader multi-follower (MLMF) Stackelberg game-theoretic incentive mechanism with a tiny multi-agent deep reinforcement learning (MADRL) algorithm. First, We propose an virtual immersive experience-driven utility model that captures AV-RSU dynamic interactions by integrating AVs' social influence, service complementarity and substitutability, and RSUs' resource allocation strategies to optimize VEAAT migration decisions. Second, to enhance training efficiency and enable efficient deployment on computation-constrained AVs while preserving exploration-exploitation performance, we propose TinyMA-IEI-PPO, a self-adaptive dynamic structured pruning algorithm that dynamically adjusts neuron importance based on agents' exploration incentives. Numerical results demonstrate that our approach achieves convergence comparable to baseline models and closely approximates the Stackelberg equilibrium.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.20041v1">Learning Streaming Video Representation via Multitask Training</a></div>
     <div class="paper-meta">
       📅 2025-04-28
