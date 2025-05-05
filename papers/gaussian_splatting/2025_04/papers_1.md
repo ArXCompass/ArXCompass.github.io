@@ -50,6 +50,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.00737v1">A Survey on 3D Reconstruction Techniques in Plant Phenotyping: From Classical Methods to Neural Radiance Fields (NeRF), 3D Gaussian Splatting (3DGS), and Beyond</a></div>
+    <div class="paper-meta">
+      📅 2025-04-30
+      | 💬 17 pages, 7 figures, 4 tables
+    </div>
+    <details class="paper-abstract">
+      Plant phenotyping plays a pivotal role in understanding plant traits and their interactions with the environment, making it crucial for advancing precision agriculture and crop improvement. 3D reconstruction technologies have emerged as powerful tools for capturing detailed plant morphology and structure, offering significant potential for accurate and automated phenotyping. This paper provides a comprehensive review of the 3D reconstruction techniques for plant phenotyping, covering classical reconstruction methods, emerging Neural Radiance Fields (NeRF), and the novel 3D Gaussian Splatting (3DGS) approach. Classical methods, which often rely on high-resolution sensors, are widely adopted due to their simplicity and flexibility in representing plant structures. However, they face challenges such as data density, noise, and scalability. NeRF, a recent advancement, enables high-quality, photorealistic 3D reconstructions from sparse viewpoints, but its computational cost and applicability in outdoor environments remain areas of active research. The emerging 3DGS technique introduces a new paradigm in reconstructing plant structures by representing geometry through Gaussian primitives, offering potential benefits in both efficiency and scalability. We review the methodologies, applications, and performance of these approaches in plant phenotyping and discuss their respective strengths, limitations, and future prospects (https://github.com/JiajiaLi04/3D-Reconstruction-Plants). Through this review, we aim to provide insights into how these diverse 3D reconstruction techniques can be effectively leveraged for automated and high-throughput plant phenotyping, contributing to the next generation of agricultural technology.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.20829v1">GaussTrap: Stealthy Poisoning Attacks on 3D Gaussian Splatting for Targeted Scene Confusion</a></div>
     <div class="paper-meta">
       📅 2025-04-29
@@ -949,14 +959,5 @@
     </div>
     <details class="paper-abstract">
       The recent advancements in 3D Gaussian Splatting (3DGS) have demonstrated remarkable potential in novel view synthesis tasks. The divide-and-conquer paradigm has enabled large-scale scene reconstruction, but significant challenges remain in scene partitioning, optimization, and merging processes. This paper introduces BlockGaussian, a novel framework incorporating a content-aware scene partition strategy and visibility-aware block optimization to achieve efficient and high-quality large-scale scene reconstruction. Specifically, our approach considers the content-complexity variation across different regions and balances computational load during scene partitioning, enabling efficient scene reconstruction. To tackle the supervision mismatch issue during independent block optimization, we introduce auxiliary points during individual block optimization to align the ground-truth supervision, which enhances the reconstruction quality. Furthermore, we propose a pseudo-view geometry constraint that effectively mitigates rendering degradation caused by airspace floaters during block merging. Extensive experiments on large-scale scenes demonstrate that our approach achieves state-of-the-art performance in both reconstruction efficiency and rendering quality, with a 5x speedup in optimization and an average PSNR improvement of 1.21 dB on multiple benchmarks. Notably, BlockGaussian significantly reduces computational requirements, enabling large-scale scene reconstruction on a single 24GB VRAM device. The project page is available at https://github.com/SunshineWYC/BlockGaussian
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2503.05511v3">Free Your Hands: Lightweight Relightable Turntable Capture Pipeline</a></div>
-    <div class="paper-meta">
-      📅 2025-04-15
-    </div>
-    <details class="paper-abstract">
-      Novel view synthesis (NVS) from multiple captured photos of an object is a widely studied problem. Achieving high quality typically requires dense sampling of input views, which can lead to frustrating and tedious manual labor. Manually positioning cameras to maintain an optimal desired distribution can be difficult for humans, and if a good distribution is found, it is not easy to replicate. Additionally, the captured data can suffer from motion blur and defocus due to human error. In this paper, we present a lightweight object capture pipeline to reduce the manual workload and standardize the acquisition setup. We use a consumer turntable to carry the object and a tripod to hold the camera. As the turntable rotates, we automatically capture dense samples from various views and lighting conditions; we can repeat this for several camera positions. This way, we can easily capture hundreds of valid images in several minutes without hands-on effort. However, in the object reference frame, the light conditions vary; this is harmful to a standard NVS method like 3D Gaussian splatting (3DGS) which assumes fixed lighting. We design a neural radiance representation conditioned on light rotations, which addresses this issue and allows relightability as an additional benefit. We demonstrate our pipeline using 3DGS as the underlying framework, achieving competitive quality compared to previous methods with exhaustive acquisition and showcasing its potential for relighting and harmonization tasks.
     </details>
 </div>
