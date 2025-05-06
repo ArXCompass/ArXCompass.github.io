@@ -335,6 +335,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.01449v1">COSMOS: Predictable and Cost-Effective Adaptation of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-04-30
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) achieve remarkable performance across numerous tasks by using a diverse array of adaptation strategies. However, optimally selecting a model and adaptation strategy under resource constraints is challenging and often requires extensive experimentation. We investigate whether it is possible to accurately predict both performance and cost without expensive trials. We formalize the strategy selection problem for LLMs and introduce COSMOS, a unified prediction framework that efficiently estimates adaptation outcomes at minimal cost. We instantiate and study the capability of our framework via a pair of powerful predictors: embedding-augmented lightweight proxy models to predict fine-tuning performance, and low-sample scaling laws to forecast retrieval-augmented in-context learning. Extensive evaluation across eight representative benchmarks demonstrates that COSMOS achieves high prediction accuracy while reducing computational costs by 92.72% on average, and up to 98.71% in resource-intensive scenarios. Our results show that efficient prediction of adaptation outcomes is not only feasible but can substantially reduce the computational overhead of LLM deployment while maintaining performance standards.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.20984v1">ACE: A Security Architecture for LLM-Integrated App Systems</a></div>
     <div class="paper-meta">
       📅 2025-04-29
@@ -813,6 +822,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.01447v1">LLM-Enabled EV Charging Stations Recommendation</a></div>
+    <div class="paper-meta">
+      📅 2025-04-29
+      | 💬 5 pages, 4 figures, 2 tables
+    </div>
+    <details class="paper-abstract">
+      Charging infrastructure is not expanding quickly enough to accommodate the increasing usage of Electric Vehicles (EVs). For this reason, EV owners experience extended waiting periods, range anxiety, and overall dissatisfaction. Challenges, such as fragmented data and the complexity of integrating factors like location, energy pricing, and user preferences, make the current recommendation systems ineffective. To overcome these limitations, we propose RecomBot, which is a Large Language Model (LLM)-powered prompt-based recommender system that dynamically suggests optimal Charging Stations (CSs) using real-time heterogeneous data. By leveraging natural language reasoning and fine-tuning EV-specific datasets, RecomBot enhances personalization, improves charging efficiency, and adapts to various EV types, offering a scalable solution for intelligent EV recommendation systems. Through testing across various prompt engineering scenarios, the results obtained underline the capability and efficiency of the proposed model.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.20022v1">Better To Ask in English? Evaluating Factual Accuracy of Multilingual LLMs in English and Low-Resource Languages</a></div>
     <div class="paper-meta">
       📅 2025-04-28
@@ -944,25 +963,5 @@
     </div>
     <details class="paper-abstract">
       Large Language Model (LLM) agents are autonomous systems powered by LLMs, capable of reasoning and planning to solve problems by leveraging a set of tools. However, the integration of multi-tool capabilities in LLM agents introduces challenges in securely managing tools, ensuring their compatibility, handling dependency relationships, and protecting control flows within LLM agent workflows. In this paper, we present the first systematic security analysis of task control flows in multi-tool-enabled LLM agents. We identify a novel threat, Cross-Tool Harvesting and Polluting (XTHP), which includes multiple attack vectors to first hijack the normal control flows of agent tasks, and then collect and pollute confidential or private information within LLM agent systems. To understand the impact of this threat, we developed Chord, a dynamic scanning tool designed to automatically detect real-world agent tools susceptible to XTHP attacks. Our evaluation of 66 real-world tools from the repositories of two major LLM agent development frameworks, LangChain and LlamaIndex, revealed a significant security concern: 75\% are vulnerable to XTHP attacks, highlighting the prevalence of this threat.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19759v1">Moral Reasoning Across Languages: The Critical Role of Low-Resource Languages in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 5 pages, 2 figures
-    </div>
-    <details class="paper-abstract">
-      In this paper, we introduce the Multilingual Moral Reasoning Benchmark (MMRB) to evaluate the moral reasoning abilities of large language models (LLMs) across five typologically diverse languages and three levels of contextual complexity: sentence, paragraph, and document. Our results show moral reasoning performance degrades with increasing context complexity, particularly for low-resource languages such as Vietnamese. We further fine-tune the open-source LLaMA-3-8B model using curated monolingual data for alignment and poisoning. Surprisingly, low-resource languages have a stronger impact on multilingual reasoning than high-resource ones, highlighting their critical role in multilingual NLP.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.04178v2">MSL: Not All Tokens Are What You Need for Tuning LLM as a Recommender</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 Accepted by SIGIR2025
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs), known for their comprehension capabilities and extensive knowledge, have been increasingly applied to recommendation systems (RS). Given the fundamental gap between the mechanism of LLMs and the requirement of RS, researchers have focused on fine-tuning LLMs with recommendation-specific data to enhance their performance. Language Modeling Loss (LML), originally designed for language generation tasks, is commonly adopted. However, we identify two critical limitations of LML: 1) it exhibits significant divergence from the recommendation objective; 2) it erroneously treats all fictitious item descriptions as negative samples, introducing misleading training signals. To address these limitations, we propose a novel Masked Softmax Loss (MSL) tailored for fine-tuning LLMs on recommendation. MSL improves LML by identifying and masking invalid tokens that could lead to fictitious item descriptions during loss computation. This strategy can effectively avoid the interference from erroneous negative signals and ensure well alignment with the recommendation objective supported by theoretical guarantees. During implementation, we identify a potential challenge related to gradient vanishing of MSL. To overcome this, we further introduce the temperature coefficient and propose an Adaptive Temperature Strategy (ATS) that adaptively adjusts the temperature without requiring extensive hyperparameter tuning. Extensive experiments conducted on four public datasets further validate the effectiveness of MSL, achieving an average improvement of 42.24% in NDCG@10. The code is available at https://github.com/WANGBohaO-jpg/MSL.
     </details>
 </div>
