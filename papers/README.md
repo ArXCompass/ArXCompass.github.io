@@ -7,15 +7,15 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 - [embodied ai](embodied_ai/)
 - [llm](llm/)
 
-Last update: 2025-06-06
+Last update: 2025-06-07
 
 ## Statistics
 
 | Research Topic | Total Papers | Latest Month |
 | --- | --- | --- |
-| gaussian splatting | 4360 | 2025_06 (28 papers) |
-| embodied ai | 467 | 2025_06 (10 papers) |
-| llm | 103304 | 2025_06 (837 papers) |
+| gaussian splatting | 4369 | 2025_06 (37 papers) |
+| embodied ai | 471 | 2025_06 (14 papers) |
+| llm | 103939 | 2025_06 (1472 papers) |
 
 ## Monthly Trends
 
