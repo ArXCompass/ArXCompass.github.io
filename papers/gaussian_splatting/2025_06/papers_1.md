@@ -37,6 +37,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.11252v1">Anti-Aliased 2D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-06-12
+      | 💬 Code will be available at https://github.com/maeyounes/AA-2DGS
+    </div>
+    <details class="paper-abstract">
+      2D Gaussian Splatting (2DGS) has recently emerged as a promising method for novel view synthesis and surface reconstruction, offering better view-consistency and geometric accuracy than volumetric 3DGS. However, 2DGS suffers from severe aliasing artifacts when rendering at different sampling rates than those used during training, limiting its practical applications in scenarios requiring camera zoom or varying fields of view. We identify that these artifacts stem from two key limitations: the lack of frequency constraints in the representation and an ineffective screen-space clamping approach. To address these issues, we present AA-2DGS, an antialiased formulation of 2D Gaussian Splatting that maintains its geometric benefits while significantly enhancing rendering quality across different scales. Our method introduces a world space flat smoothing kernel that constrains the frequency content of 2D Gaussian primitives based on the maximal sampling frequency from training views, effectively eliminating high-frequency artifacts when zooming in. Additionally, we derive a novel object space Mip filter by leveraging an affine approximation of the ray-splat intersection mapping, which allows us to efficiently apply proper anti-aliasing directly in the local space of each splat.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.09997v1">DGS-LRM: Real-Time Deformable 3D Gaussian Reconstruction From Monocular Videos</a></div>
     <div class="paper-meta">
       📅 2025-06-11
