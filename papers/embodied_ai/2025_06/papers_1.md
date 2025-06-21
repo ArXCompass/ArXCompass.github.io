@@ -9,6 +9,44 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.15610v1">BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion</a></div>
+    <div class="paper-meta">
+      📅 2025-06-18
+      | 💬 11 pages, 6 figures
+    </div>
+    <details class="paper-abstract">
+      Open-vocabulary 3D object detection has gained significant interest due to its critical applications in autonomous driving and embodied AI. Existing detection methods, whether offline or online, typically rely on dense point cloud reconstruction, which imposes substantial computational overhead and memory constraints, hindering real-time deployment in downstream tasks. To address this, we propose a novel reconstruction-free online framework tailored for memory-efficient and real-time 3D detection. Specifically, given streaming posed RGB-D video input, we leverage Cubify Anything as a pre-trained visual foundation model (VFM) for single-view 3D object detection by bounding boxes, coupled with CLIP to capture open-vocabulary semantics of detected objects. To fuse all detected bounding boxes across different views into a unified one, we employ an association module for correspondences of multi-views and an optimization module to fuse the 3D bounding boxes of the same instance predicted in multi-views. The association module utilizes 3D Non-Maximum Suppression (NMS) and a box correspondence matching module, while the optimization module uses an IoU-guided efficient random optimization technique based on particle filtering to enforce multi-view consistency of the 3D bounding boxes while minimizing computational complexity. Extensive experiments on ScanNetV2 and CA-1M datasets demonstrate that our method achieves state-of-the-art performance among online methods. Benefiting from this novel reconstruction-free paradigm for 3D object detection, our method exhibits great generalization abilities in various scenarios, enabling real-time perception even in environments exceeding 1000 square meters.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.15377v1">Efficient and Generalizable Environmental Understanding for Visual Navigation</a></div>
+    <div class="paper-meta">
+      📅 2025-06-18
+    </div>
+    <details class="paper-abstract">
+      Visual Navigation is a core task in Embodied AI, enabling agents to navigate complex environments toward given objectives. Across diverse settings within Navigation tasks, many necessitate the modelling of sequential data accumulated from preceding time steps. While existing methods perform well, they typically process all historical observations simultaneously, overlooking the internal association structure within the data, which may limit the potential for further improvements in task performance. We address this by examining the unique characteristics of Navigation tasks through the lens of causality, introducing a causal framework to highlight the limitations of conventional sequential methods. Leveraging this insight, we propose Causality-Aware Navigation (CAN), which incorporates a Causal Understanding Module to enhance the agent's environmental understanding capability. Empirical evaluations show that our approach consistently outperforms baselines across various tasks and simulation environments. Extensive ablations studies attribute these gains to the Causal Understanding Module, which generalizes effectively in both Reinforcement and Supervised Learning settings without computational overhead.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.16649v2">PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands</a></div>
+    <div class="paper-meta">
+      📅 2025-06-18
+      | 💬 accepted by Robotics: Science and Systems(RSS) 2025 url: https://peilin-666.github.io/projects/PP-Tac/
+    </div>
+    <details class="paper-abstract">
+      Robots are increasingly envisioned as human companions, assisting with everyday tasks that often involve manipulating deformable objects. Although recent advances in robotic hardware and embodied AI have expanded their capabilities, current systems still struggle with handling thin, flat, and deformable objects such as paper and fabric. This limitation arises from the lack of suitable perception techniques for robust state estimation under diverse object appearances, as well as the absence of planning techniques for generating appropriate grasp motions. To bridge these gaps, this paper introduces PP-Tac, a robotic system for picking up paper-like objects. PP-Tac features a multi-fingered robotic hand with high-resolution omnidirectional tactile sensors \sensorname. This hardware configuration enables real-time slip detection and online frictional force control that mitigates such slips. Furthermore, grasp motion generation is achieved through a trajectory synthesis pipeline, which first constructs a dataset of finger's pinching motions. Based on this dataset, a diffusion-based policy is trained to control the hand-arm robotic system. Experiments demonstrate that PP-Tac can effectively grasp paper-like objects of varying material, thickness, and stiffness, achieving an overall success rate of 87.5\%. To our knowledge, this work is the first attempt to grasp paper-like deformable objects using a tactile dexterous hand. Our project webpage can be found at: https://peilin-666.github.io/projects/PP-Tac/
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.05750v2">Semantic Mapping in Indoor Embodied AI -- A Survey on Advances, Challenges, and Future Directions</a></div>
+    <div class="paper-meta">
+      📅 2025-06-17
+    </div>
+    <details class="paper-abstract">
+      Intelligent embodied agents (e.g. robots) need to perform complex semantic tasks in unfamiliar environments. Among many skills that the agents need to possess, building and maintaining a semantic map of the environment is most crucial in long-horizon tasks. A semantic map captures information about the environment in a structured way, allowing the agent to reference it for advanced reasoning throughout the task. While existing surveys in embodied AI focus on general advancements or specific tasks like navigation and manipulation, this paper provides a comprehensive review of semantic map-building approaches in embodied AI, specifically for indoor navigation. We categorize these approaches based on their structural representation (spatial grids, topological graphs, dense point-clouds or hybrid maps) and the type of information they encode (implicit features or explicit environmental data). We also explore the strengths and limitations of the map building techniques, highlight current challenges, and propose future research directions. We identify that the field is moving towards developing open-vocabulary, queryable, task-agnostic map representations, while high memory demands and computational inefficiency still remaining to be open challenges. This survey aims to guide current and future researchers in advancing semantic mapping techniques for embodied AI systems.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2505.20129v2">Agentic 3D Scene Generation with Spatially Contextualized VLMs</a></div>
     <div class="paper-meta">
       📅 2025-06-16
