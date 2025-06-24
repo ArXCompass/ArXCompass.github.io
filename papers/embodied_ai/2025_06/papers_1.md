@@ -9,6 +9,53 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.18904v1">TC-Light: Temporally Consistent Relighting for Dynamic Long Videos</a></div>
+    <div class="paper-meta">
+      📅 2025-06-23
+      | 💬 Project Page: https://dekuliutesla.github.io/tclight/ Code: https://github.com/Linketic/TC-Light
+    </div>
+    <details class="paper-abstract">
+      Editing illumination in long videos with complex dynamics has significant value in various downstream tasks, including visual content creation and manipulation, as well as data scaling up for embodied AI through sim2real and real2real transfer. Nevertheless, existing video relighting techniques are predominantly limited to portrait videos or fall into the bottleneck of temporal consistency and computation efficiency. In this paper, we propose TC-Light, a novel paradigm characterized by the proposed two-stage post optimization mechanism. Starting from the video preliminarily relighted by an inflated video relighting model, it optimizes appearance embedding in the first stage to align global illumination. Then it optimizes the proposed canonical video representation, i.e., Unique Video Tensor (UVT), to align fine-grained texture and lighting in the second stage. To comprehensively evaluate performance, we also establish a long and highly dynamic video benchmark. Extensive experiments show that our method enables physically plausible relighting results with superior temporal coherence and low computation cost. The code and video demos are available at https://dekuliutesla.github.io/tclight/.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.18385v1">InternSpatial: A Comprehensive Dataset for Spatial Reasoning in Vision-Language Models</a></div>
+    <div class="paper-meta">
+      📅 2025-06-23
+    </div>
+    <details class="paper-abstract">
+      Recent benchmarks and datasets have been proposed to improve spatial reasoning in vision-language models (VLMs), yet existing open resources remain limited in scale, visual diversity, and instruction expressiveness. In this work, we introduce InternSpatial, the largest open-source dataset for spatial reasoning in VLMs, along with InternSpatial-Bench, a corresponding evaluation benchmark designed to assess spatial understanding under diverse instruction formats. InternSpatial comprises 12 million QA pairs spanning both single-view and multi-view settings, drawn from diverse visual environments and supporting 19 instruction formats that reflect varied query styles. For evaluation, we propose InternSpatial-Bench for single-view tasks and expand multi-view reasoning by introducing a novel rotation angle prediction task that has not been explored in prior work. Experimental results show that models trained on InternSpatial achieve 12.1% improvement on InternSpatial-Bench and 10.7% on VSI-Bench, while maintaining strong performance on general-purpose benchmarks. We hope these resources will support the development of spatially capable VLMs in practical applications such as robotics and embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.17991v1">CFTel: A Practical Architecture for Robust and Scalable Telerobotics with Cloud-Fog Automation</a></div>
+    <div class="paper-meta">
+      📅 2025-06-22
+      | 💬 6 pages, 1 figure, accepted paper on the 23rd IEEE International Conference on Industrial Informatics (INDIN), July 12-15, 2025, Kunming, China
+    </div>
+    <details class="paper-abstract">
+      Telerobotics is a key foundation in autonomous Industrial Cyber-Physical Systems (ICPS), enabling remote operations across various domains. However, conventional cloud-based telerobotics suffers from latency, reliability, scalability, and resilience issues, hindering real-time performance in critical applications. Cloud-Fog Telerobotics (CFTel) builds on the Cloud-Fog Automation (CFA) paradigm to address these limitations by leveraging a distributed Cloud-Edge-Robotics computing architecture, enabling deterministic connectivity, deterministic connected intelligence, and deterministic networked computing. This paper synthesizes recent advancements in CFTel, aiming to highlight its role in facilitating scalable, low-latency, autonomous, and AI-driven telerobotics. We analyze architectural frameworks and technologies that enable them, including 5G Ultra-Reliable Low-Latency Communication, Edge Intelligence, Embodied AI, and Digital Twins. The study demonstrates that CFTel has the potential to enhance real-time control, scalability, and autonomy while supporting service-oriented solutions. We also discuss practical challenges, including latency constraints, cybersecurity risks, interoperability issues, and standardization efforts. This work serves as a foundational reference for researchers, stakeholders, and industry practitioners in future telerobotics research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.17967v1">Adapting Vision-Language Models for Evaluating World Models</a></div>
+    <div class="paper-meta">
+      📅 2025-06-22
+    </div>
+    <details class="paper-abstract">
+      World models -- generative models that simulate environment dynamics conditioned on past observations and actions -- are gaining prominence in planning, simulation, and embodied AI. However, evaluating their rollouts remains a fundamental challenge, requiring fine-grained, temporally grounded assessment of action alignment and semantic consistency -- capabilities not captured by existing metrics. Vision-Language Models (VLMs) have shown promise as automatic evaluators of generative content due to their strong multimodal reasoning abilities. Yet, their use in fine-grained, temporally sensitive evaluation tasks remains limited and requires targeted adaptation. We introduce a evaluation protocol targeting two recognition tasks -- action recognition and character recognition -- each assessed across binary, multiple-choice, and open-ended formats. To support this, we present UNIVERSE (UNIfied Vision-language Evaluator for Rollouts in Simulated Environments), a method for adapting VLMs to rollout evaluation under data and compute constraints. We conduct a large-scale study comparing full, partial, and parameter-efficient finetuning across task formats, context lengths, sampling strategies, and data compositions. The resulting unified evaluator matches the performance of task-specific baselines using a single checkpoint. Human studies confirm strong alignment with human judgments, establishing UNIVERSE as a scalable, semantics-aware evaluator for world models.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.05108v2">Multi-agent Embodied AI: Advances and Future Directions</a></div>
+    <div class="paper-meta">
+      📅 2025-06-21
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (Embodied AI) plays a pivotal role in the application of advanced technologies in the intelligent era, where AI systems are integrated with physical bodies that enable them to perceive, reason, and interact with their environments. Through the use of sensors for input and actuators for action, these systems can learn and adapt based on real-world feedback, allowing them to perform tasks effectively in dynamic and unpredictable environments. As techniques such as deep learning (DL), reinforcement learning (RL), and large language models (LLMs) mature, embodied AI has become a leading field in both academia and industry, with applications spanning robotics, healthcare, transportation, and manufacturing. However, most research has focused on single-agent systems that often assume static, closed environments, whereas real-world embodied AI must navigate far more complex scenarios. In such settings, agents must not only interact with their surroundings but also collaborate with other agents, necessitating sophisticated mechanisms for adaptation, real-time learning, and collaborative problem-solving. Despite increasing interest in multi-agent systems, existing research remains narrow in scope, often relying on simplified models that fail to capture the full complexity of dynamic, open environments for multi-agent embodied AI. Moreover, no comprehensive survey has systematically reviewed the advancements in this area. As embodied AI rapidly evolves, it is crucial to deepen our understanding of multi-agent embodied AI to address the challenges presented by real-world applications. To fill this gap and foster further development in the field, this paper reviews the current state of research, analyzes key contributions, and identifies challenges and future directions, providing insights to guide innovation and progress in this field.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.17221v1">VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning</a></div>
     <div class="paper-meta">
       📅 2025-06-20
