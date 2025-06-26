@@ -4,7 +4,7 @@
 
 ## Overall Statistics
 
-- Total number of papers: 503
+- Total number of papers: 505
 - Number of months tracked: 60
 - Average papers per month: 8.4
 
@@ -16,13 +16,13 @@
 
 | Month | Paper Count | Percentage of Total |
 | --- | --- | --- |
-| [2025_06](./2025_06/papers_1.md) | 46 | 9.1% |
+| [2025_06](./2025_06/papers_1.md) | 48 | 9.5% |
 | [2025_05](./2025_05/papers_1.md) | 72 | 14.3% |
-| [2025_04](./2025_04/papers_1.md) | 30 | 6.0% |
+| [2025_04](./2025_04/papers_1.md) | 30 | 5.9% |
 | [2025_03](./2025_03/papers_1.md) | 48 | 9.5% |
 | [2025_02](./2025_02/papers_1.md) | 24 | 4.8% |
 | [2025_01](./2025_01/papers_1.md) | 18 | 3.6% |
-| [2024_12](./2024_12/papers_1.md) | 31 | 6.2% |
+| [2024_12](./2024_12/papers_1.md) | 31 | 6.1% |
 | [2024_11](./2024_11/papers_1.md) | 18 | 3.6% |
 | [2024_10](./2024_10/papers_1.md) | 25 | 5.0% |
 | [2024_09](./2024_09/papers_1.md) | 17 | 3.4% |
