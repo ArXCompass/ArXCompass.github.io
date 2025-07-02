@@ -275,6 +275,64 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2310.05175v4">Outlier Weighed Layerwise Sparsity (OWL): A Missing Secret Sauce for Pruning LLMs to High Sparsity</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+      | 💬 Published at ICML 2024
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs), renowned for their remarkable performance across diverse domains, present a challenge when it comes to practical deployment due to their colossal model size. In response to this challenge, efforts have been directed toward the application of traditional network pruning techniques to LLMs, uncovering a massive number of parameters that can be pruned in one-shot without hurting performance. Prevailing LLM pruning strategies have consistently adhered to the practice of uniformly pruning all layers at equivalent sparsity, resulting in robust performance. However, this observation stands in contrast to the prevailing trends observed in the field of vision models, where non-uniform layerwise sparsity typically yields stronger results. To understand the underlying reasons for this disparity, we conduct a comprehensive study and discover a strong correlation with the emergence of activation outliers in LLMs. Inspired by this finding, we introduce a novel LLM pruning methodology that incorporates a tailored set of non-uniform layerwise sparsity ratios, termed as Outlier Weighed Layerwise sparsity (OWL). The sparsity ratio of OWL is proportional to the outlier ratio observed within each layer, facilitating a more effective alignment between layerwise weight sparsity and outlier ratios. Our empirical evaluation, conducted across the LLaMA-V1 family and OPT, spanning various benchmarks, demonstrates the distinct advantages offered by OWL over previous methods. For instance, OWL exhibits a remarkable performance gain, surpassing the state-of-the-art Wanda and SparseGPT by 61.22 and 6.80 perplexity at a high sparsity level of 70%, respectively, while delivering 2.6x end-to-end inference speed-up in the DeepSparse inference engine. Codes are available at https://github.com/luuyin/OWL.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.22419v2">The Automated LLM Speedrunning Benchmark: Reproducing NanoGPT Improvements</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+    </div>
+    <details class="paper-abstract">
+      Rapid advancements in large language models (LLMs) have the potential to assist in scientific progress. A critical capability toward this endeavor is the ability to reproduce existing work. To evaluate the ability of AI agents to reproduce results in an active research area, we introduce the Automated LLM Speedrunning Benchmark, leveraging the research community contributions on the NanoGPT speedrun, a competition to train a GPT-2 model in the shortest time. Each of the 19 speedrun tasks provides the agent with the previous records training script, optionally paired with one of three hint formats, ranging from pseudocode to paper-like descriptions of the new records improvements. Records execute quickly by design and speedrun improvements encompass diverse code-level changes, ranging from high-level algorithmic advancements to hardware-aware optimizations. These features make the benchmark both accessible and realistic for the frontier problem of improving LLM training. We find that recent reasoning LLMs combined with SoTA scaffolds struggle to reimplement already-known innovations in our benchmark, even when given detailed hints. Our benchmark thus provides a simple, non-saturated measure of an LLMs ability to automate scientific reproduction, a necessary (but not sufficient) skill for an autonomous research agent.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2401.14640v2">Can LLMs Evaluate Complex Attribution in QA? Automatic Benchmarking using Knowledge Graphs</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+      | 💬 Accepted to ACL 2025 (Main Conference)
+    </div>
+    <details class="paper-abstract">
+      Attributed Question Answering (AQA) has attracted wide attention, but there are still several limitations in evaluating the attributions, including lacking fine-grained attribution categories, relying on manual annotations, and failing to compare attributions with only subtle differences. To bridge these gaps, we introduce Complex Attributed Question Answering (CAQA), a large-scale benchmark containing comprehensive attribution categories, automatically generated using Knowledge Graphs (KGs), and complex attribution scenarios. We have conducted extensive experiments to verify the effectiveness of CAQA, including the benchmarking of 25 automatic evaluators, their comparison with human evaluators, the testing of LLM evaluators fine-tuned by CAQA and so on. These experiments also lead to a series of important findings that can benefit the future research of AQA. All the codes and data are publicly accessible at https://github.com/HuuuNan/CAQA-Benchmark.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.17117v3">From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+    </div>
+    <details class="paper-abstract">
+      Humans organize knowledge into compact categories through semantic compression by mapping diverse instances to abstract representations while preserving meaning (e.g., robin and blue jay are both birds; most birds can fly). These concepts reflect a trade-off between expressive fidelity and representational simplicity. Large Language Models (LLMs) demonstrate remarkable linguistic abilities, yet whether their internal representations strike a human-like trade-off between compression and semantic fidelity is unclear. We introduce a novel information-theoretic framework, drawing from Rate-Distortion Theory and the Information Bottleneck principle, to quantitatively compare these strategies. Analyzing token embeddings from a diverse suite of LLMs against seminal human categorization benchmarks, we uncover key divergences. While LLMs form broad conceptual categories that align with human judgment, they struggle to capture the fine-grained semantic distinctions crucial for human understanding. More fundamentally, LLMs demonstrate a strong bias towards aggressive statistical compression, whereas human conceptual systems appear to prioritize adaptive nuance and contextual richness, even if this results in lower compressional efficiency by our measures. These findings illuminate critical differences between current AI and human cognitive architectures, guiding pathways toward LLMs with more human-aligned conceptual representations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2505.06096v2">Free and Fair Hardware: A Pathway to Copyright Infringement-Free Verilog Generation using LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+      | 💬 Accepted at DAC 2025
+    </div>
+    <details class="paper-abstract">
+      Limitations in Large Language Model (LLM) capabilities for hardware design tasks, such as generating functional Verilog codes, have motivated various fine-tuning optimizations utilizing curated hardware datasets from open-source repositories. However, these datasets remain limited in size and contain minimal checks on licensing for reuse, resulting in potential copyright violations by fine-tuned LLMs. Therefore, we propose an evaluation benchmark to estimate the risk of Verilog-trained LLMs to generate copyright-protected codes. To minimize this risk, we present an open-source Verilog dataset, FreeSet, containing over 220k files, along with the automated dataset curation framework utilized to provide additional guarantees of fair-use Verilog data. We then execute an LLM fine-tuning framework consisting of continual pre-training, resulting in a fine-tuned Llama model for Verilog, FreeV. Our results indicate that FreeV demonstrates the smallest risk of copyright-infringement among prior works, with only a 3% violation rate. Furthermore, experimental results demonstrate improvements in Verilog generation functionality over its baseline model, improving VerilogEval pass@10 rates by over 10%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01141v3">Evaluating Deduplication Techniques for Economic Research Paper Titles with a Focus on Semantic Similarity using NLP and LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-06-30
+      | 💬 6 pages, 1 figure
+    </div>
+    <details class="paper-abstract">
+      This study investigates efficient deduplication techniques for a large NLP dataset of economic research paper titles. We explore various pairing methods alongside established distance measures (Levenshtein distance, cosine similarity) and a sBERT model for semantic evaluation. Our findings suggest a potentially low prevalence of duplicates based on the observed semantic similarity across different methods. Further exploration with a human-annotated ground truth set is completed for a more conclusive assessment. The result supports findings from the NLP, LLM based distance metrics.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.23423v1">TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs</a></div>
     <div class="paper-meta">
       📅 2025-06-29
@@ -600,6 +658,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.22557v1">MetaCipher: A General and Extensible Reinforcement Learning Framework for Obfuscation-Based Jailbreak Attacks on Black-Box LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-06-27
+    </div>
+    <details class="paper-abstract">
+      The growing capabilities of large language models (LLMs) have exposed them to increasingly sophisticated jailbreak attacks. Among these, obfuscation-based attacks -- which encrypt malicious content to evade detection -- remain highly effective. By leveraging the reasoning ability of advanced LLMs to interpret encrypted prompts, such attacks circumvent conventional defenses that rely on keyword detection or context filtering. These methods are very difficult to defend against, as existing safety mechanisms are not designed to interpret or decode ciphered content. In this work, we propose \textbf{MetaCipher}, a novel obfuscation-based jailbreak framework, along with a reinforcement learning-based dynamic cipher selection mechanism that adaptively chooses optimal encryption strategies from a cipher pool. This approach enhances jailbreak effectiveness and generalizability across diverse task types, victim LLMs, and safety guardrails. Our framework is modular and extensible by design, supporting arbitrary cipher families and accommodating evolving adversarial strategies. We complement our method with a large-scale empirical analysis of cipher performance across multiple victim LLMs. Within as few as 10 queries, MetaCipher achieves over 92\% attack success rate (ASR) on most recent standard malicious prompt benchmarks against state-of-the-art non-reasoning LLMs, and over 74\% ASR against reasoning-capable LLMs, outperforming all existing obfuscation-based jailbreak methods. These results highlight the long-term robustness and adaptability of our approach, making it more resilient than prior methods in the face of advancing safety measures.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.22419v1">The Automated LLM Speedrunning Benchmark: Reproducing NanoGPT Improvements</a></div>
     <div class="paper-meta">
       📅 2025-06-27
@@ -904,74 +971,5 @@
     </div>
     <details class="paper-abstract">
       Advances in Large Language Models (LLMs) have sparked interest in their ability to solve Olympiad-level math problems. However, the training and evaluation of these models are constrained by the limited size and quality of available datasets, as creating large-scale data for such advanced problems requires extensive effort from human experts. In addition, current benchmarks are prone to contamination, leading to unreliable evaluations. In this paper, we present an automated pipeline that leverages the rich resources of the Art of Problem Solving (AoPS) forum, which predominantly features Olympiad-level problems and community-driven solutions. Using open-source LLMs, we develop a method to extract question-answer pairs from the forum, resulting in AoPS-Instruct, a dataset of more than 600,000 high-quality QA pairs. Our experiments demonstrate that fine-tuning LLMs on AoPS-Instruct improves their reasoning abilities across various benchmarks. Moreover, we build an automatic pipeline that introduces LiveAoPSBench, an evolving evaluation set with timestamps, derived from the latest forum data, providing a contamination-resistant benchmark for assessing LLM performance. Notably, we observe a significant decline in LLM performance over time, suggesting their success on older examples may stem from pre-training exposure rather than true reasoning ability. Our work presents a scalable approach to creating and maintaining large-scale, high-quality datasets for advanced math reasoning, offering valuable insights into the capabilities and limitations of LLMs in this domain. Our benchmark and code is available at https://github.com/DSL-Lab/aops
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.16661v3">RLSF: Fine-tuning LLMs via Symbolic Feedback</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have transformed AI but often struggle with tasks that require domain-specific reasoning and logical alignment. Traditional fine-tuning methods do not leverage the vast amount of symbolic domain-knowledge available to us via symbolic reasoning tools (e.g., provers), and are further limited by sparse rewards and unreliable reward models. We introduce Reinforcement Learning via Symbolic Feedback (RLSF), a novel fine-tuning paradigm where symbolic reasoning tools (e.g., solvers, provers, and algebra systems) provide fine-grained feedback to LLMs. RLSF uses poly-sized certificates (e.g., proofs) generated by symbolic tools to identify and correct errors in model outputs, offering token-level guidance without requiring differentiable reasoning systems. This paradigm bridges the gap between symbolic reasoning and LLM fine-tuning, enabling precise alignment with domain-specific constraints while addressing key limitations of traditional reward signals. Via extensive evaluations, we show that our RLSF-based fine-tuning of LLMs outperforms traditional approaches on five different applications (that have some associated logical or domain constraints), namely, program synthesis from natural language pseudo-code to programming language, three chemistry tasks, and solving the Game of 24. A key takeaway is that fine-tuning via RLSF enables relatively smaller LLMs to significantly outperform closed-source models that are orders of magnitude larger.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2506.22688v1">An LLM-assisted approach to designing software architectures using ADD</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 30 pages, 12 figures, 7 tables
-    </div>
-    <details class="paper-abstract">
-      Designing effective software architectures is a complex, iterative process that traditionally relies on expert judgment. This paper proposes an approach for Large Language Model (LLM)-assisted software architecture design using the Attribute-Driven Design (ADD) method. By providing an LLM with an explicit description of ADD, an architect persona, and a structured iteration plan, our method guides the LLM to collaboratively produce architecture artifacts with a human architect. We validate the approach through case studies, comparing generated designs against proven solutions and evaluating them with professional architects. Results show that our LLM-assisted ADD process can generate architectures closely aligned with established solutions and partially satisfying architectural drivers, highlighting both the promise and current limitations of using LLMs in architecture design. Our findings emphasize the importance of human oversight and iterative refinement when leveraging LLMs in this domain.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.04745v4">Can LLMs Interpret and Leverage Structured Linguistic Representations? A Case Study with AMRs</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 13 pages, 23 figures. Accepted to XLLM Workshop at ACL 2025
-    </div>
-    <details class="paper-abstract">
-      This paper evaluates the ability of Large Language Models (LLMs) to leverage contextual information in the form of structured linguistic representations. Specifically, we examine the impact of encoding both short and long contexts using Abstract Meaning Representation (AMR) structures across a diverse set of language tasks. We perform our analysis using 8-bit quantized and instruction-tuned versions of Llama 3.1 (8B), Phi-3, and Mistral 7B. Our results indicate that, for tasks involving short contexts, augmenting the prompt with the AMR of the original language context often degrades the performance of the underlying LLM. However, for tasks that involve long contexts, such as dialogue summarization in the SAMSum dataset, this enhancement improves LLM performance, for example, by increasing the zero-shot cosine similarity score of Llama 3.1 from 66% to 76%. This improvement is more evident in the newer and larger LLMs, but does not extend to the older or smaller ones. In addition, we observe that LLMs can effectively reconstruct the original text from a linearized AMR, achieving a cosine similarity of 81% in the best-case scenario.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2506.09397v3">SLED: A Speculative LLM Decoding Framework for Efficient Edge Serving</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 6 pages, 6 figures, 2 tables
-    </div>
-    <details class="paper-abstract">
-      The growing gap between the increasing complexity of large language models (LLMs) and the limited computational budgets of edge devices poses a key challenge for efficient on-device inference, despite gradual improvements in hardware capabilities. Existing strategies, such as aggressive quantization, pruning, or remote inference, trade accuracy for efficiency or lead to substantial cost burdens. This position paper introduces a new framework that leverages speculative decoding, previously viewed primarily as a decoding acceleration technique for autoregressive generation of LLMs, as a promising approach specifically adapted for edge computing by orchestrating computation across heterogeneous devices. We propose \acronym, a framework that allows lightweight edge devices to draft multiple candidate tokens locally using diverse draft models, while a single, shared edge server verifies the tokens utilizing a more precise target model. To further increase the efficiency of verification, the edge server batch the diverse verification requests from devices. This approach supports device heterogeneity and reduces server-side memory footprint by sharing the same upstream target model across multiple devices. Our initial experiments with Jetson Orin Nano, Raspberry Pi 4B/5, and an edge server equipped with 4 Nvidia A100 GPUs indicate substantial benefits: 2.2 more system throughput, 2.8 more system capacity, and better cost efficiency, all without sacrificing model accuracy.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2506.22604v1">Bootstrapping Human-Like Planning via LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 Accepted by the 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)
-    </div>
-    <details class="paper-abstract">
-      Robot end users increasingly require accessible means of specifying tasks for robots to perform. Two common end-user programming paradigms include drag-and-drop interfaces and natural language programming. Although natural language interfaces harness an intuitive form of human communication, drag-and-drop interfaces enable users to meticulously and precisely dictate the key actions of the robot's task. In this paper, we investigate the degree to which both approaches can be combined. Specifically, we construct a large language model (LLM)-based pipeline that accepts natural language as input and produces human-like action sequences as output, specified at a level of granularity that a human would produce. We then compare these generated action sequences to another dataset of hand-specified action sequences. Although our results reveal that larger models tend to outperform smaller ones in the production of human-like action sequences, smaller models nonetheless achieve satisfactory performance.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2502.18435v3">What Makes the Preferred Thinking Direction for LLMs in Multiple-choice Questions?</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 10 pages for the main text
-    </div>
-    <details class="paper-abstract">
-      Language models usually use left-to-right (L2R) autoregressive factorization. However, L2R factorization may not always be the best inductive bias. Therefore, we investigate whether alternative factorizations of the text distribution could be beneficial in some tasks. We investigate right-to-left (R2L) training as a compelling alternative, focusing on multiple-choice questions (MCQs) as a test bed for knowledge extraction and reasoning. Through extensive experiments across various model sizes (2B-8B parameters) and training datasets, we find that R2L models can significantly outperform L2R models on several MCQ benchmarks, including logical reasoning, commonsense understanding, and truthfulness assessment tasks. Our analysis reveals that this performance difference may be fundamentally linked to multiple factors including calibration, computability, and directional conditional entropy. We analyze the impact of these factors through controlled simulation studies using arithmetic tasks, where the impacting factors can be better disentangled. Our work demonstrates that exploring alternative factorizations of the text distribution can lead to improvements in LLM capabilities and provides theoretical insights into optimal factorization towards approximating human language distribution, and when each reasoning order might be more advantageous. Our code and checkpoints are released at https://github.com/apple/ml-reversal-blessing.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2502.15727v2">Retrieval Augmented Generation Based LLM Evaluation For Protocol State Machine Inference With Chain-of-Thought Reasoning</a></div>
-    <div class="paper-meta">
-      📅 2025-06-27
-      | 💬 Minor modifications in sections: abstract, introduction, background problem formulation, and conclusion. (Typos and Clarifications)
-    </div>
-    <details class="paper-abstract">
-      This paper presents a novel approach to evaluate the efficiency of a RAG-based agentic Large Language Model (LLM) architecture for network packet seed generation and enrichment. Enhanced by chain-of-thought (COT) prompting techniques, the proposed approach focuses on the improvement of the seeds' structural quality in order to guide protocol fuzzing frameworks through a wide exploration of the protocol state space. Our method leverages RAG and text embeddings to dynamically reference to the Request For Comments (RFC) documents knowledge base for answering queries regarding the protocol's Finite State Machine (FSM), then iteratively reasons through the retrieved knowledge, for output refinement and proper seed placement. We then evaluate the response structure quality of the agent's output, based on metrics as BLEU, ROUGE, and Word Error Rate (WER) by comparing the generated packets against the ground-truth packets. Our experiments demonstrate significant improvements of up to 18.19%, 14.81%, and 23.45% in BLEU, ROUGE, and WER, respectively, over baseline models. These results confirm the potential of such approach, improving LLM-based protocol fuzzing frameworks for the identification of hidden vulnerabilities.
     </details>
 </div>
