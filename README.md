@@ -23,15 +23,15 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 2. Browse papers by topic in the Quick Links section
 3. View statistics and trends in each topic's README
 
-Last update: 2025-07-04
+Last update: 2025-07-05
 
 ## Statistics
 
 | Research Topic | Total Papers | Latest Month |
 | --- | --- | --- |
-| gaussian splatting | 4712 | 2025_07 (12 papers) |
-| embodied ai | 515 | 2025_07 (5 papers) |
-| llm | 123923 | 2025_07 (66 papers) |
+| gaussian splatting | 4718 | 2025_07 (18 papers) |
+| embodied ai | 518 | 2025_07 (8 papers) |
+| llm | 124071 | 2025_07 (214 papers) |
 
 ## Monthly Trends
 
