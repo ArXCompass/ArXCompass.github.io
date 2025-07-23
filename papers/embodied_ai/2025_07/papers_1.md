@@ -9,6 +9,44 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.16815v1">ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+      | 💬 Project page: https://jasper0314-huang.github.io/thinkact-vla/
+    </div>
+    <details class="paper-abstract">
+      Vision-language-action (VLA) reasoning tasks require agents to interpret multimodal instructions, perform long-horizon planning, and act adaptively in dynamic environments. Existing approaches typically train VLA models in an end-to-end fashion, directly mapping inputs to actions without explicit reasoning, which hinders their ability to plan over multiple steps or adapt to complex task variations. In this paper, we propose ThinkAct, a dual-system framework that bridges high-level reasoning with low-level action execution via reinforced visual latent planning. ThinkAct trains a multimodal LLM to generate embodied reasoning plans guided by reinforcing action-aligned visual rewards based on goal completion and trajectory consistency. These reasoning plans are compressed into a visual plan latent that conditions a downstream action model for robust action execution on target environments. Extensive experiments on embodied reasoning and robot manipulation benchmarks demonstrate that ThinkAct enables few-shot adaptation, long-horizon planning, and self-correction behaviors in complex embodied AI tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.05171v2">Towards provable probabilistic safety for scalable embodied AI systems</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+    </div>
+    <details class="paper-abstract">
+      Embodied AI systems, comprising AI models and physical plants, are increasingly prevalent across various applications. Due to the rarity of system failures, ensuring their safety in complex operating environments remains a major challenge, which severely hinders their large-scale deployment in safety-critical domains, such as autonomous vehicles, medical devices, and robotics. While achieving provable deterministic safety--verifying system safety across all possible scenarios--remains theoretically ideal, the rarity and complexity of corner cases make this approach impractical for scalable embodied AI systems. Instead, empirical safety evaluation is employed as an alternative, but the absence of provable guarantees imposes significant limitations. To address these issues, we argue for a paradigm shift to provable probabilistic safety that integrates provable guarantees with progressive achievement toward a probabilistic safety boundary on overall system performance. The new paradigm better leverages statistical methods to enhance feasibility and scalability, and a well-defined probabilistic safety boundary enables embodied AI systems to be deployed at scale. In this Perspective, we outline a roadmap for provable probabilistic safety, along with corresponding challenges and potential solutions. By bridging the gap between theoretical safety assurance and practical deployment, this Perspective offers a pathway toward safer, large-scale adoption of embodied AI systems in safety-critical applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.20041v2">Learning Streaming Video Representation via Multitask Training</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+      | 💬 Technical Report. Project Page: https://go2heart.github.io/streamformer
+    </div>
+    <details class="paper-abstract">
+      Understanding continuous video streams plays a fundamental role in real-time applications including embodied AI and autonomous driving. Unlike offline video understanding, streaming video understanding requires the ability to process video streams frame by frame, preserve historical information, and make low-latency decisions. To address these challenges, our main contributions are three-fold. (i) We develop a novel streaming video backbone, termed as StreamFormer, by incorporating causal temporal attention into a pre-trained vision transformer. This enables efficient streaming video processing while maintaining image representation capability. (ii) To train StreamFormer, we propose to unify diverse spatial-temporal video understanding tasks within a multitask visual-language alignment framework. Hence, StreamFormer learns global semantics, temporal dynamics, and fine-grained spatial relationships simultaneously. (iii) We conduct extensive experiments on online action detection, online video instance segmentation, and video question answering. StreamFormer achieves competitive results while maintaining efficiency, demonstrating its potential for real-time applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.01559v2">PR2: A Physics- and Photo-realistic Humanoid Testbed with Pilot Study in Competition</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+    </div>
+    <details class="paper-abstract">
+      This paper presents the development of a Physics-realistic and Photo-realistic humanoid robot testbed, PR2, to facilitate collaborative research between Embodied Artificial Intelligence (Embodied AI) and robotics. PR2 offers high-quality scene rendering and robot dynamic simulation, enabling (i) the creation of diverse scenes using various digital assets, (ii) the integration of advanced perception or foundation models, and (iii) the implementation of planning and control algorithms for dynamic humanoid robot behaviors based on environmental feedback. The beta version of PR2 has been deployed for the simulation track of a nationwide full-size humanoid robot competition for college students, attracting 137 teams and over 400 participants within four months. This competition covered traditional tasks in bipedal walking, as well as novel challenges in loco-manipulation and language-instruction-based object search, marking a first for public college robotics competitions. A retrospective analysis of the competition suggests that future events should emphasize the integration of locomotion with manipulation and perception. By making the PR2 testbed publicly available at https://github.com/pr2-humanoid/PR2-Platform, we aim to further advance education and training in humanoid robotics. Video demonstration: https://pr2-humanoid.github.io/
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2507.15428v1">EgoPrune: Efficient Token Pruning for Egomotion Video Reasoning in Embodied Agent</a></div>
     <div class="paper-meta">
       📅 2025-07-21
