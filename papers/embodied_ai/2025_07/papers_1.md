@@ -9,6 +9,15 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.14501v3">Advances in 4D Generation: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2025-07-24
+    </div>
+    <details class="paper-abstract">
+      Generative artificial intelligence has recently progressed from static image and video synthesis to 3D content generation, culminating in the emergence of 4D generation-the task of synthesizing temporally coherent dynamic 3D assets guided by user input. As a burgeoning research frontier, 4D generation enables richer interactive and immersive experiences, with applications ranging from digital humans to autonomous driving. Despite rapid progress, the field lacks a unified understanding of 4D representations, generative frameworks, basic paradigms, and the core technical challenges it faces. This survey provides a systematic and in-depth review of the 4D generation landscape. To comprehensively characterize 4D generation, we first categorize fundamental 4D representations and outline associated techniques for 4D generation. We then present an in-depth analysis of representative generative pipelines based on conditions and representation methods. Subsequently, we discuss how motion and geometry priors are integrated into 4D outputs to ensure spatio-temporal consistency under various control schemes. From an application perspective, this paper summarizes 4D generation tasks in areas such as dynamic object/scene generation, digital human synthesis, editable 4D content, and embodied AI. Furthermore, we summarize and multi-dimensionally compare four basic paradigms for 4D generation: End-to-End, Generated-Data-Based, Implicit-Distillation-Based, and Explicit-Supervision-Based. Concluding our analysis, we highlight five key challenges-consistency, controllability, diversity, efficiency, and fidelity-and contextualize these with current approaches.By distilling recent advances and outlining open problems, this work offers a comprehensive and forward-looking perspective to guide future research in 4D generation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.15610v2">BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion</a></div>
     <div class="paper-meta">
       📅 2025-07-23
