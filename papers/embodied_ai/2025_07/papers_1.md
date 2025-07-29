@@ -9,6 +9,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.21045v1">Reconstructing 4D Spatial Intelligence: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2025-07-28
+      | 💬 Project page: https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence
+    </div>
+    <details class="paper-abstract">
+      Reconstructing 4D spatial intelligence from visual observations has long been a central yet challenging task in computer vision, with broad real-world applications. These range from entertainment domains like movies, where the focus is often on reconstructing fundamental visual elements, to embodied AI, which emphasizes interaction modeling and physical realism. Fueled by rapid advances in 3D representations and deep learning architectures, the field has evolved quickly, outpacing the scope of previous surveys. Additionally, existing surveys rarely offer a comprehensive analysis of the hierarchical structure of 4D scene reconstruction. To address this gap, we present a new perspective that organizes existing methods into five progressive levels of 4D spatial intelligence: (1) Level 1 -- reconstruction of low-level 3D attributes (e.g., depth, pose, and point maps); (2) Level 2 -- reconstruction of 3D scene components (e.g., objects, humans, structures); (3) Level 3 -- reconstruction of 4D dynamic scenes; (4) Level 4 -- modeling of interactions among scene components; and (5) Level 5 -- incorporation of physical laws and constraints. We conclude the survey by discussing the key challenges at each level and highlighting promising directions for advancing toward even richer levels of 4D spatial intelligence. To track ongoing developments, we maintain an up-to-date project page: https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.20395v1">MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models</a></div>
+    <div class="paper-meta">
+      📅 2025-07-27
+    </div>
+    <details class="paper-abstract">
+      As Large Language Models (LLMs) increasingly power autonomous agents in robotics and embodied AI, understanding their spatial reasoning capabilities becomes crucial for ensuring reliable real-world deployment. Despite advances in language understanding, current research lacks evaluation of how LLMs perform spatial navigation without visual cues, a fundamental requirement for agents operating with limited sensory information. This paper addresses this gap by introducing MazeEval, a benchmark designed to isolate and evaluate pure spatial reasoning in LLMs through coordinate-based maze navigation tasks. Our methodology employs a function-calling interface where models navigate mazes of varying complexity ($5\times 5$ to $15\times 15$ grids) using only coordinate feedback and distance-to-wall information, excluding visual input to test fundamental spatial cognition. We evaluate eight state-of-the-art LLMs across identical mazes in both English and Icelandic to assess cross-linguistic transfer of spatial abilities. Our findings reveal striking disparities: while OpenAI's O3 achieves perfect navigation for mazes up to size $30\times 30$, other models exhibit catastrophic failure beyond $9\times 9$ mazes, with 100% of failures attributed to excessive looping behavior where models revisit a cell at least 10 times. We document a significant performance degradation in Icelandic, with models solving mazes 3-4 sizes smaller than in English, suggesting spatial reasoning in LLMs emerges from linguistic patterns rather than language-agnostic mechanisms. These results have important implications for global deployment of LLM-powered autonomous systems, showing spatial intelligence remains fundamentally constrained by training data availability and highlighting the need for architectural innovations to achieve reliable navigation across linguistic contexts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.19684v1">Salsa as a Nonverbal Embodied Language -- The CoMPAS3D Dataset and Benchmarks</a></div>
+    <div class="paper-meta">
+      📅 2025-07-25
+      | 💬 https://rosielab.github.io/compas3d
+    </div>
+    <details class="paper-abstract">
+      Imagine a humanoid that can safely and creatively dance with a human, adapting to its partner's proficiency, using haptic signaling as a primary form of communication. While today's AI systems excel at text or voice-based interaction with large language models, human communication extends far beyond text-it includes embodied movement, timing, and physical coordination. Modeling coupled interaction between two agents poses a formidable challenge: it is continuous, bidirectionally reactive, and shaped by individual variation. We present CoMPAS3D, the largest and most diverse motion capture dataset of improvised salsa dancing, designed as a challenging testbed for interactive, expressive humanoid AI. The dataset includes 3 hours of leader-follower salsa dances performed by 18 dancers spanning beginner, intermediate, and professional skill levels. For the first time, we provide fine-grained salsa expert annotations, covering over 2,800 move segments, including move types, combinations, execution errors and stylistic elements. We draw analogies between partner dance communication and natural language, evaluating CoMPAS3D on two benchmark tasks for synthetic humans that parallel key problems in spoken language and dialogue processing: leader or follower generation with proficiency levels (speaker or listener synthesis), and duet (conversation) generation. Towards a long-term goal of partner dance with humans, we release the dataset, annotations, and code, along with a multitask SalsaAgent model capable of performing all benchmark tasks, alongside additional baselines to encourage research in socially interactive embodied AI and creative, expressive humanoid motion generation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.14501v3">Advances in 4D Generation: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-07-24
