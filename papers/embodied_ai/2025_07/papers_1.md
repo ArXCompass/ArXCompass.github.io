@@ -9,6 +9,26 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.21589v1">Exploring the Link Between Bayesian Inference and Embodied Intelligence: Toward Open Physical-World Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2025-07-29
+      | 💬 16 pages
+    </div>
+    <details class="paper-abstract">
+      Embodied intelligence posits that cognitive capabilities fundamentally emerge from - and are shaped by - an agent's real-time sensorimotor interactions with its environment. Such adaptive behavior inherently requires continuous inference under uncertainty. Bayesian statistics offers a principled probabilistic framework to address this challenge by representing knowledge as probability distributions and updating beliefs in response to new evidence. The core computational processes underlying embodied intelligence - including perception, action selection, learning, and even higher-level cognition - can be effectively understood and modeled as forms of Bayesian inference. Despite the deep conceptual connection between Bayesian statistics and embodied intelligence, Bayesian principles have not been widely or explicitly applied in today's embodied intelligence systems. In this work, we examine both Bayesian and contemporary embodied intelligence approaches through two fundamental lenses: search and learning - the two central themes in modern AI, as highlighted in Rich Sutton's influential essay "The Bitter Lesson". This analysis sheds light on why Bayesian inference has not played a central role in the development of modern embodied intelligence. At the same time, it reveals that current embodied intelligence systems remain largely confined to closed-physical-world environments, and highlights the potential for Bayesian methods to play a key role in extending these systems toward truly open physical-world embodied intelligence.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.21496v1">Multifunctional physical reservoir computing in soft tensegrity robots</a></div>
+    <div class="paper-meta">
+      📅 2025-07-29
+      | 💬 25 pages, 12 figures. The following article has been accepted by Chaos: An Interdisciplinary Journal of Nonlinear Science
+    </div>
+    <details class="paper-abstract">
+      Recent studies have demonstrated that the dynamics of physical systems can be utilized for the desired information processing under the framework of physical reservoir computing (PRC). Robots with soft bodies are examples of such physical systems, and their nonlinear body-environment dynamics can be used to compute and generate the motor signals necessary for the control of their own behavior. In this simulation study, we extend this approach to control and embed not only one but also multiple behaviors into a type of soft robot called a tensegrity robot. The resulting system, consisting of the robot and the environment, is a multistable dynamical system that converges to different attractors from varying initial conditions. Furthermore, attractor analysis reveals that there exist "untrained attractors" in the state space of the system outside the training data. These untrained attractors reflect the intrinsic properties and structures of the tensegrity robot and its interactions with the environment. The impacts of these recent findings in PRC remain unexplored in embodied AI research. We here illustrate their potential to understand various features of embodied cognition that have not been fully addressed to date.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2507.21045v1">Reconstructing 4D Spatial Intelligence: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-07-28
