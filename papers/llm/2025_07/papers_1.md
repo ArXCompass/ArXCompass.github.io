@@ -471,6 +471,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.00933v1">OKG-LLM: Aligning Ocean Knowledge Graph with Observation Data via LLMs for Global Sea Surface Temperature Prediction</a></div>
+    <div class="paper-meta">
+      📅 2025-07-31
+    </div>
+    <details class="paper-abstract">
+      Sea surface temperature (SST) prediction is a critical task in ocean science, supporting various applications, such as weather forecasting, fisheries management, and storm tracking. While existing data-driven methods have demonstrated significant success, they often neglect to leverage the rich domain knowledge accumulated over the past decades, limiting further advancements in prediction accuracy. The recent emergence of large language models (LLMs) has highlighted the potential of integrating domain knowledge for downstream tasks. However, the application of LLMs to SST prediction remains underexplored, primarily due to the challenge of integrating ocean domain knowledge and numerical data. To address this issue, we propose Ocean Knowledge Graph-enhanced LLM (OKG-LLM), a novel framework for global SST prediction. To the best of our knowledge, this work presents the first systematic effort to construct an Ocean Knowledge Graph (OKG) specifically designed to represent diverse ocean knowledge for SST prediction. We then develop a graph embedding network to learn the comprehensive semantic and structural knowledge within the OKG, capturing both the unique characteristics of individual sea regions and the complex correlations between them. Finally, we align and fuse the learned knowledge with fine-grained numerical SST data and leverage a pre-trained LLM to model SST patterns for accurate prediction. Extensive experiments on the real-world dataset demonstrate that OKG-LLM consistently outperforms state-of-the-art methods, showcasing its effectiveness, robustness, and potential to advance SST prediction. The codes are available in the online repository.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2505.08450v2">IterKey: Iterative Keyword Generation with LLMs for Enhanced Retrieval Augmented Generation</a></div>
     <div class="paper-meta">
       📅 2025-07-30
@@ -954,15 +963,5 @@
     </div>
     <details class="paper-abstract">
       Traditional reinforcement learning and planning typically requires vast amounts of data and training to develop effective policies. In contrast, large language models (LLMs) exhibit strong generalization and zero-shot capabilities, but struggle with tasks that require detailed planning and decision-making in complex action spaces. We introduce STRATEGIST, a novel approach that integrates the strengths of both methods. Our approach leverages LLMs to search and update high-level strategies (as text), which are then refined and executed by low-level Monte Carlo Tree Search (MCTS). STRATEGIST is a generalizable framework to optimize the strategy through population-based self-play simulations without the need for any training data. We demonstrate the effectiveness of STRATEGIST in learning optimal strategies for competitive, multi-turn games with partial information, including Game of Pure Strategy (GOPS) and multi-agent, hidden-identity discussion games like The Resistance: Avalon. Our results show that agents equipped with STRATEGIST outperform those trained with traditional RL methods, other LLM-based skill acquisition techniques, pre-existing LLM agents across both game environments and achieves comparable performance against human players.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.15549v3">Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-07-29
-      | 💬 Code at https://github.com/aengusl/latent-adversarial-training. Models at https://huggingface.co/LLM-LAT
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) can often be made to behave in undesirable ways that they are explicitly fine-tuned not to. For example, the LLM red-teaming literature has produced a wide variety of 'jailbreaking' techniques to elicit harmful text from models that were fine-tuned to be harmless. Recent work on red-teaming, model editing, and interpretability suggests that this challenge stems from how (adversarial) fine-tuning largely serves to suppress rather than remove undesirable capabilities from LLMs. Prior work has introduced latent adversarial training (LAT) as a way to improve robustness to broad classes of failures. These prior works have considered untargeted latent space attacks where the adversary perturbs latent activations to maximize loss on examples of desirable behavior. Untargeted LAT can provide a generic type of robustness but does not leverage information about specific failure modes. Here, we experiment with targeted LAT where the adversary seeks to minimize loss on a specific competing task. We find that it can augment a wide variety of state-of-the-art methods. First, we use targeted LAT to improve robustness to jailbreaks, outperforming a strong R2D2 baseline with orders of magnitude less compute. Second, we use it to more effectively remove backdoors with no knowledge of the trigger. Finally, we use it to more effectively unlearn knowledge for specific undesirable tasks in a way that is also more robust to re-learning. Overall, our results suggest that targeted LAT can be an effective tool for defending against harmful behaviors from LLMs.
     </details>
 </div>
