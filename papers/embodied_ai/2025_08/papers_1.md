@@ -9,6 +9,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.08896v2">Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors</a></div>
+    <div class="paper-meta">
+      📅 2025-08-13
+      | 💬 13 pages, 8 figures
+    </div>
+    <details class="paper-abstract">
+      A dexterous hand capable of generalizable grasping objects is fundamental for the development of general-purpose embodied AI. However, previous methods focus narrowly on low-level grasp stability metrics, neglecting affordance-aware positioning and human-like poses which are crucial for downstream manipulation. To address these limitations, we propose AffordDex, a novel framework with two-stage training that learns a universal grasping policy with an inherent understanding of both motion priors and object affordances. In the first stage, a trajectory imitator is pre-trained on a large corpus of human hand motions to instill a strong prior for natural movement. In the second stage, a residual module is trained to adapt these general human-like motions to specific object instances. This refinement is critically guided by two components: our Negative Affordance-aware Segmentation (NAA) module, which identifies functionally inappropriate contact regions, and a privileged teacher-student distillation process that ensures the final vision-based policy is highly successful. Extensive experiments demonstrate that AffordDex not only achieves universal dexterous grasping but also remains remarkably human-like in posture and functionally appropriate in contact location. As a result, AffordDex significantly outperforms state-of-the-art baselines across seen objects, unseen instances, and even entirely novel categories.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.07818v2">MoSE: Skill-by-Skill Mixture-of-Experts Learning for Embodied Autonomous Machines</a></div>
+    <div class="paper-meta">
+      📅 2025-08-13
+    </div>
+    <details class="paper-abstract">
+      To meet the growing demand for smarter, faster, and more efficient embodied AI solutions, we introduce a novel Mixture-of-Expert (MoE) method that significantly boosts reasoning and learning efficiency for embodied autonomous systems. General MoE models demand extensive training data and complex optimization, which limits their applicability in embodied AI such as autonomous driving (AD) and robotic manipulation. In this work, we propose a skill-oriented MoE called MoSE, which mimics the human learning and reasoning process skill-by-skill, step-by-step. We introduce a skill-oriented routing mechanism that begins with defining and annotating specific skills, enabling experts to identify the necessary competencies for various scenarios and reasoning tasks, thereby facilitating skill-by-skill learning. To better align with multi-step planning in human reasoning and in end-to-end driving models, we build a hierarchical skill dataset and pretrain the router to encourage the model to think step-by-step. Unlike other multi-round dialogues, MoSE integrates valuable auxiliary tasks (e.g. perception-prediction-planning for AD, and high-level and low-level planning for robots) in one single forward process without introducing any extra computational cost. With less than 3B sparsely activated parameters, our model effectively grows more diverse expertise and outperforms models on both AD corner-case reasoning tasks and robot reasoning tasks with less than 40% of the parameters.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.08896v1">Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors</a></div>
     <div class="paper-meta">
       📅 2025-08-12
