@@ -7,7 +7,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 - [embodied ai](embodied_ai/)
 - [llm](llm/)
 
-Last update: 2025-08-31
+Last update: 2025-09-01
 
 ## Statistics
 
