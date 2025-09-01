@@ -11,6 +11,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.21542v1">Complete Gaussian Splats from a Single Image with Denoising Diffusion Models</a></div>
+    <div class="paper-meta">
+      📅 2025-08-29
+      | 💬 Main paper: 11 pages; Supplementary materials: 7 pages
+    </div>
+    <details class="paper-abstract">
+      Gaussian splatting typically requires dense observations of the scene and can fail to reconstruct occluded and unobserved areas. We propose a latent diffusion model to reconstruct a complete 3D scene with Gaussian splats, including the occluded parts, from only a single image during inference. Completing the unobserved surfaces of a scene is challenging due to the ambiguity of the plausible surfaces. Conventional methods use a regression-based formulation to predict a single "mode" for occluded and out-of-frustum surfaces, leading to blurriness, implausibility, and failure to capture multiple possible explanations. Thus, they often address this problem partially, focusing either on objects isolated from the background, reconstructing only visible surfaces, or failing to extrapolate far from the input views. In contrast, we propose a generative formulation to learn a distribution of 3D representations of Gaussian splats conditioned on a single input image. To address the lack of ground-truth training data, we propose a Variational AutoReconstructor to learn a latent space only from 2D images in a self-supervised manner, over which a diffusion model is trained. Our method generates faithful reconstructions and diverse samples with the ability to complete the occluded surfaces for high-quality 360-degree renderings.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.21444v1">Scale-GS: Efficient Scalable Gaussian Splatting via Redundancy-filtering Training on Streaming Content</a></div>
+    <div class="paper-meta">
+      📅 2025-08-29
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) enables high-fidelity real-time rendering, a key requirement for immersive applications. However, the extension of 3DGS to dynamic scenes remains limitations on the substantial data volume of dense Gaussians and the prolonged training time required for each frame. This paper presents \M, a scalable Gaussian Splatting framework designed for efficient training in streaming tasks. Specifically, Gaussian spheres are hierarchically organized by scale within an anchor-based structure. Coarser-level Gaussians represent the low-resolution structure of the scene, while finer-level Gaussians, responsible for detailed high-fidelity rendering, are selectively activated by the coarser-level Gaussians. To further reduce computational overhead, we introduce a hybrid deformation and spawning strategy that models motion of inter-frame through Gaussian deformation and triggers Gaussian spawning to characterize wide-range motion. Additionally, a bidirectional adaptive masking mechanism enhances training efficiency by removing static regions and prioritizing informative viewpoints. Extensive experiments demonstrate that \M~ achieves superior visual quality while significantly reducing training time compared to state-of-the-art methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.21344v1">ARGS: Advanced Regularization on Aligning Gaussians over the Surface</a></div>
+    <div class="paper-meta">
+      📅 2025-08-29
+      | 💬 9 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      Reconstructing high-quality 3D meshes and visuals from 3D Gaussian Splatting(3DGS) still remains a central challenge in computer graphics. Although existing models such as SuGaR offer effective solutions for rendering, there is is still room to improve improve both visual fidelity and scene consistency. This work builds upon SuGaR by introducing two complementary regularization strategies that address common limitations in both the shape of individual Gaussians and the coherence of the overall surface. The first strategy introduces an effective rank regularization, motivated by recent studies on Gaussian primitive structures. This regularization discourages extreme anisotropy-specifically, "needle-like" shapes-by favoring more balanced, "disk-like" forms that are better suited for stable surface reconstruction. The second strategy integrates a neural Signed Distance Function (SDF) into the optimization process. The SDF is regularized with an Eikonal loss to maintain proper distance properties and provides a continuous global surface prior, guiding Gaussians toward better alignment with the underlying geometry. These two regularizations aim to improve both the fidelity of individual Gaussian primitives and their collective surface behavior. The final model can make more accurate and coherent visuals from 3DGS data.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.17645v2">Generating Human-AI Collaborative Design Sequence for 3D Assets via Differentiable Operation Graph</a></div>
     <div class="paper-meta">
       📅 2025-08-28
@@ -922,6 +951,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2508.10936v1">Vision-Only Gaussian Splatting for Collaborative Semantic Occupancy Prediction</a></div>
+    <div class="paper-meta">
+      📅 2025-08-12
+    </div>
+    <details class="paper-abstract">
+      Collaborative perception enables connected vehicles to share information, overcoming occlusions and extending the limited sensing range inherent in single-agent (non-collaborative) systems. Existing vision-only methods for 3D semantic occupancy prediction commonly rely on dense 3D voxels, which incur high communication costs, or 2D planar features, which require accurate depth estimation or additional supervision, limiting their applicability to collaborative scenarios. To address these challenges, we propose the first approach leveraging sparse 3D semantic Gaussian splatting for collaborative 3D semantic occupancy prediction. By sharing and fusing intermediate Gaussian primitives, our method provides three benefits: a neighborhood-based cross-agent fusion that removes duplicates and suppresses noisy or inconsistent Gaussians; a joint encoding of geometry and semantics in each primitive, which reduces reliance on depth supervision and allows simple rigid alignment; and sparse, object-centric messages that preserve structural information while reducing communication volume. Extensive experiments demonstrate that our approach outperforms single-agent perception and baseline collaborative methods by +8.42 and +3.28 points in mIoU, and +5.11 and +22.41 points in IoU, respectively. When further reducing the number of transmitted Gaussians, our method still achieves a +1.9 improvement in mIoU, using only 34.6% communication volume, highlighting robust performance under limited communication budgets.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.09068v1">A new dataset and comparison for multi-camera frame synthesis</a></div>
     <div class="paper-meta">
       📅 2025-08-12
@@ -929,44 +967,5 @@
     </div>
     <details class="paper-abstract">
       Many methods exist for frame synthesis in image sequences but can be broadly categorised into frame interpolation and view synthesis techniques. Fundamentally, both frame interpolation and view synthesis tackle the same task, interpolating a frame given surrounding frames in time or space. However, most frame interpolation datasets focus on temporal aspects with single cameras moving through time and space, while view synthesis datasets are typically biased toward stereoscopic depth estimation use cases. This makes direct comparison between view synthesis and frame interpolation methods challenging. In this paper, we develop a novel multi-camera dataset using a custom-built dense linear camera array to enable fair comparison between these approaches. We evaluate classical and deep learning frame interpolators against a view synthesis method (3D Gaussian Splatting) for the task of view in-betweening. Our results reveal that deep learning methods do not significantly outperform classical methods on real image data, with 3D Gaussian Splatting actually underperforming frame interpolators by as much as 3.5 dB PSNR. However, in synthetic scenes, the situation reverses -- 3D Gaussian Splatting outperforms frame interpolation algorithms by almost 5 dB PSNR at a 95% confidence level.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2508.08867v1">GaussianUpdate: Continual 3D Gaussian Splatting Update for Changing Environments</a></div>
-    <div class="paper-meta">
-      📅 2025-08-12
-      | 💬 Accepted to ICCV 2025
-    </div>
-    <details class="paper-abstract">
-      Novel view synthesis with neural models has advanced rapidly in recent years, yet adapting these models to scene changes remains an open problem. Existing methods are either labor-intensive, requiring extensive model retraining, or fail to capture detailed types of changes over time. In this paper, we present GaussianUpdate, a novel approach that combines 3D Gaussian representation with continual learning to address these challenges. Our method effectively updates the Gaussian radiance fields with current data while preserving information from past scenes. Unlike existing methods, GaussianUpdate explicitly models different types of changes through a novel multi-stage update strategy. Additionally, we introduce a visibility-aware continual learning approach with generative replay, enabling self-aware updating without the need to store images. The experiments on the benchmark dataset demonstrate our method achieves superior and real-time rendering with the capability of visualizing changes over different times
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06424v2">Deblur4DGS: 4D Gaussian Splatting from Blurry Monocular Video</a></div>
-    <div class="paper-meta">
-      📅 2025-08-12
-      | 💬 16 pages
-    </div>
-    <details class="paper-abstract">
-      Recent 4D reconstruction methods have yielded impressive results but rely on sharp videos as supervision. However, motion blur often occurs in videos due to camera shake and object movement, while existing methods render blurry results when using such videos for reconstructing 4D models. Although a few approaches attempted to address the problem, they struggled to produce high-quality results, due to the inaccuracy in estimating continuous dynamic representations within the exposure time. Encouraged by recent works in 3D motion trajectory modeling using 3D Gaussian Splatting (3DGS), we take 3DGS as the scene representation manner, and propose Deblur4DGS to reconstruct a high-quality 4D model from blurry monocular video. Specifically, we transform continuous dynamic representations estimation within an exposure time into the exposure time estimation. Moreover, we introduce the exposure regularization term, multi-frame, and multi-resolution consistency regularization term to avoid trivial solutions. Furthermore, to better represent objects with large motion, we suggest blur-aware variable canonical Gaussians. Beyond novel-view synthesis, Deblur4DGS can be applied to improve blurry video from multiple perspectives, including deblurring, frame interpolation, and video stabilization. Extensive experiments in both synthetic and real-world data on the above four tasks show that Deblur4DGS outperforms state-of-the-art 4D reconstruction methods. The codes are available at https://github.com/ZcsrenlongZ/Deblur4DGS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2508.08624v1">Communication Efficient Robotic Mixed Reality with Gaussian Splatting Cross-Layer Optimization</a></div>
-    <div class="paper-meta">
-      📅 2025-08-12
-      | 💬 14 pages, 18 figures, to appear in IEEE Transactions on Cognitive Communications and Networking
-    </div>
-    <details class="paper-abstract">
-      Realizing low-cost communication in robotic mixed reality (RoboMR) systems presents a challenge, due to the necessity of uploading high-resolution images through wireless channels. This paper proposes Gaussian splatting (GS) RoboMR (GSMR), which enables the simulator to opportunistically render a photo-realistic view from the robot's pose by calling ``memory'' from a GS model, thus reducing the need for excessive image uploads. However, the GS model may involve discrepancies compared to the actual environments. To this end, a GS cross-layer optimization (GSCLO) framework is further proposed, which jointly optimizes content switching (i.e., deciding whether to upload image or not) and power allocation (i.e., adjusting to content profiles) across different frames by minimizing a newly derived GSMR loss function. The GSCLO problem is addressed by an accelerated penalty optimization (APO) algorithm that reduces computational complexity by over $10$x compared to traditional branch-and-bound and search algorithms. Moreover, variants of GSCLO are presented to achieve robust, low-power, and multi-robot GSMR. Extensive experiments demonstrate that the proposed GSMR paradigm and GSCLO method achieve significant improvements over existing benchmarks on both wheeled and legged robots in terms of diverse metrics in various scenarios. For the first time, it is found that RoboMR can be achieved with ultra-low communication costs, and mixture of data is useful for enhancing GS performance in dynamic scenarios.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2508.09239v1">Gradient-Direction-Aware Density Control for 3D Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2025-08-12
-    </div>
-    <details class="paper-abstract">
-      The emergence of 3D Gaussian Splatting (3DGS) has significantly advanced novel view synthesis through explicit scene representation, enabling real-time photorealistic rendering. However, existing approaches manifest two critical limitations in complex scenarios: (1) Over-reconstruction occurs when persistent large Gaussians cannot meet adaptive splitting thresholds during density control. This is exacerbated by conflicting gradient directions that prevent effective splitting of these Gaussians; (2) Over-densification of Gaussians occurs in regions with aligned gradient aggregation, leading to redundant component proliferation. This redundancy significantly increases memory overhead due to unnecessary data retention. We present Gradient-Direction-Aware Gaussian Splatting (GDAGS), a gradient-direction-aware adaptive density control framework to address these challenges. Our key innovations: the gradient coherence ratio (GCR), computed through normalized gradient vector norms, which explicitly discriminates Gaussians with concordant versus conflicting gradient directions; and a nonlinear dynamic weighting mechanism leverages the GCR to enable gradient-direction-aware density control. Specifically, GDAGS prioritizes conflicting-gradient Gaussians during splitting operations to enhance geometric details while suppressing redundant concordant-direction Gaussians. Conversely, in cloning processes, GDAGS promotes concordant-direction Gaussian densification for structural completion while preventing conflicting-direction Gaussian overpopulation. Comprehensive evaluations across diverse real-world benchmarks demonstrate that GDAGS achieves superior rendering quality while effectively mitigating over-reconstruction, suppressing over-densification, and constructing compact scene representations with 50\% reduced memory consumption through optimized Gaussians utilization.
     </details>
 </div>
