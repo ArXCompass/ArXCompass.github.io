@@ -9,6 +9,55 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.08316v1">Unlocking 3D Affordance Segmentation with 2D Semantic Knowledge</a></div>
+    <div class="paper-meta">
+      📅 2025-10-09
+      | 💬 Work in process
+    </div>
+    <details class="paper-abstract">
+      Affordance segmentation aims to parse 3D objects into functionally distinct parts, bridging recognition and interaction for applications in robotic manipulation, embodied AI, and AR. While recent studies leverage visual or textual prompts to guide this process, they often rely on point cloud encoders as generic feature extractors, overlooking the intrinsic challenges of 3D data such as sparsity, noise, and geometric ambiguity. As a result, 3D features learned in isolation frequently lack clear and semantically consistent functional boundaries. To address this bottleneck, we propose a semantic-grounded learning paradigm that transfers rich semantic knowledge from large-scale 2D Vision Foundation Models (VFMs) into the 3D domain. Specifically, We introduce Cross-Modal Affinity Transfer (CMAT), a pre-training strategy that aligns a 3D encoder with lifted 2D semantics and jointly optimizes reconstruction, affinity, and diversity to yield semantically organized representations. Building on this backbone, we further design the Cross-modal Affordance Segmentation Transformer (CAST), which integrates multi-modal prompts with CMAT-pretrained features to generate precise, prompt-aware segmentation maps. Extensive experiments on standard benchmarks demonstrate that our framework establishes new state-of-the-art results for 3D affordance segmentation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.08227v1">Practicing a Second Language Without Fear: Mixed Reality Agents for Interactive Group Conversation</a></div>
+    <div class="paper-meta">
+      📅 2025-10-09
+      | 💬 22 pages
+    </div>
+    <details class="paper-abstract">
+      Developing speaking proficiency in a second language can be cognitively demanding and emotionally taxing, often triggering fear of making mistakes or being excluded from larger groups. While current learning tools show promise for speaking practice, most focus on dyadic, scripted scenarios, limiting opportunities for dynamic group interactions. To address this gap, we present ConversAR, a Mixed Reality system that leverages Generative AI and XR to support situated and personalized group conversations. It integrates embodied AI agents, scene recognition, and generative 3D props anchored to real-world surroundings. Based on a formative study with experts in language acquisition, we developed and tested this system with a user study with 21 second-language learners. Results indicate that the system enhanced learner engagement, increased willingness to communicate, and offered a safe space for speaking. We discuss the implications for integrating Generative AI and XR into the design of future language learning applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.07975v1">Executable Analytic Concepts as the Missing Link Between VLM Insight and Precise Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-10-09
+    </div>
+    <details class="paper-abstract">
+      Enabling robots to perform precise and generalized manipulation in unstructured environments remains a fundamental challenge in embodied AI. While Vision-Language Models (VLMs) have demonstrated remarkable capabilities in semantic reasoning and task planning, a significant gap persists between their high-level understanding and the precise physical execution required for real-world manipulation. To bridge this "semantic-to-physical" gap, we introduce GRACE, a novel framework that grounds VLM-based reasoning through executable analytic concepts (EAC)-mathematically defined blueprints that encode object affordances, geometric constraints, and semantics of manipulation. Our approach integrates a structured policy scaffolding pipeline that turn natural language instructions and visual information into an instantiated EAC, from which we derive grasp poses, force directions and plan physically feasible motion trajectory for robot execution. GRACE thus provides a unified and interpretable interface between high-level instruction understanding and low-level robot control, effectively enabling precise and generalizable manipulation through semantic-physical grounding. Extensive experiments demonstrate that GRACE achieves strong zero-shot generalization across a variety of articulated objects in both simulated and real-world environments, without requiring task-specific training.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.24528v2">CORE-3D: Context-aware Open-vocabulary Retrieval by Embeddings in 3D</a></div>
+    <div class="paper-meta">
+      📅 2025-10-09
+      | 💬 9 pages, 4 figures, submitted for ICLR 2026 conference
+    </div>
+    <details class="paper-abstract">
+      3D scene understanding is fundamental for embodied AI and robotics, supporting reliable perception for interaction and navigation. Recent approaches achieve zero-shot, open-vocabulary 3D semantic mapping by assigning embedding vectors to 2D class-agnostic masks generated via vision-language models (VLMs) and projecting these into 3D. However, these methods often produce fragmented masks and inaccurate semantic assignments due to the direct use of raw masks, limiting their effectiveness in complex environments. To address this, we leverage SemanticSAM with progressive granularity refinement to generate more accurate and numerous object-level masks, mitigating the over-segmentation commonly observed in mask generation models such as vanilla SAM, and improving downstream 3D semantic segmentation. To further enhance semantic context, we employ a context-aware CLIP encoding strategy that integrates multiple contextual views of each mask using empirically determined weighting, providing much richer visual context. We evaluate our approach on multiple 3D scene understanding tasks, including 3D semantic segmentation and object retrieval from language queries, across several benchmark datasets. Experimental results demonstrate significant improvements over existing methods, highlighting the effectiveness of our approach.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.07791v1">GTR-Bench: Evaluating Geo-Temporal Reasoning in Vision-Language Models</a></div>
+    <div class="paper-meta">
+      📅 2025-10-09
+      | 💬 20 pages, 13 figures
+    </div>
+    <details class="paper-abstract">
+      Recently spatial-temporal intelligence of Visual-Language Models (VLMs) has attracted much attention due to its importance for Autonomous Driving, Embodied AI and General Artificial Intelligence. Existing spatial-temporal benchmarks mainly focus on egocentric perspective reasoning with images/video context, or geographic perspective reasoning with graphics context (eg. a map), thus fail to assess VLMs' geographic spatial-temporal intelligence with both images/video and graphics context, which is important for areas like traffic management and emergency response. To address the gaps, we introduce Geo-Temporal Reasoning benchmark (GTR-Bench), a novel challenge for geographic temporal reasoning of moving targets in a large-scale camera network. GTR-Bench is more challenging as it requires multiple perspective switches between maps and videos, joint reasoning across multiple videos with non-overlapping fields of view, and inference over spatial-temporal regions that are unobserved by any video context. Evaluations of more than 10 popular VLMs on GTR-Bench demonstrate that even the best proprietary model, Gemini-2.5-Pro (34.9%), significantly lags behind human performance (78.61%) on geo-temporal reasoning. Moreover, our comprehensive analysis on GTR-Bench reveals three primary deficiencies of current models for geo-temporal reasoning. (1) VLMs' reasoning is impaired by an imbalanced utilization of spatial-temporal context. (2) VLMs are weak in temporal forecasting, which leads to worse performance on temporal-emphasized tasks than on spatial-emphasized tasks. (3) VLMs lack the proficiency to comprehend or align the map data with multi-view video inputs. We believe GTR-Bench offers valuable insights and opens up new opportunities for research and applications in spatial-temporal intelligence. Benchmark and code will be released at https://github.com/X-Luffy/GTR-Bench.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2510.07067v1">Bring the Apple, Not the Sofa: Impact of Irrelevant Context in Embodied AI Commands on VLA Models</a></div>
     <div class="paper-meta">
       📅 2025-10-08
