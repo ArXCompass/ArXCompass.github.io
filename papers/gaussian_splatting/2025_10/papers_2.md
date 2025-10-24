@@ -10,26 +10,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2510.06644v1">RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</a></div>
-    <div class="paper-meta">
-      📅 2025-10-08
-      | 💬 Accepted by MICRO2025
-    </div>
-    <details class="paper-abstract">
-      3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS's state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed. Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration. While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies. In response, we propose RTGS, an algorithm-hardware co-design framework that comprehensively reduces the redundancies for real-time 3DGS-SLAM on edge. To minimize the overhead, RTGS fully leverages the characteristics of the 3DGS-SLAM pipeline. On the algorithm side, we introduce (1) an adaptive Gaussian pruning step to remove the redundant Gaussians by reusing gradients computed during backpropagation; and (2) a dynamic downsampling technique that directly reuses the keyframe identification and alpha computing steps to eliminate redundant pixels. On the hardware side, we propose (1) a subtile-level streaming strategy and a pixel-level pairwise scheduling strategy that mitigates workload imbalance via a Workload Scheduling Unit (WSU) guided by previous iteration information; (2) a Rendering and Backpropagation (R&B) Buffer that accelerates the rendering backpropagation by reusing intermediate data computed during rendering; and (3) a Gradient Merging Unit (GMU) to reduce intensive memory accesses caused by atomic operations while enabling pipelined aggregation. Integrated into an edge GPU, RTGS achieves real-time performance (>= 30 FPS) on four datasets and three algorithms, with up to 82.5x energy efficiency over the baseline and negligible quality loss. Code is available at https://github.com/UMN-ZhaoLab/RTGS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2507.07136v2">LangSplatV2: High-dimensional 3D Language Gaussian Splatting with 450+ FPS</a></div>
-    <div class="paper-meta">
-      📅 2025-10-08
-      | 💬 Accepted by NeurIPS 2025. Project Page: https://langsplat-v2.github.io
-    </div>
-    <details class="paper-abstract">
-      In this paper, we introduce LangSplatV2, which achieves high-dimensional feature splatting at 476.2 FPS and 3D open-vocabulary text querying at 384.6 FPS for high-resolution images, providing a 42 $\times$ speedup and a 47 $\times$ boost over LangSplat respectively, along with improved query accuracy. LangSplat employs Gaussian Splatting to embed 2D CLIP language features into 3D, significantly enhancing speed and learning a precise 3D language field with SAM semantics. Such advancements in 3D language fields are crucial for applications that require language interaction within complex scenes. However, LangSplat does not yet achieve real-time inference performance (8.2 FPS), even with advanced A100 GPUs, severely limiting its broader application. In this paper, we first conduct a detailed time analysis of LangSplat, identifying the heavyweight decoder as the primary speed bottleneck. Our solution, LangSplatV2 assumes that each Gaussian acts as a sparse code within a global dictionary, leading to the learning of a 3D sparse coefficient field that entirely eliminates the need for a heavyweight decoder. By leveraging this sparsity, we further propose an efficient sparse coefficient splatting method with CUDA optimization, rendering high-dimensional feature maps at high quality while incurring only the time cost of splatting an ultra-low-dimensional feature. Our experimental results demonstrate that LangSplatV2 not only achieves better or competitive query accuracy but is also significantly faster. Codes and demos are available at our project page: https://langsplat-v2.github.io.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.03538v3">Robust Neural Rendering in the Wild with Asymmetric Dual 3D Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2025-10-08
@@ -37,6 +17,72 @@
     </div>
     <details class="paper-abstract">
       3D reconstruction from in-the-wild images remains a challenging task due to inconsistent lighting conditions and transient distractors. Existing methods typically rely on heuristic strategies to handle the low-quality training data, which often struggle to produce stable and consistent reconstructions, frequently resulting in visual artifacts. In this work, we propose \modelname{}, a novel framework that leverages the stochastic nature of these artifacts: they tend to vary across different training runs due to minor randomness. Specifically, our method trains two 3D Gaussian Splatting (3DGS) models in parallel, enforcing a consistency constraint that encourages convergence on reliable scene geometry while suppressing inconsistent artifacts. To prevent the two models from collapsing into similar failure modes due to confirmation bias, we introduce a divergent masking strategy that applies two complementary masks: a multi-cue adaptive mask and a self-supervised soft mask, which leads to an asymmetric training process of the two models, reducing shared error modes. In addition, to improve the efficiency of model training, we introduce a lightweight variant called Dynamic EMA Proxy, which replaces one of the two models with a dynamically updated Exponential Moving Average (EMA) proxy, and employs an alternating masking strategy to preserve divergence. Extensive experiments on challenging real-world datasets demonstrate that our method consistently outperforms existing approaches while achieving high efficiency. See the project website at https://steveli88.github.io/AsymGS.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.18468v5">RGS-DR: Deferred Reflections and Residual Shading in 2D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+    </div>
+    <details class="paper-abstract">
+      In this work, we address specular appearance in inverse rendering using 2D Gaussian splatting with deferred shading and argue for a refinement stage to improve specular detail, thereby bridging the gap with reconstruction-only methods. Our pipeline estimates editable material properties and environment illumination while employing a directional residual pass that captures leftover view-dependent effects for further refining novel view synthesis. In contrast to per-Gaussian shading with shortest-axis normals and normal residuals, which tends to result in more noisy geometry and specular appearance, a pixel-deferred surfel formulation with specular residuals yields sharper highlights, cleaner materials, and improved editability. We evaluate our approach on rendering and reconstruction quality on three popular datasets featuring glossy objects, and also demonstrate high-quality relighting and material editing.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.24893v3">HBSplat: Robust Sparse-View Gaussian Reconstruction with Hybrid-Loss Guided Depth and Bidirectional Warping</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+      | 💬 14 pages, 21 figures
+    </div>
+    <details class="paper-abstract">
+      Novel View Synthesis (NVS) from sparse views presents a formidable challenge in 3D reconstruction, where limited multi-view constraints lead to severe overfitting, geometric distortion, and fragmented scenes. While 3D Gaussian Splatting (3DGS) delivers real-time, high-fidelity rendering, its performance drastically deteriorates under sparse inputs, plagued by floating artifacts and structural failures. To address these challenges, we introduce HBSplat, a unified framework that elevates 3DGS by seamlessly integrating robust structural cues, virtual view constraints, and occluded region completion. Our core contributions are threefold: a Hybrid-Loss Depth Estimation module that ensures multi-view consistency by leveraging dense matching priors and integrating reprojection, point propagation, and smoothness constraints; a Bidirectional Warping Virtual View Synthesis method that enforces substantially stronger constraints by creating high-fidelity virtual views through bidirectional depth-image warping and multi-view fusion; and an Occlusion-Aware Reconstruction component that recovers occluded areas using a depth-difference mask and a learning-based inpainting model. Extensive evaluations on LLFF, Blender, and DTU benchmarks validate that HBSplat sets a new state-of-the-art, achieving up to 21.13 dB PSNR and 0.189 LPIPS, while maintaining real-time inference. Code is available at: https://github.com/eternalland/HBSplat.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.06967v1">Generating Surface for Text-to-3D using 2D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in Text-to-3D modeling have shown significant potential for the creation of 3D content. However, due to the complex geometric shapes of objects in the natural world, generating 3D content remains a challenging task. Current methods either leverage 2D diffusion priors to recover 3D geometry, or train the model directly based on specific 3D representations. In this paper, we propose a novel method named DirectGaussian, which focuses on generating the surfaces of 3D objects represented by surfels. In DirectGaussian, we utilize conditional text generation models and the surface of a 3D object is rendered by 2D Gaussian splatting with multi-view normal and texture priors. For multi-view geometric consistency problems, DirectGaussian incorporates curvature constraints on the generated surface during optimization process. Through extensive experiments, we demonstrate that our framework is capable of achieving diverse and high-fidelity 3D content creation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2506.21633v2">SAR-GS: Gaussian Splatting based SAR Images Rendering and Target Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+    </div>
+    <details class="paper-abstract">
+      Three-dimensional target reconstruction from synthetic aperture radar (SAR) imagery is crucial for interpreting complex scattering information in SAR data. However, the intricate electromagnetic scattering mechanisms inherent to SAR imaging pose significant reconstruction challenges. Inspired by the remarkable success of 3D Gaussian Splatting (3D-GS) in optical domain reconstruction, this paper presents a novel SAR Differentiable Gaussian Splatting Rasterizer (SDGR) specifically designed for SAR target reconstruction. Our approach combines Gaussian splatting with the Mapping and Projection Algorithm to compute scattering intensities of Gaussian primitives and generate simulated SAR images through SDGR. Subsequently, the loss function between the rendered image and the ground truth image is computed to optimize the Gaussian primitive parameters representing the scene, while a custom CUDA gradient flow is employed to replace automatic differentiation for accelerated gradient computation. Through experiments involving the rendering of simplified architectural targets and SAR images of multiple vehicle targets, we validate the imaging rationality of SDGR on simulated SAR imagery. Furthermore, the effectiveness of our method for target reconstruction is demonstrated on both simulated and real-world datasets containing multiple vehicle targets, with quantitative evaluations conducted to assess its reconstruction performance. Experimental results indicate that our approach can effectively reconstruct the geometric structures and scattering properties of targets, thereby providing a novel solution for 3D reconstruction in the field of SAR imaging.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.06802v1">Capture and Interact: Rapid 3D Object Acquisition and Rendering with Gaussian Splatting in Unity</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+    </div>
+    <details class="paper-abstract">
+      Capturing and rendering three-dimensional (3D) objects in real time remain a significant challenge, yet hold substantial potential for applications in augmented reality, digital twin systems, remote collaboration and prototyping. We present an end-to-end pipeline that leverages 3D Gaussian Splatting (3D GS) to enable rapid acquisition and interactive rendering of real-world objects using a mobile device, cloud processing and a local computer. Users scan an object with a smartphone video, upload it for automated 3D reconstruction, and visualize it interactively in Unity at an average of 150 frames per second (fps) on a laptop. The system integrates mobile capture, cloud-based 3D GS and Unity rendering to support real-time telepresence. Our experiments show that the pipeline processes scans in approximately 10 minutes on a graphics processing unit (GPU) achieving real-time rendering on the laptop.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.06694v1">SCas4D: Structural Cascaded Optimization for Boosting Persistent 4D Novel View Synthesis</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+      | 💬 Published in Transactions on Machine Learning Research (06/2025)
+    </div>
+    <details class="paper-abstract">
+      Persistent dynamic scene modeling for tracking and novel-view synthesis remains challenging due to the difficulty of capturing accurate deformations while maintaining computational efficiency. We propose SCas4D, a cascaded optimization framework that leverages structural patterns in 3D Gaussian Splatting for dynamic scenes. The key idea is that real-world deformations often exhibit hierarchical patterns, where groups of Gaussians share similar transformations. By progressively refining deformations from coarse part-level to fine point-level, SCas4D achieves convergence within 100 iterations per time frame and produces results comparable to existing methods with only one-twentieth of the training iterations. The approach also demonstrates effectiveness in self-supervised articulated object segmentation, novel view synthesis, and dense point tracking tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2507.15690v3">DWTGS: Rethinking Frequency Regularization for Sparse-view 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-10-08
+      | 💬 Accepted to VCIP 2025
+    </div>
+    <details class="paper-abstract">
+      Sparse-view 3D Gaussian Splatting (3DGS) presents significant challenges in reconstructing high-quality novel views, as it often overfits to the widely-varying high-frequency (HF) details of the sparse training views. While frequency regularization can be a promising approach, its typical reliance on Fourier transforms causes difficult parameter tuning and biases towards detrimental HF learning. We propose DWTGS, a framework that rethinks frequency regularization by leveraging wavelet-space losses that provide additional spatial supervision. Specifically, we supervise only the low-frequency (LF) LL subbands at multiple DWT levels, while enforcing sparsity on the HF HH subband in a self-supervised manner. Experiments across benchmarks show that DWTGS consistently outperforms Fourier-based counterparts, as this LF-centric strategy improves generalization and reduces HF hallucinations.
     </details>
 </div>
 <div class="paper-card">
