@@ -9,12 +9,32 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.20414v2">SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent</a></div>
+    <div class="paper-meta">
+      📅 2025-10-26
+      | 💬 Accepted by NeurIPS 2025, 26 pages
+    </div>
+    <details class="paper-abstract">
+      Indoor scene synthesis has become increasingly important with the rise of Embodied AI, which requires 3D environments that are not only visually realistic but also physically plausible and functionally diverse. While recent approaches have advanced visual fidelity, they often remain constrained to fixed scene categories, lack sufficient object-level detail and physical consistency, and struggle to align with complex user instructions. In this work, we present SceneWeaver, a reflective agentic framework that unifies diverse scene synthesis paradigms through tool-based iterative refinement. At its core, SceneWeaver employs a language model-based planner to select from a suite of extensible scene generation tools, ranging from data-driven generative models to visual- and LLM-based methods, guided by self-evaluation of physical plausibility, visual realism, and semantic alignment with user input. This closed-loop reason-act-reflect design enables the agent to identify semantic inconsistencies, invoke targeted tools, and update the environment over successive iterations. Extensive experiments on both common and open-vocabulary room types demonstrate that SceneWeaver not only outperforms prior methods on physical, visual, and semantic metrics, but also generalizes effectively to complex scenes with diverse instructions, marking a step toward general-purpose 3D environment generation. Project website: https://scene-weaver.github.io/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.16258v4">MEReQ: Max-Ent Residual-Q Inverse RL for Sample-Efficient Alignment from Intervention</a></div>
     <div class="paper-meta">
       📅 2025-10-24
     </div>
     <details class="paper-abstract">
       Aligning robot behavior with human preferences is crucial for deploying embodied AI agents in human-centered environments. A promising solution is interactive imitation learning from human intervention, where a human expert observes the policy's execution and provides interventions as feedback. However, existing methods often fail to utilize the prior policy efficiently to facilitate learning, thus hindering sample efficiency. In this work, we introduce MEReQ (Maximum-Entropy Residual-Q Inverse Reinforcement Learning), designed for sample-efficient alignment from human intervention. Instead of inferring the complete human behavior characteristics, MEReQ infers a residual reward function that captures the discrepancy between the human expert's and the prior policy's underlying reward functions. It then employs Residual Q-Learning (RQL) to align the policy with human preferences using this residual reward function. Extensive evaluations on simulated and real-world tasks demonstrate that MEReQ achieves sample-efficient policy alignment from human intervention.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2510.21991v1">Two-Steps Diffusion Policy for Robotic Manipulation via Genetic Denoising</a></div>
+    <div class="paper-meta">
+      📅 2025-10-24
+      | 💬 16 pages, 11 figure, 2 tables, accepted at Neurips 2025
+    </div>
+    <details class="paper-abstract">
+      Diffusion models, such as diffusion policy, have achieved state-of-the-art results in robotic manipulation by imitating expert demonstrations. While diffusion models were originally developed for vision tasks like image and video generation, many of their inference strategies have been directly transferred to control domains without adaptation. In this work, we show that by tailoring the denoising process to the specific characteristics of embodied AI tasks -- particularly structured, low-dimensional nature of action distributions -- diffusion policies can operate effectively with as few as 5 neural function evaluations (NFE). Building on this insight, we propose a population-based sampling strategy, genetic denoising, which enhances both performance and stability by selecting denoising trajectories with low out-of-distribution risk. Our method solves challenging tasks with only 2 NFE while improving or matching performance. We evaluate our approach across 14 robotic manipulation tasks from D4RL and Robomimic, spanning multiple action horizons and inference budgets. In over 2 million evaluations, our method consistently outperforms standard diffusion-based policies, achieving up to 20\% performance gains with significantly fewer inference steps.
     </details>
 </div>
 <div class="paper-card">
