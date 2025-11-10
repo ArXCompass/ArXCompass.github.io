@@ -9,6 +9,24 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2511.05304v1">psiUnity: A Platform for Multimodal Data-Driven XR</a></div>
+    <div class="paper-meta">
+      📅 2025-11-07
+    </div>
+    <details class="paper-abstract">
+      Extended reality (XR) research increasingly relies on the ability to stream and synchronize multimodal data between headsets and immersive applications for data-driven interaction and experimentation. However, developers face a critical gap: the Platform for Situated Intelligence (psi), which excels at deterministic temporal alignment and multimodal data management, has been largely inaccessible to the dominant Unity/MRTK ecosystem used for HoloLens development. We introduce psiUnity, an open-source C# integration that bridges psi's .NET libraries with Unity 2022.3 and MRTK3 for HoloLens 2. psiUnity enables bidirectional, real-time streaming of head pose, hand tracking, gaze, IMU, audio, and depth sensor data (AHAT and long-throw) with microsecond-level temporal precision, allowing Unity applications to both consume and produce synchronized multimodal data streams. By embedding psi's native serialization, logging, and temporal coordination directly within Unity's architecture, psiUnity extends psi beyond its previous StereoKit limitations and empowers the HRI, HCI, and embodied-AI communities to develop reproducible, data-driven XR interactions and experiments within the familiar Unity environment. The integration is available at https://github.com/sailgt/psiUnity.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2511.04976v1">iFlyBot-VLM Technical Report</a></div>
+    <div class="paper-meta">
+      📅 2025-11-07
+    </div>
+    <details class="paper-abstract">
+      We introduce iFlyBot-VLM, a general-purpose Vision-Language Model (VLM) used to improve the domain of Embodied Intelligence. The central objective of iFlyBot-VLM is to bridge the cross-modal semantic gap between high-dimensional environmental perception and low-level robotic motion control. To this end, the model abstracts complex visual and spatial information into a body-agnostic and transferable Operational Language, thereby enabling seamless perception-action closed-loop coordination across diverse robotic platforms. The architecture of iFlyBot-VLM is systematically designed to realize four key functional capabilities essential for embodied intelligence: 1) Spatial Understanding and Metric Reasoning; 2) Interactive Target Grounding; 3) Action Abstraction and Control Parameter Generation; 4) Task Planning and Skill Sequencing. We envision iFlyBot-VLM as a scalable and generalizable foundation model for embodied AI, facilitating the progression from specialized task-oriented systems toward generalist, cognitively capable agents. We conducted evaluations on 10 current mainstream embodied intelligence-related VLM benchmark datasets, such as Blink and Where2Place, and achieved optimal performance while preserving the model's general capabilities. We will publicly release both the training data and model weights to foster further research and development in the field of Embodied Intelligence.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2510.02851v2">Action Deviation-Aware Inference for Low-Latency Wireless Robots</a></div>
     <div class="paper-meta">
       📅 2025-11-06
