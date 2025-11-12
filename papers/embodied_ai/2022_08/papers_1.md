@@ -19,6 +19,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2206.13973v2">Towards a Grounded Theory of Causation for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2022-08-15
+    </div>
+    <details class="paper-abstract">
+      There exist well-developed frameworks for causal modelling, but these require rather a lot of human domain expertise to define causal variables and perform interventions. In order to enable autonomous agents to learn abstract causal models through interactive experience, the existing theoretical foundations need to be extended and clarified. Existing frameworks give no guidance regarding variable choice / representation, and more importantly, give no indication as to which behaviour policies or physical transformations of state space shall count as interventions. The framework sketched in this paper describes actions as transformations of state space, for instance induced by an agent running a policy. This makes it possible to describe in a uniform way both transformations of the micro-state space and abstract models thereof, and say when the latter is veridical / grounded / natural. We then introduce (causal) variables, define a mechanism as an invariant predictor, and say when an action can be viewed as a ``surgical intervention'', thus bringing the objective of causal representation \& intervention skill learning into clearer focus.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2206.13973v2">Towards a Grounded Theory of Causation for Embodied AI</a></div>
     <div class="paper-meta">
       📅 2022-08-12

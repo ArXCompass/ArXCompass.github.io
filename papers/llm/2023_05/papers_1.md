@@ -19,6 +19,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2305.13144v2">Response Length Perception and Sequence Scheduling: An LLM-Empowered LLM Inference Pipeline</a></div>
+    <div class="paper-meta">
+      📅 2023-05-30
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have revolutionized the field of AI, demonstrating unprecedented capacity across various tasks. However, the inference process for LLMs comes with significant computational costs. In this paper, we propose an efficient LLM inference pipeline that harnesses the power of LLMs. Our approach begins by tapping into the potential of LLMs to accurately perceive and predict the response length with minimal overhead. By leveraging this information, we introduce an efficient sequence scheduling technique that groups queries with similar response lengths into micro-batches. We evaluate our approach on real-world instruction datasets using the LLaMA-based model, and our results demonstrate an impressive 86% improvement in inference throughput without compromising effectiveness. Notably, our method is orthogonal to other inference acceleration techniques, making it a valuable addition to many existing toolkits (e.g., FlashAttention, Quantization) for LLM inference.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2304.13731v2">Text-to-Audio Generation using Instruction-Tuned LLM and Latent Diffusion Model</a></div>
     <div class="paper-meta">
       📅 2023-05-29
@@ -160,6 +169,15 @@
     </div>
     <details class="paper-abstract">
       Fashionable image generation aims to synthesize images of diverse fashion prevalent around the globe, helping fashion designers in real-time visualization by giving them a basic customized structure of how a specific design preference would look in real life and what further improvements can be made for enhanced customer satisfaction. Moreover, users can alone interact and generate fashionable images by just giving a few simple prompts. Recently, diffusion models have gained popularity as generative models owing to their flexibility and generation of realistic images from Gaussian noise. Latent diffusion models are a type of generative model that use diffusion processes to model the generation of complex data, such as images, audio, or text. They are called "latent" because they learn a hidden representation, or latent variable, of the data that captures its underlying structure. We propose a method exploiting the equivalence between diffusion models and energy-based models (EBMs) and suggesting ways to compose multiple probability distributions. We describe a pipeline on how our method can be used specifically for new fashionable outfit generation and virtual try-on using LLM-guided text-to-image generation. Our results indicate that using an LLM to refine the prompts to the latent diffusion model assists in generating globally creative and culturally diversified fashion styles and reducing bias.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2305.06474v1">Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction</a></div>
+    <div class="paper-meta">
+      📅 2023-05-12
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have demonstrated exceptional capabilities in generalizing to new tasks in a zero-shot or few-shot manner. However, the extent to which LLMs can comprehend user preferences based on their previous behavior remains an emerging and still unclear research question. Traditionally, Collaborative Filtering (CF) has been the most effective method for these tasks, predominantly relying on the extensive volume of rating data. In contrast, LLMs typically demand considerably less data while maintaining an exhaustive world knowledge about each item, such as movies or products. In this paper, we conduct a thorough examination of both CF and LLMs within the classic task of user rating prediction, which involves predicting a user's rating for a candidate item based on their past ratings. We investigate various LLMs in different sizes, ranging from 250M to 540B parameters and evaluate their performance in zero-shot, few-shot, and fine-tuning scenarios. We conduct comprehensive analysis to compare between LLMs and strong CF methods, and find that zero-shot LLMs lag behind traditional recommender models that have the access to user interaction data, indicating the importance of user interaction data. However, through fine-tuning, LLMs achieve comparable or even better performance with only a small fraction of the training data, demonstrating their potential through data efficiency.
     </details>
 </div>
 <div class="paper-card">

@@ -12,6 +12,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.07791v2">Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 18 Pages, working in progress
+    </div>
+    <details class="paper-abstract">
+      The rapid adoption of large language models (LLMs) in multi-agent systems has highlighted their impressive capabilities in various applications, such as collaborative problem-solving and autonomous negotiation. However, the security implications of these LLM-based multi-agent systems have not been thoroughly investigated, particularly concerning the spread of manipulated knowledge. In this paper, we investigate this critical issue by constructing a detailed threat model and a comprehensive simulation environment that mirrors real-world multi-agent deployments in a trusted platform. Subsequently, we propose a novel two-stage attack method involving Persuasiveness Injection and Manipulated Knowledge Injection to systematically explore the potential for manipulated knowledge (i.e., counterfactual and toxic knowledge) spread without explicit prompt manipulation. Our method leverages the inherent vulnerabilities of LLMs in handling world knowledge, which can be exploited by attackers to unconsciously spread fabricated information. Through extensive experiments, we demonstrate that our attack method can successfully induce LLM-based agents to spread both counterfactual and toxic knowledge without degrading their foundational capabilities during agent communication. Furthermore, we show that these manipulations can persist through popular retrieval-augmented generation frameworks, where several benign agents store and retrieve manipulated chat histories for future interactions. This persistence indicates that even after the interaction has ended, the benign agents may continue to be influenced by manipulated knowledge. Our findings reveal significant security risks in LLM-based multi-agent systems, emphasizing the imperative need for robust defenses against manipulated knowledge spread, such as introducing ``guardian'' agents and advanced fact-checking tools.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.15788v1">Extracting Structured Insights from Financial News: An Augmented LLM Driven Approach</a></div>
     <div class="paper-meta">
       📅 2024-07-22
@@ -125,6 +135,45 @@
     </div>
     <details class="paper-abstract">
       Leveraging advanced reasoning capabilities and extensive world knowledge of large language models (LLMs) to construct generative agents for solving complex real-world problems is a major trend. However, LLMs inherently lack embodiment as humans, resulting in suboptimal performance in many embodied decision-making tasks. In this paper, we introduce a framework for building human-like generative driving agents using post-driving self-report driving-thinking data from human drivers as both demonstration and feedback. To capture high-quality, natural language data from drivers, we conducted urban driving experiments, recording drivers' verbalized thoughts under various conditions to serve as chain-of-thought prompts and demonstration examples for the LLM-Agent. The framework's effectiveness was evaluated through simulations and human assessments. Results indicate that incorporating expert demonstration data significantly reduced collision rates by 81.04\% and increased human likeness by 50\% compared to a baseline LLM-based agent. Our study provides insights into using natural language-based human demonstration data for embodied tasks. The driving-thinking dataset is available at \url{https://github.com/AIR-DISCOVER/Driving-Thinking-Dataset}.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.20256v1">Making LLMs Work for Enterprise Data Tasks</a></div>
+    <div class="paper-meta">
+      📅 2024-07-22
+      | 💬 Poster at North East Database Day 2024
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) know little about enterprise database tables in the private data ecosystem, which substantially differ from web text in structure and content. As LLMs' performance is tied to their training data, a crucial question is how useful they can be in improving enterprise database management and analysis tasks. To address this, we contribute experimental results on LLMs' performance for text-to-SQL and semantic column-type detection tasks on enterprise datasets. The performance of LLMs on enterprise data is significantly lower than on benchmark datasets commonly used. Informed by our findings and feedback from industry practitioners, we identify three fundamental challenges -- latency, cost, and quality -- and propose potential solutions to use LLMs in enterprise data workflows effectively.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.00802v1">Leveraging LLM Reasoning Enhances Personalized Recommender Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-07-22
+      | 💬 To be published at ACL 2024
+    </div>
+    <details class="paper-abstract">
+      Recent advancements have showcased the potential of Large Language Models (LLMs) in executing reasoning tasks, particularly facilitated by Chain-of-Thought (CoT) prompting. While tasks like arithmetic reasoning involve clear, definitive answers and logical chains of thought, the application of LLM reasoning in recommendation systems (RecSys) presents a distinct challenge. RecSys tasks revolve around subjectivity and personalized preferences, an under-explored domain in utilizing LLMs' reasoning capabilities. Our study explores several aspects to better understand reasoning for RecSys and demonstrate how task quality improves by utilizing LLM reasoning in both zero-shot and finetuning settings. Additionally, we propose RecSAVER (Recommender Systems Automatic Verification and Evaluation of Reasoning) to automatically assess the quality of LLM reasoning responses without the requirement of curated gold references or human raters. We show that our framework aligns with real human judgment on the coherence and faithfulness of reasoning responses. Overall, our work shows that incorporating reasoning into RecSys can improve personalized tasks, paving the way for further advancements in recommender system methodologies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16030v1">Enhancing Temporal Understanding in LLMs for Semi-structured Tables</a></div>
+    <div class="paper-meta">
+      📅 2024-07-22
+      | 💬 Total Pages 18, Total Tables 6, Total figures 7
+    </div>
+    <details class="paper-abstract">
+      Temporal reasoning over tabular data presents substantial challenges for large language models (LLMs), as evidenced by recent research. In this study, we conduct a comprehensive analysis of temporal datasets to pinpoint the specific limitations of LLMs. Our investigation leads to enhancements in TempTabQA, a dataset specifically designed for tabular temporal question answering. We provide critical insights for improving LLM performance in temporal reasoning tasks with tabular data. Furthermore, we introduce a novel approach, C.L.E.A.R to strengthen LLM capabilities in this domain. Our findings demonstrate that our method significantly improves evidence-based reasoning across various models. Additionally, our experimental results reveal that indirect supervision with auxiliary data substantially boosts model performance in these tasks. This work contributes to a deeper understanding of LLMs' temporal reasoning abilities over tabular data and promotes advancements in their application across diverse fields.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.17663v2">LLM-ARC: Enhancing LLMs with an Automated Reasoning Critic</a></div>
+    <div class="paper-meta">
+      📅 2024-07-22
+    </div>
+    <details class="paper-abstract">
+      We introduce LLM-ARC, a neuro-symbolic framework designed to enhance the logical reasoning capabilities of Large Language Models (LLMs), by combining them with an Automated Reasoning Critic (ARC). LLM-ARC employs an Actor-Critic method where the LLM Actor generates declarative logic programs along with tests for semantic correctness, while the Automated Reasoning Critic evaluates the code, runs the tests and provides feedback on test failures for iterative refinement. Implemented using Answer Set Programming (ASP), LLM-ARC achieves a new state-of-the-art accuracy of 88.32% on the FOLIO benchmark which tests complex logical reasoning capabilities. Our experiments demonstrate significant improvements over LLM-only baselines, highlighting the importance of logic test generation and iterative self-refinement. We achieve our best result using a fully automated self-supervised training loop where the Actor is trained on end-to-end dialog traces with Critic feedback. We discuss potential enhancements and provide a detailed error analysis, showcasing the robustness and efficacy of LLM-ARC for complex natural language reasoning tasks.
     </details>
 </div>
 <div class="paper-card">
@@ -910,53 +959,5 @@
     </div>
     <details class="paper-abstract">
       Product offers on e-commerce websites often consist of a product title and a textual product description. In order to enable features such as faceted product search or to generate product comparison tables, it is necessary to extract structured attribute-value pairs from the unstructured product titles and descriptions and to normalize the extracted values to a single, unified scale for each attribute. This paper explores the potential of using large language models (LLMs), such as GPT-3.5 and GPT-4, to extract and normalize attribute values from product titles and descriptions. We experiment with different zero-shot and few-shot prompt templates for instructing LLMs to extract and normalize attribute-value pairs. We introduce the Web Data Commons - Product Attribute Value Extraction (WDC-PAVE) benchmark dataset for our experiments. WDC-PAVE consists of product offers from 59 different websites which provide schema.org annotations. The offers belong to five different product categories, each with a specific set of attributes. The dataset provides manually verified attribute-value pairs in two forms: (i) directly extracted values and (ii) normalized attribute values. The normalization of the attribute values requires systems to perform the following types of operations: name expansion, generalization, unit of measurement conversion, and string wrangling. Our experiments demonstrate that GPT-4 outperforms the PLM-based extraction methods SU-OpenTag, AVEQA, and MAVEQA by 10%, achieving an F1-score of 91%. For the extraction and normalization of product attribute values, GPT-4 achieves a similar performance to the extraction scenario, while being particularly strong at string wrangling and name expansion.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10582v1">Boosting Zero-Shot Crosslingual Performance using LLM-Based Augmentations with Effective Data Selection</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 Accepted in Findings of ACL 2024
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) are very proficient text generators. We leverage this capability of LLMs to generate task-specific data via zero-shot prompting and promote cross-lingual transfer for low-resource target languages. Given task-specific data in a source language and a teacher model trained on this data, we propose using this teacher to label LLM generations and employ a set of simple data selection strategies that use the teacher's label probabilities. Our data selection strategies help us identify a representative subset of diverse generations that help boost zero-shot accuracies while being efficient, in comparison to using all the LLM generations (without any subset selection). We also highlight other important design choices that affect cross-lingual performance such as the use of translations of source data and what labels are best to use for the LLM generations. We observe significant performance gains across sentiment analysis and natural language inference tasks (of up to a maximum of 7.13 absolute points and 1.5 absolute points on average) across a number of target languages (Hindi, Marathi, Urdu, Swahili) and domains.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.08619v3">ALMol: Aligned Language-Molecule Translation LLMs through Offline Preference Contrastive Optimisation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-    </div>
-    <details class="paper-abstract">
-      The field of chemistry and Artificial Intelligence (AI) intersection is an area of active research that aims to accelerate scientific discovery. The integration of large language models (LLMs) with scientific modalities has shown significant promise in this endeavour. However, challenges persist in effectively addressing training efficacy and the out-of-distribution problem, particularly as existing approaches rely on larger models and datasets. In this context, we focus on machine language-molecule translation and deploy a novel training approach called contrastive preference optimisation, which avoids generating translations that are merely adequate but not perfect. To ensure generalisability and mitigate memorisation effects, we conduct experiments using only 10% of the data. Our results demonstrate that our models achieve up to a 32% improvement compared to counterpart models. Finally, we introduce a fine-grained, domain-agnostic evaluation method to assess hallucination in LLMs and promote responsible use.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10457v1">The Good, The Bad, and The Greedy: Evaluation of LLMs Should Not Ignore Non-Determinism</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-    </div>
-    <details class="paper-abstract">
-      Current evaluations of large language models (LLMs) often overlook non-determinism, typically focusing on a single output per example. This limits our understanding of LLM performance variability in real-world applications. Our study addresses this issue by exploring key questions about the performance differences between greedy decoding and sampling, identifying benchmarks' consistency regarding non-determinism, and examining unique model behaviors. Through extensive experiments, we observe that greedy decoding generally outperforms sampling methods for most evaluated tasks. We also observe consistent performance across different LLM sizes and alignment methods, noting that alignment can reduce sampling variance. Moreover, our best-of-N sampling approach demonstrates that smaller LLMs can match or surpass larger models such as GPT-4-Turbo, highlighting the untapped potential of smaller LLMs. This research shows the importance of considering non-determinism in LLM evaluations and provides insights for future LLM development and evaluation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10453v1">Enhancing Medication Recommendation with LLM Text Representation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 65 pages, 18 figures
-    </div>
-    <details class="paper-abstract">
-      Most of the existing medication recommendation models are predicted with only structured data such as medical codes, with the remaining other large amount of unstructured or semi-structured data underutilization. To increase the utilization effectively, we proposed a method of enhancing medication recommendation with Large Language Model (LLM) text representation. LLM harnesses powerful language understanding and generation capabilities, enabling the extraction of information from complex and lengthy unstructured data such as clinical notes which contain complex terminology. This method can be applied to several existing base models we selected and improve medication recommendation performance with the combination representation of text and medical codes experiments on two different datasets. LLM text representation alone can even demonstrate a comparable ability to the medical code representation alone. Overall, this is a general method that can be applied to other models for improved recommendations.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.07886v2">Learned Best-Effort LLM Serving</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 Es-FoMo @ ICML 2024
-    </div>
-    <details class="paper-abstract">
-      Many applications must provide low-latency LLM service to users or risk unacceptable user experience. However, over-provisioning resources to serve fluctuating request patterns is often prohibitively expensive. In this work, we present a best-effort serving system that employs deep reinforcement learning to adjust service quality based on the task distribution and system load. Our best-effort system can maintain availability with over 10x higher client request rates, serves above 96% of peak performance 4.1x more often, and serves above 98% of peak performance 2.3x more often than static serving on unpredictable workloads. Our learned router is robust to shifts in both the arrival and task distribution. Compared to static serving, learned best-effort serving allows for cost-efficient serving through increased hardware utility. Additionally, we argue that learned best-effort LLM serving is applicable in wide variety of settings and provides application developers great flexibility to meet their specific needs.
     </details>
 </div>

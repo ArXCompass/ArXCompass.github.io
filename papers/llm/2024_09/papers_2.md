@@ -13,103 +13,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16221v2">Do LLMs Know When to NOT Answer? Investigating Abstention Abilities of Large Language Models</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 8 pages (excluding limitations, references and appendix) and 5 figures
-    </div>
-    <details class="paper-abstract">
-      Abstention Ability (AA) is a critical aspect of Large Language Model (LLM) reliability, referring to an LLM's capability to withhold responses when uncertain or lacking a definitive answer, without compromising performance. Although previous studies have attempted to improve AA, they lack a standardised evaluation method and remain unsuitable for black-box models where token prediction probabilities are inaccessible. This makes comparative analysis challenging, especially for state-of-the-art closed-source commercial LLMs. This paper bridges this gap by introducing a black-box evaluation approach and a new dataset, Abstain-QA, crafted to rigorously assess AA across varied question types (answerable and unanswerable), domains (well-represented and under-represented), and task types (fact centric and reasoning). We also propose a new confusion matrix, the ''Answerable-Unanswerable Confusion Matrix'' (AUCM) which serves as the basis for evaluating AA, by offering a structured and precise approach for assessment. Finally, we explore the impact of three prompting strategies-Strict Prompting, Verbal Confidence Thresholding, and Chain-of-Thought (CoT)-on improving AA. Our results indicate that even powerful models like GPT-4, Mixtral 8x22b encounter difficulties with abstention; however, strategic approaches such as Strict prompting and CoT can enhance this capability.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.18807v1">LLM With Tools: A Survey</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 10 pages
-    </div>
-    <details class="paper-abstract">
-      The integration of tools in augmenting large language models presents a novel approach toward enhancing the efficiency and accuracy of these models in handling specific, complex tasks. This paper delves into the methodology,challenges, and developments in the realm of teaching LLMs to use external tools, thereby pushing the boundaries of their capabilities beyond pre-existing knowledge bases. We introduce a standardized paradigm for tool integration guided by a series of functions that map user instructions to actionable plans and their execution, emphasizing the significance of understanding user intent, tool selection, and dynamic plan adjustment. Our exploration reveals the various challenges encountered, such as tool invocation timing, selection accuracy, and the need for robust reasoning processes. In addressing these challenges, we investigate techniques within the context of fine-tuning and incontext learning paradigms, highlighting innovative approaches to ensure diversity, augment datasets, and improve generalization.Furthermore, we investigate a perspective on enabling LLMs to not only utilize but also autonomously create tools, which may redefine their role from mere tool users to tool creators. Finally,we reproduced Chameleon's results on ScienceQA and analyzed the code structure.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2404.01833v2">Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have risen significantly in popularity and are increasingly being adopted across multiple applications. These LLMs are heavily aligned to resist engaging in illegal or unethical topics as a means to avoid contributing to responsible AI harms. However, a recent line of attacks, known as jailbreaks, seek to overcome this alignment. Intuitively, jailbreak attacks aim to narrow the gap between what the model can do and what it is willing to do. In this paper, we introduce a novel jailbreak attack called Crescendo. Unlike existing jailbreak methods, Crescendo is a simple multi-turn jailbreak that interacts with the model in a seemingly benign manner. It begins with a general prompt or question about the task at hand and then gradually escalates the dialogue by referencing the model's replies progressively leading to a successful jailbreak. We evaluate Crescendo on various public systems, including ChatGPT, Gemini Pro, Gemini-Ultra, LlaMA-2 70b and LlaMA-3 70b Chat, and Anthropic Chat. Our results demonstrate the strong efficacy of Crescendo, with it achieving high attack success rates across all evaluated models and tasks. Furthermore, we present Crescendomation, a tool that automates the Crescendo attack and demonstrate its efficacy against state-of-the-art models through our evaluations. Crescendomation surpasses other state-of-the-art jailbreaking techniques on the AdvBench subset dataset, achieving 29-61% higher performance on GPT-4 and 49-71% on Gemini-Pro. Finally, we also demonstrate Crescendo's ability to jailbreak multimodal models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03175v2">Beyond the Black Box: A Statistical Model for LLM Reasoning and Inference</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-    </div>
-    <details class="paper-abstract">
-      This paper introduces a novel Bayesian learning model to explain the behavior of Large Language Models (LLMs), focusing on their core optimization metric of next token prediction. We develop a theoretical framework based on an ideal generative text model represented by a multinomial transition probability matrix with a prior, and examine how LLMs approximate this matrix. Key contributions include: (i) a continuity theorem relating embeddings to multinomial distributions, (ii) a demonstration that LLM text generation aligns with Bayesian learning principles, (iii) an explanation for the emergence of in-context learning in larger models, (iv) empirical validation using visualizations of next token probabilities from an instrumented Llama model Our findings provide new insights into LLM functioning, offering a statistical foundation for understanding their capabilities and limitations. This framework has implications for LLM design, training, and application, potentially guiding future developments in the field.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.15491v2">Open Conversational LLMs do not know most Spanish words</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 Procesamiento del Lenguaje Natural, 73, 95-108
-    </div>
-    <details class="paper-abstract">
-      The growing interest in Large Language Models (LLMs) and in particular in conversational models with which users can interact has led to the development of a large number of open-source chat LLMs. These models are evaluated on a wide range of benchmarks to assess their capabilities in answering questions or solving problems on almost any possible topic or to test their ability to reason or interpret texts. Instead, the evaluation of the knowledge that these models have of the languages has received much less attention. For example, the words that they can recognize and use in different languages. In this paper, we evaluate the knowledge that open-source chat LLMs have of Spanish words by testing a sample of words in a reference dictionary. The results show that open-source chat LLMs produce incorrect meanings for an important fraction of the words and are not able to use most of the words correctly to write sentences with context. These results show how Spanish is left behind in the open-source LLM race and highlight the need to push for linguistic fairness in conversational LLMs ensuring that they provide similar performance across languages.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16005v1">Bridging Speech and Text: Enhancing ASR with Pinyin-to-Character Pre-training in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 Accepted by ISCSLP2024-Special session-Speech Processing in LLM Era
-    </div>
-    <details class="paper-abstract">
-      The integration of large language models (LLMs) with pre-trained speech models has opened up new avenues in automatic speech recognition (ASR). While LLMs excel in multimodal understanding tasks, effectively leveraging their capabilities for ASR remains a significant challenge. This paper presents a novel training approach to enhance LLM performance in ASR tasks. We propose pre-training LLMs on Pinyin embedding sequences, which represent pronunciation features, to generate corresponding Chinese characters. This step enables the LLM to adapt to generating text from pronunciation features before encountering real speech data. Furthermore, we fine-tune the LoRA parameters to enhance the LLM's understanding of speech modality information. In AISHELL-1 corpus, our approach yields a 9.5% relative improvement in ASR tasks compared to the baseline without Pinyi-to-Character pre-training. Additionally, incorporating auxiliary text data for Pinyi-to-Character pre-training further boosts performance, achieving a 19.0% relative improvement.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.15979v1">Finetuning LLMs for Comparative Assessment Tasks</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 8 pages, 5 figures, 6 tables
-    </div>
-    <details class="paper-abstract">
-      Automated assessment in natural language generation is a challenging task. Instruction-tuned large language models (LLMs) have shown promise in reference-free evaluation, particularly through comparative assessment. However, the quadratic computational complexity of pairwise comparisons limits its scalability. To address this, efficient comparative assessment has been explored by applying comparative strategies on zero-shot LLM probabilities. We propose a framework for finetuning LLMs for comparative assessment to align the model's output with the target distribution of comparative probabilities. By training on soft probabilities, our approach improves state-of-the-art performance while maintaining high performance with an efficient subset of comparisons.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.10553v2">"Flipped" University: LLM-Assisted Lifelong Learning Environment</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 Pre-print version, accepted for 31st International Conference on Neural Information Processing (ICONIP2024), 13 pages, 2 figures
-    </div>
-    <details class="paper-abstract">
-      The rapid development of artificial intelligence technologies, particularly Large Language Models (LLMs), has revolutionized the landscape of lifelong learning. This paper introduces a conceptual framework for a self-constructed lifelong learning environment supported by LLMs. It highlights the inadequacies of traditional education systems in keeping pace with the rapid deactualization of knowledge and skills. The proposed framework emphasizes the transformation from institutionalized education to personalized, self-driven learning. It leverages the natural language capabilities of LLMs to provide dynamic and adaptive learning experiences, facilitating the creation of personal intellectual agents that assist in knowledge acquisition. The framework integrates principles of lifelong learning, including the necessity of building personal world models, the dual modes of learning (training and exploration), and the creation of reusable learning artifacts. Additionally, it underscores the importance of curiosity-driven learning and reflective practices in maintaining an effective learning trajectory. The paper envisions the evolution of educational institutions into "flipped" universities, focusing on supporting global knowledge consistency rather than merely structuring and transmitting knowledge.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.15915v1">Planning in the Dark: LLM-Symbolic Planning Pipeline without Experts</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-      | 💬 8 main body pages, 10 appendix pages
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have shown promise in solving natural language-described planning tasks, but their direct use often leads to inconsistent reasoning and hallucination. While hybrid LLM-symbolic planning pipelines have emerged as a more robust alternative, they typically require extensive expert intervention to refine and validate generated action schemas. It not only limits scalability but also introduces a potential for biased interpretation, as a single expert's interpretation of ambiguous natural language descriptions might not align with the user's actual intent. To address this, we propose a novel approach that constructs an action schema library to generate multiple candidates, accounting for the diverse possible interpretations of natural language descriptions. We further introduce a semantic validation and ranking module that automatically filter and rank the generated schemas and plans without expert-in-the-loop. The experiments showed our pipeline maintains superiority in planning over the direct LLM planning approach. These findings demonstrate the feasibility of a fully automated end-to-end LLM-symbolic planner that requires no expert intervention, opening up the possibility for a broader audience to engage with AI planning with less prerequisite of domain expertise.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.15890v1">HLB: Benchmarking LLMs' Humanlikeness in Language Use</a></div>
-    <div class="paper-meta">
-      📅 2024-09-24
-    </div>
-    <details class="paper-abstract">
-      As synthetic data becomes increasingly prevalent in training language models, particularly through generated dialogue, concerns have emerged that these models may deviate from authentic human language patterns, potentially losing the richness and creativity inherent in human communication. This highlights the critical need to assess the humanlikeness of language models in real-world language use. In this paper, we present a comprehensive humanlikeness benchmark (HLB) evaluating 20 large language models (LLMs) using 10 psycholinguistic experiments designed to probe core linguistic aspects, including sound, word, syntax, semantics, and discourse (see https://huggingface.co/spaces/XufengDuan/HumanLikeness). To anchor these comparisons, we collected responses from over 2,000 human participants and compared them to outputs from the LLMs in these experiments. For rigorous evaluation, we developed a coding algorithm that accurately identified language use patterns, enabling the extraction of response distributions for each task. By comparing the response distributions between human participants and LLMs, we quantified humanlikeness through distributional similarity. Our results reveal fine-grained differences in how well LLMs replicate human responses across various linguistic levels. Importantly, we found that improvements in other performance metrics did not necessarily lead to greater humanlikeness, and in some cases, even resulted in a decline. By introducing psycholinguistic methods to model evaluation, this benchmark offers the first framework for systematically assessing the humanlikeness of LLMs in language use.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.14605v2">First Field Trial of LLM-Powered AI Agent for Lifecycle Management of Autonomous Driving Optical Networks</a></div>
     <div class="paper-meta">
       📅 2024-09-24
@@ -186,6 +89,119 @@
     </div>
     <details class="paper-abstract">
       Topic modeling is a widely used technique for uncovering thematic structures from large text corpora. However, most topic modeling approaches e.g. Latent Dirichlet Allocation (LDA) struggle to capture nuanced semantics and contextual understanding required to accurately model complex narratives. Recent advancements in this area include methods like BERTopic, which have demonstrated significantly improved topic coherence and thus established a new standard for benchmarking. In this paper, we present a novel approach, the Qualitative Insights Tool (QualIT) that integrates large language models (LLMs) with existing clustering-based topic modeling approaches. Our method leverages the deep contextual understanding and powerful language generation capabilities of LLMs to enrich the topic modeling process using clustering. We evaluate our approach on a large corpus of news articles and demonstrate substantial improvements in topic coherence and topic diversity compared to baseline topic modeling techniques. On the 20 ground-truth topics, our method shows 70% topic coherence (vs 65% & 57% benchmarks) and 95.5% topic diversity (vs 85% & 72% benchmarks). Our findings suggest that the integration of LLMs can unlock new opportunities for topic modeling of dynamic and complex text data, as is common in talent management research contexts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.10279v2">We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 22 pages, 14 figures, 8 tables. Edited from original version for submission to a different conference. No change to original results or findings
+    </div>
+    <details class="paper-abstract">
+      The reliance of popular programming languages such as Python and JavaScript on centralized package repositories and open-source software, combined with the emergence of code-generating Large Language Models (LLMs), has created a new type of threat to the software supply chain: package hallucinations. These hallucinations, which arise from fact-conflicting errors when generating code using LLMs, represent a novel form of package confusion attack that poses a critical threat to the integrity of the software supply chain. This paper conducts a rigorous and comprehensive evaluation of package hallucinations across different programming languages, settings, and parameters, exploring how a diverse set of models and configurations affect the likelihood of generating erroneous package recommendations and identifying the root causes of this phenomenon. Using 16 popular LLMs for code generation and two unique prompt datasets, we generate 576,000 code samples in two programming languages that we analyze for package hallucinations. Our findings reveal that that the average percentage of hallucinated packages is at least 5.2% for commercial models and 21.7% for open-source models, including a staggering 205,474 unique examples of hallucinated package names, further underscoring the severity and pervasiveness of this threat. To overcome this problem, we implement several hallucination mitigation strategies and show that they are able to significantly reduce the number of package hallucinations while maintaining code quality. Our experiments and findings highlight package hallucinations as a persistent and systemic phenomenon while using state-of-the-art LLMs for code generation, and a significant challenge which deserves the research community's urgent attention.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16461v1">Strategies for Improving NL-to-FOL Translation with LLMs: Data Generation, Incremental Fine-Tuning, and Verification</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Logical reasoning is a fundamental task in natural language processing that presents significant challenges to Large Language Models (LLMs). The inherent characteristics of logical reasoning makes it well-suited for symbolic representations such as first-order logic (FOL). Research in symbolic logical reasoning explored FOL generation using state-of-the-art LLMs (i.e., GPT-4) to produce FOL translations of natural language (NL) statements, but errors in translation are usually not the focus. We address this by categorizing the translation errors in FOL statements generated by LLMs. To make progress towards improving the quality of FOL translations for smaller language models such as LLaMA-2 13B and Mistral 7B, we create ProofFOL, a high-quality FOL-annotated subset of ProofWriter dataset using GPT-4o. The models fine-tuned on this silver standard data achieve a significant gain in performance when compared to larger language models such as LLaMA-2 70B. In addition to improving the model using large data, we also tackle the issue of data scarcity and introduce an incremental framework encompassing of data augmentation and verification steps. In the augmentation process, a single pair of (premises, conclusion) is split into multiple new instances based on the predicates and FOLs. This data is used for fine-tuning, and the inference on this model generates FOLs with fewer errors over the model trained on the original data. Our investigation on the translation errors leads to generation of a perturbation dataset, which is used to train a verifier that corrects potential syntactic and semantic FOL translation errors. We demonstrate an efficient method for making the most of a limited existing human-annotated dataset. Our results show state-of-the-art performance for ProofWriter and ProntoQA datasets using ProofFOL on LLaMA-2 and Mistral models.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16455v1">MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 7 pages, 3 figures
+    </div>
+    <details class="paper-abstract">
+      LLMs have shown promising results in task planning due to their strong natural language understanding and reasoning capabilities. However, issues such as hallucinations, ambiguities in human instructions, environmental constraints, and limitations in the executing agent's capabilities often lead to flawed or incomplete plans. This paper proposes MultiTalk, an LLM-based task planning methodology that addresses these issues through a framework of introspective and extrospective dialogue loops. This approach helps ground generated plans in the context of the environment and the agent's capabilities, while also resolving uncertainties and ambiguities in the given task. These loops are enabled by specialized systems designed to extract and predict task-specific states, and flag mismatches or misalignments among the human user, the LLM agent, and the environment. Effective feedback pathways between these systems and the LLM planner foster meaningful dialogue. The efficacy of this methodology is demonstrated through its application to robotic manipulation tasks. Experiments and ablations highlight the robustness and reliability of our method, and comparisons with baselines further illustrate the superiority of MultiTalk in task planning for embodied agents.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16430v1">A Comprehensive Survey of Bias in LLMs: Current Landscape and Future Directions</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 2 Tables, 1 Figure
+    </div>
+    <details class="paper-abstract">
+      Large Language Models(LLMs) have revolutionized various applications in natural language processing (NLP) by providing unprecedented text generation, translation, and comprehension capabilities. However, their widespread deployment has brought to light significant concerns regarding biases embedded within these models. This paper presents a comprehensive survey of biases in LLMs, aiming to provide an extensive review of the types, sources, impacts, and mitigation strategies related to these biases. We systematically categorize biases into several dimensions. Our survey synthesizes current research findings and discusses the implications of biases in real-world applications. Additionally, we critically assess existing bias mitigation techniques and propose future research directions to enhance fairness and equity in LLMs. This survey serves as a foundational resource for researchers, practitioners, and policymakers concerned with addressing and understanding biases in LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16395v1">Design and Evaluation of a CDSS for Drug Allergy Management Using LLMs and Pharmaceutical Data Integration</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Medication errors significantly threaten patient safety, leading to adverse drug events and substantial economic burdens on healthcare systems. Clinical Decision Support Systems (CDSSs) aimed at mitigating these errors often face limitations, including reliance on static databases and rule-based algorithms, which can result in high false alert rates and alert fatigue among clinicians. This paper introduces HELIOT, an innovative CDSS for drug allergy management, integrating Large Language Models (LLMs) with a comprehensive pharmaceutical data repository. HELIOT leverages advanced natural language processing capabilities to interpret complex medical texts and synthesize unstructured data, overcoming the limitations of traditional CDSSs. An empirical evaluation using a synthetic patient dataset and expert-verified ground truth demonstrates HELIOT's high accuracy, precision, recall, and F1 score, uniformly reaching 100\% across multiple experimental runs. The results underscore HELIOT's potential to enhance decision support in clinical settings, offering a scalable, efficient, and reliable solution for managing drug allergies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.14513v2">Order of Magnitude Speedups for LLM Membership Inference</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have the promise to revolutionize computing broadly, but their complexity and extensive training data also expose significant privacy vulnerabilities. One of the simplest privacy risks associated with LLMs is their susceptibility to membership inference attacks (MIAs), wherein an adversary aims to determine whether a specific data point was part of the model's training set. Although this is a known risk, state of the art methodologies for MIAs rely on training multiple computationally costly shadow models, making risk evaluation prohibitive for large models. Here we adapt a recent line of work which uses quantile regression to mount membership inference attacks; we extend this work by proposing a low-cost MIA that leverages an ensemble of small quantile regression models to determine if a document belongs to the model's training set or not. We demonstrate the effectiveness of this approach on fine-tuned LLMs of varying families (OPT, Pythia, Llama) and across multiple datasets. Across all scenarios we obtain comparable or improved accuracy compared to state of the art shadow model approaches, with as little as 6% of their computation budget. We demonstrate increased effectiveness across multi-epoch trained target models, and architecture miss-specification robustness, that is, we can mount an effective attack against a model using a different tokenizer and architecture, without requiring knowledge on the target model.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16266v1">REBEL: Rule-based and Experience-enhanced Learning with LLMs for Initial Task Allocation in Multi-Human Multi-Robot Teams</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Multi-human multi-robot teams combine the complementary strengths of humans and robots to tackle complex tasks across diverse applications. However, the inherent heterogeneity of these teams presents significant challenges in initial task allocation (ITA), which involves assigning the most suitable tasks to each team member based on their individual capabilities before task execution. While current learning-based methods have shown promising results, they are often computationally expensive to train, and lack the flexibility to incorporate user preferences in multi-objective optimization and adapt to last-minute changes in real-world dynamic environments. To address these issues, we propose REBEL, an LLM-based ITA framework that integrates rule-based and experience-enhanced learning. By leveraging Retrieval-Augmented Generation, REBEL dynamically retrieves relevant rules and past experiences, enhancing reasoning efficiency. Additionally, REBEL can complement pre-trained RL-based ITA policies, improving situational awareness and overall team performance. Extensive experiments validate the effectiveness of our approach across various settings. More details are available at https://sites.google.com/view/ita-rebel .
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07638v2">Can We Count on LLMs? The Fixed-Effect Fallacy and Claims of GPT-4 Capabilities</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      In this paper we explore evaluation of LLM capabilities. We present measurements of GPT-4 performance on several deterministic tasks; each task involves a basic calculation and takes as input parameter some element drawn from a large well-defined population (e.g., count elements in a list, multiply two k-digit numbers, etc). We examine several conditions per-task and perform enough trials so that statistically significant differences can be detected. This allows us to investigate the sensitivity of task-accuracy both to query phrasing and input parameter population. We find that seemingly trivial modifications in the task-prompt or input population can yield differences far larger than can be explained by sampling effects. For example, performance on a simple list-counting task varies with query-phrasing and list-length, but also with list composition (i.e., the thing-to-be-counted) and object frequency (e.g., success when an element accounts for $\approx$ 50\% of a list is different from when it accounts for $\approx$ 70\% etc). We conclude that efforts to quantify LLM capabilities easily succumb to the language-as-fixed-effect fallacy, where experimental observations are improperly generalized beyond what the data supports. A consequence appears to be that intuitions that have been formed based on interactions with humans form a very unreliable guide as to which input modifications should ``make no difference'' to LLM performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01837v1">Code-Survey: An LLM-Driven Methodology for Analyzing Large-Scale Codebases</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Modern software systems like the Linux kernel are among the world's largest and most intricate codebases, continually evolving with new features and increasing complexity. Understanding these systems poses significant challenges due to their scale and the unstructured nature of development artifacts such as commits and mailing list discussions. We introduce Code-Survey, the first LLM-driven methodology designed to systematically explore and analyze large-scale codebases. The central principle behind Code-Survey is to treat LLMs as human participants, acknowledging that software development is also a social activity and thereby enabling the application of established social science techniques. By carefully designing surveys, Code-Survey transforms unstructured data, such as commits, emails, into organized, structured, and analyzable datasets. This enables quantitative analysis of complex software evolution and uncovers valuable insights related to design, implementation, maintenance, reliability, and security. To demonstrate the effectiveness of Code-Survey, we apply it to the Linux kernel's eBPF subsystem. We construct the Linux-bpf dataset, comprising over 670 features and 16,000 commits from the Linux community. Our quantitative analysis uncovers important insights into the evolution of eBPF, such as development patterns, feature interdependencies, and areas requiring attention for reliability and security. The insights have been initially validated by eBPF experts. Furthermore, Code-Survey can be directly applied to other subsystems within Linux and to other large-scale software projects. By providing a versatile tool for systematic analysis, Code-Survey facilitates a deeper understanding of complex software systems, enabling improvements across a variety of domains and supporting a wide range of empirical studies. The code and dataset is open-sourced.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.16241v1">LLM Echo Chamber: personalized and automated disinformation</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 42 pages
+    </div>
+    <details class="paper-abstract">
+      Recent advancements have showcased the capabilities of Large Language Models like GPT4 and Llama2 in tasks such as summarization, translation, and content review. However, their widespread use raises concerns, particularly around the potential for LLMs to spread persuasive, humanlike misinformation at scale, which could significantly influence public opinion. This study examines these risks, focusing on LLMs ability to propagate misinformation as factual. To investigate this, we built the LLM Echo Chamber, a controlled digital environment simulating social media chatrooms, where misinformation often spreads. Echo chambers, where individuals only interact with like minded people, further entrench beliefs. By studying malicious bots spreading misinformation in this environment, we can better understand this phenomenon. We reviewed current LLMs, explored misinformation risks, and applied sota finetuning techniques. Using Microsoft phi2 model, finetuned with our custom dataset, we generated harmful content to create the Echo Chamber. This setup, evaluated by GPT4 for persuasiveness and harmfulness, sheds light on the ethical concerns surrounding LLMs and emphasizes the need for stronger safeguards against misinformation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.03703v1">Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 Working paper
+    </div>
+    <details class="paper-abstract">
+      Large language models are transforming the creative process by offering unprecedented capabilities to algorithmically generate ideas. While these tools can enhance human creativity when people co-create with them, it's unclear how this will impact unassisted human creativity. We conducted two large pre-registered parallel experiments involving 1,100 participants attempting tasks targeting the two core components of creativity, divergent and convergent thinking. We compare the effects of two forms of large language model (LLM) assistance -- a standard LLM providing direct answers and a coach-like LLM offering guidance -- with a control group receiving no AI assistance, and focus particularly on how all groups perform in a final, unassisted stage. Our findings reveal that while LLM assistance can provide short-term boosts in creativity during assisted tasks, it may inadvertently hinder independent creative performance when users work without assistance, raising concerns about the long-term impact on human creativity and cognition.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2409.13884v1">A Multi-LLM Debiasing Framework</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) are powerful tools with the potential to benefit society immensely, yet, they have demonstrated biases that perpetuate societal inequalities. Despite significant advancements in bias mitigation techniques using data augmentation, zero-shot prompting, and model fine-tuning, biases continuously persist, including subtle biases that may elude human detection. Recent research has shown a growing interest in multi-LLM approaches, which have been demonstrated to be effective in improving the quality of reasoning and factuality in LLMs. Building on this approach, we propose a novel multi-LLM debiasing framework aimed at reducing bias in LLMs. Our work is the first to introduce and evaluate two distinct approaches within this framework for debiasing LLMs: a centralized method, where the conversation is facilitated by a single central LLM, and a decentralized method, where all models communicate directly. Our findings reveal that our multi-LLM framework significantly reduces bias in LLMs, outperforming the baseline method across several social groups.
     </details>
 </div>
 <div class="paper-card">
@@ -937,25 +953,5 @@
     </div>
     <details class="paper-abstract">
       Large Language Models (LLMs) have shown significant promise in plan generation. Yet, existing datasets often lack the complexity needed for advanced tool use scenarios - such as handling paraphrased query statements, supporting multiple languages, and managing actions that can be done in parallel. These scenarios are crucial for evaluating the evolving capabilities of LLMs in real-world applications. Moreover, current datasets don't enable the study of LLMs from a process perspective, particularly in scenarios where understanding typical behaviors and challenges in executing the same process under different conditions or formulations is crucial. To address these gaps, we present the ProcessTBench synthetic dataset, an extension of the TaskBench dataset specifically designed to evaluate LLMs within a process mining framework.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.12798v1">Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL</a></div>
-    <div class="paper-meta">
-      📅 2024-09-19
-      | 💬 9 pages
-    </div>
-    <details class="paper-abstract">
-      The temporal credit assignment problem is a central challenge in Reinforcement Learning (RL), concerned with attributing the appropriate influence to each actions in a trajectory for their ability to achieve a goal. However, when feedback is delayed and sparse, the learning signal is poor, and action evaluation becomes harder. Canonical solutions, such as reward shaping and options, require extensive domain knowledge and manual intervention, limiting their scalability and applicability. In this work, we lay the foundations for Credit Assignment with Language Models (CALM), a novel approach that leverages Large Language Models (LLMs) to automate credit assignment via reward shaping and options discovery. CALM uses LLMs to decompose a task into elementary subgoals and assess the achievement of these subgoals in state-action transitions. Every time an option terminates, a subgoal is achieved, and CALM provides an auxiliary reward. This additional reward signal can enhance the learning process when the task reward is sparse and delayed without the need for human-designed rewards. We provide a preliminary evaluation of CALM using a dataset of human-annotated demonstrations from MiniHack, suggesting that LLMs can be effective in assigning credit in zero-shot settings, without examples or LLM fine-tuning. Our preliminary results indicate that the knowledge of LLMs is a promising prior for credit assignment in RL, facilitating the transfer of human knowledge into value functions.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.12699v1">PromSec: Prompt Optimization for Secure Generation of Functional Source Code with Large Language Models (LLMs)</a></div>
-    <div class="paper-meta">
-      📅 2024-09-19
-      | 💬 15 pages, 19 figures, CCS 2024
-    </div>
-    <details class="paper-abstract">
-      The capability of generating high-quality source code using large language models (LLMs) reduces software development time and costs. However, they often introduce security vulnerabilities due to training on insecure open-source data. This highlights the need for ensuring secure and functional code generation. This paper introduces PromSec, an algorithm for prom optimization for secure and functioning code generation using LLMs. In PromSec, we combine 1) code vulnerability clearing using a generative adversarial graph neural network, dubbed as gGAN, to fix and reduce security vulnerabilities in generated codes and 2) code generation using an LLM into an interactive loop, such that the outcome of the gGAN drives the LLM with enhanced prompts to generate secure codes while preserving their functionality. Introducing a new contrastive learning approach in gGAN, we formulate code-clearing and generation as a dual-objective optimization problem, enabling PromSec to notably reduce the number of LLM inferences. PromSec offers a cost-effective and practical solution for generating secure, functional code. Extensive experiments conducted on Python and Java code datasets confirm that PromSec effectively enhances code security while upholding its intended functionality. Our experiments show that while a state-of-the-art approach fails to address all code vulnerabilities, PromSec effectively resolves them. Moreover, PromSec achieves more than an order-of-magnitude reduction in operation time, number of LLM queries, and security analysis costs. Furthermore, prompts optimized with PromSec for a certain LLM are transferable to other LLMs across programming languages and generalizable to unseen vulnerabilities in training. This study is a step in enhancing the trustworthiness of LLMs for secure and functional code generation, supporting their integration into real-world software development.
     </details>
 </div>

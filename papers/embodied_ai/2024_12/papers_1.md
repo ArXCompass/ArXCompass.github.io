@@ -47,6 +47,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.18601v1">Decentralized Intelligence in GameFi: Embodied AI Agents and the Convergence of DeFi and Virtual Ecosystems</a></div>
+    <div class="paper-meta">
+      📅 2024-12-25
+      | 💬 11 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      In the rapidly evolving landscape of GameFi, a fusion of gaming and decentralized finance (DeFi), there exists a critical need to enhance player engagement and economic interaction within gaming ecosystems. Our GameFi ecosystem aims to fundamentally transform this landscape by integrating advanced embodied AI agents into GameFi platforms. These AI agents, developed using cutting-edge large language models (LLMs), such as GPT-4 and Claude AI, are capable of proactive, adaptive, and contextually rich interactions with players. By going beyond traditional scripted responses, these agents become integral participants in the game's narrative and economic systems, directly influencing player strategies and in-game economies. We address the limitations of current GameFi platforms, which often lack immersive AI interactions and mechanisms for community engagement or creator monetization. Through the deep integration of AI agents with blockchain technology, we establish a consensus-driven, decentralized GameFi ecosystem. This ecosystem empowers creators to monetize their contributions and fosters democratic collaboration among players and creators. Furthermore, by embedding DeFi mechanisms into the gaming experience, we enhance economic participation and provide new opportunities for financial interactions within the game. Our approach enhances player immersion and retention and advances the GameFi ecosystem by bridging traditional gaming with Web3 technologies. By integrating sophisticated AI and DeFi elements, we contribute to the development of more engaging, economically robust, and community-centric gaming environments. This project represents a significant advancement in the state-of-the-art in GameFi, offering insights and methodologies that can be applied throughout the gaming industry.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.18601v1">Decentralized Intelligence in GameFi: Embodied AI Agents and the Convergence of DeFi and Virtual Ecosystems</a></div>
     <div class="paper-meta">
       📅 2024-12-24
@@ -115,6 +125,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.10402v1">TANGO: Training-free Embodied AI Agents for Open-world Tasks</a></div>
+    <div class="paper-meta">
+      📅 2024-12-17
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have demonstrated excellent capabilities in composing various modules together to create programs that can perform complex reasoning tasks on images. In this paper, we propose TANGO, an approach that extends the program composition via LLMs already observed for images, aiming to integrate those capabilities into embodied agents capable of observing and acting in the world. Specifically, by employing a simple PointGoal Navigation model combined with a memory-based exploration policy as a foundational primitive for guiding an agent through the world, we show how a single model can address diverse tasks without additional training. We task an LLM with composing the provided primitives to solve a specific task, using only a few in-context examples in the prompt. We evaluate our approach on three key Embodied AI tasks: Open-Set ObjectGoal Navigation, Multi-Modal Lifelong Navigation, and Open Embodied Question Answering, achieving state-of-the-art results without any specific fine-tuning in challenging zero-shot scenarios.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.11523v1">ON as ALC: Active Loop Closing Object Goal Navigation</a></div>
     <div class="paper-meta">
       📅 2024-12-16
@@ -122,6 +141,16 @@
     </div>
     <details class="paper-abstract">
       In simultaneous localization and mapping, active loop closing (ALC) is an active vision problem that aims to visually guide a robot to maximize the chances of revisiting previously visited points, thereby resetting the drift errors accumulated in the incrementally built map during travel. However, current mainstream navigation strategies that leverage such incomplete maps as workspace prior knowledge often fail in modern long-term autonomy long-distance travel scenarios where map accumulation errors become significant. To address these limitations of map-based navigation, this paper is the first to explore mapless navigation in the embodied AI field, in particular, to utilize object-goal navigation (commonly abbreviated as ON, ObjNav, or OGN) techniques that efficiently explore target objects without using such a prior map. Specifically, in this work, we start from an off-the-shelf mapless ON planner, extend it to utilize a prior map, and further show that the performance in long-distance ALC (LD-ALC) can be maximized by minimizing ``ALC loss" and ``ON loss". This study highlights a simple and effective approach, called ALC-ON (ALCON), to accelerate the progress of challenging long-distance ALC technology by leveraging the growing frontier-guided, data-driven, and LLM-guided ON technologies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.09867v1">Human-Like Embodied AI Interviewer: Employing Android ERICA in Real International Conference</a></div>
+    <div class="paper-meta">
+      📅 2024-12-16
+      | 💬 This paper has been accepted for demonstration presentation at International Conference on Computational Linguistics (COLING 2025)
+    </div>
+    <details class="paper-abstract">
+      This paper introduces the human-like embodied AI interviewer which integrates android robots equipped with advanced conversational capabilities, including attentive listening, conversational repairs, and user fluency adaptation. Moreover, it can analyze and present results post-interview. We conducted a real-world case study at SIGDIAL 2024 with 42 participants, of whom 69% reported positive experiences. This study demonstrated the system's effectiveness in conducting interviews just like a human and marked the first employment of such a system at an international conference. The demonstration video is available at https://youtu.be/jCuw9g99KuE.
     </details>
 </div>
 <div class="paper-card">
@@ -153,6 +182,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.08442v1">From Multimodal LLMs to Generalist Embodied Agents: Methods and Lessons</a></div>
+    <div class="paper-meta">
+      📅 2024-12-12
+    </div>
+    <details class="paper-abstract">
+      We examine the capability of Multimodal Large Language Models (MLLMs) to tackle diverse domains that extend beyond the traditional language and vision tasks these models are typically trained on. Specifically, our focus lies in areas such as Embodied AI, Games, UI Control, and Planning. To this end, we introduce a process of adapting an MLLM to a Generalist Embodied Agent (GEA). GEA is a single unified model capable of grounding itself across these varied domains through a multi-embodiment action tokenizer. GEA is trained with supervised learning on a large dataset of embodied experiences and with online RL in interactive simulators. We explore the data and algorithmic choices necessary to develop such a model. Our findings reveal the importance of training with cross-domain data and online RL for building generalist agents. The final GEA model achieves strong generalization performance to unseen tasks across diverse benchmarks compared to other generalist models and benchmark-specific approaches.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.08467v1">Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel</a></div>
     <div class="paper-meta">
       📅 2024-12-11
@@ -178,6 +216,44 @@
     </div>
     <details class="paper-abstract">
       Object goal navigation (ObjectNav) is a fundamental task of embodied AI that requires the agent to find a target object in unseen environments. This task is particularly challenging as it demands both perceptual and cognitive processes for effective perception and decision-making. While perception has gained significant progress powered by the rapidly developed visual foundation models, the progress on the cognitive side remains limited to either implicitly learning from massive navigation demonstrations or explicitly leveraging pre-defined heuristic rules. Inspired by neuroscientific evidence that humans consistently update their cognitive states while searching for objects in unseen environments, we present CogNav, which attempts to model this cognitive process with the help of large language models. Specifically, we model the cognitive process with a finite state machine composed of cognitive states ranging from exploration to identification. The transitions between the states are determined by a large language model based on an online built heterogeneous cognitive map containing spatial and semantic information of the scene being explored. Extensive experiments on both synthetic and real-world environments demonstrate that our cognitive modeling significantly improves ObjectNav efficiency, with human-like navigation behaviors. In an open-vocabulary and zero-shot setting, our method advances the SOTA of the HM3D benchmark from 69.3% to 87.2%. The code and data will be released.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.06469v1">Jess+: designing embodied AI for interactive music-making</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+    </div>
+    <details class="paper-abstract">
+      In this paper, we discuss the conceptualisation and design of embodied AI within an inclusive music-making project. The central case study is Jess+ an intelligent digital score system for shared creativity with a mixed ensemble of non-disabled and disabled musicians. The overarching aim is that the digital score enables disabled musicians to thrive in a live music conversation with other musicians regardless of the potential barriers of disability and music-making. After defining what we mean by embodied AI and how this approach supports the aims of the Jess+ project, we outline the main design features of the system. This includes several novel approaches such as its modular design, an AI Factory based on an embodied musicking dataset, and an embedded belief system. Our findings showed that the implemented design decisions and embodied-AI approach led to rich experiences for the musicians which in turn transformed their practice as an inclusive ensemble.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2306.09273v3">Privacy Risks in Reinforcement Learning for Household Robots</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+      | 💬 7 pages, 4 figures, 2 tables
+    </div>
+    <details class="paper-abstract">
+      The prominence of embodied Artificial Intelligence (AI), which empowers robots to navigate, perceive, and engage within virtual environments, has attracted significant attention, owing to the remarkable advances in computer vision and large language models. Privacy emerges as a pivotal concern within the realm of embodied AI, as the robot accesses substantial personal information. However, the issue of privacy leakage in embodied AI tasks, particularly concerning reinforcement learning algorithms, has not received adequate consideration in research. This paper aims to address this gap by proposing an attack on the training process of the value-based algorithm and the gradient-based algorithm, utilizing gradient inversion to reconstruct states, actions, and supervisory signals. The choice of using gradients for the attack is motivated by the fact that commonly employed federated learning techniques solely utilize gradients computed based on private user data to optimize models, without storing or transmitting the data to public servers. Nevertheless, these gradients contain sufficient information to potentially expose private data. To validate our approach, we conducted experiments on the AI2THOR simulator and evaluated our algorithm on active perception, a prevalent task in embodied AI. The experimental results demonstrate the effectiveness of our method in successfully reconstructing all information from the data in 120 room layouts. Check our website for videos.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.07904v2">Grounding Multimodal Large Language Models in Actions</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+    </div>
+    <details class="paper-abstract">
+      Multimodal Large Language Models (MLLMs) have demonstrated a wide range of capabilities across many domains, including Embodied AI. In this work, we study how to best ground a MLLM into different embodiments and their associated action spaces, with the goal of leveraging the multimodal world knowledge of the MLLM. We first generalize a number of methods through a unified architecture and the lens of action space adaptors. For continuous actions, we show that a learned tokenization allows for sufficient modeling precision, yielding the best performance on downstream tasks. For discrete actions, we demonstrate that semantically aligning these actions with the native output token space of the MLLM leads to the strongest performance. We arrive at these lessons via a thorough study of seven action space adapters on five different environments, encompassing over 114 embodied tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2405.14154v4">Skip-SCAR: Hardware-Friendly High-Quality Embodied Visual Navigation</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+      | 💬 7 pages, 9 figures
+    </div>
+    <details class="paper-abstract">
+      In ObjectNav, agents must locate specific objects within unseen environments, requiring effective perception, prediction, localization and planning capabilities. This study finds that state-of-the-art embodied AI agents compete for higher navigation quality, but often compromise the computational efficiency. To address this issue, we introduce "Skip-SCAR," an optimization framework that builds computationally and memory-efficient embodied AI agents to accomplish high-quality visual navigation tasks. Skip-SCAR opportunistically skips the redundant step computations during semantic segmentation and local re-planning without hurting the navigation quality. Skip-SCAR also adopts a novel hybrid sparse and dense network for object prediction, optimizing both the computation and memory footprint. Tested on the HM3D ObjectNav datasets and real-world physical hardware systems, Skip-SCAR not only minimizes hardware resources but also sets new performance benchmarks, demonstrating the benefits of optimizing both navigation quality and computational efficiency for robotics.
     </details>
 </div>
 <div class="paper-card">
@@ -291,6 +367,15 @@
     </div>
     <details class="paper-abstract">
       Research on 3D Vision-Language Models (3D-VLMs) is gaining increasing attention, which is crucial for developing embodied AI within 3D scenes, such as visual navigation and embodied question answering. Due to the high density of visual features, especially in large 3D scenes, accurately locating task-relevant visual information is challenging. Existing works attempt to segment all objects and consider their features as scene representations. However, these task-agnostic object features include much redundant information and missing details for the task-relevant area. To tackle these problems, we propose LSceneLLM, an adaptive framework that automatically identifies task-relevant areas by leveraging LLM's visual preference for different tasks, followed by a plug-and-play scene magnifier module to capture fine-grained details in focused areas. Specifically, a dense token selector examines the attention map of LLM to identify visual preferences for the instruction input. It then magnifies fine-grained details of the focusing area. An adaptive self-attention module is leveraged to fuse the coarse-grained and selected fine-grained visual information. To comprehensively evaluate the large scene understanding ability of 3D-VLMs, we further introduce a cross-room understanding benchmark, XR-Scene, which contains a series of large scene understanding tasks including XR-QA, XR-EmbodiedPlanning, and XR-SceneCaption. Experiments show that our method surpasses existing methods on both large scene understanding and existing scene understanding benchmarks. Plunging our scene magnifier module into the existing 3D-VLMs also brings significant improvement.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.04449v5">EARBench: Towards Evaluating Physical Risk Awareness for Task Planning of Foundation Model-based Embodied AI Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-12-02
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (EAI) integrates advanced AI models into physical entities for real-world interaction. The emergence of foundation models as the "brain" of EAI agents for high-level task planning has shown promising results. However, the deployment of these agents in physical environments presents significant safety challenges. For instance, a housekeeping robot lacking sufficient risk awareness might place a metal container in a microwave, potentially causing a fire. To address these critical safety concerns, comprehensive pre-deployment risk assessments are imperative. This study introduces EARBench, a novel framework for automated physical risk assessment in EAI scenarios. EAIRiskBench employs a multi-agent cooperative system that leverages various foundation models to generate safety guidelines, create risk-prone scenarios, make task planning, and evaluate safety systematically. Utilizing this framework, we construct EARDataset, comprising diverse test cases across various domains, encompassing both textual and visual scenarios. Our comprehensive evaluation of state-of-the-art foundation models reveals alarming results: all models exhibit high task risk rates (TRR), with an average of 95.75% across all evaluated models. To address these challenges, we further propose two prompting-based risk mitigation strategies. While these strategies demonstrate some efficacy in reducing TRR, the improvements are limited, still indicating substantial safety concerns. This study provides the first large-scale assessment of physical risk awareness in EAI agents. Our findings underscore the critical need for enhanced safety measures in EAI systems and provide valuable insights for future research directions in developing safer embodied artificial intelligence system. Data and code are available at https://github.com/zihao-ai/EARBench.
     </details>
 </div>
 <div class="paper-card">

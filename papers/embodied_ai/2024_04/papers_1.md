@@ -28,6 +28,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2312.09067v2">Holodeck: Language Guided Generation of 3D Embodied AI Environments</a></div>
+    <div class="paper-meta">
+      📅 2024-04-24
+      | 💬 Published in CVPR 2024, 21 pages, 27 figures, 2 tables
+    </div>
+    <details class="paper-abstract">
+      3D simulated environments play a critical role in Embodied AI, but their creation requires expertise and extensive manual effort, restricting their diversity and scope. To mitigate this limitation, we present Holodeck, a system that generates 3D environments to match a user-supplied prompt fully automatedly. Holodeck can generate diverse scenes, e.g., arcades, spas, and museums, adjust the designs for styles, and can capture the semantics of complex queries such as "apartment for a researcher with a cat" and "office of a professor who is a fan of Star Wars". Holodeck leverages a large language model (i.e., GPT-4) for common sense knowledge about what the scene might look like and uses a large collection of 3D assets from Objaverse to populate the scene with diverse objects. To address the challenge of positioning objects correctly, we prompt GPT-4 to generate spatial relational constraints between objects and then optimize the layout to satisfy those constraints. Our large-scale human evaluation shows that annotators prefer Holodeck over manually designed procedural baselines in residential scenes and that Holodeck can produce high-quality outputs for diverse scene types. We also demonstrate an exciting application of Holodeck in Embodied AI, training agents to navigate in novel scenes like music rooms and daycares without human-constructed data, which is a significant step forward in developing general-purpose embodied agents.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2312.09067v2">Holodeck: Language Guided Generation of 3D Embodied AI Environments</a></div>
     <div class="paper-meta">
       📅 2024-04-22
@@ -35,6 +45,16 @@
     </div>
     <details class="paper-abstract">
       3D simulated environments play a critical role in Embodied AI, but their creation requires expertise and extensive manual effort, restricting their diversity and scope. To mitigate this limitation, we present Holodeck, a system that generates 3D environments to match a user-supplied prompt fully automatedly. Holodeck can generate diverse scenes, e.g., arcades, spas, and museums, adjust the designs for styles, and can capture the semantics of complex queries such as "apartment for a researcher with a cat" and "office of a professor who is a fan of Star Wars". Holodeck leverages a large language model (i.e., GPT-4) for common sense knowledge about what the scene might look like and uses a large collection of 3D assets from Objaverse to populate the scene with diverse objects. To address the challenge of positioning objects correctly, we prompt GPT-4 to generate spatial relational constraints between objects and then optimize the layout to satisfy those constraints. Our large-scale human evaluation shows that annotators prefer Holodeck over manually designed procedural baselines in residential scenes and that Holodeck can produce high-quality outputs for diverse scene types. We also demonstrate an exciting application of Holodeck in Embodied AI, training agents to navigate in novel scenes like music rooms and daycares without human-constructed data, which is a significant step forward in developing general-purpose embodied agents.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.08171v4">Epistemic Power in AI Ethics Labor: Legitimizing Located Complaints</a></div>
+    <div class="paper-meta">
+      📅 2024-04-19
+      | 💬 Accepted to ACM FAccT 2024
+    </div>
+    <details class="paper-abstract">
+      What counts as legitimate AI ethics labor, and consequently, what are the epistemic terms on which AI ethics claims are rendered legitimate? Based on 75 interviews with technologists including researchers, developers, open source contributors, and activists, this paper explores the various epistemic bases from which AI ethics is discussed and practiced. In the context of outside attacks on AI ethics as an impediment to "progress," I show how some AI ethics practices have reached toward authority from automation and quantification, and achieved some legitimacy as a result, while those based on richly embodied and situated lived experience have not. This paper draws together the work of feminist Anthropology and Science and Technology Studies scholars Diana Forsythe and Lucy Suchman with the works of postcolonial feminist theorist Sara Ahmed and Black feminist theorist Kristie Dotson to examine the implications of dominant AI ethics practices. By entrenching the epistemic power of quantification, dominant AI ethics practices -- employing Model Cards and similar interventions -- risk legitimizing AI ethics as a project in equal and opposite measure to which they marginalize embodied lived experience as a legitimate part of the same project. In response, I propose humble technical practices: quantified or technical practices which specifically seek to make their epistemic limits clear in order to flatten hierarchies of epistemic power.
     </details>
 </div>
 <div class="paper-card">
@@ -62,6 +82,16 @@
     </div>
     <details class="paper-abstract">
       The Embodied AI community has made significant strides in visual navigation tasks, exploring targets from 3D coordinates, objects, language descriptions, and images. However, these navigation models often handle only a single input modality as the target. With the progress achieved so far, it is time to move towards universal navigation models capable of handling various goal types, enabling more effective user interaction with robots. To facilitate this goal, we propose GOAT-Bench, a benchmark for the universal navigation task referred to as GO to AnyThing (GOAT). In this task, the agent is directed to navigate to a sequence of targets specified by the category name, language description, or image in an open-vocabulary fashion. We benchmark monolithic RL and modular methods on the GOAT task, analyzing their performance across modalities, the role of explicit and implicit scene memories, their robustness to noise in goal specifications, and the impact of memory in lifelong scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2308.04586v21">Bootstrapping Developmental AIs: From Simple Competences to Intelligent Human-Compatible AIs</a></div>
+    <div class="paper-meta">
+      📅 2024-04-05
+      | 💬 112 pages, 28 figures, 4 tables
+    </div>
+    <details class="paper-abstract">
+      Developmental AI creates embodied AIs that develop human-like abilities. The AIs start with innate competences and learn more by interacting with the world including people. Developmental AIs have been demonstrated, but their abilities so far do not surpass those of pre-toddler children. In contrast, mainstream approaches have led to impressive feats and commercially valuable AI systems. The approaches include deep learning and generative AI (e.g., large language models) and manually constructed symbolic modeling. However, manually constructed AIs tend to be brittle even in circumscribed domains. Generative AIs are helpful on average, but they can make strange mistakes and not notice them. Not learning from their experience in the world, they can lack common sense and social alignment. This position paper lays out prospects, gaps, and challenges for a bootstrapping approach to developmental AI that follows a bio-inspired trajectory. The approach creates experiential foundation models for human-compatible AIs. A virtuous multidisciplinary research cycle has led to developmental AIs with capabilities for multimodal perception, object recognition, and manipulation. Computational models for hierarchical planning, abstraction discovery, curiosity, and language acquisition exist but need to be adapted to an embodied learning approach. The remaining gaps include nonverbal communication, speech, reading, and writing. These competences enable people to acquire socially developed competences. Aspirationally, developmental AIs would learn, share what they learn, and collaborate to achieve high standards. They would learn to communicate, establish common ground, read critically, consider the provenance of information, test hypotheses, and collaborate. The approach would make the training of AIs more democratic.
     </details>
 </div>
 <div class="paper-card">

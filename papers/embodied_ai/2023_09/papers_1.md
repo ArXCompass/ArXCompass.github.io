@@ -39,6 +39,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2305.15021v2">EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought</a></div>
+    <div class="paper-meta">
+      📅 2023-09-15
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is a crucial frontier in robotics, capable of planning and executing action sequences for robots to accomplish long-horizon tasks in physical environments. In this work, we introduce EmbodiedGPT, an end-to-end multi-modal foundation model for embodied AI, empowering embodied agents with multi-modal understanding and execution capabilities. To achieve this, we have made the following efforts: (i) We craft a large-scale embodied planning dataset, termed EgoCOT. The dataset consists of carefully selected videos from the Ego4D dataset, along with corresponding high-quality language instructions. Specifically, we generate a sequence of sub-goals with the "Chain of Thoughts" mode for effective embodied planning. (ii) We introduce an efficient training approach to EmbodiedGPT for high-quality plan generation, by adapting a 7B large language model (LLM) to the EgoCOT dataset via prefix tuning. (iii) We introduce a paradigm for extracting task-related features from LLM-generated planning queries to form a closed loop between high-level planning and low-level control. Extensive experiments show the effectiveness of EmbodiedGPT on embodied tasks, including embodied planning, embodied control, visual captioning, and visual question answering. Notably, EmbodiedGPT significantly enhances the success rate of the embodied control task by extracting more effective features. It has achieved a remarkable 1.6 times increase in success rate on the Franka Kitchen benchmark and a 1.3 times increase on the Meta-World benchmark, compared to the BLIP-2 baseline fine-tuned with the Ego4D dataset.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2305.15021v2">EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought</a></div>
     <div class="paper-meta">
       📅 2023-09-13
@@ -54,5 +63,15 @@
     </div>
     <details class="paper-abstract">
       This report describes trade-offs in the design of international governance arrangements for civilian artificial intelligence (AI) and presents one approach in detail. This approach represents the extension of a standards, licensing, and liability regime to the global level. We propose that states establish an International AI Organization (IAIO) to certify state jurisdictions (not firms or AI projects) for compliance with international oversight standards. States can give force to these international standards by adopting regulations prohibiting the import of goods whose supply chains embody AI from non-IAIO-certified jurisdictions. This borrows attributes from models of existing international organizations, such as the International Civilian Aviation Organization (ICAO), the International Maritime Organization (IMO), and the Financial Action Task Force (FATF). States can also adopt multilateral controls on the export of AI product inputs, such as specialized hardware, to non-certified jurisdictions. Indeed, both the import and export standards could be required for certification. As international actors reach consensus on risks of and minimum standards for advanced AI, a jurisdictional certification regime could mitigate a broad range of potential harms, including threats to public safety.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2304.09399v3">Designing a realistic peer-like embodied conversational agent for supporting children's storytelling</a></div>
+    <div class="paper-meta">
+      📅 2023-09-04
+      | 💬 6 pages with 2 figures. The paper has been peer-reviewed and presented at the "CHI 2023 Workshop on Child-centred AI Design: Definition, Operation and Considerations, April 23, 2023, Hamburg, Germany
+    </div>
+    <details class="paper-abstract">
+      Advances in artificial intelligence have facilitated the use of large language models (LLMs) and AI-generated synthetic media in education, which may inspire HCI researchers to develop technologies, in particular, embodied conversational agents (ECAs) to simulate the kind of scaffolding children might receive from a human partner. In this paper, we will propose a design prototype of a peer-like ECA named STARie that integrates multiple AI models - GPT-3, Speech Synthesis (Real-time Voice Cloning), VOCA (Voice Operated Character Animation), and FLAME (Faces Learned with an Articulated Model and Expressions) that aims to support narrative production in collaborative storytelling, specifically for children aged 4-8. However, designing a child-centered ECA raises concerns about age appropriateness, children privacy, gender choices of ECAs, and the uncanny valley effect. Thus, this paper will also discuss considerations and ethical concerns that must be taken into account when designing such an ECA. This proposal offers insights into the potential use of AI-generated synthetic media in child-centered AI design and how peer-like AI embodiment may support children\textquotesingle s storytelling.
     </details>
 </div>

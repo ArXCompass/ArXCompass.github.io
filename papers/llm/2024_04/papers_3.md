@@ -11,6 +11,34 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.16045v1">Elicitron: An LLM Agent-Based Simulation Framework for Design Requirements Elicitation</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+    </div>
+    <details class="paper-abstract">
+      Requirements elicitation, a critical, yet time-consuming and challenging step in product development, often fails to capture the full spectrum of user needs. This may lead to products that fall short of expectations. This paper introduces a novel framework that leverages Large Language Models (LLMs) to automate and enhance the requirements elicitation process. LLMs are used to generate a vast array of simulated users (LLM agents), enabling the exploration of a much broader range of user needs and unforeseen use cases. These agents engage in product experience scenarios, through explaining their actions, observations, and challenges. Subsequent agent interviews and analysis uncover valuable user needs, including latent ones. We validate our framework with three experiments. First, we explore different methodologies for diverse agent generation, discussing their advantages and shortcomings. We measure the diversity of identified user needs and demonstrate that context-aware agent generation leads to greater diversity. Second, we show how our framework effectively mimics empathic lead user interviews, identifying a greater number of latent needs than conventional human interviews. Third, we showcase that LLMs can be used to analyze interviews, capture needs, and classify them as latent or not. Our work highlights the potential of using LLM agents to accelerate early-stage product development, reduce costs, and increase innovation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2310.00492v3">From Language Modeling to Instruction Following: Understanding the Behavior Shift in LLMs after Instruction Tuning</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+      | 💬 Accepted by NAACL 2024
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have achieved remarkable success, where instruction tuning is the critical step in aligning LLMs with user intentions. In this work, we investigate how the instruction tuning adjusts pre-trained models with a focus on intrinsic changes. Specifically, we first develop several local and global explanation methods, including a gradient-based method for input-output attribution, and techniques for interpreting patterns and concepts in self-attention and feed-forward layers. The impact of instruction tuning is then studied by comparing the explanations derived from the pre-trained and instruction-tuned models. This approach provides an internal perspective of the model shifts on a human-comprehensible level. Our findings reveal three significant impacts of instruction tuning: 1) It empowers LLMs to recognize the instruction parts of user prompts, and promotes the response generation constantly conditioned on the instructions. 2) It encourages the self-attention heads to capture more word-word relationships about instruction verbs. 3) It encourages the feed-forward networks to rotate their pre-trained knowledge toward user-oriented tasks. These insights contribute to a more comprehensive understanding of instruction tuning and lay the groundwork for future work that aims at explaining and optimizing LLMs for various applications. Our code and data are publicly available at https://github.com/JacksonWuxs/Interpret_Instruction_Tuning_LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2309.11696v3">LLM-based Medical Assistant Personalization with Short- and Long-Term Memory Coordination</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs), such as GPT3.5, have exhibited remarkable proficiency in comprehending and generating natural language. On the other hand, medical assistants hold the potential to offer substantial benefits for individuals. However, the exploration of LLM-based personalized medical assistant remains relatively scarce. Typically, patients converse differently based on their background and preferences which necessitates the task of enhancing user-oriented medical assistant. While one can fully train an LLM for this objective, the resource consumption is unaffordable. Prior research has explored memory-based methods to enhance the response with aware of previous mistakes for new queries during a dialogue session. We contend that a mere memory module is inadequate and fully training an LLM can be excessively costly. In this study, we propose a novel computational bionic memory mechanism, equipped with a parameter-efficient fine-tuning (PEFT) schema, to personalize medical assistants.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2404.03413v1">MiniGPT4-Video: Advancing Multimodal LLMs for Video Understanding with Interleaved Visual-Textual Tokens</a></div>
     <div class="paper-meta">
       📅 2024-04-04
@@ -46,6 +74,16 @@
     </div>
     <details class="paper-abstract">
       In the rapidly evolving field of assistive technology (AT), ensuring that products meet national and international standards is essential for user safety, efficacy, and accessibility. In this vision paper, we introduce CompliAT, a pioneering framework designed to streamline the compliance process of AT product specifications with these standards through the innovative use of Large Language Models (LLMs). CompliAT addresses three critical tasks: checking terminology consistency, classifying products according to standards, and tracing key product specifications to standard requirements. We tackle the challenge of terminology consistency to ensure that the language used in product specifications aligns with relevant standards, reducing misunderstandings and non-compliance risks. We propose a novel approach for product classification, leveraging a retrieval-augmented generation model to accurately categorize AT products aligning to international standards, despite the sparse availability of training data. Finally, CompliAT implements a traceability and compliance mechanism from key product specifications to standard requirements, ensuring all aspects of an AT product are thoroughly vetted against the corresponding standards. By semi-automating these processes, CompliAT aims to significantly reduce the time and effort required for AT product standards compliance and uphold quality and safety standards. We outline our planned implementation and evaluation plan for CompliAT.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.01687v2">"Which LLM should I use?": Evaluating LLMs for tasks performed by Undergraduate Computer Science Students</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+      | 💬 Under review
+    </div>
+    <details class="paper-abstract">
+      This study evaluates the effectiveness of various large language models (LLMs) in performing tasks common among undergraduate computer science students. Although a number of research studies in the computing education community have explored the possibility of using LLMs for a variety of tasks, there is a lack of comprehensive research comparing different LLMs and evaluating which LLMs are most effective for different tasks. Our research systematically assesses some of the publicly available LLMs such as Google Bard, ChatGPT(3.5), GitHub Copilot Chat, and Microsoft Copilot across diverse tasks commonly encountered by undergraduate computer science students in India. These tasks include code explanation and documentation, solving class assignments, technical interview preparation, learning new concepts and frameworks, and email writing. Evaluation for these tasks was carried out by pre-final year and final year undergraduate computer science students and provides insights into the models' strengths and limitations. This study aims to guide students as well as instructors in selecting suitable LLMs for any specific task and offers valuable insights on how LLMs can be used constructively by students and instructors.
     </details>
 </div>
 <div class="paper-card">
@@ -162,6 +200,16 @@
     </div>
     <details class="paper-abstract">
       Since the recent prosperity of Large Language Models (LLMs), there have been interleaved discussions regarding how to reduce hallucinations from LLM responses, how to increase the factuality of LLMs, and whether Knowledge Graphs (KGs), which store the world knowledge in a symbolic form, will be replaced with LLMs. In this paper, we try to answer these questions from a new angle: How knowledgeable are LLMs? To answer this question, we constructed Head-to-Tail, a benchmark that consists of 18K question-answer (QA) pairs regarding head, torso, and tail facts in terms of popularity. We designed an automated evaluation method and a set of metrics that closely approximate the knowledge an LLM confidently internalizes. Through a comprehensive evaluation of 16 publicly available LLMs, we show that existing LLMs are still far from being perfect in terms of their grasp of factual knowledge, especially for facts of torso-to-tail entities.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2404.01361v1">LLM Attributor: Interactive Visual Attribution for LLM Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-04-03
+      | 💬 8 pages, 3 figures, For a video demo, see https://youtu.be/mIG2MDQKQxM
+    </div>
+    <details class="paper-abstract">
+      While large language models (LLMs) have shown remarkable capability to generate convincing text across diverse domains, concerns around its potential risks have highlighted the importance of understanding the rationale behind text generation. We present LLM Attributor, a Python library that provides interactive visualizations for training data attribution of an LLM's text generation. Our library offers a new way to quickly attribute an LLM's text generation to training data points to inspect model behaviors, enhance its trustworthiness, and compare model-generated text with user-provided text. We describe the visual and interactive design of our tool and highlight usage scenarios for LLaMA2 models fine-tuned with two different datasets: online articles about recent disasters and finance-related question-answer pairs. Thanks to LLM Attributor's broad support for computational notebooks, users can easily integrate it into their workflow to interactively visualize attributions of their models. For easier access and extensibility, we open-source LLM Attributor at https://github.com/poloclub/ LLM-Attribution. The video demo is available at https://youtu.be/mIG2MDQKQxM.
     </details>
 </div>
 <div class="paper-card">

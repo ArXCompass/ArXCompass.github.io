@@ -542,6 +542,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.00231v2">LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking</a></div>
+    <div class="paper-meta">
+      📅 2024-11-27
+    </div>
+    <details class="paper-abstract">
+      Ranking passages by prompting a large language model (LLM) can achieve promising performance in modern information retrieval (IR) systems. A common approach to sort the ranking list is by prompting LLMs for a pairwise or setwise comparison which often relies on sorting algorithms. However, sorting-based methods require consistent comparisons to correctly sort the passages, which we show that LLMs often violate. We identify two kinds of intrinsic inconsistency in LLM-based pairwise comparisons: order inconsistency which leads to conflicting results when switching the passage order, and transitive inconsistency which leads to non-transitive triads among all preference pairs. Our study of these inconsistencies is relevant for understanding and improving the stability of any ranking scheme based on relative preferences. In this paper, we propose LLM-RankFusion, an LLM-based ranking framework that mitigates these inconsistencies and produces a robust ranking list. LLM-RankFusion mitigates order inconsistency using in-context learning (ICL) to demonstrate order-agnostic comparisons and calibration to estimate the underlying preference probability between two passages. We then address transitive inconsistency by aggregating the ranking results from multiple rankers. In our experiments, we empirically show that LLM-RankFusion can significantly reduce inconsistent comparison results, improving the ranking quality by making the final ranking list more robust. Our code is available at \href{https://github.com/XHMY/LLM-RankFusion}{https://github.com/XHMY/LLM-RankFusion}
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.17927v1">Measuring Emergent Capabilities of LLMs for Software Engineering: How Far Are We?</a></div>
     <div class="paper-meta">
       📅 2024-11-26
@@ -943,14 +952,5 @@
     </div>
     <details class="paper-abstract">
       The incorporation of Large Language Models (LLMs) into smart transportation systems has paved the way for improving data management and operational efficiency. This study introduces TransCompressor, a novel framework that leverages LLMs for efficient compression and decompression of multimodal transportation sensor data. TransCompressor has undergone thorough evaluation with diverse sensor data types, including barometer, speed, and altitude measurements, across various transportation modes like buses, taxis, and MTRs. Comprehensive evaluation illustrates the effectiveness of TransCompressor in reconstructing transportation sensor data at different compression ratios. The results highlight that, with well-crafted prompts, LLMs can utilize their vast knowledge base to contribute to data compression processes, enhancing data storage, analysis, and retrieval in smart transportation settings.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.16003v1">eFedLLM: Efficient LLM Inference Based on Federated Learning</a></div>
-    <div class="paper-meta">
-      📅 2024-11-24
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) herald a transformative era in artificial intelligence (AI). However, the expansive scale of data and parameters of LLMs requires high-demand computational and memory resources, restricting their accessibility to a broader range of users and researchers. This paper introduces an effective approach that enhances the operational efficiency and affordability of LLM inference. By utilizing transformer-based federated learning (FL) with model-parallel distributed training, our model efficiently distributes the computational loads and memory requirements across a network of participants. This strategy permits users, especially those with limited resources to train state-of-the-art LLMs collaboratively. We also innovate an incentive mechanism within the FL framework, rewarding constructive contributions and filtering out malicious activities, thereby safeguarding the integrity and reliability of the training process. Concurrently, we leverage memory hierarchy strategies and Singular Value Decomposition (SVD) on weight matrices to boost computational and memory efficiencies further. Our results, derived from formulaic analyses and numerical calculations, demonstrate significant optimization of resource use and democratize access to cutting-edge LLMs, ensuring that a wide scale of users can both contribute to and benefit from these advanced models.
     </details>
 </div>

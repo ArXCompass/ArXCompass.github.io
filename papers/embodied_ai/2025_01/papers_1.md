@@ -68,6 +68,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2404.03325v2">Embodied Neuromorphic Artificial Intelligence for Robotics: Perspectives, Challenges, and Research Development Stack</a></div>
+    <div class="paper-meta">
+      📅 2025-01-22
+      | 💬 To appear at the 18th International Conference on Control, Automation, Robotics and Vision (ICARCV), December 2024, Dubai, UAE
+    </div>
+    <details class="paper-abstract">
+      Robotic technologies have been an indispensable part for improving human productivity since they have been helping humans in completing diverse, complex, and intensive tasks in a fast yet accurate and efficient way. Therefore, robotic technologies have been deployed in a wide range of applications, ranging from personal to industrial use-cases. However, current robotic technologies and their computing paradigm still lack embodied intelligence to efficiently interact with operational environments, respond with correct/expected actions, and adapt to changes in the environments. Toward this, recent advances in neuromorphic computing with Spiking Neural Networks (SNN) have demonstrated the potential to enable the embodied intelligence for robotics through bio-plausible computing paradigm that mimics how the biological brain works, known as "neuromorphic artificial intelligence (AI)". However, the field of neuromorphic AI-based robotics is still at an early stage, therefore its development and deployment for solving real-world problems expose new challenges in different design aspects, such as accuracy, adaptability, efficiency, reliability, and security. To address these challenges, this paper will discuss how we can enable embodied neuromorphic AI for robotic systems through our perspectives: (P1) Embodied intelligence based on effective learning rule, training mechanism, and adaptability; (P2) Cross-layer optimizations for energy-efficient neuromorphic computing; (P3) Representative and fair benchmarks; (P4) Low-cost reliability and safety enhancements; (P5) Security and privacy for neuromorphic computing; and (P6) A synergistic development for energy-efficient and robust neuromorphic-based robotics. Furthermore, this paper identifies research challenges and opportunities, as well as elaborates our vision for future research development toward embodied neuromorphic AI for robotics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.07166v3">Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making</a></div>
+    <div class="paper-meta">
+      📅 2025-01-22
+      | 💬 Accepted for oral presentation at NeurIPS 2024 in the Datasets and Benchmarks track. Final Camera version
+    </div>
+    <details class="paper-abstract">
+      We aim to evaluate Large Language Models (LLMs) for embodied decision making. While a significant body of work has been leveraging LLMs for decision making in embodied environments, we still lack a systematic understanding of their performance because they are usually applied in different domains, for different purposes, and built based on different inputs and outputs. Furthermore, existing evaluations tend to rely solely on a final success rate, making it difficult to pinpoint what ability is missing in LLMs and where the problem lies, which in turn blocks embodied agents from leveraging LLMs effectively and selectively. To address these limitations, we propose a generalized interface (Embodied Agent Interface) that supports the formalization of various types of tasks and input-output specifications of LLM-based modules. Specifically, it allows us to unify 1) a broad set of embodied decision-making tasks involving both state and temporally extended goals, 2) four commonly-used LLM-based modules for decision making: goal interpretation, subgoal decomposition, action sequencing, and transition modeling, and 3) a collection of fine-grained metrics which break down evaluation into various types of errors, such as hallucination errors, affordance errors, various types of planning errors, etc. Overall, our benchmark offers a comprehensive assessment of LLMs' performance for different subtasks, pinpointing the strengths and weaknesses in LLM-powered embodied AI systems, and providing insights for effective and selective use of LLMs in embodied decision making.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.11858v1">EmbodiedEval: Evaluate Multimodal LLMs as Embodied Agents</a></div>
     <div class="paper-meta">
       📅 2025-01-21
@@ -127,6 +147,24 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.02297v2">Perception Matters: Enhancing Embodied AI with Uncertainty-Aware Semantic Segmentation</a></div>
+    <div class="paper-meta">
+      📅 2025-01-15
+    </div>
+    <details class="paper-abstract">
+      Embodied AI has made significant progress acting in unexplored environments. However, tasks such as object search have largely focused on efficient policy learning. In this work, we identify several gaps in current search methods: They largely focus on dated perception models, neglect temporal aggregation, and transfer from ground truth directly to noisy perception at test time, without accounting for the resulting overconfidence in the perceived state. We address the identified problems through calibrated perception probabilities and uncertainty across aggregation and found decisions, thereby adapting the models for sequential tasks. The resulting methods can be directly integrated with pretrained models across a wide family of existing search approaches at no additional training cost. We perform extensive evaluations of aggregation methods across both different semantic perception models and policies, confirming the importance of calibrated uncertainties in both the aggregation and found decisions. We make the code and trained models available at https://semantic-search.cs.uni-freiburg.de.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.11537v1">A Survey of Embodied Learning for Object-Centric Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-01-15
+    </div>
+    <details class="paper-abstract">
+      Embodied learning for object-centric robotic manipulation is a rapidly developing and challenging area in embodied AI. It is crucial for advancing next-generation intelligent robots and has garnered significant interest recently. Unlike data-driven machine learning methods, embodied learning focuses on robot learning through physical interaction with the environment and perceptual feedback, making it especially suitable for robotic manipulation. In this paper, we provide a comprehensive survey of the latest advancements in this field and categorize the existing work into three main branches: 1) Embodied perceptual learning, which aims to predict object pose and affordance through various data representations; 2) Embodied policy learning, which focuses on generating optimal robotic decisions using methods such as reinforcement learning and imitation learning; 3) Embodied task-oriented learning, designed to optimize the robot's performance based on the characteristics of different tasks in object grasping and manipulation. In addition, we offer an overview and discussion of public datasets, evaluation metrics, representative applications, current challenges, and potential future research directions. A project associated with this survey has been established at https://github.com/RayYoh/OCRM_survey.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.02297v2">Perception Matters: Enhancing Embodied AI with Uncertainty-Aware Semantic Segmentation</a></div>
     <div class="paper-meta">
       📅 2025-01-14
@@ -136,12 +174,31 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2501.06642v1">Common Sense Is All You Need</a></div>
+    <div class="paper-meta">
+      📅 2025-01-14
+    </div>
+    <details class="paper-abstract">
+      Artificial intelligence (AI) has made significant strides in recent years, yet it continues to struggle with a fundamental aspect of cognition present in all animals: common sense. Current AI systems, including those designed for complex tasks like autonomous driving, problem-solving challenges such as the Abstraction and Reasoning Corpus (ARC), and conversational benchmarks like the Turing Test, often lack the ability to adapt to new situations without extensive prior knowledge. This manuscript argues that integrating common sense into AI systems is essential for achieving true autonomy and unlocking the full societal and commercial value of AI. We propose a shift in the order of knowledge acquisition emphasizing the importance of developing AI systems that start from minimal prior knowledge and are capable of contextual learning, adaptive reasoning, and embodiment -- even within abstract domains. Additionally, we highlight the need to rethink the AI software stack to address this foundational challenge. Without common sense, AI systems may never reach true autonomy, instead exhibiting asymptotic performance that approaches theoretical ideals like AIXI but remains unattainable in practice due to infinite resource and computation requirements. While scaling AI models and passing benchmarks like the Turing Test have brought significant advancements in applications that do not require autonomy, these approaches alone are insufficient to achieve autonomous AI with common sense. By redefining existing benchmarks and challenges to enforce constraints that require genuine common sense, and by broadening our understanding of embodiment to include both physical and abstract domains, we can encourage the development of AI systems better equipped to handle the complexities of real-world and abstract environments.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.05750v1">Semantic Mapping in Indoor Embodied AI -- A Comprehensive Survey and Future Directions</a></div>
     <div class="paper-meta">
       📅 2025-01-10
     </div>
     <details class="paper-abstract">
       Intelligent embodied agents (e.g. robots) need to perform complex semantic tasks in unfamiliar environments. Among many skills that the agents need to possess, building and maintaining a semantic map of the environment is most crucial in long-horizon tasks. A semantic map captures information about the environment in a structured way, allowing the agent to reference it for advanced reasoning throughout the task. While existing surveys in embodied AI focus on general advancements or specific tasks like navigation and manipulation, this paper provides a comprehensive review of semantic map-building approaches in embodied AI, specifically for indoor navigation. We categorize these approaches based on their structural representation (spatial grids, topological graphs, dense point-clouds or hybrid maps) and the type of information they encode (implicit features or explicit environmental data). We also explore the strengths and limitations of the map building techniques, highlight current challenges, and propose future research directions. We identify that the field is moving towards developing open-vocabulary, queryable, task-agnostic map representations, while high memory demands and computational inefficiency still remaining to be open challenges. This survey aims to guide current and future researchers in advancing semantic mapping techniques for embodied AI systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2501.00358v2">Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding</a></div>
+    <div class="paper-meta">
+      📅 2025-01-10
+      | 💬 project page: https://embodied-videoagent.github.io/
+    </div>
+    <details class="paper-abstract">
+      This paper investigates the problem of understanding dynamic 3D scenes from egocentric observations, a key challenge in robotics and embodied AI. Unlike prior studies that explored this as long-form video understanding and utilized egocentric video only, we instead propose an LLM-based agent, Embodied VideoAgent, which constructs scene memory from both egocentric video and embodied sensory inputs (e.g. depth and pose sensing). We further introduce a VLM-based approach to automatically update the memory when actions or activities over objects are perceived. Embodied VideoAgent attains significant advantages over counterparts in challenging reasoning and planning tasks in 3D scenes, achieving gains of 4.9% on Ego4D-VQ3D, 5.8% on OpenEQA, and 11.7% on EnvQA. We have also demonstrated its potential in various embodied AI tasks including generating embodied interactions and perception for robot manipulation. The code and demo will be made public.
     </details>
 </div>
 <div class="paper-card">
@@ -162,6 +219,16 @@
     </div>
     <details class="paper-abstract">
       Video procedure planning, i.e., planning a sequence of action steps given the video frames of start and goal states, is an essential ability for embodied AI. Recent works utilize Large Language Models (LLMs) to generate enriched action step description texts to guide action step decoding. Although LLMs are introduced, these methods decode the action steps into a closed-set of one-hot vectors, limiting the model's capability of generalizing to new steps or tasks. Additionally, fixed action step descriptions based on world-level commonsense may contain noise in specific instances of visual states. In this paper, we propose PlanLLM, a cross-modal joint learning framework with LLMs for video procedure planning. We propose an LLM-Enhanced Planning module which fully uses the generalization ability of LLMs to produce free-form planning output and to enhance action step decoding. We also propose Mutual Information Maximization module to connect world-level commonsense of step descriptions and sample-specific information of visual states, enabling LLMs to employ the reasoning ability to generate step sequences. With the assistance of LLMs, our method can both closed-set and open vocabulary procedure planning tasks. Our PlanLLM achieves superior performance on three benchmarks, demonstrating the effectiveness of our designs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2501.01141v1">Embodied AI-Enhanced Vehicular Networks: An Integrated Large Language Models and Reinforcement Learning Method</a></div>
+    <div class="paper-meta">
+      📅 2025-01-03
+      | 💬 14 pages, 10 figures
+    </div>
+    <details class="paper-abstract">
+      This paper investigates adaptive transmission strategies in embodied AI-enhanced vehicular networks by integrating large language models (LLMs) for semantic information extraction and deep reinforcement learning (DRL) for decision-making. The proposed framework aims to optimize both data transmission efficiency and decision accuracy by formulating an optimization problem that incorporates the Weber-Fechner law, serving as a metric for balancing bandwidth utilization and quality of experience (QoE). Specifically, we employ the large language and vision assistant (LLAVA) model to extract critical semantic information from raw image data captured by embodied AI agents (i.e., vehicles), reducing transmission data size by approximately more than 90\% while retaining essential content for vehicular communication and decision-making. In the dynamic vehicular environment, we employ a generalized advantage estimation-based proximal policy optimization (GAE-PPO) method to stabilize decision-making under uncertainty. Simulation results show that attention maps from LLAVA highlight the model's focus on relevant image regions, enhancing semantic representation accuracy. Additionally, our proposed transmission strategy improves QoE by up to 36\% compared to DDPG and accelerates convergence by reducing required steps by up to 47\% compared to pure PPO. Further analysis indicates that adapting semantic symbol length provides an effective trade-off between transmission quality and bandwidth, achieving up to a 61.4\% improvement in QoE when scaling from 4 to 8 vehicles.
     </details>
 </div>
 <div class="paper-card">

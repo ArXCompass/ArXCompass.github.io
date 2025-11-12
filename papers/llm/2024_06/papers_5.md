@@ -13,6 +13,63 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.03158v1">CSS: Contrastive Semantic Similarity for Uncertainty Quantification of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+      | 💬 The paper is accepted by The Conference on Uncertainty in Artificial Intelligence (UAI), 2024
+    </div>
+    <details class="paper-abstract">
+      Despite the impressive capability of large language models (LLMs), knowing when to trust their generations remains an open challenge. The recent literature on uncertainty quantification of natural language generation (NLG) utilises a conventional natural language inference (NLI) classifier to measure the semantic dispersion of LLMs responses. These studies employ logits of NLI classifier for semantic clustering to estimate uncertainty. However, logits represent the probability of the predicted class and barely contain feature information for potential clustering. Alternatively, CLIP (Contrastive Language-Image Pre-training) performs impressively in extracting image-text pair features and measuring their similarity. To extend its usability, we propose Contrastive Semantic Similarity, the CLIP-based feature extraction module to obtain similarity features for measuring uncertainty for text pairs. We apply this method to selective NLG, which detects and rejects unreliable generations for better trustworthiness of LLMs. We conduct extensive experiments with three LLMs on several benchmark question-answering datasets with comprehensive evaluation metrics. Results show that our proposed method performs better in estimating reliable responses of LLMs than comparable baselines. Results show that our proposed method performs better in estimating reliable responses of LLMs than comparable baselines. The code are available at \url{https://github.com/AoShuang92/css_uq_llms}.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.14883v3">Double-I Watermark: Protecting Model Copyright for LLM Fine-tuning</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+    </div>
+    <details class="paper-abstract">
+      To support various applications, a prevalent and efficient approach for business owners is leveraging their valuable datasets to fine-tune a pre-trained LLM through the API provided by LLM owners or cloud servers. However, this process carries a substantial risk of model misuse, potentially resulting in severe economic consequences for business owners. Thus, safeguarding the copyright of these customized models during LLM fine-tuning has become an urgent practical requirement, but there are limited existing solutions to provide such protection. To tackle this pressing issue, we propose a novel watermarking approach named ``Double-I watermark''. Specifically, based on the instruct-tuning data, two types of backdoor data paradigms are introduced with trigger in the instruction and the input, respectively. By leveraging LLM's learning capability to incorporate customized backdoor samples into the dataset, the proposed approach effectively injects specific watermarking information into the customized model during fine-tuning, which makes it easy to inject and verify watermarks in commercial scenarios. We evaluate the proposed "Double-I watermark" under various fine-tuning methods, demonstrating its harmlessness, robustness, uniqueness, imperceptibility, and validity through both quantitative and qualitative analyses.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.15337v2">Ranking Entities along Conceptual Space Dimensions with LLMs: An Analysis of Fine-Tuning Strategies</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+      | 💬 Accepted in ACL 2024 (Findings)
+    </div>
+    <details class="paper-abstract">
+      Conceptual spaces represent entities in terms of their primitive semantic features. Such representations are highly valuable but they are notoriously difficult to learn, especially when it comes to modelling perceptual and subjective features. Distilling conceptual spaces from Large Language Models (LLMs) has recently emerged as a promising strategy, but existing work has been limited to probing pre-trained LLMs using relatively simple zero-shot strategies. We focus in particular on the task of ranking entities according to a given conceptual space dimension. Unfortunately, we cannot directly fine-tune LLMs on this task, because ground truth rankings for conceptual space dimensions are rare. We therefore use more readily available features as training data and analyse whether the ranking capabilities of the resulting models transfer to perceptual and subjective features. We find that this is indeed the case, to some extent, but having at least some perceptual and subjective features in the training data seems essential for achieving the best results.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.20835v3">Outliers and Calibration Sets have Diminishing Effect on Quantization of Modern LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+    </div>
+    <details class="paper-abstract">
+      Post-Training Quantization (PTQ) enhances the efficiency of Large Language Models (LLMs) by enabling faster operation and compatibility with more accessible hardware through reduced memory usage, at the cost of small performance drops. We explore the role of calibration sets in PTQ, specifically their effect on hidden activations in various notable open-source LLMs. Calibration sets are crucial for evaluating activation magnitudes and identifying outliers, which can distort the quantization range and negatively impact performance. Our analysis reveals a marked contrast in quantization effectiveness across models. The older OPT model, upon which much of the quantization literature is based, shows significant performance deterioration and high susceptibility to outliers with varying calibration sets. In contrast, newer models like Llama-2 7B, Llama-3 8B, Command-R 35B, and Mistral 7B demonstrate strong robustness, with Mistral 7B showing near-immunity to outliers and stable activations. These findings suggest a shift in PTQ strategies might be needed. As advancements in pre-training methods reduce the relevance of outliers, there is an emerging need to reassess the fundamentals of current quantization literature. The emphasis should pivot towards optimizing inference speed, rather than primarily focusing on outlier preservation, to align with the evolving characteristics of state-of-the-art LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.09836v2">Chain-of-Planned-Behaviour Workflow Elicits Few-Shot Mobility Generation in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+    </div>
+    <details class="paper-abstract">
+      The powerful reasoning capabilities of large language models (LLMs) have brought revolutionary changes to many fields, but their performance in human behaviour generation has not yet been extensively explored. This gap likely emerges because the internal processes governing behavioral intentions cannot be solely explained by abstract reasoning. Instead, they are also influenced by a multitude of factors, including social norms and personal preference. Inspired by the Theory of Planned Behaviour (TPB), we develop a LLM workflow named Chain-of-Planned Behaviour (CoPB) for mobility behaviour generation, which reflects the important spatio-temporal dynamics of human activities. Through exploiting the cognitive structures of attitude, subjective norms, and perceived behaviour control in TPB, CoPB significantly enhance the ability of LLMs to reason the intention of next movement. Specifically, CoPB substantially reduces the error rate of mobility intention generation from 57.8% to 19.4%. To improve the scalability of the proposed CoPB workflow, we further explore the synergy between LLMs and mechanistic models. We find mechanistic mobility models, such as gravity model, can effectively map mobility intentions to physical mobility behaviours. The strategy of integrating CoPB with gravity model can reduce the token cost by 97.7% and achieve better performance simultaneously. Besides, the proposed CoPB workflow can facilitate GPT-4-turbo to automatically generate high quality labels for mobility behavior reasoning. We show such labels can be leveraged to fine-tune the smaller-scale, open source LLaMA 3-8B, which significantly reduces usage costs without sacrificing the quality of the generated behaviours.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.12532v2">PyramidInfer: Pyramid KV Cache Compression for High-throughput LLM Inference</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+      | 💬 Accepted by ACL 2024
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have shown remarkable comprehension abilities but face challenges in GPU memory usage during inference, hindering their scalability for real-time applications like chatbots. To accelerate inference, we store computed keys and values (KV cache) in the GPU memory. Existing methods study the KV cache compression to reduce memory by pruning the pre-computed KV cache. However, they neglect the inter-layer dependency between layers and huge memory consumption in pre-computation. To explore these deficiencies, we find that the number of crucial keys and values that influence future generations decreases layer by layer and we can extract them by the consistency in attention weights. Based on the findings, we propose PyramidInfer, a method that compresses the KV cache by layer-wise retaining crucial context. PyramidInfer saves significant memory by computing fewer keys and values without sacrificing performance. Experimental results show PyramidInfer improves 2.2x throughput compared to Accelerate with over 54% GPU memory reduction in KV cache.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.03075v1">Towards Detecting LLMs Hallucination via Markov Chain-based Multi-agent Debate Framework</a></div>
     <div class="paper-meta">
       📅 2024-06-05
@@ -105,6 +162,16 @@
     </div>
     <details class="paper-abstract">
       This research investigates the effect of prompt design on dialogue evaluation using large language models (LLMs). While LLMs are increasingly used for scoring various inputs, creating effective prompts for dialogue evaluation remains challenging due to model sensitivity and subjectivity in dialogue assessments. Our study experimented with different prompt structures, altering the sequence of output instructions and including explanatory reasons. We found that the order of presenting reasons and scores significantly influences LLMs' scoring, with a "reason-first" approach yielding more comprehensive evaluations. This insight is crucial for enhancing the accuracy and consistency of LLM-based evaluations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.01943v1">Enhancing Trust in LLMs: Algorithms for Comparing and Interpreting LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-05
+      | 💬 An extensive survey of the literature specifying algorithms and techniques enhancing the trustworthiness and understanding of Large Language Models (LLMs)
+    </div>
+    <details class="paper-abstract">
+      This paper surveys evaluation techniques to enhance the trustworthiness and understanding of Large Language Models (LLMs). As reliance on LLMs grows, ensuring their reliability, fairness, and transparency is crucial. We explore algorithmic methods and metrics to assess LLM performance, identify weaknesses, and guide development towards more trustworthy applications. Key evaluation metrics include Perplexity Measurement, NLP metrics (BLEU, ROUGE, METEOR, BERTScore, GLEU, Word Error Rate, Character Error Rate), Zero-Shot and Few-Shot Learning Performance, Transfer Learning Evaluation, Adversarial Testing, and Fairness and Bias Evaluation. We introduce innovative approaches like LLMMaps for stratified evaluation, Benchmarking and Leaderboards for competitive assessment, Stratified Analysis for in-depth understanding, Visualization of Blooms Taxonomy for cognitive level accuracy distribution, Hallucination Score for quantifying inaccuracies, Knowledge Stratification Strategy for hierarchical analysis, and Machine Learning Models for Hierarchy Generation. Human Evaluation is highlighted for capturing nuances that automated metrics may miss. These techniques form a framework for evaluating LLMs, aiming to enhance transparency, guide development, and establish user trust. Future papers will describe metric visualization and demonstrate each approach on practical examples.
     </details>
 </div>
 <div class="paper-card">
@@ -328,6 +395,15 @@
     </div>
     <details class="paper-abstract">
       Large Language Model (LLM) evaluation is currently one of the most important areas of research, with existing benchmarks proving to be insufficient and not completely representative of LLMs' various capabilities. We present a curated collection of challenging statements on sensitive topics for LLM benchmarking called TruthEval. These statements were curated by hand and contain known truth values. The categories were chosen to distinguish LLMs' abilities from their stochastic nature. We perform some initial analyses using this dataset and find several instances of LLMs failing in simple tasks showing their inability to understand simple questions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.01789v2">The Political Preferences of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-04
+    </div>
+    <details class="paper-abstract">
+      I report here a comprehensive analysis about the political preferences embedded in Large Language Models (LLMs). Namely, I administer 11 political orientation tests, designed to identify the political preferences of the test taker, to 24 state-of-the-art conversational LLMs, both closed and open source. When probed with questions/statements with political connotations, most conversational LLMs tend to generate responses that are diagnosed by most political test instruments as manifesting preferences for left-of-center viewpoints. This does not appear to be the case for five additional base (i.e. foundation) models upon which LLMs optimized for conversation with humans are built. However, the weak performance of the base models at coherently answering the tests' questions makes this subset of results inconclusive. Finally, I demonstrate that LLMs can be steered towards specific locations in the political spectrum through Supervised Fine-Tuning (SFT) with only modest amounts of politically aligned data, suggesting SFT's potential to embed political orientation in LLMs. With LLMs beginning to partially displace traditional information sources like search engines and Wikipedia, the societal implications of political biases embedded in LLMs are substantial.
     </details>
 </div>
 <div class="paper-card">

@@ -6,6 +6,7 @@
 
 - Part 1
 - [Part 2](papers_2.md)
+- [Part 3](papers_3.md)
 
 ## Papers
 
@@ -73,6 +74,15 @@
     </div>
     <details class="paper-abstract">
       Dynamic 3D scene representation and novel view synthesis from captured videos are crucial for enabling immersive experiences required by AR/VR and metaverse applications. However, this task is challenging due to the complexity of unconstrained real-world scenes and their temporal dynamics. In this paper, we frame dynamic scenes as a spatio-temporal 4D volume learning problem, offering a native explicit reformulation with minimal assumptions about motion, which serves as a versatile dynamic scene learning framework. Specifically, we represent a target dynamic scene using a collection of 4D Gaussian primitives with explicit geometry and appearance features, dubbed as 4D Gaussian splatting (4DGS). This approach can capture relevant information in space and time by fitting the underlying spatio-temporal volume. Modeling the spacetime as a whole with 4D Gaussians parameterized by anisotropic ellipses that can rotate arbitrarily in space and time, our model can naturally learn view-dependent and time-evolved appearance with 4D spherindrical harmonics. Notably, our 4DGS model is the first solution that supports real-time rendering of high-resolution, photorealistic novel views for complex dynamic scenes. To enhance efficiency, we derive several compact variants that effectively reduce memory footprint and mitigate the risk of overfitting. Extensive experiments validate the superiority of 4DGS in terms of visual quality and efficiency across a range of dynamic scene-related tasks (e.g., novel view synthesis, 4D generation, scene understanding) and scenarios (e.g., single object, indoor scenes, driving environments, synthetic and real data).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.18816v1">GSAVS: Gaussian Splatting-based Autonomous Vehicle Simulator</a></div>
+    <div class="paper-meta">
+      📅 2024-12-30
+    </div>
+    <details class="paper-abstract">
+      Modern autonomous vehicle simulators feature an ever-growing library of assets, including vehicles, buildings, roads, pedestrians, and more. While this level of customization proves beneficial when creating virtual urban environments, this process becomes cumbersome when intending to train within a digital twin or a duplicate of a real scene. Gaussian splatting emerged as a powerful technique in scene reconstruction and novel view synthesis, boasting high fidelity and rendering speeds. In this paper, we introduce GSAVS, an autonomous vehicle simulator that supports the creation and development of autonomous vehicle models. Every asset within the simulator is a 3D Gaussian splat, including the vehicles and the environment. However, the simulator runs within a classical 3D engine, rendering 3D Gaussian splats in real-time. This allows the simulator to utilize the photorealism that 3D Gaussian splatting boasts while providing the customization and ease of use of a classical 3D engine.
     </details>
 </div>
 <div class="paper-card">
@@ -263,6 +273,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.16809v1">GeoTexDensifier: Geometry-Texture-Aware Densification for High-Quality Photorealistic 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+      | 💬 12 pages, 8 figures, 1 table
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has recently attracted wide attentions in various areas such as 3D navigation, Virtual Reality (VR) and 3D simulation, due to its photorealistic and efficient rendering performance. High-quality reconstrution of 3DGS relies on sufficient splats and a reasonable distribution of these splats to fit real geometric surface and texture details, which turns out to be a challenging problem. We present GeoTexDensifier, a novel geometry-texture-aware densification strategy to reconstruct high-quality Gaussian splats which better comply with the geometric structure and texture richness of the scene. Specifically, our GeoTexDensifier framework carries out an auxiliary texture-aware densification method to produce a denser distribution of splats in fully textured areas, while keeping sparsity in low-texture regions to maintain the quality of Gaussian point cloud. Meanwhile, a geometry-aware splitting strategy takes depth and normal priors to guide the splitting sampling and filter out the noisy splats whose initial positions are far from the actual geometric surfaces they aim to fit, under a Validation of Depth Ratio Change checking. With the help of relative monocular depth prior, such geometry-aware validation can effectively reduce the influence of scattered Gaussians to the final rendering quality, especially in regions with weak textures or without sufficient training views. The texture-aware densification and geometry-aware splitting strategies are fully combined to obtain a set of high-quality Gaussian splats. We experiment our GeoTexDensifier framework on various datasets and compare our Novel View Synthesis results to other state-of-the-art 3DGS approaches, with detailed quantitative and qualitative evaluations to demonstrate the effectiveness of our method in producing more photorealistic 3DGS models.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.07759v2">SwinGS: Sliding Window Gaussian Splatting for Volumetric Video Streaming with Arbitrary Length</a></div>
     <div class="paper-meta">
       📅 2024-12-23
@@ -354,6 +374,16 @@
     </div>
     <details class="paper-abstract">
       Dynamic scene reconstruction from monocular video is critical for real-world applications. This paper tackles the dual challenges of dynamic novel-view synthesis and 3D geometry reconstruction by introducing a hybrid framework: Deformable Gaussian Splatting and Dynamic Neural Surfaces (DGNS), in which both modules can leverage each other for both tasks. During training, depth maps generated by the deformable Gaussian splatting module guide the ray sampling for faster processing and provide depth supervision within the dynamic neural surface module to improve geometry reconstruction. Simultaneously, the dynamic neural surface directs the distribution of Gaussian primitives around the surface, enhancing rendering quality. To further refine depth supervision, we introduce a depth-filtering process on depth maps derived from Gaussian rasterization. Extensive experiments on public datasets demonstrate that DGNS achieves state-of-the-art performance in both novel-view synthesis and 3D reconstruction.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.15400v1">SolidGS: Consolidating Gaussian Surfel Splatting for Sparse-View Surface Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2024-12-23
+      | 💬 Project page: https://mickshen7558.github.io/projects/SolidGS/
+    </div>
+    <details class="paper-abstract">
+      Gaussian splatting has achieved impressive improvements for both novel-view synthesis and surface reconstruction from multi-view images. However, current methods still struggle to reconstruct high-quality surfaces from only sparse view input images using Gaussian splatting. In this paper, we propose a novel method called SolidGS to address this problem. We observed that the reconstructed geometry can be severely inconsistent across multi-views, due to the property of Gaussian function in geometry rendering. This motivates us to consolidate all Gaussians by adopting a more solid kernel function, which effectively improves the surface reconstruction quality. With the additional help of geometrical regularization and monocular normal estimation, our method achieves superior performance on the sparse view surface reconstruction than all the Gaussian splatting methods and neural field methods on the widely used DTU, Tanks-and-Temples, and LLFF datasets.
     </details>
 </div>
 <div class="paper-card">
@@ -599,6 +629,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.12734v1">Gaussian Billboards: Expressive 2D Gaussian Splatting with Textures</a></div>
+    <div class="paper-meta">
+      📅 2024-12-18
+    </div>
+    <details class="paper-abstract">
+      Gaussian Splatting has recently emerged as the go-to representation for reconstructing and rendering 3D scenes. The transition from 3D to 2D Gaussian primitives has further improved multi-view consistency and surface reconstruction accuracy. In this work we highlight the similarity between 2D Gaussian Splatting (2DGS) and billboards from traditional computer graphics. Both use flat semi-transparent 2D geometry that is positioned, oriented and scaled in 3D space. However 2DGS uses a solid color per splat and an opacity modulated by a Gaussian distribution, where billboards are more expressive, modulating the color with a uv-parameterized texture. We propose to unify these concepts by presenting Gaussian Billboards, a modification of 2DGS to add spatially-varying color achieved using per-splat texture interpolation. The result is a mixture of the two representations, which benefits from both the robust scene optimization power of 2DGS and the expressiveness of texture mapping. We show that our method can improve the sharpness and quality of the scene representation in a wide range of qualitative and quantitative evaluations compared to the original 2DGS implementation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2403.20309v4">InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds</a></div>
     <div class="paper-meta">
       📅 2024-12-17
@@ -689,6 +728,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) has shown great potential for efficient reconstruction and high-fidelity real-time rendering of complex scenes on consumer hardware. However, due to its rasterization-based formulation, 3DGS is constrained to ideal pinhole cameras and lacks support for secondary lighting effects. Recent methods address these limitations by tracing volumetric particles instead, however, this comes at the cost of significantly slower rendering speeds. In this work, we propose 3D Gaussian Unscented Transform (3DGUT), replacing the EWA splatting formulation in 3DGS with the Unscented Transform that approximates the particles through sigma points, which can be projected exactly under any nonlinear projection function. This modification enables trivial support of distorted cameras with time dependent effects such as rolling shutter, while retaining the efficiency of rasterization. Additionally, we align our rendering formulation with that of tracing-based methods, enabling secondary ray tracing required to represent phenomena such as reflections and refraction within the same 3D representation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.01682v3">Diffusion Models with Anisotropic Gaussian Splatting for Image Inpainting</a></div>
+    <div class="paper-meta">
+      📅 2024-12-17
+    </div>
+    <details class="paper-abstract">
+      Image inpainting is a fundamental task in computer vision, aiming to restore missing or corrupted regions in images realistically. While recent deep learning approaches have significantly advanced the state-of-the-art, challenges remain in maintaining structural continuity and generating coherent textures, particularly in large missing areas. Diffusion models have shown promise in generating high-fidelity images but often lack the structural guidance necessary for realistic inpainting. We propose a novel inpainting method that combines diffusion models with anisotropic Gaussian splatting to capture both local structures and global context effectively. By modeling missing regions using anisotropic Gaussian functions that adapt to local image gradients, our approach provides structural guidance to the diffusion-based inpainting network. The Gaussian splat maps are integrated into the diffusion process, enhancing the model's ability to generate high-fidelity and structurally coherent inpainting results. Extensive experiments demonstrate that our method outperforms state-of-the-art techniques, producing visually plausible results with enhanced structural integrity and texture realism.
     </details>
 </div>
 <div class="paper-card">
@@ -909,53 +957,5 @@
     </div>
     <details class="paper-abstract">
       We introduce GaussianOcc, a systematic method that investigates the two usages of Gaussian splatting for fully self-supervised and efficient 3D occupancy estimation in surround views. First, traditional methods for self-supervised 3D occupancy estimation still require ground truth 6D poses from sensors during training. To address this limitation, we propose Gaussian Splatting for Projection (GSP) module to provide accurate scale information for fully self-supervised training from adjacent view projection. Additionally, existing methods rely on volume rendering for final 3D voxel representation learning using 2D signals (depth maps, semantic maps), which is both time-consuming and less effective. We propose Gaussian Splatting from Voxel space (GSV) to leverage the fast rendering properties of Gaussian splatting. As a result, the proposed GaussianOcc method enables fully self-supervised (no ground truth pose) 3D occupancy estimation in competitive performance with low computational cost (2.7 times faster in training and 5 times faster in rendering). The relevant code is available in https://github.com/GANWANSHUI/GaussianOcc.git.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09176v1">LIVE-GS: LLM Powers Interactive VR by Enhancing Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-    </div>
-    <details class="paper-abstract">
-      Recently, radiance field rendering, such as 3D Gaussian Splatting (3DGS), has shown immense potential in VR content creation due to its high-quality rendering and efficient production process. However, existing physics-based interaction systems for 3DGS can only perform simple and non-realistic simulations or demand extensive user input for complex scenes, primarily due to the absence of scene understanding. In this paper, we propose LIVE-GS, a highly realistic interactive VR system powered by LLM. After object-aware GS reconstruction, we prompt GPT-4o to analyze the physical properties of objects in the scene, which are used to guide physical simulations consistent with real phenomena. We also design a GPT-assisted GS inpainting module to fill the unseen area covered by manipulative objects. To perform a precise segmentation of Gaussian kernels, we propose a feature-mask segmentation strategy. To enable rich interaction, we further propose a computationally efficient physical simulation framework through an PBD-based unified interpolation method, supporting various physical forms such as rigid body, soft body, and granular materials. Our experimental results show that with the help of LLM's understanding and enhancement of scenes, our VR system can support complex and realistic interactions without additional manual design and annotation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06257v2">Advancing Extended Reality with 3D Gaussian Splatting: Innovations and Prospects</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 IEEE AIxVR 2025
-    </div>
-    <details class="paper-abstract">
-      3D Gaussian Splatting (3DGS) has attracted significant attention for its potential to revolutionize 3D representation, rendering, and interaction. Despite the rapid growth of 3DGS research, its direct application to Extended Reality (XR) remains underexplored. Although many studies recognize the potential of 3DGS for XR, few have explicitly focused on or demonstrated its effectiveness within XR environments. In this paper, we aim to synthesize innovations in 3DGS that show specific potential for advancing XR research and development. We conduct a comprehensive review of publicly available 3DGS papers, with a focus on those referencing XR-related concepts. Additionally, we perform an in-depth analysis of innovations explicitly relevant to XR and propose a taxonomy to highlight their significance. Building on these insights, we propose several prospective XR research areas where 3DGS can make promising contributions, yet remain rarely touched. By investigating the intersection of 3DGS and XR, this paper provides a roadmap to push the boundaries of XR using cutting-edge 3DGS techniques.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06234v2">Generative Densification: Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 Project page: https://stnamjef.github.io/GenerativeDensification/
-    </div>
-    <details class="paper-abstract">
-      Generalized feed-forward Gaussian models have achieved significant progress in sparse-view 3D reconstruction by leveraging prior knowledge from large multi-view datasets. However, these models often struggle to represent high-frequency details due to the limited number of Gaussians. While the densification strategy used in per-scene 3D Gaussian splatting (3D-GS) optimization can be adapted to the feed-forward models, it may not be ideally suited for generalized scenarios. In this paper, we propose Generative Densification, an efficient and generalizable method to densify Gaussians generated by feed-forward models. Unlike the 3D-GS densification strategy, which iteratively splits and clones raw Gaussian parameters, our method up-samples feature representations from the feed-forward models and generates their corresponding fine Gaussians in a single forward pass, leveraging the embedded prior knowledge for enhanced generalization. Experimental results on both object-level and scene-level reconstruction tasks demonstrate that our method outperforms state-of-the-art approaches with comparable or smaller model sizes, achieving notable improvements in representing fine details.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.05969v2">Efficient Semantic Splatting for Remote Sensing Multi-view Segmentation</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-    </div>
-    <details class="paper-abstract">
-      In this paper, we propose a novel semantic splatting approach based on Gaussian Splatting to achieve efficient and low-latency. Our method projects the RGB attributes and semantic features of point clouds onto the image plane, simultaneously rendering RGB images and semantic segmentation results. Leveraging the explicit structure of point clouds and a one-time rendering strategy, our approach significantly enhances efficiency during optimization and rendering. Additionally, we employ SAM2 to generate pseudo-labels for boundary regions, which often lack sufficient supervision, and introduce two-level aggregation losses at the 2D feature map and 3D spatial levels to improve the view-consistent and spatial continuity.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.01916v4">FastLGS: Speeding up Language Embedded Gaussians with Feature Grid Mapping</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 This paper is accepted to AAAI 2025
-    </div>
-    <details class="paper-abstract">
-      The semantically interactive radiance field has always been an appealing task for its potential to facilitate user-friendly and automated real-world 3D scene understanding applications. However, it is a challenging task to achieve high quality, efficiency and zero-shot ability at the same time with semantics in radiance fields. In this work, we present FastLGS, an approach that supports real-time open-vocabulary query within 3D Gaussian Splatting (3DGS) under high resolution. We propose the semantic feature grid to save multi-view CLIP features which are extracted based on Segment Anything Model (SAM) masks, and map the grids to low dimensional features for semantic field training through 3DGS. Once trained, we can restore pixel-aligned CLIP embeddings through feature grids from rendered features for open-vocabulary queries. Comparisons with other state-of-the-art methods prove that FastLGS can achieve the first place performance concerning both speed and accuracy, where FastLGS is 98x faster than LERF and 4x faster than LangSplat. Meanwhile, experiments show that FastLGS is adaptive and compatible with many downstream tasks, such as 3D segmentation and 3D object inpainting, which can be easily applied to other 3D manipulation systems.
     </details>
 </div>

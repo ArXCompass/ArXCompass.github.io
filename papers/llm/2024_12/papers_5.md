@@ -15,6 +15,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.10270v1">Cultural Evolution of Cooperation among LLM Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+      | 💬 15 pages, 6 figures
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) provide a compelling foundation for building generally-capable AI agents. These agents may soon be deployed at scale in the real world, representing the interests of individual humans (e.g., AI assistants) or groups of humans (e.g., AI-accelerated corporations). At present, relatively little is known about the dynamics of multiple LLM agents interacting over many generations of iterative deployment. In this paper, we examine whether a "society" of LLM agents can learn mutually beneficial social norms in the face of incentives to defect, a distinctive feature of human sociality that is arguably crucial to the success of civilization. In particular, we study the evolution of indirect reciprocity across generations of LLM agents playing a classic iterated Donor Game in which agents can observe the recent behavior of their peers. We find that the evolution of cooperation differs markedly across base models, with societies of Claude 3.5 Sonnet agents achieving significantly higher average scores than Gemini 1.5 Flash, which, in turn, outperforms GPT-4o. Further, Claude 3.5 Sonnet can make use of an additional mechanism for costly punishment to achieve yet higher scores, while Gemini 1.5 Flash and GPT-4o fail to do so. For each model class, we also observe variation in emergent behavior across random seeds, suggesting an understudied sensitive dependence on initial conditions. We suggest that our evaluation regime could inspire an inexpensive and informative new class of LLM benchmarks, focussed on the implications of LLM agent deployment for the cooperative infrastructure of society.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.10246v1">Detecting LLM Hallucination Through Layer-wise Information Deficiency: Analysis of Unanswerable Questions and Ambiguous Prompts</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) frequently generate confident yet inaccurate responses, introducing significant risks for deployment in safety-critical domains. We present a novel approach to detecting model hallucination through systematic analysis of information flow across model layers when processing inputs with insufficient or ambiguous context. Our investigation reveals that hallucination manifests as usable information deficiencies in inter-layer transmissions. While existing approaches primarily focus on final-layer output analysis, we demonstrate that tracking cross-layer information dynamics ($\mathcal{L}$I) provides robust indicators of model reliability, accounting for both information gain and loss during computation. $\mathcal{L}$I improves model reliability by immediately integrating with universal LLMs without additional training or architectural modifications.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.10244v1">Efficient Continual Pre-training of LLMs for Low-resource Languages</a></div>
     <div class="paper-meta">
       📅 2024-12-13
@@ -646,6 +665,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.05579v2">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</a></div>
+    <div class="paper-meta">
+      📅 2024-12-11
+      | 💬 60 pages, comprehensive and continuously updated
+    </div>
+    <details class="paper-abstract">
+      The rapid advancement of Large Language Models (LLMs) has driven their expanding application across various fields. One of the most promising applications is their role as evaluators based on natural language responses, referred to as ''LLMs-as-judges''. This framework has attracted growing attention from both academia and industry due to their excellent effectiveness, ability to generalize across tasks, and interpretability in the form of natural language. This paper presents a comprehensive survey of the LLMs-as-judges paradigm from five key perspectives: Functionality, Methodology, Applications, Meta-evaluation, and Limitations. We begin by providing a systematic definition of LLMs-as-Judges and introduce their functionality (Why use LLM judges?). Then we address methodology to construct an evaluation system with LLMs (How to use LLM judges?). Additionally, we investigate the potential domains for their application (Where to use LLM judges?) and discuss methods for evaluating them in various contexts (How to evaluate LLM judges?). Finally, we provide a detailed analysis of the limitations of LLM judges and discuss potential future directions. Through a structured and comprehensive analysis, we aim aims to provide insights on the development and application of LLMs-as-judges in both research and practice. We will continue to maintain the relevant resource list at https://github.com/CSHaitao/Awesome-LLMs-as-Judges.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2412.07017v1">Asynchronous LLM Function Calling</a></div>
+    <div class="paper-meta">
+      📅 2024-12-11
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) use function calls to interface with external tools and data source. However, the current approach to LLM function calling is inherently synchronous, where each call blocks LLM inference, limiting LLM operation and concurrent function execution. In this work, we propose AsyncLM, a system for asynchronous LLM function calling. AsyncLM improves LLM's operational efficiency by enabling LLMs to generate and execute function calls concurrently. Instead of waiting for each call's completion, AsyncLM introduces an interrupt mechanism to asynchronously notify the LLM in-flight when function calls return. We design an in-context protocol for function calls and interrupts, provide fine-tuning strategy to adapt LLMs to the interrupt semantics, and implement these mechanisms efficiently on LLM inference process. We demonstrate that AsyncLM can reduce end-to-end task completion latency from 1.6x-5.4x compared to synchronous function calling on a set of benchmark tasks in the Berkeley function calling leaderboard (BFCL). Furthermore, we discuss how interrupt mechanisms can be extended to enable novel human-LLM or LLM-LLM interactions.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.07965v1">HalluCana: Fixing LLM Hallucination with A Canary Lookahead</a></div>
     <div class="paper-meta">
       📅 2024-12-10
@@ -891,77 +929,41 @@
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.07017v1">Asynchronous LLM Function Calling</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2401.14279v3">ZS4C: Zero-Shot Synthesis of Compilable Code for Incomplete Code Snippets using LLMs</a></div>
     <div class="paper-meta">
       📅 2024-12-09
+      | 💬 This paper has been accepted and published in ACM Transactions on Software Engineering and Methodology (TOSEM), [2024], [https://dl.acm.org/doi/10.1145/3702979]
     </div>
     <details class="paper-abstract">
-      Large language models (LLMs) use function calls to interface with external tools and data source. However, the current approach to LLM function calling is inherently synchronous, where each call blocks LLM inference, limiting LLM operation and concurrent function execution. In this work, we propose AsyncLM, a system for asynchronous LLM function calling. AsyncLM improves LLM's operational efficiency by enabling LLMs to generate and execute function calls concurrently. Instead of waiting for each call's completion, AsyncLM introduces an interrupt mechanism to asynchronously notify the LLM in-flight when function calls return. We design an in-context protocol for function calls and interrupts, provide fine-tuning strategy to adapt LLMs to the interrupt semantics, and implement these mechanisms efficiently on LLM inference process. We demonstrate that AsyncLM can reduce end-to-end task completion latency from 1.6x-5.4x compared to synchronous function calling on a set of benchmark tasks in the Berkeley function calling leaderboard (BFCL). Furthermore, we discuss how interrupt mechanisms can be extended to enable novel human-LLM or LLM-LLM interactions.
+      Technical Q&A sites are valuable for software developers seeking knowledge, but the code snippets they provide are often uncompilable and incomplete due to unresolved types and missing libraries. This poses a challenge for users who wish to reuse or analyze these snippets. Existing methods either do not focus on creating compilable code or have low success rates. To address this, we propose ZS4C, a lightweight approach for zero-shot synthesis of compilable code from incomplete snippets using Large Language Models (LLMs). ZS4C operates in two stages: first, it uses an LLM, like GPT-3.5, to identify missing import statements in a snippet; second, it collaborates with a validator (e.g., compiler) to fix compilation errors caused by incorrect imports and syntax issues. We evaluated ZS4C on the StatType-SO benchmark and a new dataset, Python-SO, which includes 539 Python snippets from Stack Overflow across the 20 most popular Python libraries. ZS4C significantly outperforms existing methods, improving the compilation rate from 63% to 95.1% compared to the state-of-the-art SnR, marking a 50.1% improvement. On average, ZS4C can infer more accurate import statements (with an F1 score of 0.98) than SnR, with an improvement of 8.5% in the F1.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.10417v1">Leveraging Audio and Text Modalities in Mental Health: A Study of LLMs Performance</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06738v1">JAPAGEN: Efficient Few/Zero-shot Learning via Japanese Training Dataset Generation with LLM</a></div>
     <div class="paper-meta">
       📅 2024-12-09
+      | 💬 Accepted by PACLIC38 (2024)
     </div>
     <details class="paper-abstract">
-      Mental health disorders are increasingly prevalent worldwide, creating an urgent need for innovative tools to support early diagnosis and intervention. This study explores the potential of Large Language Models (LLMs) in multimodal mental health diagnostics, specifically for detecting depression and Post Traumatic Stress Disorder through text and audio modalities. Using the E-DAIC dataset, we compare text and audio modalities to investigate whether LLMs can perform equally well or better with audio inputs. We further examine the integration of both modalities to determine if this can enhance diagnostic accuracy, which generally results in improved performance metrics. Our analysis specifically utilizes custom-formulated metrics; Modal Superiority Score and Disagreement Resolvement Score to evaluate how combined modalities influence model performance. The Gemini 1.5 Pro model achieves the highest scores in binary depression classification when using the combined modality, with an F1 score of 0.67 and a Balanced Accuracy (BA) of 77.4%, assessed across the full dataset. These results represent an increase of 3.1% over its performance with the text modality and 2.7% over the audio modality, highlighting the effectiveness of integrating modalities to enhance diagnostic accuracy. Notably, all results are obtained in zero-shot inferring, highlighting the robustness of the models without requiring task-specific fine-tuning. To explore the impact of different configurations on model performance, we conduct binary, severity, and multiclass tasks using both zero-shot and few-shot prompts, examining the effects of prompt variations on performance. The results reveal that models such as Gemini 1.5 Pro in text and audio modalities, and GPT-4o mini in the text modality, often surpass other models in balanced accuracy and F1 scores across multiple tasks.
+      Recently some studies have highlighted the potential of Large Language Models (LLMs) as effective generators of supervised training data, offering advantages such as enhanced inference efficiency and reduced costs associated with data collection. However, these studies have predominantly focused on English language tasks. In this paper, we address the fundamental research question: Can LLMs serve as proficient training data generators for other language tasks? Specifically, we leverage LLMs to synthesize supervised training data under few-shot and zero-shot learning scenarios across six diverse Japanese downstream tasks. Subsequently, we utilize this synthesized data to train compact models (e.g., BERT). This novel methodology is termed JAPAGEN. Our experimental findings underscore that JAPAGEN achieves robust performance in classification tasks that necessitate formal text inputs, demonstrating competitive results compared to conventional LLM prompting strategies.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06967v1">Effective Text Adaptation for LLM-based ASR through Soft Prompt Fine-Tuning</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06681v1">Toward LLM-Agent-Based Modeling of Transportation Systems: A Conceptual Framework</a></div>
     <div class="paper-meta">
       📅 2024-12-09
-      | 💬 accepted as SLT 2024 proceeding
     </div>
     <details class="paper-abstract">
-      The advent of Large Language Models (LLM) has reformed the Automatic Speech Recognition (ASR). Prompting LLM with audio embeddings to generate transcriptions becomes the new state-of-the-art ASR. Despite LLMs being trained with an extensive amount of text corpora, high-quality domain-specific text data can still significantly enhance ASR performance on domain adaptation tasks. Although LLM-based ASR can naturally incorporate more text corpora by fine-tuning the LLM decoder, fine-tuning such ASR on text-only data without paired prompts may diminish the effectiveness of domain-specific knowledge. To mitigate this issue, we propose a two-step soft prompt fine-tuning strategy that enhances domain-specific text adaptation. Experimental results show that text adaptation with our proposed method achieved a relative up to 9% Word Error Rate (WER) reduction and up to 18% Entity Error Rate (EER) reduction on the target domain compared to the baseline ASR. Combining this with domain-specific Language Model (LM) fusion can further improve the EER by a relative 2-5%
+      In transportation system demand modeling and simulation, agent-based models and microsimulations are current state-of-the-art approaches. However, existing agent-based models still have some limitations on behavioral realism and resource demand that limit their applicability. In this study, leveraging the emerging technology of large language models (LLMs) and LLM-based agents, we propose a general LLM-agent-based modeling framework for transportation systems. We argue that LLM agents not only possess the essential capabilities to function as agents but also offer promising solutions to overcome some limitations of existing agent-based models. Our conceptual framework design closely replicates the decision-making and interaction processes and traits of human travelers within transportation networks, and we demonstrate that the proposed systems can meet critical behavioral criteria for decision-making and learning behaviors using related studies and a demonstrative example of LLM agents' learning and adjustment in the bottleneck setting. Although further refinement of the LLM-agent-based modeling framework is necessary, we believe that this approach has the potential to improve transportation system modeling and simulation.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.18495v3">WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.16176v1">Efficient VoIP Communications through LLM-based Real-Time Speech Reconstruction and Call Prioritization for Emergency Services</a></div>
     <div class="paper-meta">
       📅 2024-12-09
-      | 💬 NeurIPS 2024 Camera Ready. First two authors contributed equally. Third and fourth authors contributed equally
+      | 💬 15 pages,8 figures
     </div>
     <details class="paper-abstract">
-      We introduce WildGuard -- an open, light-weight moderation tool for LLM safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model responses, and (3) determining model refusal rate. Together, WildGuard serves the increasing needs for automatic safety moderation and evaluation of LLM interactions, providing a one-stop tool with enhanced accuracy and broad coverage across 13 risk categories. While existing open moderation tools such as Llama-Guard2 score reasonably well in classifying straightforward model interactions, they lag far behind a prompted GPT-4, especially in identifying adversarial jailbreaks and in evaluating models' refusals, a key measure for evaluating safety behaviors in model responses. To address these challenges, we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples that cover vanilla (direct) prompts and adversarial jailbreaks, paired with various refusal and compliance responses. WildGuardMix is a combination of WildGuardTrain, the training data of WildGuard, and WildGuardTest, a high-quality human-annotated moderation test set with 5K labeled items covering broad risk scenarios. Through extensive evaluations on WildGuardTest and ten existing public benchmarks, we show that WildGuard establishes state-of-the-art performance in open-source safety moderation across all the three tasks compared to ten strong existing open-source moderation models (e.g., up to 26.4% improvement on refusal detection). Importantly, WildGuard matches and sometimes exceeds GPT-4 performance (e.g., up to 3.9% improvement on prompt harmfulness identification). WildGuard serves as a highly effective safety moderator in an LLM interface, reducing the success rate of jailbreak attacks from 79.8% to 2.4%.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.10365v1">Can LLMs Identify Gaps and Misconceptions in Students' Code Explanations?</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-    </div>
-    <details class="paper-abstract">
-      This paper investigates various approaches using Large Language Models (LLMs) to identify gaps and misconceptions in students' self-explanations of specific instructional material, in our case explanations of code examples. This research is a part of our larger effort to automate the assessment of students' freely generated responses, focusing specifically on their self-explanations of code examples during activities related to code comprehension. In this work, we experiment with zero-shot prompting, Supervised Fine-Tuning (SFT), and preference alignment of LLMs to identify gaps in students' self-explanation. With simple prompting, GPT-4 consistently outperformed LLaMA3 and Mistral in identifying gaps and misconceptions, as confirmed by human evaluations. Additionally, our results suggest that fine-tuned large language models are more effective at identifying gaps in students' explanations compared to zero-shot and few-shot prompting techniques. Furthermore, our findings show that the preference optimization approach using Odds Ratio Preference Optimization (ORPO) outperforms SFT in identifying gaps and misconceptions in students' code explanations.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06931v1">Non-Prehensile Tool-Object Manipulation by Integrating LLM-Based Planning and Manoeuvrability-Driven Controls</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-    </div>
-    <details class="paper-abstract">
-      The ability to wield tools was once considered exclusive to human intelligence, but it's now known that many other animals, like crows, possess this capability. Yet, robotic systems still fall short of matching biological dexterity. In this paper, we investigate the use of Large Language Models (LLMs), tool affordances, and object manoeuvrability for non-prehensile tool-based manipulation tasks. Our novel method leverages LLMs based on scene information and natural language instructions to enable symbolic task planning for tool-object manipulation. This approach allows the system to convert the human language sentence into a sequence of feasible motion functions. We have developed a novel manoeuvrability-driven controller using a new tool affordance model derived from visual feedback. This controller helps guide the robot's tool utilization and manipulation actions, even within confined areas, using a stepping incremental approach. The proposed methodology is evaluated with experiments to prove its effectiveness under various manipulation scenarios.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.16177v1">Mining Math Conjectures from LLMs: A Pruning Approach</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-      | 💬 23 pages, 10 figures, NeurIPS MathAI Workshop 2024
-    </div>
-    <details class="paper-abstract">
-      We present a novel approach to generating mathematical conjectures using Large Language Models (LLMs). Focusing on the solubilizer, a relatively recent construct in group theory, we demonstrate how LLMs such as ChatGPT, Gemini, and Claude can be leveraged to generate conjectures. These conjectures are pruned by allowing the LLMs to generate counterexamples. Our results indicate that LLMs are capable of producing original conjectures that, while not groundbreaking, are either plausible or falsifiable via counterexamples, though they exhibit limitations in code execution.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06877v1">LLMs for Generalizable Language-Conditioned Policy Learning under Minimal Data Requirements</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-    </div>
-    <details class="paper-abstract">
-      To develop autonomous agents capable of executing complex, multi-step decision-making tasks as specified by humans in natural language, existing reinforcement learning approaches typically require expensive labeled datasets or access to real-time experimentation. Moreover, conventional methods often face difficulties in generalizing to unseen goals and states, thereby limiting their practical applicability. This paper presents TEDUO, a novel training pipeline for offline language-conditioned policy learning. TEDUO operates on easy-to-obtain, unlabeled datasets and is suited for the so-called in-the-wild evaluation, wherein the agent encounters previously unseen goals and states. To address the challenges posed by such data and evaluation settings, our method leverages the prior knowledge and instruction-following capabilities of large language models (LLMs) to enhance the fidelity of pre-collected offline data and enable flexible generalization to new goals and states. Empirical results demonstrate that the dual role of LLMs in our framework-as data enhancers and generalizers-facilitates both effective and data-efficient learning of generalizable language-conditioned policies.
+      Emergency communication systems face disruptions due to packet loss, bandwidth constraints, poor signal quality, delays, and jitter in VoIP systems, leading to degraded real-time service quality. Victims in distress often struggle to convey critical information due to panic, speech disorders, and background noise, further complicating dispatchers' ability to assess situations accurately. Staffing shortages in emergency centers exacerbate delays in coordination and assistance. This paper proposes leveraging Large Language Models (LLMs) to address these challenges by reconstructing incomplete speech, filling contextual gaps, and prioritizing calls based on severity. The system integrates real-time transcription with Retrieval-Augmented Generation (RAG) to generate contextual responses, using Twilio and AssemblyAI APIs for seamless implementation. Evaluation shows high precision, favorable BLEU and ROUGE scores, and alignment with real-world needs, demonstrating the model's potential to optimize emergency response workflows and prioritize critical cases effectively.
     </details>
 </div>

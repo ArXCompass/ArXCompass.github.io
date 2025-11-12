@@ -18,6 +18,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2306.09776v1">Inspire creativity with ORIBA: Transform Artists' Original Characters into Chatbots through Large Language Model</a></div>
+    <div class="paper-meta">
+      📅 2023-06-19
+      | 💬 5 pages, 2 figures, 1 table
+    </div>
+    <details class="paper-abstract">
+      This research delves into the intersection of illustration art and artificial intelligence (AI), focusing on how illustrators engage with AI agents that embody their original characters (OCs). We introduce 'ORIBA', a customizable AI chatbot that enables illustrators to converse with their OCs. This approach allows artists to not only receive responses from their OCs but also to observe their inner monologues and behavior. Despite the existing tension between artists and AI, our study explores innovative collaboration methods that are inspiring to illustrators. By examining the impact of AI on the creative process and the boundaries of authorship, we aim to enhance human-AI interactions in creative fields, with potential applications extending beyond illustration to interactive storytelling and more.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2306.09643v1">BISCUIT: Causal Representation Learning from Binary Interactions</a></div>
+    <div class="paper-meta">
+      📅 2023-06-19
+      | 💬 Published in: Uncertainty in Artificial Intelligence (UAI 2023). Project page: https://phlippe.github.io/BISCUIT/
+    </div>
+    <details class="paper-abstract">
+      Identifying the causal variables of an environment and how to intervene on them is of core value in applications such as robotics and embodied AI. While an agent can commonly interact with the environment and may implicitly perturb the behavior of some of these causal variables, often the targets it affects remain unknown. In this paper, we show that causal variables can still be identified for many common setups, e.g., additive Gaussian noise models, if the agent's interactions with a causal variable can be described by an unknown binary variable. This happens when each causal variable has two different mechanisms, e.g., an observational and an interventional one. Using this identifiability result, we propose BISCUIT, a method for simultaneously learning causal variables and their corresponding binary interaction variables. On three robotic-inspired datasets, BISCUIT accurately identifies causal variables and can even be scaled to complex, realistic environments for embodied AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2306.09643v1">BISCUIT: Causal Representation Learning from Binary Interactions</a></div>
     <div class="paper-meta">
       📅 2023-06-16
@@ -25,6 +45,16 @@
     </div>
     <details class="paper-abstract">
       Identifying the causal variables of an environment and how to intervene on them is of core value in applications such as robotics and embodied AI. While an agent can commonly interact with the environment and may implicitly perturb the behavior of some of these causal variables, often the targets it affects remain unknown. In this paper, we show that causal variables can still be identified for many common setups, e.g., additive Gaussian noise models, if the agent's interactions with a causal variable can be described by an unknown binary variable. This happens when each causal variable has two different mechanisms, e.g., an observational and an interventional one. Using this identifiability result, we propose BISCUIT, a method for simultaneously learning causal variables and their corresponding binary interaction variables. On three robotic-inspired datasets, BISCUIT accurately identifies causal variables and can even be scaled to complex, realistic environments for embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2304.09349v4">LLM as A Robotic Brain: Unifying Egocentric Memory and Control</a></div>
+    <div class="paper-meta">
+      📅 2023-06-13
+      | 💬 This early project is now integrated to: Mindstorms in Natural Language-Based Societies of Mind, arXiv:2305.17066
+    </div>
+    <details class="paper-abstract">
+      Embodied AI focuses on the study and development of intelligent systems that possess a physical or virtual embodiment (i.e. robots) and are able to dynamically interact with their environment. Memory and control are the two essential parts of an embodied system and usually require separate frameworks to model each of them. In this paper, we propose a novel and generalizable framework called LLM-Brain: using Large-scale Language Model as a robotic brain to unify egocentric memory and control. The LLM-Brain framework integrates multiple multimodal language models for robotic tasks, utilizing a zero-shot learning approach. All components within LLM-Brain communicate using natural language in closed-loop multi-round dialogues that encompass perception, planning, control, and memory. The core of the system is an embodied LLM to maintain egocentric memory and control the robot. We demonstrate LLM-Brain by examining two downstream tasks: active exploration and embodied question answering. The active exploration tasks require the robot to extensively explore an unknown environment within a limited number of actions. Meanwhile, the embodied question answering tasks necessitate that the robot answers questions based on observations acquired during prior explorations.
     </details>
 </div>
 <div class="paper-card">
@@ -54,6 +84,15 @@
     </div>
     <details class="paper-abstract">
       Recent progress in artificial intelligence has renewed interest in building machines that learn like animals. Almost all of the work comparing learning across biological and artificial systems comes from studies where animals and machines received different training data, obscuring whether differences between animals and machines emerged from differences in learning mechanisms versus training data. We present an experimental approach-a "newborn embodied Turing Test"-that allows newborn animals and machines to be raised in the same environments and tested with the same tasks, permitting direct comparison of their learning abilities. To make this platform, we first collected controlled-rearing data from newborn chicks, then performed "digital twin" experiments in which machines were raised in virtual environments that mimicked the rearing conditions of the chicks. We found that (1) machines (deep reinforcement learning agents with intrinsic motivation) can spontaneously develop visually guided preference behavior, akin to imprinting in newborn chicks, and (2) machines are still far from newborn-level performance on object recognition tasks. Almost all of the chicks developed view-invariant object recognition, whereas the machines tended to develop view-dependent recognition. The learning outcomes were also far more constrained in the chicks versus machines. Ultimately, we anticipate that this approach will help researchers develop embodied AI systems that learn like newborn animals.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2303.01586v2">Alexa Arena: A User-Centric Interactive Platform for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2023-06-08
+    </div>
+    <details class="paper-abstract">
+      We introduce Alexa Arena, a user-centric simulation platform for Embodied AI (EAI) research. Alexa Arena provides a variety of multi-room layouts and interactable objects, for the creation of human-robot interaction (HRI) missions. With user-friendly graphics and control mechanisms, Alexa Arena supports the development of gamified robotic tasks readily accessible to general human users, thus opening a new venue for high-efficiency HRI data collection and EAI system evaluation. Along with the platform, we introduce a dialog-enabled instruction-following benchmark and provide baseline results for it. We make Alexa Arena publicly available to facilitate research in building generalizable and assistive embodied agents.
     </details>
 </div>
 <div class="paper-card">

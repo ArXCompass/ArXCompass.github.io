@@ -38,6 +38,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.10899v1">All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+      | 💬 Project website: https://imaei.github.io/project_pages/ario/
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is transforming how AI systems interact with the physical world, yet existing datasets are inadequate for developing versatile, general-purpose agents. These limitations include a lack of standardized formats, insufficient data diversity, and inadequate data volume. To address these issues, we introduce ARIO (All Robots In One), a new data standard that enhances existing datasets by offering a unified data format, comprehensive sensory modalities, and a combination of real-world and simulated data. ARIO aims to improve the training of embodied AI agents, increasing their robustness and adaptability across various tasks and environments. Building upon the proposed new standard, we present a large-scale unified ARIO dataset, comprising approximately 3 million episodes collected from 258 series and 321,064 tasks. The ARIO standard and dataset represent a significant step towards bridging the gaps of existing data resources. By providing a cohesive framework for data collection and representation, ARIO paves the way for the development of more powerful and versatile embodied AI agents, capable of navigating and interacting with the physical world in increasingly complex and diverse ways. The project is available on https://imaei.github.io/project_pages/ario/
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.10899v1">All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents</a></div>
     <div class="paper-meta">
       📅 2024-08-20
@@ -92,5 +102,15 @@
     </div>
     <details class="paper-abstract">
       Visual language navigation (VLN) is one of the important research in embodied AI. It aims to enable an agent to understand the surrounding environment and complete navigation tasks. VLN instructions could be categorized into coarse-grained and fine-grained commands. Fine-grained command describes a whole task with subtasks step-by-step. In contrast, coarse-grained command gives an abstract task description, which more suites human habits. Most existing work focuses on the former kind of instruction in VLN tasks, ignoring the latter abstract instructions belonging to daily life scenarios. To overcome the above challenge in abstract instruction, we attempt to consider coarse-grained instruction in VLN by event knowledge enhancement. Specifically, we first propose a prompt-based framework to extract an event knowledge graph (named VLN-EventKG) for VLN integrally over multiple mainstream benchmark datasets. Through small and large language model collaboration, we realize knowledge-enhanced navigation planning (named EventNav) for VLN tasks with coarse-grained instruction input. Additionally, we design a novel dynamic history backtracking module to correct potential error action planning in real time. Experimental results in various public benchmarks show our knowledge-enhanced method has superiority in coarse-grained-instruction VLN using our proposed VLN-EventKG with over $5\%$ improvement in success rate. Our project is available at https://sites.google.com/view/vln-eventkg
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.21521v1">The Impacts of AI Avatar Appearance and Disclosure on User Motivation</a></div>
+    <div class="paper-meta">
+      📅 2024-08-01
+      | 💬 15 pages, 6 figures, submitted to the 2nd International Conference on Data Science & Artificial Intelligence
+    </div>
+    <details class="paper-abstract">
+      This study examines the influence of perceived AI features on user motivation in virtual interactions. AI avatars, being disclosed as being an AI, or embodying specific genders, could be used in user-AI interactions. Leveraging insights from AI and avatar research, we explore how AI disclosure and gender affect user motivation. We conducted a game-based experiment involving over 72,500 participants who solved search problems alone or with an AI companion. Different groups experienced varying AI appearances and disclosures. We measured play intensity. Results revealed that the presence of another avatar led to less intense play compared to solo play. Disclosure of the avatar as AI heightened effort intensity compared to non-disclosed AI companions. Additionally, a masculine AI appearance reduced effort intensity.
     </details>
 </div>

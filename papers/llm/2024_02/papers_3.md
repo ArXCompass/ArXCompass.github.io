@@ -11,6 +11,54 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.02716v1">Understanding the planning of LLM agents: A survey</a></div>
+    <div class="paper-meta">
+      📅 2024-02-05
+      | 💬 9 pages, 2 tables, 2 figures
+    </div>
+    <details class="paper-abstract">
+      As Large Language Models (LLMs) have shown significant intelligence, the progress to leverage LLMs as planning modules of autonomous agents has attracted more attention. This survey provides the first systematic view of LLM-based agents planning, covering recent works aiming to improve planning ability. We provide a taxonomy of existing works on LLM-Agent planning, which can be categorized into Task Decomposition, Plan Selection, External Module, Reflection and Memory. Comprehensive analyses are conducted for each direction, and further challenges for the field of research are discussed.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.09675v1">Open-Universe Indoor Scene Generation using LLM Program Synthesis and Uncurated Object Databases</a></div>
+    <div class="paper-meta">
+      📅 2024-02-05
+      | 💬 See ancillary files for link to supplemental material
+    </div>
+    <details class="paper-abstract">
+      We present a system for generating indoor scenes in response to text prompts. The prompts are not limited to a fixed vocabulary of scene descriptions, and the objects in generated scenes are not restricted to a fixed set of object categories -- we call this setting indoor scene generation. Unlike most prior work on indoor scene generation, our system does not require a large training dataset of existing 3D scenes. Instead, it leverages the world knowledge encoded in pre-trained large language models (LLMs) to synthesize programs in a domain-specific layout language that describe objects and spatial relations between them. Executing such a program produces a specification of a constraint satisfaction problem, which the system solves using a gradient-based optimization scheme to produce object positions and orientations. To produce object geometry, the system retrieves 3D meshes from a database. Unlike prior work which uses databases of category-annotated, mutually-aligned meshes, we develop a pipeline using vision-language models (VLMs) to retrieve meshes from massive databases of un-annotated, inconsistently-aligned meshes. Experimental evaluations show that our system outperforms generative models trained on 3D data for traditional, closed-universe scene generation tasks; it also outperforms a recent LLM-based layout generation method on open-universe scene generation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.02656v1">RACER: An LLM-powered Methodology for Scalable Analysis of Semi-structured Mental Health Interviews</a></div>
+    <div class="paper-meta">
+      📅 2024-02-05
+    </div>
+    <details class="paper-abstract">
+      Semi-structured interviews (SSIs) are a commonly employed data-collection method in healthcare research, offering in-depth qualitative insights into subject experiences. Despite their value, the manual analysis of SSIs is notoriously time-consuming and labor-intensive, in part due to the difficulty of extracting and categorizing emotional responses, and challenges in scaling human evaluation for large populations. In this study, we develop RACER, a Large Language Model (LLM) based expert-guided automated pipeline that efficiently converts raw interview transcripts into insightful domain-relevant themes and sub-themes. We used RACER to analyze SSIs conducted with 93 healthcare professionals and trainees to assess the broad personal and professional mental health impacts of the COVID-19 crisis. RACER achieves moderately high agreement with two human evaluators (72%), which approaches the human inter-rater agreement (77%). Interestingly, LLMs and humans struggle with similar content involving nuanced emotional, ambivalent/dialectical, and psychological statements. Our study highlights the opportunities and challenges in using LLMs to improve research efficiency and opens new avenues for scalable analysis of SSIs in healthcare research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.02643v1">LLM-Enhanced Data Management</a></div>
+    <div class="paper-meta">
+      📅 2024-02-04
+    </div>
+    <details class="paper-abstract">
+      Machine learning (ML) techniques for optimizing data management problems have been extensively studied and widely deployed in recent five years. However traditional ML methods have limitations on generalizability (adapting to different scenarios) and inference ability (understanding the context). Fortunately, large language models (LLMs) have shown high generalizability and human-competitive abilities in understanding context, which are promising for data management tasks (e.g., database diagnosis, database tuning). However, existing LLMs have several limitations: hallucination, high cost, and low accuracy for complicated tasks. To address these challenges, we design LLMDB, an LLM-enhanced data management paradigm which has generalizability and high inference ability while avoiding hallucination, reducing LLM cost, and achieving high accuracy. LLMDB embeds domain-specific knowledge to avoid hallucination by LLM fine-tuning and prompt engineering. LLMDB reduces the high cost of LLMs by vector databases which provide semantic search and caching abilities. LLMDB improves the task accuracy by LLM agent which provides multiple-round inference and pipeline executions. We showcase three real-world scenarios that LLMDB can well support, including query rewrite, database diagnosis and data analytics. We also summarize the open research challenges of LLMDB.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.07924v1">IllusionX: An LLM-powered mixed reality personal companion</a></div>
+    <div class="paper-meta">
+      📅 2024-02-04
+      | 💬 9 pages
+    </div>
+    <details class="paper-abstract">
+      Mixed Reality (MR) and Artificial Intelligence (AI) are increasingly becoming integral parts of our daily lives. Their applications range in fields from healthcare to education to entertainment. MR has opened a new frontier for such fields as well as new methods of enhancing user engagement. In this paper, We propose a new system one that combines the power of Large Language Models (LLMs) and mixed reality (MR) to provide a personalized companion for educational purposes. We present an overview of its structure and components as well tests to measure its performance. We found that our system is better in generating coherent information, however it's rather limited by the documents provided to it. This interdisciplinary approach aims to provide a better user experience and enhance user engagement. The user can interact with the system through a custom-design smart watch, smart glasses and a mobile app.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.05123v1">A Survey on Data Selection for LLM Instruction Tuning</a></div>
     <div class="paper-meta">
       📅 2024-02-04

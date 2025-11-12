@@ -38,6 +38,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.02385v1">A Survey on Robotics with Foundation Models: toward Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-02-07
+    </div>
+    <details class="paper-abstract">
+      While the exploration for embodied AI has spanned multiple decades, it remains a persistent challenge to endow agents with human-level intelligence, including perception, learning, reasoning, decision-making, control, and generalization capabilities, so that they can perform general-purpose tasks in open, unstructured, and dynamic environments. Recent advances in computer vision, natural language processing, and multi-modality learning have shown that the foundation models have superhuman capabilities for specific tasks. They not only provide a solid cornerstone for integrating basic modules into embodied AI systems but also shed light on how to scale up robot learning from a methodological perspective. This survey aims to provide a comprehensive and up-to-date overview of foundation models in robotics, focusing on autonomous manipulation and encompassing high-level planning and low-level control. Moreover, we showcase their commonly used datasets, simulators, and benchmarks. Importantly, we emphasize the critical challenges intrinsic to this field and delineate potential avenues for future research, contributing to advancing the frontier of academic and industrial discourse.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.02385v1">A Survey on Robotics with Foundation Models: toward Embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-02-04

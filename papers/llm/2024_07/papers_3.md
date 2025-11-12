@@ -12,6 +12,74 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10582v1">Boosting Zero-Shot Crosslingual Performance using LLM-Based Augmentations with Effective Data Selection</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Accepted in Findings of ACL 2024
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) are very proficient text generators. We leverage this capability of LLMs to generate task-specific data via zero-shot prompting and promote cross-lingual transfer for low-resource target languages. Given task-specific data in a source language and a teacher model trained on this data, we propose using this teacher to label LLM generations and employ a set of simple data selection strategies that use the teacher's label probabilities. Our data selection strategies help us identify a representative subset of diverse generations that help boost zero-shot accuracies while being efficient, in comparison to using all the LLM generations (without any subset selection). We also highlight other important design choices that affect cross-lingual performance such as the use of translations of source data and what labels are best to use for the LLM generations. We observe significant performance gains across sentiment analysis and natural language inference tasks (of up to a maximum of 7.13 absolute points and 1.5 absolute points on average) across a number of target languages (Hindi, Marathi, Urdu, Swahili) and domains.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.08619v3">ALMol: Aligned Language-Molecule Translation LLMs through Offline Preference Contrastive Optimisation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+    </div>
+    <details class="paper-abstract">
+      The field of chemistry and Artificial Intelligence (AI) intersection is an area of active research that aims to accelerate scientific discovery. The integration of large language models (LLMs) with scientific modalities has shown significant promise in this endeavour. However, challenges persist in effectively addressing training efficacy and the out-of-distribution problem, particularly as existing approaches rely on larger models and datasets. In this context, we focus on machine language-molecule translation and deploy a novel training approach called contrastive preference optimisation, which avoids generating translations that are merely adequate but not perfect. To ensure generalisability and mitigate memorisation effects, we conduct experiments using only 10% of the data. Our results demonstrate that our models achieve up to a 32% improvement compared to counterpart models. Finally, we introduce a fine-grained, domain-agnostic evaluation method to assess hallucination in LLMs and promote responsible use.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10457v1">The Good, The Bad, and The Greedy: Evaluation of LLMs Should Not Ignore Non-Determinism</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+    </div>
+    <details class="paper-abstract">
+      Current evaluations of large language models (LLMs) often overlook non-determinism, typically focusing on a single output per example. This limits our understanding of LLM performance variability in real-world applications. Our study addresses this issue by exploring key questions about the performance differences between greedy decoding and sampling, identifying benchmarks' consistency regarding non-determinism, and examining unique model behaviors. Through extensive experiments, we observe that greedy decoding generally outperforms sampling methods for most evaluated tasks. We also observe consistent performance across different LLM sizes and alignment methods, noting that alignment can reduce sampling variance. Moreover, our best-of-N sampling approach demonstrates that smaller LLMs can match or surpass larger models such as GPT-4-Turbo, highlighting the untapped potential of smaller LLMs. This research shows the importance of considering non-determinism in LLM evaluations and provides insights for future LLM development and evaluation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10453v1">Enhancing Medication Recommendation with LLM Text Representation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 65 pages, 18 figures
+    </div>
+    <details class="paper-abstract">
+      Most of the existing medication recommendation models are predicted with only structured data such as medical codes, with the remaining other large amount of unstructured or semi-structured data underutilization. To increase the utilization effectively, we proposed a method of enhancing medication recommendation with Large Language Model (LLM) text representation. LLM harnesses powerful language understanding and generation capabilities, enabling the extraction of information from complex and lengthy unstructured data such as clinical notes which contain complex terminology. This method can be applied to several existing base models we selected and improve medication recommendation performance with the combination representation of text and medical codes experiments on two different datasets. LLM text representation alone can even demonstrate a comparable ability to the medical code representation alone. Overall, this is a general method that can be applied to other models for improved recommendations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2401.07886v2">Learned Best-Effort LLM Serving</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Es-FoMo @ ICML 2024
+    </div>
+    <details class="paper-abstract">
+      Many applications must provide low-latency LLM service to users or risk unacceptable user experience. However, over-provisioning resources to serve fluctuating request patterns is often prohibitively expensive. In this work, we present a best-effort serving system that employs deep reinforcement learning to adjust service quality based on the task distribution and system load. Our best-effort system can maintain availability with over 10x higher client request rates, serves above 96% of peak performance 4.1x more often, and serves above 98% of peak performance 2.3x more often than static serving on unpredictable workloads. Our learned router is robust to shifts in both the arrival and task distribution. Compared to static serving, learned best-effort serving allows for cost-efficient serving through increased hardware utility. Additionally, we argue that learned best-effort LLM serving is applicable in wide variety of settings and provides application developers great flexibility to meet their specific needs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.09152v1">The Two Sides of the Coin: Hallucination Generation and Detection with LLMs as Evaluators for LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Paper accepted at ELOQUENT@CLEF'24
+    </div>
+    <details class="paper-abstract">
+      Hallucination detection in Large Language Models (LLMs) is crucial for ensuring their reliability. This work presents our participation in the CLEF ELOQUENT HalluciGen shared task, where the goal is to develop evaluators for both generating and detecting hallucinated content. We explored the capabilities of four LLMs: Llama 3, Gemma, GPT-3.5 Turbo, and GPT-4, for this purpose. We also employed ensemble majority voting to incorporate all four models for the detection task. The results provide valuable insights into the strengths and weaknesses of these LLMs in handling hallucination generation and detection tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.19570v2">Synthetic Cancer -- Augmenting Worms with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Won first place at the Swiss AI Safety Prize. Some technical details omitted, contact authors for more information
+    </div>
+    <details class="paper-abstract">
+      With increasingly sophisticated large language models (LLMs), the potential for abuse rises drastically. As a submission to the Swiss AI Safety Prize, we present a novel type of metamorphic malware leveraging LLMs for two key processes. First, LLMs are used for automatic code rewriting to evade signature-based detection by antimalware programs. The malware then spreads its copies via email by utilizing an LLM to socially engineer email replies to encourage recipients to execute the attached malware. Our submission includes a functional minimal prototype, highlighting the risks that LLMs pose for cybersecurity and underscoring the need for further research into intelligent malware.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.00870v2">Roleplay-doh: Enabling Domain-Experts to Create LLM-simulated Patients via Eliciting and Adhering to Principles</a></div>
     <div class="paper-meta">
       📅 2024-07-14
@@ -603,6 +671,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.07093v1">FBI-LLM: Scaling Up Fully Binarized LLMs from Scratch via Autoregressive Distillation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-10
+      | 💬 Github at https://github.com/LiqunMa/FBI-LLM
+    </div>
+    <details class="paper-abstract">
+      This work presents a Fully BInarized Large Language Model (FBI-LLM), demonstrating for the first time how to train a large-scale binary language model from scratch (not the partial binary or ternary LLM like BitNet b1.58) to match the performance of its full-precision counterparts (e.g., FP16 or BF16) in transformer-based LLMs. It achieves this by employing an autoregressive distillation (AD) loss with maintaining equivalent model dimensions (130M, 1.3B, 7B) and training data volume as regular LLM pretraining, while delivering competitive results in terms of perplexity and task-specific effectiveness. Intriguingly, by analyzing the training trajectory, we find that the pretrained weight is not necessary for training binarized LLMs from scratch. This research encourages a new computational framework and may facilitate the future design of specialized hardware tailored for fully 1-bit LLMs. We make all models, code, and training dataset fully accessible and transparent to support further research (Code: https://github.com/LiqunMa/FBI-LLM. Model: https://huggingface.co/LiqunMa/).
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2305.14864v3">Just CHOP: Embarrassingly Simple LLM Compression</a></div>
     <div class="paper-meta">
       📅 2024-07-09
@@ -821,6 +899,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2401.02669v2">Infinite-LLM: Efficient LLM Service for Long Context with DistAttention and Distributed KVCache</a></div>
+    <div class="paper-meta">
+      📅 2024-07-08
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) demonstrate substantial potential across a diverse array of domains via request serving. However, as trends continue to push for expanding context sizes, the autoregressive nature of LLMs results in highly dynamic behavior of the attention layers, showcasing significant differences in computational characteristics and memory requirements from the non-attention layers. This presents substantial challenges for resource management and performance optimization in service systems. Existing static model parallelism and resource allocation strategies fall short when dealing with this dynamicity. To address the issue, we propose Infinite-LLM, a novel LLM serving system designed to effectively handle dynamic context lengths. Infinite-LLM disaggregates attention layers from an LLM's inference process, facilitating flexible and independent resource scheduling that optimizes computational performance and enhances memory utilization jointly. By leveraging a pooled GPU memory strategy across a cluster, Infinite-LLM not only significantly boosts system throughput but also supports extensive context lengths. Evaluated on a dataset with context lengths ranging from a few to 2000K tokens across a cluster with 32 A100 GPUs, Infinite-LLM demonstrates throughput improvement of 1.35-3.4x compared to state-of-the-art methods, enabling efficient and elastic LLM deployment.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2401.15232v2">How Beginning Programmers and Code LLMs (Mis)read Each Other</a></div>
     <div class="paper-meta">
       📅 2024-07-07
@@ -876,91 +963,5 @@
     </div>
     <details class="paper-abstract">
       Unit testing is crucial in software engineering for ensuring quality. However, it's not widely used in parallel and high-performance computing software, particularly scientific applications, due to their smaller, diverse user base and complex logic. These factors make unit testing challenging and expensive, as it requires specialized knowledge and existing automated tools are often ineffective. To address this, we propose an automated method for generating unit tests for such software, considering their unique features like complex logic and parallel processing. Recently, large language models (LLMs) have shown promise in coding and testing. We explored the capabilities of Davinci (text-davinci-002) and ChatGPT (gpt-3.5-turbo) in creating unit tests for C++ parallel programs. Our results show that LLMs can generate mostly correct and comprehensive unit tests, although they have some limitations, such as repetitive assertions and blank test cases.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05194v1">LLMCloudHunter: Harnessing LLMs for Automated Extraction of Detection Rules from Cloud-Based CTI</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-    </div>
-    <details class="paper-abstract">
-      As the number and sophistication of cyber attacks have increased, threat hunting has become a critical aspect of active security, enabling proactive detection and mitigation of threats before they cause significant harm. Open-source cyber threat intelligence (OS-CTI) is a valuable resource for threat hunters, however, it often comes in unstructured formats that require further manual analysis. Previous studies aimed at automating OSCTI analysis are limited since (1) they failed to provide actionable outputs, (2) they did not take advantage of images present in OSCTI sources, and (3) they focused on on-premises environments, overlooking the growing importance of cloud environments. To address these gaps, we propose LLMCloudHunter, a novel framework that leverages large language models (LLMs) to automatically generate generic-signature detection rule candidates from textual and visual OSCTI data. We evaluated the quality of the rules generated by the proposed framework using 12 annotated real-world cloud threat reports. The results show that our framework achieved a precision of 92% and recall of 98% for the task of accurately extracting API calls made by the threat actor and a precision of 99% with a recall of 98% for IoCs. Additionally, 99.18% of the generated detection rule candidates were successfully compiled and converted into Splunk queries.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2404.02056v3">Multitask-based Evaluation of Open-Source LLM on Software Vulnerability</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-    </div>
-    <details class="paper-abstract">
-      This paper proposes a pipeline for quantitatively evaluating interactive Large Language Models (LLMs) using publicly available datasets. We carry out an extensive technical evaluation of LLMs using Big-Vul covering four different common software vulnerability tasks. This evaluation assesses the multi-tasking capabilities of LLMs based on this dataset. We find that the existing state-of-the-art approaches and pre-trained Language Models (LMs) are generally superior to LLMs in software vulnerability detection. However, in software vulnerability assessment and location, certain LLMs (e.g., CodeLlama and WizardCoder) have demonstrated superior performance compared to pre-trained LMs, and providing more contextual information can enhance the vulnerability assessment capabilities of LLMs. Moreover, LLMs exhibit strong vulnerability description capabilities, but their tendency to produce excessive output significantly weakens their performance compared to pre-trained LMs. Overall, though LLMs perform well in some aspects, they still need improvement in understanding the subtle differences in code vulnerabilities and the ability to describe vulnerabilities to fully realize their potential. Our evaluation pipeline provides valuable insights into the capabilities of LLMs in handling software vulnerabilities.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05088v1">Leveraging Task-Specific Knowledge from LLM for Semi-Supervised 3D Medical Image Segmentation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-      | 💬 Under Review
-    </div>
-    <details class="paper-abstract">
-      Traditional supervised 3D medical image segmentation models need voxel-level annotations, which require huge human effort, time, and cost. Semi-supervised learning (SSL) addresses this limitation of supervised learning by facilitating learning with a limited annotated and larger amount of unannotated training samples. However, state-of-the-art SSL models still struggle to fully exploit the potential of learning from unannotated samples. To facilitate effective learning from unannotated data, we introduce LLM-SegNet, which exploits a large language model (LLM) to integrate task-specific knowledge into our co-training framework. This knowledge aids the model in comprehensively understanding the features of the region of interest (ROI), ultimately leading to more efficient segmentation. Additionally, to further reduce erroneous segmentation, we propose a Unified Segmentation loss function. This loss function reduces erroneous segmentation by not only prioritizing regions where the model is confident in predicting between foreground or background pixels but also effectively addressing areas where the model lacks high confidence in predictions. Experiments on publicly available Left Atrium, Pancreas-CT, and Brats-19 datasets demonstrate the superior performance of LLM-SegNet compared to the state-of-the-art. Furthermore, we conducted several ablation studies to demonstrate the effectiveness of various modules and loss functions leveraged by LLM-SegNet.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05040v1">Code Less, Align More: Efficient LLM Fine-tuning for Code Generation with Data Pruning</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-    </div>
-    <details class="paper-abstract">
-      Recent work targeting large language models (LLMs) for code generation demonstrated that increasing the amount of training data through synthetic code generation often leads to exceptional performance. In this paper we explore data pruning methods aimed at enhancing the efficiency of model training specifically for code LLMs. We present techniques that integrate various clustering and pruning metrics to selectively reduce training data without compromising the accuracy and functionality of the generated code. We observe significant redundancies in synthetic training data generation, where our experiments demonstrate that benchmark performance can be largely preserved by training on only 10% of the data. Moreover, we observe consistent improvements in benchmark results through moderate pruning of the training data. Our experiments show that these pruning strategies not only reduce the computational resources needed but also enhance the overall quality code generation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.04997v1">Achieving Tool Calling Functionality in LLMs Using Only Prompt Engineering Without Fine-Tuning</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-      | 💬 5 pages, 2 figures,review comments welcome
-    </div>
-    <details class="paper-abstract">
-      Currently, the vast majority of locally deployed open-source large language models (LLMs) and some commercial model interfaces do not support stable tool calling functionality. The existing solution involves fine-tuning LLMs, which results in significant time and computational resource consumption. This paper proposes a method that enables LLMs to achieve stable tool calling capabilities using only prompt engineering and some ingenious code design. We conducted experiments on multiple LLMs that lack tool calling capabilities across various tool calling tasks, achieving a success rate of 100%.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.04981v1">TRACE: TRansformer-based Attribution using Contrastive Embeddings in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-07-06
-    </div>
-    <details class="paper-abstract">
-      The rapid evolution of large language models (LLMs) represents a substantial leap forward in natural language understanding and generation. However, alongside these advancements come significant challenges related to the accountability and transparency of LLM responses. Reliable source attribution is essential to adhering to stringent legal and regulatory standards, including those set forth by the General Data Protection Regulation. Despite the well-established methods in source attribution within the computer vision domain, the application of robust attribution frameworks to natural language processing remains underexplored. To bridge this gap, we propose a novel and versatile TRansformer-based Attribution framework using Contrastive Embeddings called TRACE that, in particular, exploits contrastive learning for source attribution. We perform an extensive empirical evaluation to demonstrate the performance and efficiency of TRACE in various settings and show that TRACE significantly improves the ability to attribute sources accurately, making it a valuable tool for enhancing the reliability and trustworthiness of LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.04885v1">Automating Venture Capital: Founder assessment using LLM-powered segmentation, feature engineering and automated labeling techniques</a></div>
-    <div class="paper-meta">
-      📅 2024-07-05
-      | 💬 For the relevant code, see https://github.com/velapartners/moneyball-LLM-based-founder-features.git
-    </div>
-    <details class="paper-abstract">
-      This study explores the application of large language models (LLMs) in venture capital (VC) decision-making, focusing on predicting startup success based on founder characteristics. We utilize LLM prompting techniques, like chain-of-thought, to generate features from limited data, then extract insights through statistics and machine learning. Our results reveal potential relationships between certain founder characteristics and success, as well as demonstrate the effectiveness of these characteristics in prediction. This framework for integrating ML techniques and LLMs has vast potential for improving startup success prediction, with important implications for VC firms seeking to optimize their investment strategies.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.04855v1">Towards Enhancing Coherence in Extractive Summarization: Dataset and Experiments with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-07-05
-      | 💬 10 pages
-    </div>
-    <details class="paper-abstract">
-      Extractive summarization plays a pivotal role in natural language processing due to its wide-range applications in summarizing diverse content efficiently, while also being faithful to the original content. Despite significant advancement achieved in extractive summarization by Large Language Models (LLMs), these summaries frequently exhibit incoherence. An important aspect of the coherent summary is its readability for intended users. Although there have been many datasets and benchmarks proposed for creating coherent extractive summaries, none of them currently incorporate user intent to improve coherence in extractive summarization. Motivated by this, we propose a systematically created human-annotated dataset consisting of coherent summaries for five publicly available datasets and natural language user feedback, offering valuable insights into how to improve coherence in extractive summaries. We utilize this dataset for aligning LLMs through supervised fine-tuning with natural language human feedback to enhance the coherence of their generated summaries. Preliminary experiments with Falcon-40B and Llama-2-13B show significant performance improvements (~10% Rouge-L) in terms of producing coherent summaries. We further utilize human feedback to benchmark results over instruction-tuned models such as FLAN-T5 which resulted in several interesting findings. Data and source code are available at https://github.com/Mihir3009/Extract-AI.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.04694v1">Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-07-05
-      | 💬 11 page main body, 98 page appendix, 58 figures
-    </div>
-    <details class="paper-abstract">
-      AI assistants such as ChatGPT are trained to respond to users by saying, "I am a large language model". This raises questions. Do such models know that they are LLMs and reliably act on this knowledge? Are they aware of their current circumstances, such as being deployed to the public? We refer to a model's knowledge of itself and its circumstances as situational awareness. To quantify situational awareness in LLMs, we introduce a range of behavioral tests, based on question answering and instruction following. These tests form the $\textbf{Situational Awareness Dataset (SAD)}$, a benchmark comprising 7 task categories and over 13,000 questions. The benchmark tests numerous abilities, including the capacity of LLMs to (i) recognize their own generated text, (ii) predict their own behavior, (iii) determine whether a prompt is from internal evaluation or real-world deployment, and (iv) follow instructions that depend on self-knowledge. We evaluate 16 LLMs on SAD, including both base (pretrained) and chat models. While all models perform better than chance, even the highest-scoring model (Claude 3 Opus) is far from a human baseline on certain tasks. We also observe that performance on SAD is only partially predicted by metrics of general knowledge (e.g. MMLU). Chat models, which are finetuned to serve as AI assistants, outperform their corresponding base models on SAD but not on general knowledge tasks. The purpose of SAD is to facilitate scientific understanding of situational awareness in LLMs by breaking it down into quantitative abilities. Situational awareness is important because it enhances a model's capacity for autonomous planning and action. While this has potential benefits for automation, it also introduces novel risks related to AI safety and control. Code and latest results available at https://situational-awareness-dataset.org .
     </details>
 </div>

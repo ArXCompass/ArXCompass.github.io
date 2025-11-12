@@ -37,6 +37,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2502.18736v1">AI-Instruments: Embodying Prompts as Instruments to Abstract & Reflect Graphical Interface Commands as General-Purpose Tools</a></div>
+    <div class="paper-meta">
+      📅 2025-02-27
+      | 💬 18 pages, 10 figures. To appear in the Proceedings of the 2025 ACM CHI Conference on Human Factors in Computing Systems, Yokohama, Japan. https://hugoromat.github.io/ai_instruments/
+    </div>
+    <details class="paper-abstract">
+      Chat-based prompts respond with verbose linear-sequential texts, making it difficult to explore and refine ambiguous intents, back up and reinterpret, or shift directions in creative AI-assisted design work. AI-Instruments instead embody "prompts" as interface objects via three key principles: (1) Reification of user-intent as reusable direct-manipulation instruments; (2) Reflection of multiple interpretations of ambiguous user-intents (Reflection-in-intent) as well as the range of AI-model responses (Reflection-in-response) to inform design "moves" towards a desired result; and (3) Grounding to instantiate an instrument from an example, result, or extrapolation directly from another instrument. Further, AI-Instruments leverage LLM's to suggest, vary, and refine new instruments, enabling a system that goes beyond hard-coded functionality by generating its own instrumental controls from content. We demonstrate four technology probes, applied to image generation, and qualitative insights from twelve participants, showing how AI-Instruments address challenges of intent formulation, steering via direct manipulation, and non-linear iterative workflows to reflect and resolve ambiguous intents.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2502.13175v2">Towards Robust and Secure Embodied AI: A Survey on Vulnerabilities and Attacks</a></div>
+    <div class="paper-meta">
+      📅 2025-02-26
+    </div>
+    <details class="paper-abstract">
+      Embodied AI systems, including robots and autonomous vehicles, are increasingly integrated into real-world applications, where they encounter a range of vulnerabilities stemming from both environmental and system-level factors. These vulnerabilities manifest through sensor spoofing, adversarial attacks, and failures in task and motion planning, posing significant challenges to robustness and safety. Despite the growing body of research, existing reviews rarely focus specifically on the unique safety and security challenges of embodied AI systems. Most prior work either addresses general AI vulnerabilities or focuses on isolated aspects, lacking a dedicated and unified framework tailored to embodied AI. This survey fills this critical gap by: (1) categorizing vulnerabilities specific to embodied AI into exogenous (e.g., physical attacks, cybersecurity threats) and endogenous (e.g., sensor failures, software flaws) origins; (2) systematically analyzing adversarial attack paradigms unique to embodied AI, with a focus on their impact on perception, decision-making, and embodied interaction; (3) investigating attack vectors targeting large vision-language models (LVLMs) and large language models (LLMs) within embodied systems, such as jailbreak attacks and instruction misinterpretation; (4) evaluating robustness challenges in algorithms for embodied perception, decision-making, and task planning; and (5) proposing targeted strategies to enhance the safety and reliability of embodied AI systems. By integrating these dimensions, we provide a comprehensive framework for understanding the interplay between vulnerabilities and safety in embodied AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.13175v2">Towards Robust and Secure Embodied AI: A Survey on Vulnerabilities and Attacks</a></div>
     <div class="paper-meta">
       📅 2025-02-25
@@ -129,6 +148,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2502.11518v1">Generative Multi-Agent Collaboration in Embodied AI: A Systematic Review</a></div>
+    <div class="paper-meta">
+      📅 2025-02-18
+      | 💬 18 pages
+    </div>
+    <details class="paper-abstract">
+      Embodied multi-agent systems (EMAS) have attracted growing attention for their potential to address complex, real-world challenges in areas such as logistics and robotics. Recent advances in foundation models pave the way for generative agents capable of richer communication and adaptive problem-solving. This survey provides a systematic examination of how EMAS can benefit from these generative capabilities. We propose a taxonomy that categorizes EMAS by system architectures and embodiment modalities, emphasizing how collaboration spans both physical and virtual contexts. Central building blocks, perception, planning, communication, and feedback, are then analyzed to illustrate how generative techniques bolster system robustness and flexibility. Through concrete examples, we demonstrate the transformative effects of integrating foundation models into embodied, multi-agent frameworks. Finally, we discuss challenges and future directions, underlining the significant promise of EMAS to reshape the landscape of AI-driven collaboration.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.09278v2">ConsistentDreamer: View-Consistent Meshes Through Balanced Multi-View Gaussian Optimization</a></div>
     <div class="paper-meta">
       📅 2025-02-17
@@ -155,6 +184,16 @@
     </div>
     <details class="paper-abstract">
       Embodied multi-agent systems (EMAS) have attracted growing attention for their potential to address complex, real-world challenges in areas such as logistics and robotics. Recent advances in foundation models pave the way for generative agents capable of richer communication and adaptive problem-solving. This survey provides a systematic examination of how EMAS can benefit from these generative capabilities. We propose a taxonomy that categorizes EMAS by system architectures and embodiment modalities, emphasizing how collaboration spans both physical and virtual contexts. Central building blocks, perception, planning, communication, and feedback, are then analyzed to illustrate how generative techniques bolster system robustness and flexibility. Through concrete examples, we demonstrate the transformative effects of integrating foundation models into embodied, multi-agent frameworks. Finally, we discuss challenges and future directions, underlining the significant promise of EMAS to reshape the landscape of AI-driven collaboration.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2502.09624v1">Efficient and Trustworthy Block Propagation for Blockchain-enabled Mobile Embodied AI Networks: A Graph Resfusion Approach</a></div>
+    <div class="paper-meta">
+      📅 2025-02-17
+      | 💬 15 pages, 11 figures
+    </div>
+    <details class="paper-abstract">
+      By synergistically integrating mobile networks and embodied artificial intelligence (AI), Mobile Embodied AI Networks (MEANETs) represent an advanced paradigm that facilitates autonomous, context-aware, and interactive behaviors within dynamic environments. Nevertheless, the rapid development of MEANETs is accompanied by challenges in trustworthiness and operational efficiency. Fortunately, blockchain technology, with its decentralized and immutable characteristics, offers promising solutions for MEANETs. However, existing block propagation mechanisms suffer from challenges such as low propagation efficiency and weak security for block propagation, which results in delayed transmission of vehicular messages or vulnerability to malicious tampering, potentially causing severe traffic accidents in blockchain-enabled MEANETs. Moreover, current block propagation strategies cannot effectively adapt to real-time changes of dynamic topology in MEANETs. Therefore, in this paper, we propose a graph Resfusion model-based trustworthy block propagation optimization framework for consortium blockchain-enabled MEANETs. Specifically, we propose an innovative trust calculation mechanism based on the trust cloud model, which comprehensively accounts for randomness and fuzziness in the miner trust evaluation. Furthermore, by leveraging the strengths of graph neural networks and diffusion models, we develop a graph Resfusion model to effectively and adaptively generate the optimal block propagation trajectory. Simulation results demonstrate that the proposed model outperforms other routing mechanisms in terms of block propagation efficiency and trustworthiness. Additionally, the results highlight its strong adaptability to dynamic environments, making it particularly suitable for rapidly changing MEANETs.
     </details>
 </div>
 <div class="paper-card">
@@ -195,6 +234,16 @@
     </div>
     <details class="paper-abstract">
       Recent decades have witnessed remarkable advancements in artificial intelligence (AI), including large language models (LLMs), image and video generative models, and embodied AI systems. These advancements have led to an explosive increase in the demand for computational power, challenging the limits of Moore's Law. Optical lithography, a critical technology in semiconductor manufacturing, faces significant challenges due to its high costs. To address this, various lithography simulators have been developed. However, many of these simulators are limited by their inadequate photoresist modeling capabilities. This paper presents TorchResist, an open-source, differentiable photoresist simulator.TorchResist employs an analytical approach to model the photoresist process, functioning as a white-box system with at most twenty interpretable parameters. Leveraging modern differentiable programming techniques and parallel computing on GPUs, TorchResist enables seamless co-optimization with other tools across multiple related tasks. Our experimental results demonstrate that TorchResist achieves superior accuracy and efficiency compared to existing solutions. The source code is publicly available.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.20242v4">BadRobot: Jailbreaking Embodied LLMs in the Physical World</a></div>
+    <div class="paper-meta">
+      📅 2025-02-05
+      | 💬 Accepted to ICLR 2025. Project page: https://Embodied-LLMs-Safety.github.io
+    </div>
+    <details class="paper-abstract">
+      Embodied AI represents systems where AI is integrated into physical entities. Large Language Model (LLM), which exhibits powerful language understanding abilities, has been extensively employed in embodied AI by facilitating sophisticated task planning. However, a critical safety issue remains overlooked: could these embodied LLMs perpetrate harmful behaviors? In response, we introduce BadRobot, a novel attack paradigm aiming to make embodied LLMs violate safety and ethical constraints through typical voice-based user-system interactions. Specifically, three vulnerabilities are exploited to achieve this type of attack: (i) manipulation of LLMs within robotic systems, (ii) misalignment between linguistic outputs and physical actions, and (iii) unintentional hazardous behaviors caused by world knowledge's flaws. Furthermore, we construct a benchmark of various malicious physical action queries to evaluate BadRobot's attack performance. Based on this benchmark, extensive experiments against existing prominent embodied LLM frameworks (e.g., Voxposer, Code as Policies, and ProgPrompt) demonstrate the effectiveness of our BadRobot.
     </details>
 </div>
 <div class="paper-card">

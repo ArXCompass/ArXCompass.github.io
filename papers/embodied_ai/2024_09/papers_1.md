@@ -9,6 +9,15 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2409.18800v1">MiniVLN: Efficient Vision-and-Language Navigation by Progressive Knowledge Distillation</a></div>
+    <div class="paper-meta">
+      📅 2024-09-30
+    </div>
+    <details class="paper-abstract">
+      In recent years, Embodied Artificial Intelligence (Embodied AI) has advanced rapidly, yet the increasing size of models conflicts with the limited computational capabilities of Embodied AI platforms. To address this challenge, we aim to achieve both high model performance and practical deployability. Specifically, we focus on Vision-and-Language Navigation (VLN), a core task in Embodied AI. This paper introduces a two-stage knowledge distillation framework, producing a student model, MiniVLN, and showcasing the significant potential of distillation techniques in developing lightweight models. The proposed method aims to capture fine-grained knowledge during the pretraining phase and navigation-specific knowledge during the fine-tuning phase. Our findings indicate that the two-stage distillation approach is more effective in narrowing the performance gap between the teacher model and the student model compared to single-stage distillation. On the public R2R and REVERIE benchmarks, MiniVLN achieves performance on par with the teacher model while having only about 12% of the teacher model's parameter count.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.19459v1">Language-guided Robust Navigation for Mobile Robots in Dynamically-changing Environments</a></div>
     <div class="paper-meta">
       📅 2024-09-28
@@ -83,6 +92,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.11347v2">Multimodal Datasets and Benchmarks for Reasoning about Dynamic Spatio-Temporality in Everyday Environments</a></div>
+    <div class="paper-meta">
+      📅 2024-09-18
+      | 💬 5 pages, 1 figure, 1 table, accepted in Embodied AI 2024 Workshop held in conjunction with CVPR 2024
+    </div>
+    <details class="paper-abstract">
+      We used a 3D simulator to create artificial video data with standardized annotations, aiming to aid in the development of Embodied AI. Our question answering (QA) dataset measures the extent to which a robot can understand human behavior and the environment in a home setting. Preliminary experiments suggest our dataset is useful in measuring AI's comprehension of daily life. \end{abstract}
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.13642v6">SpatialBot: Precise Spatial Understanding with Vision Language Models</a></div>
     <div class="paper-meta">
       📅 2024-09-17
@@ -108,6 +127,16 @@
     </div>
     <details class="paper-abstract">
       We used a 3D simulator to create artificial video data with standardized annotations, aiming to aid in the development of Embodied AI. Our question answering (QA) dataset measures the extent to which a robot can understand human behavior and the environment in a home setting. Preliminary experiments suggest our dataset is useful in measuring AI's comprehension of daily life. \end{abstract}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.03824v4">A call for embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-09-16
+      | 💬 Published in ICML 2024 Position paper track
+    </div>
+    <details class="paper-abstract">
+      We propose Embodied AI as the next fundamental step in the pursuit of Artificial General Intelligence, juxtaposing it against current AI advancements, particularly Large Language Models. We traverse the evolution of the embodiment concept across diverse fields - philosophy, psychology, neuroscience, and robotics - to highlight how EAI distinguishes itself from the classical paradigm of static learning. By broadening the scope of Embodied AI, we introduce a theoretical framework based on cognitive architectures, emphasizing perception, action, memory, and learning as essential components of an embodied agent. This framework is aligned with Friston's active inference principle, offering a comprehensive approach to EAI development. Despite the progress made in the field of AI, substantial challenges, such as the formulation of a novel AI learning theory and the innovation of advanced hardware, persist. Our discussion lays down a foundational guideline for future Embodied AI research. Highlighting the importance of creating Embodied AI agents capable of seamless communication, collaboration, and coexistence with humans and other intelligent entities within real-world environments, we aim to steer the AI community towards addressing the multifaceted challenges and seizing the opportunities that lie ahead in the quest for AGI.
     </details>
 </div>
 <div class="paper-card">
@@ -147,6 +176,24 @@
     </div>
     <details class="paper-abstract">
       Embodied AI aims to develop robots that can \textit{understand} and execute human language instructions, as well as communicate in natural languages. On this front, we study the task of generating highly detailed navigational instructions for the embodied robots to follow. Although recent studies have demonstrated significant leaps in the generation of step-by-step instructions from sequences of images, the generated instructions lack variety in terms of their referral to objects and landmarks. Existing speaker models learn strategies to evade the evaluation metrics and obtain higher scores even for low-quality sentences. In this work, we propose SAS (Spatially-Aware Speaker), an instruction generator or \textit{Speaker} model that utilises both structural and semantic knowledge of the environment to produce richer instructions. For training, we employ a reward learning method in an adversarial setting to avoid systematic bias introduced by language evaluation metrics. Empirically, our method outperforms existing instruction generation models, evaluated using standard metrics. Our code is available at \url{https://github.com/gmuraleekrishna/SAS}.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2409.01630v1">SafeEmbodAI: a Safety Framework for Mobile Robots in Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+    </div>
+    <details class="paper-abstract">
+      Embodied AI systems, including AI-powered robots that autonomously interact with the physical world, stand to be significantly advanced by Large Language Models (LLMs), which enable robots to better understand complex language commands and perform advanced tasks with enhanced comprehension and adaptability, highlighting their potential to improve embodied AI capabilities. However, this advancement also introduces safety challenges, particularly in robotic navigation tasks. Improper safety management can lead to failures in complex environments and make the system vulnerable to malicious command injections, resulting in unsafe behaviours such as detours or collisions. To address these issues, we propose \textit{SafeEmbodAI}, a safety framework for integrating mobile robots into embodied AI systems. \textit{SafeEmbodAI} incorporates secure prompting, state management, and safety validation mechanisms to secure and assist LLMs in reasoning through multi-modal data and validating responses. We designed a metric to evaluate mission-oriented exploration, and evaluations in simulated environments demonstrate that our framework effectively mitigates threats from malicious commands and improves performance in various environment settings, ensuring the safety of embodied AI systems. Notably, In complex environments with mixed obstacles, our method demonstrates a significant performance increase of 267\% compared to the baseline in attack scenarios, highlighting its robustness in challenging conditions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2409.00015v1">Navigating the sociotechnical labyrinth: Dynamic certification for responsible embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+    </div>
+    <details class="paper-abstract">
+      Sociotechnical requirements shape the governance of artificially intelligent (AI) systems. In an era where embodied AI technologies are rapidly reshaping various facets of contemporary society, their inherent dynamic adaptability presents a unique blend of opportunities and challenges. Traditional regulatory mechanisms, often designed for static -- or slower-paced -- technologies, find themselves at a crossroads when faced with the fluid and evolving nature of AI systems. Moreover, typical problems in AI, for example, the frequent opacity and unpredictability of the behaviour of the systems, add additional sociotechnical challenges. To address these interconnected issues, we introduce the concept of dynamic certification, an adaptive regulatory framework specifically crafted to keep pace with the continuous evolution of AI systems. The complexity of these challenges requires common progress in multiple domains: technical, socio-governmental, and regulatory. Our proposed transdisciplinary approach is designed to ensure the safe, ethical, and practical deployment of AI systems, aligning them bidirectionally with the real-world contexts in which they operate. By doing so, we aim to bridge the gap between rapid technological advancement and effective regulatory oversight, ensuring that AI systems not only achieve their intended goals but also adhere to ethical standards and societal values.
     </details>
 </div>
 <div class="paper-card">

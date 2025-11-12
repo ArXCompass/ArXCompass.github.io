@@ -14,6 +14,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2411.14484v1">Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach</a></div>
+    <div class="paper-meta">
+      📅 2024-11-25
+    </div>
+    <details class="paper-abstract">
+      Previous work has attempted to boost Large Language Model (LLM) performance on planning and scheduling tasks through a variety of prompt engineering techniques. While these methods can work within the distributions tested, they are neither robust nor predictable. This limitation can be addressed through compound LLM architectures where LLMs work in conjunction with other components to ensure reliability. In this paper, we present a technical evaluation of a compound LLM architecture--the LLM-Modulo framework. In this framework, an LLM is paired with a complete set of sound verifiers that validate its output, re-prompting it if it fails. This approach ensures that the system can never output any fallacious output, and therefore that every output generated is guaranteed correct--something previous techniques have not been able to claim. Our results, evaluated across four scheduling domains, demonstrate significant performance gains with the LLM-Modulo framework using various models. Additionally, we explore modifications to the base configuration of the framework and assess their impact on overall system performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2411.14971v1">Leveraging LLMs for Legacy Code Modernization: Challenges and Opportunities for LLM-Generated Documentation</a></div>
+    <div class="paper-meta">
+      📅 2024-11-25
+      | 💬 Abbreviated version submitted to LLM4Code 2025 (a workshop co-located with ICSE 2025), 13 pages, 3 figures
+    </div>
+    <details class="paper-abstract">
+      Legacy software systems, written in outdated languages like MUMPS and mainframe assembly, pose challenges in efficiency, maintenance, staffing, and security. While LLMs offer promise for modernizing these systems, their ability to understand legacy languages is largely unknown. This paper investigates the utilization of LLMs to generate documentation for legacy code using two datasets: an electronic health records (EHR) system in MUMPS and open-source applications in IBM mainframe Assembly Language Code (ALC). We propose a prompting strategy for generating line-wise code comments and a rubric to evaluate their completeness, readability, usefulness, and hallucination. Our study assesses the correlation between human evaluations and automated metrics, such as code complexity and reference-based metrics. We find that LLM-generated comments for MUMPS and ALC are generally hallucination-free, complete, readable, and useful compared to ground-truth comments, though ALC poses challenges. However, no automated metrics strongly correlate with comment quality to predict or measure LLM performance. Our findings highlight the limitations of current automated measures and the need for better evaluation metrics for LLM-generated documentation in legacy systems.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.15998v1">PIANIST: Learning Partially Observable World Models with LLMs for Multi-Agent Decision Making</a></div>
     <div class="paper-meta">
       📅 2024-11-24
@@ -143,6 +162,15 @@
     </div>
     <details class="paper-abstract">
       Teaching to improve student models (e.g., knowledge distillation) is an extensively studied methodology in LLMs. However, for humans, teaching improves not only students but also teachers, by fostering more rigorous and clear reasoning as well as knowledge building. We ask: Can LLMs also learn by teaching (LbT) for better reasoning? If the answer is yes, we can potentially unlock the possibility of continuously advancing the models without solely relying on human-produced data or stronger models. In this paper, we provide a preliminary exploration on this question. We show that LbT ideas can be incorporated into existing LLM training/prompting pipelines and bring improvements. Specifically, we design three methods, each mimicking one of the three levels of LbT: observing students' feedback, learning from the feedback, and learning iteratively, with the goals of improving answer accuracy without training or improving models' inherent capability with fine-tuning. We reveal some findings: (1) Teaching materials that make it easier for students to learn have clearer and more accurate logic when using in-context learning as the student's "learning" method; (2) Weak-to-strong generalization: LbT might help improve strong models by teaching weak models; (3) Diversity in students might help: teaching multiple students could be better than teaching one student or the teacher itself. We hope that our exploration can inspire future research on LbT and more broadly adopting the advanced techniques in education to improve LLMs. The code and website are at https://github.com/imagination-research/lbt and https://sites.google.com/view/llm-learning-by-teaching.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.16003v1">eFedLLM: Efficient LLM Inference Based on Federated Learning</a></div>
+    <div class="paper-meta">
+      📅 2024-11-24
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) herald a transformative era in artificial intelligence (AI). However, the expansive scale of data and parameters of LLMs requires high-demand computational and memory resources, restricting their accessibility to a broader range of users and researchers. This paper introduces an effective approach that enhances the operational efficiency and affordability of LLM inference. By utilizing transformer-based federated learning (FL) with model-parallel distributed training, our model efficiently distributes the computational loads and memory requirements across a network of participants. This strategy permits users, especially those with limited resources to train state-of-the-art LLMs collaboratively. We also innovate an incentive mechanism within the FL framework, rewarding constructive contributions and filtering out malicious activities, thereby safeguarding the integrity and reliability of the training process. Concurrently, we leverage memory hierarchy strategies and Singular Value Decomposition (SVD) on weight matrices to boost computational and memory efficiencies further. Our results, derived from formulaic analyses and numerical calculations, demonstrate significant optimization of resource use and democratize access to cutting-edge LLMs, ensuring that a wide scale of users can both contribute to and benefit from these advanced models.
     </details>
 </div>
 <div class="paper-card">
@@ -923,34 +951,5 @@
     </div>
     <details class="paper-abstract">
       Recent debates raised concerns that language models may favor certain viewpoints. But what if the solution is not to aim for a 'view from nowhere' but rather to leverage different viewpoints? We introduce Plurals, a system and Python library for pluralistic AI deliberation. Plurals consists of Agents (LLMs, optionally with personas) which deliberate within customizable Structures, with Moderators overseeing deliberation. Plurals is a generator of simulated social ensembles. Plurals integrates with government datasets to create nationally representative personas, includes deliberation templates inspired by deliberative democracy, and allows users to customize both information-sharing structures and deliberation behavior within Structures. Six case studies demonstrate fidelity to theoretical constructs and efficacy. Three randomized experiments show simulated focus groups produced output resonant with an online sample of the relevant audiences (chosen over zero-shot generation in 75% of trials). Plurals is both a paradigm and a concrete system for pluralistic AI. The Plurals library is available at https://github.com/josh-ashkinaze/plurals and will be continually updated.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.00028v2">Synergizing LLM Agents and Knowledge Graph for Socioeconomic Prediction in LBSN</a></div>
-    <div class="paper-meta">
-      📅 2024-11-19
-    </div>
-    <details class="paper-abstract">
-      The fast development of location-based social networks (LBSNs) has led to significant changes in society, resulting in popular studies of using LBSN data for socioeconomic prediction, e.g., regional population and commercial activity estimation. Existing studies design various graphs to model heterogeneous LBSN data, and further apply graph representation learning methods for socioeconomic prediction. However, these approaches heavily rely on heuristic ideas and expertise to extract task-relevant knowledge from diverse data, which may not be optimal for specific tasks. Additionally, they tend to overlook the inherent relationships between different indicators, limiting the prediction accuracy. Motivated by the remarkable abilities of large language models (LLMs) in commonsense reasoning, embedding, and multi-agent collaboration, in this work, we synergize LLM agents and knowledge graph for socioeconomic prediction. We first construct a location-based knowledge graph (LBKG) to integrate multi-sourced LBSN data. Then we leverage the reasoning power of LLM agent to identify relevant meta-paths in the LBKG for each type of socioeconomic prediction task, and design a semantic-guided attention module for knowledge fusion with meta-paths. Moreover, we introduce a cross-task communication mechanism to further enhance performance by enabling knowledge sharing across tasks at both LLM agent and KG levels. On the one hand, the LLM agents for different tasks collaborate to generate more diverse and comprehensive meta-paths. On the other hand, the embeddings from different tasks are adaptively merged for better socioeconomic prediction. Experiments on two datasets demonstrate the effectiveness of the synergistic design between LLM and KG, providing insights for information sharing across socioeconomic prediction tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.04793v2">Zero-shot LLM-guided Counterfactual Generation: A Case Study on NLP Model Evaluation</a></div>
-    <div class="paper-meta">
-      📅 2024-11-19
-      | 💬 Longer version of short paper accepted at IEEE BigData 2024 (Main Track)
-    </div>
-    <details class="paper-abstract">
-      With the development and proliferation of large, complex, black-box models for solving many natural language processing (NLP) tasks, there is also an increasing necessity of methods to stress-test these models and provide some degree of interpretability or explainability. While counterfactual examples are useful in this regard, automated generation of counterfactuals is a data and resource intensive process. such methods depend on models such as pre-trained language models that are then fine-tuned on auxiliary, often task-specific datasets, that may be infeasible to build in practice, especially for new tasks and data domains. Therefore, in this work we explore the possibility of leveraging large language models (LLMs) for zero-shot counterfactual generation in order to stress-test NLP models. We propose a structured pipeline to facilitate this generation, and we hypothesize that the instruction-following and textual understanding capabilities of recent LLMs can be effectively leveraged for generating high quality counterfactuals in a zero-shot manner, without requiring any training or fine-tuning. Through comprehensive experiments on a variety of propreitary and open-source LLMs, along with various downstream tasks in NLP, we explore the efficacy of LLMs as zero-shot counterfactual generators in evaluating and explaining black-box NLP models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.12395v1">Do LLMs Understand Ambiguity in Text? A Case Study in Open-world Question Answering</a></div>
-    <div class="paper-meta">
-      📅 2024-11-19
-      | 💬 Accepted at the REU Symposium at IEEE BigData 2024
-    </div>
-    <details class="paper-abstract">
-      Ambiguity in natural language poses significant challenges to Large Language Models (LLMs) used for open-domain question answering. LLMs often struggle with the inherent uncertainties of human communication, leading to misinterpretations, miscommunications, hallucinations, and biased responses. This significantly weakens their ability to be used for tasks like fact-checking, question answering, feature extraction, and sentiment analysis. Using open-domain question answering as a test case, we compare off-the-shelf and few-shot LLM performance, focusing on measuring the impact of explicit disambiguation strategies. We demonstrate how simple, training-free, token-level disambiguation methods may be effectively used to improve LLM performance for ambiguous question answering tasks. We empirically show our findings and discuss best practices and broader impacts regarding ambiguity in LLMs.
     </details>
 </div>

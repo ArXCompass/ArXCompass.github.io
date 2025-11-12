@@ -18,6 +18,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.18693v1">Unleashing Reasoning Capability of LLMs via Scalable Question Synthesis from Scratch</a></div>
+    <div class="paper-meta">
+      📅 2024-10-24
+      | 💬 Preprint. Project page: https://scalequest.github.io/
+    </div>
+    <details class="paper-abstract">
+      The availability of high-quality data is one of the most important factors in improving the reasoning capability of LLMs. Existing works have demonstrated the effectiveness of creating more instruction data from seed questions or knowledge bases. Recent research indicates that continually scaling up data synthesis from strong models (e.g., GPT-4) can further elicit reasoning performance. Though promising, the open-sourced community still lacks high-quality data at scale and scalable data synthesis methods with affordable costs. To address this, we introduce ScaleQuest, a scalable and novel data synthesis method that utilizes "small-size" (e.g., 7B) open-source models to generate questions from scratch without the need for seed data with complex augmentation constraints. With the efficient ScaleQuest, we automatically constructed a mathematical reasoning dataset consisting of 1 million problem-solution pairs, which are more effective than existing open-sourced datasets. It can universally increase the performance of mainstream open-source models (i.e., Mistral, Llama3, DeepSeekMath, and Qwen2-Math) by achieving 29.2% to 46.4% gains on MATH. Notably, simply fine-tuning the Qwen2-Math-7B-Base model with our dataset can even surpass Qwen2-Math-7B-Instruct, a strong and well-aligned model on closed-source data, and proprietary models such as GPT-4-Turbo and Claude-3.5 Sonnet.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.18686v1">Hierarchical Multimodal LLMs with Semantic Space Alignment for Enhanced Time Series Classification</a></div>
     <div class="paper-meta">
       📅 2024-10-24
@@ -445,6 +455,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.16285v1">Assessing the Performance of Human-Capable LLMs -- Are LLMs Coming for Your Job?</a></div>
+    <div class="paper-meta">
+      📅 2024-10-23
+    </div>
+    <details class="paper-abstract">
+      The current paper presents the development and validation of SelfScore, a novel benchmark designed to assess the performance of automated Large Language Model (LLM) agents on help desk and professional consultation tasks. Given the increasing integration of AI in industries, particularly within customer service, SelfScore fills a crucial gap by enabling the comparison of automated agents and human workers. The benchmark evaluates agents on problem complexity and response helpfulness, ensuring transparency and simplicity in its scoring system. The study also develops automated LLM agents to assess SelfScore and explores the benefits of Retrieval-Augmented Generation (RAG) for domain-specific tasks, demonstrating that automated LLM agents incorporating RAG outperform those without. All automated LLM agents were observed to perform better than the human control group. Given these results, the study raises concerns about the potential displacement of human workers, especially in areas where AI technologies excel. Ultimately, SelfScore provides a foundational tool for understanding the impact of AI in help desk environments while advocating for ethical considerations in the ongoing transition towards automation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.11402v2">NVLM: Open Frontier-Class Multimodal LLMs</a></div>
     <div class="paper-meta">
       📅 2024-10-22
@@ -670,6 +689,44 @@
     </div>
     <details class="paper-abstract">
       Aligning the output of Large Language Models (LLMs) with human preferences (e.g., by means of reinforcement learning with human feedback, or RLHF) is essential for ensuring their effectiveness in real-world scenarios. Despite significant advancements in LLM alignment techniques, the impact of different type of preference data on model performance has yet to be systematically explored. In this study, we investigate the scalability, data efficiency, and effectiveness of Direct Preference Optimization (DPO) in fine-tuning pre-trained LLMs, aiming to reduce their dependency on extensive amounts of preference data, which is expensive to collect. We (1) systematically compare the performance of models fine-tuned with varying percentages of a combined preference judgement dataset to define the improvement curve of DPO and assess its effectiveness in data-constrained environments; and (2) provide insights for the development of an optimal approach for selective preference data usage. Our study reveals that increasing the amount of data used for training generally enhances and stabilizes model performance. Moreover, the use of a combination of diverse datasets significantly improves model effectiveness. Furthermore, when models are trained separately using different types of prompts, models trained with conversational prompts outperformed those trained with question answering prompts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15625v1">Improving Parallel Program Performance Through DSL-Driven Code Generation with LLM Optimizers</a></div>
+    <div class="paper-meta">
+      📅 2024-10-21
+      | 💬 26 pages, 8 figures
+    </div>
+    <details class="paper-abstract">
+      Mapping computations to processors and assigning data to memory are critical for maximizing performance in parallel programming. These mapping decisions are managed through the development of specialized low-level system code, called mappers, crafted by performance engineers. Each mapper is tailored to a specific application and optimized for the underlying machine architecture, a process that requires days of refinement and tuning from an expert. Despite advances in system research, automating mapper generation remains a challenge due to the complexity of making millions of decisions to find the optimal solution and generate the solution as code. We introduce an approach that leverages recent advances in LLM-based optimizers for mapper design. In under ten minutes, our method automatically discovers mappers that surpass human expert designs in scientific applications by up to 1.34X speedup. For parallel matrix multiplication algorithms, our mapper achieves up to 1.31X of the expert-designed solution. To achieve this, we simplify the complexity of low-level code generation by introducing a domain-specific language (DSL) that abstracts the low-level system programming details and defines a structured search space for LLMs to explore. To maximize the application performance, we use an LLM optimizer to improve an agentic system that generates the mapper code. As a result, this approach significantly reduces the workload for performance engineers while achieving substantial performance gains across diverse applications. Finally, our results demonstrate the effectiveness of LLM-based optimization in system design and suggest its potential for addressing other complex system challenges.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15623v1">Guardians of Discourse: Evaluating LLMs on Multilingual Offensive Language Detection</a></div>
+    <div class="paper-meta">
+      📅 2024-10-21
+      | 💬 Accepted at UIC 2024 proceedings. Accepted version
+    </div>
+    <details class="paper-abstract">
+      Identifying offensive language is essential for maintaining safety and sustainability in the social media era. Though large language models (LLMs) have demonstrated encouraging potential in social media analytics, they lack thorough evaluation when in offensive language detection, particularly in multilingual environments. We for the first time evaluate multilingual offensive language detection of LLMs in three languages: English, Spanish, and German with three LLMs, GPT-3.5, Flan-T5, and Mistral, in both monolingual and multilingual settings. We further examine the impact of different prompt languages and augmented translation data for the task in non-English contexts. Furthermore, we discuss the impact of the inherent bias in LLMs and the datasets in the mispredictions related to sensitive topics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2212.10678v3">Causally Testing Gender Bias in LLMs: A Case Study on Occupational Bias</a></div>
+    <div class="paper-meta">
+      📅 2024-10-21
+    </div>
+    <details class="paper-abstract">
+      Generated texts from large language models (LLMs) have been shown to exhibit a variety of harmful, human-like biases against various demographics. These findings motivate research efforts aiming to understand and measure such effects. This paper introduces a causal formulation for bias measurement in generative language models. Based on this theoretical foundation, we outline a list of desiderata for designing robust bias benchmarks. We then propose a benchmark called OccuGender, with a bias-measuring procedure to investigate occupational gender bias. We test several state-of-the-art open-source LLMs on OccuGender, including Llama, Mistral, and their instruction-tuned versions. The results show that these models exhibit substantial occupational gender bias. Lastly, we discuss prompting strategies for bias mitigation and an extension of our causal formulation to illustrate the generalizability of our framework. Our code and data https://github.com/chenyuen0103/gender-bias.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15555v1">Bayesian Concept Bottleneck Models with LLM Priors</a></div>
+    <div class="paper-meta">
+      📅 2024-10-21
+    </div>
+    <details class="paper-abstract">
+      Concept Bottleneck Models (CBMs) have been proposed as a compromise between white-box and black-box models, aiming to achieve interpretability without sacrificing accuracy. The standard training procedure for CBMs is to predefine a candidate set of human-interpretable concepts, extract their values from the training data, and identify a sparse subset as inputs to a transparent prediction model. However, such approaches are often hampered by the tradeoff between enumerating a sufficiently large set of concepts to include those that are truly relevant versus controlling the cost of obtaining concept extractions. This work investigates a novel approach that sidesteps these challenges: BC-LLM iteratively searches over a potentially infinite set of concepts within a Bayesian framework, in which Large Language Models (LLMs) serve as both a concept extraction mechanism and prior. BC-LLM is broadly applicable and multi-modal. Despite imperfections in LLMs, we prove that BC-LLM can provide rigorous statistical inference and uncertainty quantification. In experiments, it outperforms comparator methods including black-box models, converges more rapidly towards relevant concepts and away from spuriously correlated ones, and is more robust to out-of-distribution samples.
     </details>
 </div>
 <div class="paper-card">
@@ -910,61 +967,5 @@
     </div>
     <details class="paper-abstract">
       The rapid evolution of large language models (LLMs) has transformed the competitive landscape in natural language processing (NLP), particularly for English and other data-rich languages. However, underrepresented languages like Cantonese, spoken by over 85 million people, face significant development gaps, which is particularly concerning given the economic significance of the Guangdong-Hong Kong-Macau Greater Bay Area, and in substantial Cantonese-speaking populations in places like Singapore and North America. Despite its wide use, Cantonese has scant representation in NLP research, especially compared to other languages from similarly developed regions. To bridge these gaps, we outline current Cantonese NLP methods and introduce new benchmarks designed to evaluate LLM performance in factual generation, mathematical logic, complex reasoning, and general knowledge in Cantonese, which aim to advance open-source Cantonese LLM technology. We also propose future research directions and recommended models to enhance Cantonese LLM development.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15667v1">RAC: Efficient LLM Factuality Correction with Retrieval Augmentation</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) exhibit impressive results across a wide range of natural language processing (NLP) tasks, yet they can often produce factually incorrect outputs. This paper introduces a simple but effective low-latency post-correction method, \textbf{Retrieval Augmented Correction (RAC)}, aimed at enhancing the factual performance of LLMs without requiring additional fine-tuning. Our method is general and can be used with any instruction-tuned LLM, and has greatly reduced latency compared to prior approaches. RAC decomposes the LLM's output into atomic facts and applies a fine-grained verification and correction process with retrieved content to verify and correct the LLM-generated output. Our extensive experiments show that RAC yields up to 30\% improvements over state-of-the-art baselines across two popular factuality evaluation datasets, validating its efficacy and robustness in both with and without the integration of Retrieval-Augmented Generation (RAG) across different LLMs.\footnote{Our code is at \url{https://github.com/jlab-nlp/Retrieval-Augmented-Correction}}
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15651v1">Understanding and Alleviating Memory Consumption in RLHF for LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-    </div>
-    <details class="paper-abstract">
-      Fine-tuning with Reinforcement Learning with Human Feedback (RLHF) is essential for aligning large language models (LLMs). However, RLHF often encounters significant memory challenges. This study is the first to examine memory usage in the RLHF context, exploring various memory management strategies and unveiling the reasons behind excessive memory consumption. Additionally, we introduce a simple yet effective approach that substantially reduces the memory required for RLHF fine-tuning.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15644v1">Procedural Content Generation in Games: A Survey with Insights on Emerging LLM Integration</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-    </div>
-    <details class="paper-abstract">
-      Procedural Content Generation (PCG) is defined as the automatic creation of game content using algorithms. PCG has a long history in both the game industry and the academic world. It can increase player engagement and ease the work of game designers. While recent advances in deep learning approaches in PCG have enabled researchers and practitioners to create more sophisticated content, it is the arrival of Large Language Models (LLMs) that truly disrupted the trajectory of PCG advancement. This survey explores the differences between various algorithms used for PCG, including search-based methods, machine learning-based methods, other frequently used methods (e.g., noise functions), and the newcomer, LLMs. We also provide a detailed discussion on combined methods. Furthermore, we compare these methods based on the type of content they generate and the publication dates of their respective papers. Finally, we identify gaps in the existing academic work and suggest possible directions for future research.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15641v1">SMILES-Prompting: A Novel Approach to LLM Jailbreak Attacks in Chemical Synthesis</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-    </div>
-    <details class="paper-abstract">
-      The increasing integration of large language models (LLMs) across various fields has heightened concerns about their potential to propagate dangerous information. This paper specifically explores the security vulnerabilities of LLMs within the field of chemistry, particularly their capacity to provide instructions for synthesizing hazardous substances. We evaluate the effectiveness of several prompt injection attack methods, including red-teaming, explicit prompting, and implicit prompting. Additionally, we introduce a novel attack technique named SMILES-prompting, which uses the Simplified Molecular-Input Line-Entry System (SMILES) to reference chemical substances. Our findings reveal that SMILES-prompting can effectively bypass current safety mechanisms. These findings highlight the urgent need for enhanced domain-specific safeguards in LLMs to prevent misuse and improve their potential for positive social impact.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03744v2">INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-      | 💬 Accepted by ICLR-2024
-    </div>
-    <details class="paper-abstract">
-      Knowledge hallucination have raised widespread concerns for the security and reliability of deployed LLMs. Previous efforts in detecting hallucinations have been employed at logit-level uncertainty estimation or language-level self-consistency evaluation, where the semantic information is inevitably lost during the token-decoding procedure. Thus, we propose to explore the dense semantic information retained within LLMs' \textbf{IN}ternal \textbf{S}tates for halluc\textbf{I}nation \textbf{DE}tection (\textbf{INSIDE}). In particular, a simple yet effective \textbf{EigenScore} metric is proposed to better evaluate responses' self-consistency, which exploits the eigenvalues of responses' covariance matrix to measure the semantic consistency/diversity in the dense embedding space. Furthermore, from the perspective of self-consistent hallucination detection, a test time feature clipping approach is explored to truncate extreme activations in the internal states, which reduces overconfident generations and potentially benefits the detection of overconfident hallucinations. Extensive experiments and ablation studies are performed on several popular LLMs and question-answering (QA) benchmarks, showing the effectiveness of our proposal.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.10786v2">Exploring the Zero-Shot Capabilities of LLMs Handling Multiple Problems at once</a></div>
-    <div class="paper-meta">
-      📅 2024-10-21
-      | 💬 26 pages, 11 figures, 16 tables
-    </div>
-    <details class="paper-abstract">
-      Recent studies have proposed placing multiple problems in a single prompt to improve input token utilization for a more efficient LLM inference. We call this MPP, in contrast to conventional SPP that prompts an LLM with a single problem at a time. While MPP has been shown to work comparably well or even better than SPP under few-shot settings, its zero-shot performance is underexplored, which better reveals the innate multiple problem handling capabilities of LLMs. To address that, we study the zero-shot MPP performance of various LLMs on 6 classification and 12 reasoning benchmarks and confirm that LLMs are competent zero-shot multi-problem solvers. We also examine the conditions of effectiveness of zero-shot MPP and explore several model-level factors that may enable MPP. We observe that LLMs consistently perform worse with selecting indices of texts of a given class label and with multiple mixed-source reasoning problems, indicating a lack of true understanding. We also find that instruction tuning is an important factor than enhances MPP.
     </details>
 </div>

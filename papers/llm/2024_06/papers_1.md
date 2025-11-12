@@ -748,6 +748,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2406.15379v1">CS1-LLM: Integrating LLMs into CS1 Instruction</a></div>
+    <div class="paper-meta">
+      📅 2024-06-25
+      | 💬 to be published in Proceedings of the 29th ACM conference on innovation and technology in computer science education (ITiCSE)
+    </div>
+    <details class="paper-abstract">
+      The recent, widespread availability of Large Language Models (LLMs) like ChatGPT and GitHub Copilot may impact introductory programming courses (CS1) both in terms of what should be taught and how to teach it. Indeed, recent research has shown that LLMs are capable of solving the majority of the assignments and exams we previously used in CS1. In addition, professional software engineers are often using these tools, raising the question of whether we should be training our students in their use as well. This experience report describes a CS1 course at a large research-intensive university that fully embraces the use of LLMs from the beginning of the course. To incorporate the LLMs, the course was intentionally altered to reduce emphasis on syntax and writing code from scratch. Instead, the course now emphasizes skills needed to successfully produce software with an LLM. This includes explaining code, testing code, and decomposing large problems into small functions that are solvable by an LLM. In addition to frequent, formative assessments of these skills, students were given three large, open-ended projects in three separate domains (data science, image processing, and game design) that allowed them to showcase their creativity in topics of their choosing. In an end-of-term survey, students reported that they appreciated learning with the assistance of the LLM and that they interacted with the LLM in a variety of ways when writing code. We provide lessons learned for instructors who may wish to incorporate LLMs into their course.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.17158v1">DEXTER: A Benchmark for open-domain Complex Question Answering using LLMs</a></div>
     <div class="paper-meta">
       📅 2024-06-24
@@ -869,6 +879,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.10517v4">Any-Precision LLM: Low-Cost Deployment of Multiple, Different-Sized LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-24
+      | 💬 To appear at ICML 2024. Code is available at https://github.com/SNU-ARC/any-precision-llm
+    </div>
+    <details class="paper-abstract">
+      Recently, considerable efforts have been directed towards compressing Large Language Models (LLMs), which showcase groundbreaking capabilities across diverse applications but entail significant deployment costs due to their large sizes. Meanwhile, much less attention has been given to mitigating the costs associated with deploying multiple LLMs of varying sizes despite its practical significance. Thus, this paper introduces \emph{any-precision LLM}, extending the concept of any-precision DNN to LLMs. Addressing challenges in any-precision LLM, we propose a lightweight method for any-precision quantization of LLMs, leveraging a post-training quantization framework, and develop a specialized software engine for its efficient serving. As a result, our solution significantly reduces the high costs of deploying multiple, different-sized LLMs by overlaying LLMs quantized to varying bit-widths, such as 3, 4, ..., $n$ bits, into a memory footprint comparable to a single $n$-bit LLM. All the supported LLMs with varying bit-widths demonstrate state-of-the-art model quality and inference throughput, proving itself to be a compelling option for deployment of multiple, different-sized LLMs. Our code is open-sourced and available online.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.02905v3">Use Your INSTINCT: INSTruction optimization for LLMs usIng Neural bandits Coupled with Transformers</a></div>
     <div class="paper-meta">
       📅 2024-06-23
@@ -932,25 +952,5 @@
     </div>
     <details class="paper-abstract">
       We introduce Syntax-Aware Fill-In-the-Middle (SAFIM), a new benchmark for evaluating Large Language Models (LLMs) on the code Fill-in-the-Middle (FIM) task. This benchmark focuses on syntax-aware completions of program structures such as code blocks and conditional expressions, and includes 17,720 examples from multiple programming languages, sourced from recent code submissions after April 2022 to minimize data contamination. SAFIM provides a robust framework with various prompt designs and novel syntax-aware post-processing techniques, facilitating accurate and fair comparisons across LLMs. Our comprehensive evaluation of 15 LLMs shows that FIM pretraining not only enhances FIM proficiency but also improves Left-to-Right (L2R) inference using LLMs. Our findings challenge conventional beliefs and suggest that pretraining methods and data quality have more impact than model size. SAFIM thus serves as a foundational platform for future research in effective pretraining strategies for code LLMs. The evaluation toolkit and dataset are available at https://github.com/gonglinyuan/safim, and the leaderboard is available at https://safimbenchmark.com.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.15927v1">Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-06-22
-      | 💬 First three authors contributed equally
-    </div>
-    <details class="paper-abstract">
-      We propose semantic entropy probes (SEPs), a cheap and reliable method for uncertainty quantification in Large Language Models (LLMs). Hallucinations, which are plausible-sounding but factually incorrect and arbitrary model generations, present a major challenge to the practical adoption of LLMs. Recent work by Farquhar et al. (2024) proposes semantic entropy (SE), which can detect hallucinations by estimating uncertainty in the space semantic meaning for a set of model generations. However, the 5-to-10-fold increase in computation cost associated with SE computation hinders practical adoption. To address this, we propose SEPs, which directly approximate SE from the hidden states of a single generation. SEPs are simple to train and do not require sampling multiple model generations at test time, reducing the overhead of semantic uncertainty quantification to almost zero. We show that SEPs retain high performance for hallucination detection and generalize better to out-of-distribution data than previous probing methods that directly predict model accuracy. Our results across models and tasks suggest that model hidden states capture SE, and our ablation studies give further insights into the token positions and model layers for which this is the case.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.15891v1">The Unlikely Duel: Evaluating Creative Writing in LLMs through a Unique Scenario</a></div>
-    <div class="paper-meta">
-      📅 2024-06-22
-      | 💬 Published in the XIX Conference of the Spanish Association for Artificial Intelligence (CAEPIA), 2024. Summary of our paper "A Confederacy of Models: a Comprehensive Evaluation of LLMs on Creative Writing", published in Findings of EMNLP
-    </div>
-    <details class="paper-abstract">
-      This is a summary of the paper "A Confederacy of Models: a Comprehensive Evaluation of LLMs on Creative Writing", which was published in Findings of EMNLP 2023. We evaluate a range of recent state-of-the-art, instruction-tuned large language models (LLMs) on an English creative writing task, and compare them to human writers. For this purpose, we use a specifically-tailored prompt (based on an epic combat between Ignatius J. Reilly, main character of John Kennedy Toole's "A Confederacy of Dunces", and a pterodactyl) to minimize the risk of training data leakage and force the models to be creative rather than reusing existing stories. The same prompt is presented to LLMs and human writers, and evaluation is performed by humans using a detailed rubric including various aspects like fluency, style, originality or humor. Results show that some state-of-the-art commercial LLMs match or slightly outperform our human writers in most of the evaluated dimensions. Open-source LLMs lag behind. Humans keep a close lead in originality, and only the top three LLMs can handle humor at human-like levels.
     </details>
 </div>

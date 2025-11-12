@@ -15,6 +15,7 @@
 - [Part 9](papers_9.md)
 - [Part 10](papers_10.md)
 - [Part 11](papers_11.md)
+- [Part 12](papers_12.md)
 
 ## Papers
 
@@ -658,6 +659,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.00029v1">Generating Structured Plan Representation of Procedures with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-03-28
+    </div>
+    <details class="paper-abstract">
+      In this paper, we address the challenges of managing Standard Operating Procedures (SOPs), which often suffer from inconsistencies in language, format, and execution, leading to operational inefficiencies. Traditional process modeling demands significant manual effort, domain expertise, and familiarity with complex languages like Business Process Modeling Notation (BPMN), creating barriers for non-techincal users. We introduce SOP Structuring (SOPStruct), a novel approach that leverages Large Language Models (LLMs) to transform SOPs into decision-tree-based structured representations. SOPStruct produces a standardized representation of SOPs across different domains, reduces cognitive load, and improves user comprehension by effectively capturing task dependencies and ensuring sequential integrity. Our approach enables leveraging the structured information to automate workflows as well as empower the human users. By organizing procedures into logical graphs, SOPStruct facilitates backtracking and error correction, offering a scalable solution for process optimization. We employ a novel evaluation framework, combining deterministic methods with the Planning Domain Definition Language (PDDL) to verify graph soundness, and non-deterministic assessment by an LLM to ensure completeness. We empirically validate the robustness of our LLM-based structured SOP representation methodology across SOPs from different domains and varying levels of complexity. Despite the current lack of automation readiness in many organizations, our research highlights the transformative potential of LLMs to streamline process modeling, paving the way for future advancements in automated procedure optimization.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.22674v1">QuestBench: Can LLMs ask the right question to acquire information in reasoning tasks?</a></div>
     <div class="paper-meta">
       📅 2025-03-28
@@ -943,15 +953,5 @@
     </div>
     <details class="paper-abstract">
       Code translation migrates codebases across programming languages. Recently, large language models (LLMs) have achieved significant advancements in software mining. However, handling the syntactic structure of source code remains a challenge. Classic syntax-aware methods depend on intricate model architectures and loss functions, rendering their integration into LLM training resource-intensive. This paper employs in-context learning (ICL), which directly integrates task exemplars into the input context, to post-incorporate code structural knowledge into pre-trained LLMs. We revisit exemplar selection in ICL from an information-theoretic perspective, proposing that list-wise selection based on information coverage is more precise and general objective than traditional methods based on combining similarity and diversity. To address the challenges of quantifying information coverage, we introduce a surrogate measure, Coverage of Abstract Syntax Tree (CAST). Furthermore, we formulate the NP-hard CAST maximization for exemplar selection and prove that it is a standard submodular maximization problem. Therefore, we propose a greedy algorithm for CAST submodular maximization, which theoretically guarantees a (1-1/e)-approximate solution in polynomial time complexity. Our method is the first training-free and model-agnostic approach to post-incorporate code structural knowledge into existing LLMs at test time. Experimental results show that our method significantly improves LLMs performance and reveals two meaningful insights: 1) Code structural knowledge can be effectively post-incorporated into pre-trained LLMs during inference, despite being overlooked during training; 2) Scaling up model size or training data does not lead to the emergence of code structural knowledge, underscoring the necessity of explicitly considering code syntactic structure.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2503.22769v1">MediTools -- Medical Education Powered by LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-03-28
-      | 💬 19 pages, 17 figures, 2 tables. Code available at https://github.com/NM-Streamlit-Team/meditools
-    </div>
-    <details class="paper-abstract">
-      Artificial Intelligence (AI) has been advancing rapidly and with the advent of large language models (LLMs) in late 2022, numerous opportunities have emerged for adopting this technology across various domains, including medicine. These innovations hold immense potential to revolutionize and modernize medical education. Our research project leverages large language models to enhance medical education and address workflow challenges through the development of MediTools - AI Medical Education. This prototype application focuses on developing interactive tools that simulate real-life clinical scenarios, provide access to medical literature, and keep users updated with the latest medical news. Our first tool is a dermatology case simulation tool that uses real patient images depicting various dermatological conditions and enables interaction with LLMs acting as virtual patients. This platform allows users to practice their diagnostic skills and enhance their clinical decision-making abilities. The application also features two additional tools: an AI-enhanced PubMed tool for engaging with LLMs to gain deeper insights into research papers, and a Google News tool that offers LLM generated summaries of articles for various medical specialties. A comprehensive survey has been conducted among medical professionals and students to gather initial feedback on the effectiveness and user satisfaction of MediTools, providing insights for further development and refinement of the application. This research demonstrates the potential of AI-driven tools in transforming and revolutionizing medical education, offering a scalable and interactive platform for continuous learning and skill development.
     </details>
 </div>

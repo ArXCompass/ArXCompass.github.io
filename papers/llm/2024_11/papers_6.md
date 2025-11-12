@@ -62,6 +62,52 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.03343v1">What Features in Prompts Jailbreak LLMs? Investigating the Mechanisms Behind Attacks</a></div>
+    <div class="paper-meta">
+      📅 2024-11-02
+    </div>
+    <details class="paper-abstract">
+      While `jailbreaks' have been central to research on the safety and reliability of LLMs (large language models), the underlying mechanisms behind these attacks are not well understood. Some prior works have used linear methods to analyze jailbreak prompts or model refusal. Here, however, we compare linear and nonlinear methods to study the features in prompts that contribute to successful jailbreaks. We do this by probing for jailbreak success based only on the portions of the latent representations corresponding to prompt tokens. First, we introduce a dataset of 10,800 jailbreak attempts from 35 attack methods. We then show that different jailbreaking methods work via different nonlinear features in prompts. Specifically, we find that while probes can distinguish between successful and unsuccessful jailbreaking prompts with a high degree of accuracy, they often transfer poorly to held-out attack methods. We also show that nonlinear probes can be used to mechanistically jailbreak the LLM by guiding the design of adversarial latent perturbations. These mechanistic jailbreaks are able to jailbreak Gemma-7B-IT more reliably than 34 of the 35 techniques that it was trained on. Ultimately, our results suggest that jailbreaks cannot be thoroughly understood in terms of universal or linear prompt features alone.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.02442v1">TODO: Enhancing LLM Alignment with Ternary Preferences</a></div>
+    <div class="paper-meta">
+      📅 2024-11-02
+    </div>
+    <details class="paper-abstract">
+      Aligning large language models (LLMs) with human intent is critical for enhancing their performance across a variety of tasks. Standard alignment techniques, such as Direct Preference Optimization (DPO), often rely on the binary Bradley-Terry (BT) model, which can struggle to capture the complexities of human preferences -- particularly in the presence of noisy or inconsistent labels and frequent ties. To address these limitations, we introduce the Tie-rank Oriented Bradley-Terry model (TOBT), an extension of the BT model that explicitly incorporates ties, enabling more nuanced preference representation. Building on this, we propose Tie-rank Oriented Direct Preference Optimization (TODO), a novel alignment algorithm that leverages TOBT's ternary ranking system to improve preference alignment. In evaluations on Mistral-7B and Llama 3-8B models, TODO consistently outperforms DPO in modeling preferences across both in-distribution and out-of-distribution datasets. Additional assessments using MT Bench and benchmarks such as Piqa, ARC-c, and MMLU further demonstrate TODO's superior alignment performance. Notably, TODO also shows strong results in binary preference alignment, highlighting its versatility and potential for broader integration into LLM alignment. The implementation details can be found in https://github.com/XXares/TODO.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01245v1">PMoL: Parameter Efficient MoE for Preference Mixing of LLM Alignment</a></div>
+    <div class="paper-meta">
+      📅 2024-11-02
+    </div>
+    <details class="paper-abstract">
+      Reinforcement Learning from Human Feedback (RLHF) has been proven to be an effective method for preference alignment of large language models (LLMs) and is widely used in the post-training process of LLMs. However, RLHF struggles with handling multiple competing preferences. This leads to a decrease in the alignment of LLMs with human preferences. To address this issue, we propose Preference Mixture of LoRAs (PMoL) from the perspective of model architecture, which can adapt to any number of preferences to mix. PMoL combines Mixture of Experts (MoE) and Low Rank Adaptor (LoRA). This architecture is innovatively applied to the research of preference alignment and has achieved significant performance improvement. The expert group soft loss is used to enable MoE with the ability to mix preferences. Through comprehensive evaluation by the reward model and GPT-4o, the experiment results show that PMoL has superior preference mixing capabilities compared to baseline methods. PMoL achieves better preference alignment with lower training costs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01213v1">One Arrow, Many Targets: Probing LLMs for Multi-Attribute Controllable Text Summarization</a></div>
+    <div class="paper-meta">
+      📅 2024-11-02
+    </div>
+    <details class="paper-abstract">
+      Text summarization is a well-established task within the natural language processing (NLP) community. However, the focus on controllable summarization tailored to user requirements is gaining traction only recently. While several efforts explore controllability in text summarization, the investigation of Multi-Attribute Controllable Summarization (MACS) remains limited. This work addresses this gap by examining the MACS task through the lens of large language models (LLMs), using various learning paradigms, particularly low-rank adapters. We experiment with different popular adapter fine-tuning strategies to assess the effectiveness of the resulting models in retaining cues and patterns associated with multiple controllable attributes. Additionally, we propose and evaluate a novel hierarchical adapter fusion technique to integrate learnings from two distinct controllable attributes. Subsquently, we present our findings, discuss the challenges encountered, and suggest potential avenues for advancing the MACS task.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.09114v2">Catastrophic Cyber Capabilities Benchmark (3CB): Robustly Evaluating LLM Agent Cyber Offense Capabilities</a></div>
+    <div class="paper-meta">
+      📅 2024-11-02
+      | 💬 https://cybercapabilities.org/
+    </div>
+    <details class="paper-abstract">
+      LLM agents have the potential to revolutionize defensive cyber operations, but their offensive capabilities are not yet fully understood. To prepare for emerging threats, model developers and governments are evaluating the cyber capabilities of foundation models. However, these assessments often lack transparency and a comprehensive focus on offensive capabilities. In response, we introduce the Catastrophic Cyber Capabilities Benchmark (3CB), a novel framework designed to rigorously assess the real-world offensive capabilities of LLM agents. Our evaluation of modern LLMs on 3CB reveals that frontier models, such as GPT-4o and Claude 3.5 Sonnet, can perform offensive tasks such as reconnaissance and exploitation across domains ranging from binary analysis to web technologies. Conversely, smaller open-source models exhibit limited offensive capabilities. Our software solution and the corresponding benchmark provides a critical tool to reduce the gap between rapidly improving capabilities and robustness of cyber offense evaluations, aiding in the safer deployment and regulation of these powerful technologies.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.13006v2">LLM Chain Ensembles for Scalable and Accurate Data Annotation</a></div>
     <div class="paper-meta">
       📅 2024-11-01

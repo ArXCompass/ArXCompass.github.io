@@ -18,15 +18,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10490v2">Learning Dynamics of LLM Finetuning</a></div>
-    <div class="paper-meta">
-      📅 2024-10-02
-    </div>
-    <details class="paper-abstract">
-      Learning dynamics, which describes how the learning of specific training examples influences the model's predictions on other examples, gives us a powerful tool for understanding the behavior of deep learning systems. We study the learning dynamics of large language models during different types of finetuning, by analyzing the step-wise decomposition of how influence accumulates among different potential responses. Our framework allows a uniform interpretation of many interesting observations about the training of popular algorithms for both instruction tuning and preference tuning. In particular, we propose a hypothetical explanation of why specific types of hallucination are strengthened after finetuning, e.g., the model might use phrases or facts in the response for question B to answer question A, or the model might keep repeating similar simple phrases when generating responses. We also extend our framework and highlight a unique "squeezing effect" to explain a previously observed phenomenon in off-policy direct preference optimization (DPO), where running DPO for too long makes even the desired outputs less likely. This framework also provides insights into where the benefits of on-policy DPO and other variants come from. The analysis not only provides a novel perspective of understanding LLM's finetuning but also inspires a simple, effective method to improve alignment performance.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.03768v1">Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs</a></div>
     <div class="paper-meta">
       📅 2024-10-02
@@ -354,6 +345,109 @@
     </div>
     <details class="paper-abstract">
       The performance on general tasks decreases after Large Language Models (LLMs) are fine-tuned on domain-specific tasks, the phenomenon is known as Catastrophic Forgetting (CF). However, this paper presents a further challenge for real application of domain-specific LLMs beyond CF, called General Capabilities Integration (GCI), which necessitates the integration of both the general capabilities and domain knowledge within a single instance. The objective of GCI is not merely to retain previously acquired general capabilities alongside new domain knowledge, but to harmonize and utilize both sets of skills in a cohesive manner to enhance performance on domain-specific tasks. Taking legal domain as an example, we carefully design three groups of training and testing tasks without lacking practicability, and construct the corresponding datasets. To better incorporate general capabilities across domain-specific scenarios, we introduce ALoRA, which utilizes a multi-head attention module upon LoRA, facilitating direct information transfer from preceding tokens to the current one. This enhancement permits the representation to dynamically switch between domain-specific knowledge and general competencies according to the attention. Extensive experiments are conducted on the proposed tasks. The results exhibit the significance of our setting, and the effectiveness of our method.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.02089v1">RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) deployed as agents solve user-specified tasks over multiple steps while keeping the required manual engagement to a minimum. Crucially, such LLMs need to ground their generations in any feedback obtained to reliably achieve desired outcomes. We propose an end-to-end reinforcement learning method for teaching models to leverage execution feedback in the realm of code synthesis, where state-of-the-art LLMs struggle to improve code iteratively compared to independent sampling. We benchmark on competitive programming tasks, where we achieve new start-of-the art results with both small (8B parameters) and large (70B) models while reducing the amount of samples required by an order of magnitude. Our analysis of inference-time behavior demonstrates that our method produces LLMs that effectively leverage automatic feedback over multiple steps.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.10100v2">LLM-Based Test-Driven Interactive Code Generation: User Study and Empirical Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+      | 💬 IEEE Transactions on Software Engineering, vol. 50, no. 09, pp. 2254-2268, 2024
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have shown great potential in automating significant aspects of coding by producing natural code from informal natural language (NL) intent. However, given NL is informal, it does not lend easily to checking that the generated code correctly satisfies the user intent. In this paper, we propose a novel interactive workflow TiCoder for guided intent clarification (i.e., partial formalization) through tests to support the generation of more accurate code suggestions. Through a mixed methods user study with 15 programmers, we present an empirical evaluation of the effectiveness of the workflow to improve code generation accuracy. We find that participants using the proposed workflow are significantly more likely to correctly evaluate AI generated code, and report significantly less task-induced cognitive load. Furthermore, we test the potential of the workflow at scale with four different state-of-the-art LLMs on two python datasets, using an idealized proxy for a user feedback. We observe an average absolute improvement of 45.97% in the pass@1 code generation accuracy for both datasets and across all LLMs within 5 user interactions, in addition to the automatic generation of accompanying unit tests.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2311.16905v2">LLM generated responses to mitigate the impact of hate speech</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      In this study, we explore the use of Large Language Models (LLMs) to counteract hate speech. We conducted the first real-life A/B test assessing the effectiveness of LLM-generated counter-speech. During the experiment, we posted 753 automatically generated responses aimed at reducing user engagement under tweets that contained hate speech toward Ukrainian refugees in Poland. Our work shows that interventions with LLM-generated responses significantly decrease user engagement, particularly for original tweets with at least ten views, reducing it by over 20%. This paper outlines the design of our automatic moderation system, proposes a simple metric for measuring user engagement and details the methodology of conducting such an experiment. We discuss the ethical considerations and challenges in deploying generative AI for discourse moderation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.02026v1">Zodiac: A Cardiologist-Level LLM Framework for Multi-Agent Diagnostics</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have demonstrated remarkable progress in healthcare. However, a significant gap remains regarding LLMs' professionalism in domain-specific clinical practices, limiting their application in real-world diagnostics. In this work, we introduce ZODIAC, an LLM-powered framework with cardiologist-level professionalism designed to engage LLMs in cardiological diagnostics. ZODIAC assists cardiologists by extracting clinically relevant characteristics from patient data, detecting significant arrhythmias, and generating preliminary reports for the review and refinement by cardiologists. To achieve cardiologist-level professionalism, ZODIAC is built on a multi-agent collaboration framework, enabling the processing of patient data across multiple modalities. Each LLM agent is fine-tuned using real-world patient data adjudicated by cardiologists, reinforcing the model's professionalism. ZODIAC undergoes rigorous clinical validation with independent cardiologists, evaluated across eight metrics that measure clinical effectiveness and address security concerns. Results show that ZODIAC outperforms industry-leading models, including OpenAI's GPT-4o, Meta's Llama-3.1-405B, and Google's Gemini-pro, as well as medical-specialist LLMs like Microsoft's BioGPT. ZODIAC demonstrates the transformative potential of specialized LLMs in healthcare by delivering domain-specific solutions that meet the stringent demands of medical practice. Notably, ZODIAC has been successfully integrated into electrocardiography (ECG) devices, exemplifying the growing trend of embedding LLMs into Software-as-Medical-Device (SaMD).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.00026v5">Ink and Individuality: Crafting a Personalised Narrative in the Age of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+      | 💬 5 Pages, 4 Figures. Accepted in The Third Workshop on Intelligent and Interactive Writing Assistants at CHI 2024
+    </div>
+    <details class="paper-abstract">
+      Individuality and personalization comprise the distinctive characteristics that make each writer unique and influence their words in order to effectively engage readers while conveying authenticity. However, our growing reliance on LLM-based writing assistants risks compromising our creativity and individuality over time. We often overlook the negative impacts of this trend on our creativity and uniqueness, despite the possible consequences. This study investigates these concerns by performing a brief survey to explore different perspectives and concepts, as well as trying to understand people's viewpoints, in conjunction with past studies in the area. Addressing these issues is essential for improving human-computer interaction systems and enhancing writing assistants for personalization and individuality.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.00027v5">LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+      | 💬 5 Pages, 3 Figures. Accepted in The Third Workshop on Intelligent and Interactive Writing Assistants at CHI 2024
+    </div>
+    <details class="paper-abstract">
+      Sense of ownership in writing confines our investment of thoughts, time, and contribution, leading to attachment to the output. However, using writing assistants introduces a mental dilemma, as some content isn't directly our creation. For instance, we tend to credit Large Language Models (LLMs) more in creative tasks, even though all tasks are equal for them. Additionally, while we may not claim complete ownership of LLM-generated content, we freely claim authorship. We conduct a short survey to examine these issues and understand underlying cognitive processes in order to gain a better knowledge of human-computer interaction in writing and improve writing aid systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01929v1">LLM-Augmented Symbolic Reinforcement Learning with Landmark-Based Task Decomposition</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      One of the fundamental challenges in reinforcement learning (RL) is to take a complex task and be able to decompose it to subtasks that are simpler for the RL agent to learn. In this paper, we report on our work that would identify subtasks by using some given positive and negative trajectories for solving the complex task. We assume that the states are represented by first-order predicate logic using which we devise a novel algorithm to identify the subtasks. Then we employ a Large Language Model (LLM) to generate first-order logic rule templates for achieving each subtask. Such rules were then further fined tuned to a rule-based policy via an Inductive Logic Programming (ILP)-based RL agent. Through experiments, we verify the accuracy of our algorithm in detecting subtasks which successfully detect all of the subtasks correctly. We also investigated the quality of the common-sense rules produced by the language model to achieve the subtasks. Our experiments show that our LLM-guided rule template generation can produce rules that are necessary for solving a subtask, which leads to solving complex tasks with fewer assumptions about predefined first-order logic predicates of the environment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01899v1">The potential of LLM-generated reports in DevSecOps</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+      | 💬 Published in AIESE 2024 (International Conference on AI empowered Software Engineering)
+    </div>
+    <details class="paper-abstract">
+      Alert fatigue is a common issue faced by software teams using the DevSecOps paradigm. The overwhelming number of warnings and alerts generated by security and code scanning tools, particularly in smaller teams where resources are limited, leads to desensitization and diminished responsiveness to security warnings, potentially exposing systems to vulnerabilities. This paper explores the potential of LLMs in generating actionable security reports that emphasize the financial impact and consequences of detected security issues, such as credential leaks, if they remain unaddressed. A survey conducted among developers indicates that LLM-generated reports significantly enhance the likelihood of immediate action on security issues by providing clear, comprehensive, and motivating insights. Integrating these reports into DevSecOps workflows can mitigate attention saturation and alert fatigue, ensuring that critical security warnings are addressed effectively.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01772v1">DeFine: Enhancing LLM Decision-Making with Factor Profiles and Analogical Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      LLMs are ideal for decision-making due to their ability to reason over long contexts and identify critical factors. However, challenges arise when processing transcripts of spoken speech describing complex scenarios. These transcripts often contain ungrammatical or incomplete sentences, repetitions, hedging, and vagueness. For example, during a company's earnings call, an executive might project a positive revenue outlook to reassure investors, despite significant uncertainty regarding future earnings. It is crucial for LLMs to incorporate this uncertainty systematically when making decisions. In this paper, we introduce DeFine, a new framework that constructs probabilistic factor profiles from complex scenarios. DeFine then integrates these profiles with analogical reasoning, leveraging insights from similar past experiences to guide LLMs in making critical decisions in novel situations. Our framework separates the tasks of quantifying uncertainty in complex scenarios and incorporating it into LLM decision-making. This approach is particularly useful in fields such as medical consultations, negotiations, and political debates, where making decisions under uncertainty is vital.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01869v1">Enhancing LLM Fine-tuning for Text-to-SQLs by SQL Quality Measurement</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      Text-to-SQLs enables non-expert users to effortlessly retrieve desired information from relational databases using natural language queries. While recent advancements, particularly with Large Language Models (LLMs) like GPT and T5, have shown impressive performance on large-scale benchmarks such as BIRD, current state-of-the-art (SOTA) LLM-based Text-to-SQLs models often require significant efforts to develop auxiliary tools like SQL classifiers to achieve high performance. This paper proposed a novel approach that only needs SQL Quality Measurement to enhance LLMs-based Text-to-SQLs performance. It establishes a SQL quality evaluation mechanism to assess the generated SQL queries against predefined criteria and actual database responses. This feedback loop enables continuous learning and refinement of model outputs based on both syntactic correctness and semantic accuracy. The proposed method undergoes comprehensive validation on the BIRD benchmark, assessing Execution Accuracy (EX) and Valid Efficiency Score (VES) across various Text-to-SQLs difficulty levels. Experimental results reveal competitive performance in both EX and VES compared to SOTA models like GPT4 and T5.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01748v1">Not All LLM Reasoners Are Created Equal</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      We study the depth of grade-school math (GSM) problem-solving capabilities of LLMs. To this end, we evaluate their performance on pairs of existing math word problems together so that the answer to the second problem depends on correctly answering the first problem. Our findings reveal a significant reasoning gap in most LLMs, that is performance difference between solving the compositional pairs and solving each question independently. This gap is more pronounced in smaller, more cost-efficient, and math-specialized models. Moreover, instruction-tuning recipes and code generation have varying effects across LLM sizes, while finetuning on GSM can lead to task overfitting. Our analysis indicates that large reasoning gaps are not because of test-set leakage, but due to distraction from additional context and poor second-hop reasoning. Overall, LLMs exhibit systematic differences in their reasoning abilities, despite what their performance on standard benchmarks indicates.
     </details>
 </div>
 <div class="paper-card">

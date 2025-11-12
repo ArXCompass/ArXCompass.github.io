@@ -10,6 +10,55 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.14959v3">EvGGS: A Collaborative Learning Framework for Event-based Generalizable Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+    </div>
+    <details class="paper-abstract">
+      Event cameras offer promising advantages such as high dynamic range and low latency, making them well-suited for challenging lighting conditions and fast-moving scenarios. However, reconstructing 3D scenes from raw event streams is difficult because event data is sparse and does not carry absolute color information. To release its potential in 3D reconstruction, we propose the first event-based generalizable 3D reconstruction framework, called EvGGS, which reconstructs scenes as 3D Gaussians from only event input in a feedforward manner and can generalize to unseen cases without any retraining. This framework includes a depth estimation module, an intensity reconstruction module, and a Gaussian regression module. These submodules connect in a cascading manner, and we collaboratively train them with a designed joint loss to make them mutually promote. To facilitate related studies, we build a novel event-based 3D dataset with various material objects and calibrated labels of grayscale images, depth maps, camera poses, and silhouettes. Experiments show models that have jointly trained significantly outperform those trained individually. Our approach performs better than all baselines in reconstruction quality, and depth/intensity predictions with satisfactory rendering speed.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.06231v2">RelitLRM: Generative Relightable Radiance for Large Reconstruction Models</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+      | 💬 webpage: https://relit-lrm.github.io/
+    </div>
+    <details class="paper-abstract">
+      We propose RelitLRM, a Large Reconstruction Model (LRM) for generating high-quality Gaussian splatting representations of 3D objects under novel illuminations from sparse (4-8) posed images captured under unknown static lighting. Unlike prior inverse rendering methods requiring dense captures and slow optimization, often causing artifacts like incorrect highlights or shadow baking, RelitLRM adopts a feed-forward transformer-based model with a novel combination of a geometry reconstructor and a relightable appearance generator based on diffusion. The model is trained end-to-end on synthetic multi-view renderings of objects under varying known illuminations. This architecture design enables to effectively decompose geometry and appearance, resolve the ambiguity between material and lighting, and capture the multi-modal distribution of shadows and specularity in the relit appearance. We show our sparse-view feed-forward RelitLRM offers competitive relighting results to state-of-the-art dense-view optimization-based baselines while being significantly faster. Our project page is available at: https://relit-lrm.github.io/.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.07577v1">3D Vision-Language Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+      | 💬 main paper + supplementary material
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in 3D reconstruction methods and vision-language models have propelled the development of multi-modal 3D scene understanding, which has vital applications in robotics, autonomous driving, and virtual/augmented reality. However, current multi-modal scene understanding approaches have naively embedded semantic representations into 3D reconstruction methods without striking a balance between visual and language modalities, which leads to unsatisfying semantic rasterization of translucent or reflective objects, as well as over-fitting on color modality. To alleviate these limitations, we propose a solution that adequately handles the distinct visual and semantic modalities, i.e., a 3D vision-language Gaussian splatting model for scene understanding, to put emphasis on the representation learning of language modality. We propose a novel cross-modal rasterizer, using modality fusion along with a smoothed semantic indicator for enhancing semantic rasterization. We also employ a camera-view blending technique to improve semantic consistency between existing and synthesized views, thereby effectively mitigating over-fitting. Extensive experiments demonstrate that our method achieves state-of-the-art performance in open-vocabulary semantic segmentation, surpassing existing methods by a significant margin.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.07090v3">3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+      | 💬 Project page: https://gaussiantracer.github.io/. Published at SIGGRAPH Asia 2024
+    </div>
+    <details class="paper-abstract">
+      Particle-based representations of radiance fields such as 3D Gaussian Splatting have found great success for reconstructing and re-rendering of complex scenes. Most existing methods render particles via rasterization, projecting them to screen space tiles for processing in a sorted order. This work instead considers ray tracing the particles, building a bounding volume hierarchy and casting a ray for each pixel using high-performance GPU ray tracing hardware. To efficiently handle large numbers of semi-transparent particles, we describe a specialized rendering algorithm which encapsulates particles with bounding meshes to leverage fast ray-triangle intersections, and shades batches of intersections in depth-order. The benefits of ray tracing are well-known in computer graphics: processing incoherent rays for secondary lighting effects such as shadows and reflections, rendering from highly-distorted cameras common in robotics, stochastically sampling rays, and more. With our renderer, this flexibility comes at little cost compared to rasterization. Experiments demonstrate the speed and accuracy of our approach, as well as several applications in computer graphics and vision. We further propose related improvements to the basic Gaussian representation, including a simple use of generalized kernel functions which significantly reduces particle hit counts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.00525v3">StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+      | 💬 SIGGRAPH 2024 (Journal Track); Project Page: https://r4dl.github.io/StopThePop/
+    </div>
+    <details class="paper-abstract">
+      Gaussian Splatting has emerged as a prominent model for constructing 3D representations from images across diverse domains. However, the efficiency of the 3D Gaussian Splatting rendering pipeline relies on several simplifications. Notably, reducing Gaussian to 2D splats with a single view-space depth introduces popping and blending artifacts during view rotation. Addressing this issue requires accurate per-pixel depth computation, yet a full per-pixel sort proves excessively costly compared to a global sort operation. In this paper, we present a novel hierarchical rasterization approach that systematically resorts and culls splats with minimal processing overhead. Our software rasterizer effectively eliminates popping artifacts and view inconsistencies, as demonstrated through both quantitative and qualitative measurements. Simultaneously, our method mitigates the potential for cheating view-dependent effects with popping, ensuring a more authentic representation. Despite the elimination of cheating, our approach achieves comparable quantitative results for test images, while increasing the consistency for novel view synthesis in motion. Due to its design, our hierarchical approach is only 4% slower on average than the original Gaussian Splatting. Notably, enforcing consistency enables a reduction in the number of Gaussians by approximately half with nearly identical quality and view-consistency. Consequently, rendering performance is nearly doubled, making our approach 1.6x faster than the original Gaussian Splatting, with a 50% reduction in memory requirements.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.05008v3">FlowDreamer: Exploring High Fidelity Text-to-3D Generation via Rectified Flow</a></div>
     <div class="paper-meta">
       📅 2024-10-09
@@ -36,6 +85,54 @@
     </div>
     <details class="paper-abstract">
       The field of 3D representation has experienced significant advancements, driven by the increasing demand for high-fidelity 3D models in various applications such as computer graphics, virtual reality, and autonomous systems. This review examines the development and current state of 3D representation methods, highlighting their research trajectories, innovations, strength and weakness. Key techniques such as Voxel Grid, Point Cloud, Mesh, Signed Distance Function (SDF), Neural Radiance Field (NeRF), 3D Gaussian Splatting, Tri-Plane, and Deep Marching Tetrahedra (DMTet) are reviewed. The review also introduces essential datasets that have been pivotal in advancing the field, highlighting their characteristics and impact on research progress. Finally, we explore potential research directions that hold promise for further expanding the capabilities and applications of 3D representation methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.17624v2">HGS-Planner: Hierarchical Planning Framework for Active Scene Reconstruction Using 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-10-09
+    </div>
+    <details class="paper-abstract">
+      In complex missions such as search and rescue,robots must make intelligent decisions in unknown environments, relying on their ability to perceive and understand their surroundings. High-quality and real-time reconstruction enhances situational awareness and is crucial for intelligent robotics. Traditional methods often struggle with poor scene representation or are too slow for real-time use. Inspired by the efficacy of 3D Gaussian Splatting (3DGS), we propose a hierarchical planning framework for fast and high-fidelity active reconstruction. Our method evaluates completion and quality gain to adaptively guide reconstruction, integrating global and local planning for efficiency. Experiments in simulated and real-world environments show our approach outperforms existing real-time methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.01053v2">HAHA: Highly Articulated Gaussian Human Avatars with Textured Mesh Prior</a></div>
+    <div class="paper-meta">
+      📅 2024-10-09
+    </div>
+    <details class="paper-abstract">
+      We present HAHA - a novel approach for animatable human avatar generation from monocular input videos. The proposed method relies on learning the trade-off between the use of Gaussian splatting and a textured mesh for efficient and high fidelity rendering. We demonstrate its efficiency to animate and render full-body human avatars controlled via the SMPL-X parametric model. Our model learns to apply Gaussian splatting only in areas of the SMPL-X mesh where it is necessary, like hair and out-of-mesh clothing. This results in a minimal number of Gaussians being used to represent the full avatar, and reduced rendering artifacts. This allows us to handle the animation of small body parts such as fingers that are traditionally disregarded. We demonstrate the effectiveness of our approach on two open datasets: SnapshotPeople and X-Humans. Our method demonstrates on par reconstruction quality to the state-of-the-art on SnapshotPeople, while using less than a third of Gaussians. HAHA outperforms previous state-of-the-art on novel poses from X-Humans both quantitatively and qualitatively.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.00525v3">StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering</a></div>
+    <div class="paper-meta">
+      📅 2024-10-09
+      | 💬 SIGGRAPH 2024 (Journal Track); Project Page: https://r4dl.github.io/StopThePop/
+    </div>
+    <details class="paper-abstract">
+      Gaussian Splatting has emerged as a prominent model for constructing 3D representations from images across diverse domains. However, the efficiency of the 3D Gaussian Splatting rendering pipeline relies on several simplifications. Notably, reducing Gaussian to 2D splats with a single view-space depth introduces popping and blending artifacts during view rotation. Addressing this issue requires accurate per-pixel depth computation, yet a full per-pixel sort proves excessively costly compared to a global sort operation. In this paper, we present a novel hierarchical rasterization approach that systematically resorts and culls splats with minimal processing overhead. Our software rasterizer effectively eliminates popping artifacts and view inconsistencies, as demonstrated through both quantitative and qualitative measurements. Simultaneously, our method mitigates the potential for cheating view-dependent effects with popping, ensuring a more authentic representation. Despite the elimination of cheating, our approach achieves comparable quantitative results for test images, while increasing the consistency for novel view synthesis in motion. Due to its design, our hierarchical approach is only 4% slower on average than the original Gaussian Splatting. Notably, enforcing consistency enables a reduction in the number of Gaussians by approximately half with nearly identical quality and view-consistency. Consequently, rendering performance is nearly doubled, making our approach 1.6x faster than the original Gaussian Splatting, with a 50% reduction in memory requirements.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.12518v2">Hi-SLAM: Scaling-up Semantics in SLAM with a Hierarchically Categorical Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-10-09
+      | 💬 6 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      We propose Hi-SLAM, a semantic 3D Gaussian Splatting SLAM method featuring a novel hierarchical categorical representation, which enables accurate global 3D semantic mapping, scaling-up capability, and explicit semantic label prediction in the 3D world. The parameter usage in semantic SLAM systems increases significantly with the growing complexity of the environment, making it particularly challenging and costly for scene understanding. To address this problem, we introduce a novel hierarchical representation that encodes semantic information in a compact form into 3D Gaussian Splatting, leveraging the capabilities of large language models (LLMs). We further introduce a novel semantic loss designed to optimize hierarchical semantic information through both inter-level and cross-level optimization. Furthermore, we enhance the whole SLAM system, resulting in improved tracking and mapping performance. Our Hi-SLAM outperforms existing dense SLAM methods in both mapping and tracking accuracy, while achieving a 2x operation speed-up. Additionally, it exhibits competitive performance in rendering semantic segmentation in small synthetic scenes, with significantly reduced storage and training time requirements. Rendering FPS impressively reaches 2,000 with semantic information and 3,000 without it. Most notably, it showcases the capability of handling the complex real-world scene with more than 500 semantic classes, highlighting its valuable scaling-up capability.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.06756v1">DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation</a></div>
+    <div class="paper-meta">
+      📅 2024-10-09
+      | 💬 NeurIPS 2024
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in 2D/3D generative techniques have facilitated the generation of dynamic 3D objects from monocular videos. Previous methods mainly rely on the implicit neural radiance fields (NeRF) or explicit Gaussian Splatting as the underlying representation, and struggle to achieve satisfactory spatial-temporal consistency and surface appearance. Drawing inspiration from modern 3D animation pipelines, we introduce DreamMesh4D, a novel framework combining mesh representation with geometric skinning technique to generate high-quality 4D object from a monocular video. Instead of utilizing classical texture map for appearance, we bind Gaussian splats to triangle face of mesh for differentiable optimization of both the texture and mesh vertices. In particular, DreamMesh4D begins with a coarse mesh obtained through an image-to-3D generation procedure. Sparse points are then uniformly sampled across the mesh surface, and are used to build a deformation graph to drive the motion of the 3D object for the sake of computational efficiency and providing additional constraint. For each step, transformations of sparse control points are predicted using a deformation network, and the mesh vertices as well as the surface Gaussians are deformed via a novel geometric skinning algorithm, which is a hybrid approach combining LBS (linear blending skinning) and DQS (dual-quaternion skinning), mitigating drawbacks associated with both approaches. The static surface Gaussians and mesh vertices as well as the deformation network are learned via reference view photometric loss, score distillation loss as well as other regularizers in a two-stage manner. Extensive experiments demonstrate superior performance of our method. Furthermore, our method is compatible with modern graphic pipelines, showcasing its potential in the 3D gaming and film industry.
     </details>
 </div>
 <div class="paper-card">
@@ -73,6 +170,15 @@
     </div>
     <details class="paper-abstract">
       Accurate and efficient 3D reconstruction of trees is crucial for forest resource assessments and management. Close-Range Photogrammetry (CRP) is commonly used for reconstructing forest scenes but faces challenges like low efficiency and poor quality. Recently, Novel View Synthesis (NVS) technologies, including Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have shown promise for 3D plant reconstruction with limited images. However, existing research mainly focuses on small plants in orchards or individual trees, leaving uncertainty regarding their application in larger, complex forest stands. In this study, we collected sequential images of forest plots with varying complexity and performed dense reconstruction using NeRF and 3DGS. The resulting point clouds were compared with those from photogrammetry and laser scanning. Results indicate that NVS methods significantly enhance reconstruction efficiency. Photogrammetry struggles with complex stands, leading to point clouds with excessive canopy noise and incorrectly reconstructed trees, such as duplicated trunks. NeRF, while better for canopy regions, may produce errors in ground areas with limited views. The 3DGS method generates sparser point clouds, particularly in trunk areas, affecting diameter at breast height (DBH) accuracy. All three methods can extract tree height information, with NeRF yielding the highest accuracy; however, photogrammetry remains superior for DBH accuracy. These findings suggest that NVS methods have significant potential for 3D reconstruction of forest stands, offering valuable support for complex forest resource inventory and visualization tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.04646v1">Mode-GS: Monocular Depth Guided Anchored 3D Gaussian Splatting for Robust Ground-View Scene Rendering</a></div>
+    <div class="paper-meta">
+      📅 2024-10-08
+    </div>
+    <details class="paper-abstract">
+      We present a novel-view rendering algorithm, Mode-GS, for ground-robot trajectory datasets. Our approach is based on using anchored Gaussian splats, which are designed to overcome the limitations of existing 3D Gaussian splatting algorithms. Prior neural rendering methods suffer from severe splat drift due to scene complexity and insufficient multi-view observation, and can fail to fix splats on the true geometry in ground-robot datasets. Our method integrates pixel-aligned anchors from monocular depths and generates Gaussian splats around these anchors using residual-form Gaussian decoders. To address the inherent scale ambiguity of monocular depth, we parameterize anchors with per-view depth-scales and employ scale-consistent depth loss for online scale calibration. Our method results in improved rendering performance, based on PSNR, SSIM, and LPIPS metrics, in ground scenes with free trajectory patterns, and achieves state-of-the-art rendering performance on the R3LIVE odometry dataset and the Tanks and Temples dataset.
     </details>
 </div>
 <div class="paper-card">
@@ -176,6 +282,15 @@
     </div>
     <details class="paper-abstract">
       Recently, 3D Gaussian Splatting has emerged as a promising approach for modeling 3D scenes using mixtures of Gaussians. The predominant optimization method for these models relies on backpropagating gradients through a differentiable rendering pipeline, which struggles with catastrophic forgetting when dealing with continuous streams of data. To address this limitation, we propose Variational Bayes Gaussian Splatting (VBGS), a novel approach that frames training a Gaussian splat as variational inference over model parameters. By leveraging the conjugacy properties of multivariate Gaussians, we derive a closed-form variational update rule, allowing efficient updates from partial, sequential observations without the need for replay buffers. Our experiments show that VBGS not only matches state-of-the-art performance on static datasets, but also enables continual learning from sequentially streamed 2D and 3D data, drastically improving performance in this setting.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.02764v1">Flash-Splat: 3D Reflection Removal with Flash Cues and Gaussian Splats</a></div>
+    <div class="paper-meta">
+      📅 2024-10-04
+    </div>
+    <details class="paper-abstract">
+      We introduce a simple yet effective approach for separating transmitted and reflected light. Our key insight is that the powerful novel view synthesis capabilities provided by modern inverse rendering methods (e.g.,~3D Gaussian splatting) allow one to perform flash/no-flash reflection separation using unpaired measurements -- this relaxation dramatically simplifies image acquisition over conventional paired flash/no-flash reflection separation methods. Through extensive real-world experiments, we demonstrate our method, Flash-Splat, accurately reconstructs both transmitted and reflected scenes in 3D. Our method outperforms existing 3D reflection separation methods, which do not leverage illumination control, by a large margin. Our project webpage is at https://flash-splat.github.io/.
     </details>
 </div>
 <div class="paper-card">
@@ -340,5 +455,14 @@
     </div>
     <details class="paper-abstract">
       Place recognition is a crucial module to ensure autonomous vehicles obtain usable localization information in GPS-denied environments. In recent years, multimodal place recognition methods have gained increasing attention due to their ability to overcome the weaknesses of unimodal sensor systems by leveraging complementary information from different modalities. However, challenges arise from the necessity of harmonizing data across modalities and exploiting the spatio-temporal correlations between them sufficiently. In this paper, we propose a 3D Gaussian Splatting-based multimodal place recognition neural network dubbed GSPR. It explicitly combines multi-view RGB images and LiDAR point clouds into a spatio-temporally unified scene representation with the proposed Multimodal Gaussian Splatting. A network composed of 3D graph convolution and transformer is designed to extract high-level spatio-temporal features and global descriptors from the Gaussian scenes for place recognition. We evaluate our method on the nuScenes dataset, and the experimental results demonstrate that our method can effectively leverage complementary strengths of both multi-view cameras and LiDAR, achieving SOTA place recognition performance while maintaining solid generalization ability. Our open-source code is available at https://github.com/QiZS-BIT/GSPR.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2409.20111v1">Robust Gaussian Splatting SLAM by Leveraging Loop Closure</a></div>
+    <div class="paper-meta">
+      📅 2024-10-01
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting algorithms excel in novel view rendering applications and have been adapted to extend the capabilities of traditional SLAM systems. However, current Gaussian Splatting SLAM methods, designed mainly for hand-held RGB or RGB-D sensors, struggle with tracking drifts when used with rotating RGB-D camera setups. In this paper, we propose a robust Gaussian Splatting SLAM architecture that utilizes inputs from rotating multiple RGB-D cameras to achieve accurate localization and photorealistic rendering performance. The carefully designed Gaussian Splatting Loop Closure module effectively addresses the issue of accumulated tracking and mapping errors found in conventional Gaussian Splatting SLAM systems. First, each Gaussian is associated with an anchor frame and categorized as historical or novel based on its timestamp. By rendering different types of Gaussians at the same viewpoint, the proposed loop detection strategy considers both co-visibility relationships and distinct rendering outcomes. Furthermore, a loop closure optimization approach is proposed to remove camera pose drift and maintain the high quality of 3D Gaussian models. The approach uses a lightweight pose graph optimization algorithm to correct pose drift and updates Gaussians based on the optimized poses. Additionally, a bundle adjustment scheme further refines camera poses using photometric and geometric constraints, ultimately enhancing the global consistency of scenarios. Quantitative and qualitative evaluations on both synthetic and real-world datasets demonstrate that our method outperforms state-of-the-art methods in camera pose estimation and novel view rendering tasks. The code will be open-sourced for the community.
     </details>
 </div>

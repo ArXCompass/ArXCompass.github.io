@@ -9,6 +9,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2210.13589v1">Embodied, Situated, and Grounded Intelligence: Implications for AI</a></div>
+    <div class="paper-meta">
+      📅 2022-10-26
+      | 💬 38 pages, workshop report
+    </div>
+    <details class="paper-abstract">
+      In April of 2022, the Santa Fe Institute hosted a workshop on embodied, situated, and grounded intelligence as part of the Institute's Foundations of Intelligence project. The workshop brought together computer scientists, psychologists, philosophers, social scientists, and others to discuss the science of embodiment and related issues in human intelligence, and its implications for building robust, human-level AI. In this report, we summarize each of the talks and the subsequent discussions. We also draw out a number of key themes and identify important frontiers for future research.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2210.12485v1">DANLI: Deliberative Agent for Following Natural Language Instructions</a></div>
     <div class="paper-meta">
       📅 2022-10-22

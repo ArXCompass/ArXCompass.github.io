@@ -13,6 +13,44 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.11930v1">A Critical Study of What Code-LLMs (Do Not) Learn</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+    </div>
+    <details class="paper-abstract">
+      Large Language Models trained on code corpora (code-LLMs) have demonstrated impressive performance in various coding assistance tasks. However, despite their increased size and training dataset, code-LLMs still have limitations such as suggesting codes with syntactic errors, variable misuse etc. Some studies argue that code-LLMs perform well on coding tasks because they use self-attention and hidden representations to encode relations among input tokens. However, previous works have not studied what code properties are not encoded by code-LLMs. In this paper, we conduct a fine-grained analysis of attention maps and hidden representations of code-LLMs. Our study indicates that code-LLMs only encode relations among specific subsets of input tokens. Specifically, by categorizing input tokens into syntactic tokens and identifiers, we found that models encode relations among syntactic tokens and among identifiers, but they fail to encode relations between syntactic tokens and identifiers. We also found that fine-tuned models encode these relations poorly compared to their pre-trained counterparts. Additionally, larger models with billions of parameters encode significantly less information about code than models with only a few hundred million parameters.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.01964v3">Position: Understanding LLMs Requires More Than Statistical Generalization</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+      | 💬 Accepted as a position paper at ICML2024, Code: https://github.com/rpatrik96/llm-non-identifiability
+    </div>
+    <details class="paper-abstract">
+      The last decade has seen blossoming research in deep learning theory attempting to answer, "Why does deep learning generalize?" A powerful shift in perspective precipitated this progress: the study of overparametrized models in the interpolation regime. In this paper, we argue that another perspective shift is due, since some of the desirable qualities of LLMs are not a consequence of good statistical generalization and require a separate theoretical explanation. Our core argument relies on the observation that AR probabilistic models are inherently non-identifiable: models zero or near-zero KL divergence apart -- thus, equivalent test loss -- can exhibit markedly different behaviors. We support our position with mathematical examples and empirical observations, illustrating why non-identifiability has practical relevance through three case studies: (1) the non-identifiability of zero-shot rule extrapolation; (2) the approximate non-identifiability of in-context learning; and (3) the non-identifiability of fine-tunability. We review promising research directions focusing on LLM-relevant generalization measures, transferability, and inductive biases.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16891v1">Cultural Value Differences of LLMs: Prompt, Language, and Model Size</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+      | 💬 20 pages
+    </div>
+    <details class="paper-abstract">
+      Our study aims to identify behavior patterns in cultural values exhibited by large language models (LLMs). The studied variants include question ordering, prompting language, and model size. Our experiments reveal that each tested LLM can efficiently behave with different cultural values. More interestingly: (i) LLMs exhibit relatively consistent cultural values when presented with prompts in a single language. (ii) The prompting language e.g., Chinese or English, can influence the expression of cultural values. The same question can elicit divergent cultural values when the same LLM is queried in a different language. (iii) Differences in sizes of the same model (e.g., Llama2-7B vs 13B vs 70B) have a more significant impact on their demonstrated cultural values than model differences (e.g., Llama2 vs Mixtral). Our experiments reveal that query language and model size of LLM are the main factors resulting in cultural value differences.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.11424v1">Evaluating the Efficacy of Open-Source LLMs in Enterprise-Specific RAG Systems: A Comparative Study of Performance and Scalability</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+    </div>
+    <details class="paper-abstract">
+      This paper presents an analysis of open-source large language models (LLMs) and their application in Retrieval-Augmented Generation (RAG) tasks, specific for enterprise-specific data sets scraped from their websites. With the increasing reliance on LLMs in natural language processing, it is crucial to evaluate their performance, accessibility, and integration within specific organizational contexts. This study examines various open-source LLMs, explores their integration into RAG frameworks using enterprise-specific data, and assesses the performance of different open-source embeddings in enhancing the retrieval and generation process. Our findings indicate that open-source LLMs, combined with effective embedding techniques, can significantly improve the accuracy and efficiency of RAG systems, offering a viable alternative to proprietary solutions for enterprises.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.10811v2">Quantifying the Persona Effect in LLM Simulations</a></div>
     <div class="paper-meta">
       📅 2024-06-17
@@ -526,6 +564,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.01817v3">LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks</a></div>
+    <div class="paper-meta">
+      📅 2024-06-13
+    </div>
+    <details class="paper-abstract">
+      There is considerable confusion about the role of Large Language Models (LLMs) in planning and reasoning tasks. On one side are over-optimistic claims that LLMs can indeed do these tasks with just the right prompting or self-verification strategies. On the other side are perhaps over-pessimistic claims that all that LLMs are good for in planning/reasoning tasks are as mere translators of the problem specification from one syntactic format to another, and ship the problem off to external symbolic solvers. In this position paper, we take the view that both these extremes are misguided. We argue that auto-regressive LLMs cannot, by themselves, do planning or self-verification (which is after all a form of reasoning), and shed some light on the reasons for misunderstandings in the literature. We will also argue that LLMs should be viewed as universal approximate knowledge sources that have much more meaningful roles to play in planning/reasoning tasks beyond simple front-end/back-end format translators. We present a vision of {\bf LLM-Modulo Frameworks} that combine the strengths of LLMs with external model-based verifiers in a tighter bi-directional interaction regime. We will show how the models driving the external verifiers themselves can be acquired with the help of LLMs. We will also argue that rather than simply pipelining LLMs and symbolic components, this LLM-Modulo Framework provides a better neuro-symbolic approach that offers tighter integration between LLMs and symbolic components, and allows extending the scope of model-based planning/reasoning regimes towards more flexible knowledge, problem and preference specifications.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.10290v1">MobileAIBench: Benchmarking LLMs and LMMs for On-Device Use Cases</a></div>
     <div class="paper-meta">
       📅 2024-06-12
@@ -779,6 +826,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2402.11457v2">When Do LLMs Need Retrieval Augmentation? Mitigating LLMs' Overconfidence Helps Retrieval Augmentation</a></div>
+    <div class="paper-meta">
+      📅 2024-06-12
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have been found to have difficulty knowing they do not possess certain knowledge and tend to provide specious answers in such cases. Retrieval Augmentation (RA) has been extensively studied to mitigate LLMs' hallucinations. However, due to the extra overhead and unassured quality of retrieval, it may not be optimal to conduct RA all the time. A straightforward idea is to only conduct retrieval when LLMs are uncertain about a question. This motivates us to enhance the LLMs' ability to perceive their knowledge boundaries to help RA. In this paper, we first quantitatively measure LLMs' such ability and confirm their overconfidence. Then, we study how LLMs' certainty about a question correlates with their dependence on external retrieved information. We propose several methods to enhance LLMs' perception of knowledge boundaries and show that they are effective in reducing overconfidence. Additionally, equipped with these methods, LLMs can achieve comparable or even better performance of RA with much fewer retrieval calls.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.02107v4">Instances Need More Care: Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance</a></div>
     <div class="paper-meta">
       📅 2024-06-11
@@ -902,62 +958,5 @@
     </div>
     <details class="paper-abstract">
       Multimodal Large Language Models (MLLMs) have gained significant attention recently, showing remarkable potential in artificial general intelligence. However, assessing the utility of MLLMs presents considerable challenges, primarily due to the absence of multimodal benchmarks that align with human preferences. Drawing inspiration from the concept of LLM-as-a-Judge within LLMs, this paper introduces a novel benchmark, termed MLLM-as-a-Judge, to assess the ability of MLLMs in assisting judges across diverse modalities, encompassing three distinct tasks: Scoring Evaluation, Pair Comparison, and Batch Ranking. Our study reveals that, while MLLMs demonstrate remarkable human-like discernment in Pair Comparison, there is a significant divergence from human preferences in Scoring Evaluation and Batch Ranking. Furthermore, a closer examination reveals persistent challenges in the judgment capacities of LLMs, including diverse biases, hallucinatory responses, and inconsistencies in judgment, even in advanced models such as GPT-4V. These findings emphasize the pressing need for enhancements and further research efforts to be undertaken before regarding MLLMs as fully reliable evaluators. In light of this, we advocate for additional efforts dedicated to supporting the continuous development within the domain of MLLM functioning as judges. The code and dataset are publicly available at our project homepage: \url{https://mllm-judge.github.io/}.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06950v1">A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 26 pages, 18 figures
-    </div>
-    <details class="paper-abstract">
-      This paper focuses on the task of hallucination detection, which aims to determine the truthfulness of LLM-generated statements. To address this problem, a popular class of methods utilize the LLM's self-consistencies in its beliefs in a set of logically related augmented statements generated by the LLM, which does not require external knowledge databases and can work with both white-box and black-box LLMs. However, in many existing approaches, the augmented statements tend to be very monotone and unstructured, which makes it difficult to integrate meaningful information from the LLM beliefs in these statements. Also, many methods work with the binarized version of the LLM's belief, instead of the continuous version, which significantly loses information. To overcome these limitations, in this paper, we propose Belief Tree Propagation (BTProp), a probabilistic framework for LLM hallucination detection. BTProp introduces a belief tree of logically related statements by recursively decomposing a parent statement into child statements with three decomposition strategies, and builds a hidden Markov tree model to integrate the LLM's belief scores in these statements in a principled way. Experiment results show that our method improves baselines by 3%-9% (evaluated by AUROC and AUC-PR) on multiple hallucination detection benchmarks. Code is available at https://github.com/UCSB-NLP-Chang/BTProp.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06918v1">Towards more realistic evaluation of LLM-based code generation: an experimental study and beyond</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      To evaluate the code generation capabilities of Large Language Models (LLMs) in complex real-world software development scenarios, many evaluation approaches have been developed. They typically leverage contextual code from the latest version of a project to facilitate LLMs in accurately generating the desired function. However, such evaluation approaches fail to consider the dynamic evolution of software projects over time, which we refer to as evolving-ignored situation, leading to issues of future context leakage and useful context missing. This in turn results in inaccurate evaluation of LLMs' performance. In this paper, we conduct an empirical study to deeply understand LLMs' code generation performance within settings that reflect the evolving nature of software development. To achieve this, we first construct an evolving-aware repository-level code generation dataset, namely HumanEvo, equipped with an automated execution-based evaluation tool. Second, we manually categorize HumanEvo according to dependency levels to more comprehensively analyze the model's performance in generating functions with different dependency levels. Third, we conduct extensive experiments on HumanEvo with seven representative and diverse LLMs to verify the effectiveness of the proposed benchmark. We obtain many important findings through our experimental study. For example, we find that previous evolving-ignored evaluation approaches lead to inflated performance of the LLMs, ranging from 10.0% to 61.1%. Based on the findings, we give actionable suggestions on more realistic evaluation of LLMs on code generation. We also build a shared evolving-aware code generation toolbox to facilitate future research. Replication package including source code, datasets and appendix is available at https://github.com/DeepSoftwareAnalytics/EvoEval.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.05955v2">Turbo Sparse: Achieving LLM SOTA Performance with Minimal Activated Parameters</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      Exploiting activation sparsity is a promising approach to significantly accelerating the inference process of large language models (LLMs) without compromising performance. However, activation sparsity is determined by activation functions, and commonly used ones like SwiGLU and GeGLU exhibit limited sparsity. Simply replacing these functions with ReLU fails to achieve sufficient sparsity. Moreover, inadequate training data can further increase the risk of performance degradation. To address these challenges, we propose a novel dReLU function, which is designed to improve LLM activation sparsity, along with a high-quality training data mixture ratio to facilitate effective sparsification. Additionally, we leverage sparse activation patterns within the Feed-Forward Network (FFN) experts of Mixture-of-Experts (MoE) models to further boost efficiency. By applying our neuron sparsification method to the Mistral and Mixtral models, only 2.5 billion and 4.3 billion parameters are activated per inference iteration, respectively, while achieving even more powerful model performance. Evaluation results demonstrate that this sparsity achieves a 2-5x decoding speedup. Remarkably, on mobile phones, our TurboSparse-Mixtral-47B achieves an inference speed of 11 tokens per second. Our models are available at \url{https://huggingface.co/PowerInfer}
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06864v1">Validating LLM-Generated Programs with Metamorphic Prompt Testing</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      The latest paradigm shift in software development brings in the innovation and automation afforded by Large Language Models (LLMs), showcased by Generative Pre-trained Transformer (GPT), which has shown remarkable capacity to generate code autonomously, significantly reducing the manual effort required for various programming tasks. Although, the potential benefits of LLM-generated code are vast, most notably in efficiency and rapid prototyping, as LLMs become increasingly integrated into the software development lifecycle and hence the supply chain, complex and multifaceted challenges arise as the code generated from these language models carry profound questions on quality and correctness. Research is required to comprehensively explore these critical concerns surrounding LLM-generated code. In this paper, we propose a novel solution called metamorphic prompt testing to address these challenges. Our intuitive observation is that intrinsic consistency always exists among correct code pieces but may not exist among flawed code pieces, so we can detect flaws in the code by detecting inconsistencies. Therefore, we can vary a given prompt to multiple prompts with paraphrasing, and to ask the LLM to acquire multiple versions of generated code, so that we can validate whether the semantic relations still hold in the acquired code through cross-validation. Our evaluation on HumanEval shows that metamorphic prompt testing is able to detect 75 percent of the erroneous programs generated by GPT-4, with a false positive rate of 8.6 percent.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06863v1">Ollabench: Evaluating LLMs' Reasoning for Human-centric Interdependent Cybersecurity</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 12 pages, 7 figures, 2 tables The final conference/journal version may have significantly more content updates
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have the potential to enhance Agent-Based Modeling by better representing complex interdependent cybersecurity systems, improving cybersecurity threat modeling and risk management. However, evaluating LLMs in this context is crucial for legal compliance and effective application development. Existing LLM evaluation frameworks often overlook the human factor and cognitive computing capabilities essential for interdependent cybersecurity. To address this gap, I propose OllaBench, a novel evaluation framework that assesses LLMs' accuracy, wastefulness, and consistency in answering scenario-based information security compliance and non-compliance questions. OllaBench is built on a foundation of 24 cognitive behavioral theories and empirical evidence from 38 peer-reviewed papers. OllaBench was used to evaluate 21 LLMs, including both open-weight and commercial models from OpenAI, Anthropic, Google, Microsoft, Meta and so on. The results reveal that while commercial LLMs have the highest overall accuracy scores, there is significant room for improvement. Smaller low-resolution open-weight LLMs are not far behind in performance, and there are significant differences in token efficiency and consistency among the evaluated models. OllaBench provides a user-friendly interface and supports a wide range of LLM platforms, making it a valuable tool for researchers and solution developers in the field of human-centric interdependent cybersecurity and beyond.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.03103v2">Learning from Students: Applying t-Distributions to Explore Accurate and Efficient Formats for LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-06-10
-      | 💬 Accepted to ICML 2024
-    </div>
-    <details class="paper-abstract">
-      The increasing size of large language models (LLMs) traditionally requires low-precision integer formats to meet strict latency and power demands. Yet recently, alternative formats such as Normal Float (NF4) have increased model accuracy at the cost of increased chip area. In this work, we first conduct a large-scale analysis of LLM weights and activations across 30 networks and conclude that most distributions follow a Student's t-distribution. We then derive a new theoretically optimal format, Student Float (SF4), that improves over NF4 across modern LLMs, for example increasing the average accuracy on LLaMA2-7B by 0.76% across tasks. Using this format as a high-accuracy reference, we then propose augmenting E2M1 with two variants of supernormal support for higher model accuracy. Finally, we explore the quality and efficiency frontier across 11 datatypes by evaluating their model accuracy and hardware complexity. We discover a Pareto curve composed of INT4, E2M1, and E2M1 with supernormal support, which offers a continuous tradeoff between model accuracy and chip area. For example, E2M1 with supernormal support increases the accuracy of Phi-2 by up to 2.19% with 1.22% area overhead, enabling more LLM-based applications to be run at four bits. The supporting code is hosted at https://github.com/cornell-zhang/llm-datatypes.
     </details>
 </div>

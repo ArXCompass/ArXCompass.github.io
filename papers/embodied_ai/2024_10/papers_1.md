@@ -37,6 +37,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.14590v1">Embodied Exploration of Latent Spaces and Explainable AI</a></div>
+    <div class="paper-meta">
+      📅 2024-10-21
+      | 💬 In Proceedings of Explainable AI for the Arts Workshop 2024 (XAIxArts 2024) arXiv:2406.14485
+    </div>
+    <details class="paper-abstract">
+      In this paper, we explore how performers' embodied interactions with a Neural Audio Synthesis model allow the exploration of the latent space of such a model, mediated through movements sensed by e-textiles. We provide background and context for the performance, highlighting the potential of embodied practices to contribute to developing explainable AI systems. By integrating various artistic domains with explainable AI principles, our interdisciplinary exploration contributes to the discourse on art, embodiment, and AI, offering insights into intuitive approaches found through bodily expression.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.08588v2">Octopus: Embodied Vision-Language Programmer from Environmental Feedback</a></div>
     <div class="paper-meta">
       📅 2024-10-20
@@ -54,6 +64,15 @@
     </div>
     <details class="paper-abstract">
       Large language models (LLMs) have grown in popularity due to their natural language interface and pre trained knowledge, leading to rapidly increasing success in question-answering (QA) tasks. More recently, multi-agent systems with LLM-based agents (Multi-LLM) have been utilized increasingly more for QA. In these scenarios, the models may each answer the question and reach a consensus or each model is specialized to answer different domain questions. However, most prior work dealing with Multi-LLM QA has focused on scenarios where the models are asked in a zero-shot manner or are given information sources to extract the answer. For question answering of an unknown environment, embodied exploration of the environment is first needed to answer the question. This skill is necessary for personalizing embodied AI to environments such as households. There is a lack of insight into whether a Multi-LLM system can handle question-answering based on observations from embodied exploration. In this work, we address this gap by investigating the use of Multi-Embodied LLM Explorers (MELE) for QA in an unknown environment. Multiple LLM-based agents independently explore and then answer queries about a household environment. We analyze different aggregation methods to generate a single, final answer for each query: debating, majority voting, and training a central answer module (CAM). Using CAM, we observe a $46\%$ higher accuracy compared against the other non-learning-based aggregation methods. We provide code and the query dataset for further research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.13407v1">BestMan: A Modular Mobile Manipulator Platform for Embodied AI with Unified Simulation-Hardware APIs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-18
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (Embodied AI) emphasizes agents' ability to perceive, understand, and act in physical environments. Simulation platforms play a crucial role in advancing this field by enabling the validation and optimization of algorithms. However, existing platforms face challenges such as multilevel technical integration complexity, insufficient modularity, interface heterogeneity, and adaptation to diverse hardware. We present BestMan, a simulation platform based on PyBullet, designed to address these issues. BestMan introduces an integrated multilevel skill chain for seamless coordination across perception, planning, and control; a highly modular architecture for flexible algorithm integration; unified interfaces for smooth simulation-to-reality transfer; and a hardware-agnostic approach for adapting to various mobile manipulator configurations. These features collectively simplify development and enhance platform expandability, making BestMan a valuable tool for Embodied AI research.
     </details>
 </div>
 <div class="paper-card">
@@ -85,6 +104,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.11623v1">VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-10-16
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in Multi-modal Large Language Models (MLLMs) have opened new avenues for applications in Embodied AI. Building on previous work, EgoThink, we introduce VidEgoThink, a comprehensive benchmark for evaluating egocentric video understanding capabilities. To bridge the gap between MLLMs and low-level control in Embodied AI, we design four key interrelated tasks: video question-answering, hierarchy planning, visual grounding and reward modeling. To minimize manual annotation costs, we develop an automatic data generation pipeline based on the Ego4D dataset, leveraging the prior knowledge and multimodal capabilities of GPT-4o. Three human annotators then filter the generated data to ensure diversity and quality, resulting in the VidEgoThink benchmark. We conduct extensive experiments with three types of models: API-based MLLMs, open-source image-based MLLMs, and open-source video-based MLLMs. Experimental results indicate that all MLLMs, including GPT-4o, perform poorly across all tasks related to egocentric video understanding. These findings suggest that foundation models still require significant advancements to be effectively applied to first-person scenarios in Embodied AI. In conclusion, VidEgoThink reflects a research trend towards employing MLLMs for egocentric vision, akin to human capabilities, enabling active observation and interaction in the complex real-world environments.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.11623v1">VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-10-15
@@ -100,6 +128,26 @@
     </div>
     <details class="paper-abstract">
       Recent advances in diffusion models have opened new avenues for research into embodied AI agents and robotics. Despite significant achievements in complex robotic locomotion and skills, mobile manipulation-a capability that requires the coordination of navigation and manipulation-remains a challenge for generative AI techniques. This is primarily due to the high-dimensional action space, extended motion trajectories, and interactions with the surrounding environment. In this paper, we introduce M2Diffuser, a diffusion-based, scene-conditioned generative model that directly generates coordinated and efficient whole-body motion trajectories for mobile manipulation based on robot-centric 3D scans. M2Diffuser first learns trajectory-level distributions from mobile manipulation trajectories provided by an expert planner. Crucially, it incorporates an optimization module that can flexibly accommodate physical constraints and task objectives, modeled as cost and energy functions, during the inference process. This enables the reduction of physical violations and execution errors at each denoising step in a fully differentiable manner. Through benchmarking on three types of mobile manipulation tasks across over 20 scenes, we demonstrate that M2Diffuser outperforms state-of-the-art neural planners and successfully transfers the generated trajectories to a real-world robot. Our evaluations underscore the potential of generative AI to enhance the generalization of traditional planning and learning-based robotic methods, while also highlighting the critical role of enforcing physical constraints for safe and robust execution.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.09054v1">Circuits and Systems for Embodied AI: Exploring uJ Multi-Modal Perception for Nano-UAVs on the Kraken Shield</a></div>
+    <div class="paper-meta">
+      📅 2024-10-15
+      | 💬 5 pages, 5 figures
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (AI) requires pushing complex multi-modal models to the extreme edge for time-constrained tasks such as autonomous navigation of robots and vehicles. On small form-factor devices, e.g., nano-sized unmanned aerial vehicles (UAVs), such challenges are exacerbated by stringent constraints on energy efficiency and weight. In this paper, we explore embodied multi-modal AI-based perception for Nano-UAVs with the Kraken shield, a 7g multi-sensor (frame-based and event-based imagers) board based on Kraken, a 22 nm SoC featuring multiple acceleration engines for multi-modal event and frame-based inference based on spiking (SNN) and ternary (TNN) neural networks, respectively. Kraken can execute SNN real-time inference for depth estimation at 1.02k inf/s, 18 μJ/inf, TNN real-time inference for object classification at 10k inf/s, 6 μJ/inf, and real-time inference for obstacle avoidance at 221 frame/s, 750 μJ/inf.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.08725v2">MetaUrban: An Embodied AI Simulation Platform for Urban Micromobility</a></div>
+    <div class="paper-meta">
+      📅 2024-10-14
+      | 💬 Technical report. Project page: https://metadriverse.github.io/metaurban/
+    </div>
+    <details class="paper-abstract">
+      Public urban spaces like streetscapes and plazas serve residents and accommodate social life in all its vibrant variations. Recent advances in Robotics and Embodied AI make public urban spaces no longer exclusive to humans. Food delivery bots and electric wheelchairs have started sharing sidewalks with pedestrians, while robot dogs and humanoids have recently emerged in the street. Micromobility enabled by AI for short-distance travel in public urban spaces plays a crucial component in the future transportation system. Ensuring the generalizability and safety of AI models maneuvering mobile machines is essential. In this work, we present MetaUrban, a compositional simulation platform for the AI-driven urban micromobility research. MetaUrban can construct an infinite number of interactive urban scenes from compositional elements, covering a vast array of ground plans, object placements, pedestrians, vulnerable road users, and other mobile agents' appearances and dynamics. We design point navigation and social navigation tasks as the pilot study using MetaUrban for urban micromobility research and establish various baselines of Reinforcement Learning and Imitation Learning. We conduct extensive evaluation across mobile machines, demonstrating that heterogeneous mechanical structures significantly influence the learning and execution of AI policies. We perform a thorough ablation study, showing that the compositional nature of the simulated environments can substantially improve the generalizability and safety of the trained mobile agents. MetaUrban will be made publicly available to provide research opportunities and foster safe and trustworthy embodied AI and micromobility in cities. The code and dataset will be publicly available.
     </details>
 </div>
 <div class="paper-card">
@@ -142,6 +190,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.05756v1">Learning the Generalizable Manipulation Skills on Soft-body Tasks via Guided Self-attention Behavior Cloning Policy</a></div>
+    <div class="paper-meta">
+      📅 2024-10-10
+    </div>
+    <details class="paper-abstract">
+      Embodied AI represents a paradigm in AI research where artificial agents are situated within and interact with physical or virtual environments. Despite the recent progress in Embodied AI, it is still very challenging to learn the generalizable manipulation skills that can handle large deformation and topological changes on soft-body objects, such as clay, water, and soil. In this work, we proposed an effective policy, namely GP2E behavior cloning policy, which can guide the agent to learn the generalizable manipulation skills from soft-body tasks, including pouring, filling, hanging, excavating, pinching, and writing. Concretely, we build our policy from three insights:(1) Extracting intricate semantic features from point cloud data and seamlessly integrating them into the robot's end-effector frame; (2) Capturing long-distance interactions in long-horizon tasks through the incorporation of our guided self-attention module; (3) Mitigating overfitting concerns and facilitating model convergence to higher accuracy levels via the introduction of our two-stage fine-tuning strategy. Through extensive experiments, we demonstrate the effectiveness of our approach by achieving the 1st prize in the soft-body track of the ManiSkill2 Challenge at the CVPR 2023 4th Embodied AI workshop. Our findings highlight the potential of our method to improve the generalization abilities of Embodied AI models and pave the way for their practical applications in real-world scenarios.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.05791v1">FürElise: Capturing and Physically Synthesizing Hand Motions of Piano Performance</a></div>
     <div class="paper-meta">
       📅 2024-10-08
@@ -158,6 +215,15 @@
     </div>
     <details class="paper-abstract">
       Embodied AI represents a paradigm in AI research where artificial agents are situated within and interact with physical or virtual environments. Despite the recent progress in Embodied AI, it is still very challenging to learn the generalizable manipulation skills that can handle large deformation and topological changes on soft-body objects, such as clay, water, and soil. In this work, we proposed an effective policy, namely GP2E behavior cloning policy, which can guide the agent to learn the generalizable manipulation skills from soft-body tasks, including pouring, filling, hanging, excavating, pinching, and writing. Concretely, we build our policy from three insights:(1) Extracting intricate semantic features from point cloud data and seamlessly integrating them into the robot's end-effector frame; (2) Capturing long-distance interactions in long-horizon tasks through the incorporation of our guided self-attention module; (3) Mitigating overfitting concerns and facilitating model convergence to higher accuracy levels via the introduction of our two-stage fine-tuning strategy. Through extensive experiments, we demonstrate the effectiveness of our approach by achieving the 1st prize in the soft-body track of the ManiSkill2 Challenge at the CVPR 2023 4th Embodied AI workshop. Our findings highlight the potential of our method to improve the generalization abilities of Embodied AI models and pave the way for their practical applications in real-world scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.05047v3">MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-08
+    </div>
+    <details class="paper-abstract">
+      In recent years, Multi-modal Foundation Models (MFMs) and Embodied Artificial Intelligence (EAI) have been advancing side by side at an unprecedented pace. The integration of the two has garnered significant attention from the AI research community. In this work, we attempt to provide an in-depth and comprehensive evaluation of the performance of MFM s on embodied task planning, aiming to shed light on their capabilities and limitations in this domain. To this end, based on the characteristics of embodied task planning, we first develop a systematic evaluation framework, which encapsulates four crucial capabilities of MFMs: object understanding, spatio-temporal perception, task understanding, and embodied reasoning. Following this, we propose a new benchmark, named MFE-ETP, characterized its complex and variable task scenarios, typical yet diverse task types, task instances of varying difficulties, and rich test case types ranging from multiple embodied question answering to embodied task reasoning. Finally, we offer a simple and easy-to-use automatic evaluation platform that enables the automated testing of multiple MFMs on the proposed benchmark. Using the benchmark and evaluation platform, we evaluated several state-of-the-art MFMs and found that they significantly lag behind human-level performance. The MFE-ETP is a high-quality, large-scale, and challenging benchmark relevant to real-world tasks.
     </details>
 </div>
 <div class="paper-card">
@@ -216,6 +282,15 @@
     </div>
     <details class="paper-abstract">
       Embodied AI represents systems where AI is integrated into physical entities, enabling them to perceive and interact with their surroundings. Large Language Model (LLM), which exhibits powerful language understanding abilities, has been extensively employed in embodied AI by facilitating sophisticated task planning. However, a critical safety issue remains overlooked: could these embodied LLMs perpetrate harmful behaviors? In response, we introduce BadRobot, a novel attack paradigm aiming to make embodied LLMs violate safety and ethical constraints through typical voice-based user-system interactions. Specifically, three vulnerabilities are exploited to achieve this type of attack: (i) manipulation of LLMs within robotic systems, (ii) misalignment between linguistic outputs and physical actions, and (iii) unintentional hazardous behaviors caused by world knowledge's flaws. Furthermore, we construct a benchmark of various malicious physical action queries to evaluate BadRobot's attack performance. Based on this benchmark, extensive experiments against existing prominent embodied LLM frameworks (e.g., Voxposer, Code as Policies, and ProgPrompt) demonstrate the effectiveness of our BadRobot. Warning: This paper contains harmful AI-generated language and aggressive actions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.01176v1">Generative Diffusion-based Contract Design for Efficient AI Twins Migration in Vehicular Embodied AI Networks</a></div>
+    <div class="paper-meta">
+      📅 2024-10-03
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is a rapidly advancing field that bridges the gap between cyberspace and physical space, enabling a wide range of applications. This evolution has led to the development of the Vehicular Embodied AI NETwork (VEANET), where advanced AI capabilities are integrated into vehicular systems to enhance autonomous operations and decision-making. Embodied agents, such as Autonomous Vehicles (AVs), are autonomous entities that can perceive their environment and take actions to achieve specific goals, actively interacting with the physical world. Embodied twins are digital models of these embodied agents, with various embodied AI twins for intelligent applications in cyberspace. In VEANET, embodied AI twins act as in-vehicle AI assistants to perform diverse tasks supporting autonomous driving using generative AI models. Due to limited computational resources of AVs, these AVs often offload computationally intensive tasks, such as constructing and updating embodied AI twins, to nearby RSUs. However, since the rapid mobility of AVs and the limited provision coverage of a single RSU, embodied AI twins require dynamic migrations from current RSU to other RSUs in real-time, resulting in the challenge of selecting suitable RSUs for efficient embodied AI twins migrations. Given information asymmetry, AVs cannot know the detailed information of RSUs. To this end, in this paper, we construct a multi-dimensional contract theoretical model between AVs and alternative RSUs. Considering that AVs may exhibit irrational behavior, we utilize prospect theory instead of expected utility theory to model the actual utilities of AVs. Finally, we employ a generative diffusion model-based algorithm to identify the optimal contract designs. Compared with traditional deep reinforcement learning algorithms, numerical results demonstrate the effectiveness of the proposed scheme.
     </details>
 </div>
 <div class="paper-card">

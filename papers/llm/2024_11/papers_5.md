@@ -14,6 +14,54 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.04620v4">CataractBot: An LLM-Powered Expert-in-the-Loop Chatbot for Cataract Patients</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+    </div>
+    <details class="paper-abstract">
+      The healthcare landscape is evolving, with patients seeking reliable information about their health conditions and available treatment options. Despite the abundance of information sources, the digital age overwhelms individuals with excess, often inaccurate information. Patients primarily trust medical professionals, highlighting the need for expert-endorsed health information. However, increased patient loads on experts has led to reduced communication time, impacting information sharing. To address this gap, we developed CataractBot, an experts-in-the-loop chatbot powered by LLMs, in collaboration with an eye hospital in India. CataractBot answers cataract surgery related questions instantly by querying a curated knowledge base and provides expert-verified responses asynchronously. It has multimodal and multilingual capabilities. In an in-the-wild deployment study with 55 participants, CataractBot proved valuable, providing anytime accessibility, saving time, accommodating diverse literacy levels, alleviating power differences, and adding a privacy layer between patients and doctors. Users reported that their trust in the system was established through expert verification. Broadly, our results could inform future work on designing expert-mediated LLM bots.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.17382v2">ReMoDetect: Reward Models Recognize Aligned LLM's Generations</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+      | 💬 Published as a conference proceeding for NeurIPS 2024
+    </div>
+    <details class="paper-abstract">
+      The remarkable capabilities and easy accessibility of large language models (LLMs) have significantly increased societal risks (e.g., fake news generation), necessitating the development of LLM-generated text (LGT) detection methods for safe usage. However, detecting LGTs is challenging due to the vast number of LLMs, making it impractical to account for each LLM individually; hence, it is crucial to identify the common characteristics shared by these models. In this paper, we draw attention to a common feature of recent powerful LLMs, namely the alignment training, i.e., training LLMs to generate human-preferable texts. Our key finding is that as these aligned LLMs are trained to maximize the human preferences, they generate texts with higher estimated preferences even than human-written texts; thus, such texts are easily detected by using the reward model (i.e., an LLM trained to model human preference distribution). Based on this finding, we propose two training schemes to further improve the detection ability of the reward model, namely (i) continual preference fine-tuning to make the reward model prefer aligned LGTs even further and (ii) reward modeling of Human/LLM mixed texts (a rephrased texts from human-written texts using aligned LLMs), which serves as a median preference text corpus between LGTs and human-written texts to learn the decision boundary better. We provide an extensive evaluation by considering six text domains across twelve aligned LLMs, where our method demonstrates state-of-the-art results. Code is available at https://github.com/hyunseoklee-ai/ReMoDetect.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.11709v4">Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+      | 💬 Code available at: https://github.com/agarwalishika/TreeInstruct Accepted at EMNLP'24 Findings
+    </div>
+    <details class="paper-abstract">
+      Socratic questioning is an effective teaching strategy, encouraging critical thinking and problem-solving. The conversational capabilities of large language models (LLMs) show great potential for providing scalable, real-time student guidance. However, current LLMs often give away solutions directly, making them ineffective instructors. We tackle this issue in the code debugging domain with TreeInstruct, an Instructor agent guided by a novel state space-based planning algorithm. TreeInstruct asks probing questions to help students independently identify and resolve errors. It estimates a student's conceptual and syntactical knowledge to dynamically construct a question tree based on their responses and current knowledge state, effectively addressing both independent and dependent mistakes concurrently in a multi-turn interaction setting. In addition to using an existing single-bug debugging benchmark, we construct a more challenging multi-bug dataset of 150 coding problems, incorrect solutions, and bug fixes -- all carefully constructed and annotated by experts. Extensive evaluation shows TreeInstruct's state-of-the-art performance on both datasets, proving it to be a more effective instructor than baselines. Furthermore, a real-world case study with five students of varying skill levels further demonstrates TreeInstruct's ability to guide students to debug their code efficiently with minimal turns and highly Socratic questioning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.04070v5">PAD: Personalized Alignment of LLMs at Decoding-Time</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+      | 💬 This paper presents Personalized Alignment at Decoding-time (PAD), a novel framework designed to align LLM outputs with diverse personalized preferences during the inference phase
+    </div>
+    <details class="paper-abstract">
+      Aligning with personalized preferences, which vary significantly across cultural, educational, and political differences, poses a significant challenge due to the computational costs and data demands of traditional alignment methods. In response, this paper presents Personalized Alignment at Decoding-time (PAD), a novel framework designed to align LLM outputs with diverse personalized preferences during the inference phase, eliminating the need for additional training. By introducing a unique personalized reward modeling strategy, this framework decouples the text generation process from personalized preferences, facilitating the generation of generalizable token-level personalized rewards. The PAD algorithm leverages these rewards to guide the decoding process, dynamically tailoring the base model's predictions to personalized preferences. Extensive experimental results demonstrate that PAD not only outperforms existing training-based alignment methods in terms of aligning with diverse preferences but also shows significant generalizability to preferences unseen during training and scalability across different base models. This work advances the capability of LLMs to meet user needs in real-time applications, presenting a substantial step forward in personalized LLM alignment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.04444v1">An Empirical Study on the Potential of LLMs in Automated Software Refactoring</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+    </div>
+    <details class="paper-abstract">
+      Recent advances in large language models (LLMs), make it potentially feasible to automatically refactor source code with LLMs. However, it remains unclear how well LLMs perform compared to human experts in conducting refactorings automatically and accurately. To fill this gap, in this paper, we conduct an empirical study to investigate the potential of LLMs in automated software refactoring, focusing on the identification of refactoring opportunities and the recommendation of refactoring solutions. We first construct a high-quality refactoring dataset comprising 180 real-world refactorings from 20 projects, and conduct the empirical study on the dataset. With the to-be-refactored Java documents as input, ChatGPT and Gemini identified only 28 and 7 respectively out of the 180 refactoring opportunities. However, explaining the expected refactoring subcategories and narrowing the search space in the prompts substantially increased the success rate of ChatGPT from 15.6% to 86.7%. Concerning the recommendation of refactoring solutions, ChatGPT recommended 176 refactoring solutions for the 180 refactorings, and 63.6% of the recommended solutions were comparable to (even better than) those constructed by human experts. However, 13 out of the 176 solutions suggested by ChatGPT and 9 out of the 137 solutions suggested by Gemini were unsafe in that they either changed the functionality of the source code or introduced syntax errors, which indicate the risk of LLM-based refactoring. To this end, we propose a detect-and-reapply tactic, called RefactoringMirror, to avoid such unsafe refactorings. By reapplying the identified refactorings to the original code using thoroughly tested refactoring engines, we can effectively mitigate the risks associated with LLM-based automated refactoring while still leveraging LLM's intelligence to obtain valuable refactoring recommendations.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.04424v1">Bayesian Calibration of Win Rate Estimation with LLM Evaluators</a></div>
     <div class="paper-meta">
       📅 2024-11-07
@@ -913,51 +961,5 @@
     </div>
     <details class="paper-abstract">
       Recent advancements in Large Language Models (LLMs) have showcased striking results on existing logical reasoning benchmarks, with some models even surpassing human performance. However, the true depth of their competencies and robustness in reasoning tasks remains an open question. To this end, in this paper, we focus on two popular reasoning tasks: arithmetic reasoning and code generation. Particularly, we introduce (i) a general ontology of perturbations for math and coding questions, (ii) a semi-automatic method to apply these perturbations, and (iii) two datasets, GSMORE and HUMANEVAL-CORE, respectively, of perturbed math and coding problems to probe LLM capabilities in numeric reasoning and coding tasks. Through comprehensive evaluations of both closed-source and open-source LLMs, we show a significant performance drop across all the models against the perturbed questions, suggesting that the current LLMs lack robust problem solving skills and structured reasoning abilities in many areas, as defined by our ontology. We open-source the datasets and source codes at: https://github.com/declare-lab/LLM-ReasoningTest.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.03343v1">What Features in Prompts Jailbreak LLMs? Investigating the Mechanisms Behind Attacks</a></div>
-    <div class="paper-meta">
-      📅 2024-11-02
-    </div>
-    <details class="paper-abstract">
-      While `jailbreaks' have been central to research on the safety and reliability of LLMs (large language models), the underlying mechanisms behind these attacks are not well understood. Some prior works have used linear methods to analyze jailbreak prompts or model refusal. Here, however, we compare linear and nonlinear methods to study the features in prompts that contribute to successful jailbreaks. We do this by probing for jailbreak success based only on the portions of the latent representations corresponding to prompt tokens. First, we introduce a dataset of 10,800 jailbreak attempts from 35 attack methods. We then show that different jailbreaking methods work via different nonlinear features in prompts. Specifically, we find that while probes can distinguish between successful and unsuccessful jailbreaking prompts with a high degree of accuracy, they often transfer poorly to held-out attack methods. We also show that nonlinear probes can be used to mechanistically jailbreak the LLM by guiding the design of adversarial latent perturbations. These mechanistic jailbreaks are able to jailbreak Gemma-7B-IT more reliably than 34 of the 35 techniques that it was trained on. Ultimately, our results suggest that jailbreaks cannot be thoroughly understood in terms of universal or linear prompt features alone.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.02442v1">TODO: Enhancing LLM Alignment with Ternary Preferences</a></div>
-    <div class="paper-meta">
-      📅 2024-11-02
-    </div>
-    <details class="paper-abstract">
-      Aligning large language models (LLMs) with human intent is critical for enhancing their performance across a variety of tasks. Standard alignment techniques, such as Direct Preference Optimization (DPO), often rely on the binary Bradley-Terry (BT) model, which can struggle to capture the complexities of human preferences -- particularly in the presence of noisy or inconsistent labels and frequent ties. To address these limitations, we introduce the Tie-rank Oriented Bradley-Terry model (TOBT), an extension of the BT model that explicitly incorporates ties, enabling more nuanced preference representation. Building on this, we propose Tie-rank Oriented Direct Preference Optimization (TODO), a novel alignment algorithm that leverages TOBT's ternary ranking system to improve preference alignment. In evaluations on Mistral-7B and Llama 3-8B models, TODO consistently outperforms DPO in modeling preferences across both in-distribution and out-of-distribution datasets. Additional assessments using MT Bench and benchmarks such as Piqa, ARC-c, and MMLU further demonstrate TODO's superior alignment performance. Notably, TODO also shows strong results in binary preference alignment, highlighting its versatility and potential for broader integration into LLM alignment. The implementation details can be found in https://github.com/XXares/TODO.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01245v1">PMoL: Parameter Efficient MoE for Preference Mixing of LLM Alignment</a></div>
-    <div class="paper-meta">
-      📅 2024-11-02
-    </div>
-    <details class="paper-abstract">
-      Reinforcement Learning from Human Feedback (RLHF) has been proven to be an effective method for preference alignment of large language models (LLMs) and is widely used in the post-training process of LLMs. However, RLHF struggles with handling multiple competing preferences. This leads to a decrease in the alignment of LLMs with human preferences. To address this issue, we propose Preference Mixture of LoRAs (PMoL) from the perspective of model architecture, which can adapt to any number of preferences to mix. PMoL combines Mixture of Experts (MoE) and Low Rank Adaptor (LoRA). This architecture is innovatively applied to the research of preference alignment and has achieved significant performance improvement. The expert group soft loss is used to enable MoE with the ability to mix preferences. Through comprehensive evaluation by the reward model and GPT-4o, the experiment results show that PMoL has superior preference mixing capabilities compared to baseline methods. PMoL achieves better preference alignment with lower training costs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01213v1">One Arrow, Many Targets: Probing LLMs for Multi-Attribute Controllable Text Summarization</a></div>
-    <div class="paper-meta">
-      📅 2024-11-02
-    </div>
-    <details class="paper-abstract">
-      Text summarization is a well-established task within the natural language processing (NLP) community. However, the focus on controllable summarization tailored to user requirements is gaining traction only recently. While several efforts explore controllability in text summarization, the investigation of Multi-Attribute Controllable Summarization (MACS) remains limited. This work addresses this gap by examining the MACS task through the lens of large language models (LLMs), using various learning paradigms, particularly low-rank adapters. We experiment with different popular adapter fine-tuning strategies to assess the effectiveness of the resulting models in retaining cues and patterns associated with multiple controllable attributes. Additionally, we propose and evaluate a novel hierarchical adapter fusion technique to integrate learnings from two distinct controllable attributes. Subsquently, we present our findings, discuss the challenges encountered, and suggest potential avenues for advancing the MACS task.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.09114v2">Catastrophic Cyber Capabilities Benchmark (3CB): Robustly Evaluating LLM Agent Cyber Offense Capabilities</a></div>
-    <div class="paper-meta">
-      📅 2024-11-02
-      | 💬 https://cybercapabilities.org/
-    </div>
-    <details class="paper-abstract">
-      LLM agents have the potential to revolutionize defensive cyber operations, but their offensive capabilities are not yet fully understood. To prepare for emerging threats, model developers and governments are evaluating the cyber capabilities of foundation models. However, these assessments often lack transparency and a comprehensive focus on offensive capabilities. In response, we introduce the Catastrophic Cyber Capabilities Benchmark (3CB), a novel framework designed to rigorously assess the real-world offensive capabilities of LLM agents. Our evaluation of modern LLMs on 3CB reveals that frontier models, such as GPT-4o and Claude 3.5 Sonnet, can perform offensive tasks such as reconnaissance and exploitation across domains ranging from binary analysis to web technologies. Conversely, smaller open-source models exhibit limited offensive capabilities. Our software solution and the corresponding benchmark provides a critical tool to reduce the gap between rapidly improving capabilities and robustness of cyber offense evaluations, aiding in the safer deployment and regulation of these powerful technologies.
     </details>
 </div>

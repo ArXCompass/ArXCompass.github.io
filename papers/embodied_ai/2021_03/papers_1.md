@@ -29,6 +29,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2103.08079v1">Crossing the Tepper Line: An Emerging Ontology for Describing the Dynamic Sociality of Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2021-03-16
+      | 💬 Accepted at CHI EA '21
+    </div>
+    <details class="paper-abstract">
+      Artificial intelligences (AI) are increasingly being embodied and embedded in the world to carry out tasks and support decision-making with and for people. Robots, recommender systems, voice assistants, virtual humans - do these disparate types of embodied AI have something in common? Here we show how they can manifest as "socially embodied AI." We define this as the state that embodied AI "circumstantially" take on within interactive contexts when perceived as both social and agentic by people. We offer a working ontology that describes how embodied AI can dynamically transition into socially embodied AI. We propose an ontological heuristic for describing the threshold: the Tepper line. We reinforce our theoretical work with expert insights from a card sort workshop. We end with two case studies to illustrate the dynamic and contextual nature of this heuristic.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2103.08079v1">Crossing the Tepper Line: An Emerging Ontology for Describing the Dynamic Sociality of Embodied AI</a></div>
     <div class="paper-meta">
       📅 2021-03-15

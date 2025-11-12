@@ -9,6 +9,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2210.08340v3">Toward Next-Generation Artificial Intelligence: Catalyzing the NeuroAI Revolution</a></div>
+    <div class="paper-meta">
+      📅 2023-02-24
+      | 💬 White paper, 10 pages + 8 pages of references, 1 figures
+    </div>
+    <details class="paper-abstract">
+      Neuroscience has long been an essential driver of progress in artificial intelligence (AI). We propose that to accelerate progress in AI, we must invest in fundamental research in NeuroAI. A core component of this is the embodied Turing test, which challenges AI animal models to interact with the sensorimotor world at skill levels akin to their living counterparts. The embodied Turing test shifts the focus from those capabilities like game playing and language that are especially well-developed or uniquely human to those capabilities, inherited from over 500 million years of evolution, that are shared with all animals. Building models that can pass the embodied Turing test will provide a roadmap for the next generation of AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2302.04659v1">ManiSkill2: A Unified Benchmark for Generalizable Manipulation Skills</a></div>
     <div class="paper-meta">
       📅 2023-02-09
