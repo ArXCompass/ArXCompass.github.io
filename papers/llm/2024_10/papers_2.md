@@ -18,24 +18,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21479v1">TransformLLM: Adapting Large Language Models via LLM-Transformed Reading Comprehension Text</a></div>
-    <div class="paper-meta">
-      📅 2024-10-28
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have shown promise in highly-specialized domains, however challenges are still present in aspects of accuracy and costs. These limitations restrict the usage of existing models in domain-specific tasks. While fine-tuning pre-trained models have shown promising results, this process can be computationally expensive and require massive datasets of the specialized application in hand. In this work, we bridge that gap. We have developed Phi-2-Legal and Mistral-Legal-7B, which are language models specifically designed for legal applications. These models are based on Phi-2 and Mistral-7B-v0.1, and have gone through continued pre-training with over 500 million tokens of legal texts. Our innovative approach significantly improves capabilities in legal tasks by using Large Language Models (LLMs) to convert raw training data into reading comprehension text. Our legal LLMs have demonstrated superior performance in legal benchmarks, even outperforming models trained on much larger datasets with more resources. This work emphasizes the effectiveness of continued pre-training on domain-specific texts, while using affordable LLMs for data conversion, which gives these models domain expertise while retaining general language understanding capabilities. While this work uses the legal domain as a test case, our method can be scaled and applied to any pre-training dataset, resulting in significant improvements across different tasks. These findings underscore the potential of domain-adaptive pre-training and reading comprehension for the development of highly effective domain-specific language models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21474v1">Estimating Causal Effects of Text Interventions Leveraging LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-10-28
-    </div>
-    <details class="paper-abstract">
-      Quantifying the effect of textual interventions in social systems, such as reducing anger in social media posts to see its impact on engagement, poses significant challenges. Direct interventions on real-world systems are often infeasible, necessitating reliance on observational data. Traditional causal inference methods, typically designed for binary or discrete treatments, are inadequate for handling the complex, high-dimensional nature of textual data. This paper addresses these challenges by proposing a novel approach, CausalDANN, to estimate causal effects using text transformations facilitated by large language models (LLMs). Unlike existing methods, our approach accommodates arbitrary textual interventions and leverages text-level classifiers with domain adaptation ability to produce robust effect estimates against domain shifts, even when only the control group is observed. This flexibility in handling various text interventions is a key advancement in causal estimation for textual data, offering opportunities to better understand human behaviors and develop effective policies within social systems.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.21465v1">ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference</a></div>
     <div class="paper-meta">
       📅 2024-10-28
@@ -266,6 +248,25 @@
     </div>
     <details class="paper-abstract">
       The use of large language models (LLMs) as evaluators has garnered significant attention due to their potential to rival human-level evaluations in long-form response assessments. However, current LLM evaluators rely heavily on static, human-defined criteria, limiting their ability to generalize across diverse generative tasks and incorporate context-specific knowledge. In this paper, we propose a novel Self-Assessing LLM framework that integrates Context-Aware Criteria (SALC) with dynamic knowledge tailored to each evaluation instance. This instance-level knowledge enhances the LLM evaluator's performance by providing relevant and context-aware insights that pinpoint the important criteria specific to the current instance. Additionally, the proposed framework adapts seamlessly to various tasks without relying on predefined human criteria, offering a more flexible evaluation approach. Empirical evaluations demonstrate that our approach significantly outperforms existing baseline evaluation frameworks, yielding improvements on average 4.8% across a wide variety of datasets. Furthermore, by leveraging knowledge distillation techniques, we fine-tuned smaller language models for criteria generation and evaluation, achieving comparable or superior performance to larger models with much lower cost. Our method also exhibits a improvement in LC Win-Rate in AlpacaEval2 leaderboard up to a 12% when employed for preference data generation in Direct Preference Optimization (DPO), underscoring its efficacy as a robust and scalable evaluation framework.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21526v1">Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification</a></div>
+    <div class="paper-meta">
+      📅 2024-10-28
+      | 💬 12 pages, 7 figures
+    </div>
+    <details class="paper-abstract">
+      Synthetic data augmentation via large language models (LLMs) allows researchers to leverage additional training data, thus enhancing the performance of downstream tasks, especially when real-world data is scarce. However, the generated data can deviate from the real-world data, and this misalignment can bring deficient outcomes while applying the trained model to applications. Therefore, we proposed efficient weighted-loss approaches to align synthetic data with real-world distribution by emphasizing high-quality and diversified data generated by LLMs with using merely a little real-world data. We empirically assessed the effectiveness of our method on multiple text classification tasks, and the results showed leveraging our approaches on a BERT-level model robustly outperformed standard cross-entropy and other data weighting approaches, providing potential solutions to effectively leveraging synthetic data from any suitable data generator for model training.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.07163v2">Simplicity Prevails: Rethinking Negative Preference Optimization for LLM Unlearning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-28
+    </div>
+    <details class="paper-abstract">
+      In this work, we address the problem of large language model (LLM) unlearning, aiming to remove unwanted data influences and associated model capabilities (e.g., copyrighted data or harmful content generation) while preserving essential model utilities, without the need for retraining from scratch. Despite the growing need for LLM unlearning, a principled optimization framework remains lacking. To this end, we revisit the state-of-the-art approach, negative preference optimization (NPO), and identify the issue of reference model bias, which could undermine NPO's effectiveness, particularly when unlearning forget data of varying difficulty. Given that, we propose a simple yet effective unlearning optimization framework, called SimNPO, showing that 'simplicity' in removing the reliance on a reference model (through the lens of simple preference optimization) benefits unlearning. We also provide deeper insights into SimNPO's advantages, supported by analysis using mixtures of Markov chains. Furthermore, we present extensive experiments validating SimNPO's superiority over existing unlearning baselines in benchmarks like TOFU and MUSE, and robustness against relearning attacks. Codes are available at https://github.com/OPTML-Group/Unlearn-Simple.
     </details>
 </div>
 <div class="paper-card">

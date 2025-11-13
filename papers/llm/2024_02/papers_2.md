@@ -11,33 +11,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11960v1">DB-LLM: Accurate Dual-Binarization for Efficient LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-02-19
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have significantly advanced the field of natural language processing, while the expensive memory and computation consumption impede their practical deployment. Quantization emerges as one of the most effective methods for improving the computational efficiency of LLMs. However, existing ultra-low-bit quantization always causes severe accuracy drops. In this paper, we empirically relieve the micro and macro characteristics of ultra-low bit quantization and present a novel Dual-Binarization method for LLMs, namely DB-LLM. For the micro-level, we take both the accuracy advantage of 2-bit-width and the efficiency advantage of binarization into account, introducing Flexible Dual Binarization (FDB). By splitting 2-bit quantized weights into two independent sets of binaries, FDB ensures the accuracy of representations and introduces flexibility, utilizing the efficient bitwise operations of binarization while retaining the inherent high sparsity of ultra-low bit quantization. For the macro-level, we find the distortion that exists in the prediction of LLM after quantization, which is specified as the deviations related to the ambiguity of samples. We propose the Deviation-Aware Distillation (DAD) method, enabling the model to focus differently on various samples. Comprehensive experiments show that our DB-LLM not only significantly surpasses the current State-of-The-Art (SoTA) in ultra-low bit quantization (eg, perplexity decreased from 9.64 to 7.23), but also achieves an additional 20\% reduction in computational consumption compared to the SOTA method under the same bit-width. Our code will be released soon.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11886v1">The Colorful Future of LLMs: Evaluating and Improving LLMs as Emotional Supporters for Queer Youth</a></div>
-    <div class="paper-meta">
-      📅 2024-02-19
-    </div>
-    <details class="paper-abstract">
-      Queer youth face increased mental health risks, such as depression, anxiety, and suicidal ideation. Hindered by negative stigma, they often avoid seeking help and rely on online resources, which may provide incompatible information. Although access to a supportive environment and reliable information is invaluable, many queer youth worldwide have no access to such support. However, this could soon change due to the rapid adoption of Large Language Models (LLMs) such as ChatGPT. This paper aims to comprehensively explore the potential of LLMs to revolutionize emotional support for queers. To this end, we conduct a qualitative and quantitative analysis of LLM's interactions with queer-related content. To evaluate response quality, we develop a novel ten-question scale that is inspired by psychological standards and expert input. We apply this scale to score several LLMs and human comments to posts where queer youth seek advice and share experiences. We find that LLM responses are supportive and inclusive, outscoring humans. However, they tend to be generic, not empathetic enough, and lack personalization, resulting in nonreliable and potentially harmful advice. We discuss these challenges, demonstrate that a dedicated prompt can improve the performance, and propose a blueprint of an LLM-supporter that actively (but sensitively) seeks user context to provide personalized, empathetic, and reliable responses. Our annotated dataset is available for further research.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03630v2">Enhancing LLM-Based Coding Tools through Native Integration of IDE-Derived Static Context</a></div>
-    <div class="paper-meta">
-      📅 2024-02-19
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have achieved remarkable success in code completion, as evidenced by their essential roles in developing code assistant services such as Copilot. Being trained on in-file contexts, current LLMs are quite effective in completing code for single source files. However, it is challenging for them to conduct repository-level code completion for large software projects that require cross-file information. Existing research on LLM-based repository-level code completion identifies and integrates cross-file contexts, but it suffers from low accuracy and limited context length of LLMs. In this paper, we argue that Integrated Development Environments (IDEs) can provide direct, accurate and real-time cross-file information for repository-level code completion. We propose IDECoder, a practical framework that leverages IDE native static contexts for cross-context construction and diagnosis results for self-refinement. IDECoder utilizes the rich cross-context information available in IDEs to enhance the capabilities of LLMs of repository-level code completion. We conducted preliminary experiments to validate the performance of IDECoder and observed that this synergy represents a promising trend for future exploration.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.11814v1">An Empirical Evaluation of LLMs for Solving Offensive Security Challenges</a></div>
     <div class="paper-meta">
       📅 2024-02-19
@@ -103,6 +76,44 @@
     </div>
     <details class="paper-abstract">
       Large Language Model (LLM) agents significantly extend the capabilities of standalone LLMs, empowering them to interact with external tools (e.g., APIs, functions) and complete various tasks in a self-directed fashion. The challenge of tool use demands that LLMs not only understand user queries and generate answers accurately but also excel in task planning, tool invocation, and result summarization. While traditional works focus on training a single LLM with all these capabilities, performance limitations become apparent, particularly with smaller models. To overcome these challenges, we propose a novel approach that decomposes the aforementioned capabilities into a planner, caller, and summarizer. Each component is implemented by a single LLM that focuses on a specific capability and collaborates with others to accomplish the task. This modular framework facilitates individual updates and the potential use of smaller LLMs for building each capability. To effectively train this framework, we introduce a two-stage training paradigm. First, we fine-tune a backbone LLM on the entire dataset without discriminating sub-tasks, providing the model with a comprehensive understanding of the task. Second, the fine-tuned LLM is used to instantiate the planner, caller, and summarizer respectively, which are continually fine-tuned on respective sub-tasks. Evaluation across various tool-use benchmarks illustrates that our proposed multi-LLM framework surpasses the traditional single-LLM approach, highlighting its efficacy and advantages in tool learning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2312.08935v3">Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+      | 💬 Add Step-by-Step reinforcement learning results
+    </div>
+    <details class="paper-abstract">
+      In this paper, we present an innovative process-oriented math process reward model called \textbf{Math-Shepherd}, which assigns a reward score to each step of math problem solutions. The training of Math-Shepherd is achieved using automatically constructed process-wise supervision data, breaking the bottleneck of heavy reliance on manual annotation in existing work. We explore the effectiveness of Math-Shepherd in two scenarios: 1) \textit{Verification}: Math-Shepherd is utilized for reranking multiple outputs generated by Large Language Models (LLMs); 2) \textit{Reinforcement Learning}: Math-Shepherd is employed to reinforce LLMs with step-by-step Proximal Policy Optimization (PPO). With Math-Shepherd, a series of open-source LLMs demonstrates exceptional performance. For instance, the step-by-step PPO with Math-Shepherd significantly improves the accuracy of Mistral-7B (77.9\%$\to$84.1\% on GSM8K and 28.6\%$\to$33.0\% on MATH). The accuracy can be further enhanced to 89.1\% and 43.5\% on GSM8K and MATH with the verification of Math-Shepherd, respectively. We believe that automatic process supervision holds significant potential for the future evolution of LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.12080v1">Can LLMs Compute with Reasons?</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+      | 💬 8 pages
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) often struggle with complex mathematical tasks, prone to "hallucinating" incorrect answers due to their reliance on statistical patterns. This limitation is further amplified in average Small LangSLMs with limited context and training data. To address this challenge, we propose an "Inductive Learning" approach utilizing a distributed network of SLMs. This network leverages error-based learning and hint incorporation to refine the reasoning capabilities of SLMs. Our goal is to provide a framework that empowers SLMs to approach the level of logic-based applications achieved by high-parameter models, potentially benefiting any language model. Ultimately, this novel concept paves the way for bridging the logical gap between humans and LLMs across various fields.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.12419v1">EBFT: Effective and Block-Wise Fine-Tuning for Sparse LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+    </div>
+    <details class="paper-abstract">
+      Existing methods for fine-tuning sparse LLMs often suffer from resource-intensive requirements and high retraining costs. Additionally, many fine-tuning methods often rely on approximations or heuristic optimization strategies, which may lead to suboptimal solutions. To address these issues, we propose an efficient and fast framework for fine-tuning sparse LLMs based on minimizing reconstruction error. Our approach involves sampling a small dataset for calibration and utilizing backpropagation to iteratively optimize block-wise reconstruction error, on a block-by-block basis, aiming for optimal solutions. Extensive experiments on various benchmarks consistently demonstrate the superiority of our method over other baselines. For instance, on the Wikitext2 dataset with LlamaV1-7B at 70% sparsity, our proposed EBFT achieves a perplexity of 16.88, surpassing the state-of-the-art DSnoT with a perplexity of 75.14. Moreover, with a structured sparsity ratio of 26\%, EBFT achieves a perplexity of 16.27, outperforming LoRA (perplexity 16.44). Furthermore, the fine-tuning process of EBFT for LlamaV1-7B only takes approximately 30 minutes, and the entire framework can be executed on a single 16GB GPU. The source code is available at https://github.com/sunggo/EBFT.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2311.11904v2">LLMs as Visual Explainers: Advancing Image Classification with Evolving Visual Descriptions</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+    </div>
+    <details class="paper-abstract">
+      Vision-language models (VLMs) offer a promising paradigm for image classification by comparing the similarity between images and class embeddings. A critical challenge lies in crafting precise textual representations for class names. While previous studies have leveraged recent advancements in large language models (LLMs) to enhance these descriptors, their outputs often suffer from ambiguity and inaccuracy. We attribute this to two primary factors: 1) the reliance on single-turn textual interactions with LLMs, leading to a mismatch between generated text and visual concepts for VLMs; 2) the oversight of the inter-class relationships, resulting in descriptors that fail to differentiate similar classes effectively. In this paper, we propose a novel framework that integrates LLMs and VLMs to find the optimal class descriptors. Our training-free approach develops an LLM-based agent with an evolutionary optimization strategy to iteratively refine class descriptors. We demonstrate our optimized descriptors are of high quality which effectively improves classification accuracy on a wide range of benchmarks. Additionally, these descriptors offer explainable and robust features, boosting performance across various backbone models and complementing fine-tuning-based methods.
     </details>
 </div>
 <div class="paper-card">
@@ -941,14 +952,5 @@
     </div>
     <details class="paper-abstract">
       While both agent interaction and personalisation are vibrant topics in research on large language models (LLMs), there has been limited focus on the effect of language interaction on the behaviour of persona-conditioned LLM agents. Such an endeavour is important to ensure that agents remain consistent to their assigned traits yet are able to engage in open, naturalistic dialogues. In our experiments, we condition GPT-3.5 on personality profiles through prompting and create a two-group population of LLM agents using a simple variability-inducing sampling algorithm. We then administer personality tests and submit the agents to a collaborative writing task, finding that different profiles exhibit different degrees of personality consistency and linguistic alignment to their conversational partners. Our study seeks to lay the groundwork for better understanding of dialogue-based interaction between LLMs and highlights the need for new approaches to crafting robust, more human-like LLM personas for interactive environments.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.17072v2">SemScore: Automated Evaluation of Instruction-Tuned LLMs based on Semantic Textual Similarity</a></div>
-    <div class="paper-meta">
-      📅 2024-02-05
-    </div>
-    <details class="paper-abstract">
-      Instruction-tuned Large Language Models (LLMs) have recently showcased remarkable advancements in their ability to generate fitting responses to natural language instructions. However, many current works rely on manual evaluation to judge the quality of generated responses. Since such manual evaluation is time-consuming, it does not easily scale to the evaluation of multiple models and model variants. In this short paper, we propose a straightforward but remarkably effective evaluation metric called SemScore, in which we directly compare model outputs to gold target responses using semantic textual similarity (STS). We conduct a comparative evaluation of the model outputs of 12 prominent instruction-tuned LLMs using 8 widely-used evaluation metrics for text generation. We find that our proposed SemScore metric outperforms all other, in many cases more complex, evaluation metrics in terms of correlation to human evaluation. These findings indicate the utility of our proposed metric for the evaluation of instruction-tuned LLMs.
     </details>
 </div>

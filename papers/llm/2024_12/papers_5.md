@@ -684,6 +684,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2403.14896v2">Investigating Bias in LLM-Based Bias Detection: Disparities between LLMs and Human Perception</a></div>
+    <div class="paper-meta">
+      📅 2024-12-11
+      | 💬 COLING 2025
+    </div>
+    <details class="paper-abstract">
+      The pervasive spread of misinformation and disinformation in social media underscores the critical importance of detecting media bias. While robust Large Language Models (LLMs) have emerged as foundational tools for bias prediction, concerns about inherent biases within these models persist. In this work, we investigate the presence and nature of bias within LLMs and its consequential impact on media bias detection. Departing from conventional approaches that focus solely on bias detection in media content, we delve into biases within the LLM systems themselves. Through meticulous examination, we probe whether LLMs exhibit biases, particularly in political bias prediction and text continuation tasks. Additionally, we explore bias across diverse topics, aiming to uncover nuanced variations in bias expression within the LLM framework. Importantly, we propose debiasing strategies, including prompt engineering and model fine-tuning. Extensive analysis of bias tendencies across different LLMs sheds light on the broader landscape of bias propagation in language models. This study advances our understanding of LLM bias, offering critical insights into its implications for bias detection tasks and paving the way for more robust and equitable AI systems
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.07965v1">HalluCana: Fixing LLM Hallucination with A Canary Lookahead</a></div>
     <div class="paper-meta">
       📅 2024-12-10
@@ -929,41 +939,30 @@
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.14279v3">ZS4C: Zero-Shot Synthesis of Compilable Code for Incomplete Code Snippets using LLMs</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16851v2">Can tweets predict article retractions? A comparison between human and LLM labelling</a></div>
     <div class="paper-meta">
       📅 2024-12-09
-      | 💬 This paper has been accepted and published in ACM Transactions on Software Engineering and Methodology (TOSEM), [2024], [https://dl.acm.org/doi/10.1145/3702979]
+      | 💬 19 pages
     </div>
     <details class="paper-abstract">
-      Technical Q&A sites are valuable for software developers seeking knowledge, but the code snippets they provide are often uncompilable and incomplete due to unresolved types and missing libraries. This poses a challenge for users who wish to reuse or analyze these snippets. Existing methods either do not focus on creating compilable code or have low success rates. To address this, we propose ZS4C, a lightweight approach for zero-shot synthesis of compilable code from incomplete snippets using Large Language Models (LLMs). ZS4C operates in two stages: first, it uses an LLM, like GPT-3.5, to identify missing import statements in a snippet; second, it collaborates with a validator (e.g., compiler) to fix compilation errors caused by incorrect imports and syntax issues. We evaluated ZS4C on the StatType-SO benchmark and a new dataset, Python-SO, which includes 539 Python snippets from Stack Overflow across the 20 most popular Python libraries. ZS4C significantly outperforms existing methods, improving the compilation rate from 63% to 95.1% compared to the state-of-the-art SnR, marking a 50.1% improvement. On average, ZS4C can infer more accurate import statements (with an F1 score of 0.98) than SnR, with an improvement of 8.5% in the F1.
+      Quickly detecting problematic research articles is crucial to safeguarding the integrity of scientific research. This study explores whether Twitter mentions of retracted articles can signal potential problems with the articles prior to their retraction, potentially serving as an early warning system for scholars. To investigate this, we analysed a dataset of 4,354 Twitter mentions associated with 504 retracted articles. The effectiveness of Twitter mentions in predicting article retractions was evaluated by both manual and Large Language Model (LLM) labelling. Manual labelling results indicated that 25.7% of tweets signalled problems before retraction. Using the manual labelling results as the baseline, we found that LLMs (GPT-4o-mini, Gemini 1.5 Flash, and Claude-3.5-Haiku) outperformed lexicon-based sentiment analysis tools (e.g., TextBlob) in detecting potential problems, suggesting that automatic detection of problematic articles from social media using LLMs is technically feasible. Nevertheless, since only a small proportion of retracted articles (11.1%) were criticised on Twitter prior to retraction, such automatic systems would detect only a minority of problematic articles. Overall, this study offers insights into how social media data, coupled with emerging generative AI techniques, can support research integrity.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06738v1">JAPAGEN: Efficient Few/Zero-shot Learning via Japanese Training Dataset Generation with LLM</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06432v1">Integrating Expert Labels into LLM-based Emission Goal Detection: Example Selection vs Automatic Prompt Design</a></div>
     <div class="paper-meta">
       📅 2024-12-09
-      | 💬 Accepted by PACLIC38 (2024)
     </div>
     <details class="paper-abstract">
-      Recently some studies have highlighted the potential of Large Language Models (LLMs) as effective generators of supervised training data, offering advantages such as enhanced inference efficiency and reduced costs associated with data collection. However, these studies have predominantly focused on English language tasks. In this paper, we address the fundamental research question: Can LLMs serve as proficient training data generators for other language tasks? Specifically, we leverage LLMs to synthesize supervised training data under few-shot and zero-shot learning scenarios across six diverse Japanese downstream tasks. Subsequently, we utilize this synthesized data to train compact models (e.g., BERT). This novel methodology is termed JAPAGEN. Our experimental findings underscore that JAPAGEN achieves robust performance in classification tasks that necessitate formal text inputs, demonstrating competitive results compared to conventional LLM prompting strategies.
+      We address the detection of emission reduction goals in corporate reports, an important task for monitoring companies' progress in addressing climate change. Specifically, we focus on the issue of integrating expert feedback in the form of labeled example passages into LLM-based pipelines, and compare the two strategies of (1) a dynamic selection of few-shot examples and (2) the automatic optimization of the prompt by the LLM itself. Our findings on a public dataset of 769 climate-related passages from real-world business reports indicate that automatic prompt optimization is the superior approach, while combining both methods provides only limited benefit. Qualitative results indicate that optimized prompts do indeed capture many intricacies of the targeted emission goal extraction task.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06681v1">Toward LLM-Agent-Based Modeling of Transportation Systems: A Conceptual Framework</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06370v1">Exploring Memorization and Copyright Violation in Frontier LLMs: A Study of the New York Times v. OpenAI 2023 Lawsuit</a></div>
     <div class="paper-meta">
       📅 2024-12-09
     </div>
     <details class="paper-abstract">
-      In transportation system demand modeling and simulation, agent-based models and microsimulations are current state-of-the-art approaches. However, existing agent-based models still have some limitations on behavioral realism and resource demand that limit their applicability. In this study, leveraging the emerging technology of large language models (LLMs) and LLM-based agents, we propose a general LLM-agent-based modeling framework for transportation systems. We argue that LLM agents not only possess the essential capabilities to function as agents but also offer promising solutions to overcome some limitations of existing agent-based models. Our conceptual framework design closely replicates the decision-making and interaction processes and traits of human travelers within transportation networks, and we demonstrate that the proposed systems can meet critical behavioral criteria for decision-making and learning behaviors using related studies and a demonstrative example of LLM agents' learning and adjustment in the bottleneck setting. Although further refinement of the LLM-agent-based modeling framework is necessary, we believe that this approach has the potential to improve transportation system modeling and simulation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.16176v1">Efficient VoIP Communications through LLM-based Real-Time Speech Reconstruction and Call Prioritization for Emergency Services</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-      | 💬 15 pages,8 figures
-    </div>
-    <details class="paper-abstract">
-      Emergency communication systems face disruptions due to packet loss, bandwidth constraints, poor signal quality, delays, and jitter in VoIP systems, leading to degraded real-time service quality. Victims in distress often struggle to convey critical information due to panic, speech disorders, and background noise, further complicating dispatchers' ability to assess situations accurately. Staffing shortages in emergency centers exacerbate delays in coordination and assistance. This paper proposes leveraging Large Language Models (LLMs) to address these challenges by reconstructing incomplete speech, filling contextual gaps, and prioritizing calls based on severity. The system integrates real-time transcription with Retrieval-Augmented Generation (RAG) to generate contextual responses, using Twilio and AssemblyAI APIs for seamless implementation. Evaluation shows high precision, favorable BLEU and ROUGE scores, and alignment with real-world needs, demonstrating the model's potential to optimize emergency response workflows and prioritize critical cases effectively.
+      Copyright infringement in frontier LLMs has received much attention recently due to the New York Times v. OpenAI lawsuit, filed in December 2023. The New York Times claims that GPT-4 has infringed its copyrights by reproducing articles for use in LLM training and by memorizing the inputs, thereby publicly displaying them in LLM outputs. Our work aims to measure the propensity of OpenAI's LLMs to exhibit verbatim memorization in its outputs relative to other LLMs, specifically focusing on news articles. We discover that both GPT and Claude models use refusal training and output filters to prevent verbatim output of the memorized articles. We apply a basic prompt template to bypass the refusal training and show that OpenAI models are currently less prone to memorization elicitation than models from Meta, Mistral, and Anthropic. We find that as models increase in size, especially beyond 100 billion parameters, they demonstrate significantly greater capacity for memorization. Our findings have practical implications for training: more attention must be placed on preventing verbatim memorization in very large models. Our findings also have legal significance: in assessing the relative memorization capacity of OpenAI's LLMs, we probe the strength of The New York Times's copyright infringement claims and OpenAI's legal defenses, while underscoring issues at the intersection of generative AI, law, and policy.
     </details>
 </div>

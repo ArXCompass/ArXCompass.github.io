@@ -18,15 +18,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.03768v1">Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-10-02
-    </div>
-    <details class="paper-abstract">
-      The rapid proliferation of frontier model agents promises significant societal advances but also raises concerns about systemic risks arising from unsafe interactions. Collusion to the disadvantage of others has been identified as a central form of undesirable agent cooperation. The use of information hiding (steganography) in agent communications could render collusion practically undetectable. This underscores the need for evaluation frameworks to monitor and mitigate steganographic collusion capabilities. We address a crucial gap in the literature by demonstrating, for the first time, that robust steganographic collusion in LLMs can arise indirectly from optimization pressure. To investigate this problem we design two approaches -- a gradient-based reinforcement learning (GBRL) method and an in-context reinforcement learning (ICRL) method -- for reliably eliciting sophisticated LLM-generated linguistic text steganography. Importantly, we find that emergent steganographic collusion can be robust to both passive steganalytic oversight of model outputs and active mitigation through communication paraphrasing. We contribute a novel model evaluation framework and discuss limitations and future work. Our findings imply that effective risk mitigation from steganographic collusion post-deployment requires innovation in passive and active oversight techniques.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.09722v2">Optimized Multi-Token Joint Decoding with Auxiliary Model for LLM Inference</a></div>
     <div class="paper-meta">
       📅 2024-10-02
@@ -448,6 +439,25 @@
     </div>
     <details class="paper-abstract">
       We study the depth of grade-school math (GSM) problem-solving capabilities of LLMs. To this end, we evaluate their performance on pairs of existing math word problems together so that the answer to the second problem depends on correctly answering the first problem. Our findings reveal a significant reasoning gap in most LLMs, that is performance difference between solving the compositional pairs and solving each question independently. This gap is more pronounced in smaller, more cost-efficient, and math-specialized models. Moreover, instruction-tuning recipes and code generation have varying effects across LLM sizes, while finetuning on GSM can lead to task overfitting. Our analysis indicates that large reasoning gaps are not because of test-set leakage, but due to distraction from additional context and poor second-hop reasoning. Overall, LLMs exhibit systematic differences in their reasoning abilities, despite what their performance on standard benchmarks indicates.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10490v2">Learning Dynamics of LLM Finetuning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      Learning dynamics, which describes how the learning of specific training examples influences the model's predictions on other examples, gives us a powerful tool for understanding the behavior of deep learning systems. We study the learning dynamics of large language models during different types of finetuning, by analyzing the step-wise decomposition of how influence accumulates among different potential responses. Our framework allows a uniform interpretation of many interesting observations about the training of popular algorithms for both instruction tuning and preference tuning. In particular, we propose a hypothetical explanation of why specific types of hallucination are strengthened after finetuning, e.g., the model might use phrases or facts in the response for question B to answer question A, or the model might keep repeating similar simple phrases when generating responses. We also extend our framework and highlight a unique "squeezing effect" to explain a previously observed phenomenon in off-policy direct preference optimization (DPO), where running DPO for too long makes even the desired outputs less likely. This framework also provides insights into where the benefits of on-policy DPO and other variants come from. The analysis not only provides a novel perspective of understanding LLM's finetuning but also inspires a simple, effective method to improve alignment performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2408.08978v2">See What LLMs Cannot Answer: A Self-Challenge Framework for Uncovering LLM Weaknesses</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+      | 💬 COLM 2024
+    </div>
+    <details class="paper-abstract">
+      The impressive performance of Large Language Models (LLMs) has consistently surpassed numerous human-designed benchmarks, presenting new challenges in assessing the shortcomings of LLMs. Designing tasks and finding LLMs' limitations are becoming increasingly important. In this paper, we investigate the question of whether an LLM can discover its own limitations from the errors it makes. To this end, we propose a Self-Challenge evaluation framework with human-in-the-loop. Starting from seed instances that GPT-4 fails to answer, we prompt GPT-4 to summarize error patterns that can be used to generate new instances and incorporate human feedback on them to refine these patterns for generating more challenging data, iteratively. We end up with 8 diverse patterns, such as text manipulation and questions with assumptions. We then build a benchmark, SC-G4, consisting of 1,835 instances generated by GPT-4 using these patterns, with human-annotated gold responses. The SC-G4 serves as a challenging benchmark that allows for a detailed assessment of LLMs' abilities. Our results show that only 44.96\% of instances in SC-G4 can be answered correctly by GPT-4. Interestingly, our pilot study indicates that these error patterns also challenge other LLMs, such as Claude-3 and Llama-3, and cannot be fully resolved through fine-tuning. Our work takes the first step to demonstrate that LLMs can autonomously identify their inherent flaws and provide insights for future dynamic and automatic evaluation.
     </details>
 </div>
 <div class="paper-card">

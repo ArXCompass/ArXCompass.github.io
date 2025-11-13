@@ -9,6 +9,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2511.09497v1">Fundamentals of Physical AI</a></div>
+    <div class="paper-meta">
+      📅 2025-11-13
+      | 💬 This paper is already published in Journal of Intelligent System of Systems Lifecycle Management
+    </div>
+    <details class="paper-abstract">
+      This work will elaborate the fundamental principles of physical artificial intelligence (Physical AI) from a scientific and systemic perspective. The aim is to create a theoretical foundation that describes the physical embodiment, sensory perception, ability to act, learning processes, and context sensitivity of intelligent systems within a coherent framework. While classical AI approaches rely on symbolic processing and data driven models, Physical AI understands intelligence as an emergent phenomenon of real interaction between body, environment, and experience. The six fundamentals presented here are embodiment, sensory perception, motor action, learning, autonomy, and context sensitivity, and form the conceptual basis for designing and evaluating physically intelligent systems. Theoretically, it is shown that these six principles do not represent loose functional modules but rather act as a closed control loop in which energy, information, control, and context are in constant interaction. This circular interaction enables a system to generate meaning not from databases, but from physical experience, a paradigm shift that understands intelligence as an physical embodied process. Physical AI understands learning not as parameter adjustment, but as a change in the structural coupling between agents and the environment. To illustrate this, the theoretical model is explained using a practical scenario: An adaptive assistant robot supports patients in a rehabilitation clinic. This example illustrates that physical intelligence does not arise from abstract calculation, but from immediate, embodied experience. It shows how the six fundamentals interact in a real system: embodiment as a prerequisite, perception as input, movement as expression, learning as adaptation, autonomy as regulation, and context as orientation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2511.07090v3">Green AI: A systematic review and meta-analysis of its definitions, lifecycle models, hardware and measurement attempts</a></div>
+    <div class="paper-meta">
+      📅 2025-11-13
+    </div>
+    <details class="paper-abstract">
+      Across the Artificial Intelligence (AI) lifecycle - from hardware to development, deployment, and reuse - burdens span energy, carbon, water, and embodied impacts. Cloud provider tools improve transparency but remain heterogeneous and often omit water and value chain effects, limiting comparability and reproducibility. Addressing these multi dimensional burdens requires a lifecycle approach linking phase explicit mapping with system levers (hardware, placement, energy mix, cooling, scheduling) and calibrated measurement across facility, system, device, and workload levels. This article (i) establishes a unified, operational definition of Green AI distinct from Sustainable AI; (ii) formalizes a five phase lifecycle mapped to Life Cycle Assessment (LCA) stages, making energy, carbon, water, and embodied impacts first class; (iii) specifies governance via Plan Do Check Act (PDCA) cycles with decision gateways; (iv) systematizes hardware and system level strategies across the edge cloud continuum to reduce embodied burdens; and (v) defines a calibrated measurement framework combining estimator models with direct metering to enable reproducible, provider agnostic comparisons. Combining definition, lifecycle processes, hardware strategies, and calibrated measurement, this article offers actionable, evidence based guidance for researchers, practitioners, and policymakers.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2508.15201v2">Survey of Vision-Language-Action Models for Embodied Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-13
+      | 💬 in Chinese language
+    </div>
+    <details class="paper-abstract">
+      Embodied intelligence systems, which enhance agent capabilities through continuous environment interactions, have garnered significant attention from both academia and industry. Vision-Language-Action models, inspired by advancements in large foundation models, serve as universal robotic control frameworks that substantially improve agent-environment interaction capabilities in embodied intelligence systems. This expansion has broadened application scenarios for embodied AI robots. This survey comprehensively reviews VLA models for embodied manipulation. Firstly, it chronicles the developmental trajectory of VLA architectures. Subsequently, we conduct a detailed analysis of current research across 5 critical dimensions: VLA model structures, training datasets, pre-training methods, post-training methods, and model evaluation. Finally, we synthesize key challenges in VLA development and real-world deployment, while outlining promising future research directions.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2511.07090v2">Green AI: A systematic review and meta-analysis of its definitions, lifecycle models, hardware and measurement attempts</a></div>
     <div class="paper-meta">
       📅 2025-11-12

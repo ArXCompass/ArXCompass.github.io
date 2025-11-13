@@ -68,6 +68,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05202v1">Harnessing the Power of LLMs: Automating Unit Test Generation for High-Performance Computing</a></div>
+    <div class="paper-meta">
+      📅 2024-07-06
+    </div>
+    <details class="paper-abstract">
+      Unit testing is crucial in software engineering for ensuring quality. However, it's not widely used in parallel and high-performance computing software, particularly scientific applications, due to their smaller, diverse user base and complex logic. These factors make unit testing challenging and expensive, as it requires specialized knowledge and existing automated tools are often ineffective. To address this, we propose an automated method for generating unit tests for such software, considering their unique features like complex logic and parallel processing. Recently, large language models (LLMs) have shown promise in coding and testing. We explored the capabilities of Davinci (text-davinci-002) and ChatGPT (gpt-3.5-turbo) in creating unit tests for C++ parallel programs. Our results show that LLMs can generate mostly correct and comprehensive unit tests, although they have some limitations, such as repetitive assertions and blank test cases.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2401.16807v2">Detecting LLM-Assisted Writing in Scientific Communication: Are We There Yet?</a></div>
     <div class="paper-meta">
       📅 2024-07-05
