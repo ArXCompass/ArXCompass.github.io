@@ -18,25 +18,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21465v1">ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2024-10-28
-    </div>
-    <details class="paper-abstract">
-      With the widespread deployment of long-context large language models (LLMs), there has been a growing demand for efficient support of high-throughput inference. However, as the key-value (KV) cache expands with the sequence length, the increasing memory footprint and the need to access it for each token generation both result in low throughput when serving long-context LLMs. While various dynamic sparse attention methods have been proposed to speed up inference while maintaining generation quality, they either fail to sufficiently reduce GPU memory consumption or introduce significant decoding latency by offloading the KV cache to the CPU. We present ShadowKV, a high-throughput long-context LLM inference system that stores the low-rank key cache and offloads the value cache to reduce the memory footprint for larger batch sizes and longer sequences. To minimize decoding latency, ShadowKV employs an accurate KV selection strategy that reconstructs minimal sparse KV pairs on-the-fly. By evaluating ShadowKV on a broad range of benchmarks, including RULER, LongBench, and Needle In A Haystack, and models like Llama-3.1-8B, Llama-3-8B-1M, GLM-4-9B-1M, Yi-9B-200K, Phi-3-Mini-128K, and Qwen2-7B-128K, we demonstrate that it can support up to 6$\times$ larger batch sizes and boost throughput by up to 3.04$\times$ on an A100 GPU without sacrificing accuracy, even surpassing the performance achievable with infinite batch size under the assumption of infinite GPU memory. The code is available at https://github.com/bytedance/ShadowKV.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16843v3">Do LLM Agents Have Regret? A Case Study in Online Learning and Games</a></div>
-    <div class="paper-meta">
-      📅 2024-10-28
-      | 💬 added references to related and concurrent work, and longer-horizon and stochastic bandit experiments
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have been increasingly employed for (interactive) decision-making, via the development of LLM-based autonomous agents. Despite their emerging successes, the performance of LLM agents in decision-making has not been fully investigated through quantitative metrics, especially in the multi-agent setting when they interact with each other, a typical scenario in real-world LLM-agent applications. To better understand the limits of LLM agents in these interactive environments, we propose to study their interactions in benchmark decision-making settings in online learning and game theory, through the performance metric of \emph{regret}. We first empirically study the {no-regret} behaviors of LLMs in canonical (non-stationary) online learning problems, as well as the emergence of equilibria when LLM agents interact through playing repeated games. We then provide some theoretical insights into the no-regret behaviors of LLM agents, under certain assumptions on the supervised pre-training and the rationality model of human decision-makers who generate the data. Notably, we also identify (simple) cases where advanced LLMs such as GPT-4 fail to be no-regret. To promote the no-regret behaviors, we propose a novel \emph{unsupervised} training loss of \emph{regret-loss}, which, in contrast to the supervised pre-training loss, does not require the labels of (optimal) actions. We then establish the statistical guarantee of generalization bound for regret-loss minimization, followed by the optimization guarantee that minimizing such a loss may automatically lead to known no-regret learning algorithms. Our further experiments demonstrate the effectiveness of our regret-loss, especially in addressing the above ``regrettable'' cases.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.23308v1">Systematically Analyzing Prompt Injection Vulnerabilities in Diverse LLM Architectures</a></div>
     <div class="paper-meta">
       📅 2024-10-28
@@ -270,6 +251,24 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21479v1">TransformLLM: Adapting Large Language Models via LLM-Transformed Reading Comprehension Text</a></div>
+    <div class="paper-meta">
+      📅 2024-10-28
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have shown promise in highly-specialized domains, however challenges are still present in aspects of accuracy and costs. These limitations restrict the usage of existing models in domain-specific tasks. While fine-tuning pre-trained models have shown promising results, this process can be computationally expensive and require massive datasets of the specialized application in hand. In this work, we bridge that gap. We have developed Phi-2-Legal and Mistral-Legal-7B, which are language models specifically designed for legal applications. These models are based on Phi-2 and Mistral-7B-v0.1, and have gone through continued pre-training with over 500 million tokens of legal texts. Our innovative approach significantly improves capabilities in legal tasks by using Large Language Models (LLMs) to convert raw training data into reading comprehension text. Our legal LLMs have demonstrated superior performance in legal benchmarks, even outperforming models trained on much larger datasets with more resources. This work emphasizes the effectiveness of continued pre-training on domain-specific texts, while using affordable LLMs for data conversion, which gives these models domain expertise while retaining general language understanding capabilities. While this work uses the legal domain as a test case, our method can be scaled and applied to any pre-training dataset, resulting in significant improvements across different tasks. These findings underscore the potential of domain-adaptive pre-training and reading comprehension for the development of highly effective domain-specific language models.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21474v1">Estimating Causal Effects of Text Interventions Leveraging LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-28
+    </div>
+    <details class="paper-abstract">
+      Quantifying the effect of textual interventions in social systems, such as reducing anger in social media posts to see its impact on engagement, poses significant challenges. Direct interventions on real-world systems are often infeasible, necessitating reliance on observational data. Traditional causal inference methods, typically designed for binary or discrete treatments, are inadequate for handling the complex, high-dimensional nature of textual data. This paper addresses these challenges by proposing a novel approach, CausalDANN, to estimate causal effects using text transformations facilitated by large language models (LLMs). Unlike existing methods, our approach accommodates arbitrary textual interventions and leverages text-level classifiers with domain adaptation ability to produce robust effect estimates against domain shifts, even when only the control group is observed. This flexibility in handling various text interventions is a key advancement in causal estimation for textual data, offering opportunities to better understand human behaviors and develop effective policies within social systems.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2404.11055v2">Do LLMs Think Fast and Slow? A Causal Study on Sentiment Analysis</a></div>
     <div class="paper-meta">
       📅 2024-10-27
@@ -482,6 +481,15 @@
     </div>
     <details class="paper-abstract">
       Text classification involves categorizing a given text, such as determining its sentiment or identifying harmful content. With the advancement of large language models (LLMs), these models have become highly effective at performing text classification tasks. However, they still show vulnerabilities to variations in text formatting. Recent research demonstrates that modifying input formats, such as vertically aligning words for encoder-based models, can substantially lower accuracy in text classification tasks. While easily understood by humans, these inputs can significantly mislead models, posing a potential risk of bypassing detection in real-world scenarios involving harmful or sensitive information. With the expanding application of LLMs, a crucial question arises: Do decoder-based LLMs exhibit similar vulnerabilities to vertically formatted text input? In this paper, we investigate the impact of vertical text input on the performance of various LLMs across multiple text classification datasets and analyze the underlying causes. Our findings are as follows: (i) Vertical text input significantly degrades the accuracy of LLMs in text classification tasks. (ii) Chain of Thought (CoT) reasoning does not help LLMs recognize vertical input or mitigate its vulnerability, but few-shot learning with careful analysis does. (iii) We explore the underlying cause of the vulnerability by analyzing the inherent issues in tokenization and attention matrices.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.20266v1">Limitations of the LLM-as-a-Judge Approach for Evaluating LLM Outputs in Expert Knowledge Tasks</a></div>
+    <div class="paper-meta">
+      📅 2024-10-26
+    </div>
+    <details class="paper-abstract">
+      The potential of using Large Language Models (LLMs) themselves to evaluate LLM outputs offers a promising method for assessing model performance across various contexts. Previous research indicates that LLM-as-a-judge exhibits a strong correlation with human judges in the context of general instruction following. However, for instructions that require specialized knowledge, the validity of using LLMs as judges remains uncertain. In our study, we applied a mixed-methods approach, conducting pairwise comparisons in which both subject matter experts (SMEs) and LLMs evaluated outputs from domain-specific tasks. We focused on two distinct fields: dietetics, with registered dietitian experts, and mental health, with clinical psychologist experts. Our results showed that SMEs agreed with LLM judges 68% of the time in the dietetics domain and 64% in mental health when evaluating overall preference. Additionally, the results indicated variations in SME-LLM agreement across domain-specific aspect questions. Our findings emphasize the importance of keeping human experts in the evaluation process, as LLMs alone may not provide the depth of understanding required for complex, knowledge specific tasks. We also explore the implications of LLM evaluations across different domains and discuss how these insights can inform the design of evaluation workflows that ensure better alignment between human experts and LLMs in interactive systems.
     </details>
 </div>
 <div class="paper-card">
@@ -943,14 +951,5 @@
     </div>
     <details class="paper-abstract">
       In this paper, we propose a novel framework that leverages large language models (LLMs) for predicting missing values in time-varying graph signals by exploiting spatial and temporal smoothness. We leverage the power of LLM to achieve a message-passing scheme. For each missing node, its neighbors and previous estimates are fed into and processed by LLM to infer the missing observations. Tested on the task of the online prediction of wind-speed graph signals, our model outperforms online graph filtering algorithms in terms of accuracy, demonstrating the potential of LLMs in effectively addressing partially observed signals in graphs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.18697v1">How Good Are LLMs for Literary Translation, Really? Literary Translation Evaluation with Humans and LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-10-24
-    </div>
-    <details class="paper-abstract">
-      Recent research has focused on literary machine translation (MT) as a new challenge in MT. However, the evaluation of literary MT remains an open problem. We contribute to this ongoing discussion by introducing LITEVAL-CORPUS, a paragraph-level parallel corpus comprising multiple verified human translations and outputs from 9 MT systems, which totals over 2k paragraphs and includes 13k annotated sentences across four language pairs, costing 4.5k Euro. This corpus enables us to (i) examine the consistency and adequacy of multiple annotation schemes, (ii) compare evaluations by students and professionals, and (iii) assess the effectiveness of LLM-based metrics. We find that Multidimensional Quality Metrics (MQM), as the de facto standard in non-literary human MT evaluation, is inadequate for literary translation: While Best-Worst Scaling (BWS) with students and Scalar Quality Metric (SQM) with professional translators prefer human translations at rates of ~82% and ~94%, respectively, MQM with student annotators prefers human professional translations over the translations of the best-performing LLMs in only ~42% of cases. While automatic metrics generally show a moderate correlation with human MQM and SQM, they struggle to accurately identify human translations, with rates of at most ~20%. Our overall evaluation indicates that human professional translations consistently outperform LLM translations, where even the most recent LLMs tend to produce more literal and less diverse translations compared to human translations. However, newer LLMs such as GPT-4o perform substantially better than older ones.
     </details>
 </div>

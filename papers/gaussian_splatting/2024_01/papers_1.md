@@ -27,6 +27,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.09720v2">GaussianBody: Clothed Human Reconstruction via 3d Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-01-27
+    </div>
+    <details class="paper-abstract">
+      In this work, we propose a novel clothed human reconstruction method called GaussianBody, based on 3D Gaussian Splatting. Compared with the costly neural radiance based models, 3D Gaussian Splatting has recently demonstrated great performance in terms of training time and rendering quality. However, applying the static 3D Gaussian Splatting model to the dynamic human reconstruction problem is non-trivial due to complicated non-rigid deformations and rich cloth details. To address these challenges, our method considers explicit pose-guided deformation to associate dynamic Gaussians across the canonical space and the observation space, introducing a physically-based prior with regularized transformations helps mitigate ambiguity between the two spaces. During the training process, we further propose a pose refinement strategy to update the pose regression for compensating the inaccurate initial estimation and a split-with-scale mechanism to enhance the density of regressed point clouds. The experiments validate that our method can achieve state-of-the-art photorealistic novel-view rendering results with high-quality details for dynamic clothed human bodies, along with explicit geometry reconstruction.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2401.14032v1">GauU-Scene: A Scene Reconstruction Benchmark on Large Scale 3D Reconstruction Dataset Using Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2024-01-25
@@ -56,6 +65,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2401.02436v2">Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis</a></div>
+    <div class="paper-meta">
+      📅 2024-01-22
+    </div>
+    <details class="paper-abstract">
+      Recently, high-fidelity scene reconstruction with an optimized 3D Gaussian splat representation has been introduced for novel view synthesis from sparse image sets. Making such representations suitable for applications like network streaming and rendering on low-power devices requires significantly reduced memory consumption as well as improved rendering efficiency. We propose a compressed 3D Gaussian splat representation that utilizes sensitivity-aware vector clustering with quantization-aware training to compress directional colors and Gaussian parameters. The learned codebooks have low bitrates and achieve a compression rate of up to $31\times$ on real-world scenes with only minimal degradation of visual quality. We demonstrate that the compressed splat representation can be efficiently rendered with hardware rasterization on lightweight GPUs at up to $4\times$ higher framerates than reported via an optimized GPU compute pipeline. Extensive experiments across multiple datasets demonstrate the robustness and rendering speed of the proposed approach.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.02436v2">Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis</a></div>
     <div class="paper-meta">
       📅 2024-01-22
     </div>
@@ -124,6 +142,16 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2311.13398v3">Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images</a></div>
+    <div class="paper-meta">
+      📅 2024-01-04
+      | 💬 10 pages, 5 figures; Project page: robot0321.github.io/DepthRegGS
+    </div>
+    <details class="paper-abstract">
+      In this paper, we present a method to optimize Gaussian splatting with a limited number of images while avoiding overfitting. Representing a 3D scene by combining numerous Gaussian splats has yielded outstanding visual quality. However, it tends to overfit the training views when only a small number of images are available. To address this issue, we introduce a dense depth map as a geometry guide to mitigate overfitting. We obtained the depth map using a pre-trained monocular depth estimation model and aligning the scale and offset using sparse COLMAP feature points. The adjusted depth aids in the color-based optimization of 3D Gaussian splatting, mitigating floating artifacts, and ensuring adherence to geometric constraints. We verify the proposed method on the NeRF-LLFF dataset with varying numbers of few images. Our approach demonstrates robust geometry compared to the original method that relies solely on images. Project page: robot0321.github.io/DepthRegGS
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2311.13398v3">Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images</a></div>
     <div class="paper-meta">
       📅 2024-01-04
       | 💬 10 pages, 5 figures; Project page: robot0321.github.io/DepthRegGS

@@ -803,6 +803,34 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.00231v2">LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking</a></div>
+    <div class="paper-meta">
+      📅 2024-11-26
+    </div>
+    <details class="paper-abstract">
+      Ranking passages by prompting a large language model (LLM) can achieve promising performance in modern information retrieval (IR) systems. A common approach to sort the ranking list is by prompting LLMs for a pairwise or setwise comparison which often relies on sorting algorithms. However, sorting-based methods require consistent comparisons to correctly sort the passages, which we show that LLMs often violate. We identify two kinds of intrinsic inconsistency in LLM-based pairwise comparisons: order inconsistency which leads to conflicting results when switching the passage order, and transitive inconsistency which leads to non-transitive triads among all preference pairs. Our study of these inconsistencies is relevant for understanding and improving the stability of any ranking scheme based on relative preferences. In this paper, we propose LLM-RankFusion, an LLM-based ranking framework that mitigates these inconsistencies and produces a robust ranking list. LLM-RankFusion mitigates order inconsistency using in-context learning (ICL) to demonstrate order-agnostic comparisons and calibration to estimate the underlying preference probability between two passages. We then address transitive inconsistency by aggregating the ranking results from multiple rankers. In our experiments, we empirically show that LLM-RankFusion can significantly reduce inconsistent comparison results, improving the ranking quality by making the final ranking list more robust. Our code is available at \href{https://github.com/XHMY/LLM-RankFusion}{https://github.com/XHMY/LLM-RankFusion}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2411.14484v1">Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach</a></div>
+    <div class="paper-meta">
+      📅 2024-11-25
+    </div>
+    <details class="paper-abstract">
+      Previous work has attempted to boost Large Language Model (LLM) performance on planning and scheduling tasks through a variety of prompt engineering techniques. While these methods can work within the distributions tested, they are neither robust nor predictable. This limitation can be addressed through compound LLM architectures where LLMs work in conjunction with other components to ensure reliability. In this paper, we present a technical evaluation of a compound LLM architecture--the LLM-Modulo framework. In this framework, an LLM is paired with a complete set of sound verifiers that validate its output, re-prompting it if it fails. This approach ensures that the system can never output any fallacious output, and therefore that every output generated is guaranteed correct--something previous techniques have not been able to claim. Our results, evaluated across four scheduling domains, demonstrate significant performance gains with the LLM-Modulo framework using various models. Additionally, we explore modifications to the base configuration of the framework and assess their impact on overall system performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2411.14971v1">Leveraging LLMs for Legacy Code Modernization: Challenges and Opportunities for LLM-Generated Documentation</a></div>
+    <div class="paper-meta">
+      📅 2024-11-25
+      | 💬 Abbreviated version submitted to LLM4Code 2025 (a workshop co-located with ICSE 2025), 13 pages, 3 figures
+    </div>
+    <details class="paper-abstract">
+      Legacy software systems, written in outdated languages like MUMPS and mainframe assembly, pose challenges in efficiency, maintenance, staffing, and security. While LLMs offer promise for modernizing these systems, their ability to understand legacy languages is largely unknown. This paper investigates the utilization of LLMs to generate documentation for legacy code using two datasets: an electronic health records (EHR) system in MUMPS and open-source applications in IBM mainframe Assembly Language Code (ALC). We propose a prompting strategy for generating line-wise code comments and a rubric to evaluate their completeness, readability, usefulness, and hallucination. Our study assesses the correlation between human evaluations and automated metrics, such as code complexity and reference-based metrics. We find that LLM-generated comments for MUMPS and ALC are generally hallucination-free, complete, readable, and useful compared to ground-truth comments, though ALC poses challenges. However, no automated metrics strongly correlate with comment quality to predict or measure LLM performance. Our findings highlight the limitations of current automated measures and the need for better evaluation metrics for LLM-generated documentation in legacy systems.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.16932v1">Seq2Time: Sequential Knowledge Transfer for Video LLM Temporal Grounding</a></div>
     <div class="paper-meta">
       📅 2024-11-25
@@ -922,35 +950,5 @@
     </div>
     <details class="paper-abstract">
       Large Language Models (LLMs) have significantly impacted nearly every domain of human knowledge. However, the explainability of these models esp. to laypersons, which are crucial for instilling trust, have been examined through various skeptical lenses. In this paper, we introduce a novel notion of LLM explainability to laypersons, termed $\textit{ReQuesting}$, across three high-priority application domains -- law, health and finance, using multiple state-of-the-art LLMs. The proposed notion exhibits faithful generation of explainable layman-understandable algorithms on multiple tasks through high degree of reproducibility. Furthermore, we observe a notable alignment of the explainable algorithms with intrinsic reasoning of the LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.16116v1">LLM Augmentations to support Analytical Reasoning over Multiple Documents</a></div>
-    <div class="paper-meta">
-      📅 2024-11-25
-      | 💬 2024 IEEE International Conference on Big Data (IEEE BigData 2024)
-    </div>
-    <details class="paper-abstract">
-      Building on their demonstrated ability to perform a variety of tasks, we investigate the application of large language models (LLMs) to enhance in-depth analytical reasoning within the context of intelligence analysis. Intelligence analysts typically work with massive dossiers to draw connections between seemingly unrelated entities, and uncover adversaries' plans and motives. We explore if and how LLMs can be helpful to analysts for this task and develop an architecture to augment the capabilities of an LLM with a memory module called dynamic evidence trees (DETs) to develop and track multiple investigation threads. Through extensive experiments on multiple datasets, we highlight how LLMs, as-is, are still inadequate to support intelligence analysts and offer recommendations to improve LLMs for such intricate reasoning applications.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.16111v1">LLMPirate: LLMs for Black-box Hardware IP Piracy</a></div>
-    <div class="paper-meta">
-      📅 2024-11-25
-      | 💬 Accepted by NDSS Symposium 2025
-    </div>
-    <details class="paper-abstract">
-      The rapid advancement of large language models (LLMs) has enabled the ability to effectively analyze and generate code nearly instantaneously, resulting in their widespread adoption in software development. Following this advancement, researchers and companies have begun integrating LLMs across the hardware design and verification process. However, these highly potent LLMs can also induce new attack scenarios upon security vulnerabilities across the hardware development process. One such attack vector that has not been explored is intellectual property (IP) piracy. Given that this attack can manifest as rewriting hardware designs to evade piracy detection, it is essential to thoroughly evaluate LLM capabilities in performing this task and assess the mitigation abilities of current IP piracy detection tools. Therefore, in this work, we propose LLMPirate, the first LLM-based technique able to generate pirated variations of circuit designs that successfully evade detection across multiple state-of-the-art piracy detection tools. We devise three solutions to overcome challenges related to integration of LLMs for hardware circuit designs, scalability to large circuits, and effectiveness, resulting in an end-to-end automated, efficient, and practical formulation. We perform an extensive experimental evaluation of LLMPirate using eight LLMs of varying sizes and capabilities and assess their performance in pirating various circuit designs against four state-of-the-art, widely-used piracy detection tools. Our experiments demonstrate that LLMPirate is able to consistently evade detection on 100% of tested circuits across every detection tool. Additionally, we showcase the ramifications of LLMPirate using case studies on IBEX and MOR1KX processors and a GPS module, that we successfully pirate. We envision that our work motivates and fosters the development of better IP piracy detection tools.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.16020v1">TransCompressor: LLM-Powered Multimodal Data Compression for Smart Transportation</a></div>
-    <div class="paper-meta">
-      📅 2024-11-25
-      | 💬 6 pages
-    </div>
-    <details class="paper-abstract">
-      The incorporation of Large Language Models (LLMs) into smart transportation systems has paved the way for improving data management and operational efficiency. This study introduces TransCompressor, a novel framework that leverages LLMs for efficient compression and decompression of multimodal transportation sensor data. TransCompressor has undergone thorough evaluation with diverse sensor data types, including barometer, speed, and altitude measurements, across various transportation modes like buses, taxis, and MTRs. Comprehensive evaluation illustrates the effectiveness of TransCompressor in reconstructing transportation sensor data at different compression ratios. The results highlight that, with well-crafted prompts, LLMs can utilize their vast knowledge base to contribute to data compression processes, enhancing data storage, analysis, and retrieval in smart transportation settings.
     </details>
 </div>

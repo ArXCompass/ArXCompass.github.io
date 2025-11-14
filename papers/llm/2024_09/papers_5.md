@@ -13,6 +13,43 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2312.04985v6">SparQ Attention: Bandwidth-Efficient LLM Inference</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+    </div>
+    <details class="paper-abstract">
+      The computational difficulties of large language model (LLM) inference remain a significant obstacle to their widespread deployment. The need for many applications to support long input sequences and process them in large batches typically causes token-generation to be bottlenecked by data transfer. For this reason, we introduce SparQ Attention, a technique for increasing the inference throughput of LLMs by utilising memory bandwidth more efficiently within the attention layers, through selective fetching of the cached history. Our proposed technique can be applied directly to off-the-shelf LLMs during inference, without requiring any modification to the pre-training setup or additional fine-tuning. We show that SparQ Attention brings up to 8x savings in attention data transfers without substantial drops in accuracy, by evaluating Llama 2 and 3, Mistral, Gemma and Pythia models on a wide range of downstream tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.11155v1">ISO: Overlap of Computation and Communication within Seqenence For LLM Inference</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+    </div>
+    <details class="paper-abstract">
+      In the realm of Large Language Model (LLM) inference, the inherent structure of transformer models coupled with the multi-GPU tensor parallelism strategy leads to a sequential execution of computation and communication. This results in substantial underutilization of computing resources during the communication phase. To mitigate this inefficiency, various techniques have been developed to optimize the use of computational power throughout the communication process. These strategies primarily involve overlapping matrix computations and communications, as well as interleaving micro-batches across different requests. Nonetheless, these approaches either fall short of achieving ideal overlap or impose certain limitations on their application. To overcome these challenges, this paper introduces a novel strategy for computation-communication overlap that operates at the sequence level. This method not only enhances the degree of overlap but also minimizes the constraints on its applicability. Experimental evaluations conducted using 30b/70b models have demonstrated significant improvements in efficiency. Specifically, the proposed technique has been shown to reduce time consumption by approximately 35% on 4090 GPU and by roughly 15% on A800 GPU during the prefill stage of LLM inference.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.15412v5">Towards Measuring and Modeling "Culture" in LLMs: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+    </div>
+    <details class="paper-abstract">
+      We present a survey of more than 90 recent papers that aim to study cultural representation and inclusion in large language models (LLMs). We observe that none of the studies explicitly define "culture, which is a complex, multifaceted concept; instead, they probe the models on some specially designed datasets which represent certain aspects of "culture". We call these aspects the proxies of culture, and organize them across two dimensions of demographic and semantic proxies. We also categorize the probing methods employed. Our analysis indicates that only certain aspects of ``culture,'' such as values and objectives, have been studied, leaving several other interesting and important facets, especially the multitude of semantic domains (Thompson et al., 2020) and aboutness (Hershcovich et al., 2022), unexplored. Two other crucial gaps are the lack of robustness of probing techniques and situated studies on the impact of cultural mis- and under-representation in LLM-based applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.00128v2">Can AI Replace Human Subjects? A Large-Scale Replication of Psychological Experiments with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-09-04
+      | 💬 5 figures, 2 tables
+    </div>
+    <details class="paper-abstract">
+      Artificial Intelligence (AI) is increasingly being integrated into scientific research, particularly in the social sciences, where understanding human behavior is critical. Large Language Models (LLMs) like GPT-4 have shown promise in replicating human-like responses in various psychological experiments. However, the extent to which LLMs can effectively replace human subjects across diverse experimental contexts remains unclear. Here, we conduct a large-scale study replicating 154 psychological experiments from top social science journals with 618 main effects and 138 interaction effects using GPT-4 as a simulated participant. We find that GPT-4 successfully replicates 76.0 percent of main effects and 47.0 percent of interaction effects observed in the original studies, closely mirroring human responses in both direction and significance. However, only 19.44 percent of GPT-4's replicated confidence intervals contain the original effect sizes, with the majority of replicated effect sizes exceeding the 95 percent confidence interval of the original studies. Additionally, there is a 71.6 percent rate of unexpected significant results where the original studies reported null findings, suggesting potential overestimation or false positives. Our results demonstrate the potential of LLMs as powerful tools in psychological research but also emphasize the need for caution in interpreting AI-driven findings. While LLMs can complement human studies, they cannot yet fully replace the nuanced insights provided by human subjects.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.15221v2">LLM Defenses Are Not Robust to Multi-Turn Human Jailbreaks Yet</a></div>
     <div class="paper-meta">
       📅 2024-09-04
@@ -258,6 +295,25 @@
     </div>
     <details class="paper-abstract">
       In the context of English as a Foreign Language (EFL) writing education, LLM-as-a-tutor can assist students by providing real-time feedback on their essays. However, challenges arise in assessing LLM-as-a-tutor due to differing standards between educational and general use cases. To bridge this gap, we integrate pedagogical principles to assess student-LLM interaction. First, we explore how LLMs can function as English tutors, providing effective essay feedback tailored to students. Second, we propose three metrics to evaluate LLM-as-a-tutor specifically designed for EFL writing education, emphasizing pedagogical aspects. In this process, EFL experts evaluate the feedback from LLM-as-a-tutor regarding quality and characteristics. On the other hand, EFL learners assess their learning outcomes from interaction with LLM-as-a-tutor. This approach lays the groundwork for developing LLMs-as-a-tutor tailored to the needs of EFL learners, advancing the effectiveness of writing education in this context.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2310.05191v2">LLM-as-a-tutor in EFL Writing Education: Focusing on Evaluation of Student-LLM Interaction</a></div>
+    <div class="paper-meta">
+      📅 2024-09-02
+    </div>
+    <details class="paper-abstract">
+      In the context of English as a Foreign Language (EFL) writing education, LLM-as-a-tutor can assist students by providing real-time feedback on their essays. However, challenges arise in assessing LLM-as-a-tutor due to differing standards between educational and general use cases. To bridge this gap, we integrate pedagogical principles to assess student-LLM interaction. First, we explore how LLMs can function as English tutors, providing effective essay feedback tailored to students. Second, we propose three metrics to evaluate LLM-as-a-tutor specifically designed for EFL writing education, emphasizing pedagogical aspects. In this process, EFL experts evaluate the feedback from LLM-as-a-tutor regarding quality and characteristics. On the other hand, EFL learners assess their learning outcomes from interaction with LLM-as-a-tutor. This approach lays the groundwork for developing LLMs-as-a-tutor tailored to the needs of EFL learners, advancing the effectiveness of writing education in this context.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.01140v1">LLM-PQA: LLM-enhanced Prediction Query Answering</a></div>
+    <div class="paper-meta">
+      📅 2024-09-02
+      | 💬 This paper is accepted as a demo at CIKM 2024
+    </div>
+    <details class="paper-abstract">
+      The advent of Large Language Models (LLMs) provides an opportunity to change the way queries are processed, moving beyond the constraints of conventional SQL-based database systems. However, using an LLM to answer a prediction query is still challenging, since an external ML model has to be employed and inference has to be performed in order to provide an answer. This paper introduces LLM-PQA, a novel tool that addresses prediction queries formulated in natural language. LLM-PQA is the first to combine the capabilities of LLMs and retrieval-augmented mechanism for the needs of prediction queries by integrating data lakes and model zoos. This integration provides users with access to a vast spectrum of heterogeneous data and diverse ML models, facilitating dynamic prediction query answering. In addition, LLM-PQA can dynamically train models on demand, based on specific query requirements, ensuring reliable and relevant results even when no pre-trained model in a model zoo, available for the task.
     </details>
 </div>
 <div class="paper-card">

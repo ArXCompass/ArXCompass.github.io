@@ -286,6 +286,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.01711v1">LLM on FHIR -- Demystifying Health Records</a></div>
+    <div class="paper-meta">
+      📅 2024-01-25
+      | 💬 Pre-print of the paper submitted to the Call for Papers for the Special Focus Issue on ChatGPT and Large Language Models (LLMs) in Biomedicine and Health at the Journal of the American Medical Informatics Association: https://academic.oup.com/jamia/pages/call-for-papers-for-special-focus-issue
+    </div>
+    <details class="paper-abstract">
+      Objective: To enhance health literacy and accessibility of health information for a diverse patient population by developing a patient-centered artificial intelligence (AI) solution using large language models (LLMs) and Fast Healthcare Interoperability Resources (FHIR) application programming interfaces (APIs). Materials and Methods: The research involved developing LLM on FHIR, an open-source mobile application allowing users to interact with their health records using LLMs. The app is built on Stanford's Spezi ecosystem and uses OpenAI's GPT-4. A pilot study was conducted with the SyntheticMass patient dataset and evaluated by medical experts to assess the app's effectiveness in increasing health literacy. The evaluation focused on the accuracy, relevance, and understandability of the LLM's responses to common patient questions. Results: LLM on FHIR demonstrated varying but generally high degrees of accuracy and relevance in providing understandable health information to patients. The app effectively translated medical data into patient-friendly language and was able to adapt its responses to different patient profiles. However, challenges included variability in LLM responses and the need for precise filtering of health data. Discussion and Conclusion: LLMs offer significant potential in improving health literacy and making health records more accessible. LLM on FHIR, as a pioneering application in this field, demonstrates the feasibility and challenges of integrating LLMs into patient care. While promising, the implementation and pilot also highlight risks such as inconsistent responses and the importance of replicable output. Future directions include better resource identification mechanisms and executing LLMs on-device to enhance privacy and reduce costs.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2401.02981v2">Fine-tuning and Utilization Methods of Domain-specific LLMs</a></div>
     <div class="paper-meta">
       📅 2024-01-24
@@ -947,14 +957,5 @@
     </div>
     <details class="paper-abstract">
       Document-based Question-Answering (QA) tasks are crucial for precise information retrieval. While some existing work focus on evaluating large language models performance on retrieving and answering questions from documents, assessing the LLMs performance on QA types that require exact answer selection from predefined options and numerical extraction is yet to be fully assessed. In this paper, we specifically focus on this underexplored context and conduct empirical analysis of LLMs (GPT-4 and GPT-3.5) on question types, including single-choice, yes-no, multiple-choice, and number extraction questions from documents in zero-shot setting. We use the CogTale dataset for evaluation, which provide human expert-tagged responses, offering a robust benchmark for precision and factual grounding. We found that LLMs, particularly GPT-4, can precisely answer many single-choice and yes-no questions given relevant context, demonstrating their efficacy in information retrieval tasks. However, their performance diminishes when confronted with multiple-choice and number extraction formats, lowering the overall performance of the model on this task, indicating that these models may not yet be sufficiently reliable for the task. This limits the applications of LLMs on applications demanding precise information extraction from documents, such as meta-analysis tasks. These findings hinge on the assumption that the retrievers furnish pertinent context necessary for accurate responses, emphasizing the need for further research. Our work offers a framework for ongoing dataset evaluation, ensuring that LLM applications for information retrieval and document analysis continue to meet evolving standards.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2309.08163v2">Self-Assessment Tests are Unreliable Measures of LLM Personality</a></div>
-    <div class="paper-meta">
-      📅 2024-01-02
-    </div>
-    <details class="paper-abstract">
-      As large language models (LLM) evolve in their capabilities, various recent studies have tried to quantify their behavior using psychological tools created to study human behavior. One such example is the measurement of "personality" of LLMs using self-assessment personality tests developed to measure human personality. Yet almost none of these works verify the applicability of these tests on LLMs. In this paper, we analyze the reliability of LLM personality scores obtained from self-assessment personality tests using two simple experiments. We first introduce the property of prompt sensitivity, where three semantically equivalent prompts representing three intuitive ways of administering self-assessment tests on LLMs are used to measure the personality of the same LLM. We find that all three prompts lead to very different personality scores, a difference that is statistically significant for all traits in a large majority of scenarios. We then introduce the property of option-order symmetry for personality measurement of LLMs. Since most of the self-assessment tests exist in the form of multiple choice question (MCQ) questions, we argue that the scores should also be robust to not just the prompt template but also the order in which the options are presented. This test unsurprisingly reveals that the self-assessment test scores are not robust to the order of the options. These simple tests, done on ChatGPT and three Llama2 models of different sizes, show that self-assessment personality tests created for humans are unreliable measures of personality in LLMs.
     </details>
 </div>

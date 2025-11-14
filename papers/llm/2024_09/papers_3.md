@@ -13,6 +13,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.13051v1">Choosing Between an LLM versus Search for Learning: A HigherEd Student Perspective</a></div>
+    <div class="paper-meta">
+      📅 2024-09-19
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) are rapidly changing learning processes, as they are readily available to students and quickly complete or augment several learning-related activities with non-trivial performance. Such major shifts in learning dynamic have previously occurred when search engines and Wikipedia were introduced, and they augmented or traditional information consumption sources such as libraries and books for university students. We investigate the possibility of the next shift: the use of LLMs to find and digest information in the context of learning and how they relate to existing technologies such as the search engine. We conducted a study where students were asked to learn new topics using a search engine and an LLM in a within-subjects counterbalanced design. We used that study as a contextual grounding for a post-experience follow-up interview where we elicited student reflections, preferences, pain points, and general outlook of an LLM (ChatGPT) over a search engine (Google).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.09191v2">ProcessTBench: An LLM Plan Generation Dataset for Process Mining</a></div>
+    <div class="paper-meta">
+      📅 2024-09-19
+      | 💬 6 pages, 4 figures, dataset available at https://github.com/microsoft/ProcessTBench
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have shown significant promise in plan generation. Yet, existing datasets often lack the complexity needed for advanced tool use scenarios - such as handling paraphrased query statements, supporting multiple languages, and managing actions that can be done in parallel. These scenarios are crucial for evaluating the evolving capabilities of LLMs in real-world applications. Moreover, current datasets don't enable the study of LLMs from a process perspective, particularly in scenarios where understanding typical behaviors and challenges in executing the same process under different conditions or formulations is crucial. To address these gaps, we present the ProcessTBench synthetic dataset, an extension of the TaskBench dataset specifically designed to evaluate LLMs within a process mining framework.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.12798v1">Assessing the Zero-Shot Capabilities of LLMs for Action Evaluation in RL</a></div>
     <div class="paper-meta">
       📅 2024-09-19
@@ -345,6 +364,15 @@
     </div>
     <details class="paper-abstract">
       Software failures inform engineering work, standards, regulations. For example, the Log4J vulnerability brought government and industry attention to evaluating and securing software supply chains. Accessing private engineering records is difficult, so failure analyses tend to use information reported by the news media. However, prior works in this direction have relied on manual analysis. That has limited the scale of their analyses. The community lacks automated support to enable such analyses to consider a wide range of news sources and incidents. In this paper, we propose the Failure Analysis Investigation with LLMs (FAIL) system to fill this gap. FAIL collects, analyzes, and summarizes software failures as reported in the news. FAIL groups articles that describe the same incidents. It then analyzes incidents using existing taxonomies for postmortems, faults, and system characteristics. To tune and evaluate FAIL, we followed the methods of prior works by manually analyzing 31 software failures. FAIL achieved an F1 score of 90% for collecting news about software failures, a V-measure of 0.98 for merging articles reporting on the same incident, and extracted 90% of the facts about failures. We then applied FAIL to a total of 137,427 news articles from 11 providers published between 2010 and 2022. FAIL identified and analyzed 2457 distinct failures reported across 4,184 articles. Our findings include: (1) current generation of large language models are capable of identifying news articles that describe failures, and analyzing them according to structured taxonomies; (2) high recurrences of similar failures within organizations and across organizations; and (3) severity of the consequences of software failures have increased over the past decade. The full FAIL database is available so that researchers, engineers, and policymakers can learn from a diversity of software failures.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.11901v1">LLMs + Persona-Plug = Personalized LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-09-18
+    </div>
+    <details class="paper-abstract">
+      Personalization plays a critical role in numerous language tasks and applications, since users with the same requirements may prefer diverse outputs based on their individual interests. This has led to the development of various personalized approaches aimed at adapting large language models (LLMs) to generate customized outputs aligned with user preferences. Some of them involve fine-tuning a unique personalized LLM for each user, which is too expensive for widespread application. Alternative approaches introduce personalization information in a plug-and-play manner by retrieving the user's relevant historical texts as demonstrations. However, this retrieval-based strategy may break the continuity of the user history and fail to capture the user's overall styles and patterns, hence leading to sub-optimal performance. To address these challenges, we propose a novel personalized LLM model, \ours{}. It constructs a user-specific embedding for each individual by modeling all her historical contexts through a lightweight plug-in user embedder module. By attaching this embedding to the task input, LLMs can better understand and capture user habits and preferences, thereby producing more personalized outputs without tuning their own parameters. Extensive experiments on various tasks in the language model personalization (LaMP) benchmark demonstrate that the proposed model significantly outperforms existing personalized LLM approaches.
     </details>
 </div>
 <div class="paper-card">
@@ -905,6 +933,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07772v1">Alignment with Preference Optimization Is All You Need for LLM Safety</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+    </div>
+    <details class="paper-abstract">
+      We demonstrate that preference optimization methods can effectively enhance LLM safety. Applying various alignment techniques to the Falcon 11B model using safety datasets, we achieve a significant boost in global safety score (from $57.64\%$ to $99.90\%$) as measured by LlamaGuard 3 8B, competing with state-of-the-art models. On toxicity benchmarks, average scores in adversarial settings dropped from over $0.6$ to less than $0.07$. However, this safety improvement comes at the cost of reduced general capabilities, particularly in math, suggesting a trade-off. We identify noise contrastive alignment (Safe-NCA) as an optimal method for balancing safety and performance. Our study ultimately shows that alignment techniques can be sufficient for building safe and robust models.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.04667v2">LLM Stability: A detailed analysis with some surprises</a></div>
     <div class="paper-meta">
       📅 2024-09-12
@@ -920,44 +957,5 @@
     </div>
     <details class="paper-abstract">
       Large language models have demonstrated remarkable capabilities in natural language processing, yet their application to political discourse analysis remains underexplored. This paper introduces a novel approach to evaluating presidential debate performances using LLMs, addressing the longstanding challenge of objectively assessing debate outcomes. We propose a framework that analyzes candidates' "Policies, Persona, and Perspective" (3P) and how they resonate with the "Interests, Ideologies, and Identity" (3I) of four key audience groups: voters, businesses, donors, and politicians. Our method employs large language models to generate the LLM-POTUS Score, a quantitative measure of debate performance based on the alignment between 3P and 3I. We apply this framework to analyze transcripts from recent U.S. presidential debates, demonstrating its ability to provide nuanced, multi-dimensional assessments of candidate performances. Our results reveal insights into the effectiveness of different debating strategies and their impact on various audience segments. This study not only offers a new tool for political analysis but also explores the potential and limitations of using LLMs as impartial judges in complex social contexts. In addition, this framework provides individual citizens with an independent tool to evaluate presidential debate performances, which enhances democratic engagement and reduces reliance on potentially biased media interpretations and institutional influence, thereby strengthening the foundation of informed civic participation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.17166v1">ScriptSmith: A Unified LLM Framework for Enhancing IT Operations via Automated Bash Script Generation, Assessment, and Refinement</a></div>
-    <div class="paper-meta">
-      📅 2024-09-12
-      | 💬 Under Review
-    </div>
-    <details class="paper-abstract">
-      In the rapidly evolving landscape of site reliability engineering (SRE), the demand for efficient and effective solutions to manage and resolve issues in site and cloud applications is paramount. This paper presents an innovative approach to action automation using large language models (LLMs) for script generation, assessment, and refinement. By leveraging the capabilities of LLMs, we aim to significantly reduce the human effort involved in writing and debugging scripts, thereby enhancing the productivity of SRE teams. Our experiments focus on Bash scripts, a commonly used tool in SRE, and involve the CodeSift dataset of 100 tasks and the InterCode dataset of 153 tasks. The results show that LLMs can automatically assess and refine scripts efficiently, reducing the need for script validation in an execution environment. Results demonstrate that the framework shows an overall improvement of 7-10% in script generation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07871v1">Objection Overruled! Lay People can Distinguish Large Language Models from Lawyers, but still Favour Advice from an LLM</a></div>
-    <div class="paper-meta">
-      📅 2024-09-12
-      | 💬 13 pages, 6 figures, 1 table
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are seemingly infiltrating every domain, and the legal context is no exception. In this paper, we present the results of three experiments (total N=288) that investigated lay people's willingness to act upon, and their ability to discriminate between, LLM- and lawyer-generated legal advice. In Experiment 1, participants judged their willingness to act on legal advice when the source of the advice was either known or unknown. When the advice source was unknown, participants indicated that they were significantly more willing to act on the LLM-generated advice. This result was replicated in Experiment 2. Intriguingly, despite participants indicating higher willingness to act on LLM-generated advice in Experiments 1 and 2, participants discriminated between the LLM- and lawyer-generated texts significantly above chance-level in Experiment 3. Lastly, we discuss potential explanations and risks of our findings, limitations and future work, and the importance of language complexity and real-world comparability.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07829v1">Enabling Cost-Effective UI Automation Testing with Retrieval-Based LLMs: A Case Study in WeChat</a></div>
-    <div class="paper-meta">
-      📅 2024-09-12
-    </div>
-    <details class="paper-abstract">
-      UI automation tests play a crucial role in ensuring the quality of mobile applications. Despite the growing popularity of machine learning techniques to generate these tests, they still face several challenges, such as the mismatch of UI elements. The recent advances in Large Language Models (LLMs) have addressed these issues by leveraging their semantic understanding capabilities. However, a significant gap remains in applying these models to industrial-level app testing, particularly in terms of cost optimization and knowledge limitation. To address this, we introduce CAT to create cost-effective UI automation tests for industry apps by combining machine learning and LLMs with best practices. Given the task description, CAT employs Retrieval Augmented Generation (RAG) to source examples of industrial app usage as the few-shot learning context, assisting LLMs in generating the specific sequence of actions. CAT then employs machine learning techniques, with LLMs serving as a complementary optimizer, to map the target element on the UI screen. Our evaluations on the WeChat testing dataset demonstrate the CAT's performance and cost-effectiveness, achieving 90% UI automation with $0.34 cost, outperforming the state-of-the-art. We have also integrated our approach into the real-world WeChat testing platform, demonstrating its usefulness in detecting 141 bugs and enhancing the developers' testing process.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.12093v2">LLM-enhanced Scene Graph Learning for Household Rearrangement</a></div>
-    <div class="paper-meta">
-      📅 2024-09-12
-      | 💬 SIGGRAPH ASIA 2024 conference accepted
-    </div>
-    <details class="paper-abstract">
-      The household rearrangement task involves spotting misplaced objects in a scene and accommodate them with proper places. It depends both on common-sense knowledge on the objective side and human user preference on the subjective side. In achieving such task, we propose to mine object functionality with user preference alignment directly from the scene itself, without relying on human intervention. To do so, we work with scene graph representation and propose LLM-enhanced scene graph learning which transforms the input scene graph into an affordance-enhanced graph (AEG) with information-enhanced nodes and newly discovered edges (relations). In AEG, the nodes corresponding to the receptacle objects are augmented with context-induced affordance which encodes what kind of carriable objects can be placed on it. New edges are discovered with newly discovered non-local relations. With AEG, we perform task planning for scene rearrangement by detecting misplaced carriables and determining a proper placement for each of them. We test our method by implementing a tiding robot in simulator and perform evaluation on a new benchmark we build. Extensive evaluations demonstrate that our method achieves state-of-the-art performance on misplacement detection and the following rearrangement planning.
     </details>
 </div>

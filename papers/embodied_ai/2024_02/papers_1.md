@@ -9,6 +9,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2403.00833v1">Position Paper: Agent AI Towards a Holistic Intelligence</a></div>
+    <div class="paper-meta">
+      📅 2024-02-28
+      | 💬 22 pages, 4 figures. arXiv admin note: substantial text overlap with arXiv:2401.03568
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in large foundation models have remarkably enhanced our understanding of sensory information in open-world environments. In leveraging the power of foundation models, it is crucial for AI research to pivot away from excessive reductionism and toward an emphasis on systems that function as cohesive wholes. Specifically, we emphasize developing Agent AI -- an embodied system that integrates large foundation models into agent actions. The emerging field of Agent AI spans a wide range of existing embodied and agent-based multimodal interactions, including robotics, gaming, and healthcare systems, etc. In this paper, we propose a novel large action model to achieve embodied intelligent behavior, the Agent Foundation Model. On top of this idea, we discuss how agent AI exhibits remarkable capabilities across a variety of domains and tasks, challenging our understanding of learning and cognition. Furthermore, we discuss the potential of Agent AI from an interdisciplinary perspective, underscoring AI cognition and consciousness within scientific discourse. We believe that those discussions serve as a basis for future research directions and encourage broader societal engagement.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.16117v1">RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis</a></div>
     <div class="paper-meta">
       📅 2024-02-25
@@ -48,6 +58,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.02385v1">A Survey on Robotics with Foundation Models: toward Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-02-04
+    </div>
+    <details class="paper-abstract">
+      While the exploration for embodied AI has spanned multiple decades, it remains a persistent challenge to endow agents with human-level intelligence, including perception, learning, reasoning, decision-making, control, and generalization capabilities, so that they can perform general-purpose tasks in open, unstructured, and dynamic environments. Recent advances in computer vision, natural language processing, and multi-modality learning have shown that the foundation models have superhuman capabilities for specific tasks. They not only provide a solid cornerstone for integrating basic modules into embodied AI systems but also shed light on how to scale up robot learning from a methodological perspective. This survey aims to provide a comprehensive and up-to-date overview of foundation models in robotics, focusing on autonomous manipulation and encompassing high-level planning and low-level control. Moreover, we showcase their commonly used datasets, simulators, and benchmarks. Importantly, we emphasize the critical challenges intrinsic to this field and delineate potential avenues for future research, contributing to advancing the frontier of academic and industrial discourse.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.02385v1">A Survey on Robotics with Foundation Models: toward Embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-02-04
     </div>

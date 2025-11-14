@@ -444,6 +444,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.13006v2">Systematic Evaluation of LLM-as-a-Judge in LLM Alignment Tasks: Explainable Metrics and Diverse Prompt Templates</a></div>
+    <div class="paper-meta">
+      📅 2025-03-30
+      | 💬 Accepted by Building Trust in LLMs and LLM Applications workshop at ICLR 2025
+    </div>
+    <details class="paper-abstract">
+      LLM-as-a-Judge has been widely applied to evaluate and compare different LLM alignmnet approaches (e.g., RLHF and DPO). However, concerns regarding its reliability have emerged, due to LLM judges' biases and inconsistent decision-making. Previous research has developed evaluation frameworks to assess reliability of LLM judges and their alignment with human preferences. However, the employed evaluation metrics often lack adequate explainability and fail to address LLM internal inconsistency. Additionally, existing studies inadequately explore the impact of various prompt templates when applying LLM-as-a-Judge methods, leading to potentially inconsistent comparisons between different alignment algorithms. In this work, we systematically evaluate LLM-as-a-Judge on alignment tasks by defining more theoretically interpretable evaluation metrics and explicitly mitigating LLM internal inconsistency from reliability metrics. We develop an open-source framework to evaluate, compare, and visualize the reliability and alignment of LLM judges, which facilitates practitioners to choose LLM judges for alignment tasks. In the experiments, we examine effects of diverse prompt templates on LLM-judge reliability and also demonstrate our developed framework by comparing various LLM judges on two common alignment datasets (i.e., TL;DR Summarization and HH-RLHF-Helpfulness). Our results indicate a significant impact of prompt templates on LLM judge performance, as well as a mediocre alignment level between the tested LLM judges and human evaluators.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.23250v1">Encrypted Prompt: Securing LLM Applications Against Unauthorized Actions</a></div>
     <div class="paper-meta">
       📅 2025-03-29
@@ -656,6 +666,16 @@
     </div>
     <details class="paper-abstract">
       Since the introduction of ChatGPT in 2022, Large language models (LLMs) and Large Multimodal Models (LMM) have transformed content creation, enabling the generation of human-quality content, spanning every medium, text, images, videos, and audio. The chances offered by generative AI models are endless and are drastically reducing the time required to generate content and usually raising the quality of the generation. However, considering the complexity and the difficult traceability of the generated content, the use of these tools provides challenges in attributing AI-generated content. The difficult attribution resides for a variety of reasons, starting from the lack of a systematic fingerprinting of the generated content and ending with the enormous amount of data on which LLMs and LMM are trained, which makes it difficult to connect generated content to the training data. This scenario is raising concerns about intellectual property and ethical responsibilities. To address these concerns, in this paper, we bridge the technological, ethical, and legislative aspects, by proposing a review of the legislative and technological instruments today available and proposing a legal framework to ensure accountability. In the end, we propose three use cases of how these can be combined to guarantee that attribution is respected. However, even though the techniques available today can guarantee a greater attribution to a greater extent, strong limitations still apply, that can be solved uniquely by the development of new attribution techniques, to be applied to LLMs and LMMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.22769v1">MediTools -- Medical Education Powered by LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-03-28
+      | 💬 19 pages, 17 figures, 2 tables. Code available at https://github.com/NM-Streamlit-Team/meditools
+    </div>
+    <details class="paper-abstract">
+      Artificial Intelligence (AI) has been advancing rapidly and with the advent of large language models (LLMs) in late 2022, numerous opportunities have emerged for adopting this technology across various domains, including medicine. These innovations hold immense potential to revolutionize and modernize medical education. Our research project leverages large language models to enhance medical education and address workflow challenges through the development of MediTools - AI Medical Education. This prototype application focuses on developing interactive tools that simulate real-life clinical scenarios, provide access to medical literature, and keep users updated with the latest medical news. Our first tool is a dermatology case simulation tool that uses real patient images depicting various dermatological conditions and enables interaction with LLMs acting as virtual patients. This platform allows users to practice their diagnostic skills and enhance their clinical decision-making abilities. The application also features two additional tools: an AI-enhanced PubMed tool for engaging with LLMs to gain deeper insights into research papers, and a Google News tool that offers LLM generated summaries of articles for various medical specialties. A comprehensive survey has been conducted among medical professionals and students to gather initial feedback on the effectiveness and user satisfaction of MediTools, providing insights for further development and refinement of the application. This research demonstrates the potential of AI-driven tools in transforming and revolutionizing medical education, offering a scalable and interactive platform for continuous learning and skill development.
     </details>
 </div>
 <div class="paper-card">
@@ -935,23 +955,5 @@
     </div>
     <details class="paper-abstract">
       LLM (large language model) practitioners commonly notice that outputs can vary for the same inputs under settings expected to be deterministic. Yet the questions of how pervasive this is, and with what impact on results, have not to our knowledge been systematically investigated. We investigate non-determinism in five LLMs configured to be deterministic when applied to eight common tasks in across 10 runs, in both zero-shot and few-shot settings. We see accuracy variations up to 15% across naturally occurring runs with a gap of best possible performance to worst possible performance up to 70%. In fact, none of the LLMs consistently delivers repeatable accuracy across all tasks, much less identical output strings. Sharing preliminary results with insiders has revealed that non-determinism perhaps essential to the efficient use of compute resources via co-mingled data in input buffers so this issue is not going away anytime soon. To better quantify our observations, we introduce metrics focused on quantifying determinism, TARr@N for the total agreement rate at N runs over raw output, and TARa@N for total agreement rate of parsed-out answers. Our code and data are publicly available at http://github.com/REDACTED.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.10741v3">SensorBench: Benchmarking LLMs in Coding-Based Sensor Processing</a></div>
-    <div class="paper-meta">
-      📅 2025-03-28
-    </div>
-    <details class="paper-abstract">
-      Effective processing, interpretation, and management of sensor data have emerged as a critical component of cyber-physical systems. Traditionally, processing sensor data requires profound theoretical knowledge and proficiency in signal-processing tools. However, recent works show that Large Language Models (LLMs) have promising capabilities in processing sensory data, suggesting their potential as copilots for developing sensing systems. To explore this potential, we construct a comprehensive benchmark, SensorBench, to establish a quantifiable objective. The benchmark incorporates diverse real-world sensor datasets for various tasks. The results show that while LLMs exhibit considerable proficiency in simpler tasks, they face inherent challenges in processing compositional tasks with parameter selections compared to engineering experts. Additionally, we investigate four prompting strategies for sensor processing and show that self-verification can outperform all other baselines in 48% of tasks. Our study provides a comprehensive benchmark and prompting analysis for future developments, paving the way toward an LLM-based sensor processing copilot.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2503.22776v1">Post-Incorporating Code Structural Knowledge into LLMs via In-Context Learning for Code Translation</a></div>
-    <div class="paper-meta">
-      📅 2025-03-28
-    </div>
-    <details class="paper-abstract">
-      Code translation migrates codebases across programming languages. Recently, large language models (LLMs) have achieved significant advancements in software mining. However, handling the syntactic structure of source code remains a challenge. Classic syntax-aware methods depend on intricate model architectures and loss functions, rendering their integration into LLM training resource-intensive. This paper employs in-context learning (ICL), which directly integrates task exemplars into the input context, to post-incorporate code structural knowledge into pre-trained LLMs. We revisit exemplar selection in ICL from an information-theoretic perspective, proposing that list-wise selection based on information coverage is more precise and general objective than traditional methods based on combining similarity and diversity. To address the challenges of quantifying information coverage, we introduce a surrogate measure, Coverage of Abstract Syntax Tree (CAST). Furthermore, we formulate the NP-hard CAST maximization for exemplar selection and prove that it is a standard submodular maximization problem. Therefore, we propose a greedy algorithm for CAST submodular maximization, which theoretically guarantees a (1-1/e)-approximate solution in polynomial time complexity. Our method is the first training-free and model-agnostic approach to post-incorporate code structural knowledge into existing LLMs at test time. Experimental results show that our method significantly improves LLMs performance and reveals two meaningful insights: 1) Code structural knowledge can be effectively post-incorporated into pre-trained LLMs during inference, despite being overlooked during training; 2) Scaling up model size or training data does not lead to the emergence of code structural knowledge, underscoring the necessity of explicitly considering code syntactic structure.
     </details>
 </div>

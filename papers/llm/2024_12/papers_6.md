@@ -15,6 +15,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.03786v2">TOGLL: Correct and Strong Test Oracle Generation with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+    </div>
+    <details class="paper-abstract">
+      Test oracles play a crucial role in software testing, enabling effective bug detection. Despite initial promise, neural-based methods for automated test oracle generation often result in a large number of false positives and weaker test oracles. While LLMs have demonstrated impressive effectiveness in various software engineering tasks, including code generation, test case creation, and bug fixing, there remains a notable absence of large-scale studies exploring their effectiveness in test oracle generation. The question of whether LLMs can address the challenges in effective oracle generation is both compelling and requires thorough investigation. In this research, we present the first comprehensive study to investigate the capabilities of LLMs in generating correct, diverse, and strong test oracles capable of effectively identifying a large number of unique bugs. To this end, we fine-tuned seven code LLMs using six distinct prompts on the SF110 dataset. Utilizing the most effective fine-tuned LLM and prompt pair, we introduce TOGLL, a novel LLM-based method for test oracle generation. To investigate the generalizability of TOGLL, we conduct studies on 25 large-scale Java projects. Besides assessing the correctness, we also assess the diversity and strength of the generated oracles. We compare the results against EvoSuite and the state-of-the-art neural method, TOGA. Our findings reveal that TOGLL can produce 3.8 times more correct assertion oracles and 4.9 times more exception oracles. Moreover, our findings demonstrate that TOGLL is capable of generating significantly diverse test oracles. It can detect 1,023 unique bugs that EvoSuite cannot, which is ten times more than what the previous SOTA neural-based method, TOGA, can detect.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.05579v2">LLMs-as-Judges: A Comprehensive Survey on LLM-based Evaluation Methods</a></div>
+    <div class="paper-meta">
+      📅 2024-12-10
+      | 💬 60 pages, comprehensive and continuously updated
+    </div>
+    <details class="paper-abstract">
+      The rapid advancement of Large Language Models (LLMs) has driven their expanding application across various fields. One of the most promising applications is their role as evaluators based on natural language responses, referred to as ''LLMs-as-judges''. This framework has attracted growing attention from both academia and industry due to their excellent effectiveness, ability to generalize across tasks, and interpretability in the form of natural language. This paper presents a comprehensive survey of the LLMs-as-judges paradigm from five key perspectives: Functionality, Methodology, Applications, Meta-evaluation, and Limitations. We begin by providing a systematic definition of LLMs-as-Judges and introduce their functionality (Why use LLM judges?). Then we address methodology to construct an evaluation system with LLMs (How to use LLM judges?). Additionally, we investigate the potential domains for their application (Where to use LLM judges?) and discuss methods for evaluating them in various contexts (How to evaluate LLM judges?). Finally, we provide a detailed analysis of the limitations of LLM judges and discuss potential future directions. Through a structured and comprehensive analysis, we aim aims to provide insights on the development and application of LLMs-as-judges in both research and practice. We will continue to maintain the relevant resource list at https://github.com/CSHaitao/Awesome-LLMs-as-Judges.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2305.08339v5">Assessing the potential of LLM-assisted annotation for corpus-based pragmatics and discourse analysis: The case of apology</a></div>
     <div class="paper-meta">
       📅 2024-12-09
@@ -268,6 +287,43 @@
     </div>
     <details class="paper-abstract">
       Emergency communication systems face disruptions due to packet loss, bandwidth constraints, poor signal quality, delays, and jitter in VoIP systems, leading to degraded real-time service quality. Victims in distress often struggle to convey critical information due to panic, speech disorders, and background noise, further complicating dispatchers' ability to assess situations accurately. Staffing shortages in emergency centers exacerbate delays in coordination and assistance. This paper proposes leveraging Large Language Models (LLMs) to address these challenges by reconstructing incomplete speech, filling contextual gaps, and prioritizing calls based on severity. The system integrates real-time transcription with Retrieval-Augmented Generation (RAG) to generate contextual responses, using Twilio and AssemblyAI APIs for seamless implementation. Evaluation shows high precision, favorable BLEU and ROUGE scores, and alignment with real-world needs, demonstrating the model's potential to optimize emergency response workflows and prioritize critical cases effectively.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16851v2">Can tweets predict article retractions? A comparison between human and LLM labelling</a></div>
+    <div class="paper-meta">
+      📅 2024-12-09
+      | 💬 19 pages
+    </div>
+    <details class="paper-abstract">
+      Quickly detecting problematic research articles is crucial to safeguarding the integrity of scientific research. This study explores whether Twitter mentions of retracted articles can signal potential problems with the articles prior to their retraction, potentially serving as an early warning system for scholars. To investigate this, we analysed a dataset of 4,354 Twitter mentions associated with 504 retracted articles. The effectiveness of Twitter mentions in predicting article retractions was evaluated by both manual and Large Language Model (LLM) labelling. Manual labelling results indicated that 25.7% of tweets signalled problems before retraction. Using the manual labelling results as the baseline, we found that LLMs (GPT-4o-mini, Gemini 1.5 Flash, and Claude-3.5-Haiku) outperformed lexicon-based sentiment analysis tools (e.g., TextBlob) in detecting potential problems, suggesting that automatic detection of problematic articles from social media using LLMs is technically feasible. Nevertheless, since only a small proportion of retracted articles (11.1%) were criticised on Twitter prior to retraction, such automatic systems would detect only a minority of problematic articles. Overall, this study offers insights into how social media data, coupled with emerging generative AI techniques, can support research integrity.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06432v1">Integrating Expert Labels into LLM-based Emission Goal Detection: Example Selection vs Automatic Prompt Design</a></div>
+    <div class="paper-meta">
+      📅 2024-12-09
+    </div>
+    <details class="paper-abstract">
+      We address the detection of emission reduction goals in corporate reports, an important task for monitoring companies' progress in addressing climate change. Specifically, we focus on the issue of integrating expert feedback in the form of labeled example passages into LLM-based pipelines, and compare the two strategies of (1) a dynamic selection of few-shot examples and (2) the automatic optimization of the prompt by the LLM itself. Our findings on a public dataset of 769 climate-related passages from real-world business reports indicate that automatic prompt optimization is the superior approach, while combining both methods provides only limited benefit. Qualitative results indicate that optimized prompts do indeed capture many intricacies of the targeted emission goal extraction task.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06370v1">Exploring Memorization and Copyright Violation in Frontier LLMs: A Study of the New York Times v. OpenAI 2023 Lawsuit</a></div>
+    <div class="paper-meta">
+      📅 2024-12-09
+    </div>
+    <details class="paper-abstract">
+      Copyright infringement in frontier LLMs has received much attention recently due to the New York Times v. OpenAI lawsuit, filed in December 2023. The New York Times claims that GPT-4 has infringed its copyrights by reproducing articles for use in LLM training and by memorizing the inputs, thereby publicly displaying them in LLM outputs. Our work aims to measure the propensity of OpenAI's LLMs to exhibit verbatim memorization in its outputs relative to other LLMs, specifically focusing on news articles. We discover that both GPT and Claude models use refusal training and output filters to prevent verbatim output of the memorized articles. We apply a basic prompt template to bypass the refusal training and show that OpenAI models are currently less prone to memorization elicitation than models from Meta, Mistral, and Anthropic. We find that as models increase in size, especially beyond 100 billion parameters, they demonstrate significantly greater capacity for memorization. Our findings have practical implications for training: more attention must be placed on preventing verbatim memorization in very large models. Our findings also have legal significance: in assessing the relative memorization capacity of OpenAI's LLMs, we probe the strength of The New York Times's copyright infringement claims and OpenAI's legal defenses, while underscoring issues at the intersection of generative AI, law, and policy.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.07017v1">Asynchronous LLM Function Calling</a></div>
+    <div class="paper-meta">
+      📅 2024-12-09
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) use function calls to interface with external tools and data source. However, the current approach to LLM function calling is inherently synchronous, where each call blocks LLM inference, limiting LLM operation and concurrent function execution. In this work, we propose AsyncLM, a system for asynchronous LLM function calling. AsyncLM improves LLM's operational efficiency by enabling LLMs to generate and execute function calls concurrently. Instead of waiting for each call's completion, AsyncLM introduces an interrupt mechanism to asynchronously notify the LLM in-flight when function calls return. We design an in-context protocol for function calls and interrupts, provide fine-tuning strategy to adapt LLMs to the interrupt semantics, and implement these mechanisms efficiently on LLM inference process. We demonstrate that AsyncLM can reduce end-to-end task completion latency from 1.6x-5.4x compared to synchronous function calling on a set of benchmark tasks in the Berkeley function calling leaderboard (BFCL). Furthermore, we discuss how interrupt mechanisms can be extended to enable novel human-LLM or LLM-LLM interactions.
     </details>
 </div>
 <div class="paper-card">
@@ -655,6 +711,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.04315v2">Densing Law of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-12-06
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have emerged as a milestone in artificial intelligence, and their performance can improve as the model size increases. However, this scaling brings great challenges to training and inference efficiency, particularly for deploying LLMs in resource-constrained environments, and the scaling trend is becoming increasingly unsustainable. This paper introduces the concept of ``\textit{capacity density}'' as a new metric to evaluate the quality of the LLMs across different scales and describes the trend of LLMs in terms of both effectiveness and efficiency. To calculate the capacity density of a given target LLM, we first introduce a set of reference models and develop a scaling law to predict the downstream performance of these reference models based on their parameter sizes. We then define the \textit{effective parameter size} of the target LLM as the parameter size required by a reference model to achieve equivalent performance, and formalize the capacity density as the ratio of the effective parameter size to the actual parameter size of the target LLM. Capacity density provides a unified framework for assessing both model effectiveness and efficiency. Our further analysis of recent open-source base LLMs reveals an empirical law (the densing law)that the capacity density of LLMs grows exponentially over time. More specifically, using some widely used benchmarks for evaluation, the capacity density of LLMs doubles approximately every three months. The law provides new perspectives to guide future LLM development, emphasizing the importance of improving capacity density to achieve optimal results with minimal computational overhead.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.04642v1">Improving LLM Group Fairness on Tabular Data via In-Context Learning</a></div>
     <div class="paper-meta">
       📅 2024-12-05
@@ -852,104 +917,41 @@
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.01289v2">Enhancing Perception Capabilities of Multimodal LLMs with Training-Free Fusion</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.16860v2">Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs</a></div>
     <div class="paper-meta">
       📅 2024-12-04
+      | 💬 NeurIPS 2024 (Oral). Website at https://cambrian-mllm.github.io
     </div>
     <details class="paper-abstract">
-      Multimodal LLMs (MLLMs) equip language models with visual capabilities by aligning vision encoders with language models. Existing methods to enhance the visual perception of MLLMs often involve designing more powerful vision encoders, which requires exploring a vast design space and re-aligning each potential encoder with the language model, resulting in prohibitively high training costs. In this paper, we introduce VisionFuse, a novel integration framework that efficiently utilizes multiple vision encoders from off-the-shelf MLLMs to enhance visual perception without requiring additional training. Our approach is motivated by the observation that different MLLMs tend to focus on distinct regions given the same query and image. Moreover, we find that the feature distributions of vision encoders within an MLLM family, a group of MLLMs sharing the same pretrained LLM, are highly aligned. Building on these insights, VisionFuse enriches the visual context by concatenating the tokens generated by the vision encoders of selected MLLMs within a family. By merging the parameters of language models from these MLLMs, VisionFuse allows a single language model to align with various vision encoders, significantly reducing deployment overhead. We conduct comprehensive evaluations across multiple multimodal benchmarks using various MLLM combinations, demonstrating substantial improvements in multimodal tasks. Notably, when integrating MiniGemini-8B and SLIME-8B, VisionFuse achieves an average performance increase of over 4%.
+      We introduce Cambrian-1, a family of multimodal LLMs (MLLMs) designed with a vision-centric approach. While stronger language models can enhance multimodal capabilities, the design choices for vision components are often insufficiently explored and disconnected from visual representation learning research. This gap hinders accurate sensory grounding in real-world scenarios. Our study uses LLMs and visual instruction tuning as an interface to evaluate various visual representations, offering new insights into different models and architectures -- self-supervised, strongly supervised, or combinations thereof -- based on experiments with over 20 vision encoders. We critically examine existing MLLM benchmarks, address the difficulties involved in consolidating and interpreting results from various tasks, and introduce a new vision-centric benchmark, CV-Bench. To further improve visual grounding, we propose the Spatial Vision Aggregator (SVA), a dynamic and spatially-aware connector that integrates high-resolution vision features with LLMs while reducing the number of tokens. Additionally, we discuss the curation of high-quality visual instruction-tuning data from publicly available sources, emphasizing the importance of data source balancing and distribution ratio. Collectively, Cambrian-1 not only achieves state-of-the-art performance but also serves as a comprehensive, open cookbook for instruction-tuned MLLMs. We provide model weights, code, supporting tools, datasets, and detailed instruction-tuning and evaluation recipes. We hope our release will inspire and accelerate advancements in multimodal systems and visual representation learning.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.03123v1">Robust Multi-bit Text Watermark with LLM-based Paraphrasers</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.11376v2">Towards Time Series Reasoning with LLMs</a></div>
     <div class="paper-meta">
       📅 2024-12-04
+      | 💬 Oral Presentation at 2024 NeurIPS Workshop on Time Series in the Age of Large Models
     </div>
     <details class="paper-abstract">
-      We propose an imperceptible multi-bit text watermark embedded by paraphrasing with LLMs. We fine-tune a pair of LLM paraphrasers that are designed to behave differently so that their paraphrasing difference reflected in the text semantics can be identified by a trained decoder. To embed our multi-bit watermark, we use two paraphrasers alternatively to encode the pre-defined binary code at the sentence level. Then we use a text classifier as the decoder to decode each bit of the watermark. Through extensive experiments, we show that our watermarks can achieve over 99.99\% detection AUC with small (1.1B) text paraphrasers while keeping the semantic information of the original sentence. More importantly, our pipeline is robust under word substitution and sentence paraphrasing perturbations and generalizes well to out-of-distributional data. We also show the stealthiness of our watermark with LLM-based evaluation. We open-source the code: https://github.com/xiaojunxu/multi-bit-text-watermark.
+      Multi-modal large language models (MLLMs) have enabled numerous advances in understanding and reasoning in domains like vision, but we have not yet seen this broad success for time-series. Although prior works on time-series MLLMs have shown promising performance in time-series forecasting, very few works show how an LLM could be used for time-series reasoning in natural language. We propose a novel multi-modal time-series LLM approach that learns generalizable information across various domains with powerful zero-shot performance. First, we train a lightweight time-series encoder on top of an LLM to directly extract time-series information. Then, we fine-tune our model with chain-of-thought augmented time-series tasks to encourage the model to generate reasoning paths. We show that our model learns a latent representation that reflects specific time-series features (e.g. slope, frequency), as well as outperforming GPT-4o on a set of zero-shot reasoning tasks on a variety of domains.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.04509v1">Pragmatic Metacognitive Prompting Improves LLM Performance on Sarcasm Detection</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.12071v2">Beyond the Comfort Zone: Emerging Solutions to Overcome Challenges in Integrating LLMs into Software Products</a></div>
     <div class="paper-meta">
       📅 2024-12-04
-      | 💬 Accepted at COLING 2024, CHum Workshop
+      | 💬 10 pages, 2 tables
     </div>
     <details class="paper-abstract">
-      Sarcasm detection is a significant challenge in sentiment analysis due to the nuanced and context-dependent nature of verbiage. We introduce Pragmatic Metacognitive Prompting (PMP) to improve the performance of Large Language Models (LLMs) in sarcasm detection, which leverages principles from pragmatics and reflection helping LLMs interpret implied meanings, consider contextual cues, and reflect on discrepancies to identify sarcasm. Using state-of-the-art LLMs such as LLaMA-3-8B, GPT-4o, and Claude 3.5 Sonnet, PMP achieves state-of-the-art performance on GPT-4o on MUStARD and SemEval2018. This study demonstrates that integrating pragmatic reasoning and metacognitive strategies into prompting significantly enhances LLMs' ability to detect sarcasm, offering a promising direction for future research in sentiment analysis.
+      Large Language Models (LLMs) are increasingly embedded into software products across diverse industries, enhancing user experiences, but at the same time introducing numerous challenges for developers. Unique characteristics of LLMs force developers, who are accustomed to traditional software development and evaluation, out of their comfort zones as the LLM components shatter standard assumptions about software systems. This study explores the emerging solutions that software developers are adopting to navigate the encountered challenges. Leveraging a mixed-method research, including 26 interviews and a survey with 332 responses, the study identifies 19 emerging solutions regarding quality assurance that practitioners across several product teams at Microsoft are exploring. The findings provide valuable insights that can guide the development and evaluation of LLM-based products more broadly in the face of these challenges.
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.00721v2">A Comparative Study of LLM-based ASR and Whisper in Low Resource and Code Switching Scenario</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-      | 💬 This work hasn't been finished yet
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have showcased exceptional performance across diverse NLP tasks, and their integration with speech encoder is rapidly emerging as a dominant trend in the Automatic Speech Recognition (ASR) field. Previous works mainly concentrated on leveraging LLMs for speech recognition in English and Chinese. However, their potential for addressing speech recognition challenges in low resource settings remains underexplored. Hence, in this work, we aim to explore the capability of LLMs in low resource ASR and Mandarin-English code switching ASR. We also evaluate and compare the recognition performance of LLM-based ASR systems against Whisper model. Extensive experiments demonstrate that LLM-based ASR yields a relative gain of 12.8\% over the Whisper model in low resource ASR while Whisper performs better in Mandarin-English code switching ASR. We hope that this study could shed light on ASR for low resource scenarios.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.03605v1">CBEval: A framework for evaluating and interpreting cognitive biases in LLMs</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.02205v2">DataLab: A Unified Platform for LLM-Powered Business Intelligence</a></div>
     <div class="paper-meta">
       📅 2024-12-04
     </div>
     <details class="paper-abstract">
-      Rapid advancements in Large Language models (LLMs) has significantly enhanced their reasoning capabilities. Despite improved performance on benchmarks, LLMs exhibit notable gaps in their cognitive processes. Additionally, as reflections of human-generated data, these models have the potential to inherit cognitive biases, raising concerns about their reasoning and decision making capabilities. In this paper we present a framework to interpret, understand and provide insights into a host of cognitive biases in LLMs. Conducting our research on frontier language models we're able to elucidate reasoning limitations and biases, and provide reasoning behind these biases by constructing influence graphs that identify phrases and words most responsible for biases manifested in LLMs. We further investigate biases such as round number bias and cognitive bias barrier revealed when noting framing effect in language models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.01130v2">Enhancing Function-Calling Capabilities in LLMs: Strategies for Prompt Formats, Data Integration, and Multilingual Translation</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have significantly advanced autonomous agents, particularly in zero-shot tool usage, also known as function calling. This research delves into enhancing the function-calling capabilities of LLMs by exploring different approaches, including prompt formats for integrating function descriptions, blending function-calling and instruction-following data, introducing a novel Decision Token for conditional prompts, leveraging chain-of-thought reasoning, and overcoming multilingual challenges with a translation pipeline. Our key findings and contributions are as follows: (1) Instruction-following data improves both function-calling accuracy and relevance detection. (2) The use of the newly proposed Decision Token, combined with synthetic non-function-call data, enhances relevance detection. (3) A tailored translation pipeline effectively overcomes multilingual limitations, demonstrating significant improvements in Traditional Chinese. These insights highlight the potential for improved function-calling capabilities and multilingual applications in LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.02956v1">Curriculum-style Data Augmentation for LLM-based Metaphor Detection</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-    </div>
-    <details class="paper-abstract">
-      Recently, utilizing large language models (LLMs) for metaphor detection has achieved promising results. However, these methods heavily rely on the capabilities of closed-source LLMs, which come with relatively high inference costs and latency. To address this, we propose a method for metaphor detection by fine-tuning open-source LLMs, effectively reducing inference costs and latency with a single inference step. Furthermore, metaphor detection suffers from a severe data scarcity problem, which hinders effective fine-tuning of LLMs. To tackle this, we introduce Curriculum-style Data Augmentation (CDA). Specifically, before fine-tuning, we evaluate the training data to identify correctly predicted instances for fine-tuning, while incorrectly predicted instances are used as seed data for data augmentation. This approach enables the model to quickly learn simpler knowledge and progressively acquire more complex knowledge, thereby improving performance incrementally. Experimental results demonstrate that our method achieves state-of-the-art performance across all baselines. Additionally, we provide detailed ablation studies to validate the effectiveness of CDA.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.17422v2">Multimodal LLM Guided Exploration and Active Mapping using Fisher Information</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-    </div>
-    <details class="paper-abstract">
-      We present an active mapping system that could plan for long-horizon exploration goals and short-term actions with a 3D Gaussian Splatting (3DGS) representation. Existing methods either did not take advantage of recent developments in multimodal Large Language Models (LLM) or did not consider challenges in localization uncertainty, which is critical in embodied agents. We propose employing multimodal LLMs for long-horizon planning in conjunction with detailed motion planning using our information-based algorithm. By leveraging high-quality view synthesis from our 3DGS representation, our method employs a multimodal LLM as a zero-shot planner for long-horizon exploration goals from the semantic perspective. We also introduce an uncertainty-aware path proposal and selection algorithm that balances the dual objectives of maximizing the information gain for the environment while minimizing the cost of localization errors. Experiments conducted on the Gibson and Habitat-Matterport 3D datasets demonstrate state-of-the-art results of the proposed method.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.01109v2">Mixing It Up: The Cocktail Effect of Multi-Task Fine-Tuning on LLM Performance -- A Case Study in Finance</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-    </div>
-    <details class="paper-abstract">
-      The application of large language models (LLMs) in domain-specific contexts, including finance, has expanded rapidly. Domain-specific LLMs are typically evaluated based on their performance in various downstream tasks relevant to the domain. In this work, we present a detailed analysis of fine-tuning LLMs for such tasks. Somewhat counterintuitively, we find that in domain-specific cases, fine-tuning exclusively on the target task is not always the most effective strategy. Instead, multi-task finetuning - where models are trained on a cocktail of related tasks - can significantly enhance performance. We demonstrate how this approach enables a small model, such as Phi-3-Mini, to achieve state-of-the-art results, even surpassing the much larger GPT-4-o model on financial benchmarks. Our study involves a large-scale experiment, conducting over 200 training experiments using several widely adopted LLMs as baselines, and empirically confirms the benefits of multi-task fine-tuning. Additionally, we explore the use of general instruction data as a form of regularization, suggesting that it helps minimize performance degradation. We also investigate the inclusion of mathematical data, finding improvements in numerical reasoning that transfer effectively to financial tasks. Finally, we note that while fine-tuning for downstream tasks leads to targeted improvements in task performance, it does not necessarily result in broader gains in domain knowledge or complex domain reasoning abilities.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.19379v2">Marconi: Prefix Caching for the Era of Hybrid LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-    </div>
-    <details class="paper-abstract">
-      Hybrid models that combine the language modeling capabilities of Attention layers with the efficiency of Recurrent layers (e.g., State Space Models) have gained traction in practically supporting long contexts in Large Language Model serving. Yet, the unique properties of these models complicate the usage of complementary efficiency optimizations such as prefix caching that skip redundant computations across requests. Most notably, their use of in-place state updates for recurrent layers precludes rolling back cache entries for partial sequence overlaps, and instead mandates only exact-match cache hits; the effect is a deluge of (large) cache entries per sequence, most of which yield minimal reuse opportunities. We present Marconi, the first system that supports efficient prefix caching with Hybrid LLMs. Key to Marconi are its novel admission and eviction policies that more judiciously assess potential cache entries based not only on recency, but also on (1) forecasts of their reuse likelihood across a taxonomy of different hit scenarios, and (2) the compute savings that hits deliver relative to memory footprints. Across diverse workloads and Hybrid models, Marconi achieves up to 34.4$\times$ higher token hit rates (71.1% or 617 ms lower TTFT) compared to state-of-the-art prefix caching systems.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.03516v1">You're (Not) My Type -- Can LLMs Generate Feedback of Specific Types for Introductory Programming Tasks?</a></div>
-    <div class="paper-meta">
-      📅 2024-12-04
-      | 💬 Accepted at Journal of Computer Assisted Learning (2024)
-    </div>
-    <details class="paper-abstract">
-      Background: Feedback as one of the most influential factors for learning has been subject to a great body of research. It plays a key role in the development of educational technology systems and is traditionally rooted in deterministic feedback defined by experts and their experience. However, with the rise of generative AI and especially Large Language Models (LLMs), we expect feedback as part of learning systems to transform, especially for the context of programming. In the past, it was challenging to automate feedback for learners of programming. LLMs may create new possibilities to provide richer, and more individual feedback than ever before. Objectives: This paper aims to generate specific types of feedback for introductory programming tasks using LLMs. We revisit existing feedback taxonomies to capture the specifics of the generated feedback, such as randomness, uncertainty, and degrees of variation. Methods: We iteratively designed prompts for the generation of specific feedback types (as part of existing feedback taxonomies) in response to authentic student programs. We then evaluated the generated output and determined to what extent it reflected certain feedback types. Results and Conclusion: The present work provides a better understanding of different feedback dimensions and characteristics. The results have implications for future feedback research with regard to, for example, feedback effects and learners' informational needs. It further provides a basis for the development of new tools and learning systems for novice programmers including feedback generated by AI.
+      Business intelligence (BI) transforms large volumes of data within modern organizations into actionable insights for informed decision-making. Recently, large language model (LLM)-based agents have streamlined the BI workflow by automatically performing task planning, reasoning, and actions in executable environments based on natural language (NL) queries. However, existing approaches primarily focus on individual BI tasks such as NL2SQL and NL2VIS. The fragmentation of tasks across different data roles and tools lead to inefficiencies and potential errors due to the iterative and collaborative nature of BI. In this paper, we introduce DataLab, a unified BI platform that integrates a one-stop LLM-based agent framework with an augmented computational notebook interface. DataLab supports a wide range of BI tasks for different data roles by seamlessly combining LLM assistance with user customization within a single environment. To achieve this unification, we design a domain knowledge incorporation module tailored for enterprise-specific BI tasks, an inter-agent communication mechanism to facilitate information sharing across the BI workflow, and a cell-based context management strategy to enhance context utilization efficiency in BI notebooks. Extensive experiments demonstrate that DataLab achieves state-of-the-art performance on various BI tasks across popular research benchmarks. Moreover, DataLab maintains high effectiveness and efficiency on real-world datasets from Tencent, achieving up to a 58.58% increase in accuracy and a 61.65% reduction in token cost on enterprise-specific BI tasks.
     </details>
 </div>

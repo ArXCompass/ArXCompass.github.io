@@ -12,6 +12,44 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.02784v1">LLM economicus? Mapping the Behavioral Biases of LLMs via Utility Theory</a></div>
+    <div class="paper-meta">
+      📅 2024-08-05
+      | 💬 Accepted to COLM 2024
+    </div>
+    <details class="paper-abstract">
+      Humans are not homo economicus (i.e., rational economic beings). As humans, we exhibit systematic behavioral biases such as loss aversion, anchoring, framing, etc., which lead us to make suboptimal economic decisions. Insofar as such biases may be embedded in text data on which large language models (LLMs) are trained, to what extent are LLMs prone to the same behavioral biases? Understanding these biases in LLMs is crucial for deploying LLMs to support human decision-making. We propose utility theory-a paradigm at the core of modern economic theory-as an approach to evaluate the economic biases of LLMs. Utility theory enables the quantification and comparison of economic behavior against benchmarks such as perfect rationality or human behavior. To demonstrate our approach, we quantify and compare the economic behavior of a variety of open- and closed-source LLMs. We find that the economic behavior of current LLMs is neither entirely human-like nor entirely economicus-like. We also find that most current LLMs struggle to maintain consistent economic behavior across settings. Finally, we illustrate how our approach can measure the effect of interventions such as prompting on economic biases.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.02143v1">Analyzing Cultural Representations of Emotions in LLMs through Mixed Emotion Survey</a></div>
+    <div class="paper-meta">
+      📅 2024-08-04
+      | 💬 Was accepted to ACII 2024
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have gained widespread global adoption, showcasing advanced linguistic capabilities across multiple of languages. There is a growing interest in academia to use these models to simulate and study human behaviors. However, it is crucial to acknowledge that an LLM's proficiency in a specific language might not fully encapsulate the norms and values associated with its culture. Concerns have emerged regarding potential biases towards Anglo-centric cultures and values due to the predominance of Western and US-based training data. This study focuses on analyzing the cultural representations of emotions in LLMs, in the specific case of mixed-emotion situations. Our methodology is based on the studies of Miyamoto et al. (2010), which identified distinctive emotional indicators in Japanese and American human responses. We first administer their mixed emotion survey to five different LLMs and analyze their outputs. Second, we experiment with contextual variables to explore variations in responses considering both language and speaker origin. Thirdly, we expand our investigation to encompass additional East Asian and Western European origin languages to gauge their alignment with their respective cultures, anticipating a closer fit. We find that (1) models have limited alignment with the evidence in the literature; (2) written language has greater effect on LLMs' response than information on participants origin; and (3) LLMs responses were found more similar for East Asian languages than Western European languages.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2310.01469v3">LLM Lies: Hallucinations are not Bugs, but Features as Adversarial Examples</a></div>
+    <div class="paper-meta">
+      📅 2024-08-04
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs), including GPT-3.5, LLaMA, and PaLM, seem to be knowledgeable and able to adapt to many tasks. However, we still cannot completely trust their answers, since LLMs suffer from \textbf{hallucination}\textemdash fabricating non-existent facts, deceiving users with or without their awareness. However, the reasons for their existence and pervasiveness remain unclear. In this paper, we demonstrate that nonsensical prompts composed of random tokens can also elicit the LLMs to respond with hallucinations. Moreover, we provide both theoretical and experimental evidence that transformers can be manipulated to produce specific pre-define tokens by perturbing its input sequence. This phenomenon forces us to revisit that \emph{hallucination may be another view of adversarial examples}, and it shares similar characteristics with conventional adversarial examples as a basic property of LLMs. Therefore, we formalize an automatic hallucination triggering method as the \textit{hallucination attack} in an adversarial way. Finally, we explore the basic properties of attacked adversarial prompts and propose a simple yet effective defense strategy. Our code is released on GitHub\footnote{https://github.com/PKU-YuanGroup/Hallucination-Attack}.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.01993v1">Towards Automatic Hands-on-Keyboard Attack Detection Using LLMs in EDR Solutions</a></div>
+    <div class="paper-meta">
+      📅 2024-08-04
+    </div>
+    <details class="paper-abstract">
+      Endpoint Detection and Remediation (EDR) platforms are essential for identifying and responding to cyber threats. This study presents a novel approach using Large Language Models (LLMs) to detect Hands-on-Keyboard (HOK) cyberattacks. Our method involves converting endpoint activity data into narrative forms that LLMs can analyze to distinguish between normal operations and potential HOK attacks. We address the challenges of interpreting endpoint data by segmenting narratives into windows and employing a dual training strategy. The results demonstrate that LLM-based models have the potential to outperform traditional machine learning methods, offering a promising direction for enhancing EDR capabilities and apply LLMs in cybersecurity.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.01736v1">Can LLMs predict the convergence of Stochastic Gradient Descent?</a></div>
     <div class="paper-meta">
       📅 2024-08-03

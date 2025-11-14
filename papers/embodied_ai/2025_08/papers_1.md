@@ -19,7 +19,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2405.14093v5">A Survey on Vision-Language-Action Models for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-08-31
+      | 💬 Project page: https://github.com/yueen-ma/Awesome-VLA
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is widely recognized as a key element of artificial general intelligence because it involves controlling embodied agents to perform tasks in the physical world. Building on the success of large language models and vision-language models, a new category of multimodal models -- referred to as vision-language-action models (VLAs) -- has emerged to address language-conditioned robotic tasks in embodied AI by leveraging their distinct ability to generate actions. In recent years, a myriad of VLAs have been developed, making it imperative to capture the rapidly evolving landscape through a comprehensive survey. To this end, we present the first survey on VLAs for embodied AI. This work provides a detailed taxonomy of VLAs, organized into three major lines of research. The first line focuses on individual components of VLAs. The second line is dedicated to developing control policies adept at predicting low-level actions. The third line comprises high-level task planners capable of decomposing long-horizon tasks into a sequence of subtasks, thereby guiding VLAs to follow more general user instructions. Furthermore, we provide an extensive summary of relevant resources, including datasets, simulators, and benchmarks. Finally, we discuss the challenges faced by VLAs and outline promising future directions in embodied AI. We have created a project associated with this survey, which is available at https://github.com/yueen-ma/Awesome-VLA.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2505.03238v2">RobotxR1: Enabling Embodied Robotic Intelligence on Large Language Models through Closed-Loop Reinforcement Learning</a></div>
+    <div class="paper-meta">
+      📅 2025-08-30
+    </div>
+    <details class="paper-abstract">
+      Future robotic systems operating in real-world environments will require on-board embodied intelligence without continuous cloud connection, balancing capabilities with constraints on computational power and memory. This work presents an extension of the R1-zero approach, which enables the usage of low parameter-count Large Language Models (LLMs) in the robotic domain. The R1-Zero approach was originally developed to enable mathematical reasoning in LLMs using static datasets. We extend it to the robotics domain through integration in a closed-loop Reinforcement Learning (RL) framework. This extension enhances reasoning in Embodied Artificial Intelligence (Embodied AI) settings without relying solely on distillation of large models through Supervised Fine-Tuning (SFT). We show that small-scale LLMs can achieve effective reasoning performance by learning through closed-loop interaction with their environment, which enables tasks that previously required significantly larger models. In an autonomous driving setting, a performance gain of 20.2%-points over the SFT-based baseline is observed with a Qwen2.5-1.5B model. Using the proposed training procedure, Qwen2.5-3B achieves a 63.3% control adaptability score, surpassing the 58.5% obtained by the much larger, cloud-bound GPT-4o. These results highlight that practical, on-board deployment of small LLMs is not only feasible but can outperform larger models if trained through environmental feedback, underscoring the importance of an interactive learning framework for robotic Embodied AI, one grounded in practical experience rather than static supervision.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2505.03238v2">RobotxR1: Enabling Embodied Robotic Intelligence on Large Language Models through Closed-Loop Reinforcement Learning</a></div>
     <div class="paper-meta">
       📅 2025-08-30
     </div>
@@ -46,12 +65,30 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.00218v1">Embodied AI in Social Spaces: Responsible and Adaptive Robots in Complex Setting -- UKAIRS 2025 (Copy)</a></div>
+    <div class="paper-meta">
+      📅 2025-08-29
+    </div>
+    <details class="paper-abstract">
+      This paper introduces and overviews a multidisciplinary project aimed at developing responsible and adaptive multi-human multi-robot (MHMR) systems for complex, dynamic settings. The project integrates co-design, ethical frameworks, and multimodal sensing to create AI-driven robots that are emotionally responsive, context-aware, and aligned with the needs of diverse users. We outline the project's vision, methodology, and early outcomes, demonstrating how embodied AI can support sustainable, ethical, and human-centred futures.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.10439v3">CogNav: Cognitive Process Modeling for Object Goal Navigation with LLMs</a></div>
     <div class="paper-meta">
       📅 2025-08-28
     </div>
     <details class="paper-abstract">
       Object goal navigation (ObjectNav) is a fundamental task in embodied AI, requiring an agent to locate a target object in previously unseen environments. This task is particularly challenging because it requires both perceptual and cognitive processes, including object recognition and decision-making. While substantial advancements in perception have been driven by the rapid development of visual foundation models, progress on the cognitive aspect remains constrained, primarily limited to either implicit learning through simulator rollouts or explicit reliance on predefined heuristic rules. Inspired by neuroscientific findings demonstrating that humans maintain and dynamically update fine-grained cognitive states during object search tasks in novel environments, we propose CogNav, a framework designed to mimic this cognitive process using large language models. Specifically, we model the cognitive process using a finite state machine comprising fine-grained cognitive states, ranging from exploration to identification. Transitions between states are determined by a large language model based on a dynamically constructed heterogeneous cognitive map, which contains spatial and semantic information about the scene being explored. Extensive evaluations on the HM3D, MP3D, and RoboTHOR benchmarks demonstrate that our cognitive process modeling significantly improves the success rate of ObjectNav at least by relative 14% over the state-of-the-arts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.20674v1">Bridging Minds and Machines: Toward an Integration of AI and Cognitive Science</a></div>
+    <div class="paper-meta">
+      📅 2025-08-28
+    </div>
+    <details class="paper-abstract">
+      Cognitive Science has profoundly shaped disciplines such as Artificial Intelligence (AI), Philosophy, Psychology, Neuroscience, Linguistics, and Culture. Many breakthroughs in AI trace their roots to cognitive theories, while AI itself has become an indispensable tool for advancing cognitive research. This reciprocal relationship motivates a comprehensive review of the intersections between AI and Cognitive Science. By synthesizing key contributions from both perspectives, we observe that AI progress has largely emphasized practical task performance, whereas its cognitive foundations remain conceptually fragmented. We argue that the future of AI within Cognitive Science lies not only in improving performance but also in constructing systems that deepen our understanding of the human mind. Promising directions include aligning AI behaviors with cognitive frameworks, situating AI in embodiment and culture, developing personalized cognitive models, and rethinking AI ethics through cognitive co-evaluation.
     </details>
 </div>
 <div class="paper-card">
@@ -75,6 +112,16 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.06886v8">Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-08-25
+      | 💬 The comprehensive review of Embodied AI. We also provide the resource repository for Embodied AI: https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (Embodied AI) is crucial for achieving Artificial General Intelligence (AGI) and serves as a foundation for various applications (e.g., intelligent mechatronics systems, smart manufacturing) that bridge cyberspace and the physical world. Recently, the emergence of Multi-modal Large Models (MLMs) and World Models (WMs) have attracted significant attention due to their remarkable perception, interaction, and reasoning capabilities, making them a promising architecture for embodied agents. In this survey, we give a comprehensive exploration of the latest advancements in Embodied AI. Our analysis firstly navigates through the forefront of representative works of embodied robots and simulators, to fully understand the research focuses and their limitations. Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets. Additionally, we explore the complexities of MLMs in virtual and real embodied agents, highlighting their significance in facilitating interactions in digital and physical environments. Finally, we summarize the challenges and limitations of embodied AI and discuss potential future directions. We hope this survey will serve as a foundational reference for the research community. The associated project can be found at https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.06886v8">Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI</a></div>
     <div class="paper-meta">
       📅 2025-08-25
       | 💬 The comprehensive review of Embodied AI. We also provide the resource repository for Embodied AI: https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
@@ -248,6 +295,35 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13901v1">Multimodal Data Storage and Retrieval for Embodied AI: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+    </div>
+    <details class="paper-abstract">
+      Embodied AI (EAI) agents continuously interact with the physical world, generating vast, heterogeneous multimodal data streams that traditional management systems are ill-equipped to handle. In this survey, we first systematically evaluate five storage architectures (Graph Databases, Multi-Model Databases, Data Lakes, Vector Databases, and Time-Series Databases), focusing on their suitability for addressing EAI's core requirements, including physical grounding, low-latency access, and dynamic scalability. We then analyze five retrieval paradigms (Fusion Strategy-Based Retrieval, Representation Alignment-Based Retrieval, Graph-Structure-Based Retrieval, Generation Model-Based Retrieval, and Efficient Retrieval-Based Optimization), revealing a fundamental tension between achieving long-term semantic coherence and maintaining real-time responsiveness. Based on this comprehensive analysis, we identify key bottlenecks, spanning from the foundational Physical Grounding Gap to systemic challenges in cross-modal integration, dynamic adaptation, and open-world generalization. Finally, we outline a forward-looking research agenda encompassing physics-aware data models, adaptive storage-retrieval co-optimization, and standardized benchmarking, to guide future research toward principled data management solutions for EAI. Our survey is based on a comprehensive review of more than 180 related studies, providing a rigorous roadmap for designing the robust, high-performance data management frameworks essential for the next generation of autonomous embodied systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13998v1">Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+      | 💬 Embodied-R1 technical report
+    </div>
+    <details class="paper-abstract">
+      Generalization in embodied AI is hindered by the "seeing-to-doing gap," which stems from data scarcity and embodiment heterogeneity. To address this, we pioneer "pointing" as a unified, embodiment-agnostic intermediate representation, defining four core embodied pointing abilities that bridge high-level vision-language comprehension with low-level action primitives. We introduce Embodied-R1, a 3B Vision-Language Model (VLM) specifically designed for embodied reasoning and pointing. We use a wide range of embodied and general visual reasoning datasets as sources to construct a large-scale dataset, Embodied-Points-200K, which supports key embodied pointing capabilities. We then train Embodied-R1 using a two-stage Reinforced Fine-tuning (RFT) curriculum with a specialized multi-task reward design. Embodied-R1 achieves state-of-the-art performance on 11 embodied spatial and pointing benchmarks. Critically, it demonstrates robust zero-shot generalization by achieving a 56.2% success rate in the SIMPLEREnv and 87.5% across 8 real-world XArm tasks without any task-specific fine-tuning, representing a 62% improvement over strong baselines. Furthermore, the model exhibits high robustness against diverse visual disturbances. Our work shows that a pointing-centric representation, combined with an RFT training paradigm, offers an effective and generalizable pathway to closing the perception-action gap in robotics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13444v1">Switch4EAI: Leveraging Console Game Platform for Benchmarking Robotic Athletics</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+      | 💬 Workshop Submission
+    </div>
+    <details class="paper-abstract">
+      Recent advances in whole-body robot control have enabled humanoid and legged robots to execute increasingly agile and coordinated movements. However, standardized benchmarks for evaluating robotic athletic performance in real-world settings and in direct comparison to humans remain scarce. We present Switch4EAI(Switch-for-Embodied-AI), a low-cost and easily deployable pipeline that leverages motion-sensing console games to evaluate whole-body robot control policies. Using Just Dance on the Nintendo Switch as a representative example, our system captures, reconstructs, and retargets in-game choreography for robotic execution. We validate the system on a Unitree G1 humanoid with an open-source whole-body controller, establishing a quantitative baseline for the robot's performance against a human player. In the paper, we discuss these results, which demonstrate the feasibility of using commercial games platform as physically grounded benchmarks and motivate future work to for benchmarking embodied AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.13073v1">Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-08-18
@@ -269,6 +345,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.18774v3">Embodied Image Quality Assessment for Robotic Intelligence</a></div>
+    <div class="paper-meta">
+      📅 2025-08-18
+    </div>
+    <details class="paper-abstract">
+      Image Quality Assessment (IQA) of User-Generated Content (UGC) is a critical technique for human Quality of Experience (QoE). However, does the the image quality of Robot-Generated Content (RGC) demonstrate traits consistent with the Moravec paradox, potentially conflicting with human perceptual norms? Human subjective scoring is more based on the attractiveness of the image. Embodied agent are required to interact and perceive in the environment, and finally perform specific tasks. Visual images as inputs directly influence downstream tasks. In this paper, we explore the perception mechanism of embodied robots for image quality. We propose the first Embodied Preference Database (EPD), which contains 12,500 distorted image annotations. We establish assessment metrics based on the downstream tasks of robot. In addition, there is a gap between UGC and RGC. To address this, we propose a novel Multi-scale Attention Embodied Image Quality Assessment called MA-EIQA. For the proposed EPD dataset, this is the first no-reference IQA model designed for embodied robot. Finally, the performance of mainstream IQA algorithms on EPD dataset is verified. The experiments demonstrate that quality assessment of embodied images is different from that of humans. We sincerely hope that the EPD can contribute to the development of embodied AI by focusing on image quality assessment. The benchmark is available at https://github.com/Jianbo-maker/EPD_benchmark.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.18774v3">Embodied Image Quality Assessment for Robotic Intelligence</a></div>
     <div class="paper-meta">
       📅 2025-08-18
     </div>
@@ -330,6 +415,15 @@
     </div>
     <details class="paper-abstract">
       Recent advances in Vision-Language Models (VLMs) and large language models (LLMs) have greatly enhanced visual reasoning, a key capability for embodied AI agents like robots. However, existing visual reasoning benchmarks often suffer from several limitations: they lack a clear definition of reasoning complexity, offer have no control to generate questions over varying difficulty and task customization, and fail to provide structured, step-by-step reasoning annotations (workflows). To bridge these gaps, we formalize reasoning complexity, introduce an adaptive query engine that generates customizable questions of varying complexity with detailed intermediate annotations, and extend the JRDB dataset with human-object interaction and geometric relationship annotations to create JRDB-Reasoning, a benchmark tailored for visual reasoning in human-crowded environments. Our engine and benchmark enable fine-grained evaluation of visual reasoning frameworks and dynamic assessment of visual-language models across reasoning levels.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.10399v1">Large Model Empowered Embodied AI: A Survey on Decision-Making and Embodied Learning</a></div>
+    <div class="paper-meta">
+      📅 2025-08-14
+    </div>
+    <details class="paper-abstract">
+      Embodied AI aims to develop intelligent systems with physical forms capable of perceiving, decision-making, acting, and learning in real-world environments, providing a promising way to Artificial General Intelligence (AGI). Despite decades of explorations, it remains challenging for embodied agents to achieve human-level intelligence for general-purpose tasks in open dynamic environments. Recent breakthroughs in large models have revolutionized embodied AI by enhancing perception, interaction, planning and learning. In this article, we provide a comprehensive survey on large model empowered embodied AI, focusing on autonomous decision-making and embodied learning. We investigate both hierarchical and end-to-end decision-making paradigms, detailing how large models enhance high-level planning, low-level execution, and feedback for hierarchical decision-making, and how large models enhance Vision-Language-Action (VLA) models for end-to-end decision making. For embodied learning, we introduce mainstream learning methodologies, elaborating on how large models enhance imitation learning and reinforcement learning in-depth. For the first time, we integrate world models into the survey of embodied AI, presenting their design methods and critical roles in enhancing decision-making and learning. Though solid advances have been achieved, challenges still exist, which are discussed at the end of this survey, potentially as the further research directions.
     </details>
 </div>
 <div class="paper-card">
@@ -420,6 +514,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.20977v2">UnrealZoo: Enriching Photo-realistic Virtual Worlds for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-08-12
+      | 💬 ICCV 2025 (Highlight), Project page: http://unrealzoo.site/
+    </div>
+    <details class="paper-abstract">
+      We introduce UnrealZoo, a collection of over 100 photo-realistic 3D virtual worlds built on Unreal Engine, designed to reflect the complexity and variability of open-world environments. We also provide a rich variety of playable entities, including humans, animals, robots, and vehicles for embodied AI research. We extend UnrealCV with optimized APIs and tools for data collection, environment augmentation, distributed training, and benchmarking. These improvements achieve significant improvements in the efficiency of rendering and communication, enabling advanced applications such as multi-agent interactions. Our experimental evaluation across visual navigation and tracking tasks reveals two key insights: 1) environmental diversity provides substantial benefits for developing generalizable reinforcement learning (RL) agents, and 2) current embodied agents face persistent challenges in open-world scenarios, including navigation in unstructured terrain, adaptation to unseen morphologies, and managing latency in the close-loop control systems for interacting in highly dynamic objects. UnrealZoo thus serves as both a comprehensive testing ground and a pathway toward developing more capable embodied AI systems for real-world deployment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.08831v1">DiffPhysCam: Differentiable Physics-Based Camera Simulation for Inverse Rendering and Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-08-12
+      | 💬 19 pages, 17 figures, and 4 tables
+    </div>
+    <details class="paper-abstract">
+      We introduce DiffPhysCam, a differentiable camera simulator designed to support robotics and embodied AI applications by enabling gradient-based optimization in visual perception pipelines. Generating synthetic images that closely mimic those from real cameras is essential for training visual models and enabling end-to-end visuomotor learning. Moreover, differentiable rendering allows inverse reconstruction of real-world scenes as digital twins, facilitating simulation-based robotics training. However, existing virtual cameras offer limited control over intrinsic settings, poorly capture optical artifacts, and lack tunable calibration parameters -- hindering sim-to-real transfer. DiffPhysCam addresses these limitations through a multi-stage pipeline that provides fine-grained control over camera settings, models key optical effects such as defocus blur, and supports calibration with real-world data. It enables both forward rendering for image synthesis and inverse rendering for 3D scene reconstruction, including mesh and material texture optimization. We show that DiffPhysCam enhances robotic perception performance in synthetic image tasks. As an illustrative example, we create a digital twin of a real-world scene using inverse rendering, simulate it in a multi-physics environment, and demonstrate navigation of an autonomous ground vehicle using images generated by DiffPhysCam.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.08252v1">ReferSplat: Referring Segmentation in 3D Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2025-08-11
@@ -449,6 +563,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.05750v3">Semantic Mapping in Indoor Embodied AI -- A Survey on Advances, Challenges, and Future Directions</a></div>
+    <div class="paper-meta">
+      📅 2025-08-10
+    </div>
+    <details class="paper-abstract">
+      Intelligent embodied agents (e.g. robots) need to perform complex semantic tasks in unfamiliar environments. Among many skills that the agents need to possess, building and maintaining a semantic map of the environment is most crucial in long-horizon tasks. A semantic map captures information about the environment in a structured way, allowing the agent to reference it for advanced reasoning throughout the task. While existing surveys in embodied AI focus on general advancements or specific tasks like navigation and manipulation, this paper provides a comprehensive review of semantic map-building approaches in embodied AI, specifically for indoor navigation. We categorize these approaches based on their structural representation (spatial grids, topological graphs, dense point-clouds or hybrid maps) and the type of information they encode (implicit features or explicit environmental data). We also explore the strengths and limitations of the map building techniques, highlight current challenges, and propose future research directions. We identify that the field is moving towards developing open-vocabulary, queryable, task-agnostic map representations, while high memory demands and computational inefficiency still remaining to be open challenges. This survey aims to guide current and future researchers in advancing semantic mapping techniques for embodied AI systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.05750v3">Semantic Mapping in Indoor Embodied AI -- A Survey on Advances, Challenges, and Future Directions</a></div>
     <div class="paper-meta">
       📅 2025-08-10
     </div>
@@ -496,6 +619,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.05855v1">Safety of Embodied Navigation: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2025-08-07
+    </div>
+    <details class="paper-abstract">
+      As large language models (LLMs) continue to advance and gain influence, the development of embodied AI has accelerated, drawing significant attention, particularly in navigation scenarios. Embodied navigation requires an agent to perceive, interact with, and adapt to its environment while moving toward a specified target in unfamiliar settings. However, the integration of embodied navigation into critical applications raises substantial safety concerns. Given their deployment in dynamic, real-world environments, ensuring the safety of such systems is critical. This survey provides a comprehensive analysis of safety in embodied navigation from multiple perspectives, encompassing attack strategies, defense mechanisms, and evaluation methodologies. Beyond conducting a comprehensive examination of existing safety challenges, mitigation technologies, and various datasets and metrics that assess effectiveness and robustness, we explore unresolved issues and future research directions in embodied navigation safety. These include potential attack methods, mitigation strategies, more reliable evaluation techniques, and the implementation of verification frameworks. By addressing these critical gaps, this survey aims to provide valuable insights that can guide future research toward the development of safer and more reliable embodied navigation systems. Furthermore, the findings of this study have broader implications for enhancing societal safety and increasing industrial efficiency.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.05855v1">Safety of Embodied Navigation: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-08-07
     </div>

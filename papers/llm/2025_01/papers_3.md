@@ -10,9 +10,28 @@
 - [Part 4](papers_4.md)
 - [Part 5](papers_5.md)
 - [Part 6](papers_6.md)
+- [Part 7](papers_7.md)
 
 ## Papers
 
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.14291v1">Advances in Temporal Point Processes: Bayesian, Deep, and LLM Approaches</a></div>
+    <div class="paper-meta">
+      📅 2025-01-24
+    </div>
+    <details class="paper-abstract">
+      Temporal point processes (TPPs) are stochastic process models used to characterize event sequences occurring in continuous time. Traditional statistical TPPs have a long-standing history, with numerous models proposed and successfully applied across diverse domains. In recent years, advances in deep learning have spurred the development of neural TPPs, enabling greater flexibility and expressiveness in capturing complex temporal dynamics. The emergence of large language models (LLMs) has further sparked excitement, offering new possibilities for modeling and analyzing event sequences by leveraging their rich contextual understanding. This survey presents a comprehensive review of recent research on TPPs from three perspectives: Bayesian, deep learning, and LLM approaches. We begin with a review of the fundamental concepts of TPPs, followed by an in-depth discussion of model design and parameter estimation techniques in these three frameworks. We also revisit classic application areas of TPPs to highlight their practical relevance. Finally, we outline challenges and promising directions for future research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.14275v1">Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2025-01-24
+    </div>
+    <details class="paper-abstract">
+      Advances in Large Language Models (LLMs) have sparked interest in their ability to solve Olympiad-level math problems. However, the training and evaluation of these models are constrained by the limited size and quality of available datasets, as creating large-scale data for such advanced problems requires extensive effort from human experts. In addition, current benchmarks are prone to contamination, leading to unreliable evaluations. In this paper, we present an automated pipeline that leverages the rich resources of the Art of Problem Solving (AoPS) forum, which predominantly features Olympiad-level problems and community-driven solutions. Using open-source LLMs, we develop a method to extract question-answer pairs from the forum, resulting in AoPS-Instruct, a dataset of more than 600,000 high-quality QA pairs. Our experiments demonstrate that fine-tuning LLMs on AoPS-Instruct improves their reasoning abilities across various benchmarks. Moreover, we build an automatic pipeline that introduces LiveAoPSBench, an evolving evaluation set with timestamps, derived from the latest forum data, providing a contamination-resistant benchmark for assessing LLM performance. Notably, we observe a significant decline in LLM performance over time, suggesting their success on older examples may stem from pre-training exposure rather than true reasoning ability. Our work presents a scalable approach to creating and maintaining large-scale, high-quality datasets for advanced math reasoning, offering valuable insights into the capabilities and limitations of LLMs in this domain. Our benchmark and code is available at https://github.com/DSL-Lab/aops
+    </details>
+</div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.12612v2">Auto-Cypher: Improving LLMs on Cypher generation via LLM-supervised generation-verification framework</a></div>
     <div class="paper-meta">
@@ -584,6 +603,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.12557v1">Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at CHI through a Systematic Literature Review</a></div>
+    <div class="paper-meta">
+      📅 2025-01-22
+      | 💬 This is a preprint version of the paper conditionally accepted to CHI'25
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have been positioned to revolutionize HCI, by reshaping not only the interfaces, design patterns, and sociotechnical systems that we study, but also the research practices we use. To-date, however, there has been little understanding of LLMs' uptake in HCI. We address this gap via a systematic literature review of 153 CHI papers from 2020-24 that engage with LLMs. We taxonomize: (1) domains where LLMs are applied; (2) roles of LLMs in HCI projects; (3) contribution types; and (4) acknowledged limitations and risks. We find LLM work in 10 diverse domains, primarily via empirical and artifact contributions. Authors use LLMs in five distinct roles, including as research tools or simulated users. Still, authors often raise validity and reproducibility concerns, and overwhelmingly study closed models. We outline opportunities to improve HCI research with and on LLMs, and provide guiding questions for researchers to consider the validity and appropriateness of LLM-related work.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2312.15524v2">The Challenge of Using LLMs to Simulate Human Behavior: A Causal Inference Perspective</a></div>
     <div class="paper-meta">
       📅 2025-01-21
@@ -939,32 +968,5 @@
     </div>
     <details class="paper-abstract">
       Chart visualizations, while essential for data interpretation and communication, are predominantly accessible only as images in PDFs, lacking source data tables and stylistic information. To enable effective editing of charts in PDFs or digital scans, we present PlotEdit, a novel multi-agent framework for natural language-driven end-to-end chart image editing via self-reflective LLM agents. PlotEdit orchestrates five LLM agents: (1) Chart2Table for data table extraction, (2) Chart2Vision for style attribute identification, (3) Chart2Code for retrieving rendering code, (4) Instruction Decomposition Agent for parsing user requests into executable steps, and (5) Multimodal Editing Agent for implementing nuanced chart component modifications - all coordinated through multimodal feedback to maintain visual fidelity. PlotEdit outperforms existing baselines on the ChartCraft dataset across style, layout, format, and data-centric edits, enhancing accessibility for visually challenged users and improving novice productivity.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16355v1">How Strategic Agents Respond: Comparing Analytical Models with LLM-Generated Responses in Strategic Classification</a></div>
-    <div class="paper-meta">
-      📅 2025-01-20
-    </div>
-    <details class="paper-abstract">
-      When machine learning (ML) algorithms are used to automate human-related decisions, human agents may gain knowledge of the decision policy and behave strategically to obtain desirable outcomes. Strategic Classification (SC) has been proposed to address the interplay between agents and decision-makers. Prior work on SC has relied on assumptions that agents are perfectly or approximately rational, responding to decision policies by maximizing their utilities. Verifying these assumptions is challenging due to the difficulty of collecting real-world agent responses. Meanwhile, the growing adoption of large language models (LLMs) makes it increasingly likely that human agents in SC settings will seek advice from these tools. We propose using strategic advice generated by LLMs to simulate human agent responses in SC. Specifically, we examine five critical SC scenarios -- hiring, loan applications, school admissions, personal income, and public assistance programs -- and simulate how human agents with diverse profiles seek advice from LLMs. We then compare the resulting agent responses with the best responses generated by existing theoretical models. Our findings reveal that: (i) LLMs and theoretical models generally lead to agent score or qualification changes in the same direction across most settings, with both achieving similar levels of fairness; (ii) state-of-the-art commercial LLMs (e.g., GPT-3.5, GPT-4) consistently provide helpful suggestions, though these suggestions typically do not result in maximal score or qualification improvements; and (iii) LLMs tend to produce more diverse agent responses, often favoring more balanced effort allocation strategies. These results suggest that theoretical models align with LLMs to some extent and that leveraging LLMs to simulate more realistic agent responses offers a promising approach to designing trustworthy ML systems.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.13948v1">Longitudinal Abuse and Sentiment Analysis of Hollywood Movie Dialogues using LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-20
-    </div>
-    <details class="paper-abstract">
-      Over the past decades, there has been an increasing concern about the prevalence of abusive and violent content in Hollywood movies. This study uses Large Language Models (LLMs) to explore the longitudinal abuse and sentiment analysis of Hollywood Oscar and blockbuster movie dialogues from 1950 to 2024. By employing fine-tuned LLMs, we analyze subtitles for over a thousand movies categorised into four genres to examine the trends and shifts in emotional and abusive content over the past seven decades. Our findings reveal significant temporal changes in movie dialogues, which reflect broader social and cultural influences. Overall, the emotional tendencies in the films are diverse, and the detection of abusive content also exhibits significant fluctuations. The results show a gradual rise in abusive content in recent decades, reflecting social norms and regulatory policy changes. Genres such as thrillers still present a higher frequency of abusive content that emphasises the ongoing narrative role of violence and conflict. At the same time, underlying positive emotions such as humour and optimism remain prevalent in most of the movies. Furthermore, the gradual increase of abusive content in movie dialogues has been significant over the last two decades, where Oscar-nominated movies overtook the top ten blockbusters.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.10970v1">The Alternative Annotator Test for LLM-as-a-Judge: How to Statistically Justify Replacing Human Annotators with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-19
-    </div>
-    <details class="paper-abstract">
-      The "LLM-as-a-judge" paradigm employs Large Language Models (LLMs) as annotators and evaluators in tasks traditionally performed by humans. LLM annotations are widely used, not only in NLP research but also in fields like medicine, psychology, and social science. Despite their role in shaping study results and insights, there is no standard or rigorous procedure to determine whether LLMs can replace human annotators. In this paper, we propose a novel statistical procedure -- the Alternative Annotator Test (alt-test) -- that requires only a modest subset of annotated examples to justify using LLM annotations. Additionally, we introduce a versatile and interpretable measure for comparing LLM judges. To demonstrate our procedure, we curated a diverse collection of ten datasets, consisting of language and vision-language tasks, and conducted experiments with six LLMs and four prompting techniques. Our results show that LLMs can sometimes replace humans with closed-source LLMs (such as GPT-4o), outperforming open-source LLMs, and that prompting techniques yield judges of varying quality. We hope this study encourages more rigorous and reliable practices.
     </details>
 </div>

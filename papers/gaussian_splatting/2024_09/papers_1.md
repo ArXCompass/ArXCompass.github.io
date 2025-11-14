@@ -67,6 +67,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.20111v1">Robust Gaussian Splatting SLAM by Leveraging Loop Closure</a></div>
+    <div class="paper-meta">
+      📅 2024-09-30
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting algorithms excel in novel view rendering applications and have been adapted to extend the capabilities of traditional SLAM systems. However, current Gaussian Splatting SLAM methods, designed mainly for hand-held RGB or RGB-D sensors, struggle with tracking drifts when used with rotating RGB-D camera setups. In this paper, we propose a robust Gaussian Splatting SLAM architecture that utilizes inputs from rotating multiple RGB-D cameras to achieve accurate localization and photorealistic rendering performance. The carefully designed Gaussian Splatting Loop Closure module effectively addresses the issue of accumulated tracking and mapping errors found in conventional Gaussian Splatting SLAM systems. First, each Gaussian is associated with an anchor frame and categorized as historical or novel based on its timestamp. By rendering different types of Gaussians at the same viewpoint, the proposed loop detection strategy considers both co-visibility relationships and distinct rendering outcomes. Furthermore, a loop closure optimization approach is proposed to remove camera pose drift and maintain the high quality of 3D Gaussian models. The approach uses a lightweight pose graph optimization algorithm to correct pose drift and updates Gaussians based on the optimized poses. Additionally, a bundle adjustment scheme further refines camera poses using photometric and geometric constraints, ultimately enhancing the global consistency of scenarios. Quantitative and qualitative evaluations on both synthetic and real-world datasets demonstrate that our method outperforms state-of-the-art methods in camera pose estimation and novel view rendering tasks. The code will be open-sourced for the community.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.12306v2">Splatfacto-W: A Nerfstudio Implementation of Gaussian Splatting for Unconstrained Photo Collections</a></div>
     <div class="paper-meta">
       📅 2024-09-29
@@ -208,6 +217,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2405.04378v4">Splat-MOVER: Multi-Stage, Open-Vocabulary Robotic Manipulation via Editable Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-09-26
+      | 💬 https://splatmover.github.io
+    </div>
+    <details class="paper-abstract">
+      We present Splat-MOVER, a modular robotics stack for open-vocabulary robotic manipulation, which leverages the editability of Gaussian Splatting (GSplat) scene representations to enable multi-stage manipulation tasks. Splat-MOVER consists of: (i) ASK-Splat, a GSplat representation that distills semantic and grasp affordance features into the 3D scene. ASK-Splat enables geometric, semantic, and affordance understanding of 3D scenes, which is critical in many robotics tasks; (ii) SEE-Splat, a real-time scene-editing module using 3D semantic masking and infilling to visualize the motions of objects that result from robot interactions in the real-world. SEE-Splat creates a "digital twin" of the evolving environment throughout the manipulation task; and (iii) Grasp-Splat, a grasp generation module that uses ASK-Splat and SEE-Splat to propose affordance-aligned candidate grasps for open-world objects. ASK-Splat is trained in real-time from RGB images in a brief scanning phase prior to operation, while SEE-Splat and Grasp-Splat run in real-time during operation. We demonstrate the superior performance of Splat-MOVER in hardware experiments on a Kinova robot compared to two recent baselines in four single-stage, open-vocabulary manipulation tasks and in four multi-stage manipulation tasks, using the edited scene to reflect changes due to prior manipulation stages, which is not possible with existing baselines. Video demonstrations and the code for the project are available at https://splatmover.github.io.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.17345v1">SeaSplat: Representing Underwater Scenes with 3D Gaussian Splatting and a Physically Grounded Image Formation Model</a></div>
     <div class="paper-meta">
       📅 2024-09-25
@@ -340,6 +359,16 @@
     </div>
     <details class="paper-abstract">
       The goal of this paper is to encode a 3D scene into an extremely compact representation from 2D images and to enable its transmittance, decoding and rendering in real-time across various platforms. Despite the progress in NeRFs and Gaussian Splats, their large model size and specialized renderers make it challenging to distribute free-viewpoint 3D content as easily as images. To address this, we have designed a novel 3D representation that encodes the plenoptic function into sinusoidal function indexed dense volumes. This approach facilitates feature sharing across different locations, improving compactness over traditional spatial voxels. The memory footprint of the dense 3D feature grid can be further reduced using spatial decomposition techniques. This design combines the strengths of spatial hashing functions and voxel decomposition, resulting in a model size as small as 150 KB for each 3D scene. Moreover, PPNG features a lightweight rendering pipeline with only 300 lines of code that decodes its representation into standard GL textures and fragment shaders. This enables real-time rendering using the traditional GL pipeline, ensuring universal compatibility and efficiency across various platforms without additional dependencies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.00834v3">Deblurring 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-09-24
+      | 💬 29 pages, 16 figures
+    </div>
+    <details class="paper-abstract">
+      Recent studies in Radiance Fields have paved the robust way for novel view synthesis with their photorealistic rendering quality. Nevertheless, they usually employ neural networks and volumetric rendering, which are costly to train and impede their broad use in various real-time applications due to the lengthy rendering time. Lately 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves remarkable visual quality while rendering the images in real-time. However, it suffers from severe degradation in the rendering quality if the training images are blurry. Blurriness commonly occurs due to the lens defocusing, object motion, and camera shake, and it inevitably intervenes in clean image acquisition. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. The majority of those works, however, are designed only for volumetric rendering-based neural radiance fields and are not straightforwardly applicable to rasterization-based 3D Gaussian splatting methods. Thus, we propose a novel real-time deblurring framework, Deblurring 3D Gaussian Splatting, using a small Multi-Layer Perceptron (MLP) that manipulates the covariance of each 3D Gaussian to model the scene blurriness. While Deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring. Qualitative results are available at https://benhenryl.github.io/Deblurring-3D-Gaussian-Splatting/
     </details>
 </div>
 <div class="paper-card">
@@ -704,6 +733,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.08669v1">AdR-Gaussian: Accelerating Gaussian Splatting with Adaptive Radius</a></div>
+    <div class="paper-meta">
+      📅 2024-09-13
+      | 💬 SIGGRAPH Asia 2024 Conference Papers (SA Conference Papers '24), December 03-06, 2024, Tokyo, Japan
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) is a recent explicit 3D representation that has achieved high-quality reconstruction and real-time rendering of complex scenes. However, the rasterization pipeline still suffers from unnecessary overhead resulting from avoidable serial Gaussian culling, and uneven load due to the distinct number of Gaussian to be rendered across pixels, which hinders wider promotion and application of 3DGS. In order to accelerate Gaussian splatting, we propose AdR-Gaussian, which moves part of serial culling in Render stage into the earlier Preprocess stage to enable parallel culling, employing adaptive radius to narrow the rendering pixel range for each Gaussian, and introduces a load balancing method to minimize thread waiting time during the pixel-parallel rendering. Our contributions are threefold, achieving a rendering speed of 310% while maintaining equivalent or even better quality than the state-of-the-art. Firstly, we propose to early cull Gaussian-Tile pairs of low splatting opacity based on an adaptive radius in the Gaussian-parallel Preprocess stage, which reduces the number of affected tile through the Gaussian bounding circle, thus reducing unnecessary overhead and achieving faster rendering speed. Secondly, we further propose early culling based on axis-aligned bounding box for Gaussian splatting, which achieves a more significant reduction in ineffective expenses by accurately calculating the Gaussian size in the 2D directions. Thirdly, we propose a balancing algorithm for pixel thread load, which compresses the information of heavy-load pixels to reduce thread waiting time, and enhance information of light-load pixels to hedge against rendering quality loss. Experiments on three datasets demonstrate that our algorithm can significantly improve the Gaussian Splatting rendering speed.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.08353v1">Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos</a></div>
     <div class="paper-meta">
       📅 2024-09-12
@@ -870,6 +909,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.06765v1">gsplat: An Open-Source Library for Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-09-10
+      | 💬 17 pages, 2 figures, JMLR MLOSS
+    </div>
+    <details class="paper-abstract">
+      gsplat is an open-source library designed for training and developing Gaussian Splatting methods. It features a front-end with Python bindings compatible with the PyTorch library and a back-end with highly optimized CUDA kernels. gsplat offers numerous features that enhance the optimization of Gaussian Splatting models, which include optimization improvements for speed, memory, and convergence times. Experimental results demonstrate that gsplat achieves up to 10% less training time and 4x less memory than the original implementation. Utilized in several research projects, gsplat is actively maintained on GitHub. Source code is available at https://github.com/nerfstudio-project/gsplat under Apache License 2.0. We welcome contributions from the open-source community.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.06037v1">Online 3D reconstruction and dense tracking in endoscopic videos</a></div>
     <div class="paper-meta">
       📅 2024-09-09
@@ -914,53 +963,5 @@
     </div>
     <details class="paper-abstract">
       3D scene stylization extends the work of neural style transfer to 3D. A vital challenge in this problem is to maintain the uniformity of the stylized appearance across multiple views. A vast majority of the previous works achieve this by training a 3D model for every stylized image and a set of multi-view images. In contrast, we propose a novel architecture trained on a collection of style images that, at test time, produces real time high-quality stylized novel views. We choose the underlying 3D scene representation for our model as 3D Gaussian splatting. We take the 3D Gaussians and process them using a multi-resolution hash grid and a tiny MLP to obtain stylized views. The MLP is conditioned on different style codes for generalization to different styles during test time. The explicit nature of 3D Gaussians gives us inherent advantages over NeRF-based methods, including geometric consistency and a fast training and rendering regime. This enables our method to be useful for various practical use cases, such as augmented or virtual reality. We demonstrate that our method achieves state-of-the-art performance with superior visual quality on various indoor and outdoor real-world data.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.19586v2">TOGS: Gaussian Splatting with Temporal Opacity Offset for Real-Time 4D DSA Rendering</a></div>
-    <div class="paper-meta">
-      📅 2024-09-08
-    </div>
-    <details class="paper-abstract">
-      Four-dimensional Digital Subtraction Angiography (4D DSA) is a medical imaging technique that provides a series of 2D images captured at different stages and angles during the process of contrast agent filling blood vessels. It plays a significant role in the diagnosis of cerebrovascular diseases. Improving the rendering quality and speed under sparse sampling is important for observing the status and location of lesions. The current methods exhibit inadequate rendering quality in sparse views and suffer from slow rendering speed. To overcome these limitations, we propose TOGS, a Gaussian splatting method with opacity offset over time, which can effectively improve the rendering quality and speed of 4D DSA. We introduce an opacity offset table for each Gaussian to model the opacity offsets of the Gaussian, using these opacity-varying Gaussians to model the temporal variations in the radiance of the contrast agent. By interpolating the opacity offset table, the opacity variation of the Gaussian at different time points can be determined. This enables us to render the 2D DSA image at that specific moment. Additionally, we introduced a Smooth loss term in the loss function to mitigate overfitting issues that may arise in the model when dealing with sparse view scenarios. During the training phase, we randomly prune Gaussians, thereby reducing the storage overhead of the model. The experimental results demonstrate that compared to previous methods, this model achieves state-of-the-art render quality under the same number of training views. Additionally, it enables real-time rendering while maintaining low storage overhead. The code is available at https://github.com/hustvl/TOGS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.04963v1">GS-PT: Exploiting 3D Gaussian Splatting for Comprehensive Point Cloud Understanding via Self-supervised Learning</a></div>
-    <div class="paper-meta">
-      📅 2024-09-08
-    </div>
-    <details class="paper-abstract">
-      Self-supervised learning of point cloud aims to leverage unlabeled 3D data to learn meaningful representations without reliance on manual annotations. However, current approaches face challenges such as limited data diversity and inadequate augmentation for effective feature learning. To address these challenges, we propose GS-PT, which integrates 3D Gaussian Splatting (3DGS) into point cloud self-supervised learning for the first time. Our pipeline utilizes transformers as the backbone for self-supervised pre-training and introduces novel contrastive learning tasks through 3DGS. Specifically, the transformers aim to reconstruct the masked point cloud. 3DGS utilizes multi-view rendered images as input to generate enhanced point cloud distributions and novel view images, facilitating data augmentation and cross-modal contrastive learning. Additionally, we incorporate features from depth maps. By optimizing these tasks collectively, our method enriches the tri-modal self-supervised learning process, enabling the model to leverage the correlation across 3D point clouds and 2D images from various modalities. We freeze the encoder after pre-training and test the model's performance on multiple downstream tasks. Experimental results indicate that GS-PT outperforms the off-the-shelf self-supervised learning methods on various downstream tasks including 3D object classification, real-world classifications, and few-shot learning and segmentation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.04196v1">GST: Precise 3D Human Body from a Single Image with Gaussian Splatting Transformers</a></div>
-    <div class="paper-meta">
-      📅 2024-09-06
-      | 💬 preprint
-    </div>
-    <details class="paper-abstract">
-      Reconstructing realistic 3D human models from monocular images has significant applications in creative industries, human-computer interfaces, and healthcare. We base our work on 3D Gaussian Splatting (3DGS), a scene representation composed of a mixture of Gaussians. Predicting such mixtures for a human from a single input image is challenging, as it is a non-uniform density (with a many-to-one relationship with input pixels) with strict physical constraints. At the same time, it needs to be flexible to accommodate a variety of clothes and poses. Our key observation is that the vertices of standardized human meshes (such as SMPL) can provide an adequate density and approximate initial position for Gaussians. We can then train a transformer model to jointly predict comparatively small adjustments to these positions, as well as the other Gaussians' attributes and the SMPL parameters. We show empirically that this combination (using only multi-view supervision) can achieve fast inference of 3D human models from a single image without test-time optimization, expensive diffusion models, or 3D points supervision. We also show that it can improve 3D pose estimation by better fitting human models that account for clothes and other variations. The code is available on the project website https://abdullahamdi.com/gst/ .
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.08498v2">Gaussian Splatting in Style</a></div>
-    <div class="paper-meta">
-      📅 2024-09-06
-      | 💬 GCPR 2024
-    </div>
-    <details class="paper-abstract">
-      3D scene stylization extends the work of neural style transfer to 3D. A vital challenge in this problem is to maintain the uniformity of the stylized appearance across multiple views. A vast majority of the previous works achieve this by training a 3D model for every stylized image and a set of multi-view images. In contrast, we propose a novel architecture trained on a collection of style images that, at test time, produces real time high-quality stylized novel views. We choose the underlying 3D scene representation for our model as 3D Gaussian splatting. We take the 3D Gaussians and process them using a multi-resolution hash grid and a tiny MLP to obtain stylized views. The MLP is conditioned on different style codes for generalization to different styles during test time. The explicit nature of 3D Gaussians gives us inherent advantages over NeRF-based methods, including geometric consistency and a fast training and rendering regime. This enables our method to be useful for various practical use cases, such as augmented or virtual reality. We demonstrate that our method achieves state-of-the-art performance with superior visual quality on various indoor and outdoor real-world data.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.04013v1">3D-GP-LMVIC: Learning-based Multi-View Image Coding with 3D Gaussian Geometric Priors</a></div>
-    <div class="paper-meta">
-      📅 2024-09-06
-      | 💬 19pages, 8 figures, conference
-    </div>
-    <details class="paper-abstract">
-      Multi-view image compression is vital for 3D-related applications. To effectively model correlations between views, existing methods typically predict disparity between two views on a 2D plane, which works well for small disparities, such as in stereo images, but struggles with larger disparities caused by significant view changes. To address this, we propose a novel approach: learning-based multi-view image coding with 3D Gaussian geometric priors (3D-GP-LMVIC). Our method leverages 3D Gaussian Splatting to derive geometric priors of the 3D scene, enabling more accurate disparity estimation across views within the compression model. Additionally, we introduce a depth map compression model to reduce redundancy in geometric information between views. A multi-view sequence ordering method is also proposed to enhance correlations between adjacent views. Experimental results demonstrate that 3D-GP-LMVIC surpasses both traditional and learning-based methods in performance, while maintaining fast encoding and decoding speed.
     </details>
 </div>

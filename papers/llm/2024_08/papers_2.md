@@ -12,81 +12,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.08459v2">JPEG-LM: LLMs as Image Generators with Canonical Codec Representations</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-    </div>
-    <details class="paper-abstract">
-      Recent work in image and video generation has been adopting the autoregressive LLM architecture due to its generality and potentially easy integration into multi-modal systems. The crux of applying autoregressive training in language generation to visual generation is discretization -- representing continuous data like images and videos as discrete tokens. Common methods of discretizing images and videos include modeling raw pixel values, which are prohibitively lengthy, or vector quantization, which requires convoluted pre-hoc training. In this work, we propose to directly model images and videos as compressed files saved on computers via canonical codecs (e.g., JPEG, AVC/H.264). Using the default Llama architecture without any vision-specific modifications, we pretrain JPEG-LM from scratch to generate images (and AVC-LM to generate videos as a proof of concept), by directly outputting compressed file bytes in JPEG and AVC formats. Evaluation of image generation shows that this simple and straightforward approach is more effective than pixel-based modeling and sophisticated vector quantization baselines (on which our method yields a 31% reduction in FID). Our analysis shows that JPEG-LM has an especial advantage over vector quantization models in generating long-tail visual elements. Overall, we show that using canonical codec representations can help lower the barriers between language generation and visual generation, facilitating future research on multi-modal language/image/video LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.15549v2">Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) can often be made to behave in undesirable ways that they are explicitly fine-tuned not to. For example, the LLM red-teaming literature has produced a wide variety of 'jailbreaking' techniques to elicit harmful text from models that were fine-tuned to be harmless. Recent work on red-teaming, model editing, and interpretability suggests that this challenge stems from how (adversarial) fine-tuning largely serves to suppress rather than remove undesirable capabilities from LLMs. Prior work has introduced latent adversarial training (LAT) as a way to improve robustness to broad classes of failures. These prior works have considered untargeted latent space attacks where the adversary perturbs latent activations to maximize loss on examples of desirable behavior. Untargeted LAT can provide a generic type of robustness but does not leverage information about specific failure modes. Here, we experiment with targeted LAT where the adversary seeks to minimize loss on a specific competing task. We find that it can augment a wide variety of state-of-the-art methods. First, we use targeted LAT to improve robustness to jailbreaks, outperforming a strong R2D2 baseline with orders of magnitude less compute. Second, we use it to more effectively remove backdoors with no knowledge of the trigger. Finally, we use it to more effectively unlearn knowledge for specific undesirable tasks in a way that is also more robust to re-learning. Overall, our results suggest that targeted LAT can be an effective tool for defending against harmful behaviors from LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.12003v1">RAG-Optimized Tibetan Tourism LLMs: Enhancing Accuracy and Personalization</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-      | 💬 Accepted by AIPR 2024
-    </div>
-    <details class="paper-abstract">
-      With the development of the modern social economy, tourism has become an important way to meet people's spiritual needs, bringing development opportunities to the tourism industry. However, existing large language models (LLMs) face challenges in personalized recommendation capabilities and the generation of content that can sometimes produce hallucinations. This study proposes an optimization scheme for Tibet tourism LLMs based on retrieval-augmented generation (RAG) technology. By constructing a database of tourist viewpoints and processing the data using vectorization techniques, we have significantly improved retrieval accuracy. The application of RAG technology effectively addresses the hallucination problem in content generation. The optimized model shows significant improvements in fluency, accuracy, and relevance of content generation. This research demonstrates the potential of RAG technology in the standardization of cultural tourism information and data analysis, providing theoretical and technical support for the development of intelligent cultural tourism service systems.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11987v1">SimBench: A Rule-Based Multi-Turn Interaction Benchmark for Evaluating an LLM's Ability to Generate Digital Twins</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-    </div>
-    <details class="paper-abstract">
-      We introduce SimBench, a benchmark designed to evaluate the proficiency of student large language models (S-LLMs) in generating digital twins (DTs) that can be used in simulators for virtual testing. Given a collection of S-LLMs, this benchmark enables the ranking of the S-LLMs based on their ability to produce high-quality DTs. We demonstrate this by comparing over 20 open- and closed-source S-LLMs. Using multi-turn interactions, SimBench employs a rule-based judge LLM (J-LLM) that leverages both predefined rules and human-in-the-loop guidance to assign scores for the DTs generated by the S-LLM, thus providing a consistent and expert-inspired evaluation protocol. The J-LLM is specific to a simulator, and herein the proposed benchmarking approach is demonstrated in conjunction with the Chrono multi-physics simulator. Chrono provided the backdrop used to assess an S-LLM in relation to the latter's ability to create digital twins for multibody dynamics, finite element analysis, vehicle dynamics, robotic dynamics, and sensor simulations. The proposed benchmarking principle is broadly applicable and enables the assessment of an S-LLM's ability to generate digital twins for other simulation packages. All code and data are available at https://github.com/uwsbel/SimBench.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.05590v2">NYU CTF Dataset: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are being deployed across various domains today. However, their capacity to solve Capture the Flag (CTF) challenges in cybersecurity has not been thoroughly evaluated. To address this, we develop a novel method to assess LLMs in solving CTF challenges by creating a scalable, open-source benchmark database specifically designed for these applications. This database includes metadata for LLM testing and adaptive learning, compiling a diverse range of CTF challenges from popular competitions. Utilizing the advanced function calling capabilities of LLMs, we build a fully automated system with an enhanced workflow and support for external tool calls. Our benchmark dataset and automated framework allow us to evaluate the performance of five LLMs, encompassing both black-box and open-source models. This work lays the foundation for future research into improving the efficiency of LLMs in interactive cybersecurity tasks and automated task planning. By providing a specialized dataset, our project offers an ideal platform for developing, testing, and refining LLM-based approaches to vulnerability detection and resolution. Evaluating LLMs on these challenges and comparing with human performance yields insights into their potential for AI-driven cybersecurity solutions to perform real-world threat management. We make our dataset open source to public https://github.com/NYU-LLM-CTF/LLM_CTF_Database along with our playground automated framework https://github.com/NYU-LLM-CTF/llm_ctf_automation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2404.11457v2">Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-      | 💬 KDD 2024 Tutorial&Survey; Tutorial Website: https://llm-ir-bias-fairness.github.io/
-    </div>
-    <details class="paper-abstract">
-      With the rapid advancements of large language models (LLMs), information retrieval (IR) systems, such as search engines and recommender systems, have undergone a significant paradigm shift. This evolution, while heralding new opportunities, introduces emerging challenges, particularly in terms of biases and unfairness, which may threaten the information ecosystem. In this paper, we present a comprehensive survey of existing works on emerging and pressing bias and unfairness issues in IR systems when the integration of LLMs. We first unify bias and unfairness issues as distribution mismatch problems, providing a groundwork for categorizing various mitigation strategies through distribution alignment. Subsequently, we systematically delve into the specific bias and unfairness issues arising from three critical stages of LLMs integration into IR systems: data collection, model development, and result evaluation. In doing so, we meticulously review and analyze recent literature, focusing on the definitions, characteristics, and corresponding mitigation strategies associated with these issues. Finally, we identify and highlight some open problems and challenges for future work, aiming to inspire researchers and stakeholders in the IR field and beyond to better understand and mitigate bias and unfairness issues of IR in this LLM era. We also consistently maintain a GitHub repository for the relevant papers and resources in this rising direction at https://github.com/KID-22/LLM-IR-Bias-Fairness-Survey.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.18764v2">TAGIFY: LLM-powered Tagging Interface for Improved Data Findability on OGD portals</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-    </div>
-    <details class="paper-abstract">
-      Efforts directed towards promoting Open Government Data (OGD) have gained significant traction across various governmental tiers since the mid-2000s. As more datasets are published on OGD portals, finding specific data becomes harder, leading to information overload. Complete and accurate documentation of datasets, including association of proper tags with datasets is key to improving dataset findability and accessibility. Analysis conducted on the Estonian Open Data Portal, revealed that 11% datasets have no associated tags, while 26% had only one tag assigned to them, which underscores challenges in data findability and accessibility within the portal, which, according to the recent Open Data Maturity Report, is considered trend-setter. The aim of this study is to propose an automated solution to tagging datasets to improve data findability on OGD portals. This paper presents Tagify - a prototype of tagging interface that employs large language models (LLM) such as GPT-3.5-turbo and GPT-4 to automate dataset tagging, generating tags for datasets in English and Estonian, thereby augmenting metadata preparation by data publishers and improving data findability on OGD portals by data users. The developed solution was evaluated by users and their feedback was collected to define an agenda for future prototype improvements.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.12975v2">SHIELD: Evaluation and Defense Strategies for Copyright Compliance in LLM Text Generation</a></div>
-    <div class="paper-meta">
-      📅 2024-08-21
-      | 💬 Work in progress
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have transformed machine learning but raised significant legal concerns due to their potential to produce text that infringes on copyrights, resulting in several high-profile lawsuits. The legal landscape is struggling to keep pace with these rapid advancements, with ongoing debates about whether generated text might plagiarize copyrighted materials. Current LLMs may infringe on copyrights or overly restrict non-copyrighted texts, leading to these challenges: (i) the need for a comprehensive evaluation benchmark to assess copyright compliance from multiple aspects; (ii) evaluating robustness against safeguard bypassing attacks; and (iii) developing effective defense targeted against the generation of copyrighted text. To tackle these challenges, we introduce a curated dataset to evaluate methods, test attack strategies, and propose lightweight, real-time defense to prevent the generation of copyrighted text, ensuring the safe and lawful use of LLMs. Our experiments demonstrate that current LLMs frequently output copyrighted text, and that jailbreaking attacks can significantly increase the volume of copyrighted output. Our proposed defense mechanism significantly reduces the volume of copyrighted text generated by LLMs by effectively refusing malicious requests. Code is publicly available at https://github.com/xz-liu/SHIELD
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.11431v1">Diagnosing and Remedying Knowledge Deficiencies in LLMs via Label-free Curricular Meaningful Learning</a></div>
     <div class="paper-meta">
       📅 2024-08-21
@@ -94,6 +19,82 @@
     </div>
     <details class="paper-abstract">
       Large Language Models (LLMs) are versatile and demonstrate impressive generalization ability by mining and learning information from extensive unlabeled text. However, they still exhibit reasoning mistakes, often stemming from knowledge deficiencies, which can affect their trustworthiness and reliability. Although users can provide diverse and comprehensive queries, obtaining sufficient and effective feedback is demanding. Furthermore, evaluating LLMs comprehensively with limited labeled samples is difficult. This makes it a challenge to diagnose and remedy the deficiencies of LLMs through rich label-free user queries. To tackle this challenge, we propose a label-free curricular meaningful learning framework (LaMer). LaMer first employs relative entropy to automatically diagnose and quantify the knowledge deficiencies of LLMs in a label-free setting. Next, to remedy the diagnosed knowledge deficiencies, we apply curricular meaningful learning: first, we adopt meaningful learning to adaptively synthesize augmentation data according to the severity of the deficiencies, and then design a curricular deficiency remedy strategy to remedy the knowledge deficiencies of LLMs progressively. Experiments show that LaMer efficiently and effectively diagnoses and remedies knowledge deficiencies in LLMs, improving various LLMs across seven out-of-distribution (OOD) reasoning and language understanding benchmarks, achieving comparable results to baselines with just 40\% training data. LaMer even surpasses methods that rely on labeled datasets for deficiency diagnosis. In application, our label-free method can offer an effective knowledge deficiency diagnostic tool for efficient LLM development.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11428v1">Migrating Existing Container Workload to Kubernetes -- LLM Based Approach and Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+      | 💬 submitted to ICSME 2024 Industry Track
+    </div>
+    <details class="paper-abstract">
+      Although Kubernetes has become a widespread open-source system that automates the management of containerized applications, its complexity can be a significant barrier, particularly for application developers unfamiliar with it. One approach employs large language models (LLMs) to assist developers in generating Kubernetes manifests; however it is currently impossible to determine whether the output satisfies given specifications and is comprehensible. In this study, we proposed a benchmarking method for evaluating the effectiveness of LLMs in synthesizing manifests, using the Compose specification -- a standard widely adopted by application developers -- as input. The proposed benchmarking method revealed that LLMs generally produce accurate results that compensate for simple specification gaps. However, we also observed that inline comments for readability were often omitted, and completion accuracy was low for atypical inputs with unclear intentions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11397v1">EAGLE: Elevating Geometric Reasoning through LLM-empowered Visual Instruction Tuning</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+    </div>
+    <details class="paper-abstract">
+      Multi-modal Large Language Models have recently experienced rapid developments and excel in various multi-modal tasks. However, they still struggle with mathematical geometric problem solving, which requires exceptional visual perception proficiency. Existing MLLMs mostly optimize the LLM backbone to acquire geometric reasoning capabilities, while rarely emphasizing improvements in visual comprehension. In this paper, we first investigate the visual perception performance of MLLMs when facing geometric diagrams. Our findings reveal that current MLLMs severely suffer from inaccurate geometric perception and hallucinations. To address these limitations, we propose EAGLE, a novel two-stage end-to-end visual enhancement MLLM framework designed to ElevAte Geometric reasoning through LLM-Empowered visual instruction tuning. Specifically, in the preliminary stage, we feed geometric image-caption pairs into our MLLM that contains a fully fine-tuning CLIP ViT and a frozen LLM, aiming to endow our model with basic geometric knowledge. In the subsequent advanced stage, we incorporate LoRA modules into the vision encoder and unfreeze the LLM backbone. This enables the model to leverage the inherent CoT rationales within question-answer pairs, guiding the MLLM to focus on nuanced visual cues and enhancing its overall perceptual capacity. Moreover, we optimize the cross-modal projector in both stages to foster adaptive visual-linguistic alignments. After the two-stage visual enhancement, we develop the geometry expert model EAGLE-7B. Extensive experiments on popular benchmarks demonstrate the effectiveness of our model. For example, on the GeoQA benchmark, EAGLE-7B not only surpasses the exemplary G-LLaVA 7B model by 2.9%, but also marginally outperforms the larger G-LLaVA 13B model. On the MathVista benchmark, EAGLE-7B achieves remarkable 3.8% improvements compared with the proprietary model GPT-4V.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11363v1">ProteinGPT: Multimodal LLM for Protein Property Prediction and Structure Understanding</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+      | 💬 19 pages, 9 figures, 5 tables
+    </div>
+    <details class="paper-abstract">
+      Understanding biological processes, drug development, and biotechnological advancements requires detailed analysis of protein structures and sequences, a task in protein research that is inherently complex and time-consuming when performed manually. To streamline this process, we introduce ProteinGPT, a state-of-the-art multi-modal protein chat system, that allows users to upload protein sequences and/or structures for comprehensive protein analysis and responsive inquiries. ProteinGPT seamlessly integrates protein sequence and structure encoders with linear projection layers for precise representation adaptation, coupled with a large language model (LLM) to generate accurate and contextually relevant responses. To train ProteinGPT, we construct a large-scale dataset of 132,092 proteins with annotations, and optimize the instruction-tuning process using GPT-4o. This innovative system ensures accurate alignment between the user-uploaded data and prompts, simplifying protein analysis. Experiments show that ProteinGPT can produce promising responses to proteins and their corresponding questions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11334v1">BURExtract-Llama: An LLM for Clinical Concept Extraction in Breast Ultrasound Reports</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+      | 💬 This paper has been accepted as the oral paper for the HCHM workshop, ACM Multimedia 2024
+    </div>
+    <details class="paper-abstract">
+      Breast ultrasound is essential for detecting and diagnosing abnormalities, with radiology reports summarizing key findings like lesion characteristics and malignancy assessments. Extracting this critical information is challenging due to the unstructured nature of these reports, with varied linguistic styles and inconsistent formatting. While proprietary LLMs like GPT-4 are effective, they are costly and raise privacy concerns when handling protected health information. This study presents a pipeline for developing an in-house LLM to extract clinical information from radiology reports. We first use GPT-4 to create a small labeled dataset, then fine-tune a Llama3-8B model on it. Evaluated on clinician-annotated reports, our model achieves an average F1 score of 84.6%, which is on par with GPT-4. Our findings demonstrate the feasibility of developing an in-house LLM that not only matches GPT-4's performance but also offers cost reductions and enhanced data privacy.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11324v1">HITS: High-coverage LLM-based Unit Test Generation via Method Slicing</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+      | 💬 to be published in ASE 24' Research Track
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have behaved well in generating unit tests for Java projects. However, the performance for covering the complex focal methods within the projects is poor. Complex methods comprise many conditions and loops, requiring the test cases to be various enough to cover all lines and branches. However, existing test generation methods with LLMs provide the whole method-to-test to the LLM without assistance on input analysis. The LLM has difficulty inferring the test inputs to cover all conditions, resulting in missing lines and branches. To tackle the problem, we propose decomposing the focal methods into slices and asking the LLM to generate test cases slice by slice. Our method simplifies the analysis scope, making it easier for the LLM to cover more lines and branches in each slice. We build a dataset comprising complex focal methods collected from the projects used by existing state-of-the-art approaches. Our experiment results show that our method significantly outperforms current test case generation methods with LLMs and the typical SBST method Evosuite regarding both line and branch coverage scores.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11313v1">Unlocking Adversarial Suffix Optimization Without Affirmative Phrases: Efficient Black-box Jailbreaking via LLM as Optimizer</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+    </div>
+    <details class="paper-abstract">
+      Despite prior safety alignment efforts, mainstream LLMs can still generate harmful and unethical content when subjected to jailbreaking attacks. Existing jailbreaking methods fall into two main categories: template-based and optimization-based methods. The former requires significant manual effort and domain knowledge, while the latter, exemplified by Greedy Coordinate Gradient (GCG), which seeks to maximize the likelihood of harmful LLM outputs through token-level optimization, also encounters several limitations: requiring white-box access, necessitating pre-constructed affirmative phrase, and suffering from low efficiency. In this paper, we present ECLIPSE, a novel and efficient black-box jailbreaking method utilizing optimizable suffixes. Drawing inspiration from LLMs' powerful generation and optimization capabilities, we employ task prompts to translate jailbreaking goals into natural language instructions. This guides the LLM to generate adversarial suffixes for malicious queries. In particular, a harmfulness scorer provides continuous feedback, enabling LLM self-reflection and iterative optimization to autonomously and efficiently produce effective suffixes. Experimental results demonstrate that ECLIPSE achieves an average attack success rate (ASR) of 0.92 across three open-source LLMs and GPT-3.5-Turbo, significantly surpassing GCG in 2.4 times. Moreover, ECLIPSE is on par with template-based methods in ASR while offering superior attack efficiency, reducing the average attack overhead by 83%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11294v1">RedWhale: An Adapted Korean LLM Through Efficient Continual Pretraining</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+    </div>
+    <details class="paper-abstract">
+      The field of Natural Language Processing (NLP) has seen significant advancements with the development of Large Language Models (LLMs). However, much of this research remains focused on English, often overlooking low-resource languages like Korean. This oversight presents challenges due to the unique non-alphabetic token structure of Korean and the substantial memory and computational demands required for LLM training, which frequently lead to memory constraints and out-of-memory errors. To address these issues, we present RedWhale, a model specifically tailored for Korean language processing. RedWhale is developed using an efficient continual pretraining approach that includes a comprehensive Korean corpus preprocessing pipeline, a specialized tokenizer, an optimized model initialization technique, and a multistage pretraining strategy. These innovations collectively reduce training time and computational costs while maintaining high levels of accuracy and comprehension. By leveraging cross-lingual transfer learning, which exploits shared linguistic similarities across languages, RedWhale builds on English models to enhance Korean language processing. Experimental results demonstrate that RedWhale outperforms other leading models on Korean NLP benchmarks, including the Korean Balanced Evaluation of Significant Tasks (KoBEST), showing superior understanding and generation of Korean text. Furthermore, RedWhale showed no signs of convergence even after pretraining on 9.7 billion tokens, indicating the potential for further improvements with additional training. This work represents a significant advancement in bridging the linguistic divide, particularly in enhancing NLP capabilities for the Korean language.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16276v2">Empowering LLMs with Pseudo-Untrimmed Videos for Audio-Visual Temporal Understanding</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have demonstrated remarkable capabilities in natural language and multimodal domains. By fine-tuning multimodal LLMs with temporal annotations from well-annotated datasets, e.g., dense video captioning datasets, their temporal understanding capacity in video-language tasks can be obtained. However, there is a notable lack of untrimmed audio-visual video datasets with precise temporal annotations for events. This deficiency hinders LLMs from learning the alignment between time, audio-visual events, and text tokens, thus impairing their ability to temporally localize audio-visual events in videos. To address this gap, we introduce PU-VALOR, a comprehensive audio-visual dataset comprising over 114,000 pseudo-untrimmed videos with detailed temporal annotations. PU-VALOR is derived from the large-scale but coarse-annotated audio-visual dataset VALOR, through a subtle method involving event-based video clustering, random temporal scaling, and permutation. By fine-tuning a multimodal LLM on PU-VALOR, we developed AVicuna, a model capable of aligning audio-visual events with temporal intervals and corresponding text tokens. AVicuna excels in temporal localization and time-aware dialogue capabilities. Our experiments demonstrate that AVicuna effectively handles temporal understanding in audio-visual videos and achieves state-of-the-art performance on open-ended video QA, audio-visual QA, and audio-visual event dense localization tasks.
     </details>
 </div>
 <div class="paper-card">
@@ -657,6 +658,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.20224v3">Can Editing LLMs Inject Harm?</a></div>
+    <div class="paper-meta">
+      📅 2024-08-16
+      | 💬 The first two authors contributed equally. 9 pages for main paper, 36 pages including appendix. The code, results, dataset for this paper and more resources are on the project website: https://llm-editing.github.io
+    </div>
+    <details class="paper-abstract">
+      Knowledge editing has been increasingly adopted to correct the false or outdated knowledge in Large Language Models (LLMs). Meanwhile, one critical but under-explored question is: can knowledge editing be used to inject harm into LLMs? In this paper, we propose to reformulate knowledge editing as a new type of safety threat for LLMs, namely Editing Attack, and conduct a systematic investigation with a newly constructed dataset EditAttack. Specifically, we focus on two typical safety risks of Editing Attack including Misinformation Injection and Bias Injection. For the risk of misinformation injection, we first categorize it into commonsense misinformation injection and long-tail misinformation injection. Then, we find that editing attacks can inject both types of misinformation into LLMs, and the effectiveness is particularly high for commonsense misinformation injection. For the risk of bias injection, we discover that not only can biased sentences be injected into LLMs with high effectiveness, but also one single biased sentence injection can cause a bias increase in general outputs of LLMs, which are even highly irrelevant to the injected sentence, indicating a catastrophic impact on the overall fairness of LLMs. Then, we further illustrate the high stealthiness of editing attacks, measured by their impact on the general knowledge and reasoning capacities of LLMs, and show the hardness of defending editing attacks with empirical evidence. Our discoveries demonstrate the emerging misuse risks of knowledge editing techniques on compromising the safety alignment of LLMs and the feasibility of disseminating misinformation or bias with LLMs as new channels.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.08546v2">Grounding LLMs For Robot Task Planning Using Closed-loop State Feedback</a></div>
     <div class="paper-meta">
       📅 2024-08-15
@@ -902,6 +913,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.06993v1">LLMs can Schedule</a></div>
+    <div class="paper-meta">
+      📅 2024-08-13
+    </div>
+    <details class="paper-abstract">
+      The job shop scheduling problem (JSSP) remains a significant hurdle in optimizing production processes. This challenge involves efficiently allocating jobs to a limited number of machines while minimizing factors like total processing time or job delays. While recent advancements in artificial intelligence have yielded promising solutions, such as reinforcement learning and graph neural networks, this paper explores the potential of Large Language Models (LLMs) for JSSP. We introduce the very first supervised 120k dataset specifically designed to train LLMs for JSSP. Surprisingly, our findings demonstrate that LLM-based scheduling can achieve performance comparable to other neural approaches. Furthermore, we propose a sampling method that enhances the effectiveness of LLMs in tackling JSSP.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.00798v4">Formal-LLM: Integrating Formal Language and Natural Language for Controllable LLM-based Agents</a></div>
     <div class="paper-meta">
       📅 2024-08-12
@@ -946,23 +966,5 @@
     </div>
     <details class="paper-abstract">
       The widespread adoption and transformative effects of large language models (LLMs) have sparked concerns regarding their capacity to produce inaccurate and fictitious content, referred to as `hallucinations'. Given the potential risks associated with hallucinations, humans should be able to identify them. This research aims to understand the human perception of LLM hallucinations by systematically varying the degree of hallucination (genuine, minor hallucination, major hallucination) and examining its interaction with warning (i.e., a warning of potential inaccuracies: absent vs. present). Participants (N=419) from Prolific rated the perceived accuracy and engaged with content (e.g., like, dislike, share) in a Q/A format. Participants ranked content as truthful in the order of genuine, minor hallucination, and major hallucination, and user engagement behaviors mirrored this pattern. More importantly, we observed that warning improved the detection of hallucination without significantly affecting the perceived truthfulness of genuine content. We conclude by offering insights for future tools to aid human detection of hallucinations. All survey materials, demographic questions, and post-session questions are available at: https://github.com/MahjabinNahar/fakes-of-varying-shades-survey-materials
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.05025v2">Rag and Roll: An End-to-End Evaluation of Indirect Prompt Manipulations in LLM-based Application Frameworks</a></div>
-    <div class="paper-meta">
-      📅 2024-08-12
-    </div>
-    <details class="paper-abstract">
-      Retrieval Augmented Generation (RAG) is a technique commonly used to equip models with out of distribution knowledge. This process involves collecting, indexing, retrieving, and providing information to an LLM for generating responses. Despite its growing popularity due to its flexibility and low cost, the security implications of RAG have not been extensively studied. The data for such systems are often collected from public sources, providing an attacker a gateway for indirect prompt injections to manipulate the responses of the model. In this paper, we investigate the security of RAG systems against end-to-end indirect prompt manipulations. First, we review existing RAG framework pipelines, deriving a prototypical architecture and identifying critical parameters. We then examine prior works searching for techniques that attackers can use to perform indirect prompt manipulations. Finally, we implemented Rag 'n Roll, a framework to determine the effectiveness of attacks against end-to-end RAG applications. Our results show that existing attacks are mostly optimized to boost the ranking of malicious documents during the retrieval phase. However, a higher rank does not immediately translate into a reliable attack. Most attacks, against various configurations, settle around a 40% success rate, which could rise to 60% when considering ambiguous answers as successful attacks (those that include the expected benign one as well). Additionally, when using unoptimized documents, attackers deploying two of them (or more) for a target query can achieve similar results as those using optimized ones. Finally, exploration of the configuration space of a RAG showed limited impact in thwarting the attacks, where the most successful combination severely undermines functionality.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.06142v1">Med42-v2: A Suite of Clinical LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-08-12
-    </div>
-    <details class="paper-abstract">
-      Med42-v2 introduces a suite of clinical large language models (LLMs) designed to address the limitations of generic models in healthcare settings. These models are built on Llama3 architecture and fine-tuned using specialized clinical data. They underwent multi-stage preference alignment to effectively respond to natural prompts. While generic models are often preference-aligned to avoid answering clinical queries as a precaution, Med42-v2 is specifically trained to overcome this limitation, enabling its use in clinical settings. Med42-v2 models demonstrate superior performance compared to the original Llama3 models in both 8B and 70B parameter configurations and GPT-4 across various medical benchmarks. These LLMs are developed to understand clinical queries, perform reasoning tasks, and provide valuable assistance in clinical environments. The models are now publicly available at \href{https://huggingface.co/m42-health}{https://huggingface.co/m42-health}.
     </details>
 </div>

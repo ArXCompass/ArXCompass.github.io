@@ -15,6 +15,43 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.09025v6">SLEB: Streamlining LLMs through Redundancy Verification and Elimination of Transformer Blocks</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+      | 💬 ICML 2024
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have proven to be highly effective across various natural language processing tasks. However, their large number of parameters poses significant challenges for practical deployment. Pruning, a technique aimed at reducing the size and complexity of LLMs, offers a potential solution by removing redundant components from the network. Despite the promise of pruning, existing methods often struggle to achieve substantial end-to-end LLM inference speedup. In this paper, we introduce SLEB, a novel approach designed to streamline LLMs by eliminating redundant transformer blocks. We choose the transformer block as the fundamental unit for pruning, because LLMs exhibit block-level redundancy with high similarity between the outputs of neighboring blocks. This choice allows us to effectively enhance the processing speed of LLMs. Our experimental results demonstrate that SLEB outperforms previous LLM pruning methods in accelerating LLM inference while also maintaining superior perplexity and accuracy, making SLEB as a promising technique for enhancing the efficiency of LLMs. The code is available at: https://github.com/jiwonsong-dev/SLEB.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.14743v1">KVDirect: Distributed Disaggregated LLM Inference</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have become the new foundation for many applications, reshaping human society like a storm. Disaggregated inference, which separates prefill and decode stages, is a promising approach to improving hardware utilization and service quality. However, due to inefficient inter-node communication, existing systems restrict disaggregated inference to a single node, limiting resource allocation flexibility and reducing service capacity. This paper introduces KVDirect, which optimizes KV cache transfer to enable a distributed disaggregated LLM inference. KVDirect achieves this through the following contributions. First, we propose a novel tensor-centric communication mechanism that reduces the synchronization overhead in traditional distributed GPU systems. Second, we design a custom communication library to support dynamic GPU resource scheduling and efficient KV cache transfer. Third, we introduce a pull-based KV cache transfer strategy that reduces GPU resource idling and improves latency. Finally, we implement KVDirect as an open-source LLM inference framework. Our evaluation demonstrates that KVDirect reduces per-request latency by 55% compared to the baseline across diverse workloads under the same resource constraints.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.10321v1">AdvPrefix: An Objective for Nuanced LLM Jailbreaks</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+    </div>
+    <details class="paper-abstract">
+      Many jailbreak attacks on large language models (LLMs) rely on a common objective: making the model respond with the prefix "Sure, here is (harmful request)". While straightforward, this objective has two limitations: limited control over model behaviors, often resulting in incomplete or unrealistic responses, and a rigid format that hinders optimization. To address these limitations, we introduce AdvPrefix, a new prefix-forcing objective that enables more nuanced control over model behavior while being easy to optimize. Our objective leverages model-dependent prefixes, automatically selected based on two criteria: high prefilling attack success rates and low negative log-likelihood. It can further simplify optimization by using multiple prefixes for a single user request. AdvPrefix can integrate seamlessly into existing jailbreak attacks to improve their performance for free. For example, simply replacing GCG attack's target prefixes with ours on Llama-3 improves nuanced attack success rates from 14% to 80%, suggesting that current alignment struggles to generalize to unseen prefixes. Our work demonstrates the importance of jailbreak objectives in achieving nuanced jailbreaks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.10281v1">One world, one opinion? The superstar effect in LLM responses</a></div>
+    <div class="paper-meta">
+      📅 2024-12-13
+    </div>
+    <details class="paper-abstract">
+      As large language models (LLMs) are shaping the way information is shared and accessed online, their opinions have the potential to influence a wide audience. This study examines who the LLMs view as the most prominent figures across various fields, using prompts in ten different languages to explore the influence of linguistic diversity. Our findings reveal low diversity in responses, with a small number of figures dominating recognition across languages (also known as the "superstar effect"). These results highlight the risk of narrowing global knowledge representation when LLMs retrieve subjective information.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.10270v1">Cultural Evolution of Cooperation among LLM Agents</a></div>
     <div class="paper-meta">
       📅 2024-12-13
@@ -927,42 +964,5 @@
     </div>
     <details class="paper-abstract">
       Stakeholders -- from model developers to policymakers -- seek to minimize the dual-use risks of large language models (LLMs). An open challenge to this goal is whether technical safeguards can impede the misuse of LLMs, even when models are customizable via fine-tuning or when model weights are fully open. In response, several recent studies have proposed methods to produce durable LLM safeguards for open-weight LLMs that can withstand adversarial modifications of the model's weights via fine-tuning. This holds the promise of raising adversaries' costs even under strong threat models where adversaries can directly fine-tune model weights. However, in this paper, we urge for more careful characterization of the limits of these approaches. Through several case studies, we demonstrate that even evaluating these defenses is exceedingly difficult and can easily mislead audiences into thinking that safeguards are more durable than they really are. We draw lessons from the evaluation pitfalls that we identify and suggest future research carefully cabin claims to more constrained, well-defined, and rigorously examined threat models, which can provide more useful and candid assessments to stakeholders.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2405.03786v2">TOGLL: Correct and Strong Test Oracle Generation with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-12-10
-    </div>
-    <details class="paper-abstract">
-      Test oracles play a crucial role in software testing, enabling effective bug detection. Despite initial promise, neural-based methods for automated test oracle generation often result in a large number of false positives and weaker test oracles. While LLMs have demonstrated impressive effectiveness in various software engineering tasks, including code generation, test case creation, and bug fixing, there remains a notable absence of large-scale studies exploring their effectiveness in test oracle generation. The question of whether LLMs can address the challenges in effective oracle generation is both compelling and requires thorough investigation. In this research, we present the first comprehensive study to investigate the capabilities of LLMs in generating correct, diverse, and strong test oracles capable of effectively identifying a large number of unique bugs. To this end, we fine-tuned seven code LLMs using six distinct prompts on the SF110 dataset. Utilizing the most effective fine-tuned LLM and prompt pair, we introduce TOGLL, a novel LLM-based method for test oracle generation. To investigate the generalizability of TOGLL, we conduct studies on 25 large-scale Java projects. Besides assessing the correctness, we also assess the diversity and strength of the generated oracles. We compare the results against EvoSuite and the state-of-the-art neural method, TOGA. Our findings reveal that TOGLL can produce 3.8 times more correct assertion oracles and 4.9 times more exception oracles. Moreover, our findings demonstrate that TOGLL is capable of generating significantly diverse test oracles. It can detect 1,023 unique bugs that EvoSuite cannot, which is ten times more than what the previous SOTA neural-based method, TOGA, can detect.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16851v2">Can tweets predict article retractions? A comparison between human and LLM labelling</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-      | 💬 19 pages
-    </div>
-    <details class="paper-abstract">
-      Quickly detecting problematic research articles is crucial to safeguarding the integrity of scientific research. This study explores whether Twitter mentions of retracted articles can signal potential problems with the articles prior to their retraction, potentially serving as an early warning system for scholars. To investigate this, we analysed a dataset of 4,354 Twitter mentions associated with 504 retracted articles. The effectiveness of Twitter mentions in predicting article retractions was evaluated by both manual and Large Language Model (LLM) labelling. Manual labelling results indicated that 25.7% of tweets signalled problems before retraction. Using the manual labelling results as the baseline, we found that LLMs (GPT-4o-mini, Gemini 1.5 Flash, and Claude-3.5-Haiku) outperformed lexicon-based sentiment analysis tools (e.g., TextBlob) in detecting potential problems, suggesting that automatic detection of problematic articles from social media using LLMs is technically feasible. Nevertheless, since only a small proportion of retracted articles (11.1%) were criticised on Twitter prior to retraction, such automatic systems would detect only a minority of problematic articles. Overall, this study offers insights into how social media data, coupled with emerging generative AI techniques, can support research integrity.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06432v1">Integrating Expert Labels into LLM-based Emission Goal Detection: Example Selection vs Automatic Prompt Design</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-    </div>
-    <details class="paper-abstract">
-      We address the detection of emission reduction goals in corporate reports, an important task for monitoring companies' progress in addressing climate change. Specifically, we focus on the issue of integrating expert feedback in the form of labeled example passages into LLM-based pipelines, and compare the two strategies of (1) a dynamic selection of few-shot examples and (2) the automatic optimization of the prompt by the LLM itself. Our findings on a public dataset of 769 climate-related passages from real-world business reports indicate that automatic prompt optimization is the superior approach, while combining both methods provides only limited benefit. Qualitative results indicate that optimized prompts do indeed capture many intricacies of the targeted emission goal extraction task.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.06370v1">Exploring Memorization and Copyright Violation in Frontier LLMs: A Study of the New York Times v. OpenAI 2023 Lawsuit</a></div>
-    <div class="paper-meta">
-      📅 2024-12-09
-    </div>
-    <details class="paper-abstract">
-      Copyright infringement in frontier LLMs has received much attention recently due to the New York Times v. OpenAI lawsuit, filed in December 2023. The New York Times claims that GPT-4 has infringed its copyrights by reproducing articles for use in LLM training and by memorizing the inputs, thereby publicly displaying them in LLM outputs. Our work aims to measure the propensity of OpenAI's LLMs to exhibit verbatim memorization in its outputs relative to other LLMs, specifically focusing on news articles. We discover that both GPT and Claude models use refusal training and output filters to prevent verbatim output of the memorized articles. We apply a basic prompt template to bypass the refusal training and show that OpenAI models are currently less prone to memorization elicitation than models from Meta, Mistral, and Anthropic. We find that as models increase in size, especially beyond 100 billion parameters, they demonstrate significantly greater capacity for memorization. Our findings have practical implications for training: more attention must be placed on preventing verbatim memorization in very large models. Our findings also have legal significance: in assessing the relative memorization capacity of OpenAI's LLMs, we probe the strength of The New York Times's copyright infringement claims and OpenAI's legal defenses, while underscoring issues at the intersection of generative AI, law, and policy.
     </details>
 </div>

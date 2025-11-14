@@ -29,6 +29,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2304.13676v1">Multimodal Grounding for Embodied AI via Augmented Reality Headsets for Natural Language Driven Task Planning</a></div>
+    <div class="paper-meta">
+      📅 2023-04-26
+      | 💬 18 pages, 15 figures
+    </div>
+    <details class="paper-abstract">
+      Recent advances in generative modeling have spurred a resurgence in the field of Embodied Artificial Intelligence (EAI). EAI systems typically deploy large language models to physical systems capable of interacting with their environment. In our exploration of EAI for industrial domains, we successfully demonstrate the feasibility of co-located, human-robot teaming. Specifically, we construct an experiment where an Augmented Reality (AR) headset mediates information exchange between an EAI agent and human operator for a variety of inspection tasks. To our knowledge the use of an AR headset for multimodal grounding and the application of EAI to industrial tasks are novel contributions within Embodied AI research. In addition, we highlight potential pitfalls in EAI's construction by providing quantitative and qualitative analysis on prompt robustness.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2107.06011v4">Teaching Agents how to Map: Spatial Reasoning for Multi-Object Navigation</a></div>
     <div class="paper-meta">
       📅 2023-04-25

@@ -55,6 +55,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.16982v1">2DGH: 2D Gaussian-Hermite Splatting for High-quality Rendering and Better Geometry Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2024-08-30
+    </div>
+    <details class="paper-abstract">
+      2D Gaussian Splatting has recently emerged as a significant method in 3D reconstruction, enabling novel view synthesis and geometry reconstruction simultaneously. While the well-known Gaussian kernel is broadly used, its lack of anisotropy and deformation ability leads to dim and vague edges at object silhouettes, limiting the reconstruction quality of current Gaussian splatting methods. To enhance the representation power, we draw inspiration from quantum physics and propose to use the Gaussian-Hermite kernel as the new primitive in Gaussian splatting. The new kernel takes a unified mathematical form and extends the Gaussian function, which serves as the zero-rank term in the updated formulation. Our experiments demonstrate the extraordinary performance of Gaussian-Hermite kernel in both geometry reconstruction and novel-view synthesis tasks. The proposed kernel outperforms traditional Gaussian Splatting kernels, showcasing its potential for high-quality 3D reconstruction and rendering.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.16760v1">OmniRe: Omni Urban Scene Reconstruction</a></div>
     <div class="paper-meta">
       📅 2024-08-29
@@ -161,6 +170,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.13912v2">Splatt3R: Zero-shot Gaussian Splatting from Uncalibrated Image Pairs</a></div>
+    <div class="paper-meta">
+      📅 2024-08-27
+      | 💬 Our project page can be found at: https://splatt3r.active.vision/
+    </div>
+    <details class="paper-abstract">
+      In this paper, we introduce Splatt3R, a pose-free, feed-forward method for in-the-wild 3D reconstruction and novel view synthesis from stereo pairs. Given uncalibrated natural images, Splatt3R can predict 3D Gaussian Splats without requiring any camera parameters or depth information. For generalizability, we build Splatt3R upon a ``foundation'' 3D geometry reconstruction method, MASt3R, by extending it to deal with both 3D structure and appearance. Specifically, unlike the original MASt3R which reconstructs only 3D point clouds, we predict the additional Gaussian attributes required to construct a Gaussian primitive for each point. Hence, unlike other novel view synthesis methods, Splatt3R is first trained by optimizing the 3D point cloud's geometry loss, and then a novel view synthesis objective. By doing this, we avoid the local minima present in training 3D Gaussian Splats from stereo views. We also propose a novel loss masking strategy that we empirically find is critical for strong performance on extrapolated viewpoints. We train Splatt3R on the ScanNet++ dataset and demonstrate excellent generalisation to uncalibrated, in-the-wild images. Splatt3R can reconstruct scenes at 4FPS at 512 x 512 resolution, and the resultant splats can be rendered in real-time.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.00752v4">On the Error Analysis of 3D Gaussian Splatting and an Optimal Projection Strategy</a></div>
     <div class="paper-meta">
       📅 2024-08-26
@@ -187,6 +206,16 @@
     </div>
     <details class="paper-abstract">
       Dynamic scene reconstruction has garnered significant attention in recent years due to its capabilities in high-quality and real-time rendering. Among various methodologies, constructing a 4D spatial-temporal representation, such as 4D-GS, has gained popularity for its high-quality rendered images. However, these methods often produce suboptimal surfaces, as the discrete 3D Gaussian point clouds fail to align with the object's surface precisely. To address this problem, we propose DynaSurfGS to achieve both photorealistic rendering and high-fidelity surface reconstruction of dynamic scenarios. Specifically, the DynaSurfGS framework first incorporates Gaussian features from 4D neural voxels with the planar-based Gaussian Splatting to facilitate precise surface reconstruction. It leverages normal regularization to enforce the smoothness of the surface of dynamic objects. It also incorporates the as-rigid-as-possible (ARAP) constraint to maintain the approximate rigidity of local neighborhoods of 3D Gaussians between timesteps and ensure that adjacent 3D Gaussians remain closely aligned throughout. Extensive experiments demonstrate that DynaSurfGS surpasses state-of-the-art methods in both high-fidelity surface reconstruction and photorealistic rendering.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.00752v4">On the Error Analysis of 3D Gaussian Splatting and an Optimal Projection Strategy</a></div>
+    <div class="paper-meta">
+      📅 2024-08-26
+      | 💬 Accepted by ECCV2024; Project Page: https://letianhuang.github.io/op43dgs/
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting has garnered extensive attention and application in real-time neural rendering. Concurrently, concerns have been raised about the limitations of this technology in aspects such as point cloud storage, performance, and robustness in sparse viewpoints, leading to various improvements. However, there has been a notable lack of attention to the fundamental problem of projection errors introduced by the local affine approximation inherent in the splatting itself, and the consequential impact of these errors on the quality of photo-realistic rendering. This paper addresses the projection error function of 3D Gaussian Splatting, commencing with the residual error from the first-order Taylor expansion of the projection function. The analysis establishes a correlation between the error and the Gaussian mean position. Subsequently, leveraging function optimization theory, this paper analyzes the function's minima to provide an optimal projection strategy for Gaussian Splatting referred to Optimal Gaussian Splatting, which can accommodate a variety of camera models. Experimental validation further confirms that this projection methodology reduces artifacts, resulting in a more convincingly realistic rendering.
     </details>
 </div>
 <div class="paper-card">
@@ -235,6 +264,15 @@
     </div>
     <details class="paper-abstract">
       Open-vocabulary 3D scene understanding presents a significant challenge in computer vision, with wide-ranging applications in embodied agents and augmented reality systems. Existing methods adopt neurel rendering methods as 3D representations and jointly optimize color and semantic features to achieve rendering and scene understanding simultaneously. In this paper, we introduce Semantic Gaussians, a novel open-vocabulary scene understanding approach based on 3D Gaussian Splatting. Our key idea is to distill knowledge from 2D pre-trained models to 3D Gaussians. Unlike existing methods, we design a versatile projection approach that maps various 2D semantic features from pre-trained image encoders into a novel semantic component of 3D Gaussians, which is based on spatial relationship and need no additional training. We further build a 3D semantic network that directly predicts the semantic component from raw 3D Gaussians for fast inference. The quantitative results on ScanNet segmentation and LERF object localization demonstates the superior performance of our method. Additionally, we explore several applications of Semantic Gaussians including object part segmentation, instance segmentation, scene editing, and spatiotemporal segmentation with better qualitative results over 2D and 3D baselines, highlighting its versatility and effectiveness on supporting diverse downstream tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.13370v1">BiGS: Bidirectional Gaussian Primitives for Relightable 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-08-23
+    </div>
+    <details class="paper-abstract">
+      We present Bidirectional Gaussian Primitives, an image-based novel view synthesis technique designed to represent and render 3D objects with surface and volumetric materials under dynamic illumination. Our approach integrates light intrinsic decomposition into the Gaussian splatting framework, enabling real-time relighting of 3D objects. To unify surface and volumetric material within a cohesive appearance model, we adopt a light- and view-dependent scattering representation via bidirectional spherical harmonics. Our model does not use a specific surface normal-related reflectance function, making it more compatible with volumetric representations like Gaussian splatting, where the normals are undefined. We demonstrate our method by reconstructing and rendering objects with complex materials. Using One-Light-At-a-Time (OLAT) data as input, we can reproduce photorealistic appearances under novel lighting conditions in real time.
     </details>
 </div>
 <div class="paper-card">
@@ -594,7 +632,36 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.03538v1">PRTGS: Precomputed Radiance Transfer of Gaussian Splats for Real-Time High-Quality Relighting</a></div>
+    <div class="paper-meta">
+      📅 2024-08-07
+    </div>
+    <details class="paper-abstract">
+      We proposed Precomputed RadianceTransfer of GaussianSplats (PRTGS), a real-time high-quality relighting method for Gaussian splats in low-frequency lighting environments that captures soft shadows and interreflections by precomputing 3D Gaussian splats' radiance transfer. Existing studies have demonstrated that 3D Gaussian splatting (3DGS) outperforms neural fields' efficiency for dynamic lighting scenarios. However, the current relighting method based on 3DGS still struggles to compute high-quality shadow and indirect illumination in real time for dynamic light, leading to unrealistic rendering results. We solve this problem by precomputing the expensive transport simulations required for complex transfer functions like shadowing, the resulting transfer functions are represented as dense sets of vectors or matrices for every Gaussian splat. We introduce distinct precomputing methods tailored for training and rendering stages, along with unique ray tracing and indirect lighting precomputation techniques for 3D Gaussian splats to accelerate training speed and compute accurate indirect lighting related to environment light. Experimental analyses demonstrate that our approach achieves state-of-the-art visual quality while maintaining competitive training times and allows high-quality real-time (30+ fps) relighting for dynamic light and relatively complex scenes at 1080p resolution.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.03753v1">3iGS: Factorised Tensorial Illumination for 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-08-07
+      | 💬 The 18th European Conference on Computer Vision ECCV 2024
+    </div>
+    <details class="paper-abstract">
+      The use of 3D Gaussians as representation of radiance fields has enabled high quality novel view synthesis at real-time rendering speed. However, the choice of optimising the outgoing radiance of each Gaussian independently as spherical harmonics results in unsatisfactory view dependent effects. In response to these limitations, our work, Factorised Tensorial Illumination for 3D Gaussian Splatting, or 3iGS, improves upon 3D Gaussian Splatting (3DGS) rendering quality. Instead of optimising a single outgoing radiance parameter, 3iGS enhances 3DGS view-dependent effects by expressing the outgoing radiance as a function of a local illumination field and Bidirectional Reflectance Distribution Function (BRDF) features. We optimise a continuous incident illumination field through a Tensorial Factorisation representation, while separately fine-tuning the BRDF features of each 3D Gaussian relative to this illumination field. Our methodology significantly enhances the rendering quality of specular view-dependent effects of 3DGS, while maintaining rapid training and rendering speeds.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2404.07950v3">Reinforcement Learning with Generalizable Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-08-06
+      | 💬 7 pages,2 figures
+    </div>
+    <details class="paper-abstract">
+      An excellent representation is crucial for reinforcement learning (RL) performance, especially in vision-based reinforcement learning tasks. The quality of the environment representation directly influences the achievement of the learning task. Previous vision-based RL typically uses explicit or implicit ways to represent environments, such as images, points, voxels, and neural radiance fields. However, these representations contain several drawbacks. They cannot either describe complex local geometries or generalize well to unseen scenes, or require precise foreground masks. Moreover, these implicit neural representations are akin to a ``black box", significantly hindering interpretability. 3D Gaussian Splatting (3DGS), with its explicit scene representation and differentiable rendering nature, is considered a revolutionary change for reconstruction and representation methods. In this paper, we propose a novel Generalizable Gaussian Splatting framework to be the representation of RL tasks, called GSRL. Through validation in the RoboMimic environment, our method achieves better results than other baselines in multiple tasks, improving the performance by 10%, 44%, and 15% compared with baselines on the hardest task. This work is the first attempt to leverage generalizable 3DGS as a representation for RL.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.07950v3">Reinforcement Learning with Generalizable Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2024-08-06
       | 💬 7 pages,2 figures

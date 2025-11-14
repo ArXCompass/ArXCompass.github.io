@@ -9,6 +9,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.23535v1">Simulating User Agents for Embodied Conversational-AI</a></div>
+    <div class="paper-meta">
+      📅 2024-10-31
+      | 💬 8 pages, 5 figures, 4 tables
+    </div>
+    <details class="paper-abstract">
+      Embodied agents designed to assist users with tasks must engage in natural language interactions, interpret instructions, execute actions, and communicate effectively to resolve issues. However, collecting large-scale, diverse datasets of situated human-robot dialogues to train and evaluate such agents is expensive, labor-intensive, and time-consuming. To address this challenge, we propose building a large language model (LLM)-based user agent that can simulate user behavior during interactions with an embodied agent in a virtual environment. Given a user goal (e.g., make breakfast), at each time step, the user agent may observe" the robot actions or speak" to either intervene with the robot or answer questions. Such a user agent assists in improving the scalability and efficiency of embodied dialogues dataset generation and is critical for enhancing and evaluating the robot's interaction and task completion ability, as well as for research in reinforcement learning using AI feedback. We evaluate our user agent's ability to generate human-like behaviors by comparing its simulated dialogues with the TEACh dataset. We perform three experiments: zero-shot prompting to predict dialogue acts, few-shot prompting, and fine-tuning on the TEACh training subset. Results show the LLM-based user agent achieves an F-measure of 42% with zero-shot prompting and 43.4% with few-shot prompting in mimicking human speaking behavior. Through fine-tuning, performance in deciding when to speak remained stable, while deciding what to say improved from 51.1% to 62.5%. These findings showcase the feasibility of the proposed approach for assessing and enhancing the effectiveness of robot task completion through natural language communication.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2302.03385v2">NeuronsGym: A Hybrid Framework and Benchmark for Robot Tasks with Sim2Real Policy Learning</a></div>
     <div class="paper-meta">
       📅 2024-10-29
@@ -76,6 +86,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.14590v1">Embodied Exploration of Latent Spaces and Explainable AI</a></div>
+    <div class="paper-meta">
+      📅 2024-10-18
+      | 💬 In Proceedings of Explainable AI for the Arts Workshop 2024 (XAIxArts 2024) arXiv:2406.14485
+    </div>
+    <details class="paper-abstract">
+      In this paper, we explore how performers' embodied interactions with a Neural Audio Synthesis model allow the exploration of the latent space of such a model, mediated through movements sensed by e-textiles. We provide background and context for the performance, highlighting the potential of embodied practices to contribute to developing explainable AI systems. By integrating various artistic domains with explainable AI principles, our interdisciplinary exploration contributes to the discourse on art, embodiment, and AI, offering insights into intuitive approaches found through bodily expression.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.00785v1">IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-10-17
@@ -86,6 +106,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.13407v1">BestMan: A Modular Mobile Manipulator Platform for Embodied AI with Unified Simulation-Hardware APIs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-17
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (Embodied AI) emphasizes agents' ability to perceive, understand, and act in physical environments. Simulation platforms play a crucial role in advancing this field by enabling the validation and optimization of algorithms. However, existing platforms face challenges such as multilevel technical integration complexity, insufficient modularity, interface heterogeneity, and adaptation to diverse hardware. We present BestMan, a simulation platform based on PyBullet, designed to address these issues. BestMan introduces an integrated multilevel skill chain for seamless coordination across perception, planning, and control; a highly modular architecture for flexible algorithm integration; unified interfaces for smooth simulation-to-reality transfer; and a hardware-agnostic approach for adapting to various mobile manipulator configurations. These features collectively simplify development and enhance platform expandability, making BestMan a valuable tool for Embodied AI research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.13407v1">BestMan: A Modular Mobile Manipulator Platform for Embodied AI with Unified Simulation-Hardware APIs</a></div>
     <div class="paper-meta">
       📅 2024-10-17
     </div>
@@ -141,6 +170,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.11623v1">VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-10-15
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in Multi-modal Large Language Models (MLLMs) have opened new avenues for applications in Embodied AI. Building on previous work, EgoThink, we introduce VidEgoThink, a comprehensive benchmark for evaluating egocentric video understanding capabilities. To bridge the gap between MLLMs and low-level control in Embodied AI, we design four key interrelated tasks: video question-answering, hierarchy planning, visual grounding and reward modeling. To minimize manual annotation costs, we develop an automatic data generation pipeline based on the Ego4D dataset, leveraging the prior knowledge and multimodal capabilities of GPT-4o. Three human annotators then filter the generated data to ensure diversity and quality, resulting in the VidEgoThink benchmark. We conduct extensive experiments with three types of models: API-based MLLMs, open-source image-based MLLMs, and open-source video-based MLLMs. Experimental results indicate that all MLLMs, including GPT-4o, perform poorly across all tasks related to egocentric video understanding. These findings suggest that foundation models still require significant advancements to be effectively applied to first-person scenarios in Embodied AI. In conclusion, VidEgoThink reflects a research trend towards employing MLLMs for egocentric vision, akin to human capabilities, enabling active observation and interaction in the complex real-world environments.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2407.08725v2">MetaUrban: An Embodied AI Simulation Platform for Urban Micromobility</a></div>
     <div class="paper-meta">
       📅 2024-10-14
@@ -190,6 +228,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.08725v2">MetaUrban: An Embodied AI Simulation Platform for Urban Micromobility</a></div>
+    <div class="paper-meta">
+      📅 2024-10-11
+      | 💬 Technical report. Project page: https://metadriverse.github.io/metaurban/
+    </div>
+    <details class="paper-abstract">
+      Public urban spaces like streetscapes and plazas serve residents and accommodate social life in all its vibrant variations. Recent advances in Robotics and Embodied AI make public urban spaces no longer exclusive to humans. Food delivery bots and electric wheelchairs have started sharing sidewalks with pedestrians, while robot dogs and humanoids have recently emerged in the street. Micromobility enabled by AI for short-distance travel in public urban spaces plays a crucial component in the future transportation system. Ensuring the generalizability and safety of AI models maneuvering mobile machines is essential. In this work, we present MetaUrban, a compositional simulation platform for the AI-driven urban micromobility research. MetaUrban can construct an infinite number of interactive urban scenes from compositional elements, covering a vast array of ground plans, object placements, pedestrians, vulnerable road users, and other mobile agents' appearances and dynamics. We design point navigation and social navigation tasks as the pilot study using MetaUrban for urban micromobility research and establish various baselines of Reinforcement Learning and Imitation Learning. We conduct extensive evaluation across mobile machines, demonstrating that heterogeneous mechanical structures significantly influence the learning and execution of AI policies. We perform a thorough ablation study, showing that the compositional nature of the simulated environments can substantially improve the generalizability and safety of the trained mobile agents. MetaUrban will be made publicly available to provide research opportunities and foster safe and trustworthy embodied AI and micromobility in cities. The code and dataset will be publicly available.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2410.05756v1">Learning the Generalizable Manipulation Skills on Soft-body Tasks via Guided Self-attention Behavior Cloning Policy</a></div>
     <div class="paper-meta">
       📅 2024-10-10
@@ -221,6 +269,24 @@
     <div class="paper-title"><a href="https://arxiv.org/pdf/2407.05047v3">MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning</a></div>
     <div class="paper-meta">
       📅 2024-10-08
+    </div>
+    <details class="paper-abstract">
+      In recent years, Multi-modal Foundation Models (MFMs) and Embodied Artificial Intelligence (EAI) have been advancing side by side at an unprecedented pace. The integration of the two has garnered significant attention from the AI research community. In this work, we attempt to provide an in-depth and comprehensive evaluation of the performance of MFM s on embodied task planning, aiming to shed light on their capabilities and limitations in this domain. To this end, based on the characteristics of embodied task planning, we first develop a systematic evaluation framework, which encapsulates four crucial capabilities of MFMs: object understanding, spatio-temporal perception, task understanding, and embodied reasoning. Following this, we propose a new benchmark, named MFE-ETP, characterized its complex and variable task scenarios, typical yet diverse task types, task instances of varying difficulties, and rich test case types ranging from multiple embodied question answering to embodied task reasoning. Finally, we offer a simple and easy-to-use automatic evaluation platform that enables the automated testing of multiple MFMs on the proposed benchmark. Using the benchmark and evaluation platform, we evaluated several state-of-the-art MFMs and found that they significantly lag behind human-level performance. The MFE-ETP is a high-quality, large-scale, and challenging benchmark relevant to real-world tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.05756v1">Learning the Generalizable Manipulation Skills on Soft-body Tasks via Guided Self-attention Behavior Cloning Policy</a></div>
+    <div class="paper-meta">
+      📅 2024-10-08
+    </div>
+    <details class="paper-abstract">
+      Embodied AI represents a paradigm in AI research where artificial agents are situated within and interact with physical or virtual environments. Despite the recent progress in Embodied AI, it is still very challenging to learn the generalizable manipulation skills that can handle large deformation and topological changes on soft-body objects, such as clay, water, and soil. In this work, we proposed an effective policy, namely GP2E behavior cloning policy, which can guide the agent to learn the generalizable manipulation skills from soft-body tasks, including pouring, filling, hanging, excavating, pinching, and writing. Concretely, we build our policy from three insights:(1) Extracting intricate semantic features from point cloud data and seamlessly integrating them into the robot's end-effector frame; (2) Capturing long-distance interactions in long-horizon tasks through the incorporation of our guided self-attention module; (3) Mitigating overfitting concerns and facilitating model convergence to higher accuracy levels via the introduction of our two-stage fine-tuning strategy. Through extensive experiments, we demonstrate the effectiveness of our approach by achieving the 1st prize in the soft-body track of the ManiSkill2 Challenge at the CVPR 2023 4th Embodied AI workshop. Our findings highlight the potential of our method to improve the generalization abilities of Embodied AI models and pave the way for their practical applications in real-world scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.05047v3">MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-07
     </div>
     <details class="paper-abstract">
       In recent years, Multi-modal Foundation Models (MFMs) and Embodied Artificial Intelligence (EAI) have been advancing side by side at an unprecedented pace. The integration of the two has garnered significant attention from the AI research community. In this work, we attempt to provide an in-depth and comprehensive evaluation of the performance of MFM s on embodied task planning, aiming to shed light on their capabilities and limitations in this domain. To this end, based on the characteristics of embodied task planning, we first develop a systematic evaluation framework, which encapsulates four crucial capabilities of MFMs: object understanding, spatio-temporal perception, task understanding, and embodied reasoning. Following this, we propose a new benchmark, named MFE-ETP, characterized its complex and variable task scenarios, typical yet diverse task types, task instances of varying difficulties, and rich test case types ranging from multiple embodied question answering to embodied task reasoning. Finally, we offer a simple and easy-to-use automatic evaluation platform that enables the automated testing of multiple MFMs on the proposed benchmark. Using the benchmark and evaluation platform, we evaluated several state-of-the-art MFMs and found that they significantly lag behind human-level performance. The MFE-ETP is a high-quality, large-scale, and challenging benchmark relevant to real-world tasks.
@@ -305,6 +371,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.01176v1">Generative Diffusion-based Contract Design for Efficient AI Twins Migration in Vehicular Embodied AI Networks</a></div>
+    <div class="paper-meta">
+      📅 2024-10-02
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is a rapidly advancing field that bridges the gap between cyberspace and physical space, enabling a wide range of applications. This evolution has led to the development of the Vehicular Embodied AI NETwork (VEANET), where advanced AI capabilities are integrated into vehicular systems to enhance autonomous operations and decision-making. Embodied agents, such as Autonomous Vehicles (AVs), are autonomous entities that can perceive their environment and take actions to achieve specific goals, actively interacting with the physical world. Embodied twins are digital models of these embodied agents, with various embodied AI twins for intelligent applications in cyberspace. In VEANET, embodied AI twins act as in-vehicle AI assistants to perform diverse tasks supporting autonomous driving using generative AI models. Due to limited computational resources of AVs, these AVs often offload computationally intensive tasks, such as constructing and updating embodied AI twins, to nearby RSUs. However, since the rapid mobility of AVs and the limited provision coverage of a single RSU, embodied AI twins require dynamic migrations from current RSU to other RSUs in real-time, resulting in the challenge of selecting suitable RSUs for efficient embodied AI twins migrations. Given information asymmetry, AVs cannot know the detailed information of RSUs. To this end, in this paper, we construct a multi-dimensional contract theoretical model between AVs and alternative RSUs. Considering that AVs may exhibit irrational behavior, we utilize prospect theory instead of expected utility theory to model the actual utilities of AVs. Finally, we employ a generative diffusion model-based algorithm to identify the optimal contract designs. Compared with traditional deep reinforcement learning algorithms, numerical results demonstrate the effectiveness of the proposed scheme.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.01176v1">Generative Diffusion-based Contract Design for Efficient AI Twins Migration in Vehicular Embodied AI Networks</a></div>
     <div class="paper-meta">
       📅 2024-10-02
     </div>

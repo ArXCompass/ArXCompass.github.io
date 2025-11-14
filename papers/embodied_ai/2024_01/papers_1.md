@@ -46,6 +46,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.03568v2">Agent AI: Surveying the Horizons of Multimodal Interaction</a></div>
+    <div class="paper-meta">
+      📅 2024-01-25
+    </div>
+    <details class="paper-abstract">
+      Multi-modal AI systems will likely become a ubiquitous presence in our everyday lives. A promising approach to making these systems more interactive is to embody them as agents within physical and virtual environments. At present, systems leverage existing foundation models as the basic building blocks for the creation of embodied agents. Embedding agents within such environments facilitates the ability of models to process and interpret visual and contextual data, which is critical for the creation of more sophisticated and context-aware AI systems. For example, a system that can perceive user actions, human behavior, environmental objects, audio expressions, and the collective sentiment of a scene can be used to inform and direct agent responses within the given environment. To accelerate research on agent-based multimodal intelligence, we define "Agent AI" as a class of interactive systems that can perceive visual stimuli, language inputs, and other environmentally-grounded data, and can produce meaningful embodied actions. In particular, we explore systems that aim to improve agents based on next-embodied action prediction by incorporating external knowledge, multi-sensory inputs, and human feedback. We argue that by developing agentic AI systems in grounded environments, one can also mitigate the hallucinations of large foundation models and their tendency to generate environmentally incorrect outputs. The emerging field of Agent AI subsumes the broader embodied and agentic aspects of multimodal interactions. Beyond agents acting and interacting in the physical world, we envision a future where people can easily create any virtual reality or simulated scene and interact with agents embodied within the virtual environment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2306.17278v2">Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments</a></div>
+    <div class="paper-meta">
+      📅 2024-01-24
+      | 💬 Accepted to present at IEEE AIxVR 2024. 10 Pages, 6 Figures
+    </div>
+    <details class="paper-abstract">
+      Virtual reality (VR) and interactive 3D visualization systems have enhanced educational experiences and environments, particularly in complicated subjects such as anatomy education. VR-based systems surpass the potential limitations of traditional training approaches in facilitating interactive engagement among students. However, research on embodied virtual assistants that leverage generative artificial intelligence (AI) and verbal communication in the anatomy education context is underrepresented. In this work, we introduce a VR environment with a generative AI-embodied virtual assistant to support participants in responding to varying cognitive complexity anatomy questions and enable verbal communication. We assessed the technical efficacy and usability of the proposed environment in a pilot user study with 16 participants. We conducted a within-subject design for virtual assistant configuration (avatar- and screen-based), with two levels of cognitive complexity (knowledge- and analysis-based). The results reveal a significant difference in the scores obtained from knowledge- and analysis-based questions in relation to avatar configuration. Moreover, results provide insights into usability, cognitive task load, and the sense of presence in the proposed virtual assistant configurations. Our environment and results of the pilot study offer potential benefits and future research directions beyond medical education, using generative AI and embodied virtual agents as customized virtual conversational assistants.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2304.03047v3">ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments</a></div>
     <div class="paper-meta">
       📅 2024-01-22

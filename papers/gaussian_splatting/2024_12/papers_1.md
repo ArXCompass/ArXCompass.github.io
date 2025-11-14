@@ -38,6 +38,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.00342v1">SG-Splatting: Accelerating 3D Gaussian Splatting with Spherical Gaussians</a></div>
+    <div class="paper-meta">
+      📅 2024-12-31
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting is emerging as a state-of-the-art technique in novel view synthesis, recognized for its impressive balance between visual quality, speed, and rendering efficiency. However, reliance on third-degree spherical harmonics for color representation introduces significant storage demands and computational overhead, resulting in a large memory footprint and slower rendering speed. We introduce SG-Splatting with Spherical Gaussians based color representation, a novel approach to enhance rendering speed and quality in novel view synthesis. Our method first represents view-dependent color using Spherical Gaussians, instead of three degree spherical harmonics, which largely reduces the number of parameters used for color representation, and significantly accelerates the rendering process. We then develop an efficient strategy for organizing multiple Spherical Gaussians, optimizing their arrangement to achieve a balanced and accurate scene representation. To further improve rendering quality, we propose a mixed representation that combines Spherical Gaussians with low-degree spherical harmonics, capturing both high- and low-frequency color information effectively. SG-Splatting also has plug-and-play capability, allowing it to be easily integrated into existing systems. This approach improves computational efficiency and overall visual fidelity, making it a practical solution for real-time applications.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.21206v1">PERSE: Personalized 3D Generative Avatars from A Single Portrait</a></div>
     <div class="paper-meta">
       📅 2024-12-30
@@ -223,6 +232,15 @@
     </div>
     <details class="paper-abstract">
       As demand from the film and gaming industries for 3D scenes with target styles grows, the importance of advanced 3D stylization techniques increases. However, recent methods often struggle to maintain local consistency in color and texture throughout stylized scenes, which is essential for maintaining aesthetic coherence. To solve this problem, this paper introduces ArtNVG, an innovative 3D stylization framework that efficiently generates stylized 3D scenes by leveraging reference style images. Built on 3D Gaussian Splatting (3DGS), ArtNVG achieves rapid optimization and rendering while upholding high reconstruction quality. Our framework realizes high-quality 3D stylization by incorporating two pivotal techniques: Content-Style Separated Control and Attention-based Neighboring-View Alignment. Content-Style Separated Control uses the CSGO model and the Tile ControlNet to decouple the content and style control, reducing risks of information leakage. Concurrently, Attention-based Neighboring-View Alignment ensures consistency of local colors and textures across neighboring views, significantly improving visual quality. Extensive experiments validate that ArtNVG surpasses existing methods, delivering superior results in content preservation, style alignment, and local consistency.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.18816v1">GSAVS: Gaussian Splatting-based Autonomous Vehicle Simulator</a></div>
+    <div class="paper-meta">
+      📅 2024-12-25
+    </div>
+    <details class="paper-abstract">
+      Modern autonomous vehicle simulators feature an ever-growing library of assets, including vehicles, buildings, roads, pedestrians, and more. While this level of customization proves beneficial when creating virtual urban environments, this process becomes cumbersome when intending to train within a digital twin or a duplicate of a real scene. Gaussian splatting emerged as a powerful technique in scene reconstruction and novel view synthesis, boasting high fidelity and rendering speeds. In this paper, we introduce GSAVS, an autonomous vehicle simulator that supports the creation and development of autonomous vehicle models. Every asset within the simulator is a 3D Gaussian splat, including the vehicles and the environment. However, the simulator runs within a classical 3D engine, rendering 3D Gaussian splats in real-time. This allows the simulator to utilize the photorealism that 3D Gaussian splatting boasts while providing the customization and ease of use of a classical 3D engine.
     </details>
 </div>
 <div class="paper-card">
@@ -416,6 +434,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.16809v1">GeoTexDensifier: Geometry-Texture-Aware Densification for High-Quality Photorealistic 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2024-12-22
+      | 💬 12 pages, 8 figures, 1 table
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) has recently attracted wide attentions in various areas such as 3D navigation, Virtual Reality (VR) and 3D simulation, due to its photorealistic and efficient rendering performance. High-quality reconstrution of 3DGS relies on sufficient splats and a reasonable distribution of these splats to fit real geometric surface and texture details, which turns out to be a challenging problem. We present GeoTexDensifier, a novel geometry-texture-aware densification strategy to reconstruct high-quality Gaussian splats which better comply with the geometric structure and texture richness of the scene. Specifically, our GeoTexDensifier framework carries out an auxiliary texture-aware densification method to produce a denser distribution of splats in fully textured areas, while keeping sparsity in low-texture regions to maintain the quality of Gaussian point cloud. Meanwhile, a geometry-aware splitting strategy takes depth and normal priors to guide the splitting sampling and filter out the noisy splats whose initial positions are far from the actual geometric surfaces they aim to fit, under a Validation of Depth Ratio Change checking. With the help of relative monocular depth prior, such geometry-aware validation can effectively reduce the influence of scattered Gaussians to the final rendering quality, especially in regions with weak textures or without sufficient training views. The texture-aware densification and geometry-aware splitting strategies are fully combined to obtain a set of high-quality Gaussian splats. We experiment our GeoTexDensifier framework on various datasets and compare our Novel View Synthesis results to other state-of-the-art 3DGS approaches, with detailed quantitative and qualitative evaluations to demonstrate the effectiveness of our method in producing more photorealistic 3DGS models.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.16604v1">OmniSplat: Taming Feed-Forward 3D Gaussian Splatting for Omnidirectional Images with Editable Capabilities</a></div>
     <div class="paper-meta">
       📅 2024-12-21
@@ -567,6 +595,16 @@
     </div>
     <details class="paper-abstract">
       Dense 3D representations of the environment have been a long-term goal in the robotics field. While previous Neural Radiance Fields (NeRF) representation have been prevalent for its implicit, coordinate-based model, the recent emergence of 3D Gaussian Splatting (3DGS) has demonstrated remarkable potential in its explicit radiance field representation. By leveraging 3D Gaussian primitives for explicit scene representation and enabling differentiable rendering, 3DGS has shown significant advantages over other radiance fields in real-time rendering and photo-realistic performance, which is beneficial for robotic applications. In this survey, we provide a comprehensive understanding of 3DGS in the field of robotics. We divide our discussion of the related works into two main categories: the application of 3DGS and the advancements in 3DGS techniques. In the application section, we explore how 3DGS has been utilized in various robotics tasks from scene understanding and interaction perspectives. The advance of 3DGS section focuses on the improvements of 3DGS own properties in its adaptability and efficiency, aiming to enhance its performance in robotics. We then summarize the most commonly used datasets and evaluation metrics in robotics. Finally, we identify the challenges and limitations of current 3DGS methods and discuss the future development of 3DGS in robotics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.15400v1">SolidGS: Consolidating Gaussian Surfel Splatting for Sparse-View Surface Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2024-12-19
+      | 💬 Project page: https://mickshen7558.github.io/projects/SolidGS/
+    </div>
+    <details class="paper-abstract">
+      Gaussian splatting has achieved impressive improvements for both novel-view synthesis and surface reconstruction from multi-view images. However, current methods still struggle to reconstruct high-quality surfaces from only sparse view input images using Gaussian splatting. In this paper, we propose a novel method called SolidGS to address this problem. We observed that the reconstructed geometry can be severely inconsistent across multi-views, due to the property of Gaussian function in geometry rendering. This motivates us to consolidate all Gaussians by adopting a more solid kernel function, which effectively improves the surface reconstruction quality. With the additional help of geometrical regularization and monocular normal estimation, our method achieves superior performance on the sparse view surface reconstruction than all the Gaussian splatting methods and neural field methods on the widely used DTU, Tanks-and-Temples, and LLFF datasets.
     </details>
 </div>
 <div class="paper-card">
@@ -740,6 +778,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.12734v1">Gaussian Billboards: Expressive 2D Gaussian Splatting with Textures</a></div>
+    <div class="paper-meta">
+      📅 2024-12-17
+    </div>
+    <details class="paper-abstract">
+      Gaussian Splatting has recently emerged as the go-to representation for reconstructing and rendering 3D scenes. The transition from 3D to 2D Gaussian primitives has further improved multi-view consistency and surface reconstruction accuracy. In this work we highlight the similarity between 2D Gaussian Splatting (2DGS) and billboards from traditional computer graphics. Both use flat semi-transparent 2D geometry that is positioned, oriented and scaled in 3D space. However 2DGS uses a solid color per splat and an opacity modulated by a Gaussian distribution, where billboards are more expressive, modulating the color with a uv-parameterized texture. We propose to unify these concepts by presenting Gaussian Billboards, a modification of 2DGS to add spatially-varying color achieved using per-splat texture interpolation. The result is a mixture of the two representations, which benefits from both the robust scene optimization power of 2DGS and the expressiveness of texture mapping. We show that our method can improve the sharpness and quality of the scene representation in a wide range of qualitative and quantitative evaluations compared to the original 2DGS implementation.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.12096v1">PanSplat: 4K Panorama Synthesis with Feed-Forward Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2024-12-16
@@ -843,6 +890,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.01682v3">Diffusion Models with Anisotropic Gaussian Splatting for Image Inpainting</a></div>
+    <div class="paper-meta">
+      📅 2024-12-14
+    </div>
+    <details class="paper-abstract">
+      Image inpainting is a fundamental task in computer vision, aiming to restore missing or corrupted regions in images realistically. While recent deep learning approaches have significantly advanced the state-of-the-art, challenges remain in maintaining structural continuity and generating coherent textures, particularly in large missing areas. Diffusion models have shown promise in generating high-fidelity images but often lack the structural guidance necessary for realistic inpainting. We propose a novel inpainting method that combines diffusion models with anisotropic Gaussian splatting to capture both local structures and global context effectively. By modeling missing regions using anisotropic Gaussian functions that adapt to local image gradients, our approach provides structural guidance to the diffusion-based inpainting network. The Gaussian splat maps are integrated into the diffusion process, enhancing the model's ability to generate high-fidelity and structurally coherent inpainting results. Extensive experiments demonstrate that our method outperforms state-of-the-art techniques, producing visually plausible results with enhanced structural integrity and texture realism.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.10231v1">SuperGSeg: Open-Vocabulary 3D Segmentation with Structured Super-Gaussians</a></div>
     <div class="paper-meta">
       📅 2024-12-13
@@ -890,72 +946,11 @@
     </details>
 </div>
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09723v1">MAC-Ego3D: Multi-Agent Gaussian Consensus for Real-Time Collaborative Ego-Motion and Photorealistic 3D Reconstruction</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09176v1">LIVE-GS: LLM Powers Interactive VR by Enhancing Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2024-12-12
-      | 💬 27 pages, 25 figures
     </div>
     <details class="paper-abstract">
-      Real-time multi-agent collaboration for ego-motion estimation and high-fidelity 3D reconstruction is vital for scalable spatial intelligence. However, traditional methods produce sparse, low-detail maps, while recent dense mapping approaches struggle with high latency. To overcome these challenges, we present MAC-Ego3D, a novel framework for real-time collaborative photorealistic 3D reconstruction via Multi-Agent Gaussian Consensus. MAC-Ego3D enables agents to independently construct, align, and iteratively refine local maps using a unified Gaussian splat representation. Through Intra-Agent Gaussian Consensus, it enforces spatial coherence among neighboring Gaussian splats within an agent. For global alignment, parallelized Inter-Agent Gaussian Consensus, which asynchronously aligns and optimizes local maps by regularizing multi-agent Gaussian splats, seamlessly integrates them into a high-fidelity 3D model. Leveraging Gaussian primitives, MAC-Ego3D supports efficient RGB-D rendering, enabling rapid inter-agent Gaussian association and alignment. MAC-Ego3D bridges local precision and global coherence, delivering higher efficiency, largely reducing localization error, and improving mapping fidelity. It establishes a new SOTA on synthetic and real-world benchmarks, achieving a 15x increase in inference speed, order-of-magnitude reductions in ego-motion estimation error for partial cases, and RGB PSNR gains of 4 to 10 dB. Our code will be made publicly available at https://github.com/Xiaohao-Xu/MAC-Ego3D .
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09680v1">PBR-NeRF: Inverse Rendering with Physics-Based Neural Fields</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 16 pages, 7 figures. Code is publicly available at https://github.com/s3anwu/pbrnerf
-    </div>
-    <details class="paper-abstract">
-      We tackle the ill-posed inverse rendering problem in 3D reconstruction with a Neural Radiance Field (NeRF) approach informed by Physics-Based Rendering (PBR) theory, named PBR-NeRF. Our method addresses a key limitation in most NeRF and 3D Gaussian Splatting approaches: they estimate view-dependent appearance without modeling scene materials and illumination. To address this limitation, we present an inverse rendering (IR) model capable of jointly estimating scene geometry, materials, and illumination. Our model builds upon recent NeRF-based IR approaches, but crucially introduces two novel physics-based priors that better constrain the IR estimation. Our priors are rigorously formulated as intuitive loss terms and achieve state-of-the-art material estimation without compromising novel view synthesis quality. Our method is easily adaptable to other inverse rendering and 3D reconstruction frameworks that require material estimation. We demonstrate the importance of extending current neural rendering approaches to fully model scene properties beyond geometry and view-dependent appearance. Code is publicly available at https://github.com/s3anwu/pbrnerf
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09606v1">Feat2GS: Probing Visual Foundation Models with Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 Project Page: https://fanegg.github.io/Feat2GS/
-    </div>
-    <details class="paper-abstract">
-      Given that visual foundation models (VFMs) are trained on extensive datasets but often limited to 2D images, a natural question arises: how well do they understand the 3D world? With the differences in architecture and training protocols (i.e., objectives, proxy tasks), a unified framework to fairly and comprehensively probe their 3D awareness is urgently needed. Existing works on 3D probing suggest single-view 2.5D estimation (e.g., depth and normal) or two-view sparse 2D correspondence (e.g., matching and tracking). Unfortunately, these tasks ignore texture awareness, and require 3D data as ground-truth, which limits the scale and diversity of their evaluation set. To address these issues, we introduce Feat2GS, which readout 3D Gaussians attributes from VFM features extracted from unposed images. This allows us to probe 3D awareness for geometry and texture via novel view synthesis, without requiring 3D data. Additionally, the disentanglement of 3DGS parameters - geometry ($\boldsymbol{x}, \alpha, \Sigma$) and texture ($\boldsymbol{c}$) - enables separate analysis of texture and geometry awareness. Under Feat2GS, we conduct extensive experiments to probe the 3D awareness of several VFMs, and investigate the ingredients that lead to a 3D aware VFM. Building on these findings, we develop several variants that achieve state-of-the-art across diverse datasets. This makes Feat2GS useful for probing VFMs, and as a simple-yet-effective baseline for novel-view synthesis. Code and data will be made available at https://fanegg.github.io/Feat2GS/.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09597v1">LiftImage3D: Lifting Any Single Image to 3D Gaussians with Video Generation Priors</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 Project page: https://liftimage3d.github.io/
-    </div>
-    <details class="paper-abstract">
-      Single-image 3D reconstruction remains a fundamental challenge in computer vision due to inherent geometric ambiguities and limited viewpoint information. Recent advances in Latent Video Diffusion Models (LVDMs) offer promising 3D priors learned from large-scale video data. However, leveraging these priors effectively faces three key challenges: (1) degradation in quality across large camera motions, (2) difficulties in achieving precise camera control, and (3) geometric distortions inherent to the diffusion process that damage 3D consistency. We address these challenges by proposing LiftImage3D, a framework that effectively releases LVDMs' generative priors while ensuring 3D consistency. Specifically, we design an articulated trajectory strategy to generate video frames, which decomposes video sequences with large camera motions into ones with controllable small motions. Then we use robust neural matching models, i.e. MASt3R, to calibrate the camera poses of generated frames and produce corresponding point clouds. Finally, we propose a distortion-aware 3D Gaussian splatting representation, which can learn independent distortions between frames and output undistorted canonical Gaussians. Extensive experiments demonstrate that LiftImage3D achieves state-of-the-art performance on two challenging datasets, i.e. LLFF, DL3DV, and Tanks and Temples, and generalizes well to diverse in-the-wild images, from cartoon illustrations to complex real-world scenes.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09573v1">FreeSplatter: Pose-free Gaussian Splatting for Sparse-view 3D Reconstruction</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 Project page: https://bluestyle97.github.io/projects/freesplatter/
-    </div>
-    <details class="paper-abstract">
-      Existing sparse-view reconstruction models heavily rely on accurate known camera poses. However, deriving camera extrinsics and intrinsics from sparse-view images presents significant challenges. In this work, we present FreeSplatter, a highly scalable, feed-forward reconstruction framework capable of generating high-quality 3D Gaussians from uncalibrated sparse-view images and recovering their camera parameters in mere seconds. FreeSplatter is built upon a streamlined transformer architecture, comprising sequential self-attention blocks that facilitate information exchange among multi-view image tokens and decode them into pixel-wise 3D Gaussian primitives. The predicted Gaussian primitives are situated in a unified reference frame, allowing for high-fidelity 3D modeling and instant camera parameter estimation using off-the-shelf solvers. To cater to both object-centric and scene-level reconstruction, we train two model variants of FreeSplatter on extensive datasets. In both scenarios, FreeSplatter outperforms state-of-the-art baselines in terms of reconstruction quality and pose estimation accuracy. Furthermore, we showcase FreeSplatter's potential in enhancing the productivity of downstream applications, such as text/image-to-3D content creation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.09511v1">GEAL: Generalizable 3D Affordance Learning with Cross-Modal Consistency</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 22 pages, 8 figures, 12 tables; Project Page at https://dylanorange.github.io/projects/geal
-    </div>
-    <details class="paper-abstract">
-      Identifying affordance regions on 3D objects from semantic cues is essential for robotics and human-machine interaction. However, existing 3D affordance learning methods struggle with generalization and robustness due to limited annotated data and a reliance on 3D backbones focused on geometric encoding, which often lack resilience to real-world noise and data corruption. We propose GEAL, a novel framework designed to enhance the generalization and robustness of 3D affordance learning by leveraging large-scale pre-trained 2D models. We employ a dual-branch architecture with Gaussian splatting to establish consistent mappings between 3D point clouds and 2D representations, enabling realistic 2D renderings from sparse point clouds. A granularity-adaptive fusion module and a 2D-3D consistency alignment module further strengthen cross-modal alignment and knowledge transfer, allowing the 3D branch to benefit from the rich semantics and generalization capacity of 2D models. To holistically assess the robustness, we introduce two new corruption-based benchmarks: PIAD-C and LASO-C. Extensive experiments on public datasets and our benchmarks show that GEAL consistently outperforms existing methods across seen and novel object categories, as well as corrupted data, demonstrating robust and adaptable affordance prediction under diverse conditions. Code and corruption datasets have been made publicly available.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.11447v3">GaussianOcc: Fully Self-supervised and Efficient 3D Occupancy Estimation with Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2024-12-12
-      | 💬 Project page: https://ganwanshui.github.io/GaussianOcc/
-    </div>
-    <details class="paper-abstract">
-      We introduce GaussianOcc, a systematic method that investigates the two usages of Gaussian splatting for fully self-supervised and efficient 3D occupancy estimation in surround views. First, traditional methods for self-supervised 3D occupancy estimation still require ground truth 6D poses from sensors during training. To address this limitation, we propose Gaussian Splatting for Projection (GSP) module to provide accurate scale information for fully self-supervised training from adjacent view projection. Additionally, existing methods rely on volume rendering for final 3D voxel representation learning using 2D signals (depth maps, semantic maps), which is both time-consuming and less effective. We propose Gaussian Splatting from Voxel space (GSV) to leverage the fast rendering properties of Gaussian splatting. As a result, the proposed GaussianOcc method enables fully self-supervised (no ground truth pose) 3D occupancy estimation in competitive performance with low computational cost (2.7 times faster in training and 5 times faster in rendering). The relevant code is available in https://github.com/GANWANSHUI/GaussianOcc.git.
+      Recently, radiance field rendering, such as 3D Gaussian Splatting (3DGS), has shown immense potential in VR content creation due to its high-quality rendering and efficient production process. However, existing physics-based interaction systems for 3DGS can only perform simple and non-realistic simulations or demand extensive user input for complex scenes, primarily due to the absence of scene understanding. In this paper, we propose LIVE-GS, a highly realistic interactive VR system powered by LLM. After object-aware GS reconstruction, we prompt GPT-4o to analyze the physical properties of objects in the scene, which are used to guide physical simulations consistent with real phenomena. We also design a GPT-assisted GS inpainting module to fill the unseen area covered by manipulative objects. To perform a precise segmentation of Gaussian kernels, we propose a feature-mask segmentation strategy. To enable rich interaction, we further propose a computationally efficient physical simulation framework through an PBD-based unified interpolation method, supporting various physical forms such as rigid body, soft body, and granular materials. Our experimental results show that with the help of LLM's understanding and enhancement of scenes, our VR system can support complex and realistic interactions without additional manual design and annotation.
     </details>
 </div>

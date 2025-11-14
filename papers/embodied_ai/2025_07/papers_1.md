@@ -68,6 +68,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2507.21589v1">Exploring the Link Between Bayesian Inference and Embodied Intelligence: Toward Open Physical-World Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2025-07-29
+      | 💬 16 pages
+    </div>
+    <details class="paper-abstract">
+      Embodied intelligence posits that cognitive capabilities fundamentally emerge from - and are shaped by - an agent's real-time sensorimotor interactions with its environment. Such adaptive behavior inherently requires continuous inference under uncertainty. Bayesian statistics offers a principled probabilistic framework to address this challenge by representing knowledge as probability distributions and updating beliefs in response to new evidence. The core computational processes underlying embodied intelligence - including perception, action selection, learning, and even higher-level cognition - can be effectively understood and modeled as forms of Bayesian inference. Despite the deep conceptual connection between Bayesian statistics and embodied intelligence, Bayesian principles have not been widely or explicitly applied in today's embodied intelligence systems. In this work, we examine both Bayesian and contemporary embodied intelligence approaches through two fundamental lenses: search and learning - the two central themes in modern AI, as highlighted in Rich Sutton's influential essay "The Bitter Lesson". This analysis sheds light on why Bayesian inference has not played a central role in the development of modern embodied intelligence. At the same time, it reveals that current embodied intelligence systems remain largely confined to closed-physical-world environments, and highlights the potential for Bayesian methods to play a key role in extending these systems toward truly open physical-world embodied intelligence.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2506.15677v3">Embodied Web Agents: Bridging Physical-Digital Realms for Integrated Agent Intelligence</a></div>
+    <div class="paper-meta">
+      📅 2025-07-29
+    </div>
+    <details class="paper-abstract">
+      AI agents today are mostly siloed - they either retrieve and reason over vast amount of digital information and knowledge obtained online; or interact with the physical world through embodied perception, planning and action - but rarely both. This separation limits their ability to solve tasks that require integrated physical and digital intelligence, such as cooking from online recipes, navigating with dynamic map data, or interpreting real-world landmarks using web knowledge. We introduce Embodied Web Agents, a novel paradigm for AI agents that fluidly bridge embodiment and web-scale reasoning. To operationalize this concept, we first develop the Embodied Web Agents task environments, a unified simulation platform that tightly integrates realistic 3D indoor and outdoor environments with functional web interfaces. Building upon this platform, we construct and release the Embodied Web Agents Benchmark, which encompasses a diverse suite of tasks including cooking, navigation, shopping, tourism, and geolocation - all requiring coordinated reasoning across physical and digital realms for systematic assessment of cross-domain intelligence. Experimental results reveal significant performance gaps between state-of-the-art AI systems and human capabilities, establishing both challenges and opportunities at the intersection of embodied cognition and web-scale knowledge access. All datasets, codes and websites are publicly available at our project page https://embodied-web-agent.github.io/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2507.21045v1">Reconstructing 4D Spatial Intelligence: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-07-28
@@ -169,6 +188,24 @@
     </div>
     <details class="paper-abstract">
       This paper presents the development of a Physics-realistic and Photo-realistic humanoid robot testbed, PR2, to facilitate collaborative research between Embodied Artificial Intelligence (Embodied AI) and robotics. PR2 offers high-quality scene rendering and robot dynamic simulation, enabling (i) the creation of diverse scenes using various digital assets, (ii) the integration of advanced perception or foundation models, and (iii) the implementation of planning and control algorithms for dynamic humanoid robot behaviors based on environmental feedback. The beta version of PR2 has been deployed for the simulation track of a nationwide full-size humanoid robot competition for college students, attracting 137 teams and over 400 participants within four months. This competition covered traditional tasks in bipedal walking, as well as novel challenges in loco-manipulation and language-instruction-based object search, marking a first for public college robotics competitions. A retrospective analysis of the competition suggests that future events should emphasize the integration of locomotion with manipulation and perception. By making the PR2 testbed publicly available at https://github.com/pr2-humanoid/PR2-Platform, we aim to further advance education and training in humanoid robotics. Video demonstration: https://pr2-humanoid.github.io/
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2506.05171v2">Towards provable probabilistic safety for scalable embodied AI systems</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+    </div>
+    <details class="paper-abstract">
+      Embodied AI systems, comprising AI models and physical plants, are increasingly prevalent across various applications. Due to the rarity of system failures, ensuring their safety in complex operating environments remains a major challenge, which severely hinders their large-scale deployment in safety-critical domains, such as autonomous vehicles, medical devices, and robotics. While achieving provable deterministic safety--verifying system safety across all possible scenarios--remains theoretically ideal, the rarity and complexity of corner cases make this approach impractical for scalable embodied AI systems. Instead, empirical safety evaluation is employed as an alternative, but the absence of provable guarantees imposes significant limitations. To address these issues, we argue for a paradigm shift to provable probabilistic safety that integrates provable guarantees with progressive achievement toward a probabilistic safety boundary on overall system performance. The new paradigm better leverages statistical methods to enhance feasibility and scalability, and a well-defined probabilistic safety boundary enables embodied AI systems to be deployed at scale. In this Perspective, we outline a roadmap for provable probabilistic safety, along with corresponding challenges and potential solutions. By bridging the gap between theoretical safety assurance and practical deployment, this Perspective offers a pathway toward safer, large-scale adoption of embodied AI systems in safety-critical applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2507.16398v1">AI or Human? Understanding Perceptions of Embodied Robots with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-07-22
+    </div>
+    <details class="paper-abstract">
+      The pursuit of artificial intelligence has long been associated to the the challenge of effectively measuring intelligence. Even if the Turing Test was introduced as a means of assessing a system intelligence, its relevance and application within the field of human-robot interaction remain largely underexplored. This study investigates the perception of intelligence in embodied robots by performing a Turing Test within a robotic platform. A total of 34 participants were tasked with distinguishing between AI- and human-operated robots while engaging in two interactive tasks: an information retrieval and a package handover. These tasks assessed the robot perception and navigation abilities under both static and dynamic conditions. Results indicate that participants were unable to reliably differentiate between AI- and human-controlled robots beyond chance levels. Furthermore, analysis of participant responses reveals key factors influencing the perception of artificial versus human intelligence in embodied robotic systems. These findings provide insights into the design of future interactive robots and contribute to the ongoing discourse on intelligence assessment in AI-driven systems.
     </details>
 </div>
 <div class="paper-card">
@@ -318,6 +355,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2507.10812v1">React to This (RTT): A Nonverbal Turing Test for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-07-14
+      | 💬 5 pages, 3 figures
+    </div>
+    <details class="paper-abstract">
+      We propose an approach to test embodied AI agents for interaction awareness and believability, particularly in scenarios where humans push them to their limits. Turing introduced the Imitation Game as a way to explore the question: "Can machines think?" The Total Turing Test later expanded this concept beyond purely verbal communication, incorporating perceptual and physical interaction. Building on this, we propose a new guiding question: "Can machines react?" and introduce the React to This (RTT) test for nonverbal behaviors, presenting results from an initial experiment.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2505.22050v2">Reinforced Reasoning for Embodied Planning</a></div>
     <div class="paper-meta">
       📅 2025-07-13
@@ -455,6 +502,15 @@
     </div>
     <details class="paper-abstract">
       3D visual grounding (3DVG) involves localizing entities in a 3D scene referred to by natural language text. Such models are useful for embodied AI and scene retrieval applications, which involve searching for objects or patterns using natural language descriptions. While recent works have focused on LLM-based scaling of 3DVG datasets, these datasets do not capture the full range of potential prompts which could be specified in the English language. To ensure that we are scaling up and testing against a useful and representative set of prompts, we propose a framework for linguistically analyzing 3DVG prompts and introduce Visual Grounding with Diverse Language in 3D (ViGiL3D), a diagnostic dataset for evaluating visual grounding methods against a diverse set of language patterns. We evaluate existing open-vocabulary 3DVG methods to demonstrate that these methods are not yet proficient in understanding and identifying the targets of more challenging, out-of-distribution prompts, toward real-world applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2506.22355v3">Embodied AI Agents: Modeling the World</a></div>
+    <div class="paper-meta">
+      📅 2025-07-07
+    </div>
+    <details class="paper-abstract">
+      This paper describes our research on AI agents embodied in visual, virtual or physical forms, enabling them to interact with both users and their environments. These agents, which include virtual avatars, wearable devices, and robots, are designed to perceive, learn and act within their surroundings, which makes them more similar to how humans learn and interact with the environments as compared to disembodied agents. We propose that the development of world models is central to reasoning and planning of embodied AI agents, allowing these agents to understand and predict their environment, to understand user intentions and social contexts, thereby enhancing their ability to perform complex tasks autonomously. World modeling encompasses the integration of multimodal perception, planning through reasoning for action and control, and memory to create a comprehensive understanding of the physical world. Beyond the physical world, we also propose to learn the mental world model of users to enable better human-agent collaboration.
     </details>
 </div>
 <div class="paper-card">

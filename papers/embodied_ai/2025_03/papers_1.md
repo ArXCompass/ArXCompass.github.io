@@ -37,12 +37,41 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.24110v1">Grounding Agent Reasoning in Image Schemas: A Neurosymbolic Approach to Embodied Cognition</a></div>
+    <div class="paper-meta">
+      📅 2025-03-31
+    </div>
+    <details class="paper-abstract">
+      Despite advances in embodied AI, agent reasoning systems still struggle to capture the fundamental conceptual structures that humans naturally use to understand and interact with their environment. To address this, we propose a novel framework that bridges embodied cognition theory and agent systems by leveraging a formal characterization of image schemas, which are defined as recurring patterns of sensorimotor experience that structure human cognition. By customizing LLMs to translate natural language descriptions into formal representations based on these sensorimotor patterns, we will be able to create a neurosymbolic system that grounds the agent's understanding in fundamental conceptual structures. We argue that such an approach enhances both efficiency and interpretability while enabling more intuitive human-agent interactions through shared embodied understanding.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.01036v1">Carbon Footprint Evaluation of Code Generation through LLM as a Service</a></div>
+    <div class="paper-meta">
+      📅 2025-03-30
+      | 💬 Stuttgart Symposium, Springer
+    </div>
+    <details class="paper-abstract">
+      Due to increased computing use, data centers consume and emit a lot of energy and carbon. These contributions are expected to rise as big data analytics, digitization, and large AI models grow and become major components of daily working routines. To reduce the environmental impact of software development, green (sustainable) coding and claims that AI models can improve energy efficiency have grown in popularity. Furthermore, in the automotive industry, where software increasingly governs vehicle performance, safety, and user experience, the principles of green coding and AI-driven efficiency could significantly contribute to reducing the sector's environmental footprint. We present an overview of green coding and metrics to measure AI model sustainability awareness. This study introduces LLM as a service and uses a generative commercial AI language model, GitHub Copilot, to auto-generate code. Using sustainability metrics to quantify these AI models' sustainability awareness, we define the code's embodied and operational carbon.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.22869v1">SIGHT: Single-Image Conditioned Generation of Hand Trajectories for Hand-Object Interaction</a></div>
     <div class="paper-meta">
       📅 2025-03-28
     </div>
     <details class="paper-abstract">
       We introduce a novel task of generating realistic and diverse 3D hand trajectories given a single image of an object, which could be involved in a hand-object interaction scene or pictured by itself. When humans grasp an object, appropriate trajectories naturally form in our minds to use it for specific tasks. Hand-object interaction trajectory priors can greatly benefit applications in robotics, embodied AI, augmented reality and related fields. However, synthesizing realistic and appropriate hand trajectories given a single object or hand-object interaction image is a highly ambiguous task, requiring to correctly identify the object of interest and possibly even the correct interaction among many possible alternatives. To tackle this challenging problem, we propose the SIGHT-Fusion system, consisting of a curated pipeline for extracting visual features of hand-object interaction details from egocentric videos involving object manipulation, and a diffusion-based conditional motion generation model processing the extracted features. We train our method given video data with corresponding hand trajectory annotations, without supervision in the form of action labels. For the evaluation, we establish benchmarks utilizing the first-person FPHAB and HOI4D datasets, testing our method against various baselines and using multiple metrics. We also introduce task simulators for executing the generated hand trajectories and reporting task success rates as an additional metric. Experiments show that our method generates more appropriate and realistic hand trajectories than baselines and presents promising generalization capability on unseen objects. The accuracy of the generated hand trajectories is confirmed in a physics simulation setting, showcasing the authenticity of the created sequences and their applicability in downstream uses.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.22113v1">Briteller: Shining a Light on AI Recommendations for Children</a></div>
+    <div class="paper-meta">
+      📅 2025-03-28
+      | 💬 2025 ACM CHI conference on Human Factors in Computing Systems
+    </div>
+    <details class="paper-abstract">
+      Understanding how AI recommendations work can help the younger generation become more informed and critical consumers of the vast amount of information they encounter daily. However, young learners with limited math and computing knowledge often find AI concepts too abstract. To address this, we developed Briteller, a light-based recommendation system that makes learning tangible. By exploring and manipulating light beams, Briteller enables children to understand an AI recommender system's core algorithmic building block, the dot product, through hands-on interactions. Initial evaluations with ten middle school students demonstrated the effectiveness of this approach, using embodied metaphors, such as "merging light" to represent addition. To overcome the limitations of the physical optical setup, we further explored how AR could embody multiplication, expand data vectors with more attributes, and enhance contextual understanding. Our findings provide valuable insights for designing embodied and tangible learning experiences that make AI concepts more accessible to young learners.
     </details>
 </div>
 <div class="paper-card">
@@ -121,6 +150,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.19941v1">Body Discovery of Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-03-25
+    </div>
+    <details class="paper-abstract">
+      In the pursuit of realizing artificial general intelligence (AGI), the importance of embodied artificial intelligence (AI) becomes increasingly apparent. Following this trend, research integrating robots with AGI has become prominent. As various kinds of embodiments have been designed, adaptability to diverse embodiments will become important to AGI. We introduce a new challenge, termed "Body Discovery of Embodied AI", focusing on tasks of recognizing embodiments and summarizing neural signal functionality. The challenge encompasses the precise definition of an AI body and the intricate task of identifying embodiments in dynamic environments, where conventional approaches often prove inadequate. To address these challenges, we apply causal inference method and evaluate it by developing a simulator tailored for testing algorithms with virtual environments. Finally, we validate the efficacy of our algorithms through empirical testing, demonstrating their robust performance in various scenarios based on virtual environments.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2409.14908v2">KARMA: Augmenting Embodied AI Agents with Long-and-short Term Memory Systems</a></div>
     <div class="paper-meta">
       📅 2025-03-24
@@ -187,6 +225,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.14908v2">KARMA: Augmenting Embodied AI Agents with Long-and-short Term Memory Systems</a></div>
+    <div class="paper-meta">
+      📅 2025-03-21
+    </div>
+    <details class="paper-abstract">
+      Embodied AI agents responsible for executing interconnected, long-sequence household tasks often face difficulties with in-context memory, leading to inefficiencies and errors in task execution. To address this issue, we introduce KARMA, an innovative memory system that integrates long-term and short-term memory modules, enhancing large language models (LLMs) for planning in embodied agents through memory-augmented prompting. KARMA distinguishes between long-term and short-term memory, with long-term memory capturing comprehensive 3D scene graphs as representations of the environment, while short-term memory dynamically records changes in objects' positions and states. This dual-memory structure allows agents to retrieve relevant past scene experiences, thereby improving the accuracy and efficiency of task planning. Short-term memory employs strategies for effective and adaptive memory replacement, ensuring the retention of critical information while discarding less pertinent data. Compared to state-of-the-art embodied agents enhanced with memory, our memory-augmented embodied AI agent improves success rates by 1.3x and 2.3x in Composite Tasks and Complex Tasks within the AI2-THOR simulator, respectively, and enhances task execution efficiency by 3.4x and 62.7x. Furthermore, we demonstrate that KARMA's plug-and-play capability allows for seamless deployment on real-world robotic systems, such as mobile manipulation platforms.Through this plug-and-play memory system, KARMA significantly enhances the ability of embodied agents to generate coherent and contextually appropriate plans, making the execution of complex household tasks more efficient. The experimental videos from the work can be found at https://youtu.be/4BT7fnw9ehs. Our code is available at https://github.com/WZX0Swarm0Robotics/KARMA/tree/master.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.15764v1">Towards Agentic AI Networking in 6G: A Generative Foundation Model-as-Agent Approach</a></div>
     <div class="paper-meta">
       📅 2025-03-20
@@ -244,7 +291,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.13642v7">SpatialBot: Precise Spatial Understanding with Vision Language Models</a></div>
+    <div class="paper-meta">
+      📅 2025-03-19
+    </div>
+    <details class="paper-abstract">
+      Vision Language Models (VLMs) have achieved impressive performance in 2D image understanding, however they are still struggling with spatial understanding which is the foundation of Embodied AI. In this paper, we propose SpatialBot for better spatial understanding by feeding both RGB and depth images. Additionally, we have constructed the SpatialQA dataset, which involves multi-level depth-related questions to train VLMs for depth understanding. Finally, we present SpatialBench to comprehensively evaluate VLMs' capabilities in spatial understanding at different levels. Extensive experiments on our spatial-understanding benchmark, general VLM benchmarks and Embodied AI tasks, demonstrate the remarkable improvements of SpatialBot trained on SpatialQA. The model, code and data are available at https://github.com/BAAI-DCAI/SpatialBot.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.13882v1">MoK-RAG: Mixture of Knowledge Paths Enhanced Retrieval-Augmented Generation for Embodied AI Environments</a></div>
+    <div class="paper-meta">
+      📅 2025-03-18
+    </div>
+    <details class="paper-abstract">
+      While human cognition inherently retrieves information from diverse and specialized knowledge sources during decision-making processes, current Retrieval-Augmented Generation (RAG) systems typically operate through single-source knowledge retrieval, leading to a cognitive-algorithmic discrepancy. To bridge this gap, we introduce MoK-RAG, a novel multi-source RAG framework that implements a mixture of knowledge paths enhanced retrieval mechanism through functional partitioning of a large language model (LLM) corpus into distinct sections, enabling retrieval from multiple specialized knowledge paths. Applied to the generation of 3D simulated environments, our proposed MoK-RAG3D enhances this paradigm by partitioning 3D assets into distinct sections and organizing them based on a hierarchical knowledge tree structure. Different from previous methods that only use manual evaluation, we pioneered the introduction of automated evaluation methods for 3D scenes. Both automatic and human evaluations in our experiments demonstrate that MoK-RAG3D can assist Embodied AI agents in generating diverse scenes.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.13882v1">MoK-RAG: Mixture of Knowledge Paths Enhanced Retrieval-Augmented Generation for Embodied AI Environments</a></div>
     <div class="paper-meta">
       📅 2025-03-18
     </div>
@@ -365,6 +430,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.10070v1">AhaRobot: A Low-Cost Open-Source Bimanual Mobile Manipulator for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-03-13
+      | 💬 The first two authors contributed equally. Website: https://aha-robot.github.io
+    </div>
+    <details class="paper-abstract">
+      Navigation and manipulation in open-world environments remain unsolved challenges in the Embodied AI. The high cost of commercial mobile manipulation robots significantly limits research in real-world scenes. To address this issue, we propose AhaRobot, a low-cost and fully open-source dual-arm mobile manipulation robot system with a hardware cost of only $1,000 (excluding optional computational resources), which is less than 1/15 of the cost of popular mobile robots. The AhaRobot system consists of three components: (1) a novel low-cost hardware architecture primarily composed of off-the-shelf components, (2) an optimized control solution to enhance operational precision integrating dual-motor backlash control and static friction compensation, and (3) a simple remote teleoperation method RoboPilot. We use handles to control the dual arms and pedals for whole-body movement. The teleoperation process is low-burden and easy to operate, much like piloting. RoboPilot is designed for remote data collection in embodied scenarios. Experimental results demonstrate that RoboPilot significantly enhances data collection efficiency in complex manipulation tasks, achieving a 30% increase compared to methods using 3D mouse and leader-follower systems. It also excels at completing extremely long-horizon tasks in one go. Furthermore, AhaRobot can be used to learn end-to-end policies and autonomously perform complex manipulation tasks, such as pen insertion and cleaning up the floor. We aim to build an affordable yet powerful platform to promote the development of embodied tasks on real devices, advancing more robust and reliable embodied AI. All hardware and software systems are available at https://aha-robot.github.io.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.08306v2">Reasoning in visual navigation of end-to-end trained agents: a dynamical systems approach</a></div>
     <div class="paper-meta">
       📅 2025-03-12
@@ -411,6 +486,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.08158v2">EmBARDiment: an Embodied AI Agent for Productivity in XR</a></div>
+    <div class="paper-meta">
+      📅 2025-03-11
+    </div>
+    <details class="paper-abstract">
+      XR devices running chat-bots powered by Large Language Models (LLMs) have the to become always-on agents that enable much better productivity scenarios. Current screen based chat-bots do not take advantage of the the full-suite of natural inputs available in XR, including inward facing sensor data, instead they over-rely on explicit voice or text prompts, sometimes paired with multi-modal data dropped as part of the query. We propose a solution that leverages an attention framework that derives context implicitly from user actions, eye-gaze, and contextual memory within the XR environment. Our work minimizes the need for engineered explicit prompts, fostering grounded and intuitive interactions that glean user insights for the chat-bot.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.08158v2">EmBARDiment: an Embodied AI Agent for Productivity in XR</a></div>
     <div class="paper-meta">
       📅 2025-03-11
     </div>
@@ -526,6 +610,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.07468v3">From Screens to Scenes: A Survey of Embodied AI in Healthcare</a></div>
+    <div class="paper-meta">
+      📅 2025-03-02
+      | 💬 56 pages, 11 figures, manuscript accepted by Information Fusion
+    </div>
+    <details class="paper-abstract">
+      Healthcare systems worldwide face persistent challenges in efficiency, accessibility, and personalization. Powered by modern AI technologies such as multimodal large language models and world models, Embodied AI (EmAI) represents a transformative frontier, offering enhanced autonomy and the ability to interact with the physical world to address these challenges. As an interdisciplinary and rapidly evolving research domain, "EmAI in healthcare" spans diverse fields such as algorithms, robotics, and biomedicine. This complexity underscores the importance of timely reviews and analyses to track advancements, address challenges, and foster cross-disciplinary collaboration. In this paper, we provide a comprehensive overview of the "brain" of EmAI for healthcare, wherein we introduce foundational AI algorithms for perception, actuation, planning, and memory, and focus on presenting the healthcare applications spanning clinical interventions, daily care & companionship, infrastructure support, and biomedical research. Despite its promise, the development of EmAI for healthcare is hindered by critical challenges such as safety concerns, gaps between simulation platforms and real-world applications, the absence of standardized benchmarks, and uneven progress across interdisciplinary domains. We discuss the technical barriers and explore ethical considerations, offering a forward-looking perspective on the future of EmAI in healthcare. A hierarchical framework of intelligent levels for EmAI systems is also introduced to guide further development. By providing systematic insights, this work aims to inspire innovation and practical applications, paving the way for a new era of intelligent, patient-centered healthcare.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.08208v3">SPA: 3D Spatial-Awareness Enables Effective Embodied Representation</a></div>
     <div class="paper-meta">
       📅 2025-03-01
@@ -542,5 +636,15 @@
     </div>
     <details class="paper-abstract">
       Constructing compact and informative 3D scene representations is essential for effective embodied exploration and reasoning, especially in complex environments over extended periods. Existing representations, such as object-centric 3D scene graphs, oversimplify spatial relationships by modeling scenes as isolated objects with restrictive textual relationships, making it difficult to address queries requiring nuanced spatial understanding. Moreover, these representations lack natural mechanisms for active exploration and memory management, hindering their application to lifelong autonomy. In this work, we propose 3D-Mem, a novel 3D scene memory framework for embodied agents. 3D-Mem employs informative multi-view images, termed Memory Snapshots, to represent the scene and capture rich visual information of explored regions. It further integrates frontier-based exploration by introducing Frontier Snapshots-glimpses of unexplored areas-enabling agents to make informed decisions by considering both known and potential new information. To support lifelong memory in active exploration settings, we present an incremental construction pipeline for 3D-Mem, as well as a memory retrieval technique for memory management. Experimental results on three benchmarks demonstrate that 3D-Mem significantly enhances agents' exploration and reasoning capabilities in 3D environments, highlighting its potential for advancing applications in embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.08208v3">SPA: 3D Spatial-Awareness Enables Effective Embodied Representation</a></div>
+    <div class="paper-meta">
+      📅 2025-03-01
+      | 💬 Project Page: https://haoyizhu.github.io/spa/
+    </div>
+    <details class="paper-abstract">
+      In this paper, we introduce SPA, a novel representation learning framework that emphasizes the importance of 3D spatial awareness in embodied AI. Our approach leverages differentiable neural rendering on multi-view images to endow a vanilla Vision Transformer (ViT) with intrinsic spatial understanding. We present the most comprehensive evaluation of embodied representation learning to date, covering 268 tasks across 8 simulators with diverse policies in both single-task and language-conditioned multi-task scenarios. The results are compelling: SPA consistently outperforms more than 10 state-of-the-art representation methods, including those specifically designed for embodied AI, vision-centric tasks, and multi-modal applications, while using less training data. Furthermore, we conduct a series of real-world experiments to confirm its effectiveness in practical scenarios. These results highlight the critical role of 3D spatial awareness for embodied representation learning. Our strongest model takes more than 6000 GPU hours to train and we are committed to open-sourcing all code and model weights to foster future research in embodied representation learning. Project Page: https://haoyizhu.github.io/spa/.
     </details>
 </div>

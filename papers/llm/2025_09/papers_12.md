@@ -24,6 +24,33 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.09121v1">Compass-v3: Scaling Domain-Specific LLMs for Multilingual E-Commerce in Southeast Asia</a></div>
+    <div class="paper-meta">
+      📅 2025-09-11
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) excel in general-domain applications, yet their performance often degrades in specialized tasks requiring domain-specific knowledge. E-commerce is particularly challenging, as its data are noisy, heterogeneous, multilingual, and highly dynamic. We present Compass-v3, a vertical-domain Mixture-of-Experts (MoE) model with 245B total parameters and 71B active per token, designed for Southeast Asian e-commerce. Compass-v3 adopts fewer but larger experts, combined with hardware-efficient optimizations-such as intra-node expert parallelism and a customized memcpy operator-to maximize GPU utilization. The model is trained on 12T tokens of curated multilingual corpora and large-scale synthetic e-commerce instructions using a mixed-training strategy. To enhance alignment, we propose Optimal-Transport Direct Preference Optimization (OTPO), which captures token-level distinctions and improves instruction adherence in commerce-specific scenarios. Extensive evaluations demonstrate that Compass-v3 delivers state-of-the-art e-commerce performance, surpassing DeepSeek-V3.1, GPT-4 series, and Qwen3-235B. Moreover, Compass-v3 demonstrates strong multilingual capability across low-resource Southeast Asian languages (Indonesian, Thai, Filipino, Vietnamese, Malay, Taglog) and Portuguese while sustaining competitive performance on general benchmarks. It has already been widely applied in Shopee's industrial-scale e-commerce platform and is gradually replacing OpenAI's traffic, now accounting for over 70\% of total LLM usage, highlighting its dual strengths in specialized commerce expertise and broad linguistic competence.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.09112v1">Character-Level Perturbations Disrupt LLM Watermarks</a></div>
+    <div class="paper-meta">
+      📅 2025-09-11
+    </div>
+    <details class="paper-abstract">
+      Large Language Model (LLM) watermarking embeds detectable signals into generated text for copyright protection, misuse prevention, and content detection. While prior studies evaluate robustness using watermark removal attacks, these methods are often suboptimal, creating the misconception that effective removal requires large perturbations or powerful adversaries. To bridge the gap, we first formalize the system model for LLM watermark, and characterize two realistic threat models constrained on limited access to the watermark detector. We then analyze how different types of perturbation vary in their attack range, i.e., the number of tokens they can affect with a single edit. We observe that character-level perturbations (e.g., typos, swaps, deletions, homoglyphs) can influence multiple tokens simultaneously by disrupting the tokenization process. We demonstrate that character-level perturbations are significantly more effective for watermark removal under the most restrictive threat model. We further propose guided removal attacks based on the Genetic Algorithm (GA) that uses a reference detector for optimization. Under a practical threat model with limited black-box queries to the watermark detector, our method demonstrates strong removal performance. Experiments confirm the superiority of character-level perturbations and the effectiveness of the GA in removing watermarks under realistic constraints. Additionally, we argue there is an adversarial dilemma when considering potential defenses: any fixed defense can be bypassed by a suitable perturbation strategy. Motivated by this principle, we propose an adaptive compound character-level attack. Experimental results show that this approach can effectively defeat the defenses. Our findings highlight significant vulnerabilities in existing LLM watermark schemes and underline the urgency for the development of new robust mechanisms.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2509.09103v1">AgriSentinel: Privacy-Enhanced Embedded-LLM Crop Disease Alerting System</a></div>
+    <div class="paper-meta">
+      📅 2025-09-11
+    </div>
+    <details class="paper-abstract">
+      Crop diseases pose significant threats to global food security, agricultural productivity, and sustainable farming practices, directly affecting farmers' livelihoods and economic stability. To address the growing need for effective crop disease management, AI-based disease alerting systems have emerged as promising tools by providing early detection and actionable insights for timely intervention. However, existing systems often overlook critical aspects such as data privacy, market pricing power, and farmer-friendly usability, leaving farmers vulnerable to privacy breaches and economic exploitation. To bridge these gaps, we propose AgriSentinel, the first Privacy-Enhanced Embedded-LLM Crop Disease Alerting System. AgriSentinel incorporates a differential privacy mechanism to protect sensitive crop image data while maintaining classification accuracy. Its lightweight deep learning-based crop disease classification model is optimized for mobile devices, ensuring accessibility and usability for farmers. Additionally, the system includes a fine-tuned, on-device large language model (LLM) that leverages a curated knowledge pool to provide farmers with specific, actionable suggestions for managing crop diseases, going beyond simple alerting. Comprehensive experiments validate the effectiveness of AgriSentinel, demonstrating its ability to safeguard data privacy, maintain high classification performance, and deliver practical, actionable disease management strategies. AgriSentinel offers a robust, farmer-friendly solution for automating crop disease alerting and management, ultimately contributing to improved agricultural decision-making and enhanced crop productivity.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2509.09101v1">TigerCoder: A Novel Suite of LLMs for Code Generation in Bangla</a></div>
     <div class="paper-meta">
       📅 2025-09-11
@@ -792,6 +819,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.08593v1">No-Knowledge Alarms for Misaligned LLMs-as-Judges</a></div>
+    <div class="paper-meta">
+      📅 2025-09-10
+      | 💬 7 pages, 1 figure
+    </div>
+    <details class="paper-abstract">
+      If we use LLMs as judges to evaluate the complex decisions of other LLMs, who or what monitors the judges? Infinite monitoring chains are inevitable whenever we do not know the ground truth of the decisions by experts and we do not want to trust them. One way to ameliorate our evaluation uncertainty is to exploit the use of logical consistency between disagreeing experts. By observing how LLM judges agree and disagree while grading other LLMs, we can compute the only possible evaluations of their grading ability. For example, if two LLM judges disagree on which tasks a third one completed correctly, they cannot both be 100\% correct in their judgments. This logic can be formalized as a Linear Programming problem in the space of integer response counts for any finite test. We use it here to develop no-knowledge alarms for misaligned LLM judges. The alarms can detect, with no false positives, that at least one member or more of an ensemble of judges are violating a user specified grading ability requirement.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2509.07763v1">What Were You Thinking? An LLM-Driven Large-Scale Study of Refactoring Motivations in Open-Source Projects</a></div>
     <div class="paper-meta">
       📅 2025-09-09
@@ -930,45 +967,5 @@
     </div>
     <details class="paper-abstract">
       Medical decision-making is a critical task, where errors can result in serious, potentially life-threatening consequences. While full automation remains challenging, hybrid frameworks that combine machine intelligence with human oversight offer a practical alternative. In this paper, we present MedGellan, a lightweight, annotation-free framework that uses a Large Language Model (LLM) to generate clinical guidance from raw medical records, which is then used by a physician to predict diagnoses. MedGellan uses a Bayesian-inspired prompting strategy that respects the temporal order of clinical data. Preliminary experiments show that the guidance generated by the LLM with MedGellan improves diagnostic performance, particularly in recall and $F_1$ score.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2509.03020v3">Training LLMs to be Better Text Embedders through Bidirectional Reconstruction</a></div>
-    <div class="paper-meta">
-      📅 2025-09-09
-      | 💬 accepted by EMNLP 2025 Main Conference
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have increasingly been explored as powerful text embedders. Existing LLM-based text embedding approaches often leverage the embedding of the final token, typically a reserved special token such as [EOS]. However, these tokens have not been intentionally trained to capture the semantics of the whole context, limiting their capacity as text embeddings, especially for retrieval and re-ranking tasks. We propose to add a new training stage before contrastive learning to enrich the semantics of the final token embedding. This stage employs bidirectional generative reconstruction tasks, namely EBQ2D (Embedding-Based Query-to-Document) and EBD2Q (Embedding-Based Document-to-Query), which interleave to anchor the [EOS] embedding and reconstruct either side of Query-Document pairs. Experimental results demonstrate that our additional training stage significantly improves LLM performance on the Massive Text Embedding Benchmark (MTEB), achieving new state-of-the-art results across different LLM base models and scales.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2506.05062v2">Debatable Intelligence: Benchmarking LLM Judges via Debate Speech Evaluation</a></div>
-    <div class="paper-meta">
-      📅 2025-09-09
-      | 💬 EMNLP 2025. Code: https://github.com/noy-sternlicht/Debatable-Intelligence
-    </div>
-    <details class="paper-abstract">
-      We introduce Debate Speech Evaluation as a novel and challenging benchmark for assessing LLM judges. Evaluating debate speeches requires a deep understanding of the speech at multiple levels, including argument strength and relevance, the coherence and organization of the speech, the appropriateness of its style and tone, and so on. This task involves a unique set of cognitive abilities that previously received limited attention in systematic LLM benchmarking. To explore such skills, we leverage a dataset of over 600 meticulously annotated debate speeches and present the first in-depth analysis of how state-of-the-art LLMs compare to human judges on this task. Our findings reveal a nuanced picture: while larger models can approximate individual human judgments in some respects, they differ substantially in their overall judgment behavior. We also investigate the ability of frontier LLMs to generate persuasive, opinionated speeches, showing that models may perform at a human level on this task.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2509.07445v1">Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions</a></div>
-    <div class="paper-meta">
-      📅 2025-09-09
-      | 💬 Accepted at CoRL 2025
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) are beginning to automate reward design for dexterous manipulation. However, no prior work has considered tactile sensing, which is known to be critical for human-like dexterity. We present Text2Touch, bringing LLM-crafted rewards to the challenging task of multi-axis in-hand object rotation with real-world vision based tactile sensing in palm-up and palm-down configurations. Our prompt engineering strategy scales to over 70 environment variables, and sim-to-real distillation enables successful policy transfer to a tactile-enabled fully actuated four-fingered dexterous robot hand. Text2Touch significantly outperforms a carefully tuned human-engineered baseline, demonstrating superior rotation speed and stability while relying on reward functions that are an order of magnitude shorter and simpler. These results illustrate how LLM-designed rewards can significantly reduce the time from concept to deployable dexterous tactile skills, supporting more rapid and scalable multimodal robot learning. Project website: https://hpfield.github.io/text2touch-website
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2508.20024v2">Using item recommendations and LLMs in marketing email titles</a></div>
-    <div class="paper-meta">
-      📅 2025-09-09
-      | 💬 Accepted to The Second Workshop on Generative AI for E-commerce (GenAIECommerce '25), held September 22, 2025, in Prague, Czech Republic. 3 figures
-    </div>
-    <details class="paper-abstract">
-      E-commerce marketplaces make use of a number of marketing channels like emails, push notifications, etc. to reach their users and stimulate purchases. Personalized emails especially are a popular touch point for marketers to inform users of latest items in stock, especially for those who stopped visiting the marketplace. Such emails contain personalized recommendations tailored to each user's interests, enticing users to buy relevant items. A common limitation of these emails is that the primary entry point, the title of the email, tends to follow fixed templates, failing to inspire enough interest in the contents. In this work, we explore the potential of large language models (LLMs) for generating thematic titles that reflect the personalized content of the emails. We perform offline simulations and conduct online experiments on the order of millions of users, finding our techniques useful in improving the engagement between customers and our emails. We highlight key findings and learnings as we productionize the safe and automated generation of email titles for millions of users.
     </details>
 </div>

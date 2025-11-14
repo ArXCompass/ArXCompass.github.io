@@ -27,7 +27,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2307.13850v1">MAEA: Multimodal Attribution for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2023-07-25
+    </div>
+    <details class="paper-abstract">
+      Understanding multimodal perception for embodied AI is an open question because such inputs may contain highly complementary as well as redundant information for the task. A relevant direction for multimodal policies is understanding the global trends of each modality at the fusion layer. To this end, we disentangle the attributions for visual, language, and previous action inputs across different policies trained on the ALFRED dataset. Attribution analysis can be utilized to rank and group the failure scenarios, investigate modeling and dataset biases, and critically analyze multimodal EAI policies for robustness and user trust before deployment. We present MAEA, a framework to compute global attributions per modality of any differentiable policy. In addition, we show how attributions enable lower-level behavior analysis in EAI policies for language and visual attributions.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2307.11343v1">A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2023-07-21
+      | 💬 5 pages, 2 figures, 5 tables, accept by Robotics: Science and Systems 2023 - Workshop Interdisciplinary Exploration of Generalizable Manipulation Policy Learning:Paradigms and Debates
+    </div>
+    <details class="paper-abstract">
+      The advent of Chat-GPT has led to a surge of interest in Embodied AI. However, many existing Embodied AI models heavily rely on massive interactions with training environments, which may not be practical in real-world situations. To this end, the Maniskill2 has introduced a full-physics simulation benchmark for manipulating various 3D objects. This benchmark enables agents to be trained using diverse datasets of demonstrations and evaluates their ability to generalize to unseen scenarios in testing environments. In this paper, we propose a novel two-stage fine-tuning strategy that aims to further enhance the generalization capability of our model based on the Maniskill2 benchmark. Through extensive experiments, we demonstrate the effectiveness of our approach by achieving the 1st prize in all three tracks of the ManiSkill2 Challenge. Our findings highlight the potential of our method to improve the generalization abilities of Embodied AI models and pave the way for their ractical applications in real-world scenarios. All codes and models of our solution is available at https://github.com/xtli12/GXU-LIPE.git
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2307.11343v1">A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI</a></div>
     <div class="paper-meta">
       📅 2023-07-21
       | 💬 5 pages, 2 figures, 5 tables, accept by Robotics: Science and Systems 2023 - Workshop Interdisciplinary Exploration of Generalizable Manipulation Policy Learning:Paradigms and Debates

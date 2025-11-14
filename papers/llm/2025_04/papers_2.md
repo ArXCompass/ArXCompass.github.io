@@ -15,105 +15,10 @@
 - [Part 9](papers_9.md)
 - [Part 10](papers_10.md)
 - [Part 11](papers_11.md)
+- [Part 12](papers_12.md)
 
 ## Papers
 
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19675v1">Annif at SemEval-2025 Task 5: Traditional XMTC augmented by LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 6 pages, 4 figures, submitted to SemEval-2025 workshop Task 5: LLMs4Subjects
-    </div>
-    <details class="paper-abstract">
-      This paper presents the Annif system in SemEval-2025 Task 5 (LLMs4Subjects), which focussed on subject indexing using large language models (LLMs). The task required creating subject predictions for bibliographic records from the bilingual TIBKAT database using the GND subject vocabulary. Our approach combines traditional natural language processing and machine learning techniques implemented in the Annif toolkit with innovative LLM-based methods for translation and synthetic data generation, and merging predictions from monolingual models. The system ranked first in the all-subjects category and second in the tib-core-subjects category in the quantitative evaluation, and fourth in qualitative evaluations. These findings demonstrate the potential of combining traditional XMTC algorithms with modern LLM techniques to improve the accuracy and efficiency of subject indexing in multilingual contexts.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19674v1">$\texttt{SAGE}$: A Generic Framework for LLM Safety Evaluation</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 24 pages, 9 main pages excluding references and appendix
-    </div>
-    <details class="paper-abstract">
-      Safety evaluation of Large Language Models (LLMs) has made progress and attracted academic interest, but it remains challenging to keep pace with the rapid integration of LLMs across diverse applications. Different applications expose users to various harms, necessitating application-specific safety evaluations with tailored harms and policies. Another major gap is the lack of focus on the dynamic and conversational nature of LLM systems. Such potential oversights can lead to harms that go unnoticed in standard safety benchmarks. This paper identifies the above as key requirements for robust LLM safety evaluation and recognizing that current evaluation methodologies do not satisfy these, we introduce the $\texttt{SAGE}$ (Safety AI Generic Evaluation) framework. $\texttt{SAGE}$ is an automated modular framework designed for customized and dynamic harm evaluations. It utilizes adversarial user models that are system-aware and have unique personalities, enabling a holistic red-teaming evaluation. We demonstrate $\texttt{SAGE}$'s effectiveness by evaluating seven state-of-the-art LLMs across three applications and harm policies. Our experiments with multi-turn conversational evaluations revealed a concerning finding that harm steadily increases with conversation length. Furthermore, we observe significant disparities in model behavior when exposed to different user personalities and scenarios. Our findings also reveal that some models minimize harmful outputs by employing severe refusal tactics that can hinder their usefulness. These insights highlight the necessity of adaptive and context-specific testing to ensure better safety alignment and safer deployment of LLMs in real-world scenarios.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.13918v4">Geo-Llama: Leveraging LLMs for Human Mobility Trajectory Generation with Spatiotemporal Constraints</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-    </div>
-    <details class="paper-abstract">
-      Generating realistic human mobility data is essential for various application domains, including transportation, urban planning, and epidemic control, as real data is often inaccessible to researchers due to high costs and privacy concerns. Existing deep generative models learn from real trajectories to generate synthetic ones. Despite the progress, most of them suffer from training stability issues and scale poorly with increasing data size. More importantly, they often lack control mechanisms to guide the generated trajectories under constraints such as enforcing specific visits. To address these limitations, we formally define the controlled trajectory generation problem for effectively handling multiple spatiotemporal constraints. We introduce Geo-Llama, a novel LLM finetuning framework that can enforce multiple explicit visit constraints while maintaining contextual coherence of the generated trajectories. In this approach, pre-trained LLMs are fine-tuned on trajectory data with a visit-wise permutation strategy where each visit corresponds to a specific time and location. This strategy enables the model to capture spatiotemporal patterns regardless of visit orders while maintaining flexible and in-context constraint integration through prompts during generation. Extensive experiments on real-world and synthetic datasets validate the effectiveness of Geo-Llama, demonstrating its versatility and robustness in handling a broad range of constraints to generate more realistic trajectories compared to existing methods.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19611v1">Scene2Hap: Combining LLMs and Physical Modeling for Automatically Generating Vibrotactile Signals for Full VR Scenes</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-    </div>
-    <details class="paper-abstract">
-      Haptic feedback contributes to immersive virtual reality (VR) experiences. Designing such feedback at scale, for all objects within a VR scene and their respective arrangements, remains a time-consuming task. We present Scene2Hap, an LLM-centered system that automatically designs object-level vibrotactile feedback for entire VR scenes based on the objects' semantic attributes and physical context. Scene2Hap employs a multimodal large language model to estimate the semantics and physical context of each object, including its material properties and vibration behavior, from the multimodal information present in the VR scene. This semantic and physical context is then used to create plausible vibrotactile signals by generating or retrieving audio signals and converting them to vibrotactile signals. For the more realistic spatial rendering of haptics in VR, Scene2Hap estimates the propagation and attenuation of vibration signals from their source across objects in the scene, considering the estimated material properties and physical context, such as the distance and contact between virtual objects. Results from two user studies confirm that Scene2Hap successfully estimates the semantics and physical context of VR scenes, and the physical modeling of vibration propagation improves usability, perceived materiality, and spatial awareness.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10652v2">Cutting Through the Clutter: The Potential of LLMs for Efficient Filtration in Systematic Literature Reviews</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 6 pages, 5 figures, 1 table
-    </div>
-    <details class="paper-abstract">
-      Systematic literature reviews (SLRs) are essential but labor-intensive due to high publication volumes and inefficient keyword-based filtering. To streamline this process, we evaluate Large Language Models (LLMs) for enhancing efficiency and accuracy in corpus filtration while minimizing manual effort. Our open-source tool LLMSurver presents a visual interface to utilize LLMs for literature filtration, evaluate the results, and refine queries in an interactive way. We assess the real-world performance of our approach in filtering over 8.3k articles during a recent survey construction, comparing results with human efforts. The findings show that recent LLM models can reduce filtering time from weeks to minutes. A consensus scheme ensures recall rates >98.8%, surpassing typical human error thresholds and improving selection accuracy. This work advances literature review methodologies and highlights the potential of responsible human-AI collaboration in academic research.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19516v1">Bullet: Boosting GPU Utilization for LLM Serving via Dynamic Spatial-Temporal Orchestration</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-    </div>
-    <details class="paper-abstract">
-      Modern LLM serving systems confront inefficient GPU utilization due to the fundamental mismatch between compute-intensive prefill and memory-bound decode phases. While current practices attempt to address this by organizing these phases into hybrid batches, such solutions create an inefficient tradeoff that sacrifices either throughput or latency, leaving substantial GPU resources underutilized. We identify two key root causes: 1) the prefill phase suffers from suboptimal compute utilization due to wave quantization and attention bottlenecks. 2) hybrid batches disproportionately prioritize latency over throughput, resulting in wasted compute and memory bandwidth. To mitigate the issues, we present Bullet, a novel spatial-temporal orchestration system that eliminates these inefficiencies through precise phase coordination. Bullet enables concurrent execution of prefill and decode phases, while dynamically provisioning GPU resources using real-time performance modeling. By integrating SLO-aware scheduling and adaptive resource allocation, Bullet maximizes utilization without compromising latency targets. Experimental evaluations on real-world workloads demonstrate that Bullet delivers 1.26x average throughput gains (up to 1.55x) over state-of-the-arts, while consistently meeting latency constraints.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.17596v3">LiveIdeaBench: Evaluating LLMs' Divergent Thinking for Scientific Idea Generation with Minimal Context</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 Updated manuscript and title
-    </div>
-    <details class="paper-abstract">
-      While Large Language Models (LLMs) demonstrate remarkable capabilities in scientific tasks such as literature analysis and experimental design (e.g., accurately extracting key findings from papers or generating coherent experimental procedures), existing evaluation benchmarks primarily assess performance using rich contextual inputs. We introduce LiveIdeaBench, a comprehensive benchmark evaluating LLMs' scientific idea generation by assessing divergent thinking capabilities using single-keyword prompts. Drawing from Guilford's creativity theory, our benchmark employs a dynamic panel of state-of-the-art LLMs to assess generated ideas across five key dimensions: originality, feasibility, fluency, flexibility, and clarity. Through extensive experimentation with over 40 leading models across 1,180 keywords spanning 22 scientific domains, we reveal that the scientific idea generation capabilities measured by our benchmark, are poorly predicted by standard metrics of general intelligence. Our results demonstrate that models like QwQ-32B-preview achieve creative performance comparable to top-tier models such as claude-3.7-sonnet:thinking, despite significant gaps in their general intelligence scores. These findings highlight the need for specialized evaluation benchmarks for scientific idea generation and suggest that enhancing these idea generation capabilities in LLMs may require different training strategies than those used for improving general problem-solving abilities, potentially enabling a wider range of AI tools tailored for different stages of the scientific process.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.08985v2">Learning from Elders: Making an LLM-powered Chatbot for Retirement Communities more Accessible through User-centered Design</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 Accepted as Research talk for Considering Cultural and Linguistic Diversity in AI Applications workshop at CALD-AI@ASIS&T 2025
-    </div>
-    <details class="paper-abstract">
-      Low technology and eHealth literacy among older adults in retirement communities hinder engagement with digital tools. To address this, we designed an LLM-powered chatbot prototype using a human-centered approach for a local retirement community. Through interviews and persona development, we prioritized accessibility and dual functionality: simplifying internal information retrieval and improving technology and eHealth literacy. A pilot trial with residents demonstrated high satisfaction and ease of use, but also identified areas for further improvement. Based on the feedback, we refined the chatbot using GPT-3.5 Turbo and Streamlit. The chatbot employs tailored prompt engineering to deliver concise responses. Accessible features like adjustable font size, interface theme and personalized follow-up responses were implemented. Future steps include enabling voice-to-text function and longitudinal intervention studies. Together, our results highlight the potential of LLM-driven chatbots to empower older adults through accessible, personalized interactions, bridging literacy gaps in retirement communities.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19487v1">Evolution of Cooperation in LLM-Agent Societies: A Preliminary Study Using Different Punishment Strategies</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-      | 💬 19 pages, 10 figures, Accepted for presentation as a full paper at the COINE 2025 workshop at AAMAS 2025 (https://coin-workshop.github.io/coine-2025-detroit/accepted_for_presentation.html)
-    </div>
-    <details class="paper-abstract">
-      The evolution of cooperation has been extensively studied using abstract mathematical models and simulations. Recent advances in Large Language Models (LLM) and the rise of LLM agents have demonstrated their ability to perform social reasoning, thus providing an opportunity to test the emergence of norms in more realistic agent-based simulations with human-like reasoning using natural language. In this research, we investigate whether the cooperation dynamics presented in Boyd and Richerson's model persist in a more realistic simulation of the diner's dilemma using LLM agents compared to the abstract mathematical nature in the work of Boyd and Richerson. Our findings indicate that agents follow the strategies defined in the Boyd and Richerson model, and explicit punishment mechanisms drive norm emergence, reinforcing cooperative behaviour even when the agent strategy configuration varies. Our results suggest that LLM-based Multi-Agent System simulations, in fact, can replicate the evolution of cooperation predicted by the traditional mathematical models. Moreover, our simulations extend beyond the mathematical models by integrating natural language-driven reasoning and a pairwise imitation method for strategy adoption, making them a more realistic testbed for cooperative behaviour in MASs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.09013v2">AI-LieDar: Examine the Trade-off Between Utility and Truthfulness in LLM Agents</a></div>
-    <div class="paper-meta">
-      📅 2025-04-28
-    </div>
-    <details class="paper-abstract">
-      Truthfulness (adherence to factual accuracy) and utility (satisfying human needs and instructions) are both fundamental aspects of Large Language Models, yet these goals often conflict (e.g., sell a car with known flaws), which makes it challenging to achieve both in real-world deployments. We propose AI-LieDar, a framework to study how LLM-based agents navigate these scenarios in an multi-turn interactive setting. We design a set of real-world scenarios where language agents are instructed to achieve goals that are in conflict with being truthful during a multi-turn conversation with simulated human agents. To evaluate the truthfulness at large scale, we develop a truthfulness detector inspired by psychological literature to assess the agents' responses. Our experiment demonstrates that all models are truthful less than 50% of the time, though truthfulness and goal achievement (utility) rates vary across models. We further test the steerability of LLMs towards truthfulness, finding that models can be directed to be truthful or deceptive, and even truth-steered models still lie. These findings reveal the complex nature of truthfulness in LLMs and underscore the importance of further research to ensure the safe and reliable deployment of LLMs and LLM-based agents.
-    </details>
-</div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.19449v1">R-Sparse: Rank-Aware Activation Sparsity for Efficient LLM Inference</a></div>
     <div class="paper-meta">
@@ -364,6 +269,110 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19793v1">Prompt Injection Attack to Tool Selection in LLM Agents</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Tool selection is a key component of LLM agents. The process operates through a two-step mechanism - \emph{retrieval} and \emph{selection} - to pick the most appropriate tool from a tool library for a given task. In this work, we introduce \textit{ToolHijacker}, a novel prompt injection attack targeting tool selection in no-box scenarios. ToolHijacker injects a malicious tool document into the tool library to manipulate the LLM agent's tool selection process, compelling it to consistently choose the attacker's malicious tool for an attacker-chosen target task. Specifically, we formulate the crafting of such tool documents as an optimization problem and propose a two-phase optimization strategy to solve it. Our extensive experimental evaluation shows that ToolHijacker is highly effective, significantly outperforming existing manual-based and automated prompt injection attacks when applied to tool selection. Moreover, we explore various defenses, including prevention-based defenses (StruQ and SecAlign) and detection-based defenses (known-answer detection, perplexity detection, and perplexity windowed detection). Our experimental results indicate that these defenses are insufficient, highlighting the urgent need for developing new defense strategies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.03111v2">Les Dissonances: Cross-Tool Harvesting and Polluting in Multi-Tool Empowered LLM Agents</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Large Language Model (LLM) agents are autonomous systems powered by LLMs, capable of reasoning and planning to solve problems by leveraging a set of tools. However, the integration of multi-tool capabilities in LLM agents introduces challenges in securely managing tools, ensuring their compatibility, handling dependency relationships, and protecting control flows within LLM agent workflows. In this paper, we present the first systematic security analysis of task control flows in multi-tool-enabled LLM agents. We identify a novel threat, Cross-Tool Harvesting and Polluting (XTHP), which includes multiple attack vectors to first hijack the normal control flows of agent tasks, and then collect and pollute confidential or private information within LLM agent systems. To understand the impact of this threat, we developed Chord, a dynamic scanning tool designed to automatically detect real-world agent tools susceptible to XTHP attacks. Our evaluation of 66 real-world tools from the repositories of two major LLM agent development frameworks, LangChain and LlamaIndex, revealed a significant security concern: 75\% are vulnerable to XTHP attacks, highlighting the prevalence of this threat.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19759v1">Moral Reasoning Across Languages: The Critical Role of Low-Resource Languages in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+      | 💬 5 pages, 2 figures
+    </div>
+    <details class="paper-abstract">
+      In this paper, we introduce the Multilingual Moral Reasoning Benchmark (MMRB) to evaluate the moral reasoning abilities of large language models (LLMs) across five typologically diverse languages and three levels of contextual complexity: sentence, paragraph, and document. Our results show moral reasoning performance degrades with increasing context complexity, particularly for low-resource languages such as Vietnamese. We further fine-tune the open-source LLaMA-3-8B model using curated monolingual data for alignment and poisoning. Surprisingly, low-resource languages have a stronger impact on multilingual reasoning than high-resource ones, highlighting their critical role in multilingual NLP.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.04178v2">MSL: Not All Tokens Are What You Need for Tuning LLM as a Recommender</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+      | 💬 Accepted by SIGIR2025
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs), known for their comprehension capabilities and extensive knowledge, have been increasingly applied to recommendation systems (RS). Given the fundamental gap between the mechanism of LLMs and the requirement of RS, researchers have focused on fine-tuning LLMs with recommendation-specific data to enhance their performance. Language Modeling Loss (LML), originally designed for language generation tasks, is commonly adopted. However, we identify two critical limitations of LML: 1) it exhibits significant divergence from the recommendation objective; 2) it erroneously treats all fictitious item descriptions as negative samples, introducing misleading training signals. To address these limitations, we propose a novel Masked Softmax Loss (MSL) tailored for fine-tuning LLMs on recommendation. MSL improves LML by identifying and masking invalid tokens that could lead to fictitious item descriptions during loss computation. This strategy can effectively avoid the interference from erroneous negative signals and ensure well alignment with the recommendation objective supported by theoretical guarantees. During implementation, we identify a potential challenge related to gradient vanishing of MSL. To overcome this, we further introduce the temperature coefficient and propose an Adaptive Temperature Strategy (ATS) that adaptively adjusts the temperature without requiring extensive hyperparameter tuning. Extensive experiments conducted on four public datasets further validate the effectiveness of MSL, achieving an average improvement of 42.24% in NDCG@10. The code is available at https://github.com/WANGBohaO-jpg/MSL.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19746v1">FineQ: Software-Hardware Co-Design for Low-Bit Fine-Grained Mixed-Precision Quantization of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+      | 💬 DATE 2025
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have significantly advanced the natural language processing paradigm but impose substantial demands on memory and computational resources. Quantization is one of the most effective ways to reduce memory consumption of LLMs. However, advanced single-precision quantization methods experience significant accuracy degradation when quantizing to ultra-low bits. Existing mixed-precision quantization methods are quantized by groups with coarse granularity. Employing high precision for group data leads to substantial memory overhead, whereas low precision severely impacts model accuracy. To address this issue, we propose FineQ, software-hardware co-design for low-bit fine-grained mixed-precision quantization of LLMs. First, FineQ partitions the weights into finer-grained clusters and considers the distribution of outliers within these clusters, thus achieving a balance between model accuracy and memory overhead. Then, we propose an outlier protection mechanism within clusters that uses 3 bits to represent outliers and introduce an encoding scheme for index and data concatenation to enable aligned memory access. Finally, we introduce an accelerator utilizing temporal coding that effectively supports the quantization algorithm while simplifying the multipliers in the systolic array. FineQ achieves higher model accuracy compared to the SOTA mixed-precision quantization algorithm at a close average bit-width. Meanwhile, the accelerator achieves up to 1.79x energy efficiency and reduces the area of the systolic array by 61.2%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19734v1">LLM-Assisted Automated Deductive Coding of Dialogue Data: Leveraging Dialogue-Specific Characteristics to Enhance Contextual Understanding</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Dialogue data has been a key source for understanding learning processes, offering critical insights into how students engage in collaborative discussions and how these interactions shape their knowledge construction. The advent of Large Language Models (LLMs) has introduced promising opportunities for advancing qualitative research, particularly in the automated coding of dialogue data. However, the inherent contextual complexity of dialogue presents unique challenges for these models, especially in understanding and interpreting complex contextual information. This study addresses these challenges by developing a novel LLM-assisted automated coding approach for dialogue data. The novelty of our proposed framework is threefold: 1) We predict the code for an utterance based on dialogue-specific characteristics -- communicative acts and communicative events -- using separate prompts following the role prompts and chain-of-thoughts methods; 2) We engaged multiple LLMs including GPT-4-turbo, GPT-4o, DeepSeek in collaborative code prediction; 3) We leveraged the interrelation between events and acts to implement consistency checking using GPT-4o. In particular, our contextual consistency checking provided a substantial accuracy improvement. We also found the accuracy of act predictions was consistently higher than that of event predictions. This study contributes a new methodological framework for enhancing the precision of automated coding of dialogue data as well as offers a scalable solution for addressing the contextual challenges inherent in dialogue analysis.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19730v1">Evaluate-and-Purify: Fortifying Code Language Models Against Adversarial Attacks Using LLM-as-a-Judge</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+      | 💬 25 pages, 6 figures
+    </div>
+    <details class="paper-abstract">
+      The widespread adoption of code language models in software engineering tasks has exposed vulnerabilities to adversarial attacks, especially the identifier substitution attacks. Although existing identifier substitution attackers demonstrate high success rates, they often produce adversarial examples with unnatural code patterns. In this paper, we systematically assess the quality of adversarial examples using LLM-as-a-Judge. Our analysis reveals that over 80% of adversarial examples generated by state-of-the-art identifier substitution attackers (e.g., ALERT) are actually detectable. Based on this insight, we propose EP-Shield, a unified framework for evaluating and purifying identifier substitution attacks via naturalness-aware reasoning. Specifically, we first evaluate the naturalness of code and identify the perturbed adversarial code, then purify it so that the victim model can restore correct prediction. Extensive experiments demonstrate the superiority of EP-Shield over adversarial fine-tuning (up to 83.36% improvement) and its lightweight design 7B parameters) with GPT-4-level performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2503.03108v2">SoK: Knowledge is All You Need: Accelerating Last Mile Delivery for Automated Provenance-based Intrusion Detection with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Recently, provenance-based intrusion detection systems (PIDSes) have been widely proposed for endpoint threat analysis. However, due to the lack of systematic integration and utilization of knowledge, existing PIDSes still require significant manual intervention for practical deployment, making full automation challenging. This paper presents a disruptive innovation by categorizing PIDSes according to the types of knowledge they utilize. In response to the prevalent issue of ``knowledge silos problem'' in existing research, we introduce a novel knowledge-driven provenance-based intrusion detection framework, powered by large language models (LLMs). We also present OmniSec, a best practice system built upon this framework. By integrating attack representation knowledge, threat intelligence knowledge, and benign behavior knowledge, OmniSec outperforms the state-of-the-art approaches on public benchmark datasets. OmniSec is available online at https://anonymous.4open.science/r/PIDS-with-LLM-613B.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19720v1">Taming the Titans: A Survey of Efficient LLM Inference Serving</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+      | 💬 work in progress;11 pages of main paper with 7 main figures, overall 20 pages
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) for Generative AI have achieved remarkable progress, evolving into sophisticated and versatile tools widely adopted across various domains and applications. However, the substantial memory overhead caused by their vast number of parameters, combined with the high computational demands of the attention mechanism, poses significant challenges in achieving low latency and high throughput for LLM inference services. Recent advancements, driven by groundbreaking research, have significantly accelerated progress in this field. This paper provides a comprehensive survey of these methods, covering fundamental instance-level approaches, in-depth cluster-level strategies, emerging scenario directions, and other miscellaneous but important areas. At the instance level, we review model placement, request scheduling, decoding length prediction, storage management, and the disaggregation paradigm. At the cluster level, we explore GPU cluster deployment, multi-instance load balancing, and cloud service solutions. For emerging scenarios, we organize the discussion around specific tasks, modules, and auxiliary methods. To ensure a holistic overview, we also highlight several niche yet critical areas. Finally, we outline potential research directions to further advance the field of LLM inference serving.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.05999v2">LLMPot: Dynamically Configured LLM-based Honeypot for Industrial Protocol and Physical Process Emulation</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Industrial Control Systems (ICS) are extensively used in critical infrastructures ensuring efficient, reliable, and continuous operations. However, their increasing connectivity and addition of advanced features make them vulnerable to cyber threats, potentially leading to severe disruptions in essential services. In this context, honeypots play a vital role by acting as decoy targets within ICS networks, or on the Internet, helping to detect, log, analyze, and develop mitigations for ICS-specific cyber threats. Deploying ICS honeypots, however, is challenging due to the necessity of accurately replicating industrial protocols and device characteristics, a crucial requirement for effectively mimicking the unique operational behavior of different industrial systems. Moreover, this challenge is compounded by the significant manual effort required in also mimicking the control logic the PLC would execute, in order to capture attacker traffic aiming to disrupt critical infrastructure operations. In this paper, we propose LLMPot, a novel approach for designing honeypots in ICS networks harnessing the potency of Large Language Models (LLMs). LLMPot aims to automate and optimize the creation of realistic honeypots with vendor-agnostic configurations, and for any control logic, aiming to eliminate the manual effort and specialized knowledge traditionally required in this domain. We conducted extensive experiments focusing on a wide array of parameters, demonstrating that our LLM-based approach can effectively create honeypot devices implementing different industrial protocols and diverse control logic.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2504.19678v1">From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review</a></div>
+    <div class="paper-meta">
+      📅 2025-04-28
+    </div>
+    <details class="paper-abstract">
+      Large language models and autonomous AI agents have evolved rapidly, resulting in a diverse array of evaluation benchmarks, frameworks, and collaboration protocols. However, the landscape remains fragmented and lacks a unified taxonomy or comprehensive survey. Therefore, we present a side-by-side comparison of benchmarks developed between 2019 and 2025 that evaluate these models and agents across multiple domains. In addition, we propose a taxonomy of approximately 60 benchmarks that cover general and academic knowledge reasoning, mathematical problem-solving, code generation and software engineering, factual grounding and retrieval, domain-specific evaluations, multimodal and embodied tasks, task orchestration, and interactive assessments. Furthermore, we review AI-agent frameworks introduced between 2023 and 2025 that integrate large language models with modular toolkits to enable autonomous decision-making and multi-step reasoning. Moreover, we present real-world applications of autonomous AI agents in materials science, biomedical research, academic ideation, software engineering, synthetic data generation, chemical reasoning, mathematical problem-solving, geographic information systems, multimedia, healthcare, and finance. We then survey key agent-to-agent collaboration protocols, namely the Agent Communication Protocol (ACP), the Model Context Protocol (MCP), and the Agent-to-Agent Protocol (A2A). Finally, we discuss recommendations for future research, focusing on advanced reasoning strategies, failure modes in multi-agent LLM systems, automated scientific discovery, dynamic tool integration via reinforcement learning, integrated search capabilities, and security vulnerabilities in agent protocols.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2504.19394v1">LLMs for Engineering: Teaching Models to Design High Powered Rockets</a></div>
     <div class="paper-meta">
       📅 2025-04-27
@@ -513,6 +522,25 @@
     </div>
     <details class="paper-abstract">
       The perceived quality of the explanations accompanying e-government services is key to gaining trust in these institutions, consequently amplifying further usage of these services. Recent advances in generative AI, and concretely in Large Language Models (LLMs) allow the automation of such content articulations, eliciting explanations' interpretability and fidelity, and more generally, adapting content to various audiences. However, selecting the right LLM type for this has become a non-trivial task for e-government service providers. In this work, we adapted a previously developed scale to assist with this selection, providing a systematic approach for the comparative analysis of the perceived quality of explanations generated by various LLMs. We further demonstrated its applicability through the tax-return process, using it as an exemplar use case that could benefit from employing an LLM to generate explanations about tax refund decisions. This was attained through a user study with 128 survey respondents who were asked to rate different versions of LLM-generated explanations about tax refund decisions, providing a methodological basis for selecting the most appropriate LLM. Recognizing the practical challenges of conducting such a survey, we also began exploring the automation of this process by attempting to replicate human feedback using a selection of cutting-edge predictive techniques.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.19076v1">LLM-Evaluation Tropes: Perspectives on the Validity of LLM-Evaluations</a></div>
+    <div class="paper-meta">
+      📅 2025-04-27
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) are increasingly used to evaluate information retrieval (IR) systems, generating relevance judgments traditionally made by human assessors. Recent empirical studies suggest that LLM-based evaluations often align with human judgments, leading some to suggest that human judges may no longer be necessary, while others highlight concerns about judgment reliability, validity, and long-term impact. As IR systems begin incorporating LLM-generated signals, evaluation outcomes risk becoming self-reinforcing, potentially leading to misleading conclusions. This paper examines scenarios where LLM-evaluators may falsely indicate success, particularly when LLM-based judgments influence both system development and evaluation. We highlight key risks, including bias reinforcement, reproducibility challenges, and inconsistencies in assessment methodologies. To address these concerns, we propose tests to quantify adverse effects, guardrails, and a collaborative framework for constructing reusable test collections that integrate LLM judgments responsibly. By providing perspectives from academia and industry, this work aims to establish best practices for the principled use of LLMs in IR evaluation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.12098v2">Gauging Overprecision in LLMs: An Empirical Study</a></div>
+    <div class="paper-meta">
+      📅 2025-04-27
+      | 💬 16 pages
+    </div>
+    <details class="paper-abstract">
+      Recently, overconfidence in large language models (LLMs) has garnered considerable attention due to its fundamental importance in quantifying the trustworthiness of LLM generation. However, existing approaches prompt the \textit{black box LLMs} to produce their confidence (\textit{verbalized confidence}), which can be subject to many biases and hallucinations. Inspired by a different aspect of overconfidence in cognitive science called \textit{overprecision}, we designed a framework for its study in black box LLMs. This framework contains three main phases: 1) generation, 2) refinement and 3) evaluation. In the generation phase we prompt the LLM to generate answers to numerical questions in the form of intervals with a certain level of confidence. This confidence level is imposed in the prompt and not required for the LLM to generate as in previous approaches. We use various prompting techniques and use the same prompt multiple times to gauge the effects of randomness in the generation process. In the refinement phase, answers from the previous phase are refined to generate better answers. The LLM answers are evaluated and studied in the evaluation phase to understand its internal workings. This study allowed us to gain various insights into LLM overprecision: 1) LLMs are highly uncalibrated for numerical tasks 2) there is no correlation between the length of the interval and the imposed confidence level, which can be symptomatic of a a) lack of understanding of the concept of confidence or b) inability to adjust self-confidence by following instructions, {3) LLM numerical precision differs depending on the task, scale of answer and prompting technique 4) Refinement of answers doesn't improve precision in most cases. We believe this study offers new perspectives on LLM overconfidence and serves as a strong baseline for overprecision in LLMs.
     </details>
 </div>
 <div class="paper-card">
@@ -937,34 +965,5 @@
     </div>
     <details class="paper-abstract">
       Mild Traumatic Brain Injury (TBI) detection presents significant challenges due to the subtle and often ambiguous presentation of symptoms in medical imaging, making accurate diagnosis a complex task. To address these challenges, we propose Proof-of-TBI, a medical diagnosis support system that integrates multiple fine-tuned vision-language models with the OpenAI-o3 reasoning large language model (LLM). Our approach fine-tunes multiple vision-language models using a labeled dataset of TBI MRI scans, training them to diagnose TBI symptoms effectively. The predictions from these models are aggregated through a consensus-based decision-making process. The system evaluates the predictions from all fine-tuned vision language models using the OpenAI-o3 reasoning LLM, a model that has demonstrated remarkable reasoning performance, to produce the most accurate final diagnosis. The LLM Agents orchestrates interactions between the vision-language models and the reasoning LLM, managing the final decision-making process with transparency, reliability, and automation. This end-to-end decision-making workflow combines the vision-language model consortium with the OpenAI-o3 reasoning LLM, enabled by custom prompt engineering by the LLM agents. The prototype for the proposed platform was developed in collaboration with the U.S. Army Medical Research team in Newport News, Virginia, incorporating five fine-tuned vision-language models. The results demonstrate the transformative potential of combining fine-tuned vision-language model inputs with the OpenAI-o3 reasoning LLM to create a robust, secure, and highly accurate diagnostic system for mild TBI prediction. To the best of our knowledge, this research represents the first application of fine-tuned vision-language models integrated with a reasoning LLM for TBI prediction tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.21465v3">ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2025-04-25
-    </div>
-    <details class="paper-abstract">
-      With the widespread deployment of long-context large language models (LLMs), there has been a growing demand for efficient support of high-throughput inference. However, as the key-value (KV) cache expands with the sequence length, the increasing memory footprint and the need to access it for each token generation both result in low throughput when serving long-context LLMs. While various dynamic sparse attention methods have been proposed to speed up inference while maintaining generation quality, they either fail to sufficiently reduce GPU memory consumption or introduce significant decoding latency by offloading the KV cache to the CPU. We present ShadowKV, a high-throughput long-context LLM inference system that stores the low-rank key cache and offloads the value cache to reduce the memory footprint for larger batch sizes and longer sequences. To minimize decoding latency, ShadowKV employs an accurate KV selection strategy that reconstructs minimal sparse KV pairs on-the-fly. By evaluating ShadowKV on a broad range of benchmarks, including RULER, LongBench, and Needle In A Haystack, and models like Llama-3.1-8B, Llama-3-8B-1M, GLM-4-9B-1M, Yi-9B-200K, Phi-3-Mini-128K, and Qwen2-7B-128K, we demonstrate that it can support up to 6$\times$ larger batch sizes and boost throughput by up to 3.04$\times$ on an A100 GPU without sacrificing accuracy, even surpassing the performance achievable with infinite batch size under the assumption of infinite GPU memory. The code is available at https://github.com/bytedance/ShadowKV.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.16543v2">Multi-Agent LLMs Ensemble for Efficient Atrial Fibrillation Annotation of ECG Reports</a></div>
-    <div class="paper-meta">
-      📅 2025-04-25
-      | 💬 26 pages, 12 figures
-    </div>
-    <details class="paper-abstract">
-      This study introduces a novel multiagent ensemble method powered by LLMs to address a key challenge in ML - data labeling, particularly in large-scale EHR datasets. Manual labeling of such datasets requires domain expertise and is labor-intensive, time-consuming, expensive, and error-prone. To overcome this bottleneck, we developed an ensemble LLMs method and demonstrated its effectiveness in two real-world tasks: (1) labeling a large-scale unlabeled ECG dataset in MIMIC-IV; (2) identifying social determinants of health (SDOH) from the clinical notes of EHR. Trading off benefits and cost, we selected a pool of diverse open source LLMs with satisfactory performance. We treat each LLM's prediction as a vote and apply a mechanism of majority voting with minimal winning threshold for ensemble. We implemented an ensemble LLMs application for EHR data labeling tasks. By using the ensemble LLMs and natural language processing, we labeled MIMIC-IV ECG dataset of 623,566 ECG reports with an estimated accuracy of 98.2%. We applied the ensemble LLMs method to identify SDOH from social history sections of 1,405 EHR clinical notes, also achieving competitive performance. Our experiments show that the ensemble LLMs can outperform individual LLM even the best commercial one, and the method reduces hallucination errors. From the research, we found that (1) the ensemble LLMs method significantly reduces the time and effort required for labeling large-scale EHR data, automating the process with high accuracy and quality; (2) the method generalizes well to other text data labeling tasks, as shown by its application to SDOH identification; (3) the ensemble of a group of diverse LLMs can outperform or match the performance of the best individual LLM; and (4) the ensemble method substantially reduces hallucination errors. This approach provides a scalable and efficient solution to data-labeling challenges.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2504.12984v2">Tilus: A Virtual Machine for Arbitrary Low-Precision GPGPU Computation in LLM Serving</a></div>
-    <div class="paper-meta">
-      📅 2025-04-25
-      | 💬 18 pages, 15 figures
-    </div>
-    <details class="paper-abstract">
-      Serving Large Language Models (LLMs) is critical for AI-powered applications but demands substantial computational resources, particularly in memory bandwidth and computational throughput. Low-precision computation has emerged as a key technique to improve efficiency while reducing resource consumption. Existing approaches for generating low-precision kernels are limited to weight bit widths that are powers of two and suffer from suboptimal performance due to high-level GPU programming abstractions. These abstractions restrict critical optimizations, such as fine-grained register management and optimized memory access patterns, which are essential for efficient low-precision computations. In this paper, we introduce a virtual machine (VM) designed for General-Purpose GPU (GPGPU) computing, enabling support for low-precision data types with arbitrary bit widths while maintaining GPU programmability. The proposed VM features a thread-block-level programming model, a hierarchical memory space, a novel algebraic layout system, and extensive support for diverse low-precision data types. VM programs are compiled into highly efficient GPU programs with automatic vectorization and instruction selection. Extensive experiments demonstrate that our VM efficiently supports a full spectrum of low-precision data types, and outperforms state-of-the-art low-precision kernels on their supported types. Compared to existing compilers like Triton and Ladder, as well as hand-optimized kernels such as QuantLLM and Marlin, our VM achieves performance improvements of 1.75x, 2.61x, 1.29x and 1.03x, respectively.
     </details>
 </div>

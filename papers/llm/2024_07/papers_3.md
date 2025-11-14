@@ -12,6 +12,64 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10725v1">CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+    </div>
+    <details class="paper-abstract">
+      The rapid progress in Large Language Models (LLMs) poses potential risks such as generating unethical content. Assessing LLMs' values can help expose their misalignment, but relies on reference-free evaluators, e.g., fine-tuned LLMs or close-source ones like GPT-4, to identify values reflected in generated responses. Nevertheless, these evaluators face two challenges in open-ended value evaluation: they should align with changing human value definitions with minimal annotation, against their own bias (adaptability), and detect varying value expressions and scenarios robustly (generalizability). To handle these challenges, we introduce CLAVE, a novel framework which integrates two complementary LLMs, a large one to extract high-level value concepts from a few human labels, leveraging its extensive knowledge and generalizability, and a smaller one fine-tuned on such concepts to better align with human value understanding. This dual-model approach enables calibration with any value systems using <100 human-labeled samples per value type. Then we present ValEval, a comprehensive dataset comprising 13k+ (text,value,label) tuples across diverse domains, covering three major value systems. We benchmark the capabilities of 12+ popular LLM evaluators and analyze their strengths and weaknesses. Our findings reveal that combining fine-tuned small models and prompt-based large ones serves as a superior balance in value evaluation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10701v1">DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Work in progress
+    </div>
+    <details class="paper-abstract">
+      Recently, there has been a growing interest among large language model (LLM) developers in LLM-based document reading systems, which enable users to upload their own documents and pose questions related to the document contents, going beyond simple reading comprehension tasks. Consequently, these systems have been carefully designed to tackle challenges such as file parsing, metadata extraction, multi-modal information understanding and long-context reading. However, no current benchmark exists to evaluate their performance in such scenarios, where a raw file and questions are provided as input, and a corresponding response is expected as output. In this paper, we introduce DocBench, a new benchmark designed to evaluate LLM-based document reading systems. Our benchmark involves a meticulously crafted process, including the recruitment of human annotators and the generation of synthetic questions. It includes 229 real documents and 1,102 questions, spanning across five different domains and four major types of questions. We evaluate both proprietary LLM-based systems accessible via web interfaces or APIs, and a parse-then-read pipeline employing open-source LLMs. Our evaluations reveal noticeable gaps between existing LLM-based document reading systems and human performance, underscoring the challenges of developing proficient systems. To summarize, DocBench aims to establish a standardized benchmark for evaluating LLM-based document reading systems under diverse real-world scenarios, thereby guiding future advancements in this research area.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.10707v2">Discovering Latent Themes in Social Media Messaging: A Machine-in-the-Loop Approach Integrating LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Accepted at 19th International AAAI Conference on Web and Social Media (ICWSM-2025)
+    </div>
+    <details class="paper-abstract">
+      Grasping the themes of social media content is key to understanding the narratives that influence public opinion and behavior. The thematic analysis goes beyond traditional topic-level analysis, which often captures only the broadest patterns, providing deeper insights into specific and actionable themes such as "public sentiment towards vaccination", "political discourse surrounding climate policies," etc. In this paper, we introduce a novel approach to uncovering latent themes in social media messaging. Recognizing the limitations of the traditional topic-level analysis, which tends to capture only overarching patterns, this study emphasizes the need for a finer-grained, theme-focused exploration. Traditional theme discovery methods typically involve manual processes and a human-in-the-loop approach. While valuable, these methods face challenges in scalability, consistency, and resource intensity in terms of time and cost. To address these challenges, we propose a machine-in-the-loop approach that leverages the advanced capabilities of Large Language Models (LLMs). To demonstrate our approach, we apply our framework to contentious topics, such as climate debate and vaccine debate. We use two publicly available datasets: (1) the climate campaigns dataset of 21k Facebook ads and (2) the COVID-19 vaccine campaigns dataset of 9k Facebook ads. Our quantitative and qualitative analysis shows that our methodology yields more accurate and interpretable results compared to the baselines. Our results not only demonstrate the effectiveness of our approach in uncovering latent themes but also illuminate how these themes are tailored for demographic targeting in social media contexts. Additionally, our work sheds light on the dynamic nature of social media, revealing the shifts in the thematic focus of messaging in response to real-world events.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10652v1">Cutting Through the Clutter: The Potential of LLMs for Efficient Filtration in Systematic Literature Reviews</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 5 pages, 5 figures, 1 table
+    </div>
+    <details class="paper-abstract">
+      In academic research, systematic literature reviews are foundational and highly relevant, yet tedious to create due to the high volume of publications and labor-intensive processes involved. Systematic selection of relevant papers through conventional means like keyword-based filtering techniques can sometimes be inadequate, plagued by semantic ambiguities and inconsistent terminology, which can lead to sub-optimal outcomes. To mitigate the required extensive manual filtering, we explore and evaluate the potential of using Large Language Models (LLMs) to enhance the efficiency, speed, and precision of literature review filtering, reducing the amount of manual screening required. By using models as classification agents acting on a structured database only, we prevent common problems inherent in LLMs, such as hallucinations. We evaluate the real-world performance of such a setup during the construction of a recent literature survey paper with initially more than 8.3k potentially relevant articles under consideration and compare this with human performance on the same dataset. Our findings indicate that employing advanced LLMs like GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Flash, or Llama3 with simple prompting can significantly reduce the time required for literature filtering - from usually weeks of manual research to only a few minutes. Simultaneously, we crucially show that false negatives can indeed be controlled through a consensus scheme, achieving recalls >98.8% at or even beyond the typical human error threshold, thereby also providing for more accurate and relevant articles selected. Our research not only demonstrates a substantial improvement in the methodology of literature reviews but also sets the stage for further integration and extensive future applications of responsible AI in academic research practices.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10627v1">Arena Learning: Build Data Flywheel for LLMs Post-training via Simulated Chatbot Arena</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+    </div>
+    <details class="paper-abstract">
+      Assessing the effectiveness of large language models (LLMs) presents substantial challenges. The method of conducting human-annotated battles in an online Chatbot Arena is a highly effective evaluative technique. However, this approach is limited by the costs and time required for human annotation. In this paper, we introduce Arena Learning, an innovative offline strategy designed to simulate these arena battles using AI-driven annotations to evaluate battle outcomes, thus facilitating the continuous improvement of the target model through both supervised fine-tuning and reinforcement learning. Arena Learning comprises two key elements. First, it ensures precise evaluations and maintains consistency between offline simulations and online competitions via WizardArena, a pipeline developed to accurately predict the Elo rankings of various models using a meticulously designed offline test set. Our results demonstrate that WizardArena's predictions closely align with those from the online Arena. Second, it involves the continuous improvement of training data based on the battle results and the refined model. We establish a data flywheel to iteratively update the training data by highlighting the weaknesses of the target model based on its battle results, enabling it to learn from the strengths of multiple different models. We apply Arena Learning to train our target model, WizardLM-$\beta$, and demonstrate significant performance enhancements across various metrics. This fully automated training and evaluation pipeline sets the stage for continuous advancements in various LLMs via post-training. Notably, Arena Learning plays a pivotal role in the success of WizardLM-2, and this paper serves both as an exploration of its efficacy and a foundational study for future discussions related to WizardLM-2 and its derivatives.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.02130v4">Using LLMs for the Extraction and Normalization of Product Attribute Values</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 The paper has been accepted at ADBIS2024
+    </div>
+    <details class="paper-abstract">
+      Product offers on e-commerce websites often consist of a product title and a textual product description. In order to enable features such as faceted product search or to generate product comparison tables, it is necessary to extract structured attribute-value pairs from the unstructured product titles and descriptions and to normalize the extracted values to a single, unified scale for each attribute. This paper explores the potential of using large language models (LLMs), such as GPT-3.5 and GPT-4, to extract and normalize attribute values from product titles and descriptions. We experiment with different zero-shot and few-shot prompt templates for instructing LLMs to extract and normalize attribute-value pairs. We introduce the Web Data Commons - Product Attribute Value Extraction (WDC-PAVE) benchmark dataset for our experiments. WDC-PAVE consists of product offers from 59 different websites which provide schema.org annotations. The offers belong to five different product categories, each with a specific set of attributes. The dataset provides manually verified attribute-value pairs in two forms: (i) directly extracted values and (ii) normalized attribute values. The normalization of the attribute values requires systems to perform the following types of operations: name expansion, generalization, unit of measurement conversion, and string wrangling. Our experiments demonstrate that GPT-4 outperforms the PLM-based extraction methods SU-OpenTag, AVEQA, and MAVEQA by 10%, achieving an F1-score of 91%. For the extraction and normalization of product attribute values, GPT-4 achieves a similar performance to the extraction scenario, while being particularly strong at string wrangling and name expansion.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.10582v1">Boosting Zero-Shot Crosslingual Performance using LLM-Based Augmentations with Effective Data Selection</a></div>
     <div class="paper-meta">
       📅 2024-07-15
@@ -426,6 +484,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.09152v1">The Two Sides of the Coin: Hallucination Generation and Detection with LLMs as Evaluators for LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-12
+      | 💬 Paper accepted at ELOQUENT@CLEF'24
+    </div>
+    <details class="paper-abstract">
+      Hallucination detection in Large Language Models (LLMs) is crucial for ensuring their reliability. This work presents our participation in the CLEF ELOQUENT HalluciGen shared task, where the goal is to develop evaluators for both generating and detecting hallucinated content. We explored the capabilities of four LLMs: Llama 3, Gemma, GPT-3.5 Turbo, and GPT-4, for this purpose. We also employed ensemble majority voting to incorporate all four models for the detection task. The results provide valuable insights into the strengths and weaknesses of these LLMs in handling hallucination generation and detection tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.19570v2">Synthetic Cancer -- Augmenting Worms with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-12
+      | 💬 Won first place at the Swiss AI Safety Prize. Some technical details omitted, contact authors for more information
+    </div>
+    <details class="paper-abstract">
+      With increasingly sophisticated large language models (LLMs), the potential for abuse rises drastically. As a submission to the Swiss AI Safety Prize, we present a novel type of metamorphic malware leveraging LLMs for two key processes. First, LLMs are used for automatic code rewriting to evade signature-based detection by antimalware programs. The malware then spreads its copies via email by utilizing an LLM to socially engineer email replies to encourage recipients to execute the attached malware. Our submission includes a functional minimal prototype, highlighting the risks that LLMs pose for cybersecurity and underscoring the need for further research into intelligent malware.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.08770v1">Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing</a></div>
     <div class="paper-meta">
       📅 2024-07-11
@@ -776,6 +854,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.07093v1">FBI-LLM: Scaling Up Fully Binarized LLMs from Scratch via Autoregressive Distillation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-09
+      | 💬 Github at https://github.com/LiqunMa/FBI-LLM
+    </div>
+    <details class="paper-abstract">
+      This work presents a Fully BInarized Large Language Model (FBI-LLM), demonstrating for the first time how to train a large-scale binary language model from scratch (not the partial binary or ternary LLM like BitNet b1.58) to match the performance of its full-precision counterparts (e.g., FP16 or BF16) in transformer-based LLMs. It achieves this by employing an autoregressive distillation (AD) loss with maintaining equivalent model dimensions (130M, 1.3B, 7B) and training data volume as regular LLM pretraining, while delivering competitive results in terms of perplexity and task-specific effectiveness. Intriguingly, by analyzing the training trajectory, we find that the pretrained weight is not necessary for training binarized LLMs from scratch. This research encourages a new computational framework and may facilitate the future design of specialized hardware tailored for fully 1-bit LLMs. We make all models, code, and training dataset fully accessible and transparent to support further research (Code: https://github.com/LiqunMa/FBI-LLM. Model: https://huggingface.co/LiqunMa/).
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.06443v1">Exposing Privacy Gaps: Membership Inference Attack on Preference Data for LLM Alignment</a></div>
     <div class="paper-meta">
       📅 2024-07-08
@@ -877,92 +965,5 @@
     </div>
     <details class="paper-abstract">
       The Large language models (LLMs) have showcased superior capabilities in sophisticated tasks across various domains, stemming from basic question-answer (QA), they are nowadays used as decision assistants or explainers for unfamiliar content. However, they are not always correct due to the data sparsity in specific domain corpus, or the model's hallucination problems. Given this, how much should we trust the responses from LLMs? This paper presents a novel way to evaluate the uncertainty that captures the directional instability, by constructing a directional graph from entailment probabilities, and we innovatively conduct Random Walk Laplacian given the asymmetric property of a constructed directed graph, then the uncertainty is aggregated by the derived eigenvalues from the Laplacian process. We also provide a way to incorporate the existing work's semantics uncertainty with our proposed layer. Besides, this paper identifies the vagueness issues in the raw response set and proposes an augmentation approach to mitigate such a problem, we conducted extensive empirical experiments and demonstrated the superiority of our proposed solutions.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2310.01991v2">Fill in the Blank: Exploring and Enhancing LLM Capabilities for Backward Reasoning in Math Word Problems</a></div>
-    <div class="paper-meta">
-      📅 2024-07-08
-      | 💬 10 pages, 4 figures
-    </div>
-    <details class="paper-abstract">
-      While forward reasoning (i.e., find the answer given the question) has been explored extensively in recent literature, backward reasoning is relatively unexplored. We examine the backward reasoning capabilities of LLMs on Math Word Problems (MWPs): given a mathematical question and its answer, with some details omitted from the question, can LLMs effectively retrieve the missing information? On modifying three benchmark datasets for this task, to evaluate this task: GSM8k, SVAMP, and MultiArith, we find a significant drop in the accuracy of models on this task compared to forward reasoning across SOTA LLMs (GPT4, GPT3.5, PaLM-2, and LLaMa). Motivated by the fact backward reasoning can be seen as the ''inverse'' of forward reasoning, we propose variations of three different forward reasoning strategies to improve performance. Rephrase reformulates the given problem into a forward reasoning problem, PAL-Tools combines the idea of Program-Aided LLMs to produce a set of equations that can be solved by an external solver, and Check your Work exploits the availability of natural verifier of high accuracy in the forward direction, interleaving solving and verification steps. Finally, realizing that each of our base methods correctly solves a different set of problems, we propose a novel Bayesian formulation for creating an ensemble over the base methods to further boost the accuracy. Extensive experimentation demonstrates successive improvement in the performance of LLMs on the backward reasoning task, using our strategies, with our ensemble-based method resulting in significant performance gains compared to the SOTA forward reasoning strategies we adapt.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05557v1">$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning</a></div>
-    <div class="paper-meta">
-      📅 2024-07-08
-    </div>
-    <details class="paper-abstract">
-      As LLMs become increasingly prevalent across various applications, it is critical to establish safety guardrails to moderate input/output content of LLMs. Existing guardrail models treat various safety categories independently and fail to explicitly capture the intercorrelations among them. This has led to limitations such as ineffectiveness due to inadequate training on long-tail data from correlated safety categories, susceptibility to jailbreaking attacks, and inflexibility regarding new safety categories. To address these limitations, we propose $R^2$-Guard, a robust reasoning enabled LLM guardrail via knowledge-enhanced logical reasoning. Specifically, $R^2$-Guard comprises two parts: data-driven category-specific learning and reasoning components. The data-driven guardrail models provide unsafety probabilities of moderated content on different safety categories. We then encode safety knowledge among different categories as first-order logical rules and embed them into a probabilistic graphic model (PGM) based reasoning component. The unsafety probabilities of different categories from data-driven guardrail models are sent to the reasoning component for final inference. We employ two types of PGMs: Markov logic networks (MLNs) and probabilistic circuits (PCs), and optimize PCs to achieve precision-efficiency balance via improved graph structure. To further perform stress tests for guardrail models, we employ a pairwise construction method to construct a new safety benchmark TwinSafety, which features principled categories. We demonstrate the effectiveness of $R^2$-Guard by comparisons with eight strong guardrail models on six safety benchmarks, and demonstrate the robustness of $R^2$-Guard against four SOTA jailbreaking attacks. $R^2$-Guard significantly surpasses SOTA method LlamaGuard by 30.2% on ToxicChat and by 59.5% against jailbreaking attacks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/pdf/2401.02669v2">Infinite-LLM: Efficient LLM Service for Long Context with DistAttention and Distributed KVCache</a></div>
-    <div class="paper-meta">
-      📅 2024-07-08
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) demonstrate substantial potential across a diverse array of domains via request serving. However, as trends continue to push for expanding context sizes, the autoregressive nature of LLMs results in highly dynamic behavior of the attention layers, showcasing significant differences in computational characteristics and memory requirements from the non-attention layers. This presents substantial challenges for resource management and performance optimization in service systems. Existing static model parallelism and resource allocation strategies fall short when dealing with this dynamicity. To address the issue, we propose Infinite-LLM, a novel LLM serving system designed to effectively handle dynamic context lengths. Infinite-LLM disaggregates attention layers from an LLM's inference process, facilitating flexible and independent resource scheduling that optimizes computational performance and enhances memory utilization jointly. By leveraging a pooled GPU memory strategy across a cluster, Infinite-LLM not only significantly boosts system throughput but also supports extensive context lengths. Evaluated on a dataset with context lengths ranging from a few to 2000K tokens across a cluster with 32 A100 GPUs, Infinite-LLM demonstrates throughput improvement of 1.35-3.4x compared to state-of-the-art methods, enabling efficient and elastic LLM deployment.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.04014v1">Offline Energy-Optimal LLM Serving: Workload-Based Energy Models for LLM Inference on Heterogeneous Systems</a></div>
-    <div class="paper-meta">
-      📅 2024-07-08
-      | 💬 7 pages, appearing at HotCarbon 2024
-    </div>
-    <details class="paper-abstract">
-      The rapid adoption of large language models (LLMs) has led to significant advances in natural language processing and text generation. However, the energy consumed through LLM model inference remains a major challenge for sustainable AI deployment. To address this problem, we model the workload-dependent energy consumption and runtime of LLM inference tasks on heterogeneous GPU-CPU systems. By conducting an extensive characterization study of several state-of-the-art LLMs and analyzing their energy and runtime behavior across different magnitudes of input prompts and output text, we develop accurate (R^2>0.96) energy and runtime models for each LLM. We employ these models to explore an offline, energy-optimal LLM workload scheduling framework. Through a case study, we demonstrate the advantages of energy and accuracy aware scheduling compared to existing best practices.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.15232v2">How Beginning Programmers and Code LLMs (Mis)read Each Other</a></div>
-    <div class="paper-meta">
-      📅 2024-07-07
-      | 💬 Published in CHI 2024
-    </div>
-    <details class="paper-abstract">
-      Generative AI models, specifically large language models (LLMs), have made strides towards the long-standing goal of text-to-code generation. This progress has invited numerous studies of user interaction. However, less is known about the struggles and strategies of non-experts, for whom each step of the text-to-code problem presents challenges: describing their intent in natural language, evaluating the correctness of generated code, and editing prompts when the generated code is incorrect. This paper presents a large-scale controlled study of how 120 beginning coders across three academic institutions approach writing and editing prompts. A novel experimental design allows us to target specific steps in the text-to-code process and reveals that beginners struggle with writing and editing prompts, even for problems at their skill level and when correctness is automatically determined. Our mixed-methods evaluation provides insight into student processes and perceptions with key implications for non-expert Code LLM use within and outside of education.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.05798v2">$\textbf{S}^2$IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting</a></div>
-    <div class="paper-meta">
-      📅 2024-07-07
-    </div>
-    <details class="paper-abstract">
-      Recently, there has been a growing interest in leveraging pre-trained large language models (LLMs) for various time series applications. However, the semantic space of LLMs, established through the pre-training, is still underexplored and may help yield more distinctive and informative representations to facilitate time series forecasting. To this end, we propose Semantic Space Informed Prompt learning with LLM ($S^2$IP-LLM) to align the pre-trained semantic space with time series embeddings space and perform time series forecasting based on learned prompts from the joint space. We first design a tokenization module tailored for cross-modality alignment, which explicitly concatenates patches of decomposed time series components to create embeddings that effectively encode the temporal dynamics. Next, we leverage the pre-trained word token embeddings to derive semantic anchors and align selected anchors with time series embeddings by maximizing the cosine similarity in the joint space. This way, $S^2$IP-LLM can retrieve relevant semantic anchors as prompts to provide strong indicators (context) for time series that exhibit different temporal dynamics. With thorough empirical studies on multiple benchmark datasets, we demonstrate that the proposed $S^2$IP-LLM can achieve superior forecasting performance over state-of-the-art baselines. Furthermore, our ablation studies and visualizations verify the necessity of prompt learning informed by semantic space.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05437v1">Enhancing Computer Programming Education with LLMs: A Study on Effective Prompt Engineering for Python Code Generation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-07
-      | 💬 18 pages, 9 figures
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) and prompt engineering hold significant potential for advancing computer programming education through personalized instruction. This paper explores this potential by investigating three critical research questions: the systematic categorization of prompt engineering strategies tailored to diverse educational needs, the empowerment of LLMs to solve complex problems beyond their inherent capabilities, and the establishment of a robust framework for evaluating and implementing these strategies. Our methodology involves categorizing programming questions based on educational requirements, applying various prompt engineering strategies, and assessing the effectiveness of LLM-generated responses. Experiments with GPT-4, GPT-4o, Llama3-8b, and Mixtral-8x7b models on datasets such as LeetCode and USACO reveal that GPT-4o consistently outperforms others, particularly with the "multi-step" prompt strategy. The results show that tailored prompt strategies significantly enhance LLM performance, with specific strategies recommended for foundational learning, competition preparation, and advanced problem-solving. This study underscores the crucial role of prompt engineering in maximizing the educational benefits of LLMs. By systematically categorizing and testing these strategies, we provide a comprehensive framework for both educators and students to optimize LLM-based learning experiences. Future research should focus on refining these strategies and addressing current LLM limitations to further enhance educational outcomes in computer programming instruction.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05347v1">A Queueing Theoretic Perspective on Low-Latency LLM Inference with Variable Token Length</a></div>
-    <div class="paper-meta">
-      📅 2024-07-07
-      | 💬 8 pages
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) propel the prosperity of interactive AI applications showcased by ChatGPT that demand timely response of inference services. However, LLM inference is computation intensive and memory intensive, and improper parameter configuration at LLM platforms may exacerbate the inference time. In this paper, we analyze the impact of LLM output token distribution on the inference queueing delay, where the max-token clipping and the batched inference are considered. By formulating an M/G/1 model, we observe that enforcing a maximum output token limit on a very small fraction of inference requests can significantly reduce the queueing delay, and our model facilitates the selection of the optimal limit. For the batch inference, we model the service process as a bulk queue in which the batch processing time is affected by the batch size and the maximum token size inside this batch jointly. The queueing delays of the batching of all buffered requests (dynamic batching), the batching of constant number of requests (fixed batching), and the batching without intra-batch waiting (elastic batching) are derived. Experimental results show that our mathematical models coincide with the event-driven simulations well.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05271v1">Beyond Binary Gender Labels: Revealing Gender Biases in LLMs through Gender-Neutral Name Predictions</a></div>
-    <div class="paper-meta">
-      📅 2024-07-07
-      | 💬 Accepted at ACL 2024, GeBNLP Workshop
-    </div>
-    <details class="paper-abstract">
-      Name-based gender prediction has traditionally categorized individuals as either female or male based on their names, using a binary classification system. That binary approach can be problematic in the cases of gender-neutral names that do not align with any one gender, among other reasons. Relying solely on binary gender categories without recognizing gender-neutral names can reduce the inclusiveness of gender prediction tasks. We introduce an additional gender category, i.e., "neutral", to study and address potential gender biases in Large Language Models (LLMs). We evaluate the performance of several foundational and large language models in predicting gender based on first names only. Additionally, we investigate the impact of adding birth years to enhance the accuracy of gender prediction, accounting for shifting associations between names and genders over time. Our findings indicate that most LLMs identify male and female names with high accuracy (over 80%) but struggle with gender-neutral names (under 40%), and the accuracy of gender prediction is higher for English-based first names than non-English names. The experimental results show that incorporating the birth year does not improve the overall accuracy of gender prediction, especially for names with evolving gender associations. We recommend using caution when applying LLMs for gender identification in downstream tasks, particularly when dealing with non-binary gender labels.
     </details>
 </div>

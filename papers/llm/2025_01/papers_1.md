@@ -10,6 +10,7 @@
 - [Part 4](papers_4.md)
 - [Part 5](papers_5.md)
 - [Part 6](papers_6.md)
+- [Part 7](papers_7.md)
 
 ## Papers
 
@@ -581,6 +582,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.16673v2">LLM-AutoDiff: Auto-Differentiate Any LLM Workflow</a></div>
+    <div class="paper-meta">
+      📅 2025-01-30
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have reshaped natural language processing, powering applications from multi-hop retrieval and question answering to autonomous agent workflows. Yet, prompt engineering -- the task of crafting textual inputs to effectively direct LLMs -- remains difficult and labor-intensive, particularly for complex pipelines that combine multiple LLM calls with functional operations like retrieval and data formatting. We introduce LLM-AutoDiff: a novel framework for Automatic Prompt Engineering (APE) that extends textual gradient-based methods (such as Text-Grad) to multi-component, potentially cyclic LLM architectures. Implemented within the AdalFlow library, LLM-AutoDiff treats each textual input as a trainable parameter and uses a frozen backward engine LLM to generate feedback-akin to textual gradients -- that guide iterative prompt updates. Unlike prior single-node approaches, LLM-AutoDiff inherently accommodates functional nodes, preserves time-sequential behavior in repeated calls (e.g., multi-hop loops), and combats the "lost-in-the-middle" problem by isolating distinct sub-prompts (instructions, formats, or few-shot examples). It further boosts training efficiency by focusing on error-prone samples through selective gradient computation. Across diverse tasks, including single-step classification, multi-hop retrieval-based QA, and agent-driven pipelines, LLM-AutoDiff consistently outperforms existing textual gradient baselines in both accuracy and training cost. By unifying prompt optimization through a graph-centric lens, LLM-AutoDiff offers a powerful new paradigm for scaling and automating LLM workflows - mirroring the transformative role that automatic differentiation libraries have long played in neural network research.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2501.18056v1">RL-based Query Rewriting with Distilled LLM for online E-Commerce Systems</a></div>
     <div class="paper-meta">
       📅 2025-01-29
@@ -820,6 +830,64 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16783v1">A Stochastic Dynamical Theory of LLM Self-Adversariality: Modeling Severity Drift as a Critical Process</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+      | 💬 Experimental verification and more formal argument for Markov approximation of bias propagation to be released soon. Primarily pushed now to establish novelty and ease of sharing. Please do not cite this work until the forthcoming experimental validation and updated mathematical model are provided
+    </div>
+    <details class="paper-abstract">
+      This paper introduces a continuous-time stochastic dynamical framework for understanding how large language models (LLMs) may self-amplify latent biases or toxicity through their own chain-of-thought reasoning. The model posits an instantaneous "severity" variable $x(t) \in [0,1]$ evolving under a stochastic differential equation (SDE) with a drift term $\mu(x)$ and diffusion $\sigma(x)$. Crucially, such a process can be consistently analyzed via the Fokker--Planck approach if each incremental step behaves nearly Markovian in severity space. The analysis investigates critical phenomena, showing that certain parameter regimes create phase transitions from subcritical (self-correcting) to supercritical (runaway severity). The paper derives stationary distributions, first-passage times to harmful thresholds, and scaling laws near critical points. Finally, it highlights implications for agents and extended LLM reasoning models: in principle, these equations might serve as a basis for formal verification of whether a model remains stable or propagates bias over repeated inferences.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16750v1">HateBench: Benchmarking Hate Speech Detectors on LLM-Generated Content and Hate Campaigns</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have raised increasing concerns about their misuse in generating hate speech. Among all the efforts to address this issue, hate speech detectors play a crucial role. However, the effectiveness of different detectors against LLM-generated hate speech remains largely unknown. In this paper, we propose HateBench, a framework for benchmarking hate speech detectors on LLM-generated hate speech. We first construct a hate speech dataset of 7,838 samples generated by six widely-used LLMs covering 34 identity groups, with meticulous annotations by three labelers. We then assess the effectiveness of eight representative hate speech detectors on the LLM-generated dataset. Our results show that while detectors are generally effective in identifying LLM-generated hate speech, their performance degrades with newer versions of LLMs. We also reveal the potential of LLM-driven hate campaigns, a new threat that LLMs bring to the field of hate speech detection. By leveraging advanced techniques like adversarial attacks and model stealing attacks, the adversary can intentionally evade the detector and automate hate campaigns online. The most potent adversarial attack achieves an attack success rate of 0.966, and its attack efficiency can be further improved by $13-21\times$ through model stealing attacks with acceptable attack performance. We hope our study can serve as a call to action for the research community and platform moderators to fortify defenses against these emerging threats.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16748v1">Through the Prism of Culture: Evaluating LLMs' Understanding of Indian Subcultures and Traditions</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have shown remarkable advancements but also raise concerns about cultural bias, often reflecting dominant narratives at the expense of under-represented subcultures. In this study, we evaluate the capacity of LLMs to recognize and accurately respond to the Little Traditions within Indian society, encompassing localized cultural practices and subcultures such as caste, kinship, marriage, and religion. Through a series of case studies, we assess whether LLMs can balance the interplay between dominant Great Traditions and localized Little Traditions. We explore various prompting strategies and further investigate whether using prompts in regional languages enhances the models cultural sensitivity and response quality. Our findings reveal that while LLMs demonstrate an ability to articulate cultural nuances, they often struggle to apply this understanding in practical, context-specific scenarios. To the best of our knowledge, this is the first study to analyze LLMs engagement with Indian subcultures, offering critical insights into the challenges of embedding cultural diversity in AI systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.03168v3">Can Watermarked LLMs be Identified by Users via Crafted Prompts?</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+      | 💬 28 pages, 5 figures, 11 tables Published as a conference paper at ICLR 2025 Github link: https://github.com/THU-BPM/Watermarked_LLM_Identification
+    </div>
+    <details class="paper-abstract">
+      Text watermarking for Large Language Models (LLMs) has made significant progress in detecting LLM outputs and preventing misuse. Current watermarking techniques offer high detectability, minimal impact on text quality, and robustness to text editing. However, current researches lack investigation into the imperceptibility of watermarking techniques in LLM services. This is crucial as LLM providers may not want to disclose the presence of watermarks in real-world scenarios, as it could reduce user willingness to use the service and make watermarks more vulnerable to attacks. This work is the first to investigate the imperceptibility of watermarked LLMs. We design an identification algorithm called Water-Probe that detects watermarks through well-designed prompts to the LLM. Our key motivation is that current watermarked LLMs expose consistent biases under the same watermark key, resulting in similar differences across prompts under different watermark keys. Experiments show that almost all mainstream watermarking algorithms are easily identified with our well-designed prompts, while Water-Probe demonstrates a minimal false positive rate for non-watermarked LLMs. Finally, we propose that the key to enhancing the imperceptibility of watermarked LLMs is to increase the randomness of watermark key selection. Based on this, we introduce the Water-Bag strategy, which significantly improves watermark imperceptibility by merging multiple watermark keys.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16744v1">LLM Assisted Anomaly Detection Service for Site Reliability Engineers: Enhancing Cloud Infrastructure Resilience</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+      | 💬 Accepted at the AAAI-2025 Deployable AI Workshop
+    </div>
+    <details class="paper-abstract">
+      This paper introduces a scalable Anomaly Detection Service with a generalizable API tailored for industrial time-series data, designed to assist Site Reliability Engineers (SREs) in managing cloud infrastructure. The service enables efficient anomaly detection in complex data streams, supporting proactive identification and resolution of issues. Furthermore, it presents an innovative approach to anomaly modeling in cloud infrastructure by utilizing Large Language Models (LLMs) to understand key components, their failure modes, and behaviors. A suite of algorithms for detecting anomalies is offered in univariate and multivariate time series data, including regression-based, mixture-model-based, and semi-supervised approaches. We provide insights into the usage patterns of the service, with over 500 users and 200,000 API calls in a year. The service has been successfully applied in various industrial settings, including IoT-based AI applications. We have also evaluated our system on public anomaly benchmarks to show its effectiveness. By leveraging it, SREs can proactively identify potential issues before they escalate, reducing downtime and improving response times to incidents, ultimately enhancing the overall customer experience. We plan to extend the system to include time series foundation models, enabling zero-shot anomaly detection capabilities.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16698v1">3D-MoE: A Mixture-of-Experts Multi-modal LLM for 3D Vision and Pose Diffusion via Rectified Flow</a></div>
+    <div class="paper-meta">
+      📅 2025-01-28
+      | 💬 Preprint. Work in progress
+    </div>
+    <details class="paper-abstract">
+      3D vision and spatial reasoning have long been recognized as preferable for accurately perceiving our three-dimensional world, especially when compared with traditional visual reasoning based on 2D images. Due to the difficulties in collecting high-quality 3D data, research in this area has only recently gained momentum. With the advent of powerful large language models (LLMs), multi-modal LLMs for 3D vision have been developed over the past few years. However, most of these models focus primarily on the vision encoder for 3D data. In this paper, we propose converting existing densely activated LLMs into mixture-of-experts (MoE) models, which have proven effective for multi-modal data processing. In addition to leveraging these models' instruction-following capabilities, we further enable embodied task planning by attaching a diffusion head, Pose-DiT, that employs a novel rectified flow diffusion scheduler. Experimental results on 3D question answering and task-planning tasks demonstrate that our 3D-MoE framework achieves improved performance with fewer activated parameters.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.09003v3">Refusal in LLMs is an Affine Function</a></div>
     <div class="paper-meta">
       📅 2025-01-28
@@ -894,72 +962,5 @@
     </div>
     <details class="paper-abstract">
       Large language models (LLMs) have demonstrated impressive capabilities in various reasoning tasks but face significant challenges with complex, knowledge-intensive multi-hop queries, particularly those involving new or long-tail knowledge. Existing benchmarks often fail to fully address these challenges. To bridge this gap, we introduce MINTQA (Multi-hop Question Answering on New and Tail Knowledge), a comprehensive benchmark to evaluate LLMs' capabilities in multi-hop reasoning across four critical dimensions: question handling strategy, sub-question generation, retrieval-augmented generation, and iterative or dynamic decomposition and retrieval. MINTQA comprises 10,479 question-answer pairs for evaluating new knowledge and 17,887 pairs for assessing long-tail knowledge, with each question equipped with corresponding sub-questions and answers. Our systematic evaluation of 22 state-of-the-art LLMs on MINTQA reveals significant limitations in their ability to handle complex knowledge base queries, particularly in handling new or unpopular knowledge. Our findings highlight critical challenges and offer insights for advancing multi-hop reasoning capabilities. The MINTQA benchmark is available at https://github.com/probe2/multi-hop/.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.17024v1">Automated Refactoring of Non-Idiomatic Python Code: A Differentiated Replication with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-    </div>
-    <details class="paper-abstract">
-      In the Python ecosystem, the adoption of idiomatic constructs has been fostered because of their expressiveness, increasing productivity and even efficiency, despite controversial arguments concerning familiarity or understandability issues. Recent research contributions have proposed approaches -- based on static code analysis and transformation -- to automatically identify and enact refactoring opportunities of non-idiomatic code into idiomatic ones. Given the potential recently offered by Large Language Models (LLMs) for code-related tasks, in this paper, we present the results of a replication study in which we investigate GPT-4 effectiveness in recommending and suggesting idiomatic refactoring actions. Our results reveal that GPT-4 not only identifies idiomatic constructs effectively but frequently exceeds the benchmark in proposing refactoring actions where the existing baseline failed. A manual analysis of a random sample shows the correctness of the obtained recommendations. Our findings underscore the potential of LLMs to achieve tasks where, in the past, implementing recommenders based on complex code analyses was required.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16945v1">ToolFactory: Automating Tool Generation by Leveraging LLM to Understand REST API Documentations</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-    </div>
-    <details class="paper-abstract">
-      LLM-based tool agents offer natural language interfaces, enabling users to seamlessly interact with computing services. While REST APIs are valuable resources for building such agents, they must first be transformed into AI-compatible tools. Automatically generating AI-compatible tools from REST API documents can greatly streamline tool agent development and minimize user learning curves. However, API documentation often suffers from a lack of standardization, inconsistent schemas, and incomplete information. To address these issues, we developed \textbf{ToolFactory}, an open-source pipeline for automating tool generation from unstructured API documents. To enhance the reliability of the developed tools, we implemented an evaluation method to diagnose errors. Furthermore, we built a knowledge base of verified tools, which we leveraged to infer missing information from poorly documented APIs. We developed the API Extraction Benchmark, comprising 167 API documents and 744 endpoints in various formats, and designed a JSON schema to annotate them. This annotated dataset was utilized to train and validate ToolFactory. The experimental results highlight the effectiveness of ToolFactory. We also demonstrated ToolFactory by creating a domain-specific AI agent for glycomaterials research. ToolFactory exhibits significant potential for facilitating the seamless integration of scientific REST APIs into AI workflows.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16899v1">RDMM: Fine-Tuned LLM Models for On-Device Robotic Decision Making with Enhanced Contextual Awareness in Specific Domains</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) represent a significant advancement in integrating physical robots with AI-driven systems. We showcase the capabilities of our framework within the context of the real-world household competition. This research introduces a framework that utilizes RDMM (Robotics Decision-Making Models), which possess the capacity for decision-making within domain-specific contexts, as well as an awareness of their personal knowledge and capabilities. The framework leverages information to enhance the autonomous decision-making of the system. In contrast to other approaches, our focus is on real-time, on-device solutions, successfully operating on hardware with as little as 8GB of memory. Our framework incorporates visual perception models equipping robots with understanding of their environment. Additionally, the framework has integrated real-time speech recognition capabilities, thus enhancing the human-robot interaction experience. Experimental results demonstrate that the RDMM framework can plan with an 93\% accuracy. Furthermore, we introduce a new dataset consisting of 27k planning instances, as well as 1.3k text-image annotated samples derived from the competition. The framework, benchmarks, datasets, and models developed in this work are publicly available on our GitHub repository at https://github.com/shadynasrat/RDMM.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16865v1">JRE-L: Journalist, Reader, and Editor LLMs in the Loop for Science Journalism for the General Audience</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 arXiv admin note: substantial text overlap with arXiv:2407.09756
-    </div>
-    <details class="paper-abstract">
-      Science journalism reports current scientific discoveries to non-specialists, aiming to enable public comprehension of the state of the art. This task is challenging as the audience often lacks specific knowledge about the presented research. We propose a JRE-L framework that integrates three LLMs mimicking the writing-reading-feedback-revision loop. In JRE-L, one LLM acts as the journalist, another LLM as the general public reader, and the third LLM as an editor. The journalist's writing is iteratively refined by feedback from the reader and suggestions from the editor. Our experiments demonstrate that by leveraging the collaboration of two 7B and one 1.8B open-source LLMs, we can generate articles that are more accessible than those generated by existing methods, including prompting single advanced models such as GPT-4 and other LLM-collaboration strategies. Our code is publicly available at github.com/Zzoay/JRE-L.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2501.16857v1">Comparing Human and LLM Generated Code: The Jury is Still Out!</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 10 pages, 6 figures
-    </div>
-    <details class="paper-abstract">
-      Much is promised in relation to AI-supported software development. However, there has been limited evaluation effort in the research domain aimed at validating the true utility of such techniques, especially when compared to human coding outputs. We bridge this gap, where a benchmark dataset comprising 72 distinct software engineering tasks is used to compare the effectiveness of large language models (LLMs) and human programmers in producing Python software code. GPT-4 is used as a representative LLM, where for the code generated by humans and this LLM, we evaluate code quality and adherence to Python coding standards, code security and vulnerabilities, code complexity and functional correctness. We use various static analysis benchmarks, including Pylint, Radon, Bandit and test cases. Among the notable outcomes, results show that human-generated code recorded higher ratings for adhering to coding standards than GPT-4. We observe security flaws in code generated by both humans and GPT-4, however, code generated by humans shows a greater variety of problems, but GPT-4 code included more severe outliers. Our results show that although GPT-4 is capable of producing coding solutions, it frequently produces more complex code that may need more reworking to ensure maintainability. On the contrary however, our outcomes show that a higher number of test cases passed for code generated by GPT-4 across a range of tasks than code that was generated by humans. That said, GPT-4 frequently struggles with complex problem-solving that involve in-depth domain knowledge. This study highlights the potential utility of LLMs for supporting software development, however, tasks requiring comprehensive, innovative or unconventional solutions, and careful debugging and error correction seem to be better developed by human programmers. We plot an agenda for the software engineering community.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.07739v3">SLIM: Let LLM Learn More and Forget Less with Soft LoRA and Identity Mixture</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 13 pages, 7 figures, 4 tables; Accepted to NAACL 2025
-    </div>
-    <details class="paper-abstract">
-      Although many efforts have been made, it is still a challenge to balance the training budget, downstream performance, and the general capabilities of the LLMs in many applications. Training the whole model for downstream tasks is expensive, and could easily result in catastrophic forgetting. By introducing parameter-efficient fine-tuning (PEFT), the training cost could be reduced, but it still suffers from forgetting, and limits the learning on the downstream tasks. To efficiently fine-tune the LLMs with less limitation to their downstream performance while mitigating the forgetting of general capabilities, we propose a novel mixture of expert (MoE) framework based on Soft LoRA and Identity Mixture (SLIM), that allows dynamic routing between LoRA adapters and skipping connection, enables the suppression of forgetting. We adopt weight-yielding with sliding clustering for better out-of-domain distinguish to enhance the routing. We also propose to convert the mixture of low-rank adapters to the model merging formulation and introduce fast dynamic merging of LoRA adapters to keep the general capabilities of the base model. Extensive experiments demonstrate that the proposed SLIM is comparable to the state-of-the-art PEFT approaches on the downstream tasks while achieving the leading performance in mitigating catastrophic forgetting.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.17840v2">Is the GPU Half-Empty or Half-Full? Practical Scheduling Techniques for LLMs</a></div>
-    <div class="paper-meta">
-      📅 2025-01-28
-      | 💬 12 pages, 11 figures
-    </div>
-    <details class="paper-abstract">
-      Serving systems for Large Language Models (LLMs) improve throughput by processing several requests concurrently. However, multiplexing hardware resources between concurrent requests involves non-trivial scheduling decisions. Practical serving systems typically implement these decisions at two levels: First, a load balancer routes requests to different servers which each hold a replica of the LLM. Then, on each server, an engine-level scheduler decides when to run a request, or when to queue or preempt it. Improved scheduling policies may benefit a wide range of LLM deployments and can often be implemented as "drop-in replacements" to a system's current policy. In this work, we survey scheduling techniques from the literature and from practical serving systems. We find that schedulers from the literature often achieve good performance but introduce significant complexity. In contrast, schedulers in practical deployments often leave easy performance gains on the table but are easy to implement, deploy and configure. This finding motivates us to introduce two new scheduling techniques, which are both easy to implement, and outperform current techniques on production workload traces.
     </details>
 </div>

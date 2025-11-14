@@ -127,6 +127,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.21531v1">Can LLMs "Reason" in Music? An Evaluation of LLMs' Capability of Music Understanding and Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-31
+      | 💬 Accepted by ISMIR2024
+    </div>
+    <details class="paper-abstract">
+      Symbolic Music, akin to language, can be encoded in discrete symbols. Recent research has extended the application of large language models (LLMs) such as GPT-4 and Llama2 to the symbolic music domain including understanding and generation. Yet scant research explores the details of how these LLMs perform on advanced music understanding and conditioned generation, especially from the multi-step reasoning perspective, which is a critical aspect in the conditioned, editable, and interactive human-computer co-creation process. This study conducts a thorough investigation of LLMs' capability and limitations in symbolic music processing. We identify that current LLMs exhibit poor performance in song-level multi-step music reasoning, and typically fail to leverage learned music knowledge when addressing complex musical tasks. An analysis of LLMs' responses highlights distinctly their pros and cons. Our findings suggest achieving advanced musical capability is not intrinsically obtained by LLMs, and future research should focus more on bridging the gap between music knowledge and reasoning, to improve the co-creation experience for musicians.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2312.11514v3">LLM in a flash: Efficient Large Language Model Inference with Limited Memory</a></div>
     <div class="paper-meta">
       📅 2024-07-30
@@ -250,6 +260,16 @@
     </div>
     <details class="paper-abstract">
       With Large Language Models (LLMs) being widely used across various tasks, detecting errors in their responses is increasingly crucial. However, little research has been conducted on error detection of LLM responses. Collecting error annotations on LLM responses is challenging due to the subjective nature of many NLP tasks, and thus previous research focuses on tasks of little practical value (e.g., word sorting) or limited error types (e.g., faithfulness in summarization). This work introduces ReaLMistake, the first error detection benchmark consisting of objective, realistic, and diverse errors made by LLMs. ReaLMistake contains three challenging and meaningful tasks that introduce objectively assessable errors in four categories (reasoning correctness, instruction-following, context-faithfulness, and parameterized knowledge), eliciting naturally observed and diverse errors in responses of GPT-4 and Llama 2 70B annotated by experts. We use ReaLMistake to evaluate error detectors based on 12 LLMs. Our findings show: 1) Top LLMs like GPT-4 and Claude 3 detect errors made by LLMs at very low recall, and all LLM-based error detectors perform much worse than humans. 2) Explanations by LLM-based error detectors lack reliability. 3) LLMs-based error detection is sensitive to small changes in prompts but remains challenging to improve. 4) Popular approaches to improving LLMs, including self-consistency and majority vote, do not improve the error detection performance. Our benchmark and code are provided at https://github.com/psunlpgroup/ReaLMistake.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.20529v1">Can LLMs be Fooled? Investigating Vulnerabilities in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-30
+      | 💬 14 pages, 1 figure. arXiv admin note: text overlap with arXiv:2403.12503
+    </div>
+    <details class="paper-abstract">
+      The advent of Large Language Models (LLMs) has garnered significant popularity and wielded immense power across various domains within Natural Language Processing (NLP). While their capabilities are undeniably impressive, it is crucial to identify and scrutinize their vulnerabilities especially when those vulnerabilities can have costly consequences. One such LLM, trained to provide a concise summarization from medical documents could unequivocally leak personal patient data when prompted surreptitiously. This is just one of many unfortunate examples that have been unveiled and further research is necessary to comprehend the underlying reasons behind such vulnerabilities. In this study, we delve into multiple sections of vulnerabilities which are model-based, training-time, inference-time vulnerabilities, and discuss mitigation strategies including "Model Editing" which aims at modifying LLMs behavior, and "Chroma Teaming" which incorporates synergy of multiple teaming strategies to enhance LLMs' resilience. This paper will synthesize the findings from each vulnerability section and propose new directions of research and development. By understanding the focal points of current vulnerabilities, we can better anticipate and mitigate future risks, paving the road for more robust and secure LLMs.
     </details>
 </div>
 <div class="paper-card">
@@ -519,6 +539,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.03602v2">Evaluating LLMs at Detecting Errors in LLM Responses</a></div>
+    <div class="paper-meta">
+      📅 2024-07-27
+      | 💬 COLM 2024, 46 pages, Benchmark and code: https://github.com/psunlpgroup/ReaLMistake
+    </div>
+    <details class="paper-abstract">
+      With Large Language Models (LLMs) being widely used across various tasks, detecting errors in their responses is increasingly crucial. However, little research has been conducted on error detection of LLM responses. Collecting error annotations on LLM responses is challenging due to the subjective nature of many NLP tasks, and thus previous research focuses on tasks of little practical value (e.g., word sorting) or limited error types (e.g., faithfulness in summarization). This work introduces ReaLMistake, the first error detection benchmark consisting of objective, realistic, and diverse errors made by LLMs. ReaLMistake contains three challenging and meaningful tasks that introduce objectively assessable errors in four categories (reasoning correctness, instruction-following, context-faithfulness, and parameterized knowledge), eliciting naturally observed and diverse errors in responses of GPT-4 and Llama 2 70B annotated by experts. We use ReaLMistake to evaluate error detectors based on 12 LLMs. Our findings show: 1) Top LLMs like GPT-4 and Claude 3 detect errors made by LLMs at very low recall, and all LLM-based error detectors perform much worse than humans. 2) Explanations by LLM-based error detectors lack reliability. 3) LLMs-based error detection is sensitive to small changes in prompts but remains challenging to improve. 4) Popular approaches to improving LLMs, including self-consistency and majority vote, do not improve the error detection performance. Our benchmark and code are provided at https://github.com/psunlpgroup/ReaLMistake.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.19126v1">Greedy Output Approximation: Towards Efficient Structured Pruning for LLMs Without Retraining</a></div>
     <div class="paper-meta">
       📅 2024-07-26
@@ -620,6 +650,25 @@
     </div>
     <details class="paper-abstract">
       This study introduces a novel approach to Industrial Asset Management (IAM) by incorporating Conditional-Based Management (CBM) principles with the latest advancements in Large Language Models (LLMs). Our research introduces an automated model-building process, traditionally reliant on intensive collaboration between data scientists and domain experts. We present two primary innovations: a taxonomy-guided prompting generation that facilitates the automatic creation of AI solution recipes and a set of LLM pipelines designed to produce a solution recipe containing a set of artifacts composed of documents, sample data, and models for IAM. These pipelines, guided by standardized principles, enable the generation of initial solution templates for heterogeneous asset classes without direct human input, reducing reliance on extensive domain knowledge and enhancing automation. We evaluate our methodology by assessing asset health and sustainability across a spectrum of ten asset classes. Our findings illustrate the potential of LLMs and taxonomy-based LLM prompting pipelines in transforming asset management, offering a blueprint for subsequent research and development initiatives to be integrated into a rapid client solution.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2403.00783v2">On the Roles of LLMs in Planning: Embedding LLMs into Planning Graphs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-26
+    </div>
+    <details class="paper-abstract">
+      Plan synthesis aims to generate a course of actions or policies to transit given initial states to goal states, provided domain models that could be designed by experts or learnt from training data or interactions with the world. Intrigued by the claims of emergent planning capabilities in large language models (LLMs), works have been proposed to investigate the planning effectiveness of LLMs, without considering any utilization of off-the-shelf planning techniques in LLMs. In this paper, we aim to further study the insight of the planning capability of LLMs by investigating the roles of LLMs in off-the-shelf planning frameworks. To do this, we investigate the effectiveness of embedding LLMs into one of the well-known planning frameworks, graph-based planning, proposing a novel LLMs-based planning framework with LLMs embedded in two levels of planning graphs, i.e., mutual constraints generation level and constraints solving level. We empirically exhibit the effectiveness of our proposed framework in various planning domains.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.05140v3">Tag-LLM: Repurposing General-Purpose LLMs for Specialized Domains</a></div>
+    <div class="paper-meta">
+      📅 2024-07-26
+      | 💬 ICML 2024
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have demonstrated remarkable proficiency in understanding and generating natural language. However, their capabilities wane in highly specialized domains underrepresented in the pretraining corpus, such as physical and biomedical sciences. This work explores how to repurpose general LLMs into effective task solvers for specialized domains. We introduce a novel, model-agnostic framework for learning custom input tags, which are parameterized as continuous vectors appended to the LLM's embedding layer, to condition the LLM. We design two types of input tags: domain tags are used to delimit specialized representations (e.g., chemical formulas) and provide domain-relevant context; function tags are used to represent specific functions (e.g., predicting molecular properties) and compress function-solving instructions. We develop a three-stage protocol to learn these tags using auxiliary data and domain knowledge. By explicitly disentangling task domains from task functions, our method enables zero-shot generalization to unseen problems through diverse combinations of the input tags. It also boosts LLM's performance in various specialized domains, such as predicting protein or chemical properties and modeling drug-target interactions, outperforming expert models tailored to these tasks.
     </details>
 </div>
 <div class="paper-card">
@@ -814,6 +863,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.01461v4">Will the Real Linda Please Stand up...to Large Language Models? Examining the Representativeness Heuristic in LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 Published as a conference paper at COLM 2024
+    </div>
+    <details class="paper-abstract">
+      Although large language models (LLMs) have demonstrated remarkable proficiency in modeling text and generating human-like text, they may exhibit biases acquired from training data in doing so. Specifically, LLMs may be susceptible to a common cognitive trap in human decision-making called the representativeness heuristic. This is a concept in psychology that refers to judging the likelihood of an event based on how closely it resembles a well-known prototype or typical example, versus considering broader facts or statistical evidence. This research investigates the impact of the representativeness heuristic on LLM reasoning. We created ReHeAT (Representativeness Heuristic AI Testing), a dataset containing a series of problems spanning six common types of representativeness heuristics. Experiments reveal that four LLMs applied to ReHeAT all exhibited representativeness heuristic biases. We further identify that the model's reasoning steps are often incorrectly based on a stereotype rather than on the problem's description. Interestingly, the performance improves when adding a hint in the prompt to remind the model to use its knowledge. This suggests the uniqueness of the representativeness heuristic compared to traditional biases. It can occur even when LLMs possess the correct knowledge while falling into a cognitive trap. This highlights the importance of future research focusing on the representativeness heuristic in model reasoning and decision-making and on developing solutions to address it.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.07791v2">Flooding Spread of Manipulated Knowledge in LLM-Based Multi-Agent Communities</a></div>
     <div class="paper-meta">
       📅 2024-07-23
@@ -906,63 +965,5 @@
     </div>
     <details class="paper-abstract">
       Acute stroke demands prompt diagnosis and treatment to achieve optimal patient outcomes. However, the intricate and irregular nature of clinical data associated with acute stroke, particularly blood pressure (BP) measurements, presents substantial obstacles to effective visual analytics and decision-making. Through a year-long collaboration with experienced neurologists, we developed PhenoFlow, a visual analytics system that leverages the collaboration between human and Large Language Models (LLMs) to analyze the extensive and complex data of acute ischemic stroke patients. PhenoFlow pioneers an innovative workflow, where the LLM serves as a data wrangler while neurologists explore and supervise the output using visualizations and natural language interactions. This approach enables neurologists to focus more on decision-making with reduced cognitive load. To protect sensitive patient information, PhenoFlow only utilizes metadata to make inferences and synthesize executable codes, without accessing raw patient data. This ensures that the results are both reproducible and interpretable while maintaining patient privacy. The system incorporates a slice-and-wrap design that employs temporal folding to create an overlaid circular visualization. Combined with a linear bar graph, this design aids in exploring meaningful patterns within irregularly measured BP data. Through case studies, PhenoFlow has demonstrated its capability to support iterative analysis of extensive clinical datasets, reducing cognitive load and enabling neurologists to make well-informed decisions. Grounded in long-term collaboration with domain experts, our research demonstrates the potential of utilizing LLMs to tackle current challenges in data-driven clinical decision-making for acute ischemic stroke patients.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16286v1">A deeper look at depth pruning of LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are not only resource-intensive to train but even more costly to deploy in production. Therefore, recent work has attempted to prune blocks of LLMs based on cheap proxies for estimating block importance, effectively removing 10% of blocks in well-trained LLaMa-2 and Mistral 7b models without any significant degradation of downstream metrics. In this paper, we explore different block importance metrics by considering adaptive metrics such as Shapley value in addition to static ones explored in prior work. We show that adaptive metrics exhibit a trade-off in performance between tasks i.e., improvement on one task may degrade performance on the other due to differences in the computed block influences. Furthermore, we extend this analysis from a complete block to individual self-attention and feed-forward layers, highlighting the propensity of the self-attention layers to be more amendable to pruning, even allowing removal of upto 33% of the self-attention layers without incurring any performance degradation on MMLU for Mistral 7b (significant reduction in costly maintenance of KV-cache). Finally, we look at simple performance recovery techniques to emulate the pruned layers by training lightweight additive bias or low-rank linear adapters. Performance recovery using emulated updates avoids performance degradation for the initial blocks (up to 5% absolute improvement on MMLU), which is either competitive or superior to the learning-based technique.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.12022v2">ITERTL: An Iterative Framework for Fine-tuning LLMs for RTL Code Generation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-      | 💬 There is some mistakes about the Experimental Setup in Section4.1
-    </div>
-    <details class="paper-abstract">
-      Recently, large language models (LLMs) have demonstrated excellent performance in understanding human instructions and generating code, which has inspired researchers to explore the feasibility of generating RTL code with LLMs. However, the existing approaches to fine-tune LLMs on RTL codes typically are conducted on fixed datasets, which do not fully stimulate the capability of LLMs and require large amounts of reference data. To mitigate these issues , we introduce a simple yet effective iterative training paradigm named ITERTL. During each iteration, samples are drawn from the model trained in the previous cycle. Then these new samples are employed for training in this loop. Through this iterative approach, the distribution mismatch between the model and the training samples is reduced. Additionally, the model is thus enabled to explore a broader generative space and receive more comprehensive feedback. Theoretical analyses are conducted to investigate the mechanism of the effectiveness. Experimental results show the model trained through our proposed approach can compete with and even outperform the state-of-the-art (SOTA) open-source model with nearly 37\% reference samples, achieving remarkable 42.9\% and 62.2\% pass@1 rate on two VerilogEval evaluation datasets respectively. While using the same amount of reference samples, our method can achieved a relative improvement of 16.9\% and 12.5\% in pass@1 compared to the non-iterative method. This study facilitates the application of LLMs for generating RTL code in practical scenarios with limited data.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16216v1">A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-    </div>
-    <details class="paper-abstract">
-      With advancements in self-supervised learning, the availability of trillions tokens in a pre-training corpus, instruction fine-tuning, and the development of large Transformers with billions of parameters, large language models (LLMs) are now capable of generating factual and coherent responses to human queries. However, the mixed quality of training data can lead to the generation of undesired responses, presenting a significant challenge. Over the past two years, various methods have been proposed from different perspectives to enhance LLMs, particularly in aligning them with human expectation. Despite these efforts, there has not been a comprehensive survey paper that categorizes and details these approaches. In this work, we aim to address this gap by categorizing these papers into distinct topics and providing detailed explanations of each alignment method, thereby helping readers gain a thorough understanding of the current state of the field.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11406v3">Don't Go To Extremes: Revealing the Excessive Sensitivity and Calibration Limitations of LLMs in Implicit Hate Speech Detection</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-      | 💬 ACL 2024 Main Conference
-    </div>
-    <details class="paper-abstract">
-      The fairness and trustworthiness of Large Language Models (LLMs) are receiving increasing attention. Implicit hate speech, which employs indirect language to convey hateful intentions, occupies a significant portion of practice. However, the extent to which LLMs effectively address this issue remains insufficiently examined. This paper delves into the capability of LLMs to detect implicit hate speech (Classification Task) and express confidence in their responses (Calibration Task). Our evaluation meticulously considers various prompt patterns and mainstream uncertainty estimation methods. Our findings highlight that LLMs exhibit two extremes: (1) LLMs display excessive sensitivity towards groups or topics that may cause fairness issues, resulting in misclassifying benign statements as hate speech. (2) LLMs' confidence scores for each method excessively concentrate on a fixed range, remaining unchanged regardless of the dataset's complexity. Consequently, the calibration performance is heavily reliant on primary classification accuracy. These discoveries unveil new limitations of LLMs, underscoring the need for caution when optimizing models to ensure they do not veer towards extremes. This serves as a reminder to carefully consider sensitivity and confidence in the pursuit of model fairness.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2311.09136v3">Rescue: Ranking LLM Responses with Partial Ordering to Improve Response Generation</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-      | 💬 ACL 2024 SRW
-    </div>
-    <details class="paper-abstract">
-      Customizing LLMs for a specific task involves separating high-quality responses from lower-quality ones. This skill can be developed using supervised fine-tuning with extensive human preference data. However, obtaining a large volume of expert-annotated data is costly for most tasks. In this paper, we explore a novel method to optimize LLMs using ranking metrics. This method trains the model to prioritize the best responses from a pool of candidates created for a particular task. Rather than a traditional full ordering, we advocate for a partial ordering, as achieving consensus on the perfect order of candidate responses can be challenging. Our partial ordering is more robust, less sensitive to noise, and can be achieved with limited human annotations or through heuristic methods. We test our system's improved response generation ability using benchmark datasets, including textual entailment and multi-document question answering. We conduct ablation studies to understand crucial factors, such as how to gather candidate responses for a specific task, determine their most suitable order, and balance supervised fine-tuning with ranking metrics. Our approach, named Rescue, offers a promising avenue for enhancing the response generation and task accuracy of LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16148v1">CHIME: LLM-Assisted Hierarchical Organization of Scientific Studies for Literature Review Support</a></div>
-    <div class="paper-meta">
-      📅 2024-07-23
-      | 💬 2024 ACL Findings
-    </div>
-    <details class="paper-abstract">
-      Literature review requires researchers to synthesize a large amount of information and is increasingly challenging as the scientific literature expands. In this work, we investigate the potential of LLMs for producing hierarchical organizations of scientific studies to assist researchers with literature review. We define hierarchical organizations as tree structures where nodes refer to topical categories and every node is linked to the studies assigned to that category. Our naive LLM-based pipeline for hierarchy generation from a set of studies produces promising yet imperfect hierarchies, motivating us to collect CHIME, an expert-curated dataset for this task focused on biomedicine. Given the challenging and time-consuming nature of building hierarchies from scratch, we use a human-in-the-loop process in which experts correct errors (both links between categories and study assignment) in LLM-generated hierarchies. CHIME contains 2,174 LLM-generated hierarchies covering 472 topics, and expert-corrected hierarchies for a subset of 100 topics. Expert corrections allow us to quantify LLM performance, and we find that while they are quite good at generating and organizing categories, their assignment of studies to categories could be improved. We attempt to train a corrector model with human feedback which improves study assignment by 12.6 F1 points. We release our dataset and models to encourage research on developing better assistive tools for literature review.
     </details>
 </div>

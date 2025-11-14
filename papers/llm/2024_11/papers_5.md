@@ -14,6 +14,53 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.14331v2">ChartifyText: Automated Chart Generation from Data-Involved Texts via LLM</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+    </div>
+    <details class="paper-abstract">
+      Text documents with numerical values involved are widely used in various applications such as scientific research, economy, public health and journalism. However, it is difficult for readers to quickly interpret such data-involved texts and gain deep insights. To fill this research gap, this work aims to automatically generate charts to accurately convey the underlying data and ideas to readers, which is essentially a challenging task. The challenges originate from text ambiguities, intrinsic sparsity and uncertainty of data in text documents, and subjective sentiment differences. Specifically, we propose ChartifyText, a novel fully-automated approach that leverages Large Language Models (LLMs) to convert complex data-involved texts to expressive charts. It consists of two major modules: tabular data inference and expressive chart generation. The tabular data inference module employs systematic prompt engineering to guide the LLM (e.g., GPT-4) to infer table data, where data ranges, uncertainties, missing data values and corresponding subjective sentiments are explicitly considered. The expressive chart generation module augments standard charts with intuitive visual encodings and concise texts to accurately convey the underlying data and insights. We extensively evaluate the effectiveness of ChartifyText on real-world data-involved text documents through case studies, in-depth interviews with three visualization experts, and a carefully-designed user study with 15 participants. The results demonstrate the usefulness and effectiveness of ChartifyText in helping readers efficiently and effectively make sense of data-involved texts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.04708v1">Exploring Hierarchical Molecular Graph Representation in Multimodal LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+    </div>
+    <details class="paper-abstract">
+      Following the milestones in large language models (LLMs) and multimodal models, we have seen a surge in applying LLMs to biochemical tasks. Leveraging graph features and molecular text representations, LLMs can tackle various tasks, such as predicting chemical reaction outcomes and describing molecular properties. However, most current work overlooks the multi-level nature of graph features. The impact of different feature levels on LLMs and the importance of each level remain unexplored, and it is possible that different chemistry tasks require different feature levels. In this work, we first investigate the effect of feature granularity by fusing GNN-generated feature tokens, discovering that even reducing all tokens to a single token does not significantly impact performance. We then explore the effect of various feature levels on performance, finding that both the quality of LLM-generated molecules and performance on different tasks benefit from different feature levels. We conclude with two key insights: (1) current molecular Multimodal LLMs(MLLMs) lack a comprehensive understanding of graph features, and (2) static processing is not sufficient for hierarchical graph feature. Our code will be publicly available soon.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.04704v1">Distinguishing LLM-generated from Human-written Code by Contrastive Learning</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+      | 💬 30 pages, 6 figures, Accepted by TOSEM'24
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs), such as ChatGPT released by OpenAI, have attracted significant attention from both industry and academia due to their demonstrated ability to generate high-quality content for various tasks. Despite the impressive capabilities of LLMs, there are growing concerns regarding their potential risks in various fields, such as news, education, and software engineering. Recently, several commercial and open-source LLM-generated content detectors have been proposed, which, however, are primarily designed for detecting natural language content without considering the specific characteristics of program code. This paper aims to fill this gap by proposing a novel ChatGPT-generated code detector, CodeGPTSensor, based on a contrastive learning framework and a semantic encoder built with UniXcoder. To assess the effectiveness of CodeGPTSensor on differentiating ChatGPT-generated code from human-written code, we first curate a large-scale Human and Machine comparison Corpus (HMCorp), which includes 550K pairs of human-written and ChatGPT-generated code (i.e., 288K Python code pairs and 222K Java code pairs). Based on the HMCorp dataset, our qualitative and quantitative analysis of the characteristics of ChatGPT-generated code reveals the challenge and opportunity of distinguishing ChatGPT-generated code from human-written code with their representative features. Our experimental results indicate that CodeGPTSensor can effectively identify ChatGPT-generated code, outperforming all selected baselines.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.04671v1">CUIfy the XR: An Open-Source Package to Embed LLM-powered Conversational Agents in XR</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+      | 💬 This work has been submitted to the IEEE for possible publication
+    </div>
+    <details class="paper-abstract">
+      Recent developments in computer graphics, machine learning, and sensor technologies enable numerous opportunities for extended reality (XR) setups for everyday life, from skills training to entertainment. With large corporations offering consumer-grade head-mounted displays (HMDs) in an affordable way, it is likely that XR will become pervasive, and HMDs will develop as personal devices like smartphones and tablets. However, having intelligent spaces and naturalistic interactions in XR is as important as technological advances so that users grow their engagement in virtual and augmented spaces. To this end, large language model (LLM)--powered non-player characters (NPCs) with speech-to-text (STT) and text-to-speech (TTS) models bring significant advantages over conventional or pre-scripted NPCs for facilitating more natural conversational user interfaces (CUIs) in XR. In this paper, we provide the community with an open-source, customizable, extensible, and privacy-aware Unity package, CUIfy, that facilitates speech-based NPC-user interaction with various LLMs, STT, and TTS models. Our package also supports multiple LLM-powered NPCs per environment and minimizes the latency between different computational models through streaming to achieve usable interactions between users and NPCs. We publish our source code in the following repository: https://gitlab.lrz.de/hctl/cuify
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2405.14125v3">ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2024-11-07
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) can elicit unintended and even harmful content when misaligned with human values, posing severe risks to users and society. To mitigate these risks, current evaluation benchmarks predominantly employ expert-designed contextual scenarios to assess how well LLMs align with human values. However, the labor-intensive nature of these benchmarks limits their test scope, hindering their ability to generalize to the extensive variety of open-world use cases and identify rare but crucial long-tail risks. Additionally, these static tests fail to adapt to the rapid evolution of LLMs, making it hard to evaluate timely alignment issues. To address these challenges, we propose ALI-Agent, an evaluation framework that leverages the autonomous abilities of LLM-powered agents to conduct in-depth and adaptive alignment assessments. ALI-Agent operates through two principal stages: Emulation and Refinement. During the Emulation stage, ALI-Agent automates the generation of realistic test scenarios. In the Refinement stage, it iteratively refines the scenarios to probe long-tail risks. Specifically, ALI-Agent incorporates a memory module to guide test scenario generation, a tool-using module to reduce human labor in tasks such as evaluating feedback from target LLMs, and an action module to refine tests. Extensive experiments across three aspects of human values--stereotypes, morality, and legality--demonstrate that ALI-Agent, as a general evaluation framework, effectively identifies model misalignment. Systematic analysis also validates that the generated test scenarios represent meaningful use cases, as well as integrate enhanced measures to probe long-tail risks. Our code is available at https://github.com/SophieZheng998/ALI-Agent.git
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.04620v4">CataractBot: An LLM-Powered Expert-in-the-Loop Chatbot for Cataract Patients</a></div>
     <div class="paper-meta">
       📅 2024-11-07
@@ -915,51 +962,5 @@
     </div>
     <details class="paper-abstract">
       Large language models (LLMs) have demonstrated the potential to mimic human social intelligence. However, most studies focus on simplistic and static self-report or performance-based tests, which limits the depth and validity of the analysis. In this paper, we developed a novel framework, InterIntent, to assess LLMs' social intelligence by mapping their ability to understand and manage intentions in a game setting. We focus on four dimensions of social intelligence: situational awareness, self-regulation, self-awareness, and theory of mind. Each dimension is linked to a specific game task: intention selection, intention following, intention summarization, and intention guessing. Our findings indicate that while LLMs exhibit high proficiency in selecting intentions, achieving an accuracy of 88%, their ability to infer the intentions of others is significantly weaker, trailing human performance by 20%. Additionally, game performance correlates with intention understanding, highlighting the importance of the four components towards success in this game. These findings underline the crucial role of intention understanding in evaluating LLMs' social intelligence and highlight the potential of using social deduction games as a complex testbed to enhance LLM evaluation. InterIntent contributes a structured approach to bridging the evaluation gap in social intelligence within multiplayer games.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01612v1">Ontology Population using LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-11-03
-    </div>
-    <details class="paper-abstract">
-      Knowledge graphs (KGs) are increasingly utilized for data integration, representation, and visualization. While KG population is critical, it is often costly, especially when data must be extracted from unstructured text in natural language, which presents challenges, such as ambiguity and complex interpretations. Large Language Models (LLMs) offer promising capabilities for such tasks, excelling in natural language understanding and content generation. However, their tendency to ``hallucinate'' can produce inaccurate outputs. Despite these limitations, LLMs offer rapid and scalable processing of natural language data, and with prompt engineering and fine-tuning, they can approximate human-level performance in extracting and structuring data for KGs. This study investigates LLM effectiveness for the KG population, focusing on the Enslaved.org Hub Ontology. In this paper, we report that compared to the ground truth, LLM's can extract ~90% of triples, when provided a modular ontology as guidance in the prompts.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.00799v5">Are you still on track!? Catching LLM Task Drift with Activations</a></div>
-    <div class="paper-meta">
-      📅 2024-11-03
-    </div>
-    <details class="paper-abstract">
-      Large Language Models are commonly used in retrieval-augmented applications to execute user instructions based on data from external sources. For example, modern search engines use LLMs to answer queries based on relevant search results; email plugins summarize emails by processing their content through an LLM. However, the potentially untrusted provenance of these data sources can lead to prompt injection attacks, where the LLM is manipulated by natural language instructions embedded in the external data, causing it to deviate from the user's original instruction(s). We define this deviation as task drift. Task drift is a significant concern as it allows attackers to exfiltrate data or influence the LLM's output for other users. We study LLM activations as a solution to detect task drift, showing that activation deltas - the difference in activations before and after processing external data - are strongly correlated with this phenomenon. Through two probing methods, we demonstrate that a simple linear classifier can detect drift with near-perfect ROC AUC on an out-of-distribution test set. We evaluate these methods by making minimal assumptions about how user's tasks, system prompts, and attacks can be phrased. We observe that this approach generalizes surprisingly well to unseen task domains, such as prompt injections, jailbreaks, and malicious instructions, without being trained on any of these attacks. Interestingly, the fact that this solution does not require any modifications to the LLM (e.g., fine-tuning), as well as its compatibility with existing meta-prompting solutions, makes it cost-efficient and easy to deploy. To encourage further research on activation-based task inspection, decoding, and interpretability, we release our large-scale TaskTracker toolkit, featuring a dataset of over 500K instances, representations from six SoTA language models, and inspection tools.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01562v1">Are LLMs good pragmatic speakers?</a></div>
-    <div class="paper-meta">
-      📅 2024-11-03
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) are trained on data assumed to include natural language pragmatics, but do they actually behave like pragmatic speakers? We attempt to answer this question using the Rational Speech Act (RSA) framework, which models pragmatic reasoning in human communication. Using the paradigm of a reference game constructed from the TUNA corpus, we score candidate referential utterances in both a state-of-the-art LLM (Llama3-8B-Instruct) and in the RSA model, comparing and contrasting these scores. Given that RSA requires defining alternative utterances and a truth-conditional meaning function, we explore such comparison for different choices of each of these requirements. We find that while scores from the LLM have some positive correlation with those from RSA, there isn't sufficient evidence to claim that it behaves like a pragmatic speaker. This initial study paves way for further targeted efforts exploring different models and settings, including human-subject evaluation, to see if LLMs truly can, or be made to, behave like pragmatic speakers.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.01503v1">LumosCore: Highly Scalable LLM Clusters with Optical Interconnect</a></div>
-    <div class="paper-meta">
-      📅 2024-11-03
-    </div>
-    <details class="paper-abstract">
-      The emergence of Large Language Model(LLM) technologies has led to a rapidly growing demand for compute resources in models. In response, the enterprises are building large-scale multi-tenant GPU clusters with 10k or even ore GPUs. In contrast to the rapidly growing cluster size, the bandwidth of clusters has also been increasing to meet communication demands, with 800 Gbps optical modules already in practical use and 1.6 Tbps modules on the horizon. However, designing clusters that simultaneously meet the requirements of large scale and high bandwidth is challenging due to the limited capacity of electrical switch chips. Unlike electrical switch chips, the single-port bandwidth of MEMS-OCS is solely determined by the optical module, making it straightforward to achieve both bandwidth and scability requirement. In this paper, we propose an opto-electronic hybrid architecture called \textbf{LumosCore}. We address the issues of L2 protocols incompatibility potential network contention and algorithm time complexity through physical topology and logical topology design. Additionally, we design a polynomial-time complexity link reconfiguration algorithm to reconfigure MEMS-OCS with minimal time overhead. We validate the feasibility of the proposed scheme in a cluster consisting of 128 NPUs, and through simulation based on real traces, we demonstrate the superiority of \textbf{LumosCore} over traditional architectures.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.09395v6">Evaluating LLMs' Mathematical and Coding Competency through Ontology-guided Interventions</a></div>
-    <div class="paper-meta">
-      📅 2024-11-03
-      | 💬 With o1 and GPT-4o results. Reformatted the data and presented more analysis
-    </div>
-    <details class="paper-abstract">
-      Recent advancements in Large Language Models (LLMs) have showcased striking results on existing logical reasoning benchmarks, with some models even surpassing human performance. However, the true depth of their competencies and robustness in reasoning tasks remains an open question. To this end, in this paper, we focus on two popular reasoning tasks: arithmetic reasoning and code generation. Particularly, we introduce (i) a general ontology of perturbations for math and coding questions, (ii) a semi-automatic method to apply these perturbations, and (iii) two datasets, GSMORE and HUMANEVAL-CORE, respectively, of perturbed math and coding problems to probe LLM capabilities in numeric reasoning and coding tasks. Through comprehensive evaluations of both closed-source and open-source LLMs, we show a significant performance drop across all the models against the perturbed questions, suggesting that the current LLMs lack robust problem solving skills and structured reasoning abilities in many areas, as defined by our ontology. We open-source the datasets and source codes at: https://github.com/declare-lab/LLM-ReasoningTest.
     </details>
 </div>

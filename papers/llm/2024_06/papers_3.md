@@ -13,6 +13,26 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.02376v2">Retaining Key Information under High Compression Ratios: Query-Guided Compressor for LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+      | 💬 Accepted to ACL 2024
+    </div>
+    <details class="paper-abstract">
+      The growing popularity of Large Language Models has sparked interest in context compression for Large Language Models (LLMs). However, the performance of previous methods degrades dramatically as compression ratios increase, sometimes even falling to the closed-book level. This decline can be attributed to the loss of key information during the compression process. Our preliminary study supports this hypothesis, emphasizing the significance of retaining key information to maintain model performance under high compression ratios. As a result, we introduce Query-Guided Compressor (QGC), which leverages queries to guide the context compression process, effectively preserving key information within the compressed context. Additionally, we employ a dynamic compression strategy. We validate the effectiveness of our proposed QGC on the Question Answering task, including NaturalQuestions, TriviaQA, and HotpotQA datasets. Experimental results show that QGC can consistently perform well even at high compression ratios, which also offers significant benefits in terms of inference cost and throughput.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.13671v2">KInIT at SemEval-2024 Task 8: Fine-tuned LLMs for Multilingual Machine-Generated Text Detection</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+      | 💬 SemEval-2024 Task 8
+    </div>
+    <details class="paper-abstract">
+      SemEval-2024 Task 8 is focused on multigenerator, multidomain, and multilingual black-box machine-generated text detection. Such a detection is important for preventing a potential misuse of large language models (LLMs), the newest of which are very capable in generating multilingual human-like texts. We have coped with this task in multiple ways, utilizing language identification and parameter-efficient fine-tuning of smaller LLMs for text classification. We have further used the per-language classification-threshold calibration to uniquely combine fine-tuned models predictions with statistical detection metrics to improve generalization of the system detection performance. Our submitted method achieved competitive results, ranking at the fourth place, just under 1 percentage point behind the winner.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.11930v1">A Critical Study of What Code-LLMs (Do Not) Learn</a></div>
     <div class="paper-meta">
       📅 2024-06-17
@@ -87,6 +107,16 @@
     </div>
     <details class="paper-abstract">
       Large Language Models (LLMs) have made remarkable progress in processing extensive contexts, with the Key-Value (KV) cache playing a vital role in enhancing their performance. However, the growth of the KV cache in response to increasing input length poses challenges to memory and time efficiency. To address this problem, this paper introduces SnapKV, an innovative and fine-tuning-free approach that efficiently minimizes KV cache size while still delivering comparable performance in real-world applications. We discover that each attention head in the model consistently focuses on specific prompt attention features during generation. Meanwhile, this robust pattern can be obtained from an 'observation' window located at the end of the prompts. Drawing on this insight, SnapKV automatically compresses KV caches by selecting clustered important KV positions for each attention head. Our approach significantly reduces the growing computational overhead and memory footprint when processing long input sequences. Specifically, SnapKV achieves a consistent decoding speed with a 3.6x increase in generation speed and an 8.2x enhancement in memory efficiency compared to the baseline when processing inputs of 16K tokens. At the same time, it maintains comparable performance to the baseline models across 16 long sequence datasets. Moreover, SnapKV can process up to 380K context tokens on a single A100-80GB GPU using HuggingFace implementation with minor changes, exhibiting only a negligible accuracy drop in the Needle-in-a-Haystack test. Further comprehensive studies suggest SnapKV's potential for practical applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.11657v1">Can LLM be a Personalized Judge?</a></div>
+    <div class="paper-meta">
+      📅 2024-06-17
+      | 💬 Our code is available at https://github.com/dong-river/Personalized-Judge
+    </div>
+    <details class="paper-abstract">
+      Ensuring that large language models (LLMs) reflect diverse user values and preferences is crucial as their user bases expand globally. It is therefore encouraging to see the growing interest in LLM personalization within the research community. However, current works often rely on the LLM-as-a-Judge approach for evaluation without thoroughly examining its validity. In this paper, we investigate the reliability of LLM-as-a-Personalized-Judge, asking LLMs to judge user preferences based on personas. Our findings suggest that directly applying LLM-as-a-Personalized-Judge is less reliable than previously assumed, showing low and inconsistent agreement with human ground truth. The personas typically used are often overly simplistic, resulting in low predictive power. To address these issues, we introduce verbal uncertainty estimation into the LLM-as-a-Personalized-Judge pipeline, allowing the model to express low confidence on uncertain judgments. This adjustment leads to much higher agreement (above 80%) on high-certainty samples for binary tasks. Through human evaluation, we find that the LLM-as-a-Personalized-Judge achieves comparable performance to third-party humans evaluation and even surpasses human performance on high-certainty samples. Our work indicates that certainty-enhanced LLM-as-a-Personalized-Judge offers a promising direction for developing more reliable and scalable methods for evaluating LLM personalization.
     </details>
 </div>
 <div class="paper-card">
@@ -835,6 +865,62 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.01817v3">LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks</a></div>
+    <div class="paper-meta">
+      📅 2024-06-12
+    </div>
+    <details class="paper-abstract">
+      There is considerable confusion about the role of Large Language Models (LLMs) in planning and reasoning tasks. On one side are over-optimistic claims that LLMs can indeed do these tasks with just the right prompting or self-verification strategies. On the other side are perhaps over-pessimistic claims that all that LLMs are good for in planning/reasoning tasks are as mere translators of the problem specification from one syntactic format to another, and ship the problem off to external symbolic solvers. In this position paper, we take the view that both these extremes are misguided. We argue that auto-regressive LLMs cannot, by themselves, do planning or self-verification (which is after all a form of reasoning), and shed some light on the reasons for misunderstandings in the literature. We will also argue that LLMs should be viewed as universal approximate knowledge sources that have much more meaningful roles to play in planning/reasoning tasks beyond simple front-end/back-end format translators. We present a vision of {\bf LLM-Modulo Frameworks} that combine the strengths of LLMs with external model-based verifiers in a tighter bi-directional interaction regime. We will show how the models driving the external verifiers themselves can be acquired with the help of LLMs. We will also argue that rather than simply pipelining LLMs and symbolic components, this LLM-Modulo Framework provides a better neuro-symbolic approach that offers tighter integration between LLMs and symbolic components, and allows extending the scope of model-based planning/reasoning regimes towards more flexible knowledge, problem and preference specifications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06950v1">A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation</a></div>
+    <div class="paper-meta">
+      📅 2024-06-11
+      | 💬 26 pages, 18 figures
+    </div>
+    <details class="paper-abstract">
+      This paper focuses on the task of hallucination detection, which aims to determine the truthfulness of LLM-generated statements. To address this problem, a popular class of methods utilize the LLM's self-consistencies in its beliefs in a set of logically related augmented statements generated by the LLM, which does not require external knowledge databases and can work with both white-box and black-box LLMs. However, in many existing approaches, the augmented statements tend to be very monotone and unstructured, which makes it difficult to integrate meaningful information from the LLM beliefs in these statements. Also, many methods work with the binarized version of the LLM's belief, instead of the continuous version, which significantly loses information. To overcome these limitations, in this paper, we propose Belief Tree Propagation (BTProp), a probabilistic framework for LLM hallucination detection. BTProp introduces a belief tree of logically related statements by recursively decomposing a parent statement into child statements with three decomposition strategies, and builds a hidden Markov tree model to integrate the LLM's belief scores in these statements in a principled way. Experiment results show that our method improves baselines by 3%-9% (evaluated by AUROC and AUC-PR) on multiple hallucination detection benchmarks. Code is available at https://github.com/UCSB-NLP-Chang/BTProp.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06918v1">Towards more realistic evaluation of LLM-based code generation: an experimental study and beyond</a></div>
+    <div class="paper-meta">
+      📅 2024-06-11
+    </div>
+    <details class="paper-abstract">
+      To evaluate the code generation capabilities of Large Language Models (LLMs) in complex real-world software development scenarios, many evaluation approaches have been developed. They typically leverage contextual code from the latest version of a project to facilitate LLMs in accurately generating the desired function. However, such evaluation approaches fail to consider the dynamic evolution of software projects over time, which we refer to as evolving-ignored situation, leading to issues of future context leakage and useful context missing. This in turn results in inaccurate evaluation of LLMs' performance. In this paper, we conduct an empirical study to deeply understand LLMs' code generation performance within settings that reflect the evolving nature of software development. To achieve this, we first construct an evolving-aware repository-level code generation dataset, namely HumanEvo, equipped with an automated execution-based evaluation tool. Second, we manually categorize HumanEvo according to dependency levels to more comprehensively analyze the model's performance in generating functions with different dependency levels. Third, we conduct extensive experiments on HumanEvo with seven representative and diverse LLMs to verify the effectiveness of the proposed benchmark. We obtain many important findings through our experimental study. For example, we find that previous evolving-ignored evaluation approaches lead to inflated performance of the LLMs, ranging from 10.0% to 61.1%. Based on the findings, we give actionable suggestions on more realistic evaluation of LLMs on code generation. We also build a shared evolving-aware code generation toolbox to facilitate future research. Replication package including source code, datasets and appendix is available at https://github.com/DeepSoftwareAnalytics/EvoEval.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.05955v2">Turbo Sparse: Achieving LLM SOTA Performance with Minimal Activated Parameters</a></div>
+    <div class="paper-meta">
+      📅 2024-06-11
+    </div>
+    <details class="paper-abstract">
+      Exploiting activation sparsity is a promising approach to significantly accelerating the inference process of large language models (LLMs) without compromising performance. However, activation sparsity is determined by activation functions, and commonly used ones like SwiGLU and GeGLU exhibit limited sparsity. Simply replacing these functions with ReLU fails to achieve sufficient sparsity. Moreover, inadequate training data can further increase the risk of performance degradation. To address these challenges, we propose a novel dReLU function, which is designed to improve LLM activation sparsity, along with a high-quality training data mixture ratio to facilitate effective sparsification. Additionally, we leverage sparse activation patterns within the Feed-Forward Network (FFN) experts of Mixture-of-Experts (MoE) models to further boost efficiency. By applying our neuron sparsification method to the Mistral and Mixtral models, only 2.5 billion and 4.3 billion parameters are activated per inference iteration, respectively, while achieving even more powerful model performance. Evaluation results demonstrate that this sparsity achieves a 2-5x decoding speedup. Remarkably, on mobile phones, our TurboSparse-Mixtral-47B achieves an inference speed of 11 tokens per second. Our models are available at \url{https://huggingface.co/PowerInfer}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06864v1">Validating LLM-Generated Programs with Metamorphic Prompt Testing</a></div>
+    <div class="paper-meta">
+      📅 2024-06-11
+    </div>
+    <details class="paper-abstract">
+      The latest paradigm shift in software development brings in the innovation and automation afforded by Large Language Models (LLMs), showcased by Generative Pre-trained Transformer (GPT), which has shown remarkable capacity to generate code autonomously, significantly reducing the manual effort required for various programming tasks. Although, the potential benefits of LLM-generated code are vast, most notably in efficiency and rapid prototyping, as LLMs become increasingly integrated into the software development lifecycle and hence the supply chain, complex and multifaceted challenges arise as the code generated from these language models carry profound questions on quality and correctness. Research is required to comprehensively explore these critical concerns surrounding LLM-generated code. In this paper, we propose a novel solution called metamorphic prompt testing to address these challenges. Our intuitive observation is that intrinsic consistency always exists among correct code pieces but may not exist among flawed code pieces, so we can detect flaws in the code by detecting inconsistencies. Therefore, we can vary a given prompt to multiple prompts with paraphrasing, and to ask the LLM to acquire multiple versions of generated code, so that we can validate whether the semantic relations still hold in the acquired code through cross-validation. Our evaluation on HumanEval shows that metamorphic prompt testing is able to detect 75 percent of the erroneous programs generated by GPT-4, with a false positive rate of 8.6 percent.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.06863v1">Ollabench: Evaluating LLMs' Reasoning for Human-centric Interdependent Cybersecurity</a></div>
+    <div class="paper-meta">
+      📅 2024-06-11
+      | 💬 12 pages, 7 figures, 2 tables The final conference/journal version may have significantly more content updates
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have the potential to enhance Agent-Based Modeling by better representing complex interdependent cybersecurity systems, improving cybersecurity threat modeling and risk management. However, evaluating LLMs in this context is crucial for legal compliance and effective application development. Existing LLM evaluation frameworks often overlook the human factor and cognitive computing capabilities essential for interdependent cybersecurity. To address this gap, I propose OllaBench, a novel evaluation framework that assesses LLMs' accuracy, wastefulness, and consistency in answering scenario-based information security compliance and non-compliance questions. OllaBench is built on a foundation of 24 cognitive behavioral theories and empirical evidence from 38 peer-reviewed papers. OllaBench was used to evaluate 21 LLMs, including both open-weight and commercial models from OpenAI, Anthropic, Google, Microsoft, Meta and so on. The results reveal that while commercial LLMs have the highest overall accuracy scores, there is significant room for improvement. Smaller low-resolution open-weight LLMs are not far behind in performance, and there are significant differences in token efficiency and consistency among the evaluated models. OllaBench provides a user-friendly interface and supports a wide range of LLM platforms, making it a valuable tool for researchers and solution developers in the field of human-centric interdependent cybersecurity and beyond.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.02107v4">Instances Need More Care: Rewriting Prompts for Instances with LLMs in the Loop Yields Better Zero-Shot Performance</a></div>
     <div class="paper-meta">
       📅 2024-06-11
@@ -871,92 +957,5 @@
     </div>
     <details class="paper-abstract">
       Temporal logics are powerful tools that are widely used for the synthesis and verification of reactive systems. The recent progress on Large Language Models (LLMs) has the potential to make the process of writing such specifications more accessible. However, writing specifications in temporal logics remains challenging for all but the most expert users. A key question in using LLMs for temporal logic specification engineering is to understand what kind of guidance is most helpful to the LLM and the users to easily produce specifications. Looking specifically at the problem of reactive program synthesis, we explore the impact of providing an LLM with guidance on the separation of control and data--making explicit for the LLM what functionality is relevant for the specification, and treating the remaining functionality as an implementation detail for a series of pre-defined functions and predicates. We present a benchmark set and find that this separation of concerns improves specification generation. Our benchmark provides a test set against which to verify future work in LLM generation of temporal logic specifications.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.16854v3">An Expert is Worth One Token: Synergizing Multiple Expert LLMs as Generalist via Expert Token Routing</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      We present Expert-Token-Routing, a unified generalist framework that facilitates seamless integration of multiple expert LLMs. Our framework represents expert LLMs as special expert tokens within the vocabulary of a meta LLM. The meta LLM can route to an expert LLM like generating new tokens. Expert-Token-Routing not only supports learning the implicit expertise of expert LLMs from existing instruction dataset but also allows for dynamic extension of new expert LLMs in a plug-and-play manner. It also conceals the detailed collaboration process from the user's perspective, facilitating interaction as though it were a singular LLM. Our framework outperforms various existing multi-LLM collaboration paradigms across benchmarks that incorporate six diverse expert domains, demonstrating effectiveness and robustness in building generalist LLM system via synergizing multiple expert LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.07268v1">Advancing Grounded Multimodal Named Entity Recognition via LLM-Based Reformulation and Box-Based Segmentation</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 Extension of our Findings of EMNLP 2023 & ACL 2024 paper
-    </div>
-    <details class="paper-abstract">
-      Grounded Multimodal Named Entity Recognition (GMNER) task aims to identify named entities, entity types and their corresponding visual regions. GMNER task exhibits two challenging attributes: 1) The tenuous correlation between images and text on social media contributes to a notable proportion of named entities being ungroundable. 2) There exists a distinction between coarse-grained noun phrases used in similar tasks (e.g., phrase localization) and fine-grained named entities. In this paper, we propose RiVEG, a unified framework that reformulates GMNER into a joint MNER-VE-VG task by leveraging large language models (LLMs) as connecting bridges. This reformulation brings two benefits: 1) It enables us to optimize the MNER module for optimal MNER performance and eliminates the need to pre-extract region features using object detection methods, thus naturally addressing the two major limitations of existing GMNER methods. 2) The introduction of Entity Expansion Expression module and Visual Entailment (VE) module unifies Visual Grounding (VG) and Entity Grounding (EG). This endows the proposed framework with unlimited data and model scalability. Furthermore, to address the potential ambiguity stemming from the coarse-grained bounding box output in GMNER, we further construct the new Segmented Multimodal Named Entity Recognition (SMNER) task and corresponding Twitter-SMNER dataset aimed at generating fine-grained segmentation masks, and experimentally demonstrate the feasibility and effectiveness of using box prompt-based Segment Anything Model (SAM) to empower any GMNER model with the ability to accomplish the SMNER task. Extensive experiments demonstrate that RiVEG significantly outperforms SoTA methods on four datasets across the MNER, GMNER, and SMNER tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.09267v2">Self-Alignment for Factuality: Mitigating Hallucinations in LLMs via Self-Evaluation</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 20 pages
-    </div>
-    <details class="paper-abstract">
-      Despite showing increasingly human-like abilities, large language models (LLMs) often struggle with factual inaccuracies, i.e. "hallucinations", even when they hold relevant knowledge. To address these hallucinations, current approaches typically necessitate high-quality human factuality annotations. In this work, we explore Self-Alignment for Factuality, where we leverage the self-evaluation capability of an LLM to provide training signals that steer the model towards factuality. Specifically, we incorporate Self-Eval, a self-evaluation component, to prompt an LLM to validate the factuality of its own generated responses solely based on its internal knowledge. Additionally, we design Self-Knowledge Tuning (SK-Tuning) to augment the LLM's self-evaluation ability by improving the model's confidence estimation and calibration. We then utilize these self-annotated responses to fine-tune the model via Direct Preference Optimization algorithm. We show that the proposed self-alignment approach substantially enhances factual accuracy over Llama family models across three key knowledge-intensive tasks on TruthfulQA and BioGEN.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.07056v1">Effectively Compress KV Heads for LLM</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      The advent of pre-trained large language models (LLMs) has revolutionized various natural language processing tasks. These models predominantly employ an auto-regressive decoding mechanism that utilizes Key-Value (KV) caches to eliminate redundant calculations for previous tokens. Nevertheless, as context lengths and batch sizes increase, the linear expansion in memory footprint of KV caches becomes a key bottleneck of LLM deployment, which decreases generation speeds significantly. To mitigate this issue, previous techniques like multi-query attention (MQA) and grouped-query attention (GQA) have been developed, in order to reduce KV heads to accelerate inference with comparable accuracy to multi-head attention (MHA). Despite their effectiveness, existing strategies for compressing MHA often overlook the intrinsic properties of the KV caches. In this work, we explore the low-rank characteristics of the KV caches and propose a novel approach for compressing KV heads. In particular, we carefully optimize the MHA-to-GQA transformation to minimize compression error, and to remain compatible with rotary position embeddings (RoPE), we also introduce specialized strategies for key caches with RoPE. We demonstrate that our method can compress half or even three-quarters of KV heads while maintaining performance comparable to the original LLMs, which presents a promising direction for more efficient LLM deployment in resource-constrained environments.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.07053v1">TelecomRAG: Taming Telecom Standards with Retrieval Augmented Generation and LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 7 pages, 2 figures, 3 tables
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have immense potential to transform the telecommunications industry. They could help professionals understand complex standards, generate code, and accelerate development. However, traditional LLMs struggle with the precision and source verification essential for telecom work. To address this, specialized LLM-based solutions tailored to telecommunication standards are needed. Retrieval-augmented generation (RAG) offers a way to create precise, fact-based answers. This paper proposes TelecomRAG, a framework for a Telecommunication Standards Assistant that provides accurate, detailed, and verifiable responses. Our implementation, using a knowledge base built from 3GPP Release 16 and Release 18 specification documents, demonstrates how this assistant surpasses generic LLMs, offering superior accuracy, technical depth, and verifiability, and thus significant value to the telecommunications field.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11457v2">When Do LLMs Need Retrieval Augmentation? Mitigating LLMs' Overconfidence Helps Retrieval Augmentation</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have been found to have difficulty knowing they do not possess certain knowledge and tend to provide specious answers in such cases. Retrieval Augmentation (RA) has been extensively studied to mitigate LLMs' hallucinations. However, due to the extra overhead and unassured quality of retrieval, it may not be optimal to conduct RA all the time. A straightforward idea is to only conduct retrieval when LLMs are uncertain about a question. This motivates us to enhance the LLMs' ability to perceive their knowledge boundaries to help RA. In this paper, we first quantitatively measure LLMs' such ability and confirm their overconfidence. Then, we study how LLMs' certainty about a question correlates with their dependence on external retrieved information. We propose several methods to enhance LLMs' perception of knowledge boundaries and show that they are effective in reducing overconfidence. Additionally, equipped with these methods, LLMs can achieve comparable or even better performance of RA with much fewer retrieval calls.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.03202v2">ChatLang-8: An LLM-Based Synthetic Data Generation Framework for Grammatical Error Correction</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 preprint
-    </div>
-    <details class="paper-abstract">
-      We explore and improve the capabilities of LLMs to generate data for grammatical error correction (GEC). When merely producing parallel sentences, their patterns are too simplistic to be valuable as a corpus. To address this issue, we propose an automated framework that includes a Subject Selector, Grammar Selector, Prompt Manager, and Evaluator. Additionally, we introduce a new dataset for GEC tasks, named ChatLang-8, which encompasses eight types of subject nouns and 23 types of grammar. It consists of 1 million pairs featuring human-like grammatical errors. Our experiments reveal that ChatLang-8 exhibits a more uniform pattern composition compared to existing GEC datasets. Furthermore, we observe improved model performance when using ChatLang-8 instead of existing GEC datasets. The experimental results suggest that our framework and ChatLang-8 are valuable resources for enhancing ChatGPT's data generation capabilities.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.07007v1">Crayon: Customized On-Device LLM via Instant Adapter Blending and Edge-Server Hybrid Inference</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 ACL 2024 Main
-    </div>
-    <details class="paper-abstract">
-      The customization of large language models (LLMs) for user-specified tasks gets important. However, maintaining all the customized LLMs on cloud servers incurs substantial memory and computational overheads, and uploading user data can also lead to privacy concerns. On-device LLMs can offer a promising solution by mitigating these issues. Yet, the performance of on-device LLMs is inherently constrained by the limitations of small-scaled models. To overcome these restrictions, we first propose Crayon, a novel approach for on-device LLM customization. Crayon begins by constructing a pool of diverse base adapters, and then we instantly blend them into a customized adapter without extra training. In addition, we develop a device-server hybrid inference strategy, which deftly allocates more demanding queries or non-customized tasks to a larger, more capable LLM on a server. This ensures optimal performance without sacrificing the benefits of on-device customization. We carefully craft a novel benchmark from multiple question-answer datasets, and show the efficacy of our method in the LLM customization.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.04788v3">MLLM-as-a-Judge: Assessing Multimodal LLM-as-a-Judge with Vision-Language Benchmark</a></div>
-    <div class="paper-meta">
-      📅 2024-06-11
-      | 💬 ICML 2024 (Oral)
-    </div>
-    <details class="paper-abstract">
-      Multimodal Large Language Models (MLLMs) have gained significant attention recently, showing remarkable potential in artificial general intelligence. However, assessing the utility of MLLMs presents considerable challenges, primarily due to the absence of multimodal benchmarks that align with human preferences. Drawing inspiration from the concept of LLM-as-a-Judge within LLMs, this paper introduces a novel benchmark, termed MLLM-as-a-Judge, to assess the ability of MLLMs in assisting judges across diverse modalities, encompassing three distinct tasks: Scoring Evaluation, Pair Comparison, and Batch Ranking. Our study reveals that, while MLLMs demonstrate remarkable human-like discernment in Pair Comparison, there is a significant divergence from human preferences in Scoring Evaluation and Batch Ranking. Furthermore, a closer examination reveals persistent challenges in the judgment capacities of LLMs, including diverse biases, hallucinatory responses, and inconsistencies in judgment, even in advanced models such as GPT-4V. These findings emphasize the pressing need for enhancements and further research efforts to be undertaken before regarding MLLMs as fully reliable evaluators. In light of this, we advocate for additional efforts dedicated to supporting the continuous development within the domain of MLLM functioning as judges. The code and dataset are publicly available at our project homepage: \url{https://mllm-judge.github.io/}.
     </details>
 </div>

@@ -12,13 +12,61 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2404.01461v4">Will the Real Linda Please Stand up...to Large Language Models? Examining the Representativeness Heuristic in LLMs</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16286v1">A deeper look at depth pruning of LLMs</a></div>
     <div class="paper-meta">
       📅 2024-07-23
-      | 💬 Published as a conference paper at COLM 2024
     </div>
     <details class="paper-abstract">
-      Although large language models (LLMs) have demonstrated remarkable proficiency in modeling text and generating human-like text, they may exhibit biases acquired from training data in doing so. Specifically, LLMs may be susceptible to a common cognitive trap in human decision-making called the representativeness heuristic. This is a concept in psychology that refers to judging the likelihood of an event based on how closely it resembles a well-known prototype or typical example, versus considering broader facts or statistical evidence. This research investigates the impact of the representativeness heuristic on LLM reasoning. We created ReHeAT (Representativeness Heuristic AI Testing), a dataset containing a series of problems spanning six common types of representativeness heuristics. Experiments reveal that four LLMs applied to ReHeAT all exhibited representativeness heuristic biases. We further identify that the model's reasoning steps are often incorrectly based on a stereotype rather than on the problem's description. Interestingly, the performance improves when adding a hint in the prompt to remind the model to use its knowledge. This suggests the uniqueness of the representativeness heuristic compared to traditional biases. It can occur even when LLMs possess the correct knowledge while falling into a cognitive trap. This highlights the importance of future research focusing on the representativeness heuristic in model reasoning and decision-making and on developing solutions to address it.
+      Large Language Models (LLMs) are not only resource-intensive to train but even more costly to deploy in production. Therefore, recent work has attempted to prune blocks of LLMs based on cheap proxies for estimating block importance, effectively removing 10% of blocks in well-trained LLaMa-2 and Mistral 7b models without any significant degradation of downstream metrics. In this paper, we explore different block importance metrics by considering adaptive metrics such as Shapley value in addition to static ones explored in prior work. We show that adaptive metrics exhibit a trade-off in performance between tasks i.e., improvement on one task may degrade performance on the other due to differences in the computed block influences. Furthermore, we extend this analysis from a complete block to individual self-attention and feed-forward layers, highlighting the propensity of the self-attention layers to be more amendable to pruning, even allowing removal of upto 33% of the self-attention layers without incurring any performance degradation on MMLU for Mistral 7b (significant reduction in costly maintenance of KV-cache). Finally, we look at simple performance recovery techniques to emulate the pruned layers by training lightweight additive bias or low-rank linear adapters. Performance recovery using emulated updates avoids performance degradation for the initial blocks (up to 5% absolute improvement on MMLU), which is either competitive or superior to the learning-based technique.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.12022v2">ITERTL: An Iterative Framework for Fine-tuning LLMs for RTL Code Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 There is some mistakes about the Experimental Setup in Section4.1
+    </div>
+    <details class="paper-abstract">
+      Recently, large language models (LLMs) have demonstrated excellent performance in understanding human instructions and generating code, which has inspired researchers to explore the feasibility of generating RTL code with LLMs. However, the existing approaches to fine-tune LLMs on RTL codes typically are conducted on fixed datasets, which do not fully stimulate the capability of LLMs and require large amounts of reference data. To mitigate these issues , we introduce a simple yet effective iterative training paradigm named ITERTL. During each iteration, samples are drawn from the model trained in the previous cycle. Then these new samples are employed for training in this loop. Through this iterative approach, the distribution mismatch between the model and the training samples is reduced. Additionally, the model is thus enabled to explore a broader generative space and receive more comprehensive feedback. Theoretical analyses are conducted to investigate the mechanism of the effectiveness. Experimental results show the model trained through our proposed approach can compete with and even outperform the state-of-the-art (SOTA) open-source model with nearly 37\% reference samples, achieving remarkable 42.9\% and 62.2\% pass@1 rate on two VerilogEval evaluation datasets respectively. While using the same amount of reference samples, our method can achieved a relative improvement of 16.9\% and 12.5\% in pass@1 compared to the non-iterative method. This study facilitates the application of LLMs for generating RTL code in practical scenarios with limited data.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16216v1">A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+    </div>
+    <details class="paper-abstract">
+      With advancements in self-supervised learning, the availability of trillions tokens in a pre-training corpus, instruction fine-tuning, and the development of large Transformers with billions of parameters, large language models (LLMs) are now capable of generating factual and coherent responses to human queries. However, the mixed quality of training data can lead to the generation of undesired responses, presenting a significant challenge. Over the past two years, various methods have been proposed from different perspectives to enhance LLMs, particularly in aligning them with human expectation. Despite these efforts, there has not been a comprehensive survey paper that categorizes and details these approaches. In this work, we aim to address this gap by categorizing these papers into distinct topics and providing detailed explanations of each alignment method, thereby helping readers gain a thorough understanding of the current state of the field.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11406v3">Don't Go To Extremes: Revealing the Excessive Sensitivity and Calibration Limitations of LLMs in Implicit Hate Speech Detection</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 ACL 2024 Main Conference
+    </div>
+    <details class="paper-abstract">
+      The fairness and trustworthiness of Large Language Models (LLMs) are receiving increasing attention. Implicit hate speech, which employs indirect language to convey hateful intentions, occupies a significant portion of practice. However, the extent to which LLMs effectively address this issue remains insufficiently examined. This paper delves into the capability of LLMs to detect implicit hate speech (Classification Task) and express confidence in their responses (Calibration Task). Our evaluation meticulously considers various prompt patterns and mainstream uncertainty estimation methods. Our findings highlight that LLMs exhibit two extremes: (1) LLMs display excessive sensitivity towards groups or topics that may cause fairness issues, resulting in misclassifying benign statements as hate speech. (2) LLMs' confidence scores for each method excessively concentrate on a fixed range, remaining unchanged regardless of the dataset's complexity. Consequently, the calibration performance is heavily reliant on primary classification accuracy. These discoveries unveil new limitations of LLMs, underscoring the need for caution when optimizing models to ensure they do not veer towards extremes. This serves as a reminder to carefully consider sensitivity and confidence in the pursuit of model fairness.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2311.09136v3">Rescue: Ranking LLM Responses with Partial Ordering to Improve Response Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 ACL 2024 SRW
+    </div>
+    <details class="paper-abstract">
+      Customizing LLMs for a specific task involves separating high-quality responses from lower-quality ones. This skill can be developed using supervised fine-tuning with extensive human preference data. However, obtaining a large volume of expert-annotated data is costly for most tasks. In this paper, we explore a novel method to optimize LLMs using ranking metrics. This method trains the model to prioritize the best responses from a pool of candidates created for a particular task. Rather than a traditional full ordering, we advocate for a partial ordering, as achieving consensus on the perfect order of candidate responses can be challenging. Our partial ordering is more robust, less sensitive to noise, and can be achieved with limited human annotations or through heuristic methods. We test our system's improved response generation ability using benchmark datasets, including textual entailment and multi-document question answering. We conduct ablation studies to understand crucial factors, such as how to gather candidate responses for a specific task, determine their most suitable order, and balance supervised fine-tuning with ranking metrics. Our approach, named Rescue, offers a promising avenue for enhancing the response generation and task accuracy of LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.16148v1">CHIME: LLM-Assisted Hierarchical Organization of Scientific Studies for Literature Review Support</a></div>
+    <div class="paper-meta">
+      📅 2024-07-23
+      | 💬 2024 ACL Findings
+    </div>
+    <details class="paper-abstract">
+      Literature review requires researchers to synthesize a large amount of information and is increasingly challenging as the scientific literature expands. In this work, we investigate the potential of LLMs for producing hierarchical organizations of scientific studies to assist researchers with literature review. We define hierarchical organizations as tree structures where nodes refer to topical categories and every node is linked to the studies assigned to that category. Our naive LLM-based pipeline for hierarchy generation from a set of studies produces promising yet imperfect hierarchies, motivating us to collect CHIME, an expert-curated dataset for this task focused on biomedicine. Given the challenging and time-consuming nature of building hierarchies from scratch, we use a human-in-the-loop process in which experts correct errors (both links between categories and study assignment) in LLM-generated hierarchies. CHIME contains 2,174 LLM-generated hierarchies covering 472 topics, and expert-corrected hierarchies for a subset of 100 topics. Expert corrections allow us to quantify LLM performance, and we find that while they are quite good at generating and organizing categories, their assignment of studies to categories could be improved. We attempt to train a corrector model with human feedback which improves study assignment by 12.6 F1 points. We release our dataset and models to encourage research on developing better assistive tools for literature review.
     </details>
 </div>
 <div class="paper-card">
@@ -438,6 +486,15 @@
     </div>
     <details class="paper-abstract">
       Numerous recent works aim to enhance the efficacy of Large Language Models (LLMs) through strategic prompting. In particular, the Optimization by PROmpting (OPRO) approach provides state-of-the-art performance by leveraging LLMs as optimizers where the optimization task is to find instructions that maximize the task accuracy. In this paper, we revisit OPRO for automated prompting with relatively small-scale LLMs, such as LLaMa-2 family and Mistral 7B. Our investigation reveals that OPRO shows limited effectiveness in small-scale LLMs, with limited inference capabilities constraining optimization ability. We suggest future automatic prompting engineering to consider both model capabilities and computational costs. Additionally, for small-scale LLMs, we recommend direct instructions that clearly outline objectives and methodologies as robust prompt baselines, ensuring efficient and effective prompt engineering in ongoing research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.17663v2">LLM-ARC: Enhancing LLMs with an Automated Reasoning Critic</a></div>
+    <div class="paper-meta">
+      📅 2024-07-19
+    </div>
+    <details class="paper-abstract">
+      We introduce LLM-ARC, a neuro-symbolic framework designed to enhance the logical reasoning capabilities of Large Language Models (LLMs), by combining them with an Automated Reasoning Critic (ARC). LLM-ARC employs an Actor-Critic method where the LLM Actor generates declarative logic programs along with tests for semantic correctness, while the Automated Reasoning Critic evaluates the code, runs the tests and provides feedback on test failures for iterative refinement. Implemented using Answer Set Programming (ASP), LLM-ARC achieves a new state-of-the-art accuracy of 88.32% on the FOLIO benchmark which tests complex logical reasoning capabilities. Our experiments demonstrate significant improvements over LLM-only baselines, highlighting the importance of logic test generation and iterative self-refinement. We achieve our best result using a fully automated self-supervised training loop where the Actor is trained on end-to-end dialog traces with Critic feedback. We discuss potential enhancements and provide a detailed error analysis, showcasing the robustness and efficacy of LLM-ARC for complex natural language reasoning tasks.
     </details>
 </div>
 <div class="paper-card">
@@ -901,63 +958,5 @@
     </div>
     <details class="paper-abstract">
       Methods to evaluate Large Language Model (LLM) responses and detect inconsistencies, also known as hallucinations, with respect to the provided knowledge, are becoming increasingly important for LLM applications. Current metrics fall short in their ability to provide explainable decisions, systematically check all pieces of information in the response, and are often too computationally expensive to be used in practice. We present GraphEval: a hallucination evaluation framework based on representing information in Knowledge Graph (KG) structures. Our method identifies the specific triples in the KG that are prone to hallucinations and hence provides more insight into where in the response a hallucination has occurred, if at all, than previous methods. Furthermore, using our approach in conjunction with state-of-the-art natural language inference (NLI) models leads to an improvement in balanced accuracy on various hallucination benchmarks, compared to using the raw NLI models. Lastly, we explore the use of GraphEval for hallucination correction by leveraging the structure of the KG, a method we name GraphCorrect, and demonstrate that the majority of hallucinations can indeed be rectified.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10725v1">CLAVE: An Adaptive Framework for Evaluating Values of LLM Generated Responses</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-    </div>
-    <details class="paper-abstract">
-      The rapid progress in Large Language Models (LLMs) poses potential risks such as generating unethical content. Assessing LLMs' values can help expose their misalignment, but relies on reference-free evaluators, e.g., fine-tuned LLMs or close-source ones like GPT-4, to identify values reflected in generated responses. Nevertheless, these evaluators face two challenges in open-ended value evaluation: they should align with changing human value definitions with minimal annotation, against their own bias (adaptability), and detect varying value expressions and scenarios robustly (generalizability). To handle these challenges, we introduce CLAVE, a novel framework which integrates two complementary LLMs, a large one to extract high-level value concepts from a few human labels, leveraging its extensive knowledge and generalizability, and a smaller one fine-tuned on such concepts to better align with human value understanding. This dual-model approach enables calibration with any value systems using <100 human-labeled samples per value type. Then we present ValEval, a comprehensive dataset comprising 13k+ (text,value,label) tuples across diverse domains, covering three major value systems. We benchmark the capabilities of 12+ popular LLM evaluators and analyze their strengths and weaknesses. Our findings reveal that combining fine-tuned small models and prompt-based large ones serves as a superior balance in value evaluation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10701v1">DOCBENCH: A Benchmark for Evaluating LLM-based Document Reading Systems</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 Work in progress
-    </div>
-    <details class="paper-abstract">
-      Recently, there has been a growing interest among large language model (LLM) developers in LLM-based document reading systems, which enable users to upload their own documents and pose questions related to the document contents, going beyond simple reading comprehension tasks. Consequently, these systems have been carefully designed to tackle challenges such as file parsing, metadata extraction, multi-modal information understanding and long-context reading. However, no current benchmark exists to evaluate their performance in such scenarios, where a raw file and questions are provided as input, and a corresponding response is expected as output. In this paper, we introduce DocBench, a new benchmark designed to evaluate LLM-based document reading systems. Our benchmark involves a meticulously crafted process, including the recruitment of human annotators and the generation of synthetic questions. It includes 229 real documents and 1,102 questions, spanning across five different domains and four major types of questions. We evaluate both proprietary LLM-based systems accessible via web interfaces or APIs, and a parse-then-read pipeline employing open-source LLMs. Our evaluations reveal noticeable gaps between existing LLM-based document reading systems and human performance, underscoring the challenges of developing proficient systems. To summarize, DocBench aims to establish a standardized benchmark for evaluating LLM-based document reading systems under diverse real-world scenarios, thereby guiding future advancements in this research area.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.10707v2">Discovering Latent Themes in Social Media Messaging: A Machine-in-the-Loop Approach Integrating LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 Accepted at 19th International AAAI Conference on Web and Social Media (ICWSM-2025)
-    </div>
-    <details class="paper-abstract">
-      Grasping the themes of social media content is key to understanding the narratives that influence public opinion and behavior. The thematic analysis goes beyond traditional topic-level analysis, which often captures only the broadest patterns, providing deeper insights into specific and actionable themes such as "public sentiment towards vaccination", "political discourse surrounding climate policies," etc. In this paper, we introduce a novel approach to uncovering latent themes in social media messaging. Recognizing the limitations of the traditional topic-level analysis, which tends to capture only overarching patterns, this study emphasizes the need for a finer-grained, theme-focused exploration. Traditional theme discovery methods typically involve manual processes and a human-in-the-loop approach. While valuable, these methods face challenges in scalability, consistency, and resource intensity in terms of time and cost. To address these challenges, we propose a machine-in-the-loop approach that leverages the advanced capabilities of Large Language Models (LLMs). To demonstrate our approach, we apply our framework to contentious topics, such as climate debate and vaccine debate. We use two publicly available datasets: (1) the climate campaigns dataset of 21k Facebook ads and (2) the COVID-19 vaccine campaigns dataset of 9k Facebook ads. Our quantitative and qualitative analysis shows that our methodology yields more accurate and interpretable results compared to the baselines. Our results not only demonstrate the effectiveness of our approach in uncovering latent themes but also illuminate how these themes are tailored for demographic targeting in social media contexts. Additionally, our work sheds light on the dynamic nature of social media, revealing the shifts in the thematic focus of messaging in response to real-world events.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10652v1">Cutting Through the Clutter: The Potential of LLMs for Efficient Filtration in Systematic Literature Reviews</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 5 pages, 5 figures, 1 table
-    </div>
-    <details class="paper-abstract">
-      In academic research, systematic literature reviews are foundational and highly relevant, yet tedious to create due to the high volume of publications and labor-intensive processes involved. Systematic selection of relevant papers through conventional means like keyword-based filtering techniques can sometimes be inadequate, plagued by semantic ambiguities and inconsistent terminology, which can lead to sub-optimal outcomes. To mitigate the required extensive manual filtering, we explore and evaluate the potential of using Large Language Models (LLMs) to enhance the efficiency, speed, and precision of literature review filtering, reducing the amount of manual screening required. By using models as classification agents acting on a structured database only, we prevent common problems inherent in LLMs, such as hallucinations. We evaluate the real-world performance of such a setup during the construction of a recent literature survey paper with initially more than 8.3k potentially relevant articles under consideration and compare this with human performance on the same dataset. Our findings indicate that employing advanced LLMs like GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Flash, or Llama3 with simple prompting can significantly reduce the time required for literature filtering - from usually weeks of manual research to only a few minutes. Simultaneously, we crucially show that false negatives can indeed be controlled through a consensus scheme, achieving recalls >98.8% at or even beyond the typical human error threshold, thereby also providing for more accurate and relevant articles selected. Our research not only demonstrates a substantial improvement in the methodology of literature reviews but also sets the stage for further integration and extensive future applications of responsible AI in academic research practices.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2407.10627v1">Arena Learning: Build Data Flywheel for LLMs Post-training via Simulated Chatbot Arena</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-    </div>
-    <details class="paper-abstract">
-      Assessing the effectiveness of large language models (LLMs) presents substantial challenges. The method of conducting human-annotated battles in an online Chatbot Arena is a highly effective evaluative technique. However, this approach is limited by the costs and time required for human annotation. In this paper, we introduce Arena Learning, an innovative offline strategy designed to simulate these arena battles using AI-driven annotations to evaluate battle outcomes, thus facilitating the continuous improvement of the target model through both supervised fine-tuning and reinforcement learning. Arena Learning comprises two key elements. First, it ensures precise evaluations and maintains consistency between offline simulations and online competitions via WizardArena, a pipeline developed to accurately predict the Elo rankings of various models using a meticulously designed offline test set. Our results demonstrate that WizardArena's predictions closely align with those from the online Arena. Second, it involves the continuous improvement of training data based on the battle results and the refined model. We establish a data flywheel to iteratively update the training data by highlighting the weaknesses of the target model based on its battle results, enabling it to learn from the strengths of multiple different models. We apply Arena Learning to train our target model, WizardLM-$\beta$, and demonstrate significant performance enhancements across various metrics. This fully automated training and evaluation pipeline sets the stage for continuous advancements in various LLMs via post-training. Notably, Arena Learning plays a pivotal role in the success of WizardLM-2, and this paper serves both as an exploration of its efficacy and a foundational study for future discussions related to WizardLM-2 and its derivatives.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.02130v4">Using LLMs for the Extraction and Normalization of Product Attribute Values</a></div>
-    <div class="paper-meta">
-      📅 2024-07-15
-      | 💬 The paper has been accepted at ADBIS2024
-    </div>
-    <details class="paper-abstract">
-      Product offers on e-commerce websites often consist of a product title and a textual product description. In order to enable features such as faceted product search or to generate product comparison tables, it is necessary to extract structured attribute-value pairs from the unstructured product titles and descriptions and to normalize the extracted values to a single, unified scale for each attribute. This paper explores the potential of using large language models (LLMs), such as GPT-3.5 and GPT-4, to extract and normalize attribute values from product titles and descriptions. We experiment with different zero-shot and few-shot prompt templates for instructing LLMs to extract and normalize attribute-value pairs. We introduce the Web Data Commons - Product Attribute Value Extraction (WDC-PAVE) benchmark dataset for our experiments. WDC-PAVE consists of product offers from 59 different websites which provide schema.org annotations. The offers belong to five different product categories, each with a specific set of attributes. The dataset provides manually verified attribute-value pairs in two forms: (i) directly extracted values and (ii) normalized attribute values. The normalization of the attribute values requires systems to perform the following types of operations: name expansion, generalization, unit of measurement conversion, and string wrangling. Our experiments demonstrate that GPT-4 outperforms the PLM-based extraction methods SU-OpenTag, AVEQA, and MAVEQA by 10%, achieving an F1-score of 91%. For the extraction and normalization of product attribute values, GPT-4 achieves a similar performance to the extraction scenario, while being particularly strong at string wrangling and name expansion.
     </details>
 </div>

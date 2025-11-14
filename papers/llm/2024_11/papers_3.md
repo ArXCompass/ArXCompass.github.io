@@ -14,6 +14,33 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2406.08316v3">Is Programming by Example solved by LLMs?</a></div>
+    <div class="paper-meta">
+      📅 2024-11-19
+    </div>
+    <details class="paper-abstract">
+      Programming-by-Examples (PBE) aims to generate an algorithm from input-output examples. Such systems are practically and theoretically important: from an end-user perspective, they are deployed to millions of people, and from an AI perspective, PBE corresponds to a very general form of few-shot inductive inference. Given the success of Large Language Models (LLMs) in code-generation tasks, we investigate here the extent to which LLMs can be said to have "solved" PBE. We experiment on classic domains such as lists and strings, and an uncommon graphics programming domain not well represented in typical pretraining data. We find that pretrained models are not effective at PBE, but that they can be fine-tuned for much higher performance, provided the test problems are in-distribution. We analyze empirically what causes these models to succeed and fail, and take steps toward understanding how to achieve better out-of-distribution generalization. Collectively these results suggest that LLMs make strong progress toward solving the typical suite of PBE tasks, potentially increasing the flexibility and applicability of PBE systems, while also identifying ways in which LLMs still fall short.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.12685v1">Enhanced Sign Language Translation between American Sign Language (ASL) and Indian Sign Language (ISL) Using LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-11-19
+    </div>
+    <details class="paper-abstract">
+      We have come up with a research that hopes to provide a bridge between the users of American Sign Language and the users of spoken language and Indian Sign Language (ISL). The research enabled us to create a novel framework that we have developed for Learner Systems. Leveraging art of Large models to create key features including: - Real-time translation between these two sign languages in an efficient manner. Making LLM's capability available for seamless translations to ISL. Here is the full study showing its implementation in this paper. The core of the system is a sophisticated pipeline that begins with reclassification and recognition of ASL gestures based on a strong Random Forest Classifier. By recognizing the ASL, it is translated into text which can be more easily processed. Highly evolved natural language NLP (Natural Language Processing) techniques come in handy as they play a role in our LLM integration where you then use LLMs to be able to convert the ASL text to ISL which provides you with the intent of sentence or phrase. The final step is to synthesize the translated text back into ISL gestures, creating an end-to-end translation experience using RIFE-Net. This framework is tasked with key challenges such as automatically dealing with gesture variability and overcoming the linguistic differences between ASL and ISL. By automating the translation process, we hope to vastly improve accessibility for sign language users. No longer will the communication gap between ASL and ISL create barriers; this totally cool innovation aims to bring our communities closer together. And we believe, with full confidence in our framework, that we're able to apply the same principles across a wide variety of sign language dialects.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.17213v5">Plurals: A System for Guiding LLMs Via Simulated Social Ensembles</a></div>
+    <div class="paper-meta">
+      📅 2024-11-19
+    </div>
+    <details class="paper-abstract">
+      Recent debates raised concerns that language models may favor certain viewpoints. But what if the solution is not to aim for a 'view from nowhere' but rather to leverage different viewpoints? We introduce Plurals, a system and Python library for pluralistic AI deliberation. Plurals consists of Agents (LLMs, optionally with personas) which deliberate within customizable Structures, with Moderators overseeing deliberation. Plurals is a generator of simulated social ensembles. Plurals integrates with government datasets to create nationally representative personas, includes deliberation templates inspired by deliberative democracy, and allows users to customize both information-sharing structures and deliberation behavior within Structures. Six case studies demonstrate fidelity to theoretical constructs and efficacy. Three randomized experiments show simulated focus groups produced output resonant with an online sample of the relevant audiences (chosen over zero-shot generation in 75% of trials). Plurals is both a paradigm and a concrete system for pluralistic AI. The Plurals library is available at https://github.com/josh-ashkinaze/plurals and will be continually updated.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.00028v2">Synergizing LLM Agents and Knowledge Graph for Socioeconomic Prediction in LBSN</a></div>
     <div class="paper-meta">
       📅 2024-11-19
@@ -832,6 +859,80 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08563v1">Leveraging LLMs for Predictive Insights in Food Policy and Behavioral Interventions</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      Food consumption and production contribute significantly to global greenhouse gas emissions, making them crucial entry points for mitigating climate change and maintaining a liveable planet. Over the past two decades, food policy initiatives have explored interventions to reshape production and consumption patterns, focusing on reducing food waste and curbing ruminant meat consumption. While the evidence of "what works" improves, evaluating which policies are appropriate and effective in specific contexts remains difficult due to external validity challenges. This paper demonstrates that a fine-tuned large language model (LLM) can accurately predict the direction of outcomes in approximately 80\% of empirical studies measuring dietary-based impacts (e.g. food choices, sales, waste) resulting from behavioral interventions and policies. Approximately 75 prompts were required to achieve optimal results, with performance showing signs of catastrophic loss beyond this point. Our findings indicate that greater input detail enhances predictive accuracy, although the model still faces challenges with unseen studies, underscoring the importance of a representative training sample. As LLMs continue to improve and diversify, they hold promise for advancing data-driven, evidence-based policymaking.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08553v1">CorrSynth -- A Correlated Sampling Method for Diverse Dataset Generation from LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+      | 💬 Published as a main conference paper at EMNLP 2024; First two authors contributed equally
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have demonstrated remarkable performance in diverse tasks using zero-shot and few-shot prompting. Even though their capabilities of data synthesis have been studied well in recent years, the generated data suffers from a lack of diversity, less adherence to the prompt, and potential biases that creep into the data from the generator model. In this work, we tackle the challenge of generating datasets with high diversity, upon which a student model is trained for downstream tasks. Taking the route of decoding-time guidance-based approaches, we propose CorrSynth, which generates data that is more diverse and faithful to the input prompt using a correlated sampling strategy. Further, our method overcomes the complexity drawbacks of some other guidance-based techniques like classifier-based guidance. With extensive experiments, we show the effectiveness of our approach and substantiate our claims. In particular, we perform intrinsic evaluation to show the improvements in diversity. Our experiments show that CorrSynth improves both student metrics and intrinsic metrics upon competitive baselines across four datasets, showing the innate advantage of our method.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08516v1">Tree-of-Table: Unleashing the Power of LLMs for Enhanced Large-Scale Table Understanding</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      The ubiquity and value of tables as semi-structured data across various domains necessitate advanced methods for understanding their complexity and vast amounts of information. Despite the impressive capabilities of large language models (LLMs) in advancing the natural language understanding frontier, their application to large-scale tabular data presents significant challenges, specifically regarding table size and complex intricate relationships. Existing works have shown promise with small-scale tables but often flounder when tasked with the complex reasoning required by larger, interconnected tables found in real-world scenarios. To address this gap, we introduce "Tree-of-Table", a novel approach designed to enhance LLMs' reasoning capabilities over large and complex tables. Our method employs Table Condensation and Decomposition to distill and reorganize relevant data into a manageable format, followed by the construction of a hierarchical Table-Tree that facilitates tree-structured reasoning. Through a meticulous Table-Tree Execution process, we systematically unravel the tree-structured reasoning chain to derive the solutions. Experiments across diverse datasets, including WikiTQ, TableFact, FeTaQA, and BIRD, demonstrate that Tree-of-Table sets a new benchmark with superior performance, showcasing remarkable efficiency and generalization capabilities in large-scale table reasoning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08510v1">CorrectBench: Automatic Testbench Generation with Functional Self-Correction using LLMs for HDL Design</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      Functional simulation is an essential step in digital hardware design. Recently, there has been a growing interest in leveraging Large Language Models (LLMs) for hardware testbench generation tasks. However, the inherent instability associated with LLMs often leads to functional errors in the generated testbenches. Previous methods do not incorporate automatic functional correction mechanisms without human intervention and still suffer from low success rates, especially for sequential tasks. To address this issue, we propose CorrectBench, an automatic testbench generation framework with functional self-validation and self-correction. Utilizing only the RTL specification in natural language, the proposed approach can validate the correctness of the generated testbenches with a success rate of 88.85%. Furthermore, the proposed LLM-based corrector employs bug information obtained during the self-validation process to perform functional self-correction on the generated testbenches. The comparative analysis demonstrates that our method achieves a pass ratio of 70.13% across all evaluated tasks, compared with the previous LLM-based testbench generation framework's 52.18% and a direct LLM-based generation method's 33.33%. Specifically in sequential circuits, our work's performance is 62.18% higher than previous work in sequential tasks and almost 5 times the pass ratio of the direct method. The codes and experimental results are open-sourced at the link: https://github.com/AutoBench/CorrectBench
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08404v1">Quantifying Qualitative Insights: Leveraging LLMs to Market Predict</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+      | 💬 7 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      Recent advancements in Large Language Models (LLMs) have the potential to transform financial analytics by integrating numerical and textual data. However, challenges such as insufficient context when fusing multimodal information and the difficulty in measuring the utility of qualitative outputs, which LLMs generate as text, have limited their effectiveness in tasks such as financial forecasting. This study addresses these challenges by leveraging daily reports from securities firms to create high-quality contextual information. The reports are segmented into text-based key factors and combined with numerical data, such as price information, to form context sets. By dynamically updating few-shot examples based on the query time, the sets incorporate the latest information, forming a highly relevant set closely aligned with the query point. Additionally, a crafted prompt is designed to assign scores to the key factors, converting qualitative insights into quantitative results. The derived scores undergo a scaling process, transforming them into real-world values that are used for prediction. Our experiments demonstrate that LLMs outperform time-series models in market forecasting, though challenges such as imperfect reproducibility and limited explainability remain.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08348v1">Refining Translations with LLMs: A Constraint-Aware Iterative Prompting Approach</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have demonstrated remarkable proficiency in machine translation (MT), even without specific training on the languages in question. However, translating rare words in low-resource or domain-specific contexts remains challenging for LLMs. To address this issue, we propose a multi-step prompt chain that enhances translation faithfulness by prioritizing key terms crucial for semantic accuracy. Our method first identifies these keywords and retrieves their translations from a bilingual dictionary, integrating them into the LLM's context using Retrieval-Augmented Generation (RAG). We further mitigate potential output hallucinations caused by long prompts through an iterative self-checking mechanism, where the LLM refines its translations based on lexical and semantic constraints. Experiments using Llama and Qwen as base models on the FLORES-200 and WMT datasets demonstrate significant improvements over baselines, highlighting the effectiveness of our approach in enhancing translation faithfulness and robustness, particularly in low-resource scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.15553v2">Multi-IF: Benchmarking LLMs on Multi-Turn and Multilingual Instructions Following</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have demonstrated impressive capabilities in various tasks, including instruction following, which is crucial for aligning model outputs with user expectations. However, evaluating LLMs' ability to follow instructions remains challenging due to the complexity and subjectivity of human language. Current benchmarks primarily focus on single-turn, monolingual instructions, which do not adequately reflect the complexities of real-world applications that require handling multi-turn and multilingual interactions. To address this gap, we introduce Multi-IF, a new benchmark designed to assess LLMs' proficiency in following multi-turn and multilingual instructions. Multi-IF, which utilizes a hybrid framework combining LLM and human annotators, expands upon the IFEval by incorporating multi-turn sequences and translating the English prompts into another 7 languages, resulting in a dataset of 4,501 multilingual conversations, where each has three turns. Our evaluation of 14 state-of-the-art LLMs on Multi-IF reveals that it presents a significantly more challenging task than existing benchmarks. All the models tested showed a higher rate of failure in executing instructions correctly with each additional turn. For example, o1-preview drops from 0.877 at the first turn to 0.707 at the third turn in terms of average accuracy over all languages. Moreover, languages with non-Latin scripts (Hindi, Russian, and Chinese) generally exhibit higher error rates, suggesting potential limitations in the models' multilingual capabilities. We release Multi-IF prompts and the evaluation code base to encourage further research in this critical area.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08324v1">Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle</a></div>
+    <div class="paper-meta">
+      📅 2024-11-13
+    </div>
+    <details class="paper-abstract">
+      Many existing evaluation benchmarks for Large Language Models (LLMs) quickly become outdated due to the emergence of new models and training data. These benchmarks also fall short in assessing how LLM performance changes over time, as they consist of static questions without a temporal dimension. To address these limitations, we propose using future event prediction as a continuous evaluation method to assess LLMs' temporal generalization and forecasting abilities. Our benchmark, Daily Oracle, automatically generates question-answer (QA) pairs from daily news, challenging LLMs to predict "future" event outcomes. Our findings reveal that as pre-training data becomes outdated, LLM performance degrades over time. While Retrieval Augmented Generation (RAG) has the potential to enhance prediction accuracy, the performance degradation pattern persists, highlighting the need for continuous model updates.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.08717v3">Fusing Dynamics Equation: A Social Opinions Prediction Algorithm with LLM-based Agents</a></div>
     <div class="paper-meta">
       📅 2024-11-13
@@ -859,110 +960,5 @@
     </div>
     <details class="paper-abstract">
       Data preparation is the first and a very important step towards any Large Language Model (LLM) development. This paper introduces an easy-to-use, extensible, and scale-flexible open-source data preparation toolkit called Data Prep Kit (DPK). DPK is architected and designed to enable users to scale their data preparation to their needs. With DPK they can prepare data on a local machine or effortlessly scale to run on a cluster with thousands of CPU Cores. DPK comes with a highly scalable, yet extensible set of modules that transform natural language and code data. If the user needs additional transforms, they can be easily developed using extensive DPK support for transform creation. These modules can be used independently or pipelined to perform a series of operations. In this paper, we describe DPK architecture and show its performance from a small scale to a very large number of CPUs. The modules from DPK have been used for the preparation of Granite Models [1] [2]. We believe DPK is a valuable contribution to the AI community to easily prepare data to enhance the performance of their LLM models or to fine-tune models with Retrieval-Augmented Generation (RAG).
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08257v1">GPTree: Towards Explainable Decision-Making via LLM-powered Decision Trees</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-    </div>
-    <details class="paper-abstract">
-      Traditional decision tree algorithms are explainable but struggle with non-linear, high-dimensional data, limiting its applicability in complex decision-making. Neural networks excel at capturing complex patterns but sacrifice explainability in the process. In this work, we present GPTree, a novel framework combining explainability of decision trees with the advanced reasoning capabilities of LLMs. GPTree eliminates the need for feature engineering and prompt chaining, requiring only a task-specific prompt and leveraging a tree-based structure to dynamically split samples. We also introduce an expert-in-the-loop feedback mechanism to further enhance performance by enabling human intervention to refine and rebuild decision paths, emphasizing the harmony between human expertise and machine intelligence. Our decision tree achieved a 7.8% precision rate for identifying "unicorn" startups at the inception stage of a startup, surpassing gpt-4o with few-shot learning as well as the best human decision-makers (3.1% to 5.6%).
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.09073v1">Code-mixed LLM: Improve Large Language Models' Capability to Handle Code-Mixing through Reinforcement Learning from AI Feedback</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 initial version: 5 pages, 2 figures
-    </div>
-    <details class="paper-abstract">
-      Code-mixing(CM) or code-switching(CSW) refers to the juxtaposition of linguistic units from two or more languages during the conversation or sometimes even a single utterance. Code-mixing introduces unique challenges in daily life, such as syntactic mismatches and semantic blending, that are rarely encountered in monolingual settings. Large language models (LLMs) have revolutionized the field of natural language processing (NLP) by offering unprecedented capabilities in understanding human languages. However, the effectiveness of current state-of-the-art multilingual LLMs has not yet been fully explored in the CM scenario. To fill this gap, we first benchmark the performance of multilingual LLMs on various code-mixing NLP tasks. Then we propose to improve the multilingual LLMs' ability to understand code-mixing through reinforcement learning from human feedback (RLHF) and code-mixed machine translation tasks. Given the high-cost and time-consuming preference labeling procedure, we improve this by utilizing LLMs as annotators to perform the reinforcement learning from AI feedback (RLAIF). The experiments show the effectiveness of the proposed method.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08979v1">CoCoP: Enhancing Text Classification with LLM through Code Completion Prompt</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-    </div>
-    <details class="paper-abstract">
-      Text classification is a fundamental task in natural language processing (NLP), and large language models (LLMs) have demonstrated their capability to perform this task across various domains. However, the performance of LLMs heavily depends on the quality of their input prompts. Recent studies have also shown that LLMs exhibit remarkable results in code-related tasks. To leverage the capabilities of LLMs in text classification, we propose the Code Completion Prompt (CoCoP) method, which transforms the text classification problem into a code completion task. CoCoP significantly improves text classification performance across diverse datasets by utilizing LLMs' code-completion capability. For instance, CoCoP enhances the accuracy of the SST2 dataset by more than 20%. Moreover, when CoCoP integrated with LLMs specifically designed for code-related tasks (code models), such as CodeLLaMA, this method demonstrates better or comparable performance to few-shot learning techniques while using only one-tenth of the model size. The source code of our proposed method will be available to the public upon the acceptance of the paper.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08862v1">LLMStinger: Jailbreaking LLMs using RL fine-tuned LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 Accepted at AAAI 2025
-    </div>
-    <details class="paper-abstract">
-      We introduce LLMStinger, a novel approach that leverages Large Language Models (LLMs) to automatically generate adversarial suffixes for jailbreak attacks. Unlike traditional methods, which require complex prompt engineering or white-box access, LLMStinger uses a reinforcement learning (RL) loop to fine-tune an attacker LLM, generating new suffixes based on existing attacks for harmful questions from the HarmBench benchmark. Our method significantly outperforms existing red-teaming approaches (we compared against 15 of the latest methods), achieving a +57.2% improvement in Attack Success Rate (ASR) on LLaMA2-7B-chat and a +50.3% ASR increase on Claude 2, both models known for their extensive safety measures. Additionally, we achieved a 94.97% ASR on GPT-3.5 and 99.4% on Gemma-2B-it, demonstrating the robustness and adaptability of LLMStinger across open and closed-source models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08813v1">Rethinking CyberSecEval: An LLM-Aided Approach to Evaluation Critique</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 NeurIPS 2024, 2 pages
-    </div>
-    <details class="paper-abstract">
-      A key development in the cybersecurity evaluations space is the work carried out by Meta, through their CyberSecEval approach. While this work is undoubtedly a useful contribution to a nascent field, there are notable features that limit its utility. Key drawbacks focus on the insecure code detection part of Meta's methodology. We explore these limitations, and use our exploration as a test case for LLM-assisted benchmark analysis.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08794v1">Evaluating World Models with LLM for Decision Making</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-    </div>
-    <details class="paper-abstract">
-      World model emerges as a key module in decision making, where MuZero and Dreamer achieve remarkable successes in complex tasks. Recent work leverages Large Language Models (LLMs) as general world simulators to simulate the dynamics of the world due to their generalizability. LLMs also serve as the world model for deliberative reasoning in Reasoning via Planning (RAP) and Tree of Thought (ToT). However, the world models are either evaluated as a general world simulator, or as a functional module of the agent, i.e., predicting the transitions to assist the planning. In this work, we propose a comprehensive evaluation of the world models with LLMs from the decision making perspective. Specifically, we leverage the 31 diverse environments from (Wang et al., 2023;2024) and curate the rule-based policy of each environment for the diverse evaluation. Then, we design three main tasks, i.e., policy verification, action proposal, and policy planning, where the world models can be used for decision making solely. Finally, we conduct the comprehensive evaluation of the advanced LLMs, i.e., GPT-4o and GPT-4o-mini, on the environments for the three main tasks under various settings. The key observations include: i) GPT-4o significantly outperforms GPT-4o-mini on the three main tasks, especially for the tasks which require the domain knowledge, ii) the performance of the world model with LLM will be decreased for long-term decision-making tasks, and iii) the combination of different functionalities of the world model will brings additional unstabilities of the performance.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08696v1">Scholarly Wikidata: Population and Exploration of Conference Data in Wikidata using LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 17 pages, accepted at EKAW-24
-    </div>
-    <details class="paper-abstract">
-      Several initiatives have been undertaken to conceptually model the domain of scholarly data using ontologies and to create respective Knowledge Graphs. Yet, the full potential seems unleashed, as automated means for automatic population of said ontologies are lacking, and respective initiatives from the Semantic Web community are not necessarily connected: we propose to make scholarly data more sustainably accessible by leveraging Wikidata's infrastructure and automating its population in a sustainable manner through LLMs by tapping into unstructured sources like conference Web sites and proceedings texts as well as already existing structured conference datasets. While an initial analysis shows that Semantic Web conferences are only minimally represented in Wikidata, we argue that our methodology can help to populate, evolve and maintain scholarly data as a community within Wikidata. Our main contributions include (a) an analysis of ontologies for representing scholarly data to identify gaps and relevant entities/properties in Wikidata, (b) semi-automated extraction -- requiring (minimal) manual validation -- of conference metadata (e.g., acceptance rates, organizer roles, programme committee members, best paper awards, keynotes, and sponsors) from websites and proceedings texts using LLMs. Finally, we discuss (c) extensions to visualization tools in the Wikidata context for data exploration of the generated scholarly data. Our study focuses on data from 105 Semantic Web-related conferences and extends/adds more than 6000 entities in Wikidata. It is important to note that the method can be more generally applicable beyond Semantic Web-related conferences for enhancing Wikidata's utility as a comprehensive scholarly resource. Source Repository: https://github.com/scholarly-wikidata/ DOI: https://doi.org/10.5281/zenodo.10989709 License: Creative Commons CC0 (Data), MIT (Code)
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.16187v3">No Free Lunch in LLM Watermarking: Trade-offs in Watermarking Design Choices</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-    </div>
-    <details class="paper-abstract">
-      Advances in generative models have made it possible for AI-generated text, code, and images to mirror human-generated content in many applications. Watermarking, a technique that aims to embed information in the output of a model to verify its source, is useful for mitigating the misuse of such AI-generated content. However, we show that common design choices in LLM watermarking schemes make the resulting systems surprisingly susceptible to attack -- leading to fundamental trade-offs in robustness, utility, and usability. To navigate these trade-offs, we rigorously study a set of simple yet effective attacks on common watermarking systems, and propose guidelines and defenses for LLM watermarking in practice.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08640v1">Towards Secure Intelligent O-RAN Architecture: Vulnerabilities, Threats and Promising Technical Solutions using LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 10 pages
-    </div>
-    <details class="paper-abstract">
-      The evolution of wireless communication systems will be fundamentally impacted by an open radio access network (O-RAN), a new concept defining an intelligent architecture with enhanced flexibility, openness, and the ability to slice services more efficiently. For all its promises, and like any technological advancement, O-RAN is not without risks that need to be carefully assessed and properly addressed to accelerate its wide adoption in future mobile networks. In this paper, we present an in-depth security analysis of the O-RAN architecture, discussing the potential threats that may arise in the different O-RAN architecture layers and their impact on the Confidentiality, Integrity, and Availability (CIA) triad. We also promote the potential of zero trust, Moving Target Defense (MTD), blockchain, and large language models(LLM) technologies in fortifying O-RAN's security posture. Furthermore, we numerically demonstrate the effectiveness of MTD in empowering robust deep reinforcement learning methods for dynamic network slice admission control in the O-RAN architecture. Moreover, we examine the effect of explainable AI (XAI) based on LLMs in securing the system.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.15736v2">General LLMs as Instructors for Domain-Specific LLMs: A Sequential Fusion Method to Integrate Extraction and Editing</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-      | 💬 Working in progress
-    </div>
-    <details class="paper-abstract">
-      The substantial interest in updating Large Language Models (LLMs) without retraining from scratch is accompanied by several challenges. This is particularly true when updating LLMs with datasets that necessitate domain-expert reasoning across extensive texts, despite limited samples. We termed the scenario as the Few-Shot Domain-Expert Reasoning for Updating LLMs (FDoR-UL). Traditional methods such as Low-Rank Adaptation (LoRA) and Retrieval Augmented Generation (RAG) are inadequate for addressing this critical issue, particularly evident in our exploration of a specific medical dataset that epitomizes the distinct needs of FDoR-UL. To tackle this challenge, we introduce a Sequential Fusion method to integrate knowledge from complex contexts into LLMs. This method employs a two-stage framework: initially leveraging general LLMs to perform relation extraction for knowledge acquisition from complex texts, followed by updating domain-specific LLMs through Knowledge Editing (KE). Employing our method, domain-specific LLMs achieved a 71.7% accuracy (an average gain of 39.1%) in question-answering tasks. Furthermore, we expanded our evaluation to a novel economics-management dataset we developed, where our method achieved a 75.0% accuracy (an average gain of 45.0%). These findings underscore the effectiveness and flexibility of our approach in FDoR-UL across various domains.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.08574v1">Practitioners' Discussions on Building LLM-based Applications for Production</a></div>
-    <div class="paper-meta">
-      📅 2024-11-13
-    </div>
-    <details class="paper-abstract">
-      \textit{Background}: Large language models (LLMs) have become a paramount interest of researchers and practitioners alike, yet a comprehensive overview of key considerations for those developing LLM-based systems is lacking. This study addresses this gap by collecting and mapping the topics practitioners discuss online, offering practical insights into where priorities lie in developing LLM-based applications. \textit{Method}: We collected 189 videos from 2022 to 2024 from practitioners actively developing such systems and discussing various aspects they encounter during development and deployment of LLMs in production. We analyzed the transcripts using BERTopic, then manually sorted and merged the generated topics into themes, leading to a total of 20 topics in 8 themes. \textit{Results}: The most prevalent topics fall within the theme Design \& Architecture, with a strong focus on retrieval-augmented generation (RAG) systems. Other frequently discussed topics include model capabilities and enhancement techniques (e.g., fine-tuning, prompt engineering), infrastructure and tooling, and risks and ethical challenges. \textit{Implications}: Our results highlight current discussions and challenges in deploying LLMs in production. This way, we provide a systematic overview of key aspects practitioners should be aware of when developing LLM-based applications. We further pale off topics of interest for academics where further research is needed.
     </details>
 </div>

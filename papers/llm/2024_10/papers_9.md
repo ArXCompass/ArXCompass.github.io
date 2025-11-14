@@ -18,6 +18,45 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.09434v2">HySem: A context length optimized LLM pipeline for unstructured tabular extraction</a></div>
+    <div class="paper-meta">
+      📅 2024-10-05
+      | 💬 19 pages, 7 tables, 10 figures, 2 algorithms
+    </div>
+    <details class="paper-abstract">
+      Regulatory compliance reporting in the pharmaceutical industry relies on detailed tables, but these are often under-utilized beyond compliance due to their unstructured format and arbitrary content. Extracting and semantically representing tabular data is challenging due to diverse table presentations. Large Language Models (LLMs) demonstrate substantial potential for semantic representation, yet they encounter challenges related to accuracy and context size limitations, which are crucial considerations for the industry applications. We introduce HySem, a pipeline that employs a novel context length optimization technique to generate accurate semantic JSON representations from HTML tables. This approach utilizes a custom fine-tuned model specifically designed for cost- and privacy-sensitive small and medium pharmaceutical enterprises. Running on commodity hardware and leveraging open-source models, HySem surpasses its peer open-source models in accuracy and provides competitive performance when benchmarked against OpenAI GPT-4o and effectively addresses context length limitations, which is a crucial factor for supporting larger tables.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.02686v2">Deconfounded Causality-aware Parameter-Efficient Fine-Tuning for Problem-Solving Improvement of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-05
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have demonstrated remarkable efficiency in tackling various tasks based on human instructions, but studies reveal that they often struggle with tasks requiring reasoning, such as math or physics. This limitation raises questions about whether LLMs truly comprehend embedded knowledge or merely learn to replicate the token distribution without a true understanding of the content. In this paper, we delve into this problem and aim to enhance the reasoning capabilities of LLMs. First, we investigate if the model has genuine reasoning capabilities by visualizing the text generation process at the attention and representation level. Then, we formulate the reasoning process of LLMs into a causal framework, which provides a formal explanation of the problems observed in the visualization. Finally, building upon this causal framework, we propose Deconfounded Causal Adaptation (DCA), a novel parameter-efficient fine-tuning (PEFT) method to enhance the model's reasoning capabilities by encouraging the model to extract the general problem-solving skills and apply these skills to different questions. Experiments show that our method outperforms the baseline consistently across multiple benchmarks, and with only 1.2M tunable parameters, we achieve better or comparable results to other fine-tuning methods. This demonstrates the effectiveness and efficiency of our method in improving the overall accuracy and reliability of LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.04112v1">Exploring LLM-based Data Annotation Strategies for Medical Dialogue Preference Alignment</a></div>
+    <div class="paper-meta">
+      📅 2024-10-05
+      | 💬 14 Pages, 12 figures
+    </div>
+    <details class="paper-abstract">
+      This research examines the use of Reinforcement Learning from AI Feedback (RLAIF) techniques to improve healthcare dialogue models, with the aim of tackling the challenges of preference-aligned data annotation while reducing the reliance on medical experts. We argue that the primary challenges in current RLAIF research for healthcare are the limitations of automated evaluation methods and the difficulties in accurately representing physician preferences. To address these challenges, we present a new evaluation framework based on standardized patient examinations. This framework is designed to objectively assess the effectiveness of large language models (LLMs) in guiding users and following instructions, enabling a comprehensive comparison across different models. Furthermore, our investigation of effective ways to express physician preferences using Constitutional AI algorithms highlighted the particular effectiveness of flowcharts. Utilizing this finding, we introduce an innovative agent-based approach for annotating preference data. This approach autonomously creates medical dialogue flows tailored to the patient's condition, demonstrates strong generalization abilities, and reduces the need for expert involvement. Our results show that the agent-based approach outperforms existing RLAIF annotation methods in standardized patient examinations and surpasses current open source medical dialogue LLMs in various test scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.15156v2">Student Data Paradox and Curious Case of Single Student-Tutor Model: Regressive Side Effects of Training LLMs for Personalized Learning</a></div>
+    <div class="paper-meta">
+      📅 2024-10-05
+      | 💬 Accepted at EMNLP 2024 Findings Track
+    </div>
+    <details class="paper-abstract">
+      The pursuit of personalized education has led to the integration of Large Language Models (LLMs) in developing intelligent tutoring systems. To better understand and adapt to individual student needs, including their misconceptions, LLMs need to be trained on extensive datasets of student-tutor dialogues. Our research uncovers a fundamental challenge in this approach: the ``Student Data Paradox.'' This paradox emerges when LLMs, trained on student data to understand learner behavior, inadvertently compromise their own factual knowledge and reasoning abilities. We investigate this paradox by training state-of-the-art language models on student-tutor dialogue datasets and evaluating their performance across multiple benchmarks. These benchmarks assess various aspects of language model capabilities, including reasoning, truthfulness, and common sense understanding. Our findings reveal significant declines in the models' performance across these diverse benchmarks, indicating a broad impact on their capabilities when trained to model student behavior. Our research makes two primary contributions: (1) empirical demonstration of the Student Data Paradox through quantitative analysis of model performance, and (2) introduction of ``hallucination tokens'' as a mitigation strategy. These tokens, while improving performance, highlight the persistent challenge of balancing accurate student behavior modeling with maintaining the LLM's integrity as an educational tool. This study emphasizes the need for innovative solutions to reconcile the conflicting goals of faithfully understanding diverse student cognition while preserving the model's ability to provide accurate information and guidance.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2405.16700v2">Implicit Multimodal Alignment: On the Generalization of Frozen LLMs to Multimodal Inputs</a></div>
     <div class="paper-meta">
       📅 2024-10-05
@@ -111,6 +150,15 @@
     </div>
     <details class="paper-abstract">
       Advancements in deep multi-agent reinforcement learning (MARL) have positioned it as a promising approach for decision-making in cooperative games. However, it still remains challenging for MARL agents to learn cooperative strategies for some game environments. Recently, large language models (LLMs) have demonstrated emergent reasoning capabilities, making them promising candidates for enhancing coordination among the agents. However, due to the model size of LLMs, it can be expensive to frequently infer LLMs for actions that agents can take. In this work, we propose You Only LLM Once for MARL (YOLO-MARL), a novel framework that leverages the high-level task planning capabilities of LLMs to improve the policy learning process of multi-agents in cooperative games. Notably, for each game environment, YOLO-MARL only requires one time interaction with LLMs in the proposed strategy generation, state interpretation and planning function generation modules, before the MARL policy training process. This avoids the ongoing costs and computational time associated with frequent LLMs API calls during training. Moreover, the trained decentralized normal-sized neural network-based policies operate independently of the LLM. We evaluate our method across three different environments and demonstrate that YOLO-MARL outperforms traditional MARL algorithms.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.16285v1">Assessing the Performance of Human-Capable LLMs -- Are LLMs Coming for Your Job?</a></div>
+    <div class="paper-meta">
+      📅 2024-10-05
+    </div>
+    <details class="paper-abstract">
+      The current paper presents the development and validation of SelfScore, a novel benchmark designed to assess the performance of automated Large Language Model (LLM) agents on help desk and professional consultation tasks. Given the increasing integration of AI in industries, particularly within customer service, SelfScore fills a crucial gap by enabling the comparison of automated agents and human workers. The benchmark evaluates agents on problem complexity and response helpfulness, ensuring transparency and simplicity in its scoring system. The study also develops automated LLM agents to assess SelfScore and explores the benefits of Retrieval-Augmented Generation (RAG) for domain-specific tasks, demonstrating that automated LLM agents incorporating RAG outperform those without. All automated LLM agents were observed to perform better than the human control group. Given these results, the study raises concerns about the potential displacement of human workers, especially in areas where AI technologies excel. Ultimately, SelfScore provides a foundational tool for understanding the impact of AI in help desk environments while advocating for ethical considerations in the ongoing transition towards automation.
     </details>
 </div>
 <div class="paper-card">
@@ -574,6 +622,24 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.03953v1">LLM-TOPLA: Efficient LLM Ensemble by Maximising Diversity</a></div>
+    <div class="paper-meta">
+      📅 2024-10-04
+    </div>
+    <details class="paper-abstract">
+      Combining large language models during training or at inference time has shown substantial performance gain over component LLMs. This paper presents LLM-TOPLA, a diversity-optimized LLM ensemble method with three unique properties: (i) We introduce the focal diversity metric to capture the diversity-performance correlation among component LLMs of an ensemble. (ii) We develop a diversity-optimized ensemble pruning algorithm to select the top-k sub-ensembles from a pool of $N$ base LLMs. Our pruning method recommends top-performing LLM subensembles of size $S$, often much smaller than $N$. (iii) We generate new output for each prompt query by utilizing a learn-to-ensemble approach, which learns to detect and resolve the output inconsistency among all component LLMs of an ensemble. Extensive evaluation on four different benchmarks shows good performance gain over the best LLM ensemble methods: (i) In constrained solution set problems, LLM-TOPLA outperforms the best-performing ensemble (Mixtral) by 2.2\% in accuracy on MMLU and the best-performing LLM ensemble (MoreAgent) on GSM8k by 2.1\%. (ii) In generative tasks, LLM-TOPLA outperforms the top-2 performers (Llama70b/Mixtral) on SearchQA by $3.9\mathrm{x}$ in F1, and on XSum by more than $38$ in ROUGE-1. Our code and dataset, which contains outputs of 8 modern LLMs on 4 benchmarks is available at https://github.com/git-disl/llm-topla
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.03234v1">Showing LLM-Generated Code Selectively Based on Confidence of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-10-04
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have shown impressive abilities in code generation, but they may generate erroneous programs. Reading a program takes ten times longer than writing it. Showing these erroneous programs to developers will waste developers' energies and introduce security risks to software. To address the above limitations, we propose HonestCoder, a novel LLM-based code generation approach. HonestCoder selectively shows the generated programs to developers based on LLMs' confidence. The confidence provides valuable insights into the correctness of generated programs. To achieve this goal, we propose a novel approach to estimate LLMs' confidence in code generation. It estimates confidence by measuring the multi-modal similarity between LLMs-generated programs. We collect and release a multilingual benchmark named TruthCodeBench, which consists of 2,265 samples and covers two popular programming languages (i.e., Python and Java). We apply HonestCoder to four popular LLMs (e.g., DeepSeek-Coder and Code Llama) and evaluate it on TruthCodeBench. Based on the experiments, we obtain the following insights. (1) HonestCoder can effectively estimate LLMs' confidence and accurately determine the correctness of generated programs. For example, HonestCoder outperforms the state-of-the-art baseline by 27.79% in AUROC and 63.74% in AUCPR. (2) HonestCoder can decrease the number of erroneous programs shown to developers. Compared to eight baselines, it can show more correct programs and fewer erroneous programs to developers. (3) Compared to showing code indiscriminately, HonestCoder only adds slight time overhead (approximately 0.4 seconds per requirement). (4) We discuss future directions to facilitate the application of LLMs in software development. We hope this work can motivate broad discussions about measuring the reliability of LLMs' outputs in performing code-related tasks.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.14690v1">Rethinking VLMs and LLMs for Image Classification</a></div>
     <div class="paper-meta">
       📅 2024-10-03
@@ -906,72 +972,5 @@
     </div>
     <details class="paper-abstract">
       Deploying large language models in production requires simultaneous attention to efficiency and risk control. Prior work has shown the possibility to cut costs while maintaining similar accuracy, but has neglected to focus on risk control. By contrast, here we present hierarchical chains with multi-level abstention (HCMA), which use model-intrinsic uncertainty to delegate queries along the LLM intelligence hierarchy, enabling training-free model switching based solely on black-box API calls. Our framework presents novel trade-offs between efficiency and risk. For example, deploying HCMA on MMLU cuts the error rate of Llama3 405B by 30% when the model is allowed to abstain on 20% of the queries. To calibrate HCMA for optimal performance, our approach uses data-efficient logistic regressions (based on a simple nonlinear feature transformation), which require only 50 or 100 labeled examples to achieve excellent calibration error (ECE), cutting ECE by 50% compared to naive Platt scaling. On free-form generation tasks, we find that chain-of-thought is ineffectual for selective prediction, whereas zero-shot prompting drives error to 0% on TruthfulQA at high abstention rates. As LLMs are increasingly deployed across computing environments with different capabilities (such as mobile, laptop, and cloud), our framework paves the way towards maintaining deployment efficiency while putting in place sharp risk controls.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.02165v1">A LLM-Powered Automatic Grading Framework with Human-Level Guidelines Optimization</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-    </div>
-    <details class="paper-abstract">
-      Open-ended short-answer questions (SAGs) have been widely recognized as a powerful tool for providing deeper insights into learners' responses in the context of learning analytics (LA). However, SAGs often present challenges in practice due to the high grading workload and concerns about inconsistent assessments. With recent advancements in natural language processing (NLP), automatic short-answer grading (ASAG) offers a promising solution to these challenges. Despite this, current ASAG algorithms are often limited in generalizability and tend to be tailored to specific questions. In this paper, we propose a unified multi-agent ASAG framework, GradeOpt, which leverages large language models (LLMs) as graders for SAGs. More importantly, GradeOpt incorporates two additional LLM-based agents - the reflector and the refiner - into the multi-agent system. This enables GradeOpt to automatically optimize the original grading guidelines by performing self-reflection on its errors. Through experiments on a challenging ASAG task, namely the grading of pedagogical content knowledge (PCK) and content knowledge (CK) questions, GradeOpt demonstrates superior performance in grading accuracy and behavior alignment with human graders compared to representative baselines. Finally, comprehensive ablation studies confirm the effectiveness of the individual components designed in GradeOpt.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.16253v3">LLMs Assist NLP Researchers: Critique Paper (Meta-)Reviewing</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-      | 💬 Accepted by EMNLP 2024 main conference
-    </div>
-    <details class="paper-abstract">
-      This work is motivated by two key trends. On one hand, large language models (LLMs) have shown remarkable versatility in various generative tasks such as writing, drawing, and question answering, significantly reducing the time required for many routine tasks. On the other hand, researchers, whose work is not only time-consuming but also highly expertise-demanding, face increasing challenges as they have to spend more time reading, writing, and reviewing papers. This raises the question: how can LLMs potentially assist researchers in alleviating their heavy workload? This study focuses on the topic of LLMs assist NLP Researchers, particularly examining the effectiveness of LLM in assisting paper (meta-)reviewing and its recognizability. To address this, we constructed the ReviewCritique dataset, which includes two types of information: (i) NLP papers (initial submissions rather than camera-ready) with both human-written and LLM-generated reviews, and (ii) each review comes with "deficiency" labels and corresponding explanations for individual segments, annotated by experts. Using ReviewCritique, this study explores two threads of research questions: (i) "LLMs as Reviewers", how do reviews generated by LLMs compare with those written by humans in terms of quality and distinguishability? (ii) "LLMs as Metareviewers", how effectively can LLMs identify potential issues, such as Deficient or unprofessional review segments, within individual paper reviews? To our knowledge, this is the first work to provide such a comprehensive analysis.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2401.05467v3">Can Active Label Correction Improve LLM-based Modular AI Systems?</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-      | 💬 EMNLP (Main) 2024, 13 pages, 6 figures
-    </div>
-    <details class="paper-abstract">
-      Modular AI systems can be developed using LLM-prompts-based modules to minimize deployment time even for complex tasks. However, these systems do not always perform well and improving them using the data traces collected from a deployment remains an open challenge. The data traces contain LLM inputs and outputs, but the annotations from LLMs are noisy. We hypothesize that Active Label Correction (ALC) can be use on the collected data to train smaller task-specific improved models that can replace LLM-based modules. In this paper, we study the noise in three GPT-3.5-annotated datasets and their denoising with human feedback. We also propose a novel method ALC3 that iteratively applies three updates to the training dataset: auto-correction, correction using human feedback and filtering. Our results show that ALC3 can lead to oracle performance with feedback on 17-24% fewer examples than the number of noisy examples in the dataset across three different NLP tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.06904v2">Re-TASK: Revisiting LLM Tasks from Capability, Skill, and Knowledge Perspectives</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-      | 💬 Preprint; First three authors contributed equally
-    </div>
-    <details class="paper-abstract">
-      The Chain-of-Thought (CoT) paradigm has become a pivotal method for solving complex problems. However, its application to intricate, domain-specific tasks remains challenging, as large language models (LLMs) often struggle to accurately decompose these tasks and, even when decomposition is correct, fail to execute the subtasks effectively. This paper introduces the Re-TASK framework, a novel theoretical model that revisits LLM tasks from the perspectives of capability, skill, and knowledge, drawing on the principles of Bloom's Taxonomy and Knowledge Space Theory. While CoT offers a workflow perspective on tasks, the Re-TASK framework introduces a Chain-of-Learning view, illustrating how tasks and their corresponding subtasks depend on various capability items. Each capability item is further dissected into its constituent aspects of knowledge and skills. Our framework reveals that many CoT failures in domain-specific tasks stem from insufficient knowledge or inadequate skill adaptation. In response, we combine CoT with the Re-TASK framework and implement a carefully designed Re-TASK prompting strategy to improve task performance. Specifically, we identify core capability items linked to tasks and subtasks, then strengthen these capabilities through targeted knowledge injection and skill adaptation. We validate the Re-TASK framework on three datasets across the law, finance, and mathematics domains, achieving significant improvements over the baseline models. Notably, our approach yields a remarkable 44.42% improvement with the Yi-1.5-9B model and a 33.08% improvement with the Llama3-Chinese-8b on the legal dataset. These experimental results confirm the effectiveness of the Re-TASK framework, demonstrating substantial enhancements in both the performance and applicability of LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.02108v1">ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-    </div>
-    <details class="paper-abstract">
-      Post-training Large Language Models (LLMs) with explicit reasoning trajectories can enhance their reasoning abilities. However, acquiring such high-quality trajectory data typically demands meticulous supervision from humans or superior models, which can be either expensive or license-constrained. In this paper, we explore how far an LLM can improve its reasoning by self-synthesizing reasoning paths as training data without any additional supervision. Existing self-synthesizing methods, such as STaR, suffer from poor generalization to out-of-domain (OOD) reasoning tasks. We hypothesize it is due to that their self-synthesized reasoning paths are too task-specific, lacking general task-agnostic reasoning guidance. To address this, we propose Reasoning Generalist via Self-Improvement (ReGenesis), a method to self-synthesize reasoning paths as post-training data by progressing from abstract to concrete. More specifically, ReGenesis self-synthesizes reasoning paths by converting general reasoning guidelines into task-specific ones, generating reasoning structures, and subsequently transforming these structures into reasoning paths, without the need for human-designed task-specific examples used in existing methods. We show that ReGenesis achieves superior performance on all in-domain and OOD settings tested compared to existing methods. For six OOD tasks specifically, while previous methods exhibited an average performance decrease of approximately 4.6% after post training, ReGenesis delivers around 6.1% performance improvement. We also conduct in-depth analysis of our framework and show ReGenesis is effective across various LLMs and design choices.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/pdf/2410.01026v1">Understanding the Human-LLM Dynamic: A Literature Survey of LLM Use in Programming Tasks</a></div>
-    <div class="paper-meta">
-      📅 2024-10-03
-      | 💬 16 pages, 8 tables, 2 figures
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are transforming programming practices, offering significant capabilities for code generation activities. While researchers have explored the potential of LLMs in various domains, this paper focuses on their use in programming tasks, drawing insights from user studies that assess the impact of LLMs on programming tasks. We first examined the user interaction behaviors with LLMs observed in these studies, from the types of requests made to task completion strategies. Additionally, our analysis reveals both benefits and weaknesses of LLMs showing mixed effects on the human and task. Lastly, we looked into what factors from the human, LLM or the interaction of both, affect the human's enhancement as well as the task performance. Our findings highlight the variability in human-LLM interactions due to the non-deterministic nature of both parties (humans and LLMs), underscoring the need for a deeper understanding of these interaction patterns. We conclude by providing some practical suggestions for researchers as well as programmers.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2410.03768v1">Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-10-02
-    </div>
-    <details class="paper-abstract">
-      The rapid proliferation of frontier model agents promises significant societal advances but also raises concerns about systemic risks arising from unsafe interactions. Collusion to the disadvantage of others has been identified as a central form of undesirable agent cooperation. The use of information hiding (steganography) in agent communications could render collusion practically undetectable. This underscores the need for evaluation frameworks to monitor and mitigate steganographic collusion capabilities. We address a crucial gap in the literature by demonstrating, for the first time, that robust steganographic collusion in LLMs can arise indirectly from optimization pressure. To investigate this problem we design two approaches -- a gradient-based reinforcement learning (GBRL) method and an in-context reinforcement learning (ICRL) method -- for reliably eliciting sophisticated LLM-generated linguistic text steganography. Importantly, we find that emergent steganographic collusion can be robust to both passive steganalytic oversight of model outputs and active mitigation through communication paraphrasing. We contribute a novel model evaluation framework and discuss limitations and future work. Our findings imply that effective risk mitigation from steganographic collusion post-deployment requires innovation in passive and active oversight techniques.
     </details>
 </div>

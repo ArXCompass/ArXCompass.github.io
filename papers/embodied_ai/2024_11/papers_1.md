@@ -37,6 +37,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.04449v5">EARBench: Towards Evaluating Physical Risk Awareness for Task Planning of Foundation Model-based Embodied AI Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-11-28
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (EAI) integrates advanced AI models into physical entities for real-world interaction. The emergence of foundation models as the "brain" of EAI agents for high-level task planning has shown promising results. However, the deployment of these agents in physical environments presents significant safety challenges. For instance, a housekeeping robot lacking sufficient risk awareness might place a metal container in a microwave, potentially causing a fire. To address these critical safety concerns, comprehensive pre-deployment risk assessments are imperative. This study introduces EARBench, a novel framework for automated physical risk assessment in EAI scenarios. EAIRiskBench employs a multi-agent cooperative system that leverages various foundation models to generate safety guidelines, create risk-prone scenarios, make task planning, and evaluate safety systematically. Utilizing this framework, we construct EARDataset, comprising diverse test cases across various domains, encompassing both textual and visual scenarios. Our comprehensive evaluation of state-of-the-art foundation models reveals alarming results: all models exhibit high task risk rates (TRR), with an average of 95.75% across all evaluated models. To address these challenges, we further propose two prompting-based risk mitigation strategies. While these strategies demonstrate some efficacy in reducing TRR, the improvements are limited, still indicating substantial safety concerns. This study provides the first large-scale assessment of physical risk awareness in EAI agents. Our findings underscore the critical need for enhanced safety measures in EAI systems and provide valuable insights for future research directions in developing safer embodied artificial intelligence system. Data and code are available at https://github.com/zihao-ai/EARBench.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.12977v2">MindForge: Empowering Embodied Agents with Theory of Mind for Lifelong Collaborative Learning</a></div>
     <div class="paper-meta">
       📅 2024-11-25
@@ -195,5 +204,14 @@
     </div>
     <details class="paper-abstract">
       Embodied agents designed to assist users with tasks must engage in natural language interactions, interpret instructions, execute actions, and communicate effectively to resolve issues. However, collecting large-scale, diverse datasets of situated human-robot dialogues to train and evaluate such agents is expensive, labor-intensive, and time-consuming. To address this challenge, we propose building a large language model (LLM)-based user agent that can simulate user behavior during interactions with an embodied agent in a virtual environment. Given a user goal (e.g., make breakfast), at each time step, the user agent may observe" the robot actions or speak" to either intervene with the robot or answer questions. Such a user agent assists in improving the scalability and efficiency of embodied dialogues dataset generation and is critical for enhancing and evaluating the robot's interaction and task completion ability, as well as for research in reinforcement learning using AI feedback. We evaluate our user agent's ability to generate human-like behaviors by comparing its simulated dialogues with the TEACh dataset. We perform three experiments: zero-shot prompting to predict dialogue acts, few-shot prompting, and fine-tuning on the TEACh training subset. Results show the LLM-based user agent achieves an F-measure of 42% with zero-shot prompting and 43.4% with few-shot prompting in mimicking human speaking behavior. Through fine-tuning, performance in deciding when to speak remained stable, while deciding what to say improved from 51.1% to 62.5%. These findings showcase the feasibility of the proposed approach for assessing and enhancing the effectiveness of robot task completion through natural language communication.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.03570v3">Embodied AI with Two Arms: Zero-shot Learning, Safety and Modularity</a></div>
+    <div class="paper-meta">
+      📅 2024-11-01
+    </div>
+    <details class="paper-abstract">
+      We present an embodied AI system which receives open-ended natural language instructions from a human, and controls two arms to collaboratively accomplish potentially long-horizon tasks over a large workspace. Our system is modular: it deploys state of the art Large Language Models for task planning,Vision-Language models for semantic perception, and Point Cloud transformers for grasping. With semantic and physical safety in mind, these modules are interfaced with a real-time trajectory optimizer and a compliant tracking controller to enable human-robot proximity. We demonstrate performance for the following tasks: bi-arm sorting, bottle opening, and trash disposal tasks. These are done zero-shot where the models used have not been trained with any real world data from this bi-arm robot, scenes or workspace. Composing both learning- and non-learning-based components in a modular fashion with interpretable inputs and outputs allows the user to easily debug points of failures and fragilities. One may also in-place swap modules to improve the robustness of the overall platform, for instance with imitation-learned policies. Please see https://sites.google.com/corp/view/safe-robots .
     </details>
 </div>

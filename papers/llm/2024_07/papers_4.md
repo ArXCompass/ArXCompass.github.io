@@ -12,6 +12,93 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2310.01991v2">Fill in the Blank: Exploring and Enhancing LLM Capabilities for Backward Reasoning in Math Word Problems</a></div>
+    <div class="paper-meta">
+      📅 2024-07-08
+      | 💬 10 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      While forward reasoning (i.e., find the answer given the question) has been explored extensively in recent literature, backward reasoning is relatively unexplored. We examine the backward reasoning capabilities of LLMs on Math Word Problems (MWPs): given a mathematical question and its answer, with some details omitted from the question, can LLMs effectively retrieve the missing information? On modifying three benchmark datasets for this task, to evaluate this task: GSM8k, SVAMP, and MultiArith, we find a significant drop in the accuracy of models on this task compared to forward reasoning across SOTA LLMs (GPT4, GPT3.5, PaLM-2, and LLaMa). Motivated by the fact backward reasoning can be seen as the ''inverse'' of forward reasoning, we propose variations of three different forward reasoning strategies to improve performance. Rephrase reformulates the given problem into a forward reasoning problem, PAL-Tools combines the idea of Program-Aided LLMs to produce a set of equations that can be solved by an external solver, and Check your Work exploits the availability of natural verifier of high accuracy in the forward direction, interleaving solving and verification steps. Finally, realizing that each of our base methods correctly solves a different set of problems, we propose a novel Bayesian formulation for creating an ensemble over the base methods to further boost the accuracy. Extensive experimentation demonstrates successive improvement in the performance of LLMs on the backward reasoning task, using our strategies, with our ensemble-based method resulting in significant performance gains compared to the SOTA forward reasoning strategies we adapt.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05557v1">$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2024-07-08
+    </div>
+    <details class="paper-abstract">
+      As LLMs become increasingly prevalent across various applications, it is critical to establish safety guardrails to moderate input/output content of LLMs. Existing guardrail models treat various safety categories independently and fail to explicitly capture the intercorrelations among them. This has led to limitations such as ineffectiveness due to inadequate training on long-tail data from correlated safety categories, susceptibility to jailbreaking attacks, and inflexibility regarding new safety categories. To address these limitations, we propose $R^2$-Guard, a robust reasoning enabled LLM guardrail via knowledge-enhanced logical reasoning. Specifically, $R^2$-Guard comprises two parts: data-driven category-specific learning and reasoning components. The data-driven guardrail models provide unsafety probabilities of moderated content on different safety categories. We then encode safety knowledge among different categories as first-order logical rules and embed them into a probabilistic graphic model (PGM) based reasoning component. The unsafety probabilities of different categories from data-driven guardrail models are sent to the reasoning component for final inference. We employ two types of PGMs: Markov logic networks (MLNs) and probabilistic circuits (PCs), and optimize PCs to achieve precision-efficiency balance via improved graph structure. To further perform stress tests for guardrail models, we employ a pairwise construction method to construct a new safety benchmark TwinSafety, which features principled categories. We demonstrate the effectiveness of $R^2$-Guard by comparisons with eight strong guardrail models on six safety benchmarks, and demonstrate the robustness of $R^2$-Guard against four SOTA jailbreaking attacks. $R^2$-Guard significantly surpasses SOTA method LlamaGuard by 30.2% on ToxicChat and by 59.5% against jailbreaking attacks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2401.02669v2">Infinite-LLM: Efficient LLM Service for Long Context with DistAttention and Distributed KVCache</a></div>
+    <div class="paper-meta">
+      📅 2024-07-08
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) demonstrate substantial potential across a diverse array of domains via request serving. However, as trends continue to push for expanding context sizes, the autoregressive nature of LLMs results in highly dynamic behavior of the attention layers, showcasing significant differences in computational characteristics and memory requirements from the non-attention layers. This presents substantial challenges for resource management and performance optimization in service systems. Existing static model parallelism and resource allocation strategies fall short when dealing with this dynamicity. To address the issue, we propose Infinite-LLM, a novel LLM serving system designed to effectively handle dynamic context lengths. Infinite-LLM disaggregates attention layers from an LLM's inference process, facilitating flexible and independent resource scheduling that optimizes computational performance and enhances memory utilization jointly. By leveraging a pooled GPU memory strategy across a cluster, Infinite-LLM not only significantly boosts system throughput but also supports extensive context lengths. Evaluated on a dataset with context lengths ranging from a few to 2000K tokens across a cluster with 32 A100 GPUs, Infinite-LLM demonstrates throughput improvement of 1.35-3.4x compared to state-of-the-art methods, enabling efficient and elastic LLM deployment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/pdf/2407.04014v1">Offline Energy-Optimal LLM Serving: Workload-Based Energy Models for LLM Inference on Heterogeneous Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-07-08
+      | 💬 7 pages, appearing at HotCarbon 2024
+    </div>
+    <details class="paper-abstract">
+      The rapid adoption of large language models (LLMs) has led to significant advances in natural language processing and text generation. However, the energy consumed through LLM model inference remains a major challenge for sustainable AI deployment. To address this problem, we model the workload-dependent energy consumption and runtime of LLM inference tasks on heterogeneous GPU-CPU systems. By conducting an extensive characterization study of several state-of-the-art LLMs and analyzing their energy and runtime behavior across different magnitudes of input prompts and output text, we develop accurate (R^2>0.96) energy and runtime models for each LLM. We employ these models to explore an offline, energy-optimal LLM workload scheduling framework. Through a case study, we demonstrate the advantages of energy and accuracy aware scheduling compared to existing best practices.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2401.15232v2">How Beginning Programmers and Code LLMs (Mis)read Each Other</a></div>
+    <div class="paper-meta">
+      📅 2024-07-07
+      | 💬 Published in CHI 2024
+    </div>
+    <details class="paper-abstract">
+      Generative AI models, specifically large language models (LLMs), have made strides towards the long-standing goal of text-to-code generation. This progress has invited numerous studies of user interaction. However, less is known about the struggles and strategies of non-experts, for whom each step of the text-to-code problem presents challenges: describing their intent in natural language, evaluating the correctness of generated code, and editing prompts when the generated code is incorrect. This paper presents a large-scale controlled study of how 120 beginning coders across three academic institutions approach writing and editing prompts. A novel experimental design allows us to target specific steps in the text-to-code process and reveals that beginners struggle with writing and editing prompts, even for problems at their skill level and when correctness is automatically determined. Our mixed-methods evaluation provides insight into student processes and perceptions with key implications for non-expert Code LLM use within and outside of education.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2403.05798v2">$\textbf{S}^2$IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting</a></div>
+    <div class="paper-meta">
+      📅 2024-07-07
+    </div>
+    <details class="paper-abstract">
+      Recently, there has been a growing interest in leveraging pre-trained large language models (LLMs) for various time series applications. However, the semantic space of LLMs, established through the pre-training, is still underexplored and may help yield more distinctive and informative representations to facilitate time series forecasting. To this end, we propose Semantic Space Informed Prompt learning with LLM ($S^2$IP-LLM) to align the pre-trained semantic space with time series embeddings space and perform time series forecasting based on learned prompts from the joint space. We first design a tokenization module tailored for cross-modality alignment, which explicitly concatenates patches of decomposed time series components to create embeddings that effectively encode the temporal dynamics. Next, we leverage the pre-trained word token embeddings to derive semantic anchors and align selected anchors with time series embeddings by maximizing the cosine similarity in the joint space. This way, $S^2$IP-LLM can retrieve relevant semantic anchors as prompts to provide strong indicators (context) for time series that exhibit different temporal dynamics. With thorough empirical studies on multiple benchmark datasets, we demonstrate that the proposed $S^2$IP-LLM can achieve superior forecasting performance over state-of-the-art baselines. Furthermore, our ablation studies and visualizations verify the necessity of prompt learning informed by semantic space.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05437v1">Enhancing Computer Programming Education with LLMs: A Study on Effective Prompt Engineering for Python Code Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-07
+      | 💬 18 pages, 9 figures
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) and prompt engineering hold significant potential for advancing computer programming education through personalized instruction. This paper explores this potential by investigating three critical research questions: the systematic categorization of prompt engineering strategies tailored to diverse educational needs, the empowerment of LLMs to solve complex problems beyond their inherent capabilities, and the establishment of a robust framework for evaluating and implementing these strategies. Our methodology involves categorizing programming questions based on educational requirements, applying various prompt engineering strategies, and assessing the effectiveness of LLM-generated responses. Experiments with GPT-4, GPT-4o, Llama3-8b, and Mixtral-8x7b models on datasets such as LeetCode and USACO reveal that GPT-4o consistently outperforms others, particularly with the "multi-step" prompt strategy. The results show that tailored prompt strategies significantly enhance LLM performance, with specific strategies recommended for foundational learning, competition preparation, and advanced problem-solving. This study underscores the crucial role of prompt engineering in maximizing the educational benefits of LLMs. By systematically categorizing and testing these strategies, we provide a comprehensive framework for both educators and students to optimize LLM-based learning experiences. Future research should focus on refining these strategies and addressing current LLM limitations to further enhance educational outcomes in computer programming instruction.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05347v1">A Queueing Theoretic Perspective on Low-Latency LLM Inference with Variable Token Length</a></div>
+    <div class="paper-meta">
+      📅 2024-07-07
+      | 💬 8 pages
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) propel the prosperity of interactive AI applications showcased by ChatGPT that demand timely response of inference services. However, LLM inference is computation intensive and memory intensive, and improper parameter configuration at LLM platforms may exacerbate the inference time. In this paper, we analyze the impact of LLM output token distribution on the inference queueing delay, where the max-token clipping and the batched inference are considered. By formulating an M/G/1 model, we observe that enforcing a maximum output token limit on a very small fraction of inference requests can significantly reduce the queueing delay, and our model facilitates the selection of the optimal limit. For the batch inference, we model the service process as a bulk queue in which the batch processing time is affected by the batch size and the maximum token size inside this batch jointly. The queueing delays of the batching of all buffered requests (dynamic batching), the batching of constant number of requests (fixed batching), and the batching without intra-batch waiting (elastic batching) are derived. Experimental results show that our mathematical models coincide with the event-driven simulations well.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2407.05271v1">Beyond Binary Gender Labels: Revealing Gender Biases in LLMs through Gender-Neutral Name Predictions</a></div>
+    <div class="paper-meta">
+      📅 2024-07-07
+      | 💬 Accepted at ACL 2024, GeBNLP Workshop
+    </div>
+    <details class="paper-abstract">
+      Name-based gender prediction has traditionally categorized individuals as either female or male based on their names, using a binary classification system. That binary approach can be problematic in the cases of gender-neutral names that do not align with any one gender, among other reasons. Relying solely on binary gender categories without recognizing gender-neutral names can reduce the inclusiveness of gender prediction tasks. We introduce an additional gender category, i.e., "neutral", to study and address potential gender biases in Large Language Models (LLMs). We evaluate the performance of several foundational and large language models in predicting gender based on first names only. Additionally, we investigate the impact of adding birth years to enhance the accuracy of gender prediction, accounting for shifting associations between names and genders over time. Our findings indicate that most LLMs identify male and female names with high accuracy (over 80%) but struggle with gender-neutral names (under 40%), and the accuracy of gender prediction is higher for English-based first names than non-English names. The experimental results show that incorporating the birth year does not improve the overall accuracy of gender prediction, especially for names with evolving gender associations. We recommend using caution when applying LLMs for gender identification in downstream tasks, particularly when dealing with non-binary gender labels.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.05194v1">LLMCloudHunter: Harnessing LLMs for Automated Extraction of Detection Rules from Cloud-Based CTI</a></div>
     <div class="paper-meta">
       📅 2024-07-06
@@ -287,6 +374,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.02669v2">Infinite-LLM: Efficient LLM Service for Long Context with DistAttention and Distributed KVCache</a></div>
+    <div class="paper-meta">
+      📅 2024-07-04
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) demonstrate substantial potential across a diverse array of domains via request serving. However, as trends continue to push for expanding context sizes, the autoregressive nature of LLMs results in highly dynamic behavior of the attention layers, showcasing significant differences in computational characteristics and memory requirements from the non-attention layers. This presents substantial challenges for resource management and performance optimization in service systems. Existing static model parallelism and resource allocation strategies fall short when dealing with this dynamicity. To address the issue, we propose Infinite-LLM, a novel LLM serving system designed to effectively handle dynamic context lengths. Infinite-LLM disaggregates attention layers from an LLM's inference process, facilitating flexible and independent resource scheduling that optimizes computational performance and enhances memory utilization jointly. By leveraging a pooled GPU memory strategy across a cluster, Infinite-LLM not only significantly boosts system throughput but also supports extensive context lengths. Evaluated on a dataset with context lengths ranging from a few to 2000K tokens across a cluster with 32 A100 GPUs, Infinite-LLM demonstrates throughput improvement of 1.35-3.4x compared to state-of-the-art methods, enabling efficient and elastic LLM deployment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.04014v1">Offline Energy-Optimal LLM Serving: Workload-Based Energy Models for LLM Inference on Heterogeneous Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-07-04
+      | 💬 7 pages, appearing at HotCarbon 2024
+    </div>
+    <details class="paper-abstract">
+      The rapid adoption of large language models (LLMs) has led to significant advances in natural language processing and text generation. However, the energy consumed through LLM model inference remains a major challenge for sustainable AI deployment. To address this problem, we model the workload-dependent energy consumption and runtime of LLM inference tasks on heterogeneous GPU-CPU systems. By conducting an extensive characterization study of several state-of-the-art LLMs and analyzing their energy and runtime behavior across different magnitudes of input prompts and output text, we develop accurate (R^2>0.96) energy and runtime models for each LLM. We employ these models to explore an offline, energy-optimal LLM workload scheduling framework. Through a case study, we demonstrate the advantages of energy and accuracy aware scheduling compared to existing best practices.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.04444v4">What's the Magic Word? A Control Theory of LLM Prompting</a></div>
     <div class="paper-meta">
       📅 2024-07-03
@@ -466,6 +572,15 @@
     </div>
     <details class="paper-abstract">
       To ensure that large language model (LLM) responses are helpful and non-toxic, a reward model trained on human preference data is usually used. LLM responses with high rewards are then selected through best-of-$n$ (BoN) sampling or the LLM is further optimized to produce responses with high rewards through reinforcement learning from human feedback (RLHF). However, these processes are susceptible to reward overoptimization or `hacking', where responses receive high rewards due to imperfections in the reward model rather than true preference, particularly as prompts or responses deviate from the training data. To address these challenges, we propose to train a Bayesian reward model, which signals higher uncertainty further from the training data distribution. We trained Bayesian reward models using Laplace approximation on LoRA weights, and found that the resulting uncertainty estimates can effectively mitigate reward overoptimization in BoN sampling.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.16203v3">LLMs' Classification Performance is Overclaimed</a></div>
+    <div class="paper-meta">
+      📅 2024-07-03
+    </div>
+    <details class="paper-abstract">
+      In many classification tasks designed for AI or human to solve, gold labels are typically included within the label space by default, often posed as "which of the following is correct?" This standard setup has traditionally highlighted the strong performance of advanced AI, particularly top-performing Large Language Models (LLMs), in routine classification tasks. However, when the gold label is intentionally excluded from the label space, it becomes evident that LLMs still attempt to select from the available label candidates, even when none are correct. This raises a pivotal question: Do LLMs truly demonstrate their intelligence in understanding the essence of classification tasks? In this study, we evaluate both closed-source and open-source LLMs across representative classification tasks, arguing that the perceived performance of LLMs is overstated due to their inability to exhibit the expected comprehension of the task. This paper makes a threefold contribution: i) To our knowledge, this is the first work to identify the limitations of LLMs in classification tasks when gold labels are absent. We define this task as Classify-w/o-Gold and propose it as a new testbed for LLMs. ii) We introduce a benchmark, Know-No, comprising two existing classification tasks and one new task, to evaluate Classify-w/o-Gold. iii) This work defines and advocates for a new evaluation metric, OmniAccuracy, which assesses LLMs' performance in classification tasks both when gold labels are present and absent.
     </details>
 </div>
 <div class="paper-card">
@@ -736,6 +851,16 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.00367v2">Don't Hallucinate, Abstain: Identifying LLM Knowledge Gaps via Multi-LLM Collaboration</a></div>
+    <div class="paper-meta">
+      📅 2024-07-01
+      | 💬 ACL 2024
+    </div>
+    <details class="paper-abstract">
+      Despite efforts to expand the knowledge of large language models (LLMs), knowledge gaps -- missing or outdated information in LLMs -- might always persist given the evolving nature of knowledge. In this work, we study approaches to identify LLM knowledge gaps and abstain from answering questions when knowledge gaps are present. We first adapt existing approaches to model calibration or adaptation through fine-tuning/prompting and analyze their ability to abstain from generating low-confidence outputs. Motivated by their failures in self-reflection and over-reliance on held-out sets, we propose two novel approaches that are based on model collaboration, i.e., LLMs probing other LLMs for knowledge gaps, either cooperatively or competitively. Extensive experiments with three LLMs on four QA tasks featuring diverse knowledge domains demonstrate that both cooperative and competitive approaches to unveiling LLM knowledge gaps achieve up to 19.3% improvements on abstain accuracy against the strongest baseline. Further analysis reveals that our proposed mechanisms could help identify failure cases in retrieval augmentation and pinpoint knowledge gaps in multi-hop reasoning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.00367v2">Don't Hallucinate, Abstain: Identifying LLM Knowledge Gaps via Multi-LLM Collaboration</a></div>
     <div class="paper-meta">
       📅 2024-07-01
       | 💬 ACL 2024

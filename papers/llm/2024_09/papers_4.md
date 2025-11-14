@@ -13,12 +13,42 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07772v1">Alignment with Preference Optimization Is All You Need for LLM Safety</a></div>
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.17166v1">ScriptSmith: A Unified LLM Framework for Enhancing IT Operations via Automated Bash Script Generation, Assessment, and Refinement</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+      | 💬 Under Review
+    </div>
+    <details class="paper-abstract">
+      In the rapidly evolving landscape of site reliability engineering (SRE), the demand for efficient and effective solutions to manage and resolve issues in site and cloud applications is paramount. This paper presents an innovative approach to action automation using large language models (LLMs) for script generation, assessment, and refinement. By leveraging the capabilities of LLMs, we aim to significantly reduce the human effort involved in writing and debugging scripts, thereby enhancing the productivity of SRE teams. Our experiments focus on Bash scripts, a commonly used tool in SRE, and involve the CodeSift dataset of 100 tasks and the InterCode dataset of 153 tasks. The results show that LLMs can automatically assess and refine scripts efficiently, reducing the need for script validation in an execution environment. Results demonstrate that the framework shows an overall improvement of 7-10% in script generation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07871v1">Objection Overruled! Lay People can Distinguish Large Language Models from Lawyers, but still Favour Advice from an LLM</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+      | 💬 13 pages, 6 figures, 1 table
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) are seemingly infiltrating every domain, and the legal context is no exception. In this paper, we present the results of three experiments (total N=288) that investigated lay people's willingness to act upon, and their ability to discriminate between, LLM- and lawyer-generated legal advice. In Experiment 1, participants judged their willingness to act on legal advice when the source of the advice was either known or unknown. When the advice source was unknown, participants indicated that they were significantly more willing to act on the LLM-generated advice. This result was replicated in Experiment 2. Intriguingly, despite participants indicating higher willingness to act on LLM-generated advice in Experiments 1 and 2, participants discriminated between the LLM- and lawyer-generated texts significantly above chance-level in Experiment 3. Lastly, we discuss potential explanations and risks of our findings, limitations and future work, and the importance of language complexity and real-world comparability.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2409.07829v1">Enabling Cost-Effective UI Automation Testing with Retrieval-Based LLMs: A Case Study in WeChat</a></div>
     <div class="paper-meta">
       📅 2024-09-12
     </div>
     <details class="paper-abstract">
-      We demonstrate that preference optimization methods can effectively enhance LLM safety. Applying various alignment techniques to the Falcon 11B model using safety datasets, we achieve a significant boost in global safety score (from $57.64\%$ to $99.90\%$) as measured by LlamaGuard 3 8B, competing with state-of-the-art models. On toxicity benchmarks, average scores in adversarial settings dropped from over $0.6$ to less than $0.07$. However, this safety improvement comes at the cost of reduced general capabilities, particularly in math, suggesting a trade-off. We identify noise contrastive alignment (Safe-NCA) as an optimal method for balancing safety and performance. Our study ultimately shows that alignment techniques can be sufficient for building safe and robust models.
+      UI automation tests play a crucial role in ensuring the quality of mobile applications. Despite the growing popularity of machine learning techniques to generate these tests, they still face several challenges, such as the mismatch of UI elements. The recent advances in Large Language Models (LLMs) have addressed these issues by leveraging their semantic understanding capabilities. However, a significant gap remains in applying these models to industrial-level app testing, particularly in terms of cost optimization and knowledge limitation. To address this, we introduce CAT to create cost-effective UI automation tests for industry apps by combining machine learning and LLMs with best practices. Given the task description, CAT employs Retrieval Augmented Generation (RAG) to source examples of industrial app usage as the few-shot learning context, assisting LLMs in generating the specific sequence of actions. CAT then employs machine learning techniques, with LLMs serving as a complementary optimizer, to map the target element on the UI screen. Our evaluations on the WeChat testing dataset demonstrate the CAT's performance and cost-effectiveness, achieving 90% UI automation with $0.34 cost, outperforming the state-of-the-art. We have also integrated our approach into the real-world WeChat testing platform, demonstrating its usefulness in detecting 141 bugs and enhancing the developers' testing process.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.12093v2">LLM-enhanced Scene Graph Learning for Household Rearrangement</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+      | 💬 SIGGRAPH ASIA 2024 conference accepted
+    </div>
+    <details class="paper-abstract">
+      The household rearrangement task involves spotting misplaced objects in a scene and accommodate them with proper places. It depends both on common-sense knowledge on the objective side and human user preference on the subjective side. In achieving such task, we propose to mine object functionality with user preference alignment directly from the scene itself, without relying on human intervention. To do so, we work with scene graph representation and propose LLM-enhanced scene graph learning which transforms the input scene graph into an affordance-enhanced graph (AEG) with information-enhanced nodes and newly discovered edges (relations). In AEG, the nodes corresponding to the receptacle objects are augmented with context-induced affordance which encodes what kind of carriable objects can be placed on it. New edges are discovered with newly discovered non-local relations. With AEG, we perform task planning for scene rearrangement by detecting misplaced carriables and determining a proper placement for each of them. We test our method by implementing a tiding robot in simulator and perform evaluation on a new benchmark we build. Extensive evaluations demonstrate that our method achieves state-of-the-art performance on misplacement detection and the following rearrangement planning.
     </details>
 </div>
 <div class="paper-card">
@@ -420,6 +450,15 @@
     </div>
     <details class="paper-abstract">
       The integration of Large Language Models (LLMs) like GPT-4o into robotic systems represents a significant advancement in embodied artificial intelligence. These models can process multi-modal prompts, enabling them to generate more context-aware responses. However, this integration is not without challenges. One of the primary concerns is the potential security risks associated with using LLMs in robotic navigation tasks. These tasks require precise and reliable responses to ensure safe and effective operation. Multi-modal prompts, while enhancing the robot's understanding, also introduce complexities that can be exploited maliciously. For instance, adversarial inputs designed to mislead the model can lead to incorrect or dangerous navigational decisions. This study investigates the impact of prompt injections on mobile robot performance in LLM-integrated systems and explores secure prompt strategies to mitigate these risks. Our findings demonstrate a substantial overall improvement of approximately 30.8% in both attack detection and system performance with the implementation of robust defence mechanisms, highlighting their critical role in enhancing security and reliability in mission-oriented tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.13598v2">User-LLM: Efficient LLM Contextualization with User Embeddings</a></div>
+    <div class="paper-meta">
+      📅 2024-09-09
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have achieved remarkable success across various domains, but effectively incorporating complex and potentially noisy user timeline data into LLMs remains a challenge. Current approaches often involve translating user timelines into text descriptions before feeding them to LLMs, which can be inefficient and may not fully capture the nuances of user behavior. Inspired by how LLMs are effectively integrated with images through direct embeddings, we propose User-LLM, a novel framework that leverages user embeddings to directly contextualize LLMs with user history interactions. These embeddings, generated by a user encoder pretrained using self-supervised learning on diverse user interactions, capture latent user behaviors and interests as well as their evolution over time. We integrate these user embeddings with LLMs through cross-attention, enabling LLMs to dynamically adapt their responses based on the context of a user's past actions and preferences. Our approach achieves significant efficiency gains by representing user timelines directly as embeddings, leading to substantial inference speedups of up to 78.1X. Comprehensive experiments on MovieLens, Amazon Review, and Google Local Review datasets demonstrate that User-LLM outperforms text-prompt-based contextualization on tasks requiring deep user understanding, with improvements of up to 16.33%, particularly excelling on long sequences that capture subtle shifts in user behavior. Furthermore, the incorporation of Perceiver layers streamlines the integration between user encoders and LLMs, yielding additional computational savings.
     </details>
 </div>
 <div class="paper-card">
@@ -910,42 +949,5 @@
     </div>
     <details class="paper-abstract">
       Scientific discovery is a catalyst for human intellectual advances, driven by the cycle of hypothesis generation, experimental design, data evaluation, and iterative assumption refinement. This process, while crucial, is expensive and heavily dependent on the domain knowledge of scientists to generate hypotheses and navigate the scientific cycle. Central to this is causality, the ability to establish the relationship between the cause and the effect. Motivated by the scientific discovery process, in this work, we formulate a novel task where the input is a partial causal graph with missing variables, and the output is a hypothesis about the missing variables to complete the partial graph. We design a benchmark with varying difficulty levels and knowledge assumptions about the causal graph. With the growing interest in using Large Language Models (LLMs) to assist in scientific discovery, we benchmark open-source and closed models on our testbed. We show the strong ability of LLMs to hypothesize the mediation variables between a cause and its effect. In contrast, they underperform in hypothesizing the cause and effect variables themselves. We also observe surprising results where some of the open-source models outperform the closed GPT-4 model.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2312.04985v6">SparQ Attention: Bandwidth-Efficient LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2024-09-04
-    </div>
-    <details class="paper-abstract">
-      The computational difficulties of large language model (LLM) inference remain a significant obstacle to their widespread deployment. The need for many applications to support long input sequences and process them in large batches typically causes token-generation to be bottlenecked by data transfer. For this reason, we introduce SparQ Attention, a technique for increasing the inference throughput of LLMs by utilising memory bandwidth more efficiently within the attention layers, through selective fetching of the cached history. Our proposed technique can be applied directly to off-the-shelf LLMs during inference, without requiring any modification to the pre-training setup or additional fine-tuning. We show that SparQ Attention brings up to 8x savings in attention data transfers without substantial drops in accuracy, by evaluating Llama 2 and 3, Mistral, Gemma and Pythia models on a wide range of downstream tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.11155v1">ISO: Overlap of Computation and Communication within Seqenence For LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2024-09-04
-    </div>
-    <details class="paper-abstract">
-      In the realm of Large Language Model (LLM) inference, the inherent structure of transformer models coupled with the multi-GPU tensor parallelism strategy leads to a sequential execution of computation and communication. This results in substantial underutilization of computing resources during the communication phase. To mitigate this inefficiency, various techniques have been developed to optimize the use of computational power throughout the communication process. These strategies primarily involve overlapping matrix computations and communications, as well as interleaving micro-batches across different requests. Nonetheless, these approaches either fall short of achieving ideal overlap or impose certain limitations on their application. To overcome these challenges, this paper introduces a novel strategy for computation-communication overlap that operates at the sequence level. This method not only enhances the degree of overlap but also minimizes the constraints on its applicability. Experimental evaluations conducted using 30b/70b models have demonstrated significant improvements in efficiency. Specifically, the proposed technique has been shown to reduce time consumption by approximately 35% on 4090 GPU and by roughly 15% on A800 GPU during the prefill stage of LLM inference.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2403.15412v5">Towards Measuring and Modeling "Culture" in LLMs: A Survey</a></div>
-    <div class="paper-meta">
-      📅 2024-09-04
-    </div>
-    <details class="paper-abstract">
-      We present a survey of more than 90 recent papers that aim to study cultural representation and inclusion in large language models (LLMs). We observe that none of the studies explicitly define "culture, which is a complex, multifaceted concept; instead, they probe the models on some specially designed datasets which represent certain aspects of "culture". We call these aspects the proxies of culture, and organize them across two dimensions of demographic and semantic proxies. We also categorize the probing methods employed. Our analysis indicates that only certain aspects of ``culture,'' such as values and objectives, have been studied, leaving several other interesting and important facets, especially the multitude of semantic domains (Thompson et al., 2020) and aboutness (Hershcovich et al., 2022), unexplored. Two other crucial gaps are the lack of robustness of probing techniques and situated studies on the impact of cultural mis- and under-representation in LLM-based applications.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2409.00128v2">Can AI Replace Human Subjects? A Large-Scale Replication of Psychological Experiments with LLMs</a></div>
-    <div class="paper-meta">
-      📅 2024-09-04
-      | 💬 5 figures, 2 tables
-    </div>
-    <details class="paper-abstract">
-      Artificial Intelligence (AI) is increasingly being integrated into scientific research, particularly in the social sciences, where understanding human behavior is critical. Large Language Models (LLMs) like GPT-4 have shown promise in replicating human-like responses in various psychological experiments. However, the extent to which LLMs can effectively replace human subjects across diverse experimental contexts remains unclear. Here, we conduct a large-scale study replicating 154 psychological experiments from top social science journals with 618 main effects and 138 interaction effects using GPT-4 as a simulated participant. We find that GPT-4 successfully replicates 76.0 percent of main effects and 47.0 percent of interaction effects observed in the original studies, closely mirroring human responses in both direction and significance. However, only 19.44 percent of GPT-4's replicated confidence intervals contain the original effect sizes, with the majority of replicated effect sizes exceeding the 95 percent confidence interval of the original studies. Additionally, there is a 71.6 percent rate of unexpected significant results where the original studies reported null findings, suggesting potential overestimation or false positives. Our results demonstrate the potential of LLMs as powerful tools in psychological research but also emphasize the need for caution in interpreting AI-driven findings. While LLMs can complement human studies, they cannot yet fully replace the nuanced insights provided by human subjects.
     </details>
 </div>

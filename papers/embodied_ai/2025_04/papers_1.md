@@ -37,6 +37,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.21347v1">IRL Dittos: Embodied Multimodal AI Agent Interactions in Open Spaces</a></div>
+    <div class="paper-meta">
+      📅 2025-04-30
+      | 💬 8 pages, 3 figures
+    </div>
+    <details class="paper-abstract">
+      We introduce the In Real Life (IRL) Ditto, an AI-driven embodied agent designed to represent remote colleagues in shared office spaces, creating opportunities for real-time exchanges even in their absence. IRL Ditto offers a unique hybrid experience by allowing in-person colleagues to encounter a digital version of their remote teammates, initiating greetings, updates, or small talk as they might in person. Our research question examines: How can the IRL Ditto influence interactions and relationships among colleagues in a shared office space? Through a four-day study, we assessed IRL Ditto's ability to strengthen social ties by simulating presence and enabling meaningful interactions across different levels of social familiarity. We find that enhancing social relationships depended deeply on the foundation of the relationship participants had with the source of the IRL Ditto. This study provides insights into the role of embodied agents in enriching workplace dynamics for distributed teams.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2505.00055v1">TinyMA-IEI-PPO: Exploration Incentive-Driven Multi-Agent DRL with Self-Adaptive Pruning for Vehicular Embodied AI Agent Twins Migration</a></div>
+    <div class="paper-meta">
+      📅 2025-04-30
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (EAI) addresses autonomous driving challenges in Vehicular Embodied AI Networks (VEANETs) through multi-modal perception, adaptive decision-making, and hardware-software co-scheduling. However, the computational demands of virtual services and the inherent mobility of autonomous vehicles (AVs) necessitate real-time migration of Vehicular Embodied Agent AI Twins (VEAATs) between resource-constrained Roadside Units (RSUs). This paper proposes a novel framework for efficient VEAAT migration in VEANETs, combining a multi-leader multi-follower (MLMF) Stackelberg game-theoretic incentive mechanism with a tiny multi-agent deep reinforcement learning (MADRL) algorithm. First, We propose an virtual immersive experience-driven utility model that captures AV-RSU dynamic interactions by integrating AVs' social influence, service complementarity and substitutability, and RSUs' resource allocation strategies to optimize VEAAT migration decisions. Second, to enhance training efficiency and enable efficient deployment on computation-constrained AVs while preserving exploration-exploitation performance, we propose TinyMA-IEI-PPO, a self-adaptive dynamic structured pruning algorithm that dynamically adjusts neuron importance based on agents' exploration incentives. Numerical results demonstrate that our approach achieves convergence comparable to baseline models and closely approximates the Stackelberg equilibrium.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2504.18945v1">Generative AI in Embodied Systems: System-Level Analysis of Performance, Efficiency and Scalability</a></div>
     <div class="paper-meta">
       📅 2025-04-29
@@ -87,6 +106,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.18945v1">Generative AI in Embodied Systems: System-Level Analysis of Performance, Efficiency and Scalability</a></div>
+    <div class="paper-meta">
+      📅 2025-04-26
+      | 💬 2025 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)
+    </div>
+    <details class="paper-abstract">
+      Embodied systems, where generative autonomous agents engage with the physical world through integrated perception, cognition, action, and advanced reasoning powered by large language models (LLMs), hold immense potential for addressing complex, long-horizon, multi-objective tasks in real-world environments. However, deploying these systems remains challenging due to prolonged runtime latency, limited scalability, and heightened sensitivity, leading to significant system inefficiencies. In this paper, we aim to understand the workload characteristics of embodied agent systems and explore optimization solutions. We systematically categorize these systems into four paradigms and conduct benchmarking studies to evaluate their task performance and system efficiency across various modules, agent scales, and embodied tasks. Our benchmarking studies uncover critical challenges, such as prolonged planning and communication latency, redundant agent interactions, complex low-level control mechanisms, memory inconsistencies, exploding prompt lengths, sensitivity to self-correction and execution, sharp declines in success rates, and reduced collaboration efficiency as agent numbers increase. Leveraging these profiling insights, we suggest system optimization strategies to improve the performance, efficiency, and scalability of embodied agents across different paradigms. This paper presents the first system-level analysis of embodied AI agents, and explores opportunities for advancing future embodied system design.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2504.15327v2">Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</a></div>
     <div class="paper-meta">
       📅 2025-04-24
@@ -104,6 +133,16 @@
     </div>
     <details class="paper-abstract">
       Robots are increasingly envisioned as human companions, assisting with everyday tasks that often involve manipulating deformable objects. Although recent advances in robotic hardware and embodied AI have expanded their capabilities, current systems still struggle with handling thin, flat, and deformable objects such as paper and fabric. This limitation arises from the lack of suitable perception techniques for robust state estimation under diverse object appearances, as well as the absence of planning techniques for generating appropriate grasp motions. To bridge these gaps, this paper introduces PP-Tac, a robotic system for picking up paper-like objects. PP-Tac features a multi-fingered robotic hand with high-resolution omnidirectional tactile sensors \sensorname. This hardware configuration enables real-time slip detection and online frictional force control that mitigates such slips. Furthermore, grasp motion generation is achieved through a trajectory synthesis pipeline, which first constructs a dataset of finger's pinching motions. Based on this dataset, a diffusion-based policy is trained to control the hand-arm robotic system. Experiments demonstrate that PP-Tac can effectively grasp paper-like objects of varying material, thickness, and stiffness, achieving an overall success rate of 87.5\%. To our knowledge, this work is the first attempt to grasp paper-like deformable objects using a tactile dexterous hand. Our project webpage can be found at: https://peilin-666.github.io/projects/PP-Tac/
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.15327v2">Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</a></div>
+    <div class="paper-meta">
+      📅 2025-04-23
+      | 💬 41 pages, 7 figures
+    </div>
+    <details class="paper-abstract">
+      Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.
     </details>
 </div>
 <div class="paper-card">
@@ -239,6 +278,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2501.11858v2">EmbodiedEval: Evaluate Multimodal LLMs as Embodied Agents</a></div>
+    <div class="paper-meta">
+      📅 2025-04-11
+    </div>
+    <details class="paper-abstract">
+      Multimodal Large Language Models (MLLMs) have shown significant advancements, providing a promising future for embodied agents. Existing benchmarks for evaluating MLLMs primarily utilize static images or videos, limiting assessments to non-interactive scenarios. Meanwhile, existing embodied AI benchmarks are task-specific and not diverse enough, which do not adequately evaluate the embodied capabilities of MLLMs. To address this, we propose EmbodiedEval, a comprehensive and interactive evaluation benchmark for MLLMs with embodied tasks. EmbodiedEval features 328 distinct tasks within 125 varied 3D scenes, each of which is rigorously selected and annotated. It covers a broad spectrum of existing embodied AI tasks with significantly enhanced diversity, all within a unified simulation and evaluation framework tailored for MLLMs. The tasks are organized into five categories: navigation, object interaction, social interaction, attribute question answering, and spatial question answering to assess different capabilities of the agents. We evaluated the state-of-the-art MLLMs on EmbodiedEval and found that they have a significant shortfall compared to human level on embodied tasks. Our analysis demonstrates the limitations of existing MLLMs in embodied capabilities, providing insights for their future development. We open-source all evaluation data and simulation framework at https://github.com/thunlp/EmbodiedEval.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2503.23765v2">STI-Bench: Are MLLMs Ready for Precise Spatial-Temporal World Understanding?</a></div>
     <div class="paper-meta">
       📅 2025-04-09
@@ -313,6 +361,16 @@
     </div>
     <details class="paper-abstract">
       Offline reinforcement learning (RL) enables policy training solely on pre-collected data, avoiding direct environment interaction - a crucial benefit for energy-constrained embodied AI applications. Although Artificial Neural Networks (ANN)-based methods perform well in offline RL, their high computational and energy demands motivate exploration of more efficient alternatives. Spiking Neural Networks (SNNs) show promise for such tasks, given their low power consumption. In this work, we introduce DSFormer, the first spike-driven transformer model designed to tackle offline RL via sequence modeling. Unlike existing SNN transformers focused on spatial dimensions for vision tasks, we develop Temporal Spiking Self-Attention (TSSA) and Positional Spiking Self-Attention (PSSA) in DSFormer to capture the temporal and positional dependencies essential for sequence modeling in RL. Additionally, we propose Progressive Threshold-dependent Batch Normalization (PTBN), which combines the benefits of LayerNorm and BatchNorm to preserve temporal dependencies while maintaining the spiking nature of SNNs. Comprehensive results in the D4RL benchmark show DSFormer's superiority over both SNN and ANN counterparts, achieving 78.4% energy savings, highlighting DSFormer's advantages not only in energy efficiency but also in competitive performance. Code and models are public at https://wei-nijuan.github.io/DecisionSpikeFormer.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.03629v1">SeGuE: Semantic Guided Exploration for Mobile Robots</a></div>
+    <div class="paper-meta">
+      📅 2025-04-04
+      | 💬 6 pages, 4 figures, 3 tables
+    </div>
+    <details class="paper-abstract">
+      The rise of embodied AI applications has enabled robots to perform complex tasks which require a sophisticated understanding of their environment. To enable successful robot operation in such settings, maps must be constructed so that they include semantic information, in addition to geometric information. In this paper, we address the novel problem of semantic exploration, whereby a mobile robot must autonomously explore an environment to fully map both its structure and the semantic appearance of features. We develop a method based on next-best-view exploration, where potential poses are scored based on the semantic features visible from that pose. We explore two alternative methods for sampling potential views and demonstrate the effectiveness of our framework in both simulation and physical experiments. Automatic creation of high-quality semantic maps can enable robots to better understand and interact with their environments and enable future embodied AI applications to be more easily deployed.
     </details>
 </div>
 <div class="paper-card">

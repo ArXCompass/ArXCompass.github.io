@@ -12,6 +12,24 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.05025v2">Rag and Roll: An End-to-End Evaluation of Indirect Prompt Manipulations in LLM-based Application Frameworks</a></div>
+    <div class="paper-meta">
+      📅 2024-08-12
+    </div>
+    <details class="paper-abstract">
+      Retrieval Augmented Generation (RAG) is a technique commonly used to equip models with out of distribution knowledge. This process involves collecting, indexing, retrieving, and providing information to an LLM for generating responses. Despite its growing popularity due to its flexibility and low cost, the security implications of RAG have not been extensively studied. The data for such systems are often collected from public sources, providing an attacker a gateway for indirect prompt injections to manipulate the responses of the model. In this paper, we investigate the security of RAG systems against end-to-end indirect prompt manipulations. First, we review existing RAG framework pipelines, deriving a prototypical architecture and identifying critical parameters. We then examine prior works searching for techniques that attackers can use to perform indirect prompt manipulations. Finally, we implemented Rag 'n Roll, a framework to determine the effectiveness of attacks against end-to-end RAG applications. Our results show that existing attacks are mostly optimized to boost the ranking of malicious documents during the retrieval phase. However, a higher rank does not immediately translate into a reliable attack. Most attacks, against various configurations, settle around a 40% success rate, which could rise to 60% when considering ambiguous answers as successful attacks (those that include the expected benign one as well). Additionally, when using unoptimized documents, attackers deploying two of them (or more) for a target query can achieve similar results as those using optimized ones. Finally, exploration of the configuration space of a RAG showed limited impact in thwarting the attacks, where the most successful combination severely undermines functionality.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2408.06142v1">Med42-v2: A Suite of Clinical LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-08-12
+    </div>
+    <details class="paper-abstract">
+      Med42-v2 introduces a suite of clinical large language models (LLMs) designed to address the limitations of generic models in healthcare settings. These models are built on Llama3 architecture and fine-tuned using specialized clinical data. They underwent multi-stage preference alignment to effectively respond to natural prompts. While generic models are often preference-aligned to avoid answering clinical queries as a precaution, Med42-v2 is specifically trained to overcome this limitation, enabling its use in clinical settings. Med42-v2 models demonstrate superior performance compared to the original Llama3 models in both 8B and 70B parameter configurations and GPT-4 across various medical benchmarks. These LLMs are developed to understand clinical queries, perform reasoning tasks, and provide valuable assistance in clinical environments. The models are now publicly available at \href{https://huggingface.co/m42-health}{https://huggingface.co/m42-health}.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.06003v1">LUT Tensor Core: Lookup Table Enables Efficient Low-Bit LLM Inference Acceleration</a></div>
     <div class="paper-meta">
       📅 2024-08-12
@@ -66,6 +84,15 @@
     </div>
     <details class="paper-abstract">
       The debut of chatGPT and BARD has popularized instruction following text generation using LLMs, where a user can interrogate an LLM using natural language requests and obtain natural language answers that matches their requests. Training LLMs to respond in this manner requires a large number of worked out examples of user requests (aka prompts) with corresponding gold responses. In this paper, we introduce two methods for creating such prompts for Arabic cheaply and quickly. The first methods entails automatically translating existing prompt datasets from English, such as PromptSource and Super-NaturalInstructions, and then using machine translation quality estimation to retain high quality translations only. The second method involves creating natural language prompts on top of existing Arabic NLP datasets. Using these two methods we were able to create more than 67.4 million Arabic prompts that cover a variety of tasks including summarization, headline generation, grammar checking, open/closed question answering, creative writing, etc. We show that fine tuning an open 7 billion parameter large language model, namely base Qwen2 7B, enables it to outperform a state-of-the-art 70 billion parameter instruction tuned model, namely Llama3 70B, in handling Arabic prompts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.00798v4">Formal-LLM: Integrating Formal Language and Natural Language for Controllable LLM-based Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-08-12
+    </div>
+    <details class="paper-abstract">
+      Recent advancements on Large Language Models (LLMs) enable AI Agents to automatically generate and execute multi-step plans to solve complex tasks. However, since LLM's content generation process is hardly controllable, current LLM-based agents frequently generate invalid or non-executable plans, which jeopardizes the performance of the generated plans and corrupts users' trust in LLM-based agents. In response, this paper proposes a novel "Formal-LLM" framework for LLM-based agents by integrating the expressiveness of natural language and the precision of formal language. Specifically, the framework allows agent developers to express their requirements or constraints for the planning process as an automaton. A stack-based LLM plan generation process is then conducted under the supervision of the automaton to ensure that the generated plan satisfies the constraints, making the planning process controllable. We conduct experiments on both benchmark tasks and practical real-life tasks, and our framework achieves over 50% overall performance increase, which validates the feasibility and effectiveness of employing Formal-LLM to guide the plan generation of agents, preventing the agents from generating invalid and unsuccessful plans. Further, more controllable LLM-based agents can facilitate the broader utilization of LLM in application scenarios where high validity of planning is essential. The source code of this work is available at https://github.com/agiresearch/Formal-LLM.
     </details>
 </div>
 <div class="paper-card">
@@ -937,33 +964,5 @@
     </div>
     <details class="paper-abstract">
       Code Search is a key task that many programmers often have to perform while developing solutions to problems. Current methodologies suffer from an inability to perform accurately on prompts that contain some ambiguity or ones that require additional context relative to a code-base. We introduce the approach of using Retrieval Augmented Generation (RAG) powered agents to inject information into user prompts allowing for better inputs into embedding models. By utilizing RAG, agents enhance user queries with relevant details from GitHub repositories, making them more informative and contextually aligned. Additionally, we introduce a multi-stream ensemble approach which when paired with agentic workflow can obtain improved retrieval accuracy, which we deploy on application called repo-rift.com. Experimental results on the CodeSearchNet dataset demonstrate that RepoRift significantly outperforms existing methods, achieving an 78.2% success rate at Success@10 and a 34.6% success rate at Success@1. This research presents a substantial advancement in semantic code search, highlighting the potential of agentic LLMs and RAG to enhance code retrieval systems.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.02143v1">Analyzing Cultural Representations of Emotions in LLMs through Mixed Emotion Survey</a></div>
-    <div class="paper-meta">
-      📅 2024-08-04
-      | 💬 Was accepted to ACII 2024
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have gained widespread global adoption, showcasing advanced linguistic capabilities across multiple of languages. There is a growing interest in academia to use these models to simulate and study human behaviors. However, it is crucial to acknowledge that an LLM's proficiency in a specific language might not fully encapsulate the norms and values associated with its culture. Concerns have emerged regarding potential biases towards Anglo-centric cultures and values due to the predominance of Western and US-based training data. This study focuses on analyzing the cultural representations of emotions in LLMs, in the specific case of mixed-emotion situations. Our methodology is based on the studies of Miyamoto et al. (2010), which identified distinctive emotional indicators in Japanese and American human responses. We first administer their mixed emotion survey to five different LLMs and analyze their outputs. Second, we experiment with contextual variables to explore variations in responses considering both language and speaker origin. Thirdly, we expand our investigation to encompass additional East Asian and Western European origin languages to gauge their alignment with their respective cultures, anticipating a closer fit. We find that (1) models have limited alignment with the evidence in the literature; (2) written language has greater effect on LLMs' response than information on participants origin; and (3) LLMs responses were found more similar for East Asian languages than Western European languages.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2310.01469v3">LLM Lies: Hallucinations are not Bugs, but Features as Adversarial Examples</a></div>
-    <div class="paper-meta">
-      📅 2024-08-04
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs), including GPT-3.5, LLaMA, and PaLM, seem to be knowledgeable and able to adapt to many tasks. However, we still cannot completely trust their answers, since LLMs suffer from \textbf{hallucination}\textemdash fabricating non-existent facts, deceiving users with or without their awareness. However, the reasons for their existence and pervasiveness remain unclear. In this paper, we demonstrate that nonsensical prompts composed of random tokens can also elicit the LLMs to respond with hallucinations. Moreover, we provide both theoretical and experimental evidence that transformers can be manipulated to produce specific pre-define tokens by perturbing its input sequence. This phenomenon forces us to revisit that \emph{hallucination may be another view of adversarial examples}, and it shares similar characteristics with conventional adversarial examples as a basic property of LLMs. Therefore, we formalize an automatic hallucination triggering method as the \textit{hallucination attack} in an adversarial way. Finally, we explore the basic properties of attacked adversarial prompts and propose a simple yet effective defense strategy. Our code is released on GitHub\footnote{https://github.com/PKU-YuanGroup/Hallucination-Attack}.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2408.01993v1">Towards Automatic Hands-on-Keyboard Attack Detection Using LLMs in EDR Solutions</a></div>
-    <div class="paper-meta">
-      📅 2024-08-04
-    </div>
-    <details class="paper-abstract">
-      Endpoint Detection and Remediation (EDR) platforms are essential for identifying and responding to cyber threats. This study presents a novel approach using Large Language Models (LLMs) to detect Hands-on-Keyboard (HOK) cyberattacks. Our method involves converting endpoint activity data into narrative forms that LLMs can analyze to distinguish between normal operations and potential HOK attacks. We address the challenges of interpreting endpoint data by segmenting narratives into windows and employing a dual training strategy. The results demonstrate that LLM-based models have the potential to outperform traditional machine learning methods, offering a promising direction for enhancing EDR capabilities and apply LLMs in cybersecurity.
     </details>
 </div>

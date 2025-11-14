@@ -250,6 +250,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2306.03901v2">ChatDB: Augmenting LLMs with Databases as Their Symbolic Memory</a></div>
+    <div class="paper-meta">
+      📅 2023-06-07
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) with memory are computationally universal. However, mainstream LLMs are not taking full advantage of memory, and the designs are heavily influenced by biological brains. Due to their approximate nature and proneness to the accumulation of errors, conventional neural memory mechanisms cannot support LLMs to simulate complex reasoning. In this paper, we seek inspiration from modern computer architectures to augment LLMs with symbolic memory for complex multi-hop reasoning. Such a symbolic memory framework is instantiated as an LLM and a set of SQL databases, where the LLM generates SQL instructions to manipulate the SQL databases. We validate the effectiveness of the proposed memory framework on a synthetic dataset requiring complex reasoning. The project website is available at https://chatdatabase.github.io/ .
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2303.07205v3">The Science of Detecting LLM-Generated Texts</a></div>
     <div class="paper-meta">
       📅 2023-06-06
@@ -333,5 +342,14 @@
     </div>
     <details class="paper-abstract">
       As Large Language Models (LLMs) and other forms of Generative AI permeate various aspects of our lives, their application for learning and education has provided opportunities and challenges. This paper presents an investigation into the use of LLMs in asynchronous course creation, particularly within the context of adult learning, training and upskilling. We developed a course prototype leveraging an LLM, implementing a robust human-in-the-loop process to ensure the accuracy and clarity of the generated content. Our research questions focus on the feasibility of LLMs to produce high-quality adult learning content with reduced human involvement. Initial findings indicate that taking this approach can indeed facilitate faster content creation without compromising on accuracy or clarity, marking a promising advancement in the field of Generative AI for education. Despite some limitations, the study underscores the potential of LLMs to transform the landscape of learning and education, necessitating further research and nuanced discussions about their strategic and ethical use in learning design.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2303.07205v3">The Science of Detecting LLM-Generated Texts</a></div>
+    <div class="paper-meta">
+      📅 2023-06-02
+    </div>
+    <details class="paper-abstract">
+      The emergence of large language models (LLMs) has resulted in the production of LLM-generated texts that is highly sophisticated and almost indistinguishable from texts written by humans. However, this has also sparked concerns about the potential misuse of such texts, such as spreading misinformation and causing disruptions in the education system. Although many detection approaches have been proposed, a comprehensive understanding of the achievements and challenges is still lacking. This survey aims to provide an overview of existing LLM-generated text detection techniques and enhance the control and regulation of language generation models. Furthermore, we emphasize crucial considerations for future research, including the development of comprehensive evaluation metrics and the threat posed by open-source LLMs, to drive progress in the area of LLM-generated text detection.
     </details>
 </div>

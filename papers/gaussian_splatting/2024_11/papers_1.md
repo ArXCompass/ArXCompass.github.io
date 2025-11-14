@@ -123,6 +123,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2411.19594v1">Tortho-Gaussian: Splatting True Digital Orthophoto Maps</a></div>
+    <div class="paper-meta">
+      📅 2024-11-29
+      | 💬 This work has been submitted to the IEEE Transactions on Geoscience and Remote Sensing for possible publication
+    </div>
+    <details class="paper-abstract">
+      True Digital Orthophoto Maps (TDOMs) are essential products for digital twins and Geographic Information Systems (GIS). Traditionally, TDOM generation involves a complex set of traditional photogrammetric process, which may deteriorate due to various challenges, including inaccurate Digital Surface Model (DSM), degenerated occlusion detections, and visual artifacts in weak texture regions and reflective surfaces, etc. To address these challenges, we introduce TOrtho-Gaussian, a novel method inspired by 3D Gaussian Splatting (3DGS) that generates TDOMs through orthogonal splatting of optimized anisotropic Gaussian kernel. More specifically, we first simplify the orthophoto generation by orthographically splatting the Gaussian kernels onto 2D image planes, formulating a geometrically elegant solution that avoids the need for explicit DSM and occlusion detection. Second, to produce TDOM of large-scale area, a divide-and-conquer strategy is adopted to optimize memory usage and time efficiency of training and rendering for 3DGS. Lastly, we design a fully anisotropic Gaussian kernel that adapts to the varying characteristics of different regions, particularly improving the rendering quality of reflective surfaces and slender structures. Extensive experimental evaluations demonstrate that our method outperforms existing commercial software in several aspects, including the accuracy of building boundaries, the visual quality of low-texture regions and building facades. These results underscore the potential of our approach for large-scale urban scene reconstruction, offering a robust alternative for enhancing TDOM quality and scalability.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.19290v1">SADG: Segment Any Dynamic Gaussian Without Object Trackers</a></div>
     <div class="paper-meta">
       📅 2024-11-28
@@ -337,6 +347,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2411.18072v1">SmileSplat: Generalizable Gaussian Splats for Unconstrained Sparse Images</a></div>
+    <div class="paper-meta">
+      📅 2024-11-27
+    </div>
+    <details class="paper-abstract">
+      Sparse Multi-view Images can be Learned to predict explicit radiance fields via Generalizable Gaussian Splatting approaches, which can achieve wider application prospects in real-life when ground-truth camera parameters are not required as inputs. In this paper, a novel generalizable Gaussian Splatting method, SmileSplat, is proposed to reconstruct pixel-aligned Gaussian surfels for diverse scenarios only requiring unconstrained sparse multi-view images. First, Gaussian surfels are predicted based on the multi-head Gaussian regression decoder, which can are represented with less degree-of-freedom but have better multi-view consistency. Furthermore, the normal vectors of Gaussian surfel are enhanced based on high-quality of normal priors. Second, the Gaussians and camera parameters (both extrinsic and intrinsic) are optimized to obtain high-quality Gaussian radiance fields for novel view synthesis tasks based on the proposed Bundle-Adjusting Gaussian Splatting module. Extensive experiments on novel view rendering and depth map prediction tasks are conducted on public datasets, demonstrating that the proposed method achieves state-of-the-art performance in various 3D vision tasks. More information can be found on our project page (https://yanyan-li.github.io/project/gs/smilesplat)
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2411.17605v1">Distractor-free Generalizable 3D Gaussian Splatting</a></div>
     <div class="paper-meta">
       📅 2024-11-26
@@ -401,6 +420,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) allows flexible adjustments to scene representation, enabling continuous optimization of scene quality during dense visual simultaneous localization and mapping (SLAM) in static environments. However, 3DGS faces challenges in handling environmental disturbances from dynamic objects with irregular movement, leading to degradation in both camera tracking accuracy and map reconstruction quality. To address this challenge, we develop an RGB-D dense SLAM which is called Gaussian Splatting SLAM in Dynamic Environments (Gassidy). This approach calculates Gaussians to generate rendering loss flows for each environmental component based on a designed photometric-geometric loss function. To distinguish and filter environmental disturbances, we iteratively analyze rendering loss flows to detect features characterized by changes in loss values between dynamic objects and static components. This process ensures a clean environment for accurate scene reconstruction. Compared to state-of-the-art SLAM methods, experimental results on open datasets show that Gassidy improves camera tracking precision by up to 97.9% and enhances map quality by up to 6%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2311.11221v3">GaussianDiffusion: 3D Gaussian Splatting for Denoising Diffusion Probabilistic Models with Structured Noise</a></div>
+    <div class="paper-meta">
+      📅 2024-11-26
+    </div>
+    <details class="paper-abstract">
+      Text-to-3D, known for its efficient generation methods and expansive creative potential, has garnered significant attention in the AIGC domain. However, the pixel-wise rendering of NeRF and its ray marching light sampling constrain the rendering speed, impacting its utility in downstream industrial applications. Gaussian Splatting has recently shown a trend of replacing the traditional pointwise sampling technique commonly used in NeRF-based methodologies, and it is changing various aspects of 3D reconstruction. This paper introduces a novel text to 3D content generation framework, Gaussian Diffusion, based on Gaussian Splatting and produces more realistic renderings. The challenge of achieving multi-view consistency in 3D generation significantly impedes modeling complexity and accuracy. Taking inspiration from SJC, we explore employing multi-view noise distributions to perturb images generated by 3D Gaussian Splatting, aiming to rectify inconsistencies in multi-view geometry. We ingeniously devise an efficient method to generate noise that produces Gaussian noise from diverse viewpoints, all originating from a shared noise source. Furthermore, vanilla 3D Gaussian-based generation tends to trap models in local minima, causing artifacts like floaters, burrs, or proliferative elements. To mitigate these issues, we propose the variational Gaussian Splatting technique to enhance the quality and stability of 3D appearance. To our knowledge, our approach represents the first comprehensive utilization of Gaussian Diffusion across the entire spectrum of 3D content generation processes.
     </details>
 </div>
 <div class="paper-card">
@@ -577,6 +605,16 @@
     </div>
     <details class="paper-abstract">
       A signed distance function (SDF) is a useful representation for continuous-space geometry and many related operations, including rendering, collision checking, and mesh generation. Hence, reconstructing SDF from image observations accurately and efficiently is a fundamental problem. Recently, neural implicit SDF (SDF-NeRF) techniques, trained using volumetric rendering, have gained a lot of attention. Compared to earlier truncated SDF (TSDF) fusion algorithms that rely on depth maps and voxelize continuous space, SDF-NeRF enables continuous-space SDF reconstruction with better geometric and photometric accuracy. However, the accuracy and convergence speed of scene-level SDF reconstruction require further improvements for many applications. With the advent of 3D Gaussian Splatting (3DGS) as an explicit representation with excellent rendering quality and speed, several works have focused on improving SDF-NeRF by introducing consistency losses on depth and surface normals between 3DGS and SDF-NeRF. However, loss-level connections alone lead to incremental improvements. We propose a novel neural implicit SDF called "SplatSDF" to fuse 3DGSandSDF-NeRF at an architecture level with significant boosts to geometric and photometric accuracy and convergence speed. Our SplatSDF relies on 3DGS as input only during training, and keeps the same complexity and efficiency as the original SDF-NeRF during inference. Our method outperforms state-of-the-art SDF-NeRF models on geometric and photometric evaluation by the time of submission.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2411.15476v1">Gassidy: Gaussian Splatting SLAM in Dynamic Environments</a></div>
+    <div class="paper-meta">
+      📅 2024-11-23
+      | 💬 This paper is currently under reviewed for ICRA 2025
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting (3DGS) allows flexible adjustments to scene representation, enabling continuous optimization of scene quality during dense visual simultaneous localization and mapping (SLAM) in static environments. However, 3DGS faces challenges in handling environmental disturbances from dynamic objects with irregular movement, leading to degradation in both camera tracking accuracy and map reconstruction quality. To address this challenge, we develop an RGB-D dense SLAM which is called Gaussian Splatting SLAM in Dynamic Environments (Gassidy). This approach calculates Gaussians to generate rendering loss flows for each environmental component based on a designed photometric-geometric loss function. To distinguish and filter environmental disturbances, we iteratively analyze rendering loss flows to detect features characterized by changes in loss values between dynamic objects and static components. This process ensures a clean environment for accurate scene reconstruction. Compared to state-of-the-art SLAM methods, experimental results on open datasets show that Gassidy improves camera tracking precision by up to 97.9% and enhances map quality by up to 6%.
     </details>
 </div>
 <div class="paper-card">
@@ -912,44 +950,5 @@
     </div>
     <details class="paper-abstract">
       Implicit Neural Representations (INRs) employ neural networks to approximate discrete data as continuous functions. In the context of video data, such models can be utilized to transform the coordinates of pixel locations along with frame occurrence times (or indices) into RGB color values. Although INRs facilitate effective compression, they are unsuitable for editing purposes. One potential solution is to use a 3D Gaussian Splatting (3DGS) based model, such as the Video Gaussian Representation (VGR), which is capable of encoding video as a multitude of 3D Gaussians and is applicable for numerous video processing operations, including editing. Nevertheless, in this case, the capacity for modification is constrained to a limited set of basic transformations. To address this issue, we introduce the Video Gaussian Splatting (VeGaS) model, which enables realistic modifications of video data. To construct VeGaS, we propose a novel family of Folded-Gaussian distributions designed to capture nonlinear dynamics in a video stream and model consecutive frames by 2D Gaussians obtained as respective conditional distributions. Our experiments demonstrate that VeGaS outperforms state-of-the-art solutions in frame reconstruction tasks and allows realistic modifications of video data. The code is available at: https://github.com/gmum/VeGaS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.10947v1">Direct and Explicit 3D Generation from a Single Image</a></div>
-    <div class="paper-meta">
-      📅 2024-11-17
-      | 💬 3DV 2025, Project page: https://hao-yu-wu.github.io/gen3d/
-    </div>
-    <details class="paper-abstract">
-      Current image-to-3D approaches suffer from high computational costs and lack scalability for high-resolution outputs. In contrast, we introduce a novel framework to directly generate explicit surface geometry and texture using multi-view 2D depth and RGB images along with 3D Gaussian features using a repurposed Stable Diffusion model. We introduce a depth branch into U-Net for efficient and high quality multi-view, cross-domain generation and incorporate epipolar attention into the latent-to-pixel decoder for pixel-level multi-view consistency. By back-projecting the generated depth pixels into 3D space, we create a structured 3D representation that can be either rendered via Gaussian splatting or extracted to high-quality meshes, thereby leveraging additional novel view synthesis loss to further improve our performance. Extensive experiments demonstrate that our method surpasses existing baselines in geometry and texture quality while achieving significantly faster generation time.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.10722v1">DGS-SLAM: Gaussian Splatting SLAM in Dynamic Environment</a></div>
-    <div class="paper-meta">
-      📅 2024-11-16
-      | 💬 Preprint, Under review
-    </div>
-    <details class="paper-abstract">
-      We introduce Dynamic Gaussian Splatting SLAM (DGS-SLAM), the first dynamic SLAM framework built on the foundation of Gaussian Splatting. While recent advancements in dense SLAM have leveraged Gaussian Splatting to enhance scene representation, most approaches assume a static environment, making them vulnerable to photometric and geometric inconsistencies caused by dynamic objects. To address these challenges, we integrate Gaussian Splatting SLAM with a robust filtering process to handle dynamic objects throughout the entire pipeline, including Gaussian insertion and keyframe selection. Within this framework, to further improve the accuracy of dynamic object removal, we introduce a robust mask generation method that enforces photometric consistency across keyframes, reducing noise from inaccurate segmentation and artifacts such as shadows. Additionally, we propose the loop-aware window selection mechanism, which utilizes unique keyframe IDs of 3D Gaussians to detect loops between the current and past frames, facilitating joint optimization of the current camera poses and the Gaussian map. DGS-SLAM achieves state-of-the-art performance in both camera tracking and novel view synthesis on various dynamic SLAM benchmarks, proving its effectiveness in handling real-world dynamic scenes.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2406.02968v2">GSGAN: Adversarial Learning for Hierarchical Generation of 3D Gaussian Splats</a></div>
-    <div class="paper-meta">
-      📅 2024-11-15
-      | 💬 NeurIPS 2024 / Project page: https://hse1032.github.io/gsgan
-    </div>
-    <details class="paper-abstract">
-      Most advances in 3D Generative Adversarial Networks (3D GANs) largely depend on ray casting-based volume rendering, which incurs demanding rendering costs. One promising alternative is rasterization-based 3D Gaussian Splatting (3D-GS), providing a much faster rendering speed and explicit 3D representation. In this paper, we exploit Gaussian as a 3D representation for 3D GANs by leveraging its efficient and explicit characteristics. However, in an adversarial framework, we observe that a na\"ive generator architecture suffers from training instability and lacks the capability to adjust the scale of Gaussians. This leads to model divergence and visual artifacts due to the absence of proper guidance for initialized positions of Gaussians and densification to manage their scales adaptively. To address these issues, we introduce a generator architecture with a hierarchical multi-scale Gaussian representation that effectively regularizes the position and scale of generated Gaussians. Specifically, we design a hierarchy of Gaussians where finer-level Gaussians are parameterized by their coarser-level counterparts; the position of finer-level Gaussians would be located near their coarser-level counterparts, and the scale would monotonically decrease as the level becomes finer, modeling both coarse and fine details of the 3D scene. Experimental results demonstrate that ours achieves a significantly faster rendering speed (x100) compared to state-of-the-art 3D consistent GANs with comparable 3D generation capability. Project page: https://hse1032.github.io/gsgan.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.12592v1">SPARS3R: Semantic Prior Alignment and Regularization for Sparse 3D Reconstruction</a></div>
-    <div class="paper-meta">
-      📅 2024-11-15
-    </div>
-    <details class="paper-abstract">
-      Recent efforts in Gaussian-Splat-based Novel View Synthesis can achieve photorealistic rendering; however, such capability is limited in sparse-view scenarios due to sparse initialization and over-fitting floaters. Recent progress in depth estimation and alignment can provide dense point cloud with few views; however, the resulting pose accuracy is suboptimal. In this work, we present SPARS3R, which combines the advantages of accurate pose estimation from Structure-from-Motion and dense point cloud from depth estimation. To this end, SPARS3R first performs a Global Fusion Alignment process that maps a prior dense point cloud to a sparse point cloud from Structure-from-Motion based on triangulated correspondences. RANSAC is applied during this process to distinguish inliers and outliers. SPARS3R then performs a second, Semantic Outlier Alignment step, which extracts semantically coherent regions around the outliers and performs local alignment in these regions. Along with several improvements in the evaluation process, we demonstrate that SPARS3R can achieve photorealistic rendering with sparse images and significantly outperforms existing approaches.
     </details>
 </div>

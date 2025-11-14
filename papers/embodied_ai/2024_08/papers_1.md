@@ -48,6 +48,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.11537v1">A Survey of Embodied Learning for Object-Centric Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2024-08-21
+    </div>
+    <details class="paper-abstract">
+      Embodied learning for object-centric robotic manipulation is a rapidly developing and challenging area in embodied AI. It is crucial for advancing next-generation intelligent robots and has garnered significant interest recently. Unlike data-driven machine learning methods, embodied learning focuses on robot learning through physical interaction with the environment and perceptual feedback, making it especially suitable for robotic manipulation. In this paper, we provide a comprehensive survey of the latest advancements in this field and categorize the existing work into three main branches: 1) Embodied perceptual learning, which aims to predict object pose and affordance through various data representations; 2) Embodied policy learning, which focuses on generating optimal robotic decisions using methods such as reinforcement learning and imitation learning; 3) Embodied task-oriented learning, designed to optimize the robot's performance based on the characteristics of different tasks in object grasping and manipulation. In addition, we offer an overview and discussion of public datasets, evaluation metrics, representative applications, current challenges, and potential future research directions. A project associated with this survey has been established at https://github.com/RayYoh/OCRM_survey.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2408.10899v1">All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents</a></div>
     <div class="paper-meta">
       📅 2024-08-20
@@ -58,7 +67,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.10899v1">All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents</a></div>
+    <div class="paper-meta">
+      📅 2024-08-20
+      | 💬 Project website: https://imaei.github.io/project_pages/ario/
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is transforming how AI systems interact with the physical world, yet existing datasets are inadequate for developing versatile, general-purpose agents. These limitations include a lack of standardized formats, insufficient data diversity, and inadequate data volume. To address these issues, we introduce ARIO (All Robots In One), a new data standard that enhances existing datasets by offering a unified data format, comprehensive sensory modalities, and a combination of real-world and simulated data. ARIO aims to improve the training of embodied AI agents, increasing their robustness and adaptability across various tasks and environments. Building upon the proposed new standard, we present a large-scale unified ARIO dataset, comprising approximately 3 million episodes collected from 258 series and 321,064 tasks. The ARIO standard and dataset represent a significant step towards bridging the gaps of existing data resources. By providing a cohesive framework for data collection and representation, ARIO paves the way for the development of more powerful and versatile embodied AI agents, capable of navigating and interacting with the physical world in increasingly complex and diverse ways. The project is available on https://imaei.github.io/project_pages/ario/
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2409.00015v1">Navigating the sociotechnical labyrinth: Dynamic certification for responsible embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-08-16
+    </div>
+    <details class="paper-abstract">
+      Sociotechnical requirements shape the governance of artificially intelligent (AI) systems. In an era where embodied AI technologies are rapidly reshaping various facets of contemporary society, their inherent dynamic adaptability presents a unique blend of opportunities and challenges. Traditional regulatory mechanisms, often designed for static -- or slower-paced -- technologies, find themselves at a crossroads when faced with the fluid and evolving nature of AI systems. Moreover, typical problems in AI, for example, the frequent opacity and unpredictability of the behaviour of the systems, add additional sociotechnical challenges. To address these interconnected issues, we introduce the concept of dynamic certification, an adaptive regulatory framework specifically crafted to keep pace with the continuous evolution of AI systems. The complexity of these challenges requires common progress in multiple domains: technical, socio-governmental, and regulatory. Our proposed transdisciplinary approach is designed to ensure the safe, ethical, and practical deployment of AI systems, aligning them bidirectionally with the real-world contexts in which they operate. By doing so, we aim to bridge the gap between rapid technological advancement and effective regulatory oversight, ensuring that AI systems not only achieve their intended goals but also adhere to ethical standards and societal values.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.00015v1">Navigating the sociotechnical labyrinth: Dynamic certification for responsible embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-08-16
     </div>

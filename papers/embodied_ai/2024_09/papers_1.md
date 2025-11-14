@@ -36,6 +36,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.18800v1">MiniVLN: Efficient Vision-and-Language Navigation by Progressive Knowledge Distillation</a></div>
+    <div class="paper-meta">
+      📅 2024-09-27
+    </div>
+    <details class="paper-abstract">
+      In recent years, Embodied Artificial Intelligence (Embodied AI) has advanced rapidly, yet the increasing size of models conflicts with the limited computational capabilities of Embodied AI platforms. To address this challenge, we aim to achieve both high model performance and practical deployability. Specifically, we focus on Vision-and-Language Navigation (VLN), a core task in Embodied AI. This paper introduces a two-stage knowledge distillation framework, producing a student model, MiniVLN, and showcasing the significant potential of distillation techniques in developing lightweight models. The proposed method aims to capture fine-grained knowledge during the pretraining phase and navigation-specific knowledge during the fine-tuning phase. Our findings indicate that the two-stage distillation approach is more effective in narrowing the performance gap between the teacher model and the student model compared to single-stage distillation. On the public R2R and REVERIE benchmarks, MiniVLN achieves performance on par with the teacher model while having only about 12% of the teacher model's parameter count.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2410.09054v1">Circuits and Systems for Embodied AI: Exploring uJ Multi-Modal Perception for Nano-UAVs on the Kraken Shield</a></div>
     <div class="paper-meta">
       📅 2024-09-26
@@ -43,6 +52,16 @@
     </div>
     <details class="paper-abstract">
       Embodied artificial intelligence (AI) requires pushing complex multi-modal models to the extreme edge for time-constrained tasks such as autonomous navigation of robots and vehicles. On small form-factor devices, e.g., nano-sized unmanned aerial vehicles (UAVs), such challenges are exacerbated by stringent constraints on energy efficiency and weight. In this paper, we explore embodied multi-modal AI-based perception for Nano-UAVs with the Kraken shield, a 7g multi-sensor (frame-based and event-based imagers) board based on Kraken, a 22 nm SoC featuring multiple acceleration engines for multi-modal event and frame-based inference based on spiking (SNN) and ternary (TNN) neural networks, respectively. Kraken can execute SNN real-time inference for depth estimation at 1.02k inf/s, 18 {\mu}J/inf, TNN real-time inference for object classification at 10k inf/s, 6 {\mu}J/inf, and real-time inference for obstacle avoidance at 221 frame/s, 750 {\mu}J/inf.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.09054v1">Circuits and Systems for Embodied AI: Exploring uJ Multi-Modal Perception for Nano-UAVs on the Kraken Shield</a></div>
+    <div class="paper-meta">
+      📅 2024-09-26
+      | 💬 5 pages, 5 figures
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (AI) requires pushing complex multi-modal models to the extreme edge for time-constrained tasks such as autonomous navigation of robots and vehicles. On small form-factor devices, e.g., nano-sized unmanned aerial vehicles (UAVs), such challenges are exacerbated by stringent constraints on energy efficiency and weight. In this paper, we explore embodied multi-modal AI-based perception for Nano-UAVs with the Kraken shield, a 7g multi-sensor (frame-based and event-based imagers) board based on Kraken, a 22 nm SoC featuring multiple acceleration engines for multi-modal event and frame-based inference based on spiking (SNN) and ternary (TNN) neural networks, respectively. Kraken can execute SNN real-time inference for depth estimation at 1.02k inf/s, 18 μJ/inf, TNN real-time inference for object classification at 10k inf/s, 6 μJ/inf, and real-time inference for obstacle avoidance at 221 frame/s, 750 μJ/inf.
     </details>
 </div>
 <div class="paper-card">
@@ -130,6 +149,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2408.11347v2">Multimodal Datasets and Benchmarks for Reasoning about Dynamic Spatio-Temporality in Everyday Environments</a></div>
+    <div class="paper-meta">
+      📅 2024-09-17
+      | 💬 5 pages, 1 figure, 1 table, accepted in Embodied AI 2024 Workshop held in conjunction with CVPR 2024
+    </div>
+    <details class="paper-abstract">
+      We used a 3D simulator to create artificial video data with standardized annotations, aiming to aid in the development of Embodied AI. Our question answering (QA) dataset measures the extent to which a robot can understand human behavior and the environment in a home setting. Preliminary experiments suggest our dataset is useful in measuring AI's comprehension of daily life. \end{abstract}
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2402.03824v4">A call for embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-09-16
@@ -160,6 +189,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.03824v4">A call for embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-09-13
+      | 💬 Published in ICML 2024 Position paper track
+    </div>
+    <details class="paper-abstract">
+      We propose Embodied AI as the next fundamental step in the pursuit of Artificial General Intelligence, juxtaposing it against current AI advancements, particularly Large Language Models. We traverse the evolution of the embodiment concept across diverse fields - philosophy, psychology, neuroscience, and robotics - to highlight how EAI distinguishes itself from the classical paradigm of static learning. By broadening the scope of Embodied AI, we introduce a theoretical framework based on cognitive architectures, emphasizing perception, action, memory, and learning as essential components of an embodied agent. This framework is aligned with Friston's active inference principle, offering a comprehensive approach to EAI development. Despite the progress made in the field of AI, substantial challenges, such as the formulation of a novel AI learning theory and the innovation of advanced hardware, persist. Our discussion lays down a foundational guideline for future Embodied AI research. Highlighting the importance of creating Embodied AI agents capable of seamless communication, collaboration, and coexistence with humans and other intelligent entities within real-world environments, we aim to steer the AI community towards addressing the multifaceted challenges and seizing the opportunities that lie ahead in the quest for AGI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.05486v2">Artificial social influence via human-embodied AI agent interaction in immersive virtual reality (VR): Effects of similarity-matching during health conversations</a></div>
     <div class="paper-meta">
       📅 2024-09-12
@@ -167,6 +206,26 @@
     </div>
     <details class="paper-abstract">
       Interactions with artificial intelligence (AI) based agents can positively influence human behavior and judgment. However, studies to date focus on text-based conversational agents (CA) with limited embodiment, restricting our understanding of how social influence principles, such as similarity, apply to AI agents (i.e., artificial social influence). We address this gap by leveraging the latest advances in AI (language models) and combining them with immersive virtual reality (VR). Specifically, we built VR-ECAs, or embodied conversational agents that can naturally converse with humans about health-related topics in a virtual environment. Then we manipulated interpersonal similarity via gender matching and examined its effects on biobehavioral (i.e., gaze), social (e.g., agent likeability), and behavioral outcomes (i.e., healthy snack selection). We found an interesting interaction effect between agent and participant gender on biobehavioral outcomes: discussing health with opposite-gender agents tended to enhance gaze duration, with the effect stronger for male participants compared to their female counterparts. A similar directional pattern was observed for healthy snack selection, though it was not statistically significant. In addition, female participants liked the VR-ECAs more than their male counterparts, regardless of the gender of the VR-ECAs. Finally, participants experienced greater presence while conversing with VR-embodied agents than chatting with text-only agents. Overall, our findings highlight embodiment as a crucial factor of influence of AI on human behavior, and our paradigm enables new experimental research at the intersection of social influence, human-AI communication, and immersive virtual reality (VR).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.05486v2">Artificial social influence via human-embodied AI agent interaction in immersive virtual reality (VR): Effects of similarity-matching during health conversations</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+      | 💬 11 pages, 4 figures, manuscript submitted to a journal
+    </div>
+    <details class="paper-abstract">
+      Interactions with artificial intelligence (AI) based agents can positively influence human behavior and judgment. However, studies to date focus on text-based conversational agents (CA) with limited embodiment, restricting our understanding of how social influence principles, such as similarity, apply to AI agents (i.e., artificial social influence). We address this gap by leveraging the latest advances in AI (language models) and combining them with immersive virtual reality (VR). Specifically, we built VR-ECAs, or embodied conversational agents that can naturally converse with humans about health-related topics in a virtual environment. Then we manipulated interpersonal similarity via gender matching and examined its effects on biobehavioral (i.e., gaze), social (e.g., agent likeability), and behavioral outcomes (i.e., healthy snack selection). We found an interesting interaction effect between agent and participant gender on biobehavioral outcomes: discussing health with opposite-gender agents tended to enhance gaze duration, with the effect stronger for male participants compared to their female counterparts. A similar directional pattern was observed for healthy snack selection, though it was not statistically significant. In addition, female participants liked the VR-ECAs more than their male counterparts, regardless of the gender of the VR-ECAs. Finally, participants experienced greater presence while conversing with VR-embodied agents than chatting with text-only agents. Overall, our findings highlight embodiment as a crucial factor of influence of AI on human behavior, and our paradigm enables new experimental research at the intersection of social influence, human-AI communication, and immersive virtual reality (VR).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.03325v2">Embodied Neuromorphic Artificial Intelligence for Robotics: Perspectives, Challenges, and Research Development Stack</a></div>
+    <div class="paper-meta">
+      📅 2024-09-12
+      | 💬 To appear at the 18th International Conference on Control, Automation, Robotics and Vision (ICARCV), December 2024, Dubai, UAE
+    </div>
+    <details class="paper-abstract">
+      Robotic technologies have been an indispensable part for improving human productivity since they have been helping humans in completing diverse, complex, and intensive tasks in a fast yet accurate and efficient way. Therefore, robotic technologies have been deployed in a wide range of applications, ranging from personal to industrial use-cases. However, current robotic technologies and their computing paradigm still lack embodied intelligence to efficiently interact with operational environments, respond with correct/expected actions, and adapt to changes in the environments. Toward this, recent advances in neuromorphic computing with Spiking Neural Networks (SNN) have demonstrated the potential to enable the embodied intelligence for robotics through bio-plausible computing paradigm that mimics how the biological brain works, known as "neuromorphic artificial intelligence (AI)". However, the field of neuromorphic AI-based robotics is still at an early stage, therefore its development and deployment for solving real-world problems expose new challenges in different design aspects, such as accuracy, adaptability, efficiency, reliability, and security. To address these challenges, this paper will discuss how we can enable embodied neuromorphic AI for robotic systems through our perspectives: (P1) Embodied intelligence based on effective learning rule, training mechanism, and adaptability; (P2) Cross-layer optimizations for energy-efficient neuromorphic computing; (P3) Representative and fair benchmarks; (P4) Low-cost reliability and safety enhancements; (P5) Security and privacy for neuromorphic computing; and (P6) A synergistic development for energy-efficient and robust neuromorphic-based robotics. Furthermore, this paper identifies research challenges and opportunities, as well as elaborates our vision for future research development toward embodied neuromorphic AI for robotics.
     </details>
 </div>
 <div class="paper-card">
@@ -212,5 +271,14 @@
     </div>
     <details class="paper-abstract">
       This paper presents the development of a Physics-realistic and Photo-\underline{r}ealistic humanoid robot testbed, PR2, to facilitate collaborative research between Embodied Artificial Intelligence (Embodied AI) and robotics. PR2 offers high-quality scene rendering and robot dynamic simulation, enabling (i) the creation of diverse scenes using various digital assets, (ii) the integration of advanced perception or foundation models, and (iii) the implementation of planning and control algorithms for dynamic humanoid robot behaviors based on environmental feedback. The beta version of PR2 has been deployed for the simulation track of a nationwide full-size humanoid robot competition for college students, attracting 137 teams and over 400 participants within four months. This competition covered traditional tasks in bipedal walking, as well as novel challenges in loco-manipulation and language-instruction-based object search, marking a first for public college robotics competitions. A retrospective analysis of the competition suggests that future events should emphasize the integration of locomotion with manipulation and perception. By making the PR2 testbed publicly available at https://github.com/pr2-humanoid/PR2-Platform, we aim to further advance education and training in humanoid robotics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2409.01630v1">SafeEmbodAI: a Safety Framework for Mobile Robots in Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2024-09-03
+    </div>
+    <details class="paper-abstract">
+      Embodied AI systems, including AI-powered robots that autonomously interact with the physical world, stand to be significantly advanced by Large Language Models (LLMs), which enable robots to better understand complex language commands and perform advanced tasks with enhanced comprehension and adaptability, highlighting their potential to improve embodied AI capabilities. However, this advancement also introduces safety challenges, particularly in robotic navigation tasks. Improper safety management can lead to failures in complex environments and make the system vulnerable to malicious command injections, resulting in unsafe behaviours such as detours or collisions. To address these issues, we propose \textit{SafeEmbodAI}, a safety framework for integrating mobile robots into embodied AI systems. \textit{SafeEmbodAI} incorporates secure prompting, state management, and safety validation mechanisms to secure and assist LLMs in reasoning through multi-modal data and validating responses. We designed a metric to evaluate mission-oriented exploration, and evaluations in simulated environments demonstrate that our framework effectively mitigates threats from malicious commands and improves performance in various environment settings, ensuring the safety of embodied AI systems. Notably, In complex environments with mixed obstacles, our method demonstrates a significant performance increase of 267\% compared to the baseline in attack scenarios, highlighting its robustness in challenging conditions.
     </details>
 </div>

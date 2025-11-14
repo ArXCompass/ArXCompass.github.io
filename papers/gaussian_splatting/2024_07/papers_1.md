@@ -309,6 +309,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2403.08321v2">ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-18
+      | 💬 https://guanxinglu.github.io/ManiGaussian/
+    </div>
+    <details class="paper-abstract">
+      Performing language-conditioned robotic manipulation tasks in unstructured environments is highly demanded for general intelligent robots. Conventional robotic manipulation methods usually learn semantic representation of the observation for action prediction, which ignores the scene-level spatiotemporal dynamics for human goal completion. In this paper, we propose a dynamic Gaussian Splatting method named ManiGaussian for multi-task robotic manipulation, which mines scene dynamics via future scene reconstruction. Specifically, we first formulate the dynamic Gaussian Splatting framework that infers the semantics propagation in the Gaussian embedding space, where the semantic representation is leveraged to predict the optimal robot action. Then, we build a Gaussian world model to parameterize the distribution in our dynamic Gaussian Splatting framework, which provides informative supervision in the interactive environment via future scene reconstruction. We evaluate our ManiGaussian on 10 RLBench tasks with 166 variations, and the results demonstrate our framework can outperform the state-of-the-art methods by 13.1\% in average success rate. Project page: https://guanxinglu.github.io/ManiGaussian/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.12777v1">Generalizable Human Gaussians for Sparse View Synthesis</a></div>
     <div class="paper-meta">
       📅 2024-07-17
@@ -476,6 +486,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.11840v1">MVG-Splatting: Multi-View Guided Gaussian Splatting with Adaptive Quantile-Based Geometric Consistency Densification</a></div>
+    <div class="paper-meta">
+      📅 2024-07-16
+      | 💬 https://mvgsplatting.github.io
+    </div>
+    <details class="paper-abstract">
+      In the rapidly evolving field of 3D reconstruction, 3D Gaussian Splatting (3DGS) and 2D Gaussian Splatting (2DGS) represent significant advancements. Although 2DGS compresses 3D Gaussian primitives into 2D Gaussian surfels to effectively enhance mesh extraction quality, this compression can potentially lead to a decrease in rendering quality. Additionally, unreliable densification processes and the calculation of depth through the accumulation of opacity can compromise the detail of mesh extraction. To address this issue, we introduce MVG-Splatting, a solution guided by Multi-View considerations. Specifically, we integrate an optimized method for calculating normals, which, combined with image gradients, helps rectify inconsistencies in the original depth computations. Additionally, utilizing projection strategies akin to those in Multi-View Stereo (MVS), we propose an adaptive quantile-based method that dynamically determines the level of additional densification guided by depth maps, from coarse to fine detail. Experimental evidence demonstrates that our method not only resolves the issues of rendering quality degradation caused by depth discrepancies but also facilitates direct mesh extraction from dense Gaussian point clouds using the Marching Cubes algorithm. This approach significantly enhances the overall fidelity and accuracy of the 3D reconstruction process, ensuring that both the geometric details and visual quality.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.11174v1">iHuman: Instant Animatable Digital Humans From Monocular Videos</a></div>
     <div class="paper-meta">
       📅 2024-07-15
@@ -551,6 +571,16 @@
     </div>
     <details class="paper-abstract">
       Novel view synthesis via Neural Radiance Fields (NeRFs) or 3D Gaussian Splatting (3DGS) typically necessitates dense observations with hundreds of input images to circumvent artifacts. We introduce Deceptive-NeRF/3DGS to enhance sparse-view reconstruction with only a limited set of input images, by leveraging a diffusion model pre-trained from multiview datasets. Different from using diffusion priors to regularize representation optimization, our method directly uses diffusion-generated images to train NeRF/3DGS as if they were real input views. Specifically, we propose a deceptive diffusion model turning noisy images rendered from few-view reconstructions into high-quality photorealistic pseudo-observations. To resolve consistency among pseudo-observations and real input views, we develop an uncertainty measure to guide the diffusion model's generation. Our system progressively incorporates diffusion-generated pseudo-observations into the training image sets, ultimately densifying the sparse input observations by 5 to 10 times. Extensive experiments across diverse and challenging datasets validate that our approach outperforms existing state-of-the-art methods and is capable of synthesizing novel views with super-resolution in the few-view setting.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.02281v2">PEGASUS: Physically Enhanced Gaussian Splatting Simulation System for 6DoF Object Pose Dataset Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+      | 💬 Project Page: https://meyerls.github.io/pegasus_web
+    </div>
+    <details class="paper-abstract">
+      We introduce Physically Enhanced Gaussian Splatting Simulation System (PEGASUS) for 6DOF object pose dataset generation, a versatile dataset generator based on 3D Gaussian Splatting. Environment and object representations can be easily obtained using commodity cameras to reconstruct with Gaussian Splatting. <i>PEGASUS</i> allows the composition of new scenes by merging the respective underlying Gaussian Splatting point cloud of an environment with one or multiple objects. Leveraging a physics engine enables the simulation of natural object placement within a scene through interaction between meshes extracted for the objects and the environment. Consequently, an extensive amount of new scenes - static or dynamic - can be created by combining different environments and objects. By rendering scenes from various perspectives, diverse data points such as RGB images, depth maps, semantic masks, and 6DoF object poses can be extracted. Our study demonstrates that training on data generated by PEGASUS enables pose estimation networks to successfully transfer from synthetic data to real-world data. Moreover, we introduce the Ramen dataset, comprising 30 Japanese cup noodle items. This dataset includes spherical scans that captures images from both object hemisphere and the Gaussian Splatting reconstruction, making them compatible with PEGASUS.
     </details>
 </div>
 <div class="paper-card">
@@ -638,6 +668,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) has emerged as a promising framework for novel view synthesis, boasting rapid rendering speed with high fidelity. However, the substantial Gaussians and their associated attributes necessitate effective compression techniques. Nevertheless, the sparse and unorganized nature of the point cloud of Gaussians (or anchors in our paper) presents challenges for compression. To address this, we make use of the relations between the unorganized anchors and the structured hash grid, leveraging their mutual information for context modeling, and propose a Hash-grid Assisted Context (HAC) framework for highly compact 3DGS representation. Our approach introduces a binary hash grid to establish continuous spatial consistencies, allowing us to unveil the inherent spatial relations of anchors through a carefully designed context model. To facilitate entropy coding, we utilize Gaussian distributions to accurately estimate the probability of each quantized attribute, where an adaptive quantization module is proposed to enable high-precision quantization of these attributes for improved fidelity restoration. Additionally, we incorporate an adaptive masking strategy to eliminate invalid Gaussians and anchors. Importantly, our work is the pioneer to explore context-based compression for 3DGS representation, resulting in a remarkable size reduction of over $75\times$ compared to vanilla 3DGS, while simultaneously improving fidelity, and achieving over $11\times$ size reduction over SOTA 3DGS compression approach Scaffold-GS. Our code is available here: https://github.com/YihangChen-ee/HAC
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.02410v2">TCLC-GS: Tightly Coupled LiDAR-Camera Gaussian Splatting for Autonomous Driving</a></div>
+    <div class="paper-meta">
+      📅 2024-07-12
+    </div>
+    <details class="paper-abstract">
+      Most 3D Gaussian Splatting (3D-GS) based methods for urban scenes initialize 3D Gaussians directly with 3D LiDAR points, which not only underutilizes LiDAR data capabilities but also overlooks the potential advantages of fusing LiDAR with camera data. In this paper, we design a novel tightly coupled LiDAR-Camera Gaussian Splatting (TCLC-GS) to fully leverage the combined strengths of both LiDAR and camera sensors, enabling rapid, high-quality 3D reconstruction and novel view RGB/depth synthesis. TCLC-GS designs a hybrid explicit (colorized 3D mesh) and implicit (hierarchical octree feature) 3D representation derived from LiDAR-camera data, to enrich the properties of 3D Gaussians for splatting. 3D Gaussian's properties are not only initialized in alignment with the 3D mesh which provides more completed 3D shape and color information, but are also endowed with broader contextual information through retrieved octree implicit features. During the Gaussian Splatting optimization process, the 3D mesh offers dense depth information as supervision, which enhances the training process by learning of a robust geometry. Comprehensive evaluations conducted on the Waymo Open Dataset and nuScenes Dataset validate our method's state-of-the-art (SOTA) performance. Utilizing a single NVIDIA RTX 3090 Ti, our method demonstrates fast training and achieves real-time RGB and depth rendering at 90 FPS in resolution of 1920x1280 (Waymo), and 120 FPS in resolution of 1600x900 (nuScenes) in urban scenarios.
     </details>
 </div>
 <div class="paper-card">
@@ -766,6 +805,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.04687v2">Z-Splat: Z-Axis Gaussian Splatting for Camera-Sonar Fusion</a></div>
+    <div class="paper-meta">
+      📅 2024-07-05
+    </div>
+    <details class="paper-abstract">
+      Differentiable 3D-Gaussian splatting (GS) is emerging as a prominent technique in computer vision and graphics for reconstructing 3D scenes. GS represents a scene as a set of 3D Gaussians with varying opacities and employs a computationally efficient splatting operation along with analytical derivatives to compute the 3D Gaussian parameters given scene images captured from various viewpoints. Unfortunately, capturing surround view ($360^{\circ}$ viewpoint) images is impossible or impractical in many real-world imaging scenarios, including underwater imaging, rooms inside a building, and autonomous navigation. In these restricted baseline imaging scenarios, the GS algorithm suffers from a well-known 'missing cone' problem, which results in poor reconstruction along the depth axis. In this manuscript, we demonstrate that using transient data (from sonars) allows us to address the missing cone problem by sampling high-frequency data along the depth axis. We extend the Gaussian splatting algorithms for two commonly used sonars and propose fusion algorithms that simultaneously utilize RGB camera data and sonar data. Through simulations, emulations, and hardware experiments across various imaging scenarios, we show that the proposed fusion algorithms lead to significantly better novel view synthesis (5 dB improvement in PSNR) and 3D geometry reconstruction (60% lower Chamfer distance).
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2311.12897v2">A Compact Dynamic 3D Gaussian Representation for Real-Time Dynamic View Synthesis</a></div>
     <div class="paper-meta">
       📅 2024-07-04
@@ -786,6 +834,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.02598v2">AutoSplat: Constrained Gaussian Splatting for Autonomous Driving Scene Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2024-07-04
+    </div>
+    <details class="paper-abstract">
+      Realistic scene reconstruction and view synthesis are essential for advancing autonomous driving systems by simulating safety-critical scenarios. 3D Gaussian Splatting excels in real-time rendering and static scene reconstructions but struggles with modeling driving scenarios due to complex backgrounds, dynamic objects, and sparse views. We propose AutoSplat, a framework employing Gaussian splatting to achieve highly realistic reconstructions of autonomous driving scenes. By imposing geometric constraints on Gaussians representing the road and sky regions, our method enables multi-view consistent simulation of challenging scenarios including lane changes. Leveraging 3D templates, we introduce a reflected Gaussian consistency constraint to supervise both the visible and unseen side of foreground objects. Moreover, to model the dynamic appearance of foreground objects, we estimate residual spherical harmonics for each foreground Gaussian. Extensive experiments on Pandaset and KITTI demonstrate that AutoSplat outperforms state-of-the-art methods in scene reconstruction and novel view synthesis across diverse driving scenarios. Visit our project page at https://autosplat.github.io/.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.02598v2">AutoSplat: Constrained Gaussian Splatting for Autonomous Driving Scene Reconstruction</a></div>
     <div class="paper-meta">
       📅 2024-07-04
     </div>

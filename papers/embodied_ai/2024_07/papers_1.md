@@ -9,6 +9,16 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.21521v1">The Impacts of AI Avatar Appearance and Disclosure on User Motivation</a></div>
+    <div class="paper-meta">
+      📅 2024-07-31
+      | 💬 15 pages, 6 figures, submitted to the 2nd International Conference on Data Science & Artificial Intelligence
+    </div>
+    <details class="paper-abstract">
+      This study examines the influence of perceived AI features on user motivation in virtual interactions. AI avatars, being disclosed as being an AI, or embodying specific genders, could be used in user-AI interactions. Leveraging insights from AI and avatar research, we explore how AI disclosure and gender affect user motivation. We conducted a game-based experiment involving over 72,500 participants who solved search problems alone or with an AI companion. Different groups experienced varying AI appearances and disclosures. We measured play intensity. Results revealed that the presence of another avatar led to less intense play compared to solo play. Disclosure of the avatar as AI heightened effort intensity compared to non-disclosed AI companions. Additionally, a masculine AI appearance reduced effort intensity.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2306.11377v2">HabiCrowd: A High Performance Simulator for Crowd-Aware Visual Navigation</a></div>
     <div class="paper-meta">
       📅 2024-07-29
@@ -65,6 +75,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2407.10943v1">GRUtopia: Dream General Robots in a City at Scale</a></div>
+    <div class="paper-meta">
+      📅 2024-07-15
+    </div>
+    <details class="paper-abstract">
+      Recent works have been exploring the scaling laws in the field of Embodied AI. Given the prohibitive costs of collecting real-world data, we believe the Simulation-to-Real (Sim2Real) paradigm is a crucial step for scaling the learning of embodied models. This paper introduces project GRUtopia, the first simulated interactive 3D society designed for various robots. It features several advancements: (a) The scene dataset, GRScenes, includes 100k interactive, finely annotated scenes, which can be freely combined into city-scale environments. In contrast to previous works mainly focusing on home, GRScenes covers 89 diverse scene categories, bridging the gap of service-oriented environments where general robots would be initially deployed. (b) GRResidents, a Large Language Model (LLM) driven Non-Player Character (NPC) system that is responsible for social interaction, task generation, and task assignment, thus simulating social scenarios for embodied AI applications. (c) The benchmark, GRBench, supports various robots but focuses on legged robots as primary agents and poses moderately challenging tasks involving Object Loco-Navigation, Social Loco-Navigation, and Loco-Manipulation. We hope that this work can alleviate the scarcity of high-quality data in this field and provide a more comprehensive assessment of Embodied AI research. The project is available at https://github.com/OpenRobotLab/GRUtopia.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2407.10062v1">SpikeGS: 3D Gaussian Splatting from Spike Streams with High-Speed Camera Motion</a></div>
     <div class="paper-meta">
       📅 2024-07-14
@@ -105,6 +124,16 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2404.09465v2">PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-07-10
+      | 💬 Accepted by CVPR 2024 (Highlight), 18 pages
+    </div>
+    <details class="paper-abstract">
+      With recent developments in Embodied Artificial Intelligence (EAI) research, there has been a growing demand for high-quality, large-scale interactive scene generation. While prior methods in scene synthesis have prioritized the naturalness and realism of the generated scenes, the physical plausibility and interactivity of scenes have been largely left unexplored. To address this disparity, we introduce PhyScene, a novel method dedicated to generating interactive 3D scenes characterized by realistic layouts, articulated objects, and rich physical interactivity tailored for embodied agents. Based on a conditional diffusion model for capturing scene layouts, we devise novel physics- and interactivity-based guidance mechanisms that integrate constraints from object collision, room layout, and object reachability. Through extensive experiments, we demonstrate that PhyScene effectively leverages these guidance functions for physically interactable scene synthesis, outperforming existing state-of-the-art scene synthesis methods by a large margin. Our findings suggest that the scenes generated by PhyScene hold considerable potential for facilitating diverse skill acquisition among agents within interactive environments, thereby catalyzing further advancements in embodied AI research. Project website: http://physcene.github.io.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.09465v2">PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI</a></div>
     <div class="paper-meta">
       📅 2024-07-10
       | 💬 Accepted by CVPR 2024 (Highlight), 18 pages

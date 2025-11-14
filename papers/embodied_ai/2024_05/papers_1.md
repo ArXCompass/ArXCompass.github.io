@@ -29,6 +29,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.00956v2">Exploring Spatial Schema Intuitions in Large Language and Vision Models</a></div>
+    <div class="paper-meta">
+      📅 2024-05-27
+      | 💬 ACL Findings 2024
+    </div>
+    <details class="paper-abstract">
+      Despite the ubiquity of large language models (LLMs) in AI research, the question of embodiment in LLMs remains underexplored, distinguishing them from embodied systems in robotics where sensory perception directly informs physical action. Our investigation navigates the intriguing terrain of whether LLMs, despite their non-embodied nature, effectively capture implicit human intuitions about fundamental, spatial building blocks of language. We employ insights from spatial cognitive foundations developed through early sensorimotor experiences, guiding our exploration through the reproduction of three psycholinguistic experiments. Surprisingly, correlations between model outputs and human responses emerge, revealing adaptability without a tangible connection to embodied experiences. Notable distinctions include polarized language model responses and reduced correlations in vision language models. This research contributes to a nuanced understanding of the interplay between language, spatial experiences, and the computations made by large language models. More at https://cisnlp.github.io/Spatial_Schemas/
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2405.09546v1">BEHAVIOR Vision Suite: Customizable Dataset Generation via Simulation</a></div>
     <div class="paper-meta">
       📅 2024-05-15
@@ -59,6 +69,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2311.03783v2">Scene-Driven Multimodal Knowledge Graph Construction for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2024-05-11
+      | 💬 14 pages, 6 figures
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is one of the most popular studies in artificial intelligence and robotics, which can effectively improve the intelligence of real-world agents (i.e. robots) serving human beings. Scene knowledge is important for an agent to understand the surroundings and make correct decisions in the varied open world. Currently, knowledge base for embodied tasks is missing and most existing work use general knowledge base or pre-trained models to enhance the intelligence of an agent. For conventional knowledge base, it is sparse, insufficient in capacity and cost in data collection. For pre-trained models, they face the uncertainty of knowledge and hard maintenance. To overcome the challenges of scene knowledge, we propose a scene-driven multimodal knowledge graph (Scene-MMKG) construction method combining conventional knowledge engineering and large language models. A unified scene knowledge injection framework is introduced for knowledge representation. To evaluate the advantages of our proposed method, we instantiate Scene-MMKG considering typical indoor robotic functionalities (Manipulation and Mobility), named ManipMob-MMKG. Comparisons in characteristics indicate our instantiated ManipMob-MMKG has broad superiority in data-collection efficiency and knowledge quality. Experimental results on typical embodied tasks show that knowledge-enhanced methods using our instantiated ManipMob-MMKG can improve the performance obviously without re-designing model structures complexly. Our project can be found at https://sites.google.com/view/manipmob-mmkg
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2405.05852v1">Pre-trained Text-to-Image Diffusion Models Are Versatile Representation Learners for Control</a></div>
     <div class="paper-meta">
       📅 2024-05-09
@@ -71,6 +91,16 @@
     <div class="paper-title"><a href="https://arxiv.org/pdf/2405.03999v1">Interaction Design for Human-AI Choreography Co-creation</a></div>
     <div class="paper-meta">
       📅 2024-05-08
+      | 💬 GenAICHI: CHI 2024 Workshop on Generative AI and HCI
+    </div>
+    <details class="paper-abstract">
+      Human-AI co-creation aims to combine human and AI strengths for artistic results exceeding individual capabilities. Frameworks exist for painting, music, and poetry, but choreography's embodied nature demands a dedicated approach. This paper explores AI-assisted choreography techniques (e.g., generative ideation, embodied improvisation) and analyzes interaction design -- how humans and AI collaborate and communicate -- to inform the design considerations of future human-AI choreography co-creation systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2405.03999v1">Interaction Design for Human-AI Choreography Co-creation</a></div>
+    <div class="paper-meta">
+      📅 2024-05-07
       | 💬 GenAICHI: CHI 2024 Workshop on Generative AI and HCI
     </div>
     <details class="paper-abstract">

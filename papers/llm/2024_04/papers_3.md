@@ -11,6 +11,35 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2311.00176v5">ChipNeMo: Domain-Adapted LLMs for Chip Design</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+      | 💬 Updated results for ChipNeMo-70B model
+    </div>
+    <details class="paper-abstract">
+      ChipNeMo aims to explore the applications of large language models (LLMs) for industrial chip design. Instead of directly deploying off-the-shelf commercial or open-source LLMs, we instead adopt the following domain adaptation techniques: domain-adaptive tokenization, domain-adaptive continued pretraining, model alignment with domain-specific instructions, and domain-adapted retrieval models. We evaluate these methods on three selected LLM applications for chip design: an engineering assistant chatbot, EDA script generation, and bug summarization and analysis. Our evaluations demonstrate that domain-adaptive pretraining of language models, can lead to superior performance in domain related downstream tasks compared to their base LLaMA2 counterparts, without degradations in generic capabilities. In particular, our largest model, ChipNeMo-70B, outperforms the highly capable GPT-4 on two of our use cases, namely engineering assistant chatbot and EDA scripts generation, while exhibiting competitive performance on bug summarization and analysis. These results underscore the potential of domain-specific customization for enhancing the effectiveness of large language models in specialized applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2404.03732v1">SHROOM-INDElab at SemEval-2024 Task 6: Zero- and Few-Shot LLM-Based Classification for Hallucination Detection</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+      | 💬 6 pages, 6 figures, 4 tables, camera-ready copy, accepted to the 18th International Workshop on Semantic Evaluation (SemEval-2024), for associated code and data see https://github.com/bradleypallen/shroom
+    </div>
+    <details class="paper-abstract">
+      We describe the University of Amsterdam Intelligent Data Engineering Lab team's entry for the SemEval-2024 Task 6 competition. The SHROOM-INDElab system builds on previous work on using prompt programming and in-context learning with large language models (LLMs) to build classifiers for hallucination detection, and extends that work through the incorporation of context-specific definition of task, role, and target concept, and automated generation of examples for use in a few-shot prompting approach. The resulting system achieved fourth-best and sixth-best performance in the model-agnostic track and model-aware tracks for Task 6, respectively, and evaluation using the validation sets showed that the system's classification decisions were consistent with those of the crowd-sourced human labellers. We further found that a zero-shot approach provided better accuracy than a few-shot approach using automatically generated examples. Code for the system described in this paper is available on Github.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2311.03301v2">Ziya2: Data-centric Learning is All LLMs Need</a></div>
+    <div class="paper-meta">
+      📅 2024-04-04
+    </div>
+    <details class="paper-abstract">
+      Various large language models (LLMs) have been proposed in recent years, including closed- and open-source ones, continually setting new records on multiple benchmarks. However, the development of LLMs still faces several issues, such as high cost of training models from scratch, and continual pre-training leading to catastrophic forgetting, etc. Although many such issues are addressed along the line of research on LLMs, an important yet practical limitation is that many studies overly pursue enlarging model sizes without comprehensively analyzing and optimizing the use of pre-training data in their learning process, as well as appropriate organization and leveraging of such data in training LLMs under cost-effective settings. In this work, we propose Ziya2, a model with 13 billion parameters adopting LLaMA2 as the foundation model, and further pre-trained on 700 billion tokens, where we focus on pre-training techniques and use data-centric optimization to enhance the learning process of Ziya2 on different stages. We define three data attributes and firstly establish data-centric scaling laws to illustrate how different data impacts LLMs. Experiments show that Ziya2 significantly outperforms other models in multiple benchmarks especially with promising results compared to representative open-source ones. Ziya2 (Base) is released at https://huggingface.co/IDEA-CCNL/Ziya2-13B-Base and https://modelscope.cn/models/Fengshenbang/Ziya2-13B-Base/summary.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2404.16045v1">Elicitron: An LLM Agent-Based Simulation Framework for Design Requirements Elicitation</a></div>
     <div class="paper-meta">
       📅 2024-04-04
@@ -213,6 +242,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.01687v2">"Which LLM should I use?": Evaluating LLMs for tasks performed by Undergraduate Computer Science Students</a></div>
+    <div class="paper-meta">
+      📅 2024-04-03
+      | 💬 Under review
+    </div>
+    <details class="paper-abstract">
+      This study evaluates the effectiveness of various large language models (LLMs) in performing tasks common among undergraduate computer science students. Although a number of research studies in the computing education community have explored the possibility of using LLMs for a variety of tasks, there is a lack of comprehensive research comparing different LLMs and evaluating which LLMs are most effective for different tasks. Our research systematically assesses some of the publicly available LLMs such as Google Bard, ChatGPT(3.5), GitHub Copilot Chat, and Microsoft Copilot across diverse tasks commonly encountered by undergraduate computer science students in India. These tasks include code explanation and documentation, solving class assignments, technical interview preparation, learning new concepts and frameworks, and email writing. Evaluation for these tasks was carried out by pre-final year and final year undergraduate computer science students and provides insights into the models' strengths and limitations. This study aims to guide students as well as instructors in selecting suitable LLMs for any specific task and offers valuable insights on how LLMs can be used constructively by students and instructors.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2310.14607v2">Confronting LLMs with Traditional ML: Rethinking the Fairness of Large Language Models in Tabular Classifications</a></div>
     <div class="paper-meta">
       📅 2024-04-02
@@ -375,6 +414,15 @@
     </div>
     <details class="paper-abstract">
       The widespread use of Large Language Model (LLM)-based conversational agents (CAs), especially in high-stakes domains, raises many privacy concerns. Building ethical LLM-based CAs that respect user privacy requires an in-depth understanding of the privacy risks that concern users the most. However, existing research, primarily model-centered, does not provide insight into users' perspectives. To bridge this gap, we analyzed sensitive disclosures in real-world ChatGPT conversations and conducted semi-structured interviews with 19 LLM-based CA users. We found that users are constantly faced with trade-offs between privacy, utility, and convenience when using LLM-based CAs. However, users' erroneous mental models and the dark patterns in system design limited their awareness and comprehension of the privacy risks. Additionally, the human-like interactions encouraged more sensitive disclosures, which complicated users' ability to navigate the trade-offs. We discuss practical design guidelines and the needs for paradigm shifts to protect the privacy of LLM-based CA users.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.11851v1">GUARD-D-LLM: An LLM-Based Risk Assessment Engine for the Downstream uses of LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-04-02
+    </div>
+    <details class="paper-abstract">
+      Amidst escalating concerns about the detriments inflicted by AI systems, risk management assumes paramount importance, notably for high-risk applications as demanded by the European Union AI Act. Guidelines provided by ISO and NIST aim to govern AI risk management; however, practical implementations remain scarce in scholarly works. Addressing this void, our research explores risks emanating from downstream uses of large language models (LLMs), synthesizing a taxonomy grounded in earlier research. Building upon this foundation, we introduce a novel LLM-based risk assessment engine (GUARD-D-LLM: Guided Understanding and Assessment for Risk Detection for Downstream use of LLMs) designed to pinpoint and rank threats relevant to specific use cases derived from text-based user inputs. Integrating thirty intelligent agents, this innovative approach identifies bespoke risks, gauges their severity, offers targeted suggestions for mitigation, and facilitates risk-aware development. The paper also documents the limitations of such an approach along with way forward suggestions to augment experts in such risk assessment thereby leveraging GUARD-D-LLM in identifying risks early on and enabling early mitigations. This paper and its associated code serve as a valuable resource for developers seeking to mitigate risks associated with LLM-based applications.
     </details>
 </div>
 <div class="paper-card">
@@ -578,5 +626,15 @@
     </div>
     <details class="paper-abstract">
       Accurately simulating human opinion dynamics is crucial for understanding a variety of societal phenomena, including polarization and the spread of misinformation. However, the agent-based models (ABMs) commonly used for such simulations often over-simplify human behavior. We propose a new approach to simulating opinion dynamics based on populations of Large Language Models (LLMs). Our findings reveal a strong inherent bias in LLM agents towards producing accurate information, leading simulated agents to consensus in line with scientific reality. This bias limits their utility for understanding resistance to consensus views on issues like climate change. After inducing confirmation bias through prompt engineering, however, we observed opinion fragmentation in line with existing agent-based modeling and opinion dynamics research. These insights highlight the promise and limitations of LLM agents in this domain and suggest a path forward: refining LLMs with real-world discourse to better simulate the evolution of human beliefs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2404.01361v1">LLM Attributor: Interactive Visual Attribution for LLM Generation</a></div>
+    <div class="paper-meta">
+      📅 2024-04-01
+      | 💬 8 pages, 3 figures, For a video demo, see https://youtu.be/mIG2MDQKQxM
+    </div>
+    <details class="paper-abstract">
+      While large language models (LLMs) have shown remarkable capability to generate convincing text across diverse domains, concerns around its potential risks have highlighted the importance of understanding the rationale behind text generation. We present LLM Attributor, a Python library that provides interactive visualizations for training data attribution of an LLM's text generation. Our library offers a new way to quickly attribute an LLM's text generation to training data points to inspect model behaviors, enhance its trustworthiness, and compare model-generated text with user-provided text. We describe the visual and interactive design of our tool and highlight usage scenarios for LLaMA2 models fine-tuned with two different datasets: online articles about recent disasters and finance-related question-answer pairs. Thanks to LLM Attributor's broad support for computational notebooks, users can easily integrate it into their workflow to interactively visualize attributions of their models. For easier access and extensibility, we open-source LLM Attributor at https://github.com/poloclub/ LLM-Attribution. The video demo is available at https://youtu.be/mIG2MDQKQxM.
     </details>
 </div>

@@ -47,6 +47,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2210.06849v3">Retrospectives on the Embodied AI Workshop</a></div>
+    <div class="paper-meta">
+      📅 2022-12-05
+    </div>
+    <details class="paper-abstract">
+      We present a retrospective on the state of Embodied AI research. Our analysis focuses on 13 challenges presented at the Embodied AI Workshop at CVPR. These challenges are grouped into three themes: (1) visual navigation, (2) rearrangement, and (3) embodied vision-and-language. We discuss the dominant datasets within each theme, evaluation metrics for the challenges, and the performance of state-of-the-art models. We highlight commonalities between top approaches to the challenges and identify potential future directions for Embodied AI research.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2212.01186v1">A General Purpose Supervisory Signal for Embodied Agents</a></div>
     <div class="paper-meta">
       📅 2022-12-01

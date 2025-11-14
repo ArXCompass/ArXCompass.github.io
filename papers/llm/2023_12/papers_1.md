@@ -5,6 +5,7 @@
 [Home](https://arxcompass.github.io) / [Papers](https://arxcompass.github.io/papers) / [llm](https://arxcompass.github.io/papers/llm)
 
 - Part 1
+- [Part 2](papers_2.md)
 
 ## Papers
 
@@ -518,6 +519,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2312.06720v2">Audio-Visual LLM for Video Understanding</a></div>
+    <div class="paper-meta">
+      📅 2023-12-13
+    </div>
+    <details class="paper-abstract">
+      This paper presents Audio-Visual LLM, a Multimodal Large Language Model that takes both visual and auditory inputs for holistic video understanding. A key design is the modality-augmented training, which involves the integration of modality-specific tokens engineered to activate the appropriate visual and/or auditory encoder selectively. This mechanism is pivotal in enabling end-to-end joint training with video data at different modalities, including visual-only, audio-only, and audio-visual formats. Moreover, we introduce a high-quality video instruction dataset, derived from GPT-4. This dataset allows Audio-Visual LLM to adeptly process a variety of task-oriented video instructions, ranging from multi-turn conversations and audio-visual narratives to complex reasoning tasks. Extensive experiments demonstrate that Audio-Visual LLM impressively achieves strong zero-shot results across a range of video understanding tasks. For example, Audio-Visual LLM achieves an accuracy of 53.7% on MSRVTT-QA, outperforming non-LLM-based InterVideo by 6.6% and LLM-based Valley by 4.4%, respectively. Additionally, our Audio-Visual LLM also achieves competitive performance on audio tasks (e.g., AudioCaps).
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2312.07779v1">Tell, don't show: Declarative facts influence how LLMs generalize</a></div>
     <div class="paper-meta">
       📅 2023-12-12
@@ -770,6 +780,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2311.00502v2">Efficient LLM Inference on CPUs</a></div>
+    <div class="paper-meta">
+      📅 2023-12-07
+      | 💬 NeurIPS'2023 on Efficient Natural Language and Speech Processing
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have demonstrated remarkable performance and tremendous potential across a wide range of tasks. However, deploying these models has been challenging due to the astronomical amount of model parameters, which requires a demand for large memory capacity and high memory bandwidth. In this paper, we propose an effective approach that can make the deployment of LLMs more efficiently. We support an automatic INT4 weight-only quantization flow and design a special LLM runtime with highly-optimized kernels to accelerate the LLM inference on CPUs. We demonstrate the general applicability of our approach on popular LLMs including Llama2, Llama, GPT-NeoX, and showcase the extreme inference efficiency on CPUs. The code is publicly available at: https://github.com/intel/intel-extension-for-transformers.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2312.03788v1">SmoothQuant+: Accurate and Efficient 4-bit Post-Training WeightQuantization for LLM</a></div>
     <div class="paper-meta">
       📅 2023-12-06
@@ -824,6 +844,16 @@
     </div>
     <details class="paper-abstract">
       It is becoming increasingly emphasis on the importance of LLM participating in clinical diagnosis decision-making. However, the low specialization refers to that current medical LLMs can not provide specific medical advice, which are more like a medical Q\&A. And there is no suitable clinical guidance tree data set that can be used directly with LLM. To address this issue, we first propose LLM-executavle clinical guidance tree(CGT), which can be directly used by large language models, and construct medical diagnostic decision-making dataset (MedDM), from flowcharts in clinical practice guidelines. We propose an approach to screen flowcharts from medical literature, followed by their identification and conversion into standardized diagnostic decision trees. Constructed a knowledge base with 1202 decision trees, which came from 5000 medical literature and covered 12 hospital departments, including internal medicine, surgery, psychiatry, and over 500 diseases.Moreover, we propose a method for reasoning on LLM-executable CGT and a Patient-LLM multi-turn dialogue framework.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2312.02913v1">Let the LLMs Talk: Simulating Human-to-Human Conversational QA via Zero-Shot LLM-to-LLM Interactions</a></div>
+    <div class="paper-meta">
+      📅 2023-12-05
+      | 💬 Accepted at WSDM 2024
+    </div>
+    <details class="paper-abstract">
+      Conversational question-answering (CQA) systems aim to create interactive search systems that effectively retrieve information by interacting with users. To replicate human-to-human conversations, existing work uses human annotators to play the roles of the questioner (student) and the answerer (teacher). Despite its effectiveness, challenges exist as human annotation is time-consuming, inconsistent, and not scalable. To address this issue and investigate the applicability of large language models (LLMs) in CQA simulation, we propose a simulation framework that employs zero-shot learner LLMs for simulating teacher-student interactions. Our framework involves two LLMs interacting on a specific topic, with the first LLM acting as a student, generating questions to explore a given search topic. The second LLM plays the role of a teacher by answering questions and is equipped with additional information, including a text on the given topic. We implement both the student and teacher by zero-shot prompting the GPT-4 model. To assess the effectiveness of LLMs in simulating CQA interactions and understand the disparities between LLM- and human-generated conversations, we evaluate the simulated data from various perspectives. We begin by evaluating the teacher's performance through both automatic and human assessment. Next, we evaluate the performance of the student, analyzing and comparing the disparities between questions generated by the LLM and those generated by humans. Furthermore, we conduct extensive analyses to thoroughly examine the LLM performance by benchmarking state-of-the-art reading comprehension models on both datasets. Our results reveal that the teacher LLM generates lengthier answers that tend to be more accurate and complete. The student LLM generates more diverse questions, covering more aspects of a given topic.
     </details>
 </div>
 <div class="paper-card">
@@ -937,33 +967,5 @@
     </div>
     <details class="paper-abstract">
       In this study, we introduce JarviX, a sophisticated data analytics framework. JarviX is designed to employ Large Language Models (LLMs) to facilitate an automated guide and execute high-precision data analyzes on tabular datasets. This framework emphasizes the significance of varying column types, capitalizing on state-of-the-art LLMs to generate concise data insight summaries, propose relevant analysis inquiries, visualize data effectively, and provide comprehensive explanations for results drawn from an extensive data analysis pipeline. Moreover, JarviX incorporates an automated machine learning (AutoML) pipeline for predictive modeling. This integration forms a comprehensive and automated optimization cycle, which proves particularly advantageous for optimizing machine configuration. The efficacy and adaptability of JarviX are substantiated through a series of practical use case studies.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2312.01202v1">From Voices to Validity: Leveraging Large Language Models (LLMs) for Textual Analysis of Policy Stakeholder Interviews</a></div>
-    <div class="paper-meta">
-      📅 2023-12-02
-    </div>
-    <details class="paper-abstract">
-      Obtaining stakeholders' diverse experiences and opinions about current policy in a timely manner is crucial for policymakers to identify strengths and gaps in resource allocation, thereby supporting effective policy design and implementation. However, manually coding even moderately sized interview texts or open-ended survey responses from stakeholders can often be labor-intensive and time-consuming. This study explores the integration of Large Language Models (LLMs)--like GPT-4--with human expertise to enhance text analysis of stakeholder interviews regarding K-12 education policy within one U.S. state. Employing a mixed-methods approach, human experts developed a codebook and coding processes as informed by domain knowledge and unsupervised topic modeling results. They then designed prompts to guide GPT-4 analysis and iteratively evaluate different prompts' performances. This combined human-computer method enabled nuanced thematic and sentiment analysis. Results reveal that while GPT-4 thematic coding aligned with human coding by 77.89% at specific themes, expanding to broader themes increased congruence to 96.02%, surpassing traditional Natural Language Processing (NLP) methods by over 25%. Additionally, GPT-4 is more closely matched to expert sentiment analysis than lexicon-based methods. Findings from quantitative measures and qualitative reviews underscore the complementary roles of human domain expertise and automated analysis as LLMs offer new perspectives and coding consistency. The human-computer interactive approach enhances efficiency, validity, and interpretability of educational policy research.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2312.01143v1">Towards leveraging LLMs for Conditional QA</a></div>
-    <div class="paper-meta">
-      📅 2023-12-02
-    </div>
-    <details class="paper-abstract">
-      This study delves into the capabilities and limitations of Large Language Models (LLMs) in the challenging domain of conditional question-answering. Utilizing the Conditional Question Answering (CQA) dataset and focusing on generative models like T5 and UL2, we assess the performance of LLMs across diverse question types. Our findings reveal that fine-tuned LLMs can surpass the state-of-the-art (SOTA) performance in some cases, even without fully encoding all input context, with an increase of 7-8 points in Exact Match (EM) and F1 scores for Yes/No questions. However, these models encounter challenges in extractive question answering, where they lag behind the SOTA by over 10 points, and in mitigating the risk of injecting false information. A study with oracle-retrievers emphasizes the critical role of effective evidence retrieval, underscoring the necessity for advanced solutions in this area. Furthermore, we highlight the significant influence of evaluation metrics on performance assessments and advocate for a more comprehensive evaluation framework. The complexity of the task, the observed performance discrepancies, and the need for effective evidence retrieval underline the ongoing challenges in this field and underscore the need for future work focusing on refining training tasks and exploring prompt-based techniques to enhance LLM performance in conditional question-answering tasks.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2310.09219v5">"Kelly is a Warm Person, Joseph is a Role Model": Gender Biases in LLM-Generated Reference Letters</a></div>
-    <div class="paper-meta">
-      📅 2023-12-01
-      | 💬 Accepted to EMNLP 2023 Findings
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) have recently emerged as an effective tool to assist individuals in writing various types of content, including professional documents such as recommendation letters. Though bringing convenience, this application also introduces unprecedented fairness concerns. Model-generated reference letters might be directly used by users in professional scenarios. If underlying biases exist in these model-constructed letters, using them without scrutinization could lead to direct societal harms, such as sabotaging application success rates for female applicants. In light of this pressing issue, it is imminent and necessary to comprehensively study fairness issues and associated harms in this real-world use case. In this paper, we critically examine gender biases in LLM-generated reference letters. Drawing inspiration from social science findings, we design evaluation methods to manifest biases through 2 dimensions: (1) biases in language style and (2) biases in lexical content. We further investigate the extent of bias propagation by analyzing the hallucination bias of models, a term that we define to be bias exacerbation in model-hallucinated contents. Through benchmarking evaluation on 2 popular LLMs- ChatGPT and Alpaca, we reveal significant gender biases in LLM-generated recommendation letters. Our findings not only warn against using LLMs for this application without scrutinization, but also illuminate the importance of thoroughly studying hidden biases and harms in LLM-generated professional documents.
     </details>
 </div>

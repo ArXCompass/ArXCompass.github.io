@@ -49,6 +49,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.13807v2">AlanaVLM: A Multimodal Embodied AI Foundation Model for Egocentric Video Understanding</a></div>
+    <div class="paper-meta">
+      📅 2024-06-21
+      | 💬 Code available https://github.com/alanaai/EVUD
+    </div>
+    <details class="paper-abstract">
+      AI personal assistants deployed via robots or wearables require embodied understanding to collaborate with humans effectively. However, current Vision-Language Models (VLMs) primarily focus on third-person view videos, neglecting the richness of egocentric perceptual experience. To address this gap, we propose three key contributions. First, we introduce the Egocentric Video Understanding Dataset (EVUD) for training VLMs on video captioning and question answering tasks specific to egocentric videos. Second, we present AlanaVLM, a 7B parameter VLM trained using parameter-efficient methods on EVUD. Finally, we evaluate AlanaVLM's capabilities on OpenEQA, a challenging benchmark for embodied video question answering. Our model achieves state-of-the-art performance, outperforming open-source models including strong Socratic models using GPT-4 as a planner by 3.6%. Additionally, we outperform Claude 3 and Gemini Pro Vision 1.0 and showcase competitive results compared to Gemini Pro 1.5 and GPT-4V, even surpassing the latter in spatial reasoning. This research paves the way for building efficient VLMs that can be deployed in robots or wearables, leveraging embodied video understanding to collaborate seamlessly with humans in everyday tasks, contributing to the next generation of Embodied AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.05132v2">3D-GRAND: A Million-Scale Dataset for 3D-LLMs with Better Grounding and Less Hallucination</a></div>
     <div class="paper-meta">
       📅 2024-06-12
@@ -96,7 +106,26 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.00765v1">The Embodied World Model Based on LLM with Visual Information and Prediction-Oriented Prompts</a></div>
+    <div class="paper-meta">
+      📅 2024-06-02
+    </div>
+    <details class="paper-abstract">
+      In recent years, as machine learning, particularly for vision and language understanding, has been improved, research in embedded AI has also evolved. VOYAGER is a well-known LLM-based embodied AI that enables autonomous exploration in the Minecraft world, but it has issues such as underutilization of visual data and insufficient functionality as a world model. In this research, the possibility of utilizing visual data and the function of LLM as a world model were investigated with the aim of improving the performance of embodied AI. The experimental results revealed that LLM can extract necessary information from visual data, and the utilization of the information improves its performance as a world model. It was also suggested that devised prompts could bring out the LLM's function as a world model.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2406.00375v1">Teledrive: An Embodied AI based Telepresence System</a></div>
+    <div class="paper-meta">
+      📅 2024-06-01
+      | 💬 Accepted in Journal of Intelligent Robotic System
+    </div>
+    <details class="paper-abstract">
+      This article presents Teledrive, a telepresence robotic system with embodied AI features that empowers an operator to navigate the telerobot in any unknown remote place with minimal human intervention. We conceive Teledrive in the context of democratizing remote care-giving for elderly citizens as well as for isolated patients, affected by contagious diseases. In particular, this paper focuses on the problem of navigating to a rough target area (like bedroom or kitchen) rather than pre-specified point destinations. This ushers in a unique AreaGoal based navigation feature, which has not been explored in depth in the contemporary solutions. Further, we describe an edge computing-based software system built on a WebRTC-based communication framework to realize the aforementioned scheme through an easy-to-use speech-based human-robot interaction. Moreover, to enhance the ease of operation for the remote caregiver, we incorporate a person following feature, whereby a robot follows a person on the move in its premises as directed by the operator. Moreover, the system presented is loosely coupled with specific robot hardware, unlike the existing solutions. We have evaluated the efficacy of the proposed system through baseline experiments, user study, and real-life deployment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2406.00375v1">Teledrive: An Embodied AI based Telepresence System</a></div>
     <div class="paper-meta">
       📅 2024-06-01
       | 💬 Accepted in Journal of Intelligent Robotic System

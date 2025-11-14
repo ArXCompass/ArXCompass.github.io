@@ -11,25 +11,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11814v1">An Empirical Evaluation of LLMs for Solving Offensive Security Challenges</a></div>
-    <div class="paper-meta">
-      📅 2024-02-19
-    </div>
-    <details class="paper-abstract">
-      Capture The Flag (CTF) challenges are puzzles related to computer security scenarios. With the advent of large language models (LLMs), more and more CTF participants are using LLMs to understand and solve the challenges. However, so far no work has evaluated the effectiveness of LLMs in solving CTF challenges with a fully automated workflow. We develop two CTF-solving workflows, human-in-the-loop (HITL) and fully-automated, to examine the LLMs' ability to solve a selected set of CTF challenges, prompted with information about the question. We collect human contestants' results on the same set of questions, and find that LLMs achieve higher success rate than an average human participant. This work provides a comprehensive evaluation of the capability of LLMs in solving real world CTF challenges, from real competition to fully automated workflow. Our results provide references for applying LLMs in cybersecurity education and pave the way for systematic evaluation of offensive cybersecurity capabilities in LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11801v1">Enhancing Empathetic Response Generation by Augmenting LLMs with Small-scale Empathetic Models</a></div>
-    <div class="paper-meta">
-      📅 2024-02-19
-      | 💬 12 pages, 4 figures
-    </div>
-    <details class="paper-abstract">
-      Empathetic response generation is increasingly significant in AI, necessitating nuanced emotional and cognitive understanding coupled with articulate response expression. Current large language models (LLMs) excel in response expression; however, they lack the ability to deeply understand emotional and cognitive nuances, particularly in pinpointing fine-grained emotions and their triggers. Conversely, small-scale empathetic models (SEMs) offer strength in fine-grained emotion detection and detailed emotion cause identification. To harness the complementary strengths of both LLMs and SEMs, we introduce a Hybrid Empathetic Framework (HEF). HEF regards SEMs as flexible plugins to improve LLM's nuanced emotional and cognitive understanding. Regarding emotional understanding, HEF implements a two-stage emotion prediction strategy, encouraging LLMs to prioritize primary emotions emphasized by SEMs, followed by other categories, substantially alleviates the difficulties for LLMs in fine-grained emotion detection. Regarding cognitive understanding, HEF employs an emotion cause perception strategy, prompting LLMs to focus on crucial emotion-eliciting words identified by SEMs, thus boosting LLMs' capabilities in identifying emotion causes. This collaborative approach enables LLMs to discern emotions more precisely and formulate empathetic responses. We validate HEF on the Empathetic-Dialogue dataset, and the findings indicate that our framework enhances the refined understanding of LLMs and their ability to convey empathetic responses.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.12298v1">Is Open-Source There Yet? A Comparative Study on Commercial and Open-Source LLMs in Their Ability to Label Chest X-Ray Reports</a></div>
     <div class="paper-meta">
       📅 2024-02-19
@@ -114,6 +95,33 @@
     </div>
     <details class="paper-abstract">
       Vision-language models (VLMs) offer a promising paradigm for image classification by comparing the similarity between images and class embeddings. A critical challenge lies in crafting precise textual representations for class names. While previous studies have leveraged recent advancements in large language models (LLMs) to enhance these descriptors, their outputs often suffer from ambiguity and inaccuracy. We attribute this to two primary factors: 1) the reliance on single-turn textual interactions with LLMs, leading to a mismatch between generated text and visual concepts for VLMs; 2) the oversight of the inter-class relationships, resulting in descriptors that fail to differentiate similar classes effectively. In this paper, we propose a novel framework that integrates LLMs and VLMs to find the optimal class descriptors. Our training-free approach develops an LLM-based agent with an evolutionary optimization strategy to iteratively refine class descriptors. We demonstrate our optimized descriptors are of high quality which effectively improves classification accuracy on a wide range of benchmarks. Additionally, these descriptors offer explainable and robust features, boosting performance across various backbone models and complementing fine-tuning-based methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11960v1">DB-LLM: Accurate Dual-Binarization for Efficient LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have significantly advanced the field of natural language processing, while the expensive memory and computation consumption impede their practical deployment. Quantization emerges as one of the most effective methods for improving the computational efficiency of LLMs. However, existing ultra-low-bit quantization always causes severe accuracy drops. In this paper, we empirically relieve the micro and macro characteristics of ultra-low bit quantization and present a novel Dual-Binarization method for LLMs, namely DB-LLM. For the micro-level, we take both the accuracy advantage of 2-bit-width and the efficiency advantage of binarization into account, introducing Flexible Dual Binarization (FDB). By splitting 2-bit quantized weights into two independent sets of binaries, FDB ensures the accuracy of representations and introduces flexibility, utilizing the efficient bitwise operations of binarization while retaining the inherent high sparsity of ultra-low bit quantization. For the macro-level, we find the distortion that exists in the prediction of LLM after quantization, which is specified as the deviations related to the ambiguity of samples. We propose the Deviation-Aware Distillation (DAD) method, enabling the model to focus differently on various samples. Comprehensive experiments show that our DB-LLM not only significantly surpasses the current State-of-The-Art (SoTA) in ultra-low bit quantization (eg, perplexity decreased from 9.64 to 7.23), but also achieves an additional 20\% reduction in computational consumption compared to the SOTA method under the same bit-width. Our code will be released soon.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.11886v1">The Colorful Future of LLMs: Evaluating and Improving LLMs as Emotional Supporters for Queer Youth</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+    </div>
+    <details class="paper-abstract">
+      Queer youth face increased mental health risks, such as depression, anxiety, and suicidal ideation. Hindered by negative stigma, they often avoid seeking help and rely on online resources, which may provide incompatible information. Although access to a supportive environment and reliable information is invaluable, many queer youth worldwide have no access to such support. However, this could soon change due to the rapid adoption of Large Language Models (LLMs) such as ChatGPT. This paper aims to comprehensively explore the potential of LLMs to revolutionize emotional support for queers. To this end, we conduct a qualitative and quantitative analysis of LLM's interactions with queer-related content. To evaluate response quality, we develop a novel ten-question scale that is inspired by psychological standards and expert input. We apply this scale to score several LLMs and human comments to posts where queer youth seek advice and share experiences. We find that LLM responses are supportive and inclusive, outscoring humans. However, they tend to be generic, not empathetic enough, and lack personalization, resulting in nonreliable and potentially harmful advice. We discuss these challenges, demonstrate that a dedicated prompt can improve the performance, and propose a blueprint of an LLM-supporter that actively (but sensitively) seeks user context to provide personalized, empathetic, and reliable responses. Our annotated dataset is available for further research.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03630v2">Enhancing LLM-Based Coding Tools through Native Integration of IDE-Derived Static Context</a></div>
+    <div class="paper-meta">
+      📅 2024-02-19
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) have achieved remarkable success in code completion, as evidenced by their essential roles in developing code assistant services such as Copilot. Being trained on in-file contexts, current LLMs are quite effective in completing code for single source files. However, it is challenging for them to conduct repository-level code completion for large software projects that require cross-file information. Existing research on LLM-based repository-level code completion identifies and integrates cross-file contexts, but it suffers from low accuracy and limited context length of LLMs. In this paper, we argue that Integrated Development Environments (IDEs) can provide direct, accurate and real-time cross-file information for repository-level code completion. We propose IDECoder, a practical framework that leverages IDE native static contexts for cross-context construction and diagnosis results for self-refinement. IDECoder utilizes the rich cross-context information available in IDEs to enhance the capabilities of LLMs of repository-level code completion. We conducted preliminary experiments to validate the performance of IDECoder and observed that this synergy represents a promising trend for future exploration.
     </details>
 </div>
 <div class="paper-card">
@@ -387,6 +395,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2401.07324v3">Small LLMs Are Weak Tool Learners: A Multi-LLM Agent</a></div>
+    <div class="paper-meta">
+      📅 2024-02-16
+      | 💬 On progress, github repo: https://github.com/X-PLUG/Multi-LLM-Agent
+    </div>
+    <details class="paper-abstract">
+      Large Language Model (LLM) agents significantly extend the capabilities of standalone LLMs, empowering them to interact with external tools (e.g., APIs, functions) and complete various tasks in a self-directed fashion. The challenge of tool use demands that LLMs not only understand user queries and generate answers accurately but also excel in task planning, tool invocation, and result summarization. While traditional works focus on training a single LLM with all these capabilities, performance limitations become apparent, particularly with smaller models. To overcome these challenges, we propose a novel approach that decomposes the aforementioned capabilities into a planner, caller, and summarizer. Each component is implemented by a single LLM that focuses on a specific capability and collaborates with others to accomplish the task. This modular framework facilitates individual updates and the potential use of smaller LLMs for building each capability. To effectively train this framework, we introduce a two-stage training paradigm. First, we fine-tune a backbone LLM on the entire dataset without discriminating sub-tasks, providing the model with a comprehensive understanding of the task. Second, the fine-tuned LLM is used to instantiate the planner, caller, and summarizer respectively, which are continually fine-tuned on respective sub-tasks. Evaluation across various tool-use benchmarks illustrates that our proposed multi-LLM framework surpasses the traditional single-LLM approach, highlighting its efficacy and advantages in tool learning.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2402.10294v1">LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing</a></div>
     <div class="paper-meta">
       📅 2024-02-15
@@ -461,6 +479,16 @@
     </div>
     <details class="paper-abstract">
       The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii) maximization of coverage and diversity-based measures in the feature space. Our first technique, Ask-LLM, leverages the zero-shot reasoning capabilities of instruction-tuned LLMs to directly assess the quality of a training example. To target coverage, we propose Density sampling, which models the data distribution to select a diverse sample. In our comparison of 19 samplers, involving hundreds of evaluation tasks and pre-training runs, we find that Ask-LLM and Density are the best methods in their respective categories. Coverage sampling can recover the performance of the full data, while models trained on Ask-LLM data consistently outperform full-data training -- even when we reject 90% of the original dataset, while converging up to 70% faster.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2402.09733v1">Do LLMs Know about Hallucination? An Empirical Investigation of LLM's Hidden States</a></div>
+    <div class="paper-meta">
+      📅 2024-02-15
+      | 💬 9 pages, 8 figures, 2 tables (13 pages, 12 figures, 13 tables including references and appendices)
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) can make up answers that are not real, and this is known as hallucination. This research aims to see if, how, and to what extent LLMs are aware of hallucination. More specifically, we check whether and how an LLM reacts differently in its hidden states when it answers a question right versus when it hallucinates. To do this, we introduce an experimental framework which allows examining LLM's hidden states in different hallucination situations. Building upon this framework, we conduct a series of experiments with language models in the LLaMA family (Touvron et al., 2023). Our empirical findings suggest that LLMs react differently when processing a genuine response versus a fabricated one. We then apply various model interpretation techniques to help understand and explain the findings better. Moreover, informed by the empirical observations, we show great potential of using the guidance derived from LLM's hidden representation space to mitigate hallucination. We believe this work provides insights into how LLMs produce hallucinated answers and how to make them occur less often.
     </details>
 </div>
 <div class="paper-card">
@@ -923,34 +951,5 @@
     </div>
     <details class="paper-abstract">
       Objective: To enhance health literacy and accessibility of health information for a diverse patient population by developing a patient-centered artificial intelligence (AI) solution using large language models (LLMs) and Fast Healthcare Interoperability Resources (FHIR) application programming interfaces (APIs). Materials and Methods: The research involved developing LLM on FHIR, an open-source mobile application allowing users to interact with their health records using LLMs. The app is built on Stanford's Spezi ecosystem and uses OpenAI's GPT-4. A pilot study was conducted with the SyntheticMass patient dataset and evaluated by medical experts to assess the app's effectiveness in increasing health literacy. The evaluation focused on the accuracy, relevance, and understandability of the LLM's responses to common patient questions. Results: LLM on FHIR demonstrated varying but generally high degrees of accuracy and relevance in providing understandable health information to patients. The app effectively translated medical data into patient-friendly language and was able to adapt its responses to different patient profiles. However, challenges included variability in LLM responses and the need for precise filtering of health data. Discussion and Conclusion: LLMs offer significant potential in improving health literacy and making health records more accessible. LLM on FHIR, as a pioneering application in this field, demonstrates the feasibility and challenges of integrating LLMs into patient care. While promising, the implementation and pilot also highlight risks such as inconsistent responses and the importance of replicable output. Future directions include better resource identification mechanisms and executing LLMs on-device to enhance privacy and reduce costs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03289v1">Make Every Move Count: LLM-based High-Quality RTL Code Generation Using MCTS</a></div>
-    <div class="paper-meta">
-      📅 2024-02-05
-    </div>
-    <details class="paper-abstract">
-      Existing large language models (LLMs) for register transfer level code generation face challenges like compilation failures and suboptimal power, performance, and area (PPA) efficiency. This is due to the lack of PPA awareness in conventional transformer decoding algorithms. In response, we present an automated transformer decoding algorithm that integrates Monte Carlo tree-search for lookahead, guiding the transformer to produce compilable, functionally correct, and PPA-optimized code. Empirical evaluation with a fine-tuned language model on RTL codesets shows that our proposed technique consistently generates functionally correct code compared to prompting-only methods and effectively addresses the PPA-unawareness drawback of naive large language models. For the largest design generated by the state-of-the-art LLM (16-bit adder), our technique can achieve a 31.8% improvement in the area-delay product.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.03407v1">Enhancing the Stability of LLM-based Speech Generation Systems through Self-Supervised Representations</a></div>
-    <div class="paper-meta">
-      📅 2024-02-05
-      | 💬 10 pages, 1 figure, 3 tables
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are one of the most promising technologies for the next era of speech generation systems, due to their scalability and in-context learning capabilities. Nevertheless, they suffer from multiple stability issues at inference time, such as hallucinations, content skipping or speech repetitions. In this work, we introduce a new self-supervised Voice Conversion (VC) architecture which can be used to learn to encode transitory features, such as content, separately from stationary ones, such as speaker ID or recording conditions, creating speaker-disentangled representations. Using speaker-disentangled codes to train LLMs for text-to-speech (TTS) allows the LLM to generate the content and the style of the speech only from the text, similarly to humans, while the speaker identity is provided by the decoder of the VC model. Results show that LLMs trained over speaker-disentangled self-supervised representations provide an improvement of 4.7pp in speaker similarity over SOTA entangled representations, and a word error rate (WER) 5.4pp lower. Furthermore, they achieve higher naturalness than human recordings of the LibriTTS test-other dataset. Finally, we show that using explicit reference embedding negatively impacts intelligibility (stability), with WER increasing by 14pp compared to the model that only uses text to infer the style.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2402.02896v1">LLM Agents in Interaction: Measuring Personality Consistency and Linguistic Alignment in Interacting Populations of Large Language Models</a></div>
-    <div class="paper-meta">
-      📅 2024-02-05
-      | 💬 To appear in Proceedings of the 1st Personalization of Generative AI Workshop, EACL 2024
-    </div>
-    <details class="paper-abstract">
-      While both agent interaction and personalisation are vibrant topics in research on large language models (LLMs), there has been limited focus on the effect of language interaction on the behaviour of persona-conditioned LLM agents. Such an endeavour is important to ensure that agents remain consistent to their assigned traits yet are able to engage in open, naturalistic dialogues. In our experiments, we condition GPT-3.5 on personality profiles through prompting and create a two-group population of LLM agents using a simple variability-inducing sampling algorithm. We then administer personality tests and submit the agents to a collaborative writing task, finding that different profiles exhibit different degrees of personality consistency and linguistic alignment to their conversational partners. Our study seeks to lay the groundwork for better understanding of dialogue-based interaction between LLMs and highlights the need for new approaches to crafting robust, more human-like LLM personas for interactive environments.
     </details>
 </div>

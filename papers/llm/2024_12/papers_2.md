@@ -15,64 +15,6 @@
 ## Papers
 
 <div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18428v1">Explainable Multi-Modal Data Exploration in Natural Language via LLM Agent</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-    </div>
-    <details class="paper-abstract">
-      International enterprises, organizations, or hospitals collect large amounts of multi-modal data stored in databases, text documents, images, and videos. While there has been recent progress in the separate fields of multi-modal data exploration as well as in database systems that automatically translate natural language questions to database query languages, the research challenge of querying database systems combined with other unstructured modalities such as images in natural language is widely unexplored. In this paper, we propose XMODE - a system that enables explainable, multi-modal data exploration in natural language. Our approach is based on the following research contributions: (1) Our system is inspired by a real-world use case that enables users to explore multi-modal information systems. (2) XMODE leverages a LLM-based agentic AI framework to decompose a natural language question into subtasks such as text-to-SQL generation and image analysis. (3) Experimental results on multi-modal datasets over relational data and images demonstrate that our system outperforms state-of-the-art multi-modal exploration systems, excelling not only in accuracy but also in various performance metrics such as query latency, API costs, planning efficiency, and explanation quality, thanks to the more effective utilization of the reasoning capabilities of LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18415v1">Multilingual Mathematical Reasoning: Advancing Open-Source LLMs in Hindi and English</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-      | 💬 Accepted at AAAI 2025
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) excel in linguistic tasks but struggle with mathematical reasoning, particularly in non English languages like Hindi. This research aims to enhance the mathematical reasoning skills of smaller, resource efficient open-source LLMs in both Hindi and English. We evaluate models like OpenHathi 7B, LLaMA-2 7B, WizardMath 7B, Mistral 7B, LLeMMa 7B, MAmmoTH 7B, Gemini Pro, and GPT-4 using zero-shot, few-shot chain-of-thought (CoT) methods, and supervised fine-tuning. Our approach incorporates curriculum learning, progressively training models on increasingly difficult problems, a novel Decomposition Strategy to simplify complex arithmetic operations, and a Structured Solution Design that divides solutions into phases. Our experiments result in notable performance enhancements. WizardMath 7B exceeds Gemini's accuracy on English datasets by +6% and matches Gemini's performance on Hindi datasets. Adopting a bilingual approach that combines English and Hindi samples achieves results comparable to individual language models, demonstrating the capability to learn mathematical reasoning in both languages. This research highlights the potential for improving mathematical reasoning in open-source LLMs.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18407v1">A Statistical Framework for Ranking LLM-Based Chatbots</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-    </div>
-    <details class="paper-abstract">
-      Large language models (LLMs) have transformed natural language processing, with frameworks like Chatbot Arena providing pioneering platforms for evaluating these models. By facilitating millions of pairwise comparisons based on human judgments, Chatbot Arena has become a cornerstone in LLM evaluation, offering rich datasets for ranking models in open-ended conversational tasks. Building upon this foundation, we propose a statistical framework that incorporates key advancements to address specific challenges in pairwise comparison analysis. First, we introduce a factored tie model that enhances the ability to handle ties -- an integral aspect of human-judged comparisons -- significantly improving the model's fit to observed data. Second, we extend the framework to model covariance between competitors, enabling deeper insights into performance relationships and facilitating intuitive groupings into performance tiers. Third, we resolve optimization challenges arising from parameter non-uniqueness by introducing novel constraints, ensuring stable and interpretable parameter estimation. Through rigorous evaluation and extensive experimentation, our framework demonstrates substantial improvements over existing methods in modeling pairwise comparison data. To support reproducibility and practical adoption, we release leaderbot, an open-source Python package implementing our models and analyses.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.19840v1">ERPA: Efficient RPA Model Integrating OCR and LLMs for Intelligent Document Processing</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-      | 💬 6 pages , 2 figures, 1 algorithm
-    </div>
-    <details class="paper-abstract">
-      This paper presents ERPA, an innovative Robotic Process Automation (RPA) model designed to enhance ID data extraction and optimize Optical Character Recognition (OCR) tasks within immigration workflows. Traditional RPA solutions often face performance limitations when processing large volumes of documents, leading to inefficiencies. ERPA addresses these challenges by incorporating Large Language Models (LLMs) to improve the accuracy and clarity of extracted text, effectively handling ambiguous characters and complex structures. Benchmark comparisons with leading platforms like UiPath and Automation Anywhere demonstrate that ERPA significantly reduces processing times by up to 94 percent, completing ID data extraction in just 9.94 seconds. These findings highlight ERPA's potential to revolutionize document automation, offering a faster and more reliable alternative to current RPA solutions.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18298v1">Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-      | 💬 Research report
-    </div>
-    <details class="paper-abstract">
-      Video anomaly detection (VAD) has witnessed significant advancements through the integration of large language models (LLMs) and vision-language models (VLMs), addressing critical challenges such as interpretability, temporal reasoning, and generalization in dynamic, open-world scenarios. This paper presents an in-depth review of cutting-edge LLM-/VLM-based methods in 2024, focusing on four key aspects: (i) enhancing interpretability through semantic insights and textual explanations, making visual anomalies more understandable; (ii) capturing intricate temporal relationships to detect and localize dynamic anomalies across video frames; (iii) enabling few-shot and zero-shot detection to minimize reliance on large, annotated datasets; and (iv) addressing open-world and class-agnostic anomalies by using semantic understanding and motion features for spatiotemporal coherence. We highlight their potential to redefine the landscape of VAD. Additionally, we explore the synergy between visual and textual modalities offered by LLMs and VLMs, highlighting their combined strengths and proposing future directions to fully exploit the potential in enhancing video anomaly detection.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.16597v2">LLMs Enable Context-Aware Augmented Reality in Surgical Navigation</a></div>
-    <div class="paper-meta">
-      📅 2024-12-24
-      | 💬 32 pages, 9 figures
-    </div>
-    <details class="paper-abstract">
-      Wearable Augmented Reality (AR) technologies are gaining recognition for their potential to transform surgical navigation systems. As these technologies evolve, selecting the right interaction method to control the system becomes crucial. Our work introduces a voice-controlled user interface (VCUI) for surgical AR assistance systems (ARAS), designed for pancreatic surgery, that integrates Large Language Models (LLMs). Employing a mixed-method research approach, we assessed the usability of our LLM-based design in both simulated surgical tasks and during pancreatic surgeries, comparing its performance against conventional VCUI for surgical ARAS using speech commands. Our findings demonstrated the usability of our proposed LLM-based VCUI, yielding a significantly lower task completion time and cognitive workload compared to speech commands. Additionally, qualitative insights from interviews with surgeons aligned with the quantitative data, revealing a strong preference for the LLM-based VCUI. Surgeons emphasized its intuitiveness and highlighted the potential of LLM-based VCUI in expediting decision-making in surgical environments.
-    </details>
-</div>
-<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2412.18174v1">INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent</a></div>
     <div class="paper-meta">
       📅 2024-12-24
@@ -135,6 +77,89 @@
     </div>
     <details class="paper-abstract">
       Reinforcement learning from human feedback (RLHF) has become an essential step in fine-tuning large language models (LLMs) to align them with human preferences. However, human labelers are selfish and have diverse preferences. They may strategically misreport their online feedback to influence the system's aggregation towards their own preferences. Current practice simply averages labelers' feedback per time and fails to identify the most accurate human labeler, leading to linear regret $\mathcal{O}(T)$ for $T$ time slots. To our best knowledge, we are the first to study online learning mechanisms against strategic human labelers in the LLM fine-tuning process. We formulate a new dynamic Bayesian game and dynamically adjust human labelers' weights in the preference aggregation, ensuring their truthful feedback and sublinear regret $\mathcal{O}(T^{1/2})$. Simulation results demonstrate our mechanism's great advantages over the existing benchmark schemes.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.10179v2">Is Parameter Collision Hindering Continual Learning in LLMs?</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) often suffer from catastrophic forgetting when learning multiple tasks sequentially, making continual learning (CL) essential for their dynamic deployment. Existing state-of-the-art (SOTA) methods, such as O-LoRA, typically focus on constructing orthogonality tasks to decouple parameter interdependence from various domains.In this paper, we reveal that building non-collision parameters is a more critical factor in addressing CL challenges. Our theoretical and experimental analyses demonstrate that non-collision parameters can provide better task orthogonality, which is a sufficient but unnecessary condition. Furthermore, knowledge from multiple domains will be preserved in non-collision parameter subspaces, making it more difficult to forget previously seen data. Leveraging this insight, we propose Non-collision Low-Rank Adaptation (N-LoRA), a simple yet effective approach leveraging low collision rates to enhance CL in LLMs. Experimental results on multiple CL benchmarks indicate that N-LoRA achieves superior performance (+2.9), higher task orthogonality (*4.1 times), and lower parameter collision (*58.1 times) than SOTA methods.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2312.06024v4">Thinking Assistants: LLM-Based Conversational Assistants that Help Users Think By Asking rather than Answering</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      Many AI systems focus solely on providing solutions or explaining outcomes. However, complex tasks like research and strategic thinking often benefit from a more comprehensive approach to augmenting the thinking process rather than passively getting information. We introduce the concept of "Thinking Assistant", a new genre of assistants that help users improve decision-making with a combination of asking reflection questions based on expert knowledge. Through our lab study (N=80), these Large Language Model (LLM) based Thinking Assistants were better able to guide users to make important decisions, compared with conversational agents that only asked questions, provided advice, or neither. Based on the results, we develop a Thinking Assistant in academic career development, determining research trajectory or developing one's unique research identity, which requires deliberation, reflection and experts' advice accordingly. In a longitudinal deployment with 223 conversations, participants responded positively to approximately 65% of the responses. Our work proposes directions for developing more effective LLM agents. Rather than adhering to the prevailing authoritative approach of generating definitive answers, LLM agents aimed at assisting with cognitive enhancement should prioritize fostering reflection. They should initially provide responses designed to prompt thoughtful consideration through inquiring, followed by offering advice only after gaining a deeper understanding of the user's context and needs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18702v1">CypherBench: Towards Precise Retrieval over Full-scale Modern Knowledge Graphs in the LLM Era</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      Retrieval from graph data is crucial for augmenting large language models (LLM) with both open-domain knowledge and private enterprise data, and it is also a key component in the recent GraphRAG system (edge et al., 2024). Despite decades of research on knowledge graphs and knowledge base question answering, leading LLM frameworks (e.g. Langchain and LlamaIndex) have only minimal support for retrieval from modern encyclopedic knowledge graphs like Wikidata. In this paper, we analyze the root cause and suggest that modern RDF knowledge graphs (e.g. Wikidata, Freebase) are less efficient for LLMs due to overly large schemas that far exceed the typical LLM context window, use of resource identifiers, overlapping relation types and lack of normalization. As a solution, we propose property graph views on top of the underlying RDF graph that can be efficiently queried by LLMs using Cypher. We instantiated this idea on Wikidata and introduced CypherBench, the first benchmark with 11 large-scale, multi-domain property graphs with 7.8 million entities and over 10,000 questions. To achieve this, we tackled several key challenges, including developing an RDF-to-property graph conversion engine, creating a systematic pipeline for text-to-Cypher task generation, and designing new evaluation metrics.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2410.23884v2">Failure Modes of LLMs for Causal Reasoning on Narratives</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      In this work, we investigate the causal reasoning abilities of large language models (LLMs) through the representative problem of inferring causal relationships from narratives. We find that even state-of-the-art language models rely on unreliable shortcuts, both in terms of the narrative presentation and their parametric knowledge. For example, LLMs tend to determine causal relationships based on the topological ordering of events (i.e., earlier events cause later ones), resulting in lower performance whenever events are not narrated in their exact causal order. Similarly, we demonstrate that LLMs struggle with long-term causal reasoning and often fail when the narratives are long and contain many events. Additionally, we show LLMs appear to rely heavily on their parametric knowledge at the expense of reasoning over the provided narrative. This degrades their abilities whenever the narrative opposes parametric knowledge. We extensively validate these failure modes through carefully controlled synthetic experiments, as well as evaluations on real-world narratives. Finally, we observe that explicitly generating a causal graph generally improves performance while naive chain-of-thought is ineffective. Collectively, our results distill precise failure modes of current state-of-the-art models and can pave the way for future techniques to enhance causal reasoning in LLMs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18695v1">TimelyLLM: Segmented LLM Serving System for Time-sensitive Robotic Applications</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) such as GPT-4 and Llama3 can already comprehend complex commands and process diverse tasks. This advancement facilitates their application in controlling drones and robots for various tasks. However, existing LLM serving systems typically employ a first-come, first-served (FCFS) batching mechanism, which fails to address the time-sensitive requirements of robotic applications. To address it, this paper proposes a new system named TimelyLLM serving multiple robotic agents with time-sensitive requests. TimelyLLM introduces novel mechanisms of segmented generation and scheduling that optimally leverage redundancy between robot plan generation and execution phases. We report an implementation of TimelyLLM on a widely-used LLM serving framework and evaluate it on a range of robotic applications. Our evaluation shows that TimelyLLM improves the time utility up to 1.97x, and reduces the overall waiting time by 84%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18690v1">AgreeMate: Teaching LLMs to Haggle</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+      | 💬 15 pages, 22 figures, 6 tables
+    </div>
+    <details class="paper-abstract">
+      We introduce AgreeMate, a framework for training Large Language Models (LLMs) to perform strategic price negotiations through natural language. We apply recent advances to a negotiation setting where two agents (i.e. buyer or seller) use natural language to bargain on goods using coarse actions. Specifically, we present the performance of Large Language Models when used as agents within a decoupled (modular) bargaining architecture. We demonstrate that using prompt engineering, fine-tuning, and chain-of-thought prompting enhances model performance, as defined by novel metrics. We use attention probing to show model attention to semantic relationships between tokens during negotiations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18588v1">A Paragraph is All It Takes: Rich Robot Behaviors from Interacting, Trusted LLMs</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+      | 💬 10 pages, 1 figure
+    </div>
+    <details class="paper-abstract">
+      Large Language Models (LLMs) are compact representations of all public knowledge of our physical environment and animal and human behaviors. The application of LLMs to robotics may offer a path to highly capable robots that perform well across most human tasks with limited or even zero tuning. Aside from increasingly sophisticated reasoning and task planning, networks of (suitably designed) LLMs offer ease of upgrading capabilities and allow humans to directly observe the robot's thinking. Here we explore the advantages, limitations, and particularities of using LLMs to control physical robots. The basic system consists of four LLMs communicating via a human language data bus implemented via web sockets and ROS2 message passing. Surprisingly, rich robot behaviors and good performance across different tasks could be achieved despite the robot's data fusion cycle running at only 1Hz and the central data bus running at the extremely limited rates of the human brain, of around 40 bits/s. The use of natural language for inter-LLM communication allowed the robot's reasoning and decision making to be directly observed by humans and made it trivial to bias the system's behavior with sets of rules written in plain English. These rules were immutably written into Ethereum, a global, public, and censorship resistant Turing-complete computer. We suggest that by using natural language as the data bus among interacting AIs, and immutable public ledgers to store behavior constraints, it is possible to build robots that combine unexpectedly rich performance, upgradability, and durable alignment with humans.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18573v1">How Well Do LLMs Generate Code for Different Application Domains? Benchmark and Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      Recently, an increasing number of AI-driven programming assistants powered by code LLMs have been integrated into various real-world software development environments, significantly boosting developer productivity. However, existing code generation benchmarks primarily focus on general-purpose scenarios, leaving the code generation performance of LLMs for specific application domains largely unknown. In this paper, we introduce a new benchmark, MultiCodeBench, to fill this gap. MultiCodeBench comprises 2,400 programming tasks, covering 12 popular software development domains and 15 programming languages. Specifically, we perform in-depth research to identify these 12 application domains. Given that each domain may involve multiple technical frameworks, and that different frameworks present distinct challenges in the coding process, we categorize the commonly used frameworks and platforms within each domain. We then sample programming problems from GitHub repositories related to these subdomains. To ensure the quality of the tasks and mitigate data leakage issues, we invite annotators to rewrite the docstrings for each task in MultiCodeBench. Additionally, we build a static analysis-based dependency parsing tool to extract the dependencies in the ground truth for each task, enabling deeper performance analysis. Through extensive experiments on MultiCodeBench with eleven representative mainstream LLMs, we reveal the code generation performance of the LLMs across different application domains, providing practical insights for developers in downstream fields when selecting LLMs. Furthermore, we analyze the reasons behind the models' failures in completing software application development tasks, offering guidance for model developers to enhance domain-specific code generation capabilities.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="http://arxiv.org/abs/2412.18497v1">Think or Remember? Detecting and Directing LLMs Towards Memorization or Generalization</a></div>
+    <div class="paper-meta">
+      📅 2024-12-24
+    </div>
+    <details class="paper-abstract">
+      In this paper, we explore the foundational mechanisms of memorization and generalization in Large Language Models (LLMs), inspired by the functional specialization observed in the human brain. Our investigation serves as a case study leveraging specially designed datasets and experimental-scale LLMs to lay the groundwork for understanding these behaviors. Specifically, we aim to first enable LLMs to exhibit both memorization and generalization by training with the designed dataset, then (a) examine whether LLMs exhibit neuron-level spatial differentiation for memorization and generalization, (b) predict these behaviors using model internal representations, and (c) steer the behaviors through inference-time interventions. Our findings reveal that neuron-wise differentiation of memorization and generalization is observable in LLMs, and targeted interventions can successfully direct their behavior.
     </details>
 </div>
 <div class="paper-card">
@@ -930,33 +955,5 @@
     </div>
     <details class="paper-abstract">
       In this work, we propose a Multi-LLM summarization framework, and investigate two different multi-LLM strategies including centralized and decentralized. Our multi-LLM summarization framework has two fundamentally important steps at each round of conversation: generation and evaluation. These steps are different depending on whether our multi-LLM decentralized summarization is used or centralized. In both our multi-LLM decentralized and centralized strategies, we have k different LLMs that generate diverse summaries of the text. However, during evaluation, our multi-LLM centralized summarization approach leverages a single LLM to evaluate the summaries and select the best one whereas k LLMs are used for decentralized multi-LLM summarization. Overall, we find that our multi-LLM summarization approaches significantly outperform the baselines that leverage only a single LLM by up to 3x. These results indicate the effectiveness of multi-LLM approaches for summarization.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.07870v6">Trustful LLMs: Customizing and Grounding Text Generation with Knowledge Bases and Dual Decoders</a></div>
-    <div class="paper-meta">
-      📅 2024-12-20
-    </div>
-    <details class="paper-abstract">
-      Although people are impressed by the content generation skills of large language models, the use of LLMs, such as ChatGPT, is limited by the domain grounding of the content. The correctness and groundedness of the generated content need to be based on a verified context, such as results from Retrieval-Augmented Generation (RAG). One important issue when adapting LLMs to a customized domain is that the generated responses are often incomplete, or the additions are not verified and may even be hallucinated. Prior studies on hallucination detection have focused on evaluation metrics, which are not easily adaptable to dynamic domains and can be vulnerable to attacks like jail-breaking. In this work, we propose 1) a post-processing algorithm that leverages knowledge triplets in RAG context to correct hallucinations and 2) a dual-decoder model that fuses RAG context to guide the generation process.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2411.02820v3">DroidSpeak: KV Cache Sharing for Cross-LLM Communication and Multi-LLM Serving</a></div>
-    <div class="paper-meta">
-      📅 2024-12-19
-    </div>
-    <details class="paper-abstract">
-      Large Language Models (LLMs) are increasingly employed in complex workflows, where different LLMs and fine-tuned variants collaboratively address complex tasks. However, these systems face significant inefficiencies due to redundant context processing of the shared context. We propose DroidSpeak, a framework that optimizes context sharing between fine-tuned LLMs derived from the same foundational model. DroidSpeak identifies critical layers in the KV cache and selectively recomputes them, enabling effective reuse of intermediate data while maintaining high accuracy. Our approach balances computational efficiency and task fidelity, significantly reducing inference latency and throughput bottlenecks. Experiments on diverse datasets and model pairs demonstrate that DroidSpeak achieves up to 3x higher throughputs and 2.6x faster prefill times with negligible accuracy loss compared to full recomputation.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="http://arxiv.org/abs/2412.15453v1">Northeastern Uni at Multilingual Counterspeech Generation: Enhancing Counter Speech Generation with LLM Alignment through Direct Preference Optimization</a></div>
-    <div class="paper-meta">
-      📅 2024-12-19
-      | 💬 10 pages, 6 tables, 1 figure, The First Workshop on Multilingual Counterspeech Generation (MCG) at The 31st International Conference on Computational Linguistics (COLING 2025)
-    </div>
-    <details class="paper-abstract">
-      The automatic generation of counter-speech (CS) is a critical strategy for addressing hate speech by providing constructive and informed responses. However, existing methods often fail to generate high-quality, impactful, and scalable CS, particularly across diverse linguistic contexts. In this paper, we propose a novel methodology to enhance CS generation by aligning Large Language Models (LLMs) using Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO). Our approach leverages DPO to align LLM outputs with human preferences, ensuring contextually appropriate and linguistically adaptable responses. Additionally, we incorporate knowledge grounding to enhance the factual accuracy and relevance of generated CS. Experimental results demonstrate that DPO-aligned models significantly outperform SFT baselines on CS benchmarks while scaling effectively to multiple languages. These findings highlight the potential of preference-based alignment techniques to advance CS generation across varied linguistic settings. The model supervision and alignment is done in English and the same model is used for reporting metrics across other languages like Basque, Italian, and Spanish.
     </details>
 </div>
