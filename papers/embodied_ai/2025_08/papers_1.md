@@ -92,6 +92,34 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2412.10439v3">CogNav: Cognitive Process Modeling for Object Goal Navigation with LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-08-28
+    </div>
+    <details class="paper-abstract">
+      Object goal navigation (ObjectNav) is a fundamental task in embodied AI, requiring an agent to locate a target object in previously unseen environments. This task is particularly challenging because it requires both perceptual and cognitive processes, including object recognition and decision-making. While substantial advancements in perception have been driven by the rapid development of visual foundation models, progress on the cognitive aspect remains constrained, primarily limited to either implicit learning through simulator rollouts or explicit reliance on predefined heuristic rules. Inspired by neuroscientific findings demonstrating that humans maintain and dynamically update fine-grained cognitive states during object search tasks in novel environments, we propose CogNav, a framework designed to mimic this cognitive process using large language models. Specifically, we model the cognitive process using a finite state machine comprising fine-grained cognitive states, ranging from exploration to identification. Transitions between states are determined by a large language model based on a dynamically constructed heterogeneous cognitive map, which contains spatial and semantic information about the scene being explored. Extensive evaluations on the HM3D, MP3D, and RoboTHOR benchmarks demonstrate that our cognitive process modeling significantly improves the success rate of ObjectNav at least by relative 14% over the state-of-the-arts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.11030v3">Families' Vision of Generative AI Agents for Household Safety Against Digital and Physical Threats</a></div>
+    <div class="paper-meta">
+      📅 2025-08-28
+      | 💬 Accepted in Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW
+    </div>
+    <details class="paper-abstract">
+      As families face increasingly complex safety challenges in digital and physical environments, generative AI (GenAI) presents new opportunities to support household safety through multiple specialized AI agents. Through a two-phase qualitative study consisting of individual interviews and collaborative sessions with 13 parent-child dyads, we explored families' conceptualizations of GenAI and their envisioned use of AI agents in daily family life. Our findings reveal that families preferred to distribute safety-related support across multiple AI agents, each embodying a familiar caregiving role: a household manager coordinating routine tasks and mitigating risks such as digital fraud and home accidents; a private tutor providing personalized educational support, including safety education; and a family therapist offering emotional support to address sensitive safety issues such as cyberbullying and digital harassment. Families emphasized the need for agent-specific privacy boundaries, recognized generational differences in trust toward AI agents, and stressed the importance of maintaining open family communication alongside the assistance of AI agents. Based on these findings, we propose a multi-agent system design featuring four privacy-preserving principles: memory segregation, conversational consent, selective data sharing, and progressive memory management to help balance safety, privacy, and autonomy within family contexts.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.19562v1">Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities</a></div>
+    <div class="paper-meta">
+      📅 2025-08-27
+    </div>
+    <details class="paper-abstract">
+      This paper introduces Democracy-in-Silico, an agent-based simulation where societies of advanced AI agents, imbued with complex psychological personas, govern themselves under different institutional frameworks. We explore what it means to be human in an age of AI by tasking Large Language Models (LLMs) to embody agents with traumatic memories, hidden agendas, and psychological triggers. These agents engage in deliberation, legislation, and elections under various stressors, such as budget crises and resource scarcity. We present a novel metric, the Power-Preservation Index (PPI), to quantify misaligned behavior where agents prioritize their own power over public welfare. Our findings demonstrate that institutional design, specifically the combination of a Constitutional AI (CAI) charter and a mediated deliberation protocol, serves as a potent alignment mechanism. These structures significantly reduce corrupt power-seeking behavior, improve policy stability, and enhance citizen welfare compared to less constrained democratic models. The simulation reveals that an institutional design may offer a framework for aligning the complex, emergent behaviors of future artificial agent societies, forcing us to reconsider what human rituals and responsibilities are essential in an age of shared authorship with non-human entities.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/pdf/2407.06886v8">Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI</a></div>
     <div class="paper-meta">
       📅 2025-08-26
@@ -99,6 +127,16 @@
     </div>
     <details class="paper-abstract">
       Embodied Artificial Intelligence (Embodied AI) is crucial for achieving Artificial General Intelligence (AGI) and serves as a foundation for various applications (e.g., intelligent mechatronics systems, smart manufacturing) that bridge cyberspace and the physical world. Recently, the emergence of Multi-modal Large Models (MLMs) and World Models (WMs) have attracted significant attention due to their remarkable perception, interaction, and reasoning capabilities, making them a promising architecture for embodied agents. In this survey, we give a comprehensive exploration of the latest advancements in Embodied AI. Our analysis firstly navigates through the forefront of representative works of embodied robots and simulators, to fully understand the research focuses and their limitations. Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets. Additionally, we explore the complexities of MLMs in virtual and real embodied agents, highlighting their significance in facilitating interactions in digital and physical environments. Finally, we summarize the challenges and limitations of embodied AI and discuss potential future directions. We hope this survey will serve as a foundational reference for the research community. The associated project can be found at https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.19004v1">AI Models Exceed Individual Human Accuracy in Predicting Everyday Social Norms</a></div>
+    <div class="paper-meta">
+      📅 2025-08-26
+      | 💬 18 pages + supplementy materials
+    </div>
+    <details class="paper-abstract">
+      A fundamental question in cognitive science concerns how social norms are acquired and represented. While humans typically learn norms through embodied social experience, we investigated whether large language models can achieve sophisticated norm understanding through statistical learning alone. Across two studies, we systematically evaluated multiple AI systems' ability to predict human social appropriateness judgments for 555 everyday scenarios by examining how closely they predicted the average judgment compared to each human participant. In Study 1, GPT-4.5's accuracy in predicting the collective judgment on a continuous scale exceeded that of every human participant (100th percentile). Study 2 replicated this, with Gemini 2.5 Pro outperforming 98.7% of humans, GPT-5 97.8%, and Claude Sonnet 4 96.0%. Despite this predictive power, all models showed systematic, correlated errors. These findings demonstrate that sophisticated models of social cognition can emerge from statistical learning over linguistic data alone, challenging strong versions of theories emphasizing the exclusive necessity of embodied experience for cultural competence. The systematic nature of AI limitations across different architectures indicates potential boundaries of pattern-based social understanding, while the models' ability to outperform nearly all individual humans in this predictive task suggests that language serves as a remarkably rich repository for cultural knowledge transmission.
     </details>
 </div>
 <div class="paper-card">
@@ -131,6 +169,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.18563v1">The Quasi-Creature and the Uncanny Valley of Agency: A Synthesis of Theory and Evidence on User Interaction with Inconsistent Generative AI</a></div>
+    <div class="paper-meta">
+      📅 2025-08-25
+      | 💬 33 pages, 9 figures
+    </div>
+    <details class="paper-abstract">
+      The user experience with large-scale generative AI is paradoxical: superhuman fluency meets absurd failures in common sense and consistency. This paper argues that the resulting potent frustration is an ontological problem, stemming from the "Quasi-Creature"-an entity simulating intelligence without embodiment or genuine understanding. Interaction with this entity precipitates the "Uncanny Valley of Agency," a framework where user comfort drops when highly agentic AI proves erratically unreliable. Its failures are perceived as cognitive breaches, causing profound cognitive dissonance. Synthesizing HCI, cognitive science, and philosophy of technology, this paper defines the Quasi-Creature and details the Uncanny Valley of Agency. An illustrative mixed-methods study ("Move 78," N=37) of a collaborative creative task reveals a powerful negative correlation between perceived AI efficiency and user frustration, central to the negative experience. This framework robustly explains user frustration with generative AI and has significant implications for the design, ethics, and societal integration of these powerful, alien technologies.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2502.09787v2">TableTalk: Scaffolding Spreadsheet Development with a Language Agent</a></div>
+    <div class="paper-meta">
+      📅 2025-08-25
+    </div>
+    <details class="paper-abstract">
+      Spreadsheet programming is challenging. Programmers use spreadsheet programming knowledge (e.g., formulas) and problem-solving skills to combine actions into complex tasks. Advancements in large language models have introduced language agents that observe, plan, and perform tasks, showing promise for spreadsheet creation. We present TableTalk, a spreadsheet programming agent embodying three design principles -- scaffolding, flexibility, and incrementality -- derived from studies with seven spreadsheet programmers and 85 Excel templates. TableTalk guides programmers through structured plans based on professional workflows, generating three potential next steps to adapt plans to programmer needs. It uses pre-defined tools to generate spreadsheet components and incrementally build spreadsheets. In a study with 20 programmers, TableTalk produced higher-quality spreadsheets 2.3 times more likely to be preferred than the baseline. It reduced cognitive load and thinking time by 12.6%. From this, we derive design guidelines for agentic spreadsheet programming tools and discuss implications on spreadsheet programming, end-user programming, AI-assisted programming, and human-agent collaboration.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2506.15610v3">BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion</a></div>
     <div class="paper-meta">
       📅 2025-08-24
@@ -142,6 +199,26 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2502.17894v2">FetchBot: Learning Generalizable Object Fetching in Cluttered Scenes via Zero-Shot Sim2Real</a></div>
+    <div class="paper-meta">
+      📅 2025-08-24
+      | 💬 9th Annual Conference on Robot Learning (CoRL 2025, Oral)
+    </div>
+    <details class="paper-abstract">
+      Generalizable object fetching in cluttered scenes remains a fundamental and application-critical challenge in embodied AI. Closely packed objects cause inevitable occlusions, making safe action generation particularly difficult. Under such partial observability, effective policies must not only generalize across diverse objects and layouts but also reason about occlusion to avoid collisions. However, collecting large-scale real-world data for this task remains prohibitively expensive, leaving this problem largely unsolved. In this paper, we introduce FetchBot, a sim-to-real framework for this challenge. We first curate a large-scale synthetic dataset featuring 1M diverse scenes and 500k representative demonstrations. Based on this dataset, FetchBot employs a depth-conditioned method for action generation, which leverages structural cues to enable robust obstacle-aware action planning. However, depth is perfect in simulation but noisy in real-world environments. To address this sim-to-real gap, FetchBot predicts depth from RGB inputs using a foundation model and integrates local occupancy prediction as a pre-training task, providing a generalizable latent representation for sim-to-real transfer. Extensive experiments in simulation and real-world environments demonstrate the strong zero-shot sim-to-real transfer, effective clutter handling, and adaptability to novel scenarios. In cluttered environments, it achieves an average real-world success rate of 89.95%, significantly outperforming prior methods. Moreover, FetchBot demonstrates excellent robustness in challenging cases, such as fetching transparent, reflective, and irregular objects, highlighting its practical value.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2506.15610v3">BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion</a></div>
+    <div class="paper-meta">
+      📅 2025-08-24
+      | 💬 Project page: https://lanlan96.github.io/BoxFusion/
+    </div>
+    <details class="paper-abstract">
+      Open-vocabulary 3D object detection has gained significant interest due to its critical applications in autonomous driving and embodied AI. Existing detection methods, whether offline or online, typically rely on dense point cloud reconstruction, which imposes substantial computational overhead and memory constraints, hindering real-time deployment in downstream tasks. To address this, we propose a novel reconstruction-free online framework tailored for memory-efficient and real-time 3D detection. Specifically, given streaming posed RGB-D video input, we leverage Cubify Anything as a pre-trained visual foundation model (VFM) for single-view 3D object detection by bounding boxes, coupled with CLIP to capture open-vocabulary semantics of detected objects. To fuse all detected bounding boxes across different views into a unified one, we employ an association module for correspondences of multi-views and an optimization module to fuse the 3D bounding boxes of the same instance predicted in multi-views. The association module utilizes 3D Non-Maximum Suppression (NMS) and a box correspondence matching module, while the optimization module uses an IoU-guided efficient random optimization technique based on particle filtering to enforce multi-view consistency of the 3D bounding boxes while minimizing computational complexity. Extensive experiments on ScanNetV2 and CA-1M datasets demonstrate that our method achieves state-of-the-art performance among online methods. Benefiting from this novel reconstruction-free paradigm for 3D object detection, our method exhibits great generalization abilities in various scenarios, enabling real-time perception even in environments exceeding 1000 square meters.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2502.17894v2">FetchBot: Learning Generalizable Object Fetching in Cluttered Scenes via Zero-Shot Sim2Real</a></div>
     <div class="paper-meta">
       📅 2025-08-24
       | 💬 9th Annual Conference on Robot Learning (CoRL 2025, Oral)
@@ -190,6 +267,25 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.15769v1">SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass</a></div>
+    <div class="paper-meta">
+      📅 2025-08-21
+      | 💬 Technical Report; Project Page: https://mengmouxu.github.io/SceneGen
+    </div>
+    <details class="paper-abstract">
+      3D content generation has recently attracted significant research interest due to its applications in VR/AR and embodied AI. In this work, we address the challenging task of synthesizing multiple 3D assets within a single scene image. Concretely, our contributions are fourfold: (i) we present SceneGen, a novel framework that takes a scene image and corresponding object masks as input, simultaneously producing multiple 3D assets with geometry and texture. Notably, SceneGen operates with no need for optimization or asset retrieval; (ii) we introduce a novel feature aggregation module that integrates local and global scene information from visual and geometric encoders within the feature extraction module. Coupled with a position head, this enables the generation of 3D assets and their relative spatial positions in a single feedforward pass; (iii) we demonstrate SceneGen's direct extensibility to multi-image input scenarios. Despite being trained solely on single-image inputs, our architectural design enables improved generation performance with multi-image inputs; and (iv) extensive quantitative and qualitative evaluations confirm the efficiency and robust generation abilities of our approach. We believe this paradigm offers a novel solution for high-quality 3D content generation, potentially advancing its practical applications in downstream tasks. The code and model will be publicly available at: https://mengmouxu.github.io/SceneGen.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.15663v1">Mind and Motion Aligned: A Joint Evaluation IsaacSim Benchmark for Task Planning and Low-Level Policies in Mobile Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-08-21
+    </div>
+    <details class="paper-abstract">
+      Benchmarks are crucial for evaluating progress in robotics and embodied AI. However, a significant gap exists between benchmarks designed for high-level language instruction following, which often assume perfect low-level execution, and those for low-level robot control, which rely on simple, one-step commands. This disconnect prevents a comprehensive evaluation of integrated systems where both task planning and physical execution are critical. To address this, we propose Kitchen-R, a novel benchmark that unifies the evaluation of task planning and low-level control within a simulated kitchen environment. Built as a digital twin using the Isaac Sim simulator and featuring more than 500 complex language instructions, Kitchen-R supports a mobile manipulator robot. We provide baseline methods for our benchmark, including a task-planning strategy based on a vision-language model and a low-level control policy based on diffusion policy. We also provide a trajectory collection system. Our benchmark offers a flexible framework for three evaluation modes: independent assessment of the planning module, independent assessment of the control policy, and, crucially, an integrated evaluation of the whole system. Kitchen-R bridges a key gap in embodied AI research, enabling more holistic and realistic benchmarking of language-guided robotic agents.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.15119v1">Open-Universe Assistance Games</a></div>
     <div class="paper-meta">
       📅 2025-08-20
@@ -235,6 +331,35 @@
     </div>
     <details class="paper-abstract">
       Recent advances in whole-body robot control have enabled humanoid and legged robots to execute increasingly agile and coordinated movements. However, standardized benchmarks for evaluating robotic athletic performance in real-world settings and in direct comparison to humans remain scarce. We present Switch4EAI(Switch-for-Embodied-AI), a low-cost and easily deployable pipeline that leverages motion-sensing console games to evaluate whole-body robot control policies. Using Just Dance on the Nintendo Switch as a representative example, our system captures, reconstructs, and retargets in-game choreography for robotic execution. We validate the system on a Unitree G1 humanoid with an open-source whole-body controller, establishing a quantitative baseline for the robot's performance against a human player. In the paper, we discuss these results, which demonstrate the feasibility of using commercial games platform as physically grounded benchmarks and motivate future work to for benchmarking embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.15119v1">Open-Universe Assistance Games</a></div>
+    <div class="paper-meta">
+      📅 2025-08-20
+      | 💬 7 pages + 2 pages references + 7 pages appendix
+    </div>
+    <details class="paper-abstract">
+      Embodied AI agents must infer and act in an interpretable way on diverse human goals and preferences that are not predefined. To formalize this setting, we introduce Open-Universe Assistance Games (OU-AGs), a framework where the agent must reason over an unbounded and evolving space of possible goals. In this context, we introduce GOOD (GOals from Open-ended Dialogue), a data-efficient, online method that extracts goals in the form of natural language during an interaction with a human, and infers a distribution over natural language goals. GOOD prompts an LLM to simulate users with different complex intents, using its responses to perform probabilistic inference over candidate goals. This approach enables rich goal representations and uncertainty estimation without requiring large offline datasets. We evaluate GOOD in a text-based grocery shopping domain and in a text-operated simulated household robotics environment (AI2Thor), using synthetic user profiles. Our method outperforms a baseline without explicit goal tracking, as confirmed by both LLM-based and human evaluations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.14893v1">Virtual Community: An Open World for Humans, Robots, and Society</a></div>
+    <div class="paper-meta">
+      📅 2025-08-20
+      | 💬 website https://virtual-community-ai.github.io/
+    </div>
+    <details class="paper-abstract">
+      The rapid progress in AI and Robotics may lead to a profound societal transformation, as humans and robots begin to coexist within shared communities, introducing both opportunities and challenges. To explore this future, we present Virtual Community-an open-world platform for humans, robots, and society-built on a universal physics engine and grounded in real-world 3D scenes. With Virtual Community, we aim to study embodied social intelligence at scale: 1) How robots can intelligently cooperate or compete; 2) How humans develop social relations and build community; 3) More importantly, how intelligent robots and humans can co-exist in an open world. To support these, Virtual Community features: 1) An open-source multi-agent physics simulator that supports robots, humans, and their interactions within a society; 2) A large-scale, real-world aligned community generation pipeline, including vast outdoor space, diverse indoor scenes, and a community of grounded agents with rich characters and appearances. Leveraging Virtual Community, we propose two novel challenges. The Community Planning Challenge evaluates multi-agent reasoning and planning ability in open-world settings, such as cooperating to help agents with daily activities and efficiently connecting other agents. The Community Robot Challenge requires multiple heterogeneous robots to collaborate in solving complex open-world tasks. We evaluate various baselines on these tasks and demonstrate the challenges in both high-level open-world task planning and low-level cooperation controls. We hope that Virtual Community will unlock further study of human-robot coexistence within open-world environments.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.10287v2">JRDB-Reasoning: A Difficulty-Graded Benchmark for Visual Reasoning in Robotics</a></div>
+    <div class="paper-meta">
+      📅 2025-08-20
+    </div>
+    <details class="paper-abstract">
+      Recent advances in Vision-Language Models (VLMs) and large language models (LLMs) have greatly enhanced visual reasoning, a key capability for embodied AI agents like robots. However, existing visual reasoning benchmarks often suffer from several limitations: they lack a clear definition of reasoning complexity, offer have no control to generate questions over varying difficulty and task customization, and fail to provide structured, step-by-step reasoning annotations (workflows). To bridge these gaps, we formalize reasoning complexity, introduce an adaptive query engine that generates customizable questions of varying complexity with detailed intermediate annotations, and extend the JRDB dataset with human-object interaction and geometric relationship annotations to create JRDB-Reasoning, a benchmark tailored for visual reasoning in human-crowded environments. Our engine and benchmark enable fine-grained evaluation of visual reasoning frameworks and dynamic assessment of visual-language models across reasoning levels.
     </details>
 </div>
 <div class="paper-card">
@@ -321,6 +446,24 @@
     </div>
     <details class="paper-abstract">
       Recent advances in whole-body robot control have enabled humanoid and legged robots to execute increasingly agile and coordinated movements. However, standardized benchmarks for evaluating robotic athletic performance in real-world settings and in direct comparison to humans remain scarce. We present Switch4EAI(Switch-for-Embodied-AI), a low-cost and easily deployable pipeline that leverages motion-sensing console games to evaluate whole-body robot control policies. Using Just Dance on the Nintendo Switch as a representative example, our system captures, reconstructs, and retargets in-game choreography for robotic execution. We validate the system on a Unitree G1 humanoid with an open-source whole-body controller, establishing a quantitative baseline for the robot's performance against a human player. In the paper, we discuss these results, which demonstrate the feasibility of using commercial games platform as physically grounded benchmarks and motivate future work to for benchmarking embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.14201v1">Breakable Machine: A K-12 Classroom Game for Transformative AI Literacy Through Spoofing and eXplainable AI (XAI)</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+    </div>
+    <details class="paper-abstract">
+      This paper, submitted to the special track on resources for teaching AI in K-12, presents an eXplainable AI (XAI)-based classroom game "Breakable Machine" for teaching critical, transformative AI literacy through adversarial play and interrogation of AI systems. Designed for learners aged 10-15, the game invites students to spoof an image classifier by manipulating their appearance or environment in order to trigger high-confidence misclassifications. Rather than focusing on building AI models, this activity centers on breaking them-exposing their brittleness, bias, and vulnerability through hands-on, embodied experimentation. The game includes an XAI view to help students visualize feature saliency, revealing how models attend to specific visual cues. A shared classroom leaderboard fosters collaborative inquiry and comparison of strategies, turning the classroom into a site for collective sensemaking. This approach reframes AI education by treating model failure and misclassification not as problems to be debugged, but as pedagogically rich opportunities to interrogate AI as a sociotechnical system. In doing so, the game supports students in developing data agency, ethical awareness, and a critical stance toward AI systems increasingly embedded in everyday life. The game and its source code are freely available.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13530v1">CrafterDojo: A Suite of Foundation Models for Building Open-Ended Embodied Agents in Crafter</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+    </div>
+    <details class="paper-abstract">
+      Developing general-purpose embodied agents is a core challenge in AI. Minecraft provides rich complexity and internet-scale data, but its slow speed and engineering overhead make it unsuitable for rapid prototyping. Crafter offers a lightweight alternative that retains key challenges from Minecraft, yet its use has remained limited to narrow tasks due to the absence of foundation models that have driven progress in the Minecraft setting. In this paper, we present CrafterDojo, a suite of foundation models and tools that unlock the Crafter environment as a lightweight, prototyping-friendly, and Minecraft-like testbed for general-purpose embodied agent research. CrafterDojo addresses this by introducing CrafterVPT, CrafterCLIP, and CrafterSteve-1 for behavior priors, vision-language grounding, and instruction following, respectively. In addition, we provide toolkits for generating behavior and caption datasets (CrafterPlay and CrafterCaption), reference agent implementations, benchmark evaluations, and a complete open-source codebase.
     </details>
 </div>
 <div class="paper-card">
