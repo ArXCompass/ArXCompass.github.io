@@ -9,6 +9,113 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2506.08334v3">iTACO: Interactable Digital Twins of Articulated Objects from Casually Captured RGBD Videos</a></div>
+    <div class="paper-meta">
+      📅 2025-11-17
+      | 💬 3DV 2026 camera-ready version. Project website can be found at https://3dlg-hcvc.github.io/video2articulation/
+    </div>
+    <details class="paper-abstract">
+      Articulated objects are prevalent in daily life. Interactable digital twins of such objects have numerous applications in embodied AI and robotics. Unfortunately, current methods to digitize articulated real-world objects require carefully captured data, preventing practical, scalable, and generalizable acquisition. We focus on motion analysis and part-level segmentation of an articulated object from a casually captured RGBD video shot with a hand-held camera. A casually captured video of an interaction with an articulated object is easy to obtain at scale using smartphones. However, this setting is challenging due to simultaneous object and camera motion and significant occlusions as the person interacts with the object. To tackle these challenges, we introduce iTACO: a coarse-to-fine framework that infers joint parameters and segments movable parts of the object from a dynamic RGBD video. To evaluate our method under this new setting, we build a dataset of 784 videos containing 284 objects across 11 categories that is 20$\times$ larger than available in prior work. We then compare our approach with existing methods that also take video as input. Our experiments show that iTACO outperforms existing articulated object digital twin methods on both synthetic and real casually captured RGBD videos.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.13648v1">PhysX-Anything: Simulation-Ready Physical 3D Assets from Single Image</a></div>
+    <div class="paper-meta">
+      📅 2025-11-17
+      | 💬 Project page: https://physx-anything.github.io/
+    </div>
+    <details class="paper-abstract">
+      3D modeling is shifting from static visual representations toward physical, articulated assets that can be directly used in simulation and interaction. However, most existing 3D generation methods overlook key physical and articulation properties, thereby limiting their utility in embodied AI. To bridge this gap, we introduce PhysX-Anything, the first simulation-ready physical 3D generative framework that, given a single in-the-wild image, produces high-quality sim-ready 3D assets with explicit geometry, articulation, and physical attributes. Specifically, we propose the first VLM-based physical 3D generative model, along with a new 3D representation that efficiently tokenizes geometry. It reduces the number of tokens by 193x, enabling explicit geometry learning within standard VLM token budgets without introducing any special tokens during fine-tuning and significantly improving generative quality. In addition, to overcome the limited diversity of existing physical 3D datasets, we construct a new dataset, PhysX-Mobility, which expands the object categories in prior physical 3D datasets by over 2x and includes more than 2K common real-world objects with rich physical annotations. Extensive experiments on PhysX-Mobility and in-the-wild images demonstrate that PhysX-Anything delivers strong generative performance and robust generalization. Furthermore, simulation-based experiments in a MuJoCo-style environment validate that our sim-ready assets can be directly used for contact-rich robotic policy learning. We believe PhysX-Anything can substantially empower a broad range of downstream applications, especially in embodied AI and physics-based simulation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.13524v1">FreeAskWorld: An Interactive and Closed-Loop Simulator for Human-Centric Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2025-11-17
+      | 💬 9 pages, 4 figures
+    </div>
+    <details class="paper-abstract">
+      As embodied intelligence emerges as a core frontier in artificial intelligence research, simulation platforms must evolve beyond low-level physical interactions to capture complex, human-centered social behaviors. We introduce FreeAskWorld, an interactive simulation framework that integrates large language models (LLMs) for high-level behavior planning and semantically grounded interaction, informed by theories of intention and social cognition. Our framework supports scalable, realistic human-agent simulations and includes a modular data generation pipeline tailored for diverse embodied tasks.To validate the framework, we extend the classic Vision-and-Language Navigation (VLN) task into a interaction enriched Direction Inquiry setting, wherein agents can actively seek and interpret navigational guidance. We present and publicly release FreeAskWorld, a large-scale benchmark dataset comprising reconstructed environments, six diverse task types, 16 core object categories, 63,429 annotated sample frames, and more than 17 hours of interaction data to support training and evaluation of embodied AI systems. We benchmark VLN models, and human participants under both open-loop and closed-loop settings. Experimental results demonstrate that models fine-tuned on FreeAskWorld outperform their original counterparts, achieving enhanced semantic understanding and interaction competency. These findings underscore the efficacy of socially grounded simulation frameworks in advancing embodied AI systems toward sophisticated high-level planning and more naturalistic human-agent interaction. Importantly, our work underscores that interaction itself serves as an additional information modality.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.13411v1">An Operational Kardashev-Style Scale for Autonomous AI - Towards AGI and Superintelligence</a></div>
+    <div class="paper-meta">
+      📅 2025-11-17
+    </div>
+    <details class="paper-abstract">
+      We propose a Kardashev-inspired yet operational Autonomous AI (AAI) Scale that measures the progression from fixed robotic process automation (AAI-0) to full artificial general intelligence (AAI-4) and beyond. Unlike narrative ladders, our scale is multi-axis and testable. We define ten capability axes (Autonomy, Generality, Planning, Memory/Persistence, Tool Economy, Self-Revision, Sociality/Coordination, Embodiment, World-Model Fidelity, Economic Throughput) aggregated by a composite AAI-Index (a weighted geometric mean). We introduce a measurable Self-Improvement Coefficient $κ$ (capability growth per unit of agent-initiated resources) and two closure properties (maintenance and expansion) that convert ``self-improving AI'' into falsifiable criteria. We specify OWA-Bench, an open-world agency benchmark suite that evaluates long-horizon, tool-using, persistent agents. We define level gates for AAI-0\ldots AAI-4 using thresholds on the axes, $κ$, and closure proofs. Synthetic experiments illustrate how present-day systems map onto the scale and how the delegability frontier (quality vs.\ autonomy) advances with self-improvement. We also prove a theorem that AAI-3 agent becomes AAI-5 over time with sufficient conditions, formalizing "baby AGI" becomes Superintelligence intuition.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2410.22041v3">An LLM-based Simulation Framework for Embodied Conversational Agents in Psychological Counseling</a></div>
+    <div class="paper-meta">
+      📅 2025-11-17
+      | 💬 Accepted to AAAI 2026
+    </div>
+    <details class="paper-abstract">
+      Due to privacy concerns, open dialogue datasets for mental health are primarily generated through human or AI synthesis methods. However, the inherent implicit nature of psychological processes, particularly those of clients, poses challenges to the authenticity and diversity of synthetic data. In this paper, we propose ECAs (short for Embodied Conversational Agents), a framework for embodied agent simulation based on Large Language Models (LLMs) that incorporates multiple psychological theoretical principles.Using simulation, we expand real counseling case data into a nuanced embodied cognitive memory space and generate dialogue data based on high-frequency counseling questions.We validated our framework using the D4 dataset. First, we created a public ECAs dataset through batch simulations based on D4. Licensed counselors evaluated our method, demonstrating that it significantly outperforms baselines in simulation authenticity and necessity. Additionally, two LLM-based automated evaluation methods were employed to confirm the higher quality of the generated dialogues compared to the baselines. The source code and dataset are available at https://github.com/AIR-DISCOVER/ECAs-Dataset.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12533v1">Designing-with More-than-Human Through Human Augmentation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-16
+      | 💬 Submitted to DRS 2026
+    </div>
+    <details class="paper-abstract">
+      The recent more-than-human turn in design calls for "designing-with" other species and ecologies beyond humans. Yet-as Thomas Nagel's famous "What is it like to be a bat?" thought experiment highlights-human experience is constrained by our own sensorium and an irreducible gap in phenomenal access to nonhuman lifeworlds. This paper proposes More-than-Human through Human Augmentation (MtHtHA, denoted ">HtH+") as a design approach that repurposes human augmentation technologies-typically aimed at enhancing human capabilities-away from human optimization and exceptionalism but toward eco-phenomenological awareness. Grounded in somaesthetic design and eco-somatics, MtHtHA entails creating temporary, embodied experiences that modulate the human Umwelt to re-sensitize us to pluriversal more-than-human perceptions. We articulate seven design principles and report five design cases-EchoVision (bat-like echolocation), FeltSight (star-nosed-mole tactile navigation), FungiSync (fungal network attunement), TentacUs (octopus-like distributed agency), and City of Sparkles (urban data from AI's perspective). We demonstrate that such experiential "designing-with" can cultivate ecological awareness, empathy and obligations of care across species boundaries.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12436v1">RoboAfford++: A Generative AI-Enhanced Dataset for Multimodal Affordance Learning in Robotic Manipulation and Navigation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-16
+    </div>
+    <details class="paper-abstract">
+      Robotic manipulation and navigation are fundamental capabilities of embodied intelligence, enabling effective robot interactions with the physical world. Achieving these capabilities requires a cohesive understanding of the environment, including object recognition to localize target objects, object affordances to identify potential interaction areas and spatial affordances to discern optimal areas for both object placement and robot movement. While Vision-Language Models (VLMs) excel at high-level task planning and scene understanding, they often struggle to infer actionable positions for physical interaction, such as functional grasping points and permissible placement regions. This limitation stems from the lack of fine-grained annotations for object and spatial affordances in their training datasets. To tackle this challenge, we introduce RoboAfford++, a generative AI-enhanced dataset for multimodal affordance learning for both robotic manipulation and navigation. Our dataset comprises 869,987 images paired with 2.0 million question answering (QA) annotations, covering three critical tasks: object affordance recognition to identify target objects based on attributes and spatial relationships, object affordance prediction to pinpoint functional parts for manipulation, and spatial affordance localization to identify free space for object placement and robot navigation. Complementing this dataset, we propose RoboAfford-Eval, a comprehensive benchmark for assessing affordance-aware prediction in real-world scenarios, featuring 338 meticulously annotated samples across the same three tasks. Extensive experimental results reveal the deficiencies of existing VLMs in affordance learning, while fine-tuning on the RoboAfford++ dataset significantly enhances their ability to reason about object and spatial affordances, validating the dataset's effectiveness.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12368v1">Fast Reasoning Segmentation for Images and Videos</a></div>
+    <div class="paper-meta">
+      📅 2025-11-15
+    </div>
+    <details class="paper-abstract">
+      Reasoning segmentation enables open-set object segmentation via implicit text queries, therefore serving as a foundation for embodied agents that should operate autonomously in real-world environments. However, existing methods for reasoning segmentation require multimodal large language models with billions of parameters that exceed the computational capabilities of edge devices that typically deploy the embodied AI systems. Distillation offers a pathway to compress these models while preserving their capabilities. Yet, existing distillation approaches fail to transfer the multi-step reasoning capabilities that reasoning segmentation demands, as they focus on matching output predictions and intermediate features rather than preserving reasoning chains. The emerging paradigm of reasoning over digital twin representations presents an opportunity for more effective distillation by re-framing the problem. Consequently, we propose FastReasonSeg, which employs digital twin representations that decouple perception from reasoning to enable more effective distillation. Our distillation scheme first relies on supervised fine-tuning on teacher-generated reasoning chains. Then it is followed by reinforcement fine-tuning with joint rewards evaluating both segmentation accuracy and reasoning quality alignment. Experiments on two video (JiTBench, RVTBench) and two image benchmarks (ReasonSeg, LLM-Seg40K) demonstrate that our FastReasonSeg achieves state-of-the-art reasoning segmentation performance. Moreover, the distilled 0.6B variant outperforms models with 20 times more parameters while achieving 7.79 FPS throughput with only 2.1GB memory consumption. This efficiency enables deployment in resource-constrained environments to enable real-time reasoning segmentation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.19002v2">VIR-Bench: Evaluating Geospatial and Temporal Understanding of MLLMs via Travel Video Itinerary Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2025-11-15
+      | 💬 AAAI 2026
+    </div>
+    <details class="paper-abstract">
+      Recent advances in multimodal large language models (MLLMs) have significantly enhanced video understanding capabilities, opening new possibilities for practical applications. Yet current video benchmarks focus largely on indoor scenes or short-range outdoor activities, leaving the challenges associated with long-distance travel largely unexplored. Mastering extended geospatial-temporal trajectories is critical for next-generation MLLMs, underpinning real-world tasks such as embodied-AI planning and navigation. To bridge this gap, we present VIR-Bench, a novel benchmark consisting of 200 travel videos that frames itinerary reconstruction as a challenging task designed to evaluate and push forward MLLMs' geospatial-temporal intelligence. Experimental results reveal that state-of-the-art MLLMs, including proprietary ones, struggle to achieve high scores, underscoring the difficulty of handling videos that span extended spatial and temporal scales. Moreover, we conduct an in-depth case study in which we develop a prototype travel-planning agent that leverages the insights gained from VIR-Bench. The agent's markedly improved itinerary recommendations verify that our evaluation protocol not only benchmarks models effectively but also translates into concrete performance gains in user-facing applications.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12040v1">SRSplat: Feed-Forward Super-Resolution Gaussian Splatting from Sparse Multi-View Images</a></div>
+    <div class="paper-meta">
+      📅 2025-11-15
+      | 💬 AAAI2026-Oral. Project Page: https://xinyuanhu66.github.io/SRSplat/
+    </div>
+    <details class="paper-abstract">
+      Feed-forward 3D reconstruction from sparse, low-resolution (LR) images is a crucial capability for real-world applications, such as autonomous driving and embodied AI. However, existing methods often fail to recover fine texture details. This limitation stems from the inherent lack of high-frequency information in LR inputs. To address this, we propose \textbf{SRSplat}, a feed-forward framework that reconstructs high-resolution 3D scenes from only a few LR views. Our main insight is to compensate for the deficiency of texture information by jointly leveraging external high-quality reference images and internal texture cues. We first construct a scene-specific reference gallery, generated for each scene using Multimodal Large Language Models (MLLMs) and diffusion models. To integrate this external information, we introduce the \textit{Reference-Guided Feature Enhancement (RGFE)} module, which aligns and fuses features from the LR input images and their reference twin image. Subsequently, we train a decoder to predict the Gaussian primitives using the multi-view fused feature obtained from \textit{RGFE}. To further refine predicted Gaussian primitives, we introduce \textit{Texture-Aware Density Control (TADC)}, which adaptively adjusts Gaussian density based on the internal texture richness of the LR inputs. Extensive experiments demonstrate that our SRSplat outperforms existing methods on various datasets, including RealEstate10K, ACID, and DTU, and exhibits strong cross-dataset and cross-resolution generalization capabilities.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2505.05456v2">SITE: towards Spatial Intelligence Thorough Evaluation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-15
+      | 💬 Accepted to ICCV 2025
+    </div>
+    <details class="paper-abstract">
+      Spatial intelligence (SI) represents a cognitive ability encompassing the visualization, manipulation, and reasoning about spatial relationships, underpinning disciplines from neuroscience to robotics. We introduce SITE, a benchmark dataset towards SI Thorough Evaluation in a standardized format of multi-choice visual question-answering, designed to assess large vision-language models' spatial intelligence across diverse visual modalities (single-image, multi-image, and video) and SI factors (figural to environmental scales, spatial visualization and orientation, intrinsic and extrinsic, static and dynamic). Our approach to curating the benchmark combines a bottom-up survey about 31 existing datasets and a top-down strategy drawing upon three classification systems in cognitive science, which prompt us to design two novel types of tasks about view-taking and dynamic scenes. Extensive experiments reveal that leading models fall behind human experts especially in spatial orientation, a fundamental SI factor. Moreover, we demonstrate a positive correlation between a model's spatial reasoning proficiency and its performance on an embodied AI task.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2511.00108v2">Pelican-VL 1.0: A Foundation Brain Model for Embodied Intelligence</a></div>
     <div class="paper-meta">
       📅 2025-11-14
