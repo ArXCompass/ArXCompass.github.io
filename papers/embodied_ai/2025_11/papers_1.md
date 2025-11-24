@@ -9,6 +9,63 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.21651v2">Can AI Perceive Physical Danger and Intervene?</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+    </div>
+    <details class="paper-abstract">
+      When AI interacts with the physical world -- as a robot or an assistive agent -- new safety challenges emerge beyond those of purely ``digital AI". In such interactions, the potential for physical harm is direct and immediate. How well do state-of-the-art foundation models understand common-sense facts about physical safety, e.g. that a box may be too heavy to lift, or that a hot cup of coffee should not be handed to a child? In this paper, our contributions are three-fold: first, we develop a highly scalable approach to continuous physical safety benchmarking of Embodied AI systems, grounded in real-world injury narratives and operational safety constraints. To probe multi-modal safety understanding, we turn these narratives and constraints into photorealistic images and videos capturing transitions from safe to unsafe states, using advanced generative models. Secondly, we comprehensively analyze the ability of major foundation models to perceive risks, reason about safety, and trigger interventions; this yields multi-faceted insights into their deployment readiness for safety-critical agentic applications. Finally, we develop a post-training paradigm to teach models to explicitly reason about embodiment-specific safety constraints provided through system instructions. The resulting models generate thinking traces that make safety reasoning interpretable and transparent, achieving state of the art performance in constraint satisfaction evaluations. The benchmark is released at https://asimov-benchmark.github.io/v2
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.17467v1">PersonaAgent with GraphRAG: Community-Aware Knowledge Graphs for Personalized LLM</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+    </div>
+    <details class="paper-abstract">
+      We propose a novel framework for persona-based language model system, motivated by the need for personalized AI agents that adapt to individual user preferences. In our approach, the agent embodies the user's "persona" (e.g. user profile or taste) and is powered by a large language model (LLM). To enable the agent to leverage rich contextual information, we introduce a Knowledge-Graph-enhanced Retrieval-Augmented Generation (Graph RAG) mechanism that constructs an LLM-derived graph index of relevant documents and summarizes communities of related information. Our framework generates personalized prompts by combining: (1) a summary of the user's historical behaviors and preferences extracted from the knowledge graph, and (2) relevant global interaction patterns identified through graph-based community detection. This dynamic prompt engineering approach allows the agent to maintain consistent persona-aligned behaviors while benefiting from collective knowledge. On the LaMP benchmark, our method improves news categorization F1 by 11.1%, movie tagging F1 by 56.1%, and reduces product rating MAE by 10.4% over prior methods. Our code is available at https://anonymous.4open.science/r/PersonaAgentwGraphRAG-DE6F
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.17225v1">TP-MDDN: Task-Preferenced Multi-Demand-Driven Navigation with Autonomous Decision-Making</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+      | 💬 Accepted at NeurIPS 2025
+    </div>
+    <details class="paper-abstract">
+      In daily life, people often move through spaces to find objects that meet their needs, posing a key challenge in embodied AI. Traditional Demand-Driven Navigation (DDN) handles one need at a time but does not reflect the complexity of real-world tasks involving multiple needs and personal choices. To bridge this gap, we introduce Task-Preferenced Multi-Demand-Driven Navigation (TP-MDDN), a new benchmark for long-horizon navigation involving multiple sub-demands with explicit task preferences. To solve TP-MDDN, we propose AWMSystem, an autonomous decision-making system composed of three key modules: BreakLLM (instruction decomposition), LocateLLM (goal selection), and StatusMLLM (task monitoring). For spatial memory, we design MASMap, which combines 3D point cloud accumulation with 2D semantic mapping for accurate and efficient environmental understanding. Our Dual-Tempo action generation framework integrates zero-shot planning with policy-based fine control, and is further supported by an Adaptive Error Corrector that handles failure cases in real time. Experiments demonstrate that our approach outperforms state-of-the-art baselines in both perception accuracy and navigation robustness.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.17179v1">Toward Sustainable Generative AI: A Scoping Review of Carbon Footprint and Environmental Impacts Across Training and Inference Stages</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+      | 💬 43 pages, 5 figure, 3 tables
+    </div>
+    <details class="paper-abstract">
+      Generative AI is spreading rapidly, creating significant social and economic value while also raising concerns about its high energy use and environmental sustainability. While prior studies have predominantly focused on the energy-intensive nature of the training phase, the cumulative environmental footprint generated during large-scale service operations, particularly in the inference phase, has received comparatively less attention. To bridge this gap this study conducts a scoping review of methodologies and research trends in AI carbon footprint assessment. We analyze the classification and standardization status of existing AI carbon measurement tools and methodologies, and comparatively examine the environmental impacts arising from both training and inference stages. In addition, we identify how multidimensional factors such as model size, prompt complexity, serving environments, and system boundary definitions shape the resulting carbon footprint. Our review reveals critical limitations in current AI carbon accounting practices, including methodological inconsistencies, technology-specific biases, and insufficient attention to end-to-end system perspectives. Building on these insights, we propose future research and governance directions: (1) establishing standardized and transparent universal measurement protocols, (2) designing dynamic evaluation frameworks that incorporate user behavior, (3) developing life-cycle monitoring systems that encompass embodied emissions, and (4) advancing multidimensional sustainability assessment framework that balance model performance with environmental efficiency. This paper provides a foundation for interdisciplinary dialogue aimed at building a sustainable AI ecosystem and offers a baseline guideline for researchers seeking to understand the environmental implications of AI across technical, social, and operational dimensions.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.16449v2">VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+    </div>
+    <details class="paper-abstract">
+      Vision-Language-Action (VLA) models have shown great promise for embodied AI, yet the heavy computational cost of processing continuous visual streams severely limits their real-time deployment. Token pruning (keeping salient visual tokens and dropping redundant ones) has emerged as an effective approach for accelerating Vision-Language Models (VLMs), offering a solution for efficient VLA. However, these VLM-specific token pruning methods select tokens based solely on semantic salience metrics (e.g., prefill attention), while overlooking the VLA's intrinsic dual-system nature of high-level semantic understanding and low-level action execution. Consequently, these methods bias token retention toward semantic cues, discard critical information for action generation, and significantly degrade VLA performance. To bridge this gap, we propose VLA-Pruner, a versatile plug-and-play VLA-specific token prune method that aligns with the dual-system nature of VLA models and exploits the temporal continuity in robot manipulation. Specifically, VLA-Pruner adopts a dual-level importance criterion for visual token retention: vision-language prefill attention for semantic-level relevance and action decode attention, estimated via temporal smoothing, for action-level importance. Based on this criterion, VLA-Pruner proposes a novel dual-level token selection strategy that adaptively preserves a compact, informative set of visual tokens for both semantic understanding and action execution under given compute budget. Experiments show that VLA-Pruner achieves state-of-the-art performance across multiple VLA architectures and diverse robotic tasks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2504.08016v2">Emergence of psychopathological computations in large language models</a></div>
+    <div class="paper-meta">
+      📅 2025-11-21
+      | 💬 pre-print
+    </div>
+    <details class="paper-abstract">
+      Can large language models (LLMs) instantiate computations of psychopathology? An effective approach to the question hinges on addressing two factors. First, for conceptual validity, we require a general and computational account of psychopathology that is applicable to computational entities without biological embodiment or subjective experience. Second, psychopathological computations, derived from the adapted theory, need to be empirically identified within the LLM's internal processing. Thus, we establish a computational-theoretical framework to provide an account of psychopathology applicable to LLMs. Based on the framework, we conduct experiments demonstrating two key claims: first, that the computational structure of psychopathology exists in LLMs; and second, that executing this computational structure results in psychopathological functions. We further observe that as LLM size increases, the computational structure of psychopathology becomes denser and that the functions become more effective. Taken together, the empirical results corroborate our hypothesis that network-theoretic computations of psychopathology have already emerged in LLMs. This suggests that certain LLM behaviors mirroring psychopathology may not be a superficial mimicry but a feature of their internal processing. Our work shows the promise of developing a new powerful in silico model of psychopathology and also alludes to the possibility of safety threat from the AI systems with psychopathological behaviors in the near future.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2511.16651v1">InternData-A1: Pioneering High-Fidelity Synthetic Data for Pre-training Generalist Policy</a></div>
     <div class="paper-meta">
       📅 2025-11-20
