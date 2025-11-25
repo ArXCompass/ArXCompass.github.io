@@ -9,6 +9,112 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.19430v1">Cook and Clean Together: Teaching Embodied Agents for Parallel Task Execution</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 Accepted to AAAI 2026 (Oral). The code is available at \url{https://github.com/H-EmbodVis/GRANT}
+    </div>
+    <details class="paper-abstract">
+      Task scheduling is critical for embodied AI, enabling agents to follow natural language instructions and execute actions efficiently in 3D physical worlds. However, existing datasets often simplify task planning by ignoring operations research (OR) knowledge and 3D spatial grounding. In this work, we propose Operations Research knowledge-based 3D Grounded Task Scheduling (ORS3D), a new task that requires the synergy of language understanding, 3D grounding, and efficiency optimization. Unlike prior settings, ORS3D demands that agents minimize total completion time by leveraging parallelizable subtasks, e.g., cleaning the sink while the microwave operates. To facilitate research on ORS3D, we construct ORS3D-60K, a large-scale dataset comprising 60K composite tasks across 4K real-world scenes. Furthermore, we propose GRANT, an embodied multi-modal large language model equipped with a simple yet effective scheduling token mechanism to generate efficient task schedules and grounded actions. Extensive experiments on ORS3D-60K validate the effectiveness of GRANT across language understanding, 3D grounding, and scheduling efficiency. The code is available at https://github.com/H-EmbodVis/GRANT
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.02912v4">Communicating Plans, Not Percepts: Scalable Multi-Agent Coordination with Embodied World Models</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 Published in the Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS 2025) Workshop: Scaling Environments for Agents (SEA). Additionally accepted for presentation in the NeurIPS 2025 Workshop: Embodied World Models for Decision Making (EWM) and the NeurIPS 2025 Workshop: Optimization for Machine Learning (OPT)
+    </div>
+    <details class="paper-abstract">
+      Robust coordination is critical for effective decision-making in multi-agent systems, especially under partial observability. A central question in Multi-Agent Reinforcement Learning (MARL) is whether to engineer communication protocols or learn them end-to-end. We investigate this dichotomy using embodied world models. We propose and compare two communication strategies for a cooperative task-allocation problem. The first, Learned Direct Communication (LDC), learns a protocol end-to-end. The second, Intention Communication, uses an engineered inductive bias: a compact, learned world model, the Imagined Trajectory Generation Module (ITGM), which uses the agent's own policy to simulate future states. A Message Generation Network (MGN) then compresses this plan into a message. We evaluate these approaches on goal-directed interaction in a grid world, a canonical abstraction for embodied AI problems, while scaling environmental complexity. Our experiments reveal that while emergent communication is viable in simple settings, the engineered, world model-based approach shows superior performance, sample efficiency, and scalability as complexity increases. These findings advocate for integrating structured, predictive models into MARL agents to enable active, goal-driven coordination.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.19119v1">MonoSR: Open-Vocabulary Spatial Reasoning from Monocular Images</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+    </div>
+    <details class="paper-abstract">
+      Spatial reasoning (SR), the ability to infer 3D spatial information from 2D inputs, is essential for real-world applications such as embodied AI and autonomous driving. However, existing research primarily focuses on indoor environments and typically relies on multi-view observations, which limits their generalizability to outdoor scenarios and constrains their applicability to monocular images, the most common real-world setting. In this work, we propose MonoSR, a large-scale monocular spatial reasoning dataset that spans diverse scenarios including indoor, outdoor, and object-centric settings, and supports multiple question types. MonoSR provides a path toward open-world monocular spatial reasoning. Beyond introducing the dataset, we evaluate advanced vision-language models to reveal their limitations on this challenging task. We further analyze whether auxiliary information is crucial for monocular spatial reasoning and offer practical guidance for designing future models. These contributions collectively establish a foundation for advancing monocular spatial reasoning in real-world, open-world environments.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.19113v1">Agent Discovery in Internet of Agents: Challenges and Solutions</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 This work has been submitted to the IEEE for possible publication
+    </div>
+    <details class="paper-abstract">
+      Rapid advances in large language models and agentic AI are driving the emergence of the Internet of Agents (IoA), a paradigm where billions of autonomous software and embodied agents interact, coordinate, and collaborate to accomplish complex tasks. A key prerequisite for such large-scale collaboration is agent capability discovery, where agents identify, advertise, and match one another's capabilities under dynamic tasks. Agent's capability in IoA is inherently heterogeneous and context-dependent, raising challenges in capability representation, scalable discovery, and long-term performance. To address these issues, this paper introduces a novel two-stage capability discovery framework. The first stage, autonomous capability announcement, allows agents to credibly publish machine-interpretable descriptions of their abilities. The second stage, task-driven capability discovery, enables context-aware search, ranking, and composition to locate and assemble suitable agents for specific tasks. Building on this framework, we propose a novel scheme that integrates semantic capability modeling, scalable and updatable indexing, and memory-enhanced continual discovery. Simulation results demonstrate that our approach enhances discovery performance and scalability. Finally, we outline a research roadmap and highlight open problems and promising directions for future IoA.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.18960v1">AVA-VLA: Improving Vision-Language-Action models with Active Visual Attention</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 18 pages, 10 figures
+    </div>
+    <details class="paper-abstract">
+      Vision-Language-Action (VLA) models have demonstrated remarkable capabilities in embodied AI tasks. However, existing VLA models, often built upon Vision-Language Models (VLMs), typically process dense visual inputs independently at each timestep. This approach implicitly models the task as a Markov Decision Process (MDP). However, this history-agnostic design is suboptimal for effective visual token processing in dynamic sequential decision-making, as it fails to leverage the context of history. To address this limitation, we reformulate the problem from a Partially Observable Markov Decision Process (POMDP) perspective and propose a novel framework named AVA-VLA. Inspired by the POMDP that the action generation should be conditioned on the belief state. AVA-VLA introduces Active Visual Attention (AVA) to dynamically modulate visual processing. It achieves this by leveraging the recurrent state, which is a neural approximation of the agent's belief state derived from the previous decision step. Specifically, the AVA module uses the recurrent state to compute the soft weights to actively process task-relevant visual tokens based on its historical context. Comprehensive evaluations demonstrate that AVA-VLA achieves state-of-the-art performance across popular robotic benchmarks, including LIBERO and CALVIN. Furthermore, real-world deployments on a dual-arm robot platform validate the framework's practical applicability and robust sim-to-real transferability.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.18950v1">Compressor-VLA: Instruction-Guided Visual Token Compression for Efficient Robotic Manipulation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 11 pages, 5 figures
+    </div>
+    <details class="paper-abstract">
+      Vision-Language-Action (VLA) models have emerged as a powerful paradigm in Embodied AI. However, the significant computational overhead of processing redundant visual tokens remains a critical bottleneck for real-time robotic deployment. While standard token pruning techniques can alleviate this, these task-agnostic methods struggle to preserve task-critical visual information. To address this challenge, simultaneously preserving both the holistic context and fine-grained details for precise action, we propose Compressor-VLA, a novel hybrid instruction-conditioned token compression framework designed for efficient, task-oriented compression of visual information in VLA models. The proposed Compressor-VLA framework consists of two token compression modules: a Semantic Task Compressor (STC) that distills holistic, task-relevant context, and a Spatial Refinement Compressor (SRC) that preserves fine-grained spatial details. This compression is dynamically modulated by the natural language instruction, allowing for the adaptive condensation of task-relevant visual information. Experimentally, extensive evaluations demonstrate that Compressor-VLA achieves a competitive success rate on the LIBERO benchmark while reducing FLOPs by 59% and the visual token count by over 3x compared to its baseline. The real-robot deployments on a dual-arm robot platform validate the model's sim-to-real transferability and practical applicability. Moreover, qualitative analyses reveal that our instruction guidance dynamically steers the model's perceptual focus toward task-relevant objects, thereby validating the effectiveness of our approach.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.18929v1">Human-Centric Open-Future Task Discovery: Formulation, Benchmark, and Scalable Tree-Based Search</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+      | 💬 10 pages, 9 figures
+    </div>
+    <details class="paper-abstract">
+      Recent progress in robotics and embodied AI is largely driven by Large Multimodal Models (LMMs). However, a key challenge remains underexplored: how can we advance LMMs to discover tasks that directly assist humans in open-future scenarios, where human intentions are highly concurrent and dynamic. In this work, we formalize the problem of Human-centric Open-future Task Discovery (HOTD), focusing particularly on identifying tasks that reduce human effort across multiple plausible futures. To facilitate this study, we propose an HOTD-Bench, which features over 2K real-world videos, a semi-automated annotation pipeline, and a simulation-based protocol tailored for open-set future evaluation. Additionally, we propose the Collaborative Multi-Agent Search Tree (CMAST) framework, which decomposes the complex reasoning through a multi-agent system and structures the reasoning process through a scalable search tree module. In our experiments, CMAST achieves the best performance on the HOTD-Bench, significantly surpassing existing LMMs. It also integrates well with existing LMMs, consistently improving performance.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2502.00392v3">RefDrone: A Challenging Benchmark for Referring Expression Comprehension in Drone Scenes</a></div>
+    <div class="paper-meta">
+      📅 2025-11-24
+    </div>
+    <details class="paper-abstract">
+      Drones have become prevalent robotic platforms with diverse applications, showing significant potential in Embodied Artificial Intelligence (Embodied AI). Referring Expression Comprehension (REC) enables drones to locate objects based on natural language expressions, a crucial capability for Embodied AI. Despite advances in REC for ground-level scenes, aerial views introduce unique challenges including varying viewpoints, occlusions and scale variations. To address this gap, we introduce RefDrone, a REC benchmark for drone scenes. RefDrone reveals three key challenges in REC: 1) multi-scale and small-scale target detection; 2) multi-target and no-target samples; 3) complex environment with rich contextual expressions. To efficiently construct this dataset, we develop RDAgent (referring drone annotation framework with multi-agent system), a semi-automated annotation tool for REC tasks. RDAgent ensures high-quality contextual expressions and reduces annotation cost. Furthermore, we propose Number GroundingDINO (NGDINO), a novel method designed to handle multi-target and no-target cases. NGDINO explicitly learns and utilizes the number of objects referred to in the expression. Comprehensive experiments with state-of-the-art REC methods demonstrate that NGDINO achieves superior performance on both the proposed RefDrone and the existing gRefCOCO datasets. The dataset and code are be publicly at https://github.com/sunzc-sunny/refdrone.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.18173v1">EgoControl: Controllable Egocentric Video Generation via 3D Full-Body Poses</a></div>
+    <div class="paper-meta">
+      📅 2025-11-22
+    </div>
+    <details class="paper-abstract">
+      Egocentric video generation with fine-grained control through body motion is a key requirement towards embodied AI agents that can simulate, predict, and plan actions. In this work, we propose EgoControl, a pose-controllable video diffusion model trained on egocentric data. We train a video prediction model to condition future frame generation on explicit 3D body pose sequences. To achieve precise motion control, we introduce a novel pose representation that captures both global camera dynamics and articulated body movements, and integrate it through a dedicated control mechanism within the diffusion process. Given a short sequence of observed frames and a sequence of target poses, EgoControl generates temporally coherent and visually realistic future frames that align with the provided pose control. Experimental results demonstrate that EgoControl produces high-quality, pose-consistent egocentric videos, paving the way toward controllable embodied video simulation and understanding.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.17925v1">Switch-JustDance: Benchmarking Whole Body Motion Tracking Policies Using a Commercial Console Game</a></div>
+    <div class="paper-meta">
+      📅 2025-11-22
+    </div>
+    <details class="paper-abstract">
+      Recent advances in whole-body robot control have enabled humanoid and legged robots to perform increasingly agile and coordinated motions. However, standardized benchmarks for evaluating these capabilities in real-world settings, and in direct comparison to humans, remain scarce. Existing evaluations often rely on pre-collected human motion datasets or simulation-based experiments, which limit reproducibility, overlook hardware factors, and hinder fair human-robot comparisons. We present Switch-JustDance, a low-cost and reproducible benchmarking pipeline that leverages motion-sensing console games, Just Dance on the Nintendo Switch, to evaluate robot whole-body control. Using Just Dance on the Nintendo Switch as a representative platform, Switch-JustDance converts in-game choreography into robot-executable motions through streaming, motion reconstruction, and motion retargeting modules and enables users to evaluate controller performance through the game's built-in scoring system. We first validate the evaluation properties of Just Dance, analyzing its reliability, validity, sensitivity, and potential sources of bias. Our results show that the platform provides consistent and interpretable performance measures, making it a suitable tool for benchmarking embodied AI. Building on this foundation, we benchmark three state-of-the-art humanoid whole-body controllers on hardware and provide insights into their relative strengths and limitations.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.17869v1">The Horcrux: Mechanistically Interpretable Task Decomposition for Detecting and Mitigating Reward Hacking in Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2025-11-22
+      | 💬 Accepted to the NeurIPS (Mexico City) 2025 Workshop on Embodied and Safe-Assured Robotic Systems (E-SARS). Thanks to Aman Chadha
+    </div>
+    <details class="paper-abstract">
+      Embodied AI agents exploit reward signal flaws through reward hacking, achieving high proxy scores while failing true objectives. We introduce Mechanistically Interpretable Task Decomposition (MITD), a hierarchical transformer architecture with Planner, Coordinator, and Executor modules that detects and mitigates reward hacking. MITD decomposes tasks into interpretable subtasks while generating diagnostic visualizations including Attention Waterfall Diagrams and Neural Pathway Flow Charts. Experiments on 1,000 HH-RLHF samples reveal that decomposition depths of 12 to 25 steps reduce reward hacking frequency by 34 percent across four failure modes. We present new paradigms showing that mechanistically grounded decomposition offers a more effective way to detect reward hacking than post-hoc behavioral monitoring.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2509.21651v2">Can AI Perceive Physical Danger and Intervene?</a></div>
     <div class="paper-meta">
       📅 2025-11-21
