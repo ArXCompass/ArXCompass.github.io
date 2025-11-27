@@ -11,6 +11,54 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.21459v1">Resolution Where It Counts: Hash-based GPU-Accelerated 3D Reconstruction via Variance-Adaptive Voxel Grids</a></div>
+    <div class="paper-meta">
+      📅 2025-11-26
+      | 💬 Accepted for publication in ACM Transaction on Graphics. Project site: https://rvp-group.github.io/mrhash/
+    </div>
+    <details class="paper-abstract">
+      Efficient and scalable 3D surface reconstruction from range data remains a core challenge in computer graphics and vision, particularly in real-time and resource-constrained scenarios. Traditional volumetric methods based on fixed-resolution voxel grids or hierarchical structures like octrees often suffer from memory inefficiency, computational overhead, and a lack of GPU support. We propose a novel variance-adaptive, multi-resolution voxel grid that dynamically adjusts voxel size based on the local variance of signed distance field (SDF) observations. Unlike prior multi-resolution approaches that rely on recursive octree structures, our method leverages a flat spatial hash table to store all voxel blocks, supporting constant-time access and full GPU parallelism. This design enables high memory efficiency and real-time scalability. We further demonstrate how our representation supports GPU-accelerated rendering through a parallel quad-tree structure for Gaussian Splatting, enabling effective control over splat density. Our open-source CUDA/C++ implementation achieves up to 13x speedup and 4x lower memory usage compared to fixed-resolution baselines, while maintaining on par results in terms of reconstruction accuracy, offering a practical and extensible solution for high-performance 3D reconstruction.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2510.11473v2">VA-GS: Enhancing the Geometric Representation of Gaussian Splatting via View Alignment</a></div>
+    <div class="paper-meta">
+      📅 2025-11-26
+      | 💬 Accepted by NeurIPS 2025
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting has recently emerged as an efficient solution for high-quality and real-time novel view synthesis. However, its capability for accurate surface reconstruction remains underexplored. Due to the discrete and unstructured nature of Gaussians, supervision based solely on image rendering loss often leads to inaccurate geometry and inconsistent multi-view alignment. In this work, we propose a novel method that enhances the geometric representation of 3D Gaussians through view alignment (VA). Specifically, we incorporate edge-aware image cues into the rendering loss to improve surface boundary delineation. To enforce geometric consistency across views, we introduce a visibility-aware photometric alignment loss that models occlusions and encourages accurate spatial relationships among Gaussians. To further mitigate ambiguities caused by lighting variations, we incorporate normal-based constraints to refine the spatial orientation of Gaussians and improve local surface estimation. Additionally, we leverage deep image feature embeddings to enforce cross-view consistency, enhancing the robustness of the learned geometry under varying viewpoints and illumination. Extensive experiments on standard benchmarks demonstrate that our method achieves state-of-the-art performance in both surface reconstruction and novel view synthesis. The source code is available at https://github.com/LeoQLi/VA-GS.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.21367v1">Endo-G$^{2}$T: Geometry-Guided & Temporally Aware Time-Embedded 4DGS For Endoscopic Scenes</a></div>
+    <div class="paper-meta">
+      📅 2025-11-26
+    </div>
+    <details class="paper-abstract">
+      Endoscopic (endo) video exhibits strong view-dependent effects such as specularities, wet reflections, and occlusions. Pure photometric supervision misaligns with geometry and triggers early geometric drift, where erroneous shapes are reinforced during densification and become hard to correct. We ask how to anchor geometry early for 4D Gaussian splatting (4DGS) while maintaining temporal consistency and efficiency in dynamic endoscopic scenes. Thus, we present Endo-G$^{2}$T, a geometry-guided and temporally aware training scheme for time-embedded 4DGS. First, geo-guided prior distillation converts confidence-gated monocular depth into supervision with scale-invariant depth and depth-gradient losses, using a warm-up-to-cap schedule to inject priors softly and avoid early overfitting. Second, a time-embedded Gaussian field represents dynamics in XYZT with a rotor-like rotation parameterization, yielding temporally coherent geometry with lightweight regularization that favors smooth motion and crisp opacity boundaries. Third, keyframe-constrained streaming improves efficiency and long-horizon stability through keyframe-focused optimization under a max-points budget, while non-keyframes advance with lightweight updates. Across EndoNeRF and StereoMIS-P1 datasets, Endo-G$^{2}$T achieves state-of-the-art results among monocular reconstruction baselines.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.21265v1">Unlocking Zero-shot Potential of Semi-dense Image Matching via Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-11-26
+    </div>
+    <details class="paper-abstract">
+      Learning-based image matching critically depends on large-scale, diverse, and geometrically accurate training data. 3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis and thus is attractive for data generation. However, its geometric inaccuracies and biased depth rendering currently prevent robust correspondence labeling. To address this, we introduce MatchGS, the first framework designed to systematically correct and leverage 3DGS for robust, zero-shot image matching. Our approach is twofold: (1) a geometrically-faithful data generation pipeline that refines 3DGS geometry to produce highly precise correspondence labels, enabling the synthesis of a vast and diverse range of viewpoints without compromising rendering fidelity; and (2) a 2D-3D representation alignment strategy that infuses 3DGS' explicit 3D knowledge into the 2D matcher, guiding 2D semi-dense matchers to learn viewpoint-invariant 3D representations. Our generated ground-truth correspondences reduce the epipolar error by up to 40 times compared to existing datasets, enable supervision under extreme viewpoint changes, and provide self-supervisory signals through Gaussian attributes. Consequently, state-of-the-art matchers trained solely on our data achieve significant zero-shot performance gains on public benchmarks, with improvements of up to 17.7%. Our work demonstrates that with proper geometric refinement, 3DGS can serve as a scalable, high-fidelity, and structurally-rich data source, paving the way for a new generation of robust zero-shot image matchers.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2510.07856v2">XYZCylinder: Towards Compatible Feed-Forward 3D Gaussian Splatting for Driving Scenes via Unified Cylinder Lifting Method</a></div>
+    <div class="paper-meta">
+      📅 2025-11-26
+      | 💬 Feed-Forward, 3D Gaussian Splatting, Project page: https://yuyuyu223.github.io/XYZCYlinder-projectpage/
+    </div>
+    <details class="paper-abstract">
+      Feed-forward paradigms for 3D reconstruction have become a focus of recent research, which learn implicit, fixed view transformations to generate a single scene representation. However, their application to complex driving scenes reveals significant limitations. Two core challenges are responsible for this performance gap. First, the reliance on a fixed view transformation hinders compatibility to varying camera configurations. Second, the inherent difficulty of learning complex driving scenes from sparse 360° views with minimal overlap compromises the final reconstruction fidelity. To handle these difficulties, we introduce XYZCylinder, a novel method built upon a unified cylinder lifting method that integrates camera modeling and feature lifting. To tackle the compatibility problem, we design a Unified Cylinder Camera Modeling (UCCM) strategy. This strategy explicitly models projection parameters to unify diverse camera setups, thus bypassing the need for learning viewpoint-dependent correspondences. To improve the reconstruction accuracy, we propose a hybrid representation with several dedicated modules based on newly designed Cylinder Plane Feature Group (CPFG) to lift 2D image features to 3D space. Extensive evaluations confirm that XYZCylinder not only achieves state-of-the-art performance under different evaluation settings but also demonstrates remarkable compatibility in entirely new scenes with different camera settings in a zero-shot manner. Project page: \href{https://yuyuyu223.github.io/XYZCYlinder-projectpage/}{here}
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2511.04283v2">FastGS: Training 3D Gaussian Splatting in 100 Seconds</a></div>
     <div class="paper-meta">
       📅 2025-11-25
@@ -125,6 +173,26 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) supports fast, high quality, novel view synthesis but has a heavy memory footprint, making the compression of its model crucial. Current state-of-the-art (SOTA) 3DGS compression methods adopt an anchor-based architecture that pairs the Scaffold-GS representation with conditional entropy coding. However, these methods forego the analysis-synthesis transform, a vital mechanism in visual data compression. As a result, redundancy remains intact in the signal and its removal is left to the entropy coder, which computationally overburdens the entropy coding module, increasing coding latency. Even with added complexity thorough redundancy removal is a task unsuited to an entropy coder. To fix this critical omission, we introduce a Sparsity-guided Hierarchical Transform Coding (SHTC) method, the first study on the end-to-end learned neural transform coding of 3DGS. SHTC applies KLT to decorrelate intra-anchor attributes, followed by quantization and entropy coding, and then compresses KLT residuals with a low-complexity, scene-adaptive neural transform. Aided by the sparsity prior and deep unfolding technique, the learned transform uses only a few trainable parameters, reducing the memory usage. Overall, SHTC achieves an appreciably improved R-D performance and at the same time higher decoding speed over SOTA. Its prior-guided, parameter-efficient design may also inspire low-complexity neural image and video codecs. Our code will be released at https://github.com/hxu160/SHTC_for_3DGS_compression.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2505.21890v3">Diffusion-Denoised Hyperspectral Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-11-25
+      | 💬 Accepted to 3DV 2026
+    </div>
+    <details class="paper-abstract">
+      Hyperspectral imaging (HSI) has been widely used in agricultural applications for non-destructive estimation of plant nutrient composition and precise quantification of sample nutritional elements. Recently, 3D reconstruction methods, such as Neural Radiance Field (NeRF), have been used to create implicit neural representations of HSI scenes. This capability enables the rendering of hyperspectral channel compositions at every spatial location, thereby helping localize the target object's nutrient composition both spatially and spectrally. However, it faces limitations in training time and rendering speed. In this paper, we propose Diffusion-Denoised Hyperspectral Gaussian Splatting (DD-HGS), which enhances the state-of-the-art 3D Gaussian Splatting (3DGS) method with wavelength-aware spherical harmonics, a Kullback-Leibler divergence-based spectral loss, and a diffusion-based denoiser to enable 3D explicit reconstruction of the hyperspectral scenes for the entire spectral range. We present extensive evaluations on diverse real-world hyperspectral scenes from the Hyper-NeRF dataset to show the effectiveness of our DD-HGS. The results demonstrate that DD-HGS achieves the new state-of-the-art performance compared to all the previously published methods. Project page: https://dragonpg2000.github.io/DDHGS-website/
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.18389v2">FastAvatar: Instant 3D Gaussian Splatting for Faces from Single Unconstrained Poses</a></div>
+    <div class="paper-meta">
+      📅 2025-11-25
+      | 💬 11 pages, 5 figures, website: https://hliang2.github.io/FastAvatar/
+    </div>
+    <details class="paper-abstract">
+      We present FastAvatar, a fast and robust algorithm for single-image 3D face reconstruction using 3D Gaussian Splatting (3DGS). Given a single input image from an arbitrary pose, FastAvatar recovers a high-quality, full-head 3DGS avatar in approximately 3 seconds on a single NVIDIA A100 GPU. We use a two-stage design: a feed-forward encoder-decoder predicts coarse face geometry by regressing Gaussian structure from a pose-invariant identity embedding, and a lightweight test-time refinement stage then optimizes the appearance parameters for photorealistic rendering. This hybrid strategy combines the speed and stability of direct prediction with the accuracy of optimization, enabling strong identity preservation even under extreme input poses. FastAvatar achieves state-of-the-art reconstruction quality (24.01 dB PSNR, 0.91 SSIM) while running over 600x faster than existing per-subject optimization methods (e.g., FlashAvatar, GaussianAvatars, GASP). Once reconstructed, our avatars support photorealistic novel-view synthesis and FLAME-guided expression animation, enabling controllable reenactment from a single image. By jointly offering high fidelity, robustness to pose, and rapid reconstruction, FastAvatar significantly broadens the applicability of 3DGS-based facial avatars.
     </details>
 </div>
 <div class="paper-card">
@@ -904,71 +972,5 @@
     </div>
     <details class="paper-abstract">
       We propose Transmission-Reflection Gaussians (TR-Gaussians), a novel 3D-Gaussian-based representation for high-fidelity rendering of planar transmission and reflection, which are ubiquitous in indoor scenes. Our method combines 3D Gaussians with learnable reflection planes that explicitly model the glass planes with view-dependent reflectance strengths. Real scenes and transmission components are modeled by 3D Gaussians and the reflection components are modeled by the mirrored Gaussians with respect to the reflection plane. The transmission and reflection components are blended according to a Fresnel-based, view-dependent weighting scheme, allowing for faithful synthesis of complex appearance effects under varying viewpoints. To effectively optimize TR-Gaussians, we develop a multi-stage optimization framework incorporating color and geometry constraints and an opacity perturbation mechanism. Experiments on different datasets demonstrate that TR-Gaussians achieve real-time, high-fidelity novel view synthesis in scenes with planar transmission and reflection, and outperform state-of-the-art approaches both quantitatively and qualitatively.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12972v1">SplatSearch: Instance Image Goal Navigation for Mobile Robots using 3D Gaussian Splatting and Diffusion Models</a></div>
-    <div class="paper-meta">
-      📅 2025-11-17
-      | 💬 Project Page: https://splat-search.github.io/
-    </div>
-    <details class="paper-abstract">
-      The Instance Image Goal Navigation (IIN) problem requires mobile robots deployed in unknown environments to search for specific objects or people of interest using only a single reference goal image of the target. This problem can be especially challenging when: 1) the reference image is captured from an arbitrary viewpoint, and 2) the robot must operate with sparse-view scene reconstructions. In this paper, we address the IIN problem, by introducing SplatSearch, a novel architecture that leverages sparse-view 3D Gaussian Splatting (3DGS) reconstructions. SplatSearch renders multiple viewpoints around candidate objects using a sparse online 3DGS map, and uses a multi-view diffusion model to complete missing regions of the rendered images, enabling robust feature matching against the goal image. A novel frontier exploration policy is introduced which uses visual context from the synthesized viewpoints with semantic context from the goal image to evaluate frontier locations, allowing the robot to prioritize frontiers that are semantically and visually relevant to the goal image. Extensive experiments in photorealistic home and real-world environments validate the higher performance of SplatSearch against current state-of-the-art methods in terms of Success Rate and Success Path Length. An ablation study confirms the design choices of SplatSearch.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12941v1">GUIDE: Gaussian Unified Instance Detection for Enhanced Obstacle Perception in Autonomous Driving</a></div>
-    <div class="paper-meta">
-      📅 2025-11-17
-    </div>
-    <details class="paper-abstract">
-      In the realm of autonomous driving, accurately detecting surrounding obstacles is crucial for effective decision-making. Traditional methods primarily rely on 3D bounding boxes to represent these obstacles, which often fail to capture the complexity of irregularly shaped, real-world objects. To overcome these limitations, we present GUIDE, a novel framework that utilizes 3D Gaussians for instance detection and occupancy prediction. Unlike conventional occupancy prediction methods, GUIDE also offers robust tracking capabilities. Our framework employs a sparse representation strategy, using Gaussian-to-Voxel Splatting to provide fine-grained, instance-level occupancy data without the computational demands associated with dense voxel grids. Experimental validation on the nuScenes dataset demonstrates GUIDE's performance, with an instance occupancy mAP of 21.61, marking a 50\% improvement over existing methods, alongside competitive tracking capabilities. GUIDE establishes a new benchmark in autonomous perception systems, effectively combining precision with computational efficiency to better address the complexities of real-world driving environments.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12930v1">Neo: Real-Time On-Device 3D Gaussian Splatting with Reuse-and-Update Sorting Acceleration</a></div>
-    <div class="paper-meta">
-      📅 2025-11-17
-    </div>
-    <details class="paper-abstract">
-      3D Gaussian Splatting (3DGS) rendering in real-time on resource-constrained devices is essential for delivering immersive augmented and virtual reality (AR/VR) experiences. However, existing solutions struggle to achieve high frame rates, especially for high-resolution rendering. Our analysis identifies the sorting stage in the 3DGS rendering pipeline as the major bottleneck due to its high memory bandwidth demand. This paper presents Neo, which introduces a reuse-and-update sorting algorithm that exploits temporal redundancy in Gaussian ordering across consecutive frames, and devises a hardware accelerator optimized for this algorithm. By efficiently tracking and updating Gaussian depth ordering instead of re-sorting from scratch, Neo significantly reduces redundant computations and memory bandwidth pressure. Experimental results show that Neo achieves up to 10.0x and 5.6x higher throughput than state-of-the-art edge GPU and ASIC solution, respectively, while reducing DRAM traffic by 94.5% and 81.3%. These improvements make high-quality and low-latency on-device 3D rendering more practical.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.12895v1">Reconstructing 3D Scenes in Native High Dynamic Range</a></div>
-    <div class="paper-meta">
-      📅 2025-11-17
-    </div>
-    <details class="paper-abstract">
-      High Dynamic Range (HDR) imaging is essential for professional digital media creation, e.g., filmmaking, virtual production, and photorealistic rendering. However, 3D scene reconstruction has primarily focused on Low Dynamic Range (LDR) data, limiting its applicability to professional workflows. Existing approaches that reconstruct HDR scenes from LDR observations rely on multi-exposure fusion or inverse tone-mapping, which increase capture complexity and depend on synthetic supervision. With the recent emergence of cameras that directly capture native HDR data in a single exposure, we present the first method for 3D scene reconstruction that directly models native HDR observations. We propose {\bf Native High dynamic range 3D Gaussian Splatting (NH-3DGS)}, which preserves the full dynamic range throughout the reconstruction pipeline. Our key technical contribution is a novel luminance-chromaticity decomposition of the color representation that enables direct optimization from native HDR camera data. We demonstrate on both synthetic and real multi-view HDR datasets that NH-3DGS significantly outperforms existing methods in reconstruction quality and dynamic range preservation, enabling professional-grade 3D reconstruction directly from native HDR captures. Code and datasets will be made available.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2501.03659v5">DehazeGS: Seeing Through Fog with 3D Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2025-11-16
-      | 💬 9 pages,5 figures. Accepted by AAAI2026. visualizations are available at https://dehazegs.github.io/
-    </div>
-    <details class="paper-abstract">
-      Current novel view synthesis methods are typically designed for high-quality and clean input images. However, in foggy scenes, scattering and attenuation can significantly degrade the quality of rendering. Although NeRF-based dehazing approaches have been developed, their reliance on deep fully connected neural networks and per-ray sampling strategies leads to high computational costs. Furthermore, NeRF's implicit representation limits its ability to recover fine-grained details from hazy scenes. To overcome these limitations, we propose learning an explicit Gaussian representation to explain the formation mechanism of foggy images through a physically forward rendering process. Our method, DehazeGS, reconstructs and renders fog-free scenes using only multi-view foggy images as input. Specifically, based on the atmospheric scattering model, we simulate the formation of fog by establishing the transmission function directly onto Gaussian primitives via depth-to-transmission mapping. During training, we jointly learn the atmospheric light and scattering coefficients while optimizing the Gaussian representation of foggy scenes. At inference time, we remove the effects of scattering and attenuation in Gaussian distributions and directly render the scene to obtain dehazed views. Experiments on both real-world and synthetic foggy datasets demonstrate that DehazeGS achieves state-of-the-art performance. visualizations are available at https://dehazegs.github.io/
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2503.17798v2">GaussianFocus: Constrained Attention Focus for 3D Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2025-11-16
-    </div>
-    <details class="paper-abstract">
-      Recent developments in 3D reconstruction and neural rendering have significantly propelled the capabilities of photo-realistic 3D scene rendering across various academic and industrial fields. The 3D Gaussian Splatting technique, alongside its derivatives, integrates the advantages of primitive-based and volumetric representations to deliver top-tier rendering quality and efficiency. Despite these advancements, the method tends to generate excessive redundant noisy Gaussians overfitted to every training view, which degrades the rendering quality. Additionally, while 3D Gaussian Splatting excels in small-scale and object-centric scenes, its application to larger scenes is hindered by constraints such as limited video memory, excessive optimization duration, and variable appearance across views. To address these challenges, we introduce GaussianFocus, an innovative approach that incorporates a patch attention algorithm to refine rendering quality and implements a Gaussian constraints strategy to minimize redundancy. Moreover, we propose a subdivision reconstruction strategy for large-scale scenes, dividing them into smaller, manageable blocks for individual training. Our results indicate that GaussianFocus significantly reduces unnecessary Gaussians and enhances rendering quality, surpassing existing State-of-The-Art (SoTA) methods. Furthermore, we demonstrate the capability of our approach to effectively manage and render large scenes, such as urban environments, whilst maintaining high fidelity in the visual output.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2501.01895v3">EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation</a></div>
-    <div class="paper-meta">
-      📅 2025-11-16
-      | 💬 Accepted by NeurIPS 2025. Website: https://sites.google.com/view/enerverse
-    </div>
-    <details class="paper-abstract">
-      We introduce EnerVerse, a generative robotics foundation model that constructs and interprets embodied spaces. EnerVerse employs a chunk-wise autoregressive video diffusion framework to predict future embodied spaces from instructions, enhanced by a sparse context memory for long-term reasoning. To model the 3D robotics world, we adopt a multi-view video representation, providing rich perspectives to address challenges like motion ambiguity and 3D grounding. Additionally, EnerVerse-D, a data engine pipeline combining generative modeling with 4D Gaussian Splatting, forms a self-reinforcing data loop to reduce the sim-to-real gap. Leveraging these innovations, EnerVerse translates 4D world representations into physical actions via a policy head (EnerVerse-A), achieving state-of-the-art performance in both simulation and real-world tasks. For efficiency, EnerVerse-A reuses features from the first denoising step and predicts action chunks, achieving about 280 ms per 8-step action chunk on a single RTX 4090. Further video demos, dataset samples could be found in our project page.
     </details>
 </div>
