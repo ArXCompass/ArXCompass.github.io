@@ -23,7 +23,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 2. Browse papers by topic in the Quick Links section
 3. View statistics and trends in each topic's README
 
-Last update: 2025-11-30
+Last update: 2025-12-01
 
 ## Statistics
 
