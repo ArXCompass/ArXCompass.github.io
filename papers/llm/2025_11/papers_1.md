@@ -336,6 +336,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2512.03086v1">Beyond Code Pairs: Dialogue-Based Data Generation for LLM Code Translation</a></div>
+    <div class="paper-meta">
+      📅 2025-11-29
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have shown remarkable capabilities in code translation, yet their performance deteriorates in low-resource programming domains such as Fortran and emerging frameworks like CUDA, where high-quality parallel data are scarce. We present an automated dataset generation pipeline featuring a dual-LLM Questioner-Solver design that incorporates external knowledge from compilers and runtime feedback. Beyond traditional source-target code pair datasets, our approach additionally generates (1) verified translations with unit tests for assessing functional consistency, and (2) multi-turn dialogues that capture the reasoning process behind translation refinement. Applied to Fortran -> C++ and C++ -> CUDA, the pipeline yields 3.64k and 3.93k dialogues, respectively. Fine-tuning on this data yields dramatic improvements in functional correctness, boosting unit test success rates by over 56% on the challenging C++-to-CUDA task. We show this data enables a 7B open-weight model to significantly outperform larger proprietary systems on key metrics like compilation success.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2511.23476v1">Thinking by Doing: Building Efficient World Model Reasoning in LLMs via Multi-turn Interaction</a></div>
     <div class="paper-meta">
       📅 2025-11-28
@@ -671,6 +680,72 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.20172v2">Beluga: A CXL-Based Memory Architecture for Scalable and Efficient LLM KVCache Management</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+      | 💬 13 pages, accepted by SIGMOD'26
+    </div>
+    <details class="paper-abstract">
+      The rapid increase in LLM model sizes and the growing demand for long-context inference have made memory a critical bottleneck in GPU-accelerated serving systems. Although high-bandwidth memory (HBM) on GPUs offers fast access, its limited capacity necessitates reliance on host memory (CPU DRAM) to support larger working sets such as the KVCache. However, the maximum DRAM capacity is constrained by the limited number of memory channels per CPU socket. To overcome this limitation, current systems often adopt RDMA-based disaggregated memory pools, which introduce significant challenges including high access latency, complex communication protocols, and synchronization overhead. Fortunately, the emerging CXL technology introduces new opportunities in KVCache design. In this paper, we propose Beluga, a novel memory architecture that enables GPUs and CPUs to access a shared, large-scale memory pool through CXL switches. By supporting native load/store access semantics over the CXL fabric, our design delivers near-local memory latency, while reducing programming complexity and minimizing synchronization overhead. We conduct a systematic characterization of a commercial CXL switch-based memory pool and propose a set of design guidelines. Based on Beluga, we design and implement Beluga-KVCache, a system tailored for managing the large-scale KVCache in LLM inference. Beluga-KVCache achieves an 89.6% reduction in Time-To-First-Token (TTFT) and 7.35x throughput improvement in the vLLM inference engine compared to RDMA-based solutions. To the best of our knowledge, Beluga is the first system that enables GPUs to directly access large-scale memory pools through CXL switches, marking a significant step toward low-latency, shared access to vast memory resources by GPUs.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2405.05758v2">Exploring the Human-LLM Synergy in Advancing Theory-driven Qualitative Analysis</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+      | 💬 51 pages, 6 figures, accepted by ACM Trans. Comput.-Hum. Interact (TOCHI)
+    </div>
+    <details class="paper-abstract">
+      Qualitative coding is a demanding yet crucial research method in the field of Human-Computer Interaction (HCI). While recent studies have shown the capability of large language models (LLMs) to perform qualitative coding within theoretical frameworks, their potential for collaborative human-LLM discovery and generation of new insights beyond initial theory remains underexplored. To bridge this gap, we proposed CHALET, a novel approach that harnesses the power of human-LLM partnership to advance theory-driven qualitative analysis by facilitating iterative coding, disagreement analysis, and conceptualization of qualitative data. We demonstrated CHALET's utility by applying it to the qualitative analysis of conversations related to mental-illness stigma, using the attribution model as the theoretical framework. Results highlighted the unique contribution of human-LLM collaboration in uncovering latent themes of stigma across the cognitive, emotional, and behavioral dimensions. We discuss the methodological implications of the human-LLM collaborative approach to theory-based qualitative analysis for the HCI community and beyond.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22118v1">Statistical Independence Aware Caching for LLM Workflows</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) inference is both expensive and slow. Local caching of responses offers a practical solution to reduce the cost and latency of LLM queries. In research contexts, caching also enhances reproducibility and provides flexibility for experimentation. However, naive reuse of cached responses compromises statistical independence, a critical property for probabilistic workflows. In applications of LLM for code, it underpins performance metrics such as Pass@k and uncertainty estimation, as well as algorithms like program repair loops and retries. Existing LLM caching systems lack ways to enforce statistical independence constraints. To address this, we introduce Mnimi, a cache design pattern that supports modular LLM workflows while ensuring statistical integrity at the component level. Its core innovation lies in encapsulating statistical constraints within the type of LLM references, allowing users to manage and transform these types according to the scope and requirements of their algorithm. We implemented this design pattern in Python using a combination of decorators and iterators over infinite sequences. A case study on SpecFix, an recent automated program specification repair system, highlights how Mnimi improves reproducibility, ease of debugging, time and cost efficiency while preserving statistical correctness.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22099v1">Decomposed Trust: Exploring Privacy, Adversarial Robustness, Fairness, and Ethics of Low-Rank LLMs</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+      | 💬 14 pages, 10 figures
+    </div>
+    <details class="paper-abstract">
+      Large language models (LLMs) have driven major advances across domains, yet their massive size hinders deployment in resource-constrained settings. Model compression addresses this challenge, with low-rank factorization emerging as a particularly effective method for reducing size, memory, and computation while maintaining accuracy. However, while these compressed models boast of benign performance and system-level advantages, their trustworthiness implications remain poorly understood. In this paper, we present the first comprehensive study of how low-rank factorization affects LLM trustworthiness across privacy, adversarial robustness, fairness, and ethical alignment. We evaluate multiple LLMs of different sizes and variants compressed with diverse low-rank algorithms, revealing key insights: (1) low-rank compression preserves or improves training data privacy but weakens PII protection during conversation; (2) adversarial robustness is generally preserved and often enhanced, even under deep compression; (3) ethical reasoning degrades in zero-shot settings but partially recovers with few-shot prompting; (4) fairness declines under compression. Beyond compression, we investigate how model scale and fine-tuning affect trustworthiness, as both are important in low-rank methods. To guide trustworthy compression strategies, we end our paper with a gradient-based attribution analysis to identify which layers in LLMs contribute most to adversarial robustness.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22044v1">Distillability of LLM Security Logic: Predicting Attack Success Rate of Outline Filling Attack via Ranking Regression</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+    </div>
+    <details class="paper-abstract">
+      In the realm of black-box jailbreak attacks on large language models (LLMs), the feasibility of constructing a narrow safety proxy, a lightweight model designed to predict the attack success rate (ASR) of adversarial prompts, remains underexplored. This work investigates the distillability of an LLM's core security logic. We propose a novel framework that incorporates an improved outline filling attack to achieve dense sampling of the model's security boundaries. Furthermore, we introduce a ranking regression paradigm that replaces standard regression and trains the proxy model to predict which prompt yields a higher ASR. Experimental results show that our proxy model achieves an accuracy of 91.1 percent in predicting the relative ranking of average long response (ALR), and 69.2 percent in predicting ASR. These findings confirm the predictability and distillability of jailbreak behaviors, and demonstrate the potential of leveraging such distillability to optimize black-box attacks.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2510.04116v2">Searching Meta Reasoning Skeleton to Guide LLM Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+    </div>
+    <details class="paper-abstract">
+      Meta reasoning behaviors work as a skeleton to guide large language model (LLM) reasoning, thus help to improve reasoning performance. However, prior researches implement meta reasoning skeleton with manually designed structure, limiting ability to adapt to query-specific requirement and capture intricate logical dependency among reasoning steps. To deal with the challenges, we represent meta reasoning skeleton with directed acyclic graph (DAG) to unify skeletons proposed in prior works and model intricate logical dependency. Then we propose AutoMR, a framework that searches for query-aware meta reasoning skeleton automatically inspired by automated machine learning (AutoML). Specifically, we construct search space based on DAG representation of skeleton and then formulate the search problem. We design a dynamic skeleton sampling algorithm by expanding meta reasoning skeleton along with reasoning context at inference time. This algorithm can derive any meta reasoning skeleton in search space efficiently and adapt skeleton to evolving base reasoning context, thus enable efficient query-aware skeleton search. We conduct experiments on extensive benchmark datasets. Experimental results show that AutoMR achieves better reasoning performance than previous works broadly.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.22530v2">Boosting Pointer Analysis With LLM-Enhanced Allocation Function Detection</a></div>
+    <div class="paper-meta">
+      📅 2025-11-27
+    </div>
+    <details class="paper-abstract">
+      Pointer analysis is foundational for many static analysis tasks, yet its effectiveness is often hindered by imprecise modeling of heap allocations, particularly in C/C++ programs where custom allocation functions (CAFs) are pervasive. Existing approaches largely overlook these custom allocators, leading to coarse aliasing and low analysis precision. In this paper, we present CAFD, a novel and lightweight technique that enhances pointer analysis by automatically detecting side-effect-free custom allocation functions. CAFD employs a hybrid approach: it uses value-flow analysis to detect straightforward wrappers and leverages Large Language Models (LLMs) to reason about more complex allocation patterns with side effects, ensuring that only side-effect-free functions are modeled as allocators. This targeted enhancement enables precise modeling of heap objects at each call site, achieving context-sensitivity-like benefits without significant overhead. We evaluated CAFD on 17 real-world C projects, identifying over 700 CAFs. Integrating CAFD into a baseline pointer analysis yields a 38x increase in modeled heap objects and a 41.5% reduction in alias set sizes, with only 1.4x runtime overhead. Furthermore, the LLM-enhanced pointer analysis improves indirect call resolution and discovers 29 previously undetected memory bugs, including 6 from real-world industrial applications. These results demonstrate that precise modeling of CAFs has the capability to offer a scalable and practical path to improve pointer analysis in large software systems.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2511.22033v1">Pathology-Aware Prototype Evolution via LLM-Driven Semantic Disambiguation for Multicenter Diabetic Retinopathy Diagnosis</a></div>
     <div class="paper-meta">
       📅 2025-11-27
@@ -897,83 +972,5 @@
     </div>
     <details class="paper-abstract">
       Large language models (LLMs) have shown remarkable ability to generate code, yet their outputs often violate syntactic or semantic constraints when guided only through natural language prompts. We introduce TreeCoder, the most general and flexible framework to date for exploring decoding strategies, constraints, and hyperparameters in LLMs, and use it in code generation to enforce correctness and structure during decoding rather than relying on prompt engineering. TreeCoder represents decoding as a tree search over candidate programs, where both decoding strategies and constraint functions - such as style, syntax, execution - are treated as first-class, optimisable components. This design enables systematic exploration and automatic tuning of decoding configurations using standard optimisation techniques. Experiments on the MBPP (Python) and SQL-Spider benchmarks show that TreeCoder consistently improves accuracy across open-source models such as CodeLlama, Mistral and DeepSeek, often outperforming their unconstrained baselines by considerable margins.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22275v1">RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 Accepted by AAAI 2026
-    </div>
-    <details class="paper-abstract">
-      Large Language models are revolutionizing the conversational recommender systems through their impressive capabilities in instruction comprehension, reasoning, and human interaction. A core factor underlying effective recommendation dialogue is the ability to infer and reason about users' mental states (such as desire, intention, and belief), a cognitive capacity commonly referred to as Theory of Mind. Despite growing interest in evaluating ToM in LLMs, current benchmarks predominantly rely on synthetic narratives inspired by Sally-Anne test, which emphasize physical perception and fail to capture the complexity of mental state inference in realistic conversational settings. Moreover, existing benchmarks often overlook a critical component of human ToM: behavioral prediction, the ability to use inferred mental states to guide strategic decision-making and select appropriate conversational actions for future interactions. To better align LLM-based ToM evaluation with human-like social reasoning, we propose RecToM, a novel benchmark for evaluating ToM abilities in recommendation dialogues. RecToM focuses on two complementary dimensions: Cognitive Inference and Behavioral Prediction. The former focus on understanding what has been communicated by inferring the underlying mental states. The latter emphasizes what should be done next, evaluating whether LLMs can leverage these inferred mental states to predict, select, and assess appropriate dialogue strategies. Extensive experiments on state-of-the-art LLMs demonstrate that RecToM poses a significant challenge. While the models exhibit partial competence in recognizing mental states, they struggle to maintain coherent, strategic ToM reasoning throughout dynamic recommendation dialogues, particularly in tracking evolving intentions and aligning conversational strategies with inferred mental states.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2509.24765v3">From Ambiguity to Verdict: A Semiotic-Grounded Multi-Perspective Agent for LLM Logical Reasoning</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-    </div>
-    <details class="paper-abstract">
-      Logical reasoning is a fundamental capability of large language models (LLMs). However, existing studies largely overlook the interplay between logical complexity and semantic complexity, resulting in methods that struggle to address challenging scenarios involving abstract propositions, ambiguous contexts, and conflicting stances, which are central to human reasoning. For this gap, we propose LogicAgent, a semiotic-square-guided framework designed to jointly address logical complexity and semantic complexity. LogicAgent explicitly performs multi-perspective deduction in first-order logic (FOL), while mitigating vacuous reasoning through existential import checks that incorporate a three-valued decision scheme (True, False, Uncertain) to handle boundary cases more faithfully. Furthermore, to overcome the semantic simplicity and low logical complexity of existing datasets, we introduce RepublicQA, a benchmark that reaches college-level difficulty (FKGL = 11.94) and exhibits substantially greater lexical and structural diversity than prior benchmarks. RepublicQA is grounded in philosophical concepts, featuring abstract propositions and systematically organized contrary and contradictory relations, making it the most semantically rich resource for evaluating logical reasoning. Experiments demonstrate that LogicAgent achieves state-of-the-art performance on RepublicQA, with a 6.25% average gain over strong baselines, and generalizes effectively to mainstream logical reasoning benchmarks including ProntoQA, ProofWriter, FOLIO, and ProverQA, achieving an additional 7.05% average gain. These results highlight the strong effectiveness of our semiotic-grounded multi-perspective reasoning in boosting LLMs' logical performance.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2501.16607v3">MCTS-SQL: Light-Weight LLMs can Master the Text-to-SQL through Monte Carlo Tree Search</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 Accepted by AAAI 2026
-    </div>
-    <details class="paper-abstract">
-      Text-to-SQL is a fundamental yet challenging task in the NLP area, aiming at translating natural language questions into SQL queries. While recent advances in large language models have greatly improved performance, most existing approaches depend on models with tens of billions of parameters or costly APIs, limiting their applicability in resource-constrained environments. For real world, especially on edge devices, it is crucial for Text-to-SQL to ensure cost-effectiveness. Therefore, enabling the light-weight models for Text-to-SQL is of great practical significance. However, smaller LLMs often struggle with complicated user instruction, redundant schema linking or syntax correctness. To address these challenges, we propose MCTS-SQL, a novel framework that uses Monte Carlo Tree Search to guide SQL generation through multi-step refinement. Since the light-weight models' weak performance of single-shot prediction, we generate better results through several trials with feedback. However, directly applying MCTS-based methods inevitably leads to significant time and computational overhead. Driven by this issue, we propose a token-level prefix-cache mechanism that stores prior information during iterations, effectively improved the execution speed. Experiments results on the SPIDER and BIRD benchmarks demonstrate the effectiveness of our approach. Using a small open-source Qwen2.5-Coder-1.5B, our method outperforms ChatGPT-3.5. When leveraging a more powerful model Gemini 2.5 to explore the performance upper bound, we achieved results competitive with the SOTA. Our findings demonstrate that even small models can be effectively deployed in practical Text-to-SQL systems with the right strategy.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2406.19657v6">LLMEasyQuant: Scalable Quantization for Parallel and Distributed LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 Accepted as International Conference of Computational Optimization 2025 Oral
-    </div>
-    <details class="paper-abstract">
-      As large language models (LLMs) grow in size and deployment scale, quantization has become an essential technique for reducing memory footprint and improving inference efficiency. However, existing quantization toolkits often lack transparency, flexibility, and system-level scalability across GPUs and distributed environments. We present \textbf{LLMEasyQuant}, a modular, system-aware quantization framework designed for efficient, low-bit inference of LLMs on single-node multi-GPU, multi-node, and edge hardware. LLMEasyQuant supports a wide range of quantization methods -- including Symmetric Quantization, ZeroQuant, SmoothQuant, and SimQuant -- with unified interfaces for per-layer calibration, bitwidth assignment, and runtime adaptation. It integrates fused CUDA kernels with NCCL-based distributed synchronization and supports both static and online quantization. Empirical results show that LLMEasyQuant can achieve substantial speedup in GEMM execution, HBM load time, and near-linear multi-GPU scaling. Ablation studies further validate its ability to balance latency, memory, and accuracy under diverse deployment conditions. LLMEasyQuant offers a practical quantization serving system for scalable, hardware-optimized LLM inference.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13142v4">Holistic Evaluation of Multimodal LLMs on Spatial Intelligence</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 Codebase: https://github.com/EvolvingLMMs-Lab/EASI/; Leaderboard: https://huggingface.co/spaces/lmms-lab-si/EASI-Leaderboard
-    </div>
-    <details class="paper-abstract">
-      Multimodal models have achieved remarkable progress in recent years. Nevertheless, they continue to exhibit notable limitations in spatial understanding and reasoning, the very capability that anchors artificial general intelligence in the physical world. With the recent release of GPT-5, allegedly the most powerful AI model to date, it is timely to examine where the leading models (GPT, Gemini, Grok, Seed, Qwen, and Intern) stand on the path toward spatial intelligence (SI). We thus propose EASI for holistic Evaluation of multimodAl LLMs on Spatial Intelligence. EASI conceptualizes a comprehensive taxonomy of spatial tasks that unifies existing benchmarks and a growing collection of newly curated ones, enabling systematic evaluation of state-of-the-art models. In this report, we conduct the study across eight key benchmarks, at a cost exceeding ten billion total tokens. Our empirical study then reveals that (1) GPT-5 demonstrates unprecedented strength in SI, yet (2) still falls short of human performance significantly across a broad spectrum of SI-tasks. Moreover, we (3) show that SI-tasks expose greater model capability deficiency than non-SI tasks, to the extent that (4) proprietary models do not exhibit a decisive advantage when facing the most difficult ones. In addition, we conduct a qualitative evaluation across a diverse set of scenarios that are intuitive for humans, yet fail the most advanced multimodal models. EASI is an ongoing community effort: we have open-sourced the EASI codebase that provides a one-stop and reproducible solution with standardized interfaces, integrated protocols and prompts that significantly reduce the friction of configuring and running multiple benchmarks; we have also launched an accompanying EASI leaderboard to provide a continually updated snapshot of model performance across the full SI spectrum, accelerating collective progress toward robust SI.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2504.09936v2">KeepKV: Achieving Periodic Lossless KV Cache Compression for Efficient LLM Inference</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 14 pages, 20 figures
-    </div>
-    <details class="paper-abstract">
-      Efficient inference of large language models (LLMs) is hindered by an ever-growing key-value (KV) cache, making KV cache compression a critical research direction. Traditional methods selectively evict less important KV cache entries, which leads to information loss and hallucinations. Recently, merging-based strategies have been explored to retain more information by merging KV pairs that would be discarded; however, these existing approaches inevitably introduce inconsistencies in attention distributions before and after merging, causing degraded generation quality. To overcome this challenge, we propose KeepKV, a novel adaptive KV cache merging method designed to preserve performance under strict memory constraints, achieving single-step lossless compression and providing error bounds for multi-step compression. KeepKV introduces the Electoral Votes mechanism that records merging history and adaptively adjusts attention scores. Moreover, it further leverages a novel Zero Inference-Perturbation Merging method, compensating for attention loss resulting from cache merging. Extensive experiments on various benchmarks and LLM architectures demonstrate that KeepKV substantially reduces memory usage while successfully retaining essential context information, achieving over 2x inference throughput improvement and maintaining superior generation quality even with only 10% KV cache budgets.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22176v1">Focused Chain-of-Thought: Efficient LLM Reasoning via Structured Input Information</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-    </div>
-    <details class="paper-abstract">
-      Recent large language models achieve strong reasoning performance by generating detailed chain-of-thought traces, but this often leads to excessive token use and high inference latency. Existing efficiency approaches typically focus on model-centric interventions, such as reinforcement learning or supervised fine-tuning, to reduce verbosity. In contrast, we propose a training-free, input-centric approach. Inspired by cognitive psychology, we introduce Focused Chain-of-Thought (F-CoT), which separates information extraction from the reasoning process. F-CoT first organizes the essential information from a query into a concise, structured context and then guides the model to reason exclusively over this context. By preventing attention to irrelevant details, F-CoT naturally produces shorter reasoning paths. On arithmetic word problems, F-CoT reduces generated tokens by 2-3x while maintaining accuracy comparable to standard zero-shot CoT. These results highlight structured input as a simple yet effective lever for more efficient LLM reasoning.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2511.22153v1">A Theoretically Grounded Hybrid Ensemble for Reliable Detection of LLM-Generated Text</a></div>
-    <div class="paper-meta">
-      📅 2025-11-27
-      | 💬 24 pages
-    </div>
-    <details class="paper-abstract">
-      The rapid proliferation of Large Language Models (LLMs) has blurred the line between human and machine authorship, creating practical risks for academic integrity and information reliability. Existing text detectors typically rely on a single methodological paradigm and suffer from poor generalization and high false positive rates (FPR), especially on high-stakes academic text. We propose a theoretically grounded hybrid ensemble that systematically fuses three complementary detection paradigms: (i) a RoBERTa-based transformer classifier for deep semantic feature extraction, (ii) a GPT-2-based probabilistic detector using perturbation-induced likelihood curvature, and (iii) a statistical linguistic feature analyzer capturing stylometric patterns. The core novelty lies in an optimized weighted voting framework, where ensemble weights are learned on the probability simplex to maximize F1-score rather than set heuristically. We provide a bias-variance analysis and empirically demonstrate low inter-model correlation (rho ~ 0.35-0.42), a key condition for variance reduction. Evaluated on a large-scale, multigenerator corpus of 30,000 documents, our system achieves 94.2% accuracy and an AUC of 0.978, with a 35% relative reduction in false positives on academic text. This yields a more reliable and ethically responsible detector for real-world deployment in education and other high-stakes domains.
     </details>
 </div>
