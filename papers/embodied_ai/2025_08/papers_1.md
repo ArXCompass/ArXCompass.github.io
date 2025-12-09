@@ -467,6 +467,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13421v1">Virtuous Machines: Towards Artificial General Science</a></div>
+    <div class="paper-meta">
+      📅 2025-08-19
+    </div>
+    <details class="paper-abstract">
+      Artificial intelligence systems are transforming scientific discovery by accelerating specific research tasks, from protein structure prediction to materials design, yet remain confined to narrow domains requiring substantial human oversight. The exponential growth of scientific literature and increasing domain specialisation constrain researchers' capacity to synthesise knowledge across disciplines and develop unifying theories, motivating exploration of more general-purpose AI systems for science. Here we show that a domain-agnostic, agentic AI system can independently navigate the scientific workflow - from hypothesis generation through data collection to manuscript preparation. The system autonomously designed and executed three psychological studies on visual working memory, mental rotation, and imagery vividness, executed one new online data collection with 288 participants, developed analysis pipelines through 8-hour+ continuous coding sessions, and produced completed manuscripts. The results demonstrate the capability of AI scientific discovery pipelines to conduct non-trivial research with theoretical reasoning and methodological rigour comparable to experienced researchers, though with limitations in conceptual nuance and theoretical interpretation. This is a step toward embodied AI that can test hypotheses through real-world experiments, accelerating discovery by autonomously exploring regions of scientific space that human cognitive and resource constraints might otherwise leave unexplored. It raises important questions about the nature of scientific understanding and the attribution of scientific credit.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.13073v1">Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey</a></div>
     <div class="paper-meta">
       📅 2025-08-18
@@ -618,6 +627,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2507.07818v2">MoSE: Skill-by-Skill Mixture-of-Experts Learning for Embodied Autonomous Machines</a></div>
+    <div class="paper-meta">
+      📅 2025-08-13
+    </div>
+    <details class="paper-abstract">
+      To meet the growing demand for smarter, faster, and more efficient embodied AI solutions, we introduce a novel Mixture-of-Expert (MoE) method that significantly boosts reasoning and learning efficiency for embodied autonomous systems. General MoE models demand extensive training data and complex optimization, which limits their applicability in embodied AI such as autonomous driving (AD) and robotic manipulation. In this work, we propose a skill-oriented MoE called MoSE, which mimics the human learning and reasoning process skill-by-skill, step-by-step. We introduce a skill-oriented routing mechanism that begins with defining and annotating specific skills, enabling experts to identify the necessary competencies for various scenarios and reasoning tasks, thereby facilitating skill-by-skill learning. To better align with multi-step planning in human reasoning and in end-to-end driving models, we build a hierarchical skill dataset and pretrain the router to encourage the model to think step-by-step. Unlike other multi-round dialogues, MoSE integrates valuable auxiliary tasks (e.g. perception-prediction-planning for AD, and high-level and low-level planning for robots) in one single forward process without introducing any extra computational cost. With less than 3B sparsely activated parameters, our model effectively grows more diverse expertise and outperforms models on both AD corner-case reasoning tasks and robot reasoning tasks with less than 40% of the parameters.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.08896v1">Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors</a></div>
     <div class="paper-meta">
       📅 2025-08-12
@@ -696,6 +714,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.08252v1">ReferSplat: Referring Segmentation in 3D Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2025-08-11
+      | 💬 ICML 2025 Oral, Code: https://github.com/heshuting555/ReferSplat
+    </div>
+    <details class="paper-abstract">
+      We introduce Referring 3D Gaussian Splatting Segmentation (R3DGS), a new task that aims to segment target objects in a 3D Gaussian scene based on natural language descriptions, which often contain spatial relationships or object attributes. This task requires the model to identify newly described objects that may be occluded or not directly visible in a novel view, posing a significant challenge for 3D multi-modal understanding. Developing this capability is crucial for advancing embodied AI. To support research in this area, we construct the first R3DGS dataset, Ref-LERF. Our analysis reveals that 3D multi-modal understanding and spatial relationship modeling are key challenges for R3DGS. To address these challenges, we propose ReferSplat, a framework that explicitly models 3D Gaussian points with natural language expressions in a spatially aware paradigm. ReferSplat achieves state-of-the-art performance on both the newly proposed R3DGS task and 3D open-vocabulary segmentation benchmarks. Dataset and code are available at https://github.com/heshuting555/ReferSplat.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.07501v1">FormCoach: Lift Smarter, Not Harder</a></div>
     <div class="paper-meta">
       📅 2025-08-10
@@ -724,6 +752,15 @@
 </div>
 <div class="paper-card">
     <div class="paper-title"><a href="http://arxiv.org/abs/2508.06767v1">PANAMA: A Network-Aware MARL Framework for Multi-Agent Path Finding in Digital Twin Ecosystems</a></div>
+    <div class="paper-meta">
+      📅 2025-08-09
+    </div>
+    <details class="paper-abstract">
+      Digital Twins (DTs) are transforming industries through advanced data processing and analysis, positioning the world of DTs, Digital World, as a cornerstone of nextgeneration technologies including embodied AI. As robotics and automated systems scale, efficient data-sharing frameworks and robust algorithms become critical. We explore the pivotal role of data handling in next-gen networks, focusing on dynamics between application and network providers (AP/NP) in DT ecosystems. We introduce PANAMA, a novel algorithm with Priority Asymmetry for Network Aware Multi-agent Reinforcement Learning (MARL) based multi-agent path finding (MAPF). By adopting a Centralized Training with Decentralized Execution (CTDE) framework and asynchronous actor-learner architectures, PANAMA accelerates training while enabling autonomous task execution by embodied AI. Our approach demonstrates superior pathfinding performance in accuracy, speed, and scalability compared to existing benchmarks. Through simulations, we highlight optimized data-sharing strategies for scalable, automated systems, ensuring resilience in complex, real-world environments. PANAMA bridges the gap between network-aware decision-making and robust multi-agent coordination, advancing the synergy between DTs, wireless networks, and AI-driven automation.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.06767v1">PANAMA: A Network-Aware MARL Framework for Multi-Agent Path Finding in Digital Twin Ecosystems</a></div>
     <div class="paper-meta">
       📅 2025-08-09
     </div>
@@ -776,6 +813,16 @@
     </div>
     <details class="paper-abstract">
       As large language models (LLMs) continue to advance and gain influence, the development of embodied AI has accelerated, drawing significant attention, particularly in navigation scenarios. Embodied navigation requires an agent to perceive, interact with, and adapt to its environment while moving toward a specified target in unfamiliar settings. However, the integration of embodied navigation into critical applications raises substantial safety concerns. Given their deployment in dynamic, real-world environments, ensuring the safety of such systems is critical. This survey provides a comprehensive analysis of safety in embodied navigation from multiple perspectives, encompassing attack strategies, defense mechanisms, and evaluation methodologies. Beyond conducting a comprehensive examination of existing safety challenges, mitigation technologies, and various datasets and metrics that assess effectiveness and robustness, we explore unresolved issues and future research directions in embodied navigation safety. These include potential attack methods, mitigation strategies, more reliable evaluation techniques, and the implementation of verification frameworks. By addressing these critical gaps, this survey aims to provide valuable insights that can guide future research toward the development of safer and more reliable embodied navigation systems. Furthermore, the findings of this study have broader implications for enhancing societal safety and increasing industrial efficiency.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.05614v1">OmniEAR: Benchmarking Agent Reasoning in Embodied Tasks</a></div>
+    <div class="paper-meta">
+      📅 2025-08-07
+      | 💬 Project Page: https://zju-real.github.io/OmniEmbodied Code: https://github.com/ZJU-REAL/OmniEmbodied
+    </div>
+    <details class="paper-abstract">
+      Large language models excel at abstract reasoning but their capacity for embodied agent reasoning remains largely unexplored. We present OmniEAR, a comprehensive framework for evaluating how language models reason about physical interactions, tool usage, and multi-agent coordination in embodied tasks. Unlike existing benchmarks that provide predefined tool sets or explicit collaboration directives, OmniEAR requires agents to dynamically acquire capabilities and autonomously determine coordination strategies based on task demands. Through text-based environment representation, we model continuous physical properties and complex spatial relationships across 1,500 scenarios spanning household and industrial domains. Our systematic evaluation reveals severe performance degradation when models must reason from constraints: while achieving 85-96% success with explicit instructions, performance drops to 56-85% for tool reasoning and 63-85% for implicit collaboration, with compound tasks showing over 50% failure rates. Surprisingly, complete environmental information degrades coordination performance, indicating models cannot filter task-relevant constraints. Fine-tuning improves single-agent tasks dramatically (0.6% to 76.3%) but yields minimal multi-agent gains (1.5% to 5.5%), exposing fundamental architectural limitations. These findings demonstrate that embodied reasoning poses fundamentally different challenges than current models can address, establishing OmniEAR as a rigorous benchmark for evaluating and advancing embodied AI systems. Our code and data are included in the supplementary materials and will be open-sourced upon acceptance.
     </details>
 </div>
 <div class="paper-card">
