@@ -112,6 +112,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.02378v1">Modeling the Mental World for Embodied AI: A Comprehensive Review</a></div>
+    <div class="paper-meta">
+      📅 2025-12-17
+    </div>
+    <details class="paper-abstract">
+      As the application of Embodied AI Agents in avatars, wearable devices, and robotic systems continues to deepen, their core research challenges have gradually shifted from physical environment interaction to the accurate understanding of social interactions. Traditional physical world models (PWM) focus on quantifiable physical attributes such as space and motion, failing to meet the needs of social intelligence modeling. In contrast, the Mental World Model (MWM), as a structured representation of humans' internal mental states, has become the critical cognitive foundation for embodied agents to achieve natural human-machine collaboration and dynamic social adaptation. However, current MWM research faces significant bottlenecks: such as fragmented conceptual framework with vague boundaries between MWM and PWM, disjointed reasoning mechanisms for the technical pathways and applicable scenarios of different Theory of Mind (ToM) reasoning paradigms, and detachment between evaluation and practice. To address these issues, this review systematically synthesizes over 100 authoritative studies to provide a comprehensive overview of MWM research for embodied AI. Its core contributions are threefold: First, it constructs a complete theoretical framework for MWM for the first time. Specifically, it distinguishes the essential differences between MWM and PWMs. Second, it systematically defines the key components of MWM through two paradigms for mental element representation. Third, it comprehensively analyzes two core ToM reasoning paradigms with 19 ToM methods. Finally, it also clarifies the integration trend of neuro-symbolic hybrid architectures, and synthesizes 26 ToM evaluation benchmarks. This work aims to promote the integration of embodied agents into human society and advance the in-depth development of human-machine collaborative interaction.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2512.14442v1">A4-Agent: An Agentic Framework for Zero-Shot Affordance Reasoning</a></div>
     <div class="paper-meta">
       📅 2025-12-16
