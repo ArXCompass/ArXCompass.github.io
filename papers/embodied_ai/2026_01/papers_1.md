@@ -9,6 +9,55 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.14140v1">CREATE: Cross-Layer Resilience Characterization and Optimization for Efficient yet Reliable Embodied AI Systems</a></div>
+    <div class="paper-meta">
+      📅 2026-01-20
+      | 💬 18 pages, 21 figures. Accepted by ASPLOS 2026
+    </div>
+    <details class="paper-abstract">
+      Embodied Artificial Intelligence (AI) has recently attracted significant attention as it bridges AI with the physical world. Modern embodied AI systems often combine a Large Language Model (LLM)-based planner for high-level task planning and a reinforcement learning (RL)-based controller for low-level action generation, enabling embodied agents to tackle complex tasks in real-world environments. However, deploying embodied agents remains challenging due to their high computation requirements, especially for battery-powered local devices. Although techniques like lowering operating voltage can improve energy efficiency, they can introduce bit errors and result in task failures. In this work, we propose CREATE, a general design principle that leverages heterogeneous resilience at different layers for synergistic energy-reliability co-optimization. For the first time, we conduct a comprehensive error injection study on modern embodied AI systems and observe an inherent but heterogeneous fault tolerance. Building upon these insights, we develop an anomaly detection and clearance mechanism at the circuit level to eliminate outlier errors. At the model level, we propose a weight-rotation-enhanced planning algorithm to improve the fault tolerance of the LLM-based planner. Furthermore, we introduce an application-level technique, autonomy-adaptive voltage scaling, to dynamically adjust the operating voltage of the controllers. The voltage scaling circuit is co-designed to enable online voltage adjustment. Extensive experiments demonstrate that without compromising task quality, CREATE achieves 40.6% computational energy savings on average over nominal-voltage baselines and 35.0% over prior-art techniques. This further leads to 29.5% to 37.3% chip-level energy savings and approximately a 15% to 30% improvement in battery life.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.13945v1">Efficient Coordination with the System-Level Shared State: An Embodied-AI Native Modular Framework</a></div>
+    <div class="paper-meta">
+      📅 2026-01-20
+    </div>
+    <details class="paper-abstract">
+      As Embodied AI systems move from research prototypes to real world deployments, they tend to evolve rapidly while remaining reliable under workload changes and partial failures. In practice, many deployments are only partially decoupled: middleware moves messages, but shared context and feedback semantics are implicit, causing interface drift, cross-module interference, and brittle recovery at scale. We present ANCHOR, a modular framework that makes decoupling and robustness explicit system-level primitives. ANCHOR separates (i) Canonical Records, an evolvable contract for the standardized shared state, from (ii) a communication bus for many-to-many dissemination and feedback-oriented coordination, forming an inspectable end-to-end loop. We validate closed-loop feasibility on a de-identified workflow instantiation, characterize latency distributions under varying payload sizes and publish rates, and demonstrate automatic stream resumption after hard crashes and restarts even with shared-memory loss. Overall, ANCHOR turns ad-hoc integration glue into explicit contracts, enabling controlled degradation under load and self-healing recovery for scalable deployment of closed-loop AI systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2502.09680v3">Object-Centric Latent Action Learning</a></div>
+    <div class="paper-meta">
+      📅 2026-01-20
+      | 💬 Accepted by AAAI 2026 (Oral). Source code: https://github.com/dunnolab/object-centric-lapo
+    </div>
+    <details class="paper-abstract">
+      Leveraging vast amounts of unlabeled internet video data for embodied AI is currently bottlenecked by the lack of action labels and the presence of action-correlated visual distractors. Although recent latent action policy optimization (LAPO) has shown promise in inferring proxy action labels from visual observations, its performance degrades significantly when distractors are present. To address this limitation, we propose a novel object-centric latent action learning framework that centers on objects rather than pixels. We leverage self-supervised object-centric pretraining to disentangle the movement of the agent and distracting background dynamics. This allows LAPO to focus on task-relevant interactions, resulting in more robust proxy-action labels, enabling better imitation learning and efficient adaptation of the agent with just a few action-labeled trajectories. We evaluated our method in eight visually complex tasks across the Distracting Control Suite (DCS) and Distracting MetaWorld (DMW). Our results show that object-centric pretraining mitigates the negative effects of distractors by 50%, as measured by downstream task performance: average return (DCS) and success rate (DMW).
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.13556v1">LogicEnvGen: Task-Logic Driven Generation of Diverse Simulated Environments for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2026-01-20
+      | 💬 19 pages, 15 figures, 6 tables
+    </div>
+    <details class="paper-abstract">
+      Simulated environments play an essential role in embodied AI, functionally analogous to test cases in software engineering. However, existing environment generation methods often emphasize visual realism (e.g., object diversity and layout coherence), overlooking a crucial aspect: logical diversity from the testing perspective. This limits the comprehensive evaluation of agent adaptability and planning robustness in distinct simulated environments. To bridge this gap, we propose LogicEnvGen, a novel method driven by Large Language Models (LLMs) that adopts a top-down paradigm to generate logically diverse simulated environments as test cases for agents. Given an agent task, LogicEnvGen first analyzes its execution logic to construct decision-tree-structured behavior plans and then synthesizes a set of logical trajectories. Subsequently, it adopts a heuristic algorithm to refine the trajectory set, reducing redundant simulation. For each logical trajectory, which represents a potential task situation, LogicEnvGen correspondingly instantiates a concrete environment. Notably, it employs constraint solving for physical plausibility. Furthermore, we introduce LogicEnvEval, a novel benchmark comprising four quantitative metrics for environment evaluation. Experimental results verify the lack of logical diversity in baselines and demonstrate that LogicEnvGen achieves 1.04-2.61x greater diversity, significantly improving the performance in revealing agent faults by 4.00%-68.00%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2405.14093v6">A Survey on Vision-Language-Action Models for Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2026-01-19
+      | 💬 Project page: https://github.com/yueen-ma/Awesome-VLA
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is widely recognized as a cornerstone of artificial general intelligence because it involves controlling embodied agents to perform tasks in the physical world. Building on the success of large language models and vision-language models, a new category of multimodal models -- referred to as vision-language-action models (VLAs) -- has emerged to address language-conditioned robotic tasks in embodied AI by leveraging their distinct ability to generate actions. The recent proliferation of VLAs necessitates a comprehensive survey to capture the rapidly evolving landscape. To this end, we present the first survey on VLAs for embodied AI. This work provides a detailed taxonomy of VLAs, organized into three major lines of research. The first line focuses on individual components of VLAs. The second line is dedicated to developing VLA-based control policies adept at predicting low-level actions. The third line comprises high-level task planners capable of decomposing long-horizon tasks into a sequence of subtasks, thereby guiding VLAs to follow more general user instructions. Furthermore, we provide an extensive summary of relevant resources, including datasets, simulators, and benchmarks. Finally, we discuss the challenges facing VLAs and outline promising future directions in embodied AI. A curated repository associated with this survey is available at: https://github.com/yueen-ma/Awesome-VLA.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2601.11421v1">The Great March 100: 100 Detail-oriented Tasks for Evaluating Embodied AI Agents</a></div>
     <div class="paper-meta">
       📅 2026-01-16
