@@ -29,6 +29,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.09954v2">The Spatial Blindspot of Vision-Language Models</a></div>
+    <div class="paper-meta">
+      📅 2026-01-22
+      | 💬 Work done as part of the EleutherAI SOAR Program
+    </div>
+    <details class="paper-abstract">
+      Vision-language models (VLMs) have advanced rapidly, but their ability to capture spatial relationships remains a blindspot. Current VLMs are typically built with contrastive language-image pretraining (CLIP) style image encoders. The training recipe often flattens images into 1D patch sequences, discarding the 2D structure necessary for spatial reasoning. We argue that this lack of spatial awareness is a missing dimension in VLM design and a bottleneck for applications requiring spatial grounding, such as robotics and embodied AI. To address this, we investigate (i) image encoders trained with alternative objectives and (ii) 2D positional encodings. Our experiments show that these architectural choices can lead to improved spatial reasoning on several benchmarks.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2601.15282v1">Rethinking Video Generation Model for the Embodied World</a></div>
     <div class="paper-meta">
       📅 2026-01-21
