@@ -5,7 +5,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 
 ## Features
 
-- 🔄 **Real-time Updates**: Fresh research papers delivered weekly
+- 🔄 **Real-time Updates**: Fresh research papers delivered daily
 - 🎯 **Topic-focused**: Precisely curated for your research interests
 - 📊 **Research Analytics**: Track publication trends and patterns
 - 🗂️ **Smart Organization**: Papers neatly categorized by topics and dates
@@ -19,7 +19,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 
 ## How to Use
 
-1. Click 'Watch' in the top right to receive weekly notifications
+1. Click 'Watch' in the top right to receive daily notifications
 2. Browse papers by topic in the Quick Links section
 3. View statistics and trends in each topic's README
 
@@ -29,9 +29,9 @@ Last update: 2026-02-02
 
 | Research Topic | Total Papers | Latest Month |
 | --- | --- | --- |
-| gaussian splatting | 10827 | 2026_01 (276 papers) |
-| embodied ai | 1999 | 2026_01 (46 papers) |
-| llm | 269627 | 2026_01 (21975 papers) |
+| gaussian splatting | 10835 | 2026_01 (284 papers) |
+| embodied ai | 2003 | 2026_01 (50 papers) |
+| llm | 272468 | 2026_01 (24816 papers) |
 
 ## Monthly Trends
 
