@@ -5,7 +5,7 @@ on:
   #   types:
   #     - created # for test
   schedule:
-    - cron: '30 16 * * *' # 00:30 Singapore time every day
+    - cron: '30 16 * * 0' # 00:30 Singapore time every Sunday (weekly)
   workflow_dispatch:
   push:
     branches: [master]
