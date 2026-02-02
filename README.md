@@ -5,7 +5,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 
 ## Features
 
-- 🔄 **Real-time Updates**: Fresh research papers delivered daily
+- 🔄 **Real-time Updates**: Fresh research papers delivered weekly
 - 🎯 **Topic-focused**: Precisely curated for your research interests
 - 📊 **Research Analytics**: Track publication trends and patterns
 - 🗂️ **Smart Organization**: Papers neatly categorized by topics and dates
@@ -19,7 +19,7 @@ An intelligent system that monitors and curates cutting-edge AI research papers 
 
 ## How to Use
 
-1. Click 'Watch' in the top right to receive daily notifications
+1. Click 'Watch' in the top right to receive weekly notifications
 2. Browse papers by topic in the Quick Links section
 3. View statistics and trends in each topic's README
 
