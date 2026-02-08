@@ -9,6 +9,45 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.00839v1">TransNormal: Dense Visual Semantics for Diffusion-based Transparent Object Normal Estimation</a></div>
+    <div class="paper-meta">
+      📅 2026-01-31
+      | 💬 Project Page: https://longxiang-ai.github.io/TransNormal
+    </div>
+    <details class="paper-abstract">
+      Monocular normal estimation for transparent objects is critical for laboratory automation, yet it remains challenging due to complex light refraction and reflection. These optical properties often lead to catastrophic failures in conventional depth and normal sensors, hindering the deployment of embodied AI in scientific environments. We propose TransNormal, a novel framework that adapts pre-trained diffusion priors for single-step normal regression. To handle the lack of texture in transparent surfaces, TransNormal integrates dense visual semantics from DINOv3 via a cross-attention mechanism, providing strong geometric cues. Furthermore, we employ a multi-task learning objective and wavelet-based regularization to ensure the preservation of fine-grained structural details. To support this task, we introduce TransNormal-Synthetic, a physics-based dataset with high-fidelity normal maps for transparent labware. Extensive experiments demonstrate that TransNormal significantly outperforms state-of-the-art methods: on the ClearGrasp benchmark, it reduces mean error by 24.4% and improves 11.25° accuracy by 22.8%; on ClearPose, it achieves a 15.2% reduction in mean error. The code and dataset will be made publicly available at https://longxiang-ai.github.io/TransNormal.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.00551v1">APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation</a></div>
+    <div class="paper-meta">
+      📅 2026-01-31
+      | 💬 15 pages, 8 figures
+    </div>
+    <details class="paper-abstract">
+      Aerial Object Goal Navigation, a challenging frontier in Embodied AI, requires an Unmanned Aerial Vehicle (UAV) agent to autonomously explore, reason, and identify a specific target using only visual perception and language description. However, existing methods struggle with the memorization of complex spatial representations in aerial environments, reliable and interpretable action decision-making, and inefficient exploration and information gathering. To address these challenges, we introduce \textbf{APEX} (Aerial Parallel Explorer), a novel hierarchical agent designed for efficient exploration and target acquisition in complex aerial settings. APEX is built upon a modular, three-part architecture: 1) Dynamic Spatio-Semantic Mapping Memory, which leverages the zero-shot capability of a Vision-Language Model (VLM) to dynamically construct high-resolution 3D Attraction, Exploration, and Obstacle maps, serving as an interpretable memory mechanism. 2) Action Decision Module, trained with reinforcement learning, which translates this rich spatial understanding into a fine-grained and robust control policy. 3) Target Grounding Module, which employs an open-vocabulary detector to achieve definitive and generalizable target identification. All these components are integrated into a hierarchical, asynchronous, and parallel framework, effectively bypassing the VLM's inference latency and boosting the agent's proactivity in exploration. Extensive experiments show that APEX outperforms the previous state of the art by +4.2\% SR and +2.8\% SPL on challenging UAV-ON benchmarks, demonstrating its superior efficiency and the effectiveness of its hierarchical asynchronous design. Our source code is provided in \href{https://github.com/4amGodvzx/apex}{GitHub}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.00500v1">Inject Once Survive Later: Backdooring Vision-Language-Action Models to Persist Through Downstream Fine-tuning</a></div>
+    <div class="paper-meta">
+      📅 2026-01-31
+    </div>
+    <details class="paper-abstract">
+      Vision-Language-Action (VLA) models have become foundational to modern embodied AI systems. By integrating visual perception, language understanding, and action planning, they enable general-purpose task execution across diverse environments. Despite their importance, the security of VLA models remains underexplored -- particularly in the context of backdoor attacks, which pose realistic threats in physical-world deployments. While recent methods attempt to inject backdoors into VLA models, these backdoors are easily erased during downstream adaptation, as user-side fine-tuning with clean data significantly alters model parameters, rendering them impractical for real-world applications. To address these challenges, we propose INFUSE (INjection into Fine-tUne-inSensitive modulEs), the first backdoor attack framework for VLA base models that remains effective even with arbitrary user fine-tuning. INFUSE begins by analyzing parameter sensitivity across diverse fine-tuning scenarios to identify modules that remain largely unchanged -- the fine-tune-insensitive modules. It then injects backdoors into these stable modules while freezing the rest, ensuring malicious behavior persists after extensive user fine-tuning. Comprehensive experiments across multiple VLA architectures demonstrate INFUSE's effectiveness. After user-side fine-tuning, INFUSE maintains mean attack success rates of 91.0% on simulation environments and 79.8% on real-world robot tasks, substantially surpassing BadVLA (38.8% and 36.6%, respectively), while preserving clean-task performance comparable to standard models. These results uncover a critical threat: backdoors implanted before distribution can persist through fine-tuning and remain effective at deployment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.00494v1">SRL Proxemics: Spatial Guidelines for Supernumerary Robotic Limbs in Near-Body Interactions</a></div>
+    <div class="paper-meta">
+      📅 2026-01-31
+      | 💬 Accepted to CHI 2026. Version of Record: DOI 10.1145/3772318.3790532
+    </div>
+    <details class="paper-abstract">
+      Wearable supernumerary robotic limbs (SRLs) sit at the intersection of human augmentation and embodied AI, transforming into extensions of the human body. However, their movements within the intimate near-body space raise unresolved challenges for perceived safety, user control, and trust. In this paper, we present results from a Wizard-of-Oz study (n=18), where participants completed near-body collaboration tasks with SRLs to explore these challenges. We collected qualitative data through think-aloud protocols and semi-structured interviews, complemented by physiological signals and post-task ratings. Findings indicate that greater autonomy did not inherently enhance perceived safety or trust. Instead, participants identified near-body zones and paired them with clear coordination rules. They also expressed expectations for how different arm components should behave, shaping preferences around autonomy, perceived safety, and trust. Building on these insights, we introduce SRL Proxemics, a zone- and segment-level design framework showing that autonomy is not monolithic: perceived safety hinges on spatially calibrated, legible behaviors, not higher autonomy.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2601.20835v2">Open-Vocabulary Functional 3D Human-Scene Interaction Generation</a></div>
     <div class="paper-meta">
       📅 2026-01-30
@@ -45,6 +84,16 @@
     </div>
     <details class="paper-abstract">
       Streaming reconstruction from monocular image sequences remains challenging, as existing methods typically favor either high-quality rendering or accurate geometry, but rarely both. We present PLANING, an efficient on-the-fly reconstruction framework built on a hybrid representation that loosely couples explicit geometric primitives with neural Gaussians, enabling geometry and appearance to be modeled in a decoupled manner. This decoupling supports an online initialization and optimization strategy that separates geometry and appearance updates, yielding stable streaming reconstruction with substantially reduced structural redundancy. PLANING improves dense mesh Chamfer-L2 by 18.52% over PGSR, surpasses ARTDECO by 1.31 dB PSNR, and reconstructs ScanNetV2 scenes in under 100 seconds, over 5x faster than 2D Gaussian Splatting, while matching the quality of offline per-scene optimization. Beyond reconstruction quality, the structural clarity and computational efficiency of PLANING make it well suited for a broad range of downstream applications, such as enabling large-scale scene modeling and simulation-ready environments for embodied AI. Project page: https://city-super.github.io/PLANING/ .
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.00288v1">TimeBlind: A Spatio-Temporal Compositionality Benchmark for Video LLMs</a></div>
+    <div class="paper-meta">
+      📅 2026-01-30
+      | 💬 For code and data, see https://baiqi-li.github.io/timeblind_project/
+    </div>
+    <details class="paper-abstract">
+      Fine-grained spatio-temporal understanding is essential for video reasoning and embodied AI. Yet, while Multimodal Large Language Models (MLLMs) master static semantics, their grasp of temporal dynamics remains brittle. We present TimeBlind, a diagnostic benchmark for compositional spatio-temporal understanding. Inspired by cognitive science, TimeBlind categorizes fine-grained temporal understanding into three levels: recognizing atomic events, characterizing event properties, and reasoning about event interdependencies. Unlike benchmarks that conflate recognition with temporal reasoning, TimeBlind leverages a minimal-pairs paradigm: video pairs share identical static visual content but differ solely in temporal structure, utilizing complementary questions to neutralize language priors. Evaluating over 20 state-of-the-art MLLMs (e.g., GPT-5, Gemini 3 Pro) on 600 curated instances (2400 video-question pairs), reveals that the Instance Accuracy (correctly distinguishing both videos in a pair) of the best performing MLLM is only 48.2%, far below the human performance (98.2%). These results demonstrate that even frontier models rely heavily on static visual shortcuts rather than genuine temporal logic, positioning TimeBlind as a vital diagnostic tool for next-generation video understanding. Dataset and code are available at https://baiqi-li.github.io/timeblind_project/ .
     </details>
 </div>
 <div class="paper-card">
