@@ -97,6 +97,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.07007v1">ARGOS: Automated Functional Safety Requirement Synthesis for Embodied AI via Attribute-Guided Combinatorial Reasoning</a></div>
+    <div class="paper-meta">
+      📅 2026-01-30
+    </div>
+    <details class="paper-abstract">
+      Ensuring functional safety is essential for the deployment of Embodied AI in complex open-world environments. However, traditional Hazard Analysis and Risk Assessment (HARA) methods struggle to scale in this domain. While HARA relies on enumerating risks for finite and pre-defined function lists, Embodied AI operates on open-ended natural language instructions, creating a challenge of combinatorial interaction risks. Whereas Large Language Models (LLMs) have emerged as a promising solution to this scalability challenge, they often lack physical grounding, yielding semantically superficial and incoherent hazard descriptions. To overcome these limitations, we propose a new framework ARGOS (AttRibute-Guided cOmbinatorial reaSoning), which bridges the gap between open-ended user instructions and concrete physical attributes. By dynamically decomposing entities from instructions into these fine-grained properties, ARGOS grounds LLM reasoning in causal risk factors to generate physically plausible hazard scenarios. It then instantiates abstract safety standards, such as ISO 13482, into context-specific Functional Safety Requirements (FSRs) by integrating these scenarios with robot capabilities. Extensive experiments validate that ARGOS produces high-quality FSRs and outperforms baselines in identifying long-tail risks. Overall, this work paves the way for systematic and grounded functional safety requirement generation, a critical step toward the safe industrial deployment of Embodied AI.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2601.22046v1">PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction</a></div>
     <div class="paper-meta">
       📅 2026-01-29
