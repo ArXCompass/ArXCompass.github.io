@@ -9,6 +9,44 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2603.00732v1">UniHM: Unified Dexterous Hand Manipulation with Vision Language Model</a></div>
+    <div class="paper-meta">
+      📅 2026-02-28
+      | 💬 Accepted by ICLR 2026
+    </div>
+    <details class="paper-abstract">
+      Planning physically feasible dexterous hand manipulation is a central challenge in robotic manipulation and Embodied AI. Prior work typically relies on object-centric cues or precise hand-object interaction sequences, foregoing the rich, compositional guidance of open-vocabulary instruction. We introduce UniHM, the first framework for unified dexterous hand manipulation guided by free-form language commands. We propose a Unified Hand-Dexterous Tokenizer that maps heterogeneous dexterous-hand morphologies into a single shared codebook, improving cross-dexterous hand generalization and scalability to new morphologies. Our vision language action model is trained solely on human-object interaction data, eliminating the need for massive real-world teleoperation datasets, and demonstrates strong generalizability in producing human-like manipulation sequences from open-ended language instructions. To ensure physical realism, we introduce a physics-guided dynamic refinement module that performs segment-wise joint optimization under generative and temporal priors, yielding smooth and physically feasible manipulation sequences. Across multiple datasets and real-world evaluations, UniHM attains state-of-the-art results on both seen and unseen objects and trajectories, demonstrating strong generalization and high physical feasibility. Our project page at \href{https://unihm.github.io/}{https://unihm.github.io/}.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.23722v1">SLA-Aware Distributed LLM Inference Across Device-RAN-Cloud</a></div>
+    <div class="paper-meta">
+      📅 2026-02-27
+      | 💬 Accepted to IEEE INFOCOM Workshops 2026 (6G AI-RAN 2026), Tokyo, Japan. This arXiv version is a preprint / author version
+    </div>
+    <details class="paper-abstract">
+      Embodied AI requires sub-second inference near the Radio Access Network (RAN), but deployments span heterogeneous tiers (on-device, RAN-edge, cloud) and must not disrupt real-time baseband processing. We report measurements from a 5G Standalone (SA) AI-RAN testbed using a fixed baseline policy for repeatability. The setup includes an on-device tier, a three-node RAN-edge cluster co-hosting a containerized 5G RAN, and a cloud tier. We find that on-device execution remains multi-second and fails to meet sub-second budgets. At the RAN edge, SLA feasibility is primarily determined by model variant choice: quantized models concentrate below 0.5\,s, while unquantized and some larger quantized models incur deadline misses due to stalls and queuing. In the cloud tier, meeting a 0.5\,s deadline is challenging on the measured WAN path (up to 32.9\% of requests complete within 0.5\,s), but all evaluated variants meet a 1.0\,s deadline (100\% within 1.0\,s). Under saturated downlink traffic and up to $N{=}20$ concurrent inference clients, Multi-Instance GPU (MIG) isolation preserves baseband timing-health proxies, supporting safe co-location under fixed partitioning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.14135v4">ForesightSafety Bench: A Frontier Risk Evaluation and Governance Framework towards Safe AI</a></div>
+    <div class="paper-meta">
+      📅 2026-02-27
+    </div>
+    <details class="paper-abstract">
+      Rapidly evolving AI exhibits increasingly strong autonomy and goal-directed capabilities, accompanied by derivative systemic risks that are more unpredictable, difficult to control, and potentially irreversible. However, current AI safety evaluation systems suffer from critical limitations such as restricted risk dimensions and failed frontier risk detection. The lagging safety benchmarks and alignment technologies can hardly address the complex challenges posed by cutting-edge AI models. To bridge this gap, we propose the "ForesightSafety Bench" AI Safety Evaluation Framework, beginning with 7 major Fundamental Safety pillars and progressively extends to advanced Embodied AI Safety, AI4Science Safety, Social and Environmental AI risks, Catastrophic and Existential Risks, as well as 8 critical industrial safety domains, forming a total of 94 refined risk dimensions. To date, the benchmark has accumulated tens of thousands of structured risk data points and assessment results, establishing a widely encompassing, hierarchically clear, and dynamically evolving AI safety evaluation framework. Based on this benchmark, we conduct systematic evaluation and in-depth analysis of over twenty mainstream advanced large models, identifying key risk patterns and their capability boundaries. The safety capability evaluation results reveals the widespread safety vulnerabilities of frontier AI across multiple pillars, particularly focusing on Risky Agentic Autonomy, AI4Science Safety, Embodied AI Safety, Social AI Safety and Catastrophic and Existential Risks. Our benchmark is released at https://github.com/Beijing-AISI/ForesightSafety-Bench. The project website is available at https://foresightsafety-bench.beijing-aisi.ac.cn/.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.22353v2">Context and Diversity Matter: The Emergence of In-Context Learning in World Models</a></div>
+    <div class="paper-meta">
+      📅 2026-02-27
+    </div>
+    <details class="paper-abstract">
+      The capability of predicting environmental dynamics underpins both biological neural systems and general embodied AI in adapting to their surroundings. Yet prevailing approaches rest on static world models that falter when confronted with novel or rare configurations. We investigate in-context learning (ICL) of world models, shifting attention from zero-shot performance to the growth and asymptotic limits of the world model. Our contributions are three-fold: (1) we formalize ICL of a world model and identify two core mechanisms: environment recognition (ER) and environment learning (EL); (2) we derive error upper-bounds for both mechanisms that expose how the mechanisms emerge; and (3) we empirically confirm that distinct ICL mechanisms exist in the world model, and we further investigate how data distribution and model architecture affect ICL in a manner consistent with theory. These findings demonstrate the potential of self-adapting world models and highlight the key factors behind the emergence of EL/ER, most notably the necessity of long context and diverse environments.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2602.23205v1">EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents</a></div>
     <div class="paper-meta">
       📅 2026-02-26
