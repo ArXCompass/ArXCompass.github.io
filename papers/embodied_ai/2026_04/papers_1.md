@@ -9,6 +9,186 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.27621v1">Robot Learning from Human Videos: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+      | 💬 Paper list: https://github.com/IRMVLab/awesome-robot-learning-from-human-videos
+    </div>
+    <details class="paper-abstract">
+      A critical bottleneck hindering further advancement in embodied AI and robotics is the challenge of scaling robot data. To address this, the field of learning robot manipulation skills from human video data has attracted rapidly growing attention in recent years, driven by the abundance of human activity videos and advances in computer vision. This line of research promises to enable robots to acquire skills passively from the vast and readily available resource of human demonstrations, substantially favoring scalable learning for generalist robotic systems. Therefore, we present this survey to provide a comprehensive and up-to-date review of human-video-based learning techniques in robotics, focusing on both human-robot skill transfer and data foundations. We first review the policy learning foundations in robotics, and then describe the fundamental interfaces to incorporate human videos. Subsequently, we introduce a hierarchical taxonomy of transferring human videos to robot skills, covering task-, observation-, and action-oriented pathways, along with a cross-family analysis of their couplings with different data configurations and learning paradigms. In addition, we investigate the data foundations including widely-used human video datasets and video generation schemes, and provide large-scale statistical trends in dataset development and utilization. Ultimately, we emphasize the challenges and limitations intrinsic to this field, and delineate potential avenues for future research. The paper list of our survey is available at https://github.com/IRMVLab/awesome-robot-learning-from-human-videos.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.27578v1">World2Minecraft: Occupancy-Driven Simulated Scenes Construction</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+    </div>
+    <details class="paper-abstract">
+      Embodied intelligence requires high-fidelity simulation environments to support perception and decision-making, yet existing platforms often suffer from data contamination and limited flexibility. To mitigate this, we propose World2Minecraft to convert real-world scenes into structured Minecraft environments based on 3D semantic occupancy prediction. In the reconstructed scenes, we can effortlessly perform downstream tasks such as Vision-Language Navigation(VLN). However, we observe that reconstruction quality heavily depends on accurate occupancy prediction, which remains limited by data scarcity and poor generalization in existing models. We introduce a low-cost, automated, and scalable data acquisition pipeline for creating customized occupancy datasets, and demonstrate its effectiveness through MinecraftOcc, a large-scale dataset featuring 100,165 images from 156 richly detailed indoor scenes. Extensive experiments show that our dataset provides a critical complement to existing datasets and poses a significant challenge to current SOTA methods. These findings contribute to improving occupancy prediction and highlight the value of World2Minecraft in providing a customizable and editable platform for personalized embodied AI research. Project page:https://world2minecraft.github.io/.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.27555v1">SpatialGrammar: A Domain-Specific Language for LLM-Based 3D Indoor Scene Generation</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+    </div>
+    <details class="paper-abstract">
+      Automatically generating interactive 3D indoor scenes from natural language is crucial for virtual reality, gaming, and embodied AI. However, existing LLM-based approaches often suffer from spatial errors and collisions, in part because common scene representations-raw coordinates or verbose code-are difficult for models to reason about 3D spatial relationships and physical constraints. We propose SpatialGrammar, a domain-specific language that represents gravity-aligned indoor layouts as BEV grid placements with deterministic compilation to valid 3D geometry, enabling verifiable constraint checking. Building on this representation, we develop (1) SG-Agent, a closed-loop system that uses compiler feedback to iteratively refine scenes and enforce collision constraints, and (2) SG-Mini, a 104M-parameter model trained entirely on compiler-validated synthetic data. Across 159 test scenes spanning five scenarios of different complexity, SG-Agent improves spatial fidelity and physical plausibility over prior methods, while SG-Mini performs competitively against larger LLM-based baselines on single-shot generation scenarios.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.23065v2">EAG-PT: Emission-Aware Gaussians and Path Tracing for Diffuse Indoor Scene Reconstruction and Editing</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+      | 💬 SIGGRAPH 2026 Conference Paper; Project Page: https://eag-pt.github.io
+    </div>
+    <details class="paper-abstract">
+      Recent radiance-field-based reconstruction methods, such as NeRF and 3DGS, achieve high visual fidelity for indoor scenes, but often break down under scene editing due to baked illumination and the lack of explicit light transport. In contrast, inverse path tracing methods based on mesh representations enforce correct light transport but require highly accurate geometry, making them difficult to apply robustly to real indoor scenes. We present Emission-Aware Gaussians and Path Tracing (EAG-PT), a method for physically based reconstruction and rendering of indoor scenes using a unified 2D Gaussian representation, targeting editable diffuse global illumination. Our approach consists of three key ideas: (1) representing indoor scenes with 2D Gaussians as a transport-friendly geometric proxy that avoids explicit mesh reconstruction; (2) explicitly separating emissive and non-emissive components during reconstruction to support editing; and (3) decoupling reconstruction from final rendering by using efficient single-bounce optimization and high-quality multi-bounce path tracing, respectively. Experiments on synthetic and real indoor scenes show that EAG-PT produces more natural and physically consistent edited renderings than radiance-field reconstructions, while preserving finer geometric detail and avoiding mesh-induced artifacts compared with mesh-based inverse path tracing. These results highlight the potential of our approach for applications such as interior design, XR content creation, and embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2512.03992v2">Value-Guided Iterative Refinement and the DIQ-H Benchmark for Evaluating VLM Robustness</a></div>
+    <div class="paper-meta">
+      📅 2026-04-29
+    </div>
+    <details class="paper-abstract">
+      Vision-Language Models (VLMs) are essential for embodied AI and safety-critical applications, such as robotics and autonomous systems. However, existing benchmarks primarily focus on static or curated visual inputs, neglecting the challenges posed by adversarial conditions, value misalignment, and error propagation in continuous deployment. Current benchmarks either overlook the impact of real-world perturbations, or fail to account for the cumulative effect of inconsistent reasoning over time. To address these gaps, we introduce the Degraded Image Quality Leading to Hallucinations (DIQ-H) benchmark, the first to evaluate VLMs under adversarial visual conditions in continuous sequences. DIQ-H simulates real-world stressors including motion blur, sensor noise, and compression artifacts, and measures how these corruptions lead to persistent errors and misaligned outputs across time. The benchmark explicitly models error propagation and its long-term value consistency. To enhance scalability and reduce costs for safety-critical evaluation, we propose the Value-Guided Iterative Refinement (VIR) framework, which automates the generation of high-quality, ethically aligned ground truth annotations. VGIR leverages lightweight VLMs to detect and refine value misalignment, improving accuracy from 72.2% to 83.3%, representing a 15.3% relative improvement. The DIQ-H benchmark and VGIR framework provide a robust platform for embodied AI safety assessment, revealing vulnerabilities in error recovery, ethical consistency, and temporal value alignment.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.26509v1">3D Generation for Embodied AI and Robotic Simulation: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2026-04-29
+      | 💬 26 pages, 11 figures, 8 tables. Project Page: https://3dgen4robot.github.io
+    </div>
+    <details class="paper-abstract">
+      Embodied AI and robotic systems increasingly depend on scalable, diverse, and physically grounded 3D content for simulation-based training and real-world deployment. While 3D generative modeling has advanced rapidly, embodied applications impose requirements far beyond visual realism: generated objects must carry kinematic structure and material properties, scenes must support interaction and task execution, and the resulting content must bridge the gap between simulation and reality. This survey presents the first survey of 3D generation for embodied AI and organizes the literature around three roles that 3D generation plays in embodied systems. In \emph{Data Generator}, 3D generation produces simulation-ready objects and assets, including articulated, physically grounded, and deformable content for downstream interaction; in \emph{Simulation Environments}, it constructs interactive and task-oriented worlds, spanning structure-aware, controllable, and agentic scene generation; and in \emph{Sim2Real Bridge}, it supports digital twin reconstruction, data augmentation, and synthetic demonstrations for downstream robot learning and real-world transfer. We also show that the field is shifting from visual realism toward interaction readiness, and we identify the main bottlenecks, including limited physical annotations, the gap between geometric quality and physical validity, fragmented evaluation, and the persistent sim-to-real divide, that must be addressed for 3D generation to become a dependable foundation for embodied intelligence. Our project page is at https://3dgen4robot.github.io.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.22227v3">A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies</a></div>
+    <div class="paper-meta">
+      📅 2026-04-29
+    </div>
+    <details class="paper-abstract">
+      Classical robot ethics is often framed around obedience, including Asimov's laws. This framing is insufficient for contemporary AI systems, which are increasingly adaptive, generative, embodied, and embedded in physical, psychological, and social environments. This paper proposes conditional mutualism under governance as a framework for human-AI coexistence: a co-evolutionary relationship in which humans and AI systems develop, specialize, and coordinate under institutional conditions that preserve reciprocity, reversibility, psychological safety, and social legitimacy. We synthesize concepts from computability, machine learning, foundation models, embodied AI, alignment, human-robot interaction, ecological mutualism, coevolution, and polycentric governance. We then formalize coexistence as a multiplex dynamical system across physical, psychological, and social layers, with reciprocal supply-demand coupling, conflict penalties, developmental freedom, and governance regularization. The model gives conditions for existence, uniqueness, and global asymptotic stability of equilibria. We complement the analytical results with deterministic ODE simulations, basin sweeps, sensitivity analyses, governance-regime comparisons, shock tests, and local stability checks. The simulations indicate that governed mutualism reaches a high coexistence index with negligible domination, whereas insufficient or excessive governance can produce domination, weak-benefit lock-in, or suppressed developmental freedom. The results suggest that human-AI coexistence should be designed as a co-evolutionary governance problem rather than as a static obedience problem.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.26261v1">Multiple Consistent 2D-3D Mappings for Robust Zero-Shot 3D Visual Grounding</a></div>
+    <div class="paper-meta">
+      📅 2026-04-29
+    </div>
+    <details class="paper-abstract">
+      Zero-shot 3D Visual Grounding (3DVG) is a critical capability for open-world embodied AI. However, existing methods are fundamentally bottlenecked by the poor quality of open-vocabulary 3D proposals, suffering from inaccurate categories and imprecise geometries, as well as the spatial redundancy of exhaustive multi-view reasoning. To address these challenges, we propose MCM-VG, a novel framework that achieves robust zero-shot 3DVG by explicitly establishing Multiple Consistent 2D-3D Mappings. Instead of passively relying on noisy 3D segments, MCM-VG enforces 2D-3D consistency across three fundamental dimensions to achieve precise target localization and reliable reasoning. First, a Semantic Alignment module corrects category mismatches via LLM-driven query parsing and coarse-to-fine 2D-3D matching. Second, an Instance Rectification module leverages VLM-guided 2D segmentations to reconstruct missing targets, back-projecting these reliable visual priors to establish accurate 3D geometries. Finally, to eliminate spatial redundancy, a Viewpoint Distillation module clusters 3D camera directions to extract optimal frames. By pairing these optimal RGB frames with Bird's Eye View maps into concise visual prompt sets, we formulate the final target disambiguation as a multiple-choice reasoning task for Vision-Language Models. Extensive evaluations on ScanRefer and Nr3D benchmarks demonstrate that MCM-VG sets a new state-of-the-art for zero-shot 3D visual grounding. Remarkably, it achieves 62.0\% and 53.6\% in Acc@0.25 and Acc@0.5 on ScanRefer, outperforming previous baselines by substantial margins of 6.4\% and 4.0\%.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.20714v2">Inferix: A Block-Diffusion based Next-Generation Inference Engine for World Simulation</a></div>
+    <div class="paper-meta">
+      📅 2026-04-28
+    </div>
+    <details class="paper-abstract">
+      World models serve as core simulators for fields such as agentic AI, embodied AI, and gaming, capable of generating long, physically realistic, and interactive high-quality videos. Moreover, scaling these models could unlock emergent capabilities in visual perception, understanding, and reasoning, paving the way for a new paradigm that moves beyond current LLM-centric vision foundation models. A key breakthrough empowering them is the semi-autoregressive (block-diffusion) decoding paradigm, which merges the strengths of diffusion and autoregressive methods by generating video tokens in block-applying diffusion within each block while conditioning on previous ones, resulting in more coherent and stable video sequences. Crucially, it overcomes limitations of standard video diffusion by reintroducing LLM-style KV Cache management, enabling efficient, variable-length, and high-quality generation. Therefore, Inferix is specifically designed as a next-generation inference engine to enable immersive world synthesis through optimized semi-autoregressive decoding processes. This dedicated focus on world simulation distinctly sets it apart from systems engineered for high-concurrency scenarios (like vLLM or SGLang) and from classic video diffusion models (such as xDiTs). Inferix further enhances its offering with interactive video streaming and profiling, enabling real-time interaction and realistic simulation to accurately model world dynamics. Additionally, it supports efficient benchmarking through seamless integration of LV-Bench, a new fine-grained evaluation benchmark tailored for minute-long video generation scenarios. We hope the community will work together to advance Inferix and foster world model exploration.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2601.03136v2">Limited Linguistic Diversity in Embodied AI Datasets</a></div>
+    <div class="paper-meta">
+      📅 2026-04-28
+      | 💬 Accepted to ACL 2026 (Main Conference)
+    </div>
+    <details class="paper-abstract">
+      Language plays a critical role in Vision-Language-Action (VLA) models, yet the linguistic characteristics of the datasets used to train and evaluate these systems remain poorly documented. In this work, we present a systematic dataset audit of several widely used VLA corpora, aiming to characterize what kinds of instructions these datasets actually contain and how much linguistic variety they provide. We quantify instruction language along complementary dimensions--including lexical variety, duplication and overlap, semantic similarity, and syntactic complexity. Our analysis shows that many datasets rely on highly repetitive, template-like commands with limited structural variation, yielding a narrow distribution of instruction forms. We position these findings as descriptive documentation of the language signal available in current VLA training and evaluation data, intended to support more detailed dataset reporting, more principled dataset selection, and targeted curation or augmentation strategies that broaden language coverage.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2511.16518v2">MiMo-Embodied: X-Embodied Foundation Model Technical Report</a></div>
+    <div class="paper-meta">
+      📅 2026-04-28
+      | 💬 Code: https://github.com/XiaomiMiMo/MiMo-Embodied | Model: https://huggingface.co/XiaomiMiMo/MiMo-Embodied-7B
+    </div>
+    <details class="paper-abstract">
+      We open-source MiMo-Embodied, the first cross-embodied foundation model to successfully integrate and achieve state-of-the-art performance in both Autonomous Driving and Embodied AI. MiMo-Embodied sets new records across 17 embodied AI benchmarks in Task Planning, Affordance Prediction and Spatial Understanding, while also excelling in 12 autonomous driving benchmarks across Environmental Perception, Status Prediction, and Driving Planning. Across these tasks, MiMo-Embodied significantly outperforms existing open-source, closed-source, and specialized baselines. Our results indicate that through multi-stage learning, curated data construction, and CoT/RL fine-tuning, these two domains exhibit strong positive transfer and mutually reinforce one another. We provide a detailed analysis of our model design and training methodologies to facilitate further research. Code and models are available at https://github.com/XiaomiMiMo/MiMo-Embodied.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.25459v1">GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning</a></div>
+    <div class="paper-meta">
+      📅 2026-04-28
+      | 💬 Robotics: Science and Systems 2026
+    </div>
+    <details class="paper-abstract">
+      Embodied AI research is undergoing a shift toward vision-centric perceptual paradigms. While massively parallel simulators have catalyzed breakthroughs in proprioception-based locomotion, their potential remains largely untapped for vision-informed tasks due to the prohibitive computational overhead of large-scale photorealistic rendering. Furthermore, the creation of simulation-ready 3D assets heavily relies on labor-intensive manual modeling, while the significant sim-to-real physical gap hinders the transfer of contact-rich manipulation policies. To address these bottlenecks, we propose GS-Playground, a multi-modal simulation framework designed to accelerate end-to-end perceptual learning. We develop a novel high-performance parallel physics engine, specifically designed to integrate with a batch 3D Gaussian Splatting (3DGS) rendering pipeline to ensure high-fidelity synchronization. Our system achieves a breakthrough throughput of 10^4 FPS at 640x480 resolution, significantly lowering the barrier for large-scale visual RL. Additionally, we introduce an automated Real2Sim workflow that reconstructs photorealistic, physically consistent, and memory-efficient environments, streamlining the generation of complex simulation-ready scenes. Extensive experiments on locomotion, navigation, and manipulation demonstrate that GS-Playground effectively bridges the perceptual and physical gaps across diverse embodied tasks. Project homepage: https://gsplayground.github.io.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.10813v4">InternScenes: A Large-scale Simulatable Indoor Scene Dataset with Realistic Layouts</a></div>
+    <div class="paper-meta">
+      📅 2026-04-28
+      | 💬 Accepted by NeurIPS 2025; Project page: https://marjordcpz.github.io/InternScenes.github.io
+    </div>
+    <details class="paper-abstract">
+      The advancement of Embodied AI heavily relies on large-scale, simulatable 3D scene datasets characterized by scene diversity and realistic layouts. However, existing datasets typically suffer from limitations in data scale or diversity, sanitized layouts lacking small items, and severe object collisions. To address these shortcomings, we introduce \textbf{InternScenes}, a novel large-scale simulatable indoor scene dataset comprising approximately 40,000 diverse scenes by integrating three disparate scene sources, real-world scans, procedurally generated scenes, and designer-created scenes, including 1.96M 3D objects and covering 15 common scene types and 288 object classes. We particularly preserve massive small items in the scenes, resulting in realistic and complex layouts with an average of 41.5 objects per region. Our comprehensive data processing pipeline ensures simulatability by creating real-to-sim replicas for real-world scans, enhances interactivity by incorporating interactive objects into these scenes, and resolves object collisions by physical simulations. We demonstrate the value of InternScenes with two benchmark applications: scene layout generation and point-goal navigation. Both show the new challenges posed by the complex and realistic layouts. More importantly, InternScenes paves the way for scaling up the model training for both tasks, making the generation and navigation in such complex scenes possible. We commit to open-sourcing the data, models, and benchmarks to benefit the whole community.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.24527v1">Interoceptive machine framework: Toward interoception-inspired regulatory architectures in artificial intelligence</a></div>
+    <div class="paper-meta">
+      📅 2026-04-27
+    </div>
+    <details class="paper-abstract">
+      This review proposes an integrative framework grounded on interoception and embodied AI-termed the interoceptive machine framework-that translates biologically inspired principles of internal-state regulation into computational architectures for adaptive autonomy. Interoception, conceived as the monitoring, integration, and regulation of internal signals, has proven relevant for understanding adaptive behavior in biological systems. The proposed framework organizes interoceptive contributions into three functional principles: homeostatic, allostatic, and enactive, each associated with distinct computational roles: internal viability regulation, anticipatory uncertainty-based re-evaluation, and active data generation through interaction. These principles are not intended as direct neurophysiological mappings, but as abstractions that inform the design of artificial agents with improved self-regulation and context-sensitive behavior. By embedding internal state variables and regulatory loops within these principles, AI systems can achieve more robust decision-making, calibrated uncertainty handling, and adaptive interaction strategies, particularly in uncertain and dynamic environments. This approach provides a concrete and testable pathway toward agents capable of functionally grounded self-regulation, with direct implications for human-computer interaction and assistive technologies. Ultimately, the interoceptive machine framework offers a unifying perspective on how internal-state regulation can enhance autonomy, adaptivity, and robustness in embodied AI systems
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.24039v1">AgenticCache: Cache-Driven Asynchronous Planning for Embodied AI Agents</a></div>
+    <div class="paper-meta">
+      📅 2026-04-27
+      | 💬 Accepted at MLSys 2026
+    </div>
+    <details class="paper-abstract">
+      Embodied AI agents increasingly rely on large language models (LLMs) for planning, yet per-step LLM calls impose severe latency and cost. In this paper, we show that embodied tasks exhibit strong plan locality, where the next plan is largely predictable from the current one. Building on this, we introduce AgenticCache, a planning framework that reuses cached plans to avoid per-step LLM calls. In AgenticCache, each agent queries a runtime cache of frequent plan transitions, while a background Cache Updater asynchronously calls the LLM to validate and refine cached entries. Across four multi-agent embodied benchmarks, AgenticCache improves task success rate by 22% on average across 12 configurations (4 benchmarks x 3 models), reduces simulation latency by 65%, and lowers token usage by 50%. Cache-based plan reuse thus offers a practical path to low-latency, low-cost embodied agents. Code is available at https://github.com/hojoonleokim/MLSys26_AgenticCache.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.23629v1">From Visual Synthesis to Interactive Worlds: Toward Production-Ready 3D Asset Generation</a></div>
+    <div class="paper-meta">
+      📅 2026-04-26
+      | 💬 Preprint. 41 pages, 5 figures. Jiafeng Wu and Zhuofan Lou contributed equally. Project page: https://christinebobby.github.io/production-ready-3d-survey/
+    </div>
+    <details class="paper-abstract">
+      Three-dimensional content generation has progressed from producing isolated, visually plausible shapes to constructing structured assets that can be deployed in real-time interactive environments. This trajectory is driven by converging demands from game development, embodied AI, world simulation, digital twins, and spatial computing, all of which require 3D content that goes beyond surface appearance to satisfy engine-level constraints on topology, UV parameterization, physically based materials, skeletal rigging, and physics-aware scene layout. Despite rapid advances in generative modeling, a persistent gap separates the outputs of current methods from the production-ready standard expected by interactive applications. This survey addresses that gap by organizing the literature around the asset production pipeline rather than algorithmic families. Along the horizontal axis we distinguish three asset tiers, namely general objects, characters, and scenes, while the vertical axis traces each tier through the full production lifecycle from data foundations and geometry synthesis through topology optimization, UV unwrapping, PBR appearance, rigging, and scene assembly. Through this two-dimensional taxonomy we assess not only what current methods can generate but whether their outputs are directly usable in downstream engines and simulation platforms. We further consolidate evaluation metrics and protocols that span geometric fidelity, appearance quality, asset usability, and scene-level physical plausibility. The survey concludes by identifying open challenges in data quality, generation controllability, end-to-end assetization, and physically grounded generation, and by situating production-ready 3D content as foundational infrastructure for emerging interactive world models and embodied intelligent systems.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.23580v1">PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement</a></div>
+    <div class="paper-meta">
+      📅 2026-04-26
+    </div>
+    <details class="paper-abstract">
+      Physics-aware symbolic simulation of 3D scenes is critical for robotics, embodied AI, and scientific computing, requiring models to understand natural language descriptions of physical phenomena and translate them into executable simulation environments. While large language models (LLMs) excel at general code generation, they struggle with the semantic gap between physical descriptions and simulation implementation. We introduce PhysCodeBench, the first comprehensive benchmark for evaluating physics-aware symbolic simulation, comprising 700 manually-crafted diverse samples across mechanics, fluid dynamics, and soft-body physics with expert annotations. Our evaluation framework measures both code executability and physical accuracy through automated and visual assessment. Building on this, we propose a Self-Corrective Multi-Agent Refinement Framework (SMRF) with three specialized agents (simulation generator, error corrector, and simulation refiner) that collaborate iteratively with domain-specific validation to produce physically accurate simulations. SMRF achieves 67.7 points overall performance compared to 36.3 points for the best baseline among evaluated SOTA models, representing a 31.4-point improvement. Our analysis demonstrates that error correction is critical for accurate physics-aware symbolic simulation and that specialized multi-agent approaches significantly outperform single-agent methods across the tested physical domains.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.23018v1">AmaraSpatial-10K: A Spatially and Semantically Aligned 3D Dataset for Spatial Computing and Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2026-04-24
+    </div>
+    <details class="paper-abstract">
+      Web-scale 3D asset collections are abundant, but rarely deployment-ready. Assets ship with arbitrary metric scale, incorrect pivots and forward axes, brittle geometry, and textures that do not support relighting, which limits their utility for embodied AI, robotics simulation, game development, and AR/VR. We present AmaraSpatial-10K, a dataset of over 10,000 synthetic 3D assets designed for downstream use rather than volume alone. Each asset is released as a metric-scaled, semantically anchored .glb with separated PBR material maps, a convex collision hull, a paired reference image, and rich multi-sentence text metadata. The dataset spans indoor objects, vehicles, architecture, creatures, and props under a unified spatial convention. Alongside the dataset, we introduce an evaluation suite for 3D asset banks. The suite comprises a continuous Scale Plausibility Score (SPS) with an LLM-as-Judge interval protocol, an LLM Concept Density score for metadata, an anchor-error metric, and a cross-modal CLIP coherence protocol, and we use it to audit AmaraSpatial-10K alongside matched subsets from Objaverse, HSSD, ABO, and GSO. Compared with Objaverse-sourced assets, we demonstrate that AmaraSpatial-10K substantially improves text-based retrieval precision (CLIP Recall@5 of 0.612 vs 0.181, a 3.4x improvement with median rank falling from 267 to 3), and we establish that it satisfies the spatial and semantic prerequisites for physics-aware scene composition and embodied-AI asset banks, leaving those downstream evaluations to future work. AmaraSpatial-10K is publicly available on Hugging Face.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.17706v2">OmniVLA-RL: A Vision-Language-Action Model with Spatial Understanding and Online RL</a></div>
+    <div class="paper-meta">
+      📅 2026-04-24
+    </div>
+    <details class="paper-abstract">
+      Visual-Language-Action (VLA) models represent a paradigm shift in embodied AI, yet existing frameworks often struggle with imprecise spatial perception, suboptimal multimodal fusion, and instability in reinforcement learning. To bridge these gaps, we propose OmniVLA-RL, a novel architecture that leverages a Mix-of-Transformers (MoT) design to synergistically integrate reasoning, spatial, and action experts. Furthermore, we introduce Flow-GSPO, which reformulates flow matching as a Stochastic Differential Equation (SDE) process and integrates it with Group Segmented Policy Optimization (GSPO) to enhance action precision and training robustness. Extensive evaluations on the LIBERO and LIBERO-Plus benchmarks demonstrate that OmniVLA-RL achieves decent overall performance and surpasses mainstream existing methods, effectively overcoming the fundamental limitations of current VLA models.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2604.05673v2">Rectified Schrödinger Bridge Matching for Few-Step Visual Navigation</a></div>
     <div class="paper-meta">
       📅 2026-04-23
@@ -54,6 +234,16 @@
     </div>
     <details class="paper-abstract">
       The surface and subsurface of worlds beyond Mars remain largely unexplored. Yet these worlds hold keys to fundamental questions in planetary science - from potentially habitable subsurface oceans on icy moons to ancient records preserved in Kuiper Belt objects. NASA's success in Mars exploration was achieved through incrementalism: 22 progressively sophisticated missions over decades. This paradigm, which we call Planetary Exploration 2.0 (PE 2.0), is untenable for the outer Solar System, where cruise times of a decade or more make iterative missions infeasible. We propose Planetary Exploration 3.0 (PE 3.0): a paradigm in which unvisited worlds are explored by a single or a few missions with radically adaptive space systems. A PE 3.0 mission conducts both initial exploratory science and follow-on hypothesis-driven science based on its own in situ data returns, evolving spacecraft capabilities to work resiliently in previously unseen environments. The key enabler of PE 3.0 is software-defined space systems (SDSSs) - systems that can adapt their functions at all levels through software updates. This paper presents findings from a Keck Institute for Space Studies (KISS) workshop on PE 3.0, covering: (1) PE 3.0 systems engineering including science definition, architecture, design methods, and verification & validation; (2) software-defined space system technologies including reconfigurable hardware, multi-functionality, and modularity; (3) onboard intelligence including autonomous science, navigation, controls, and embodied AI; and (4) three PE 3.0 mission concepts: a Neptune/Triton smart flyby, an ocean world explorer, and an Oort cloud reconnaissance mission.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.22851v1">EgoDyn-Bench: Evaluating Ego-Motion Understanding in Vision-Centric Foundation Models for Autonomous Driving</a></div>
+    <div class="paper-meta">
+      📅 2026-04-22
+      | 💬 36 Pages, under review
+    </div>
+    <details class="paper-abstract">
+      While Vision-Language Models (VLMs) have advanced highlevel reasoning in autonomous driving, their ability to ground this reasoning in the underlying physics of ego-motion remains poorly understood. We introduce EgoDyn-Bench, a diagnostic benchmark for evaluating the semantic ego-motion understanding of vision-centric foundation models. By mapping continuous vehicle kinematics to discrete motion concepts via a deterministic oracle, we decouple a model's internal physical logic from its visual perception. Our large-scale empirical audit spanning 20 + models, including closed-source MLLMs, open-source VLMs across multiple scales, and specialized VLAs, identifies a significant Perception Bottleneck: while models exhibit logical physical concepts, they consistently fail to accurately align them with visual observations, frequently underperforming classical non-learned geometric baselines. This failure persists across model scales and domain-specific training, indicating a structural deficit in how current architectures couple visual perception with physical reasoning. We demonstrate that providing explicit trajectory encodings substantially restores physical consistency across all evaluated models, revealing a functional disentanglement between vision and language: egomotion logic is derived almost exclusively from the language modality, while visual observations contribute negligible additional signal. This structural finding provides a standardized diagnostic framework and a practical pathway toward physically aligned embodied AI. Keywords: Ego-motion - Physical Reasoning - Foundation Models
     </details>
 </div>
 <div class="paper-card">
@@ -534,6 +724,15 @@
     </div>
     <details class="paper-abstract">
       Multi-agent embodied systems hold promise for complex collaborative manipulation, yet face critical challenges in spatial coordination, temporal reasoning, and shared workspace awareness. Inspired by human collaboration where cognitive planning occurs separately from physical execution, we introduce the concept of compositional environment -- a synergistic integration of real-world and simulation components that enables multiple robotic agents to perceive intentions and operate within a unified decision-making space. Building on this concept, we present CoEnv, a framework that leverages simulation for safe strategy exploration while ensuring reliable real-world deployment. CoEnv operates through three stages: real-to-sim scene reconstruction that digitizes physical workspaces, VLM-driven action synthesis supporting both real-time planning with high-level interfaces and iterative planning with code-based trajectory generation, and validated sim-to-real transfer with collision detection for safe deployment. Extensive experiments on challenging multi-arm manipulation benchmarks demonstrate CoEnv's effectiveness in achieving high task success rates and execution efficiency, establishing a new paradigm for multi-agent embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2604.21938v1">The Biggest Risk of Embodied AI is Governance Lag</a></div>
+    <div class="paper-meta">
+      📅 2026-04-07
+    </div>
+    <details class="paper-abstract">
+      Embodied AI is widely discussed as a job-displacement problem. The deeper risk, however, is governance lag: the inability of public institutions to keep pace with how fast the technology spreads through the physical economy. As reusable robotic platforms are combined with increasingly general AI models, embodied AI may scale across manufacturing, logistics, care, and infrastructure faster than governance systems can observe, interpret, and respond. We argue that this lag appears in three connected forms: observational, institutional, and distributive. The central policy challenge, therefore, is not automation alone, but whether governance and compliance systems can adapt before disruption becomes entrenched.
     </details>
 </div>
 <div class="paper-card">
