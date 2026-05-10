@@ -105,6 +105,35 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2605.00219v1">VkSplat: High-Performance 3DGS Training in Vulkan Compute</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+      | 💬 Submitted to Eurographics 2026 - Short Papers
+    </div>
+    <details class="paper-abstract">
+      We present VkSplat, a high-performance, cross-vendor 3D Gaussian Splatting (3DGS) training pipeline implemented fully in Vulkan compute, addressing performance and compatibility limitation of existing training pipelines. With various optimizations, we achieve $3.3\times$ speed and $33\%$ VRAM reduction over CUDA+PyTorch baseline, maintaining quality, and demonstrating compatibility across GPU vendors. To the best of our knowledge, this is the first fully-Vulkan-based 3DGS training pipeline that achieves state-of-the-art performance. Code: \href{https://github.com/harry7557558/vksplat}{https://github.com/harry7557558/vksplat}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2503.06740v2">Diffusion Models are Secretly Zero-Shot 3DGS Harmonizers</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+    </div>
+    <details class="paper-abstract">
+      Gaussian Splatting has become a popular technique for various 3D Computer Vision tasks, including novel view synthesis, scene reconstruction, and dynamic scene rendering. However, the challenge of natural-looking object insertion, where the object's appearance seamlessly matches the scene, remains unsolved. In this work, we propose a method, dubbed D3DR, for inserting a 3DGS-parametrized object into a 3DGS scene while correcting its lighting, shadows, and other visual artifacts to ensure consistency. We reveal a hidden ability of diffusion models trained on large real-world datasets to implicitly understand correct scene lighting, and leverage it in our pipeline. After inserting the object, we optimize a diffusion-based Delta Denoising Score (DDS)-inspired objective to adjust its 3D Gaussian parameters for proper lighting correction. We introduce a novel diffusion personalization technique that preserves object geometry and texture across diverse lighting conditions, and utilize it to achieve consistent identity matching between original and inserted objects. Finally, we demonstrate the effectiveness of the method by comparing it to existing approaches, achieving 2.0 dB PSNR improvements in relighting quality.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2605.00177v1">FieryGS: In-the-Wild Fire Synthesis with Physics-Integrated Gaussian Splatting</a></div>
+    <div class="paper-meta">
+      📅 2026-04-30
+      | 💬 ICLR 2026
+    </div>
+    <details class="paper-abstract">
+      We consider the problem of synthesizing photorealistic, physically plausible combustion effects in in-the-wild 3D scenes. Traditional CFD and graphics pipelines can produce realistic fire effects but rely on handcrafted geometry, expert-tuned parameters, and labor-intensive workflows, limiting their scalability to the real world. Recent scene modeling advances like 3D Gaussian Splatting (3DGS) enable high-fidelity real-world scene reconstruction, yet lack physical grounding for combustion. To bridge this gap, we propose FieryGS, a physically-based framework that integrates physically-accurate and user-controllable combustion simulation and rendering within the 3DGS pipeline, enabling realistic fire synthesis for real scenes. Our approach tightly couples three key modules: (1) multimodal large-language-model-based physical material reasoning, (2) efficient volumetric combustion simulation, and (3) a unified renderer for fire and 3DGS. By unifying reconstruction, physical reasoning, simulation, and rendering, FieryGS removes manual tuning and automatically generates realistic, controllable fire dynamics consistent with scene geometry and materials. Our framework supports complex combustion phenomena -- including flame propagation, smoke dispersion, and surface carbonization -- with precise user control over fire intensity, airflow, ignition location and other combustion parameters. Evaluated on diverse indoor and outdoor scenes, FieryGS outperforms all comparative baselines in visual realism, physical fidelity, and controllability. Project page can be found at https://pku-vcl-geometry.github.io/FieryGS/.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2604.26920v1">Color-Encoded Illumination for High-Speed Volumetric Scene Reconstruction</a></div>
     <div class="paper-meta">
       📅 2026-04-29
@@ -161,6 +190,15 @@
     </div>
     <details class="paper-abstract">
       3D Gaussian Splatting (3DGS) has been widely adopted for scene reconstruction, where training inherently constitutes a highly coupled and non-convex optimization problem. Recent works commonly incorporate geometric priors, such as LiDAR measurements, either for initialization or as training constraints, with the goal of improving photometric reconstruction quality. However, in large-scale outdoor scenarios, such geometric supervision is often spatially incomplete and uneven, which limits its effectiveness as a reliable prior and can even be detrimental to the final reconstruction. To address this challenge, we model partially observable geometry as a continuous energy field induced by geometric evidence and propose EnerGS. Rather than enforcing geometry as a hard constraint, EnerGS provides a soft geometric guidance for the optimization of Gaussian primitives, allowing geometric information to steer the optimization process without directly restricting the solution space. Extensive experiments on large-scale outdoor scenes demonstrate that, under both sparse multi-view and monocular settings, EnerGS consistently improves photometric quality and geometric stability, while effectively mitigating overfitting during 3DGS training.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2605.00052v1">Two-View Accumulation as the Primary Training Lever for Hybrid-Capture Gaussian Splatting: A Variance-Decomposition View of When Gradient Surgery Helps</a></div>
+    <div class="paper-meta">
+      📅 2026-04-29
+    </div>
+    <details class="paper-abstract">
+      Hybrid-capture novel view synthesis combines images at substantially different camera distances (e.g., aerial drone and ground-level views). Standard 3D Gaussian Splatting (3DGS), trained for 30K iterations with one rendered view per optimizer step, under-fits the minority regime by 1-3 dB on five hybrid-capture benchmarks. We isolate the lever that closes this gap. Among compute-matched alternatives -- vanilla 60K iterations, magnitude corrections (GradNorm), direction-aware near/far gradient surgery, projective preconditioning, confidence-gated sample-level surgery, and a random two-view-per-step control -- the simplest structural change wins: rendering two views per optimizer step. The pairing rule (geometry-defined near/far, random, or active loss-disparity) does not change PSNR beyond seed variance on any of the five scenes; the structural change of having two views per step does. We propose a variance-decomposition framework that predicts and explains this finding: under bimodal camera regimes, between-regime gradient variance turns out to be small relative to within-regime variance in 3DGS, so structured and random pairings are variance-equivalent in expectation, and the variance halving from two-view accumulation itself is the dominant effect. We verify the framework on five scenes whose camera-altitude bimodality coefficients span [0.55, 1.00], and we report the negative result that direction-aware projection, magnitude correction, confidence gating, and an active loss-disparity pairing all fall within seed variance of random two-view pairing. The two-view structural lever transfers cleanly to the Scaffold-GS and Pixel-GS backbones. We position this work as an honest characterization of which training-side axes do and do not move PSNR for hybrid-capture 3DGS, together with the framework that explains why.
     </details>
 </div>
 <div class="paper-card">
@@ -926,44 +964,5 @@
     </div>
     <details class="paper-abstract">
       We present a multispectral extension to 3D Gaussian Splatting (3DGS) for wavelength-aware view synthesis. Each Gaussian is augmented with spectral radiance, represented via per-band spherical harmonics, and optimized under a dual-loss supervision scheme combining RGB and multispectral signals. To improve rendering fidelity, we perform spectral-to-RGB conversion at the pixel level, allowing richer spectral cues to be retained during optimization. Our method is evaluated on both public and self-captured real-world datasets, demonstrating consistent improvements over the RGB-only 3DGS baseline in terms of image quality and spectral consistency. Notably, it excels in challenging scenes involving translucent materials and anisotropic reflections. The proposed approach maintains the compactness and real-time efficiency of 3DGS while laying the foundation for future integration with physically based shading models.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2604.13333v1">SSD-GS: Scattering and Shadow Decomposition for Relightable 3D Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2026-04-14
-      | 💬 Accepted to ICLR 2026. Code available at: https://github.com/irisfreesiri/SSD-GS
-    </div>
-    <details class="paper-abstract">
-      We present SSD-GS, a physically-based relighting framework built upon 3D Gaussian Splatting (3DGS) that achieves high-quality reconstruction and photorealistic relighting under novel lighting conditions. In physically-based relighting, accurately modeling light-material interactions is essential for faithful appearance reproduction. However, existing 3DGS-based relighting methods adopt coarse shading decompositions, either modeling only diffuse and specular reflections or relying on neural networks to approximate shadows and scattering. This leads to limited fidelity and poor physical interpretability, particularly for anisotropic metals and translucent materials. To address these limitations, SSD-GS decomposes reflectance into four components: diffuse, specular, shadow, and subsurface scattering. We introduce a learnable dipole-based scattering module for subsurface transport, an occlusion-aware shadow formulation that integrates visibility estimates with a refinement network, and an enhanced specular component with an anisotropic Fresnel-based model. Through progressive integration of all components during training, SSD-GS effectively disentangles lighting and material properties, even for unseen illumination conditions, as demonstrated on the challenging OLAT dataset. Experiments demonstrate superior quantitative and perceptual relighting quality compared to prior methods and pave the way for downstream tasks, including controllable light source editing and interactive scene relighting. The source code is available at: https://github.com/irisfreesiri/SSD-GS.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2604.13153v1">PatchPoison: Poisoning Multi-View Datasets to Degrade 3D Reconstruction</a></div>
-    <div class="paper-meta">
-      📅 2026-04-14
-      | 💬 CVPR Workshop on Security, Privacy, and Adversarial Robustness in 3D Generative Vision Models (SPAR-3D), 2026
-    </div>
-    <details class="paper-abstract">
-      3D Gaussian Splatting (3DGS) has recently enabled highly photorealistic 3D reconstruction from casually captured multi-view images. However, this accessibility raises a privacy concern: publicly available images or videos can be exploited to reconstruct detailed 3D models of scenes or objects without the owner's consent. We present PatchPoison, a lightweight dataset-poisoning method that prevents unauthorized 3D reconstruction. Unlike global perturbations, PatchPoison injects a small high-frequency adversarial patch, a structured checkerboard, into the periphery of each image in a multi-view dataset. The patch is designed to corrupt the feature-matching stage of Structure-from-Motion (SfM) pipelines such as COLMAP by introducing spurious correspondences that systematically misalign estimated camera poses. Consequently, downstream 3DGS optimization diverges from the correct scene geometry. On the NeRF-Synthetic benchmark, inserting a 12 X 12 pixel patch increases reconstruction error by 6.8x in LPIPS, while the poisoned images remain unobtrusive to human viewers. PatchPoison requires no pipeline modifications, offering a practical, "drop-in" preprocessing step for content creators to protect their multi-view data.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2604.12942v1">RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</a></div>
-    <div class="paper-meta">
-      📅 2026-04-14
-    </div>
-    <details class="paper-abstract">
-      Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency. In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes. The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping. To improve Gaussian initialization quality and accelerate optimization convergence, we introduce a cascaded strategy that combines feed-forward predictions with voxel-based principal component analysis (voxel-PCA) geometric priors. To enhance global consistency in large scenes, we further perform loop closure directly on the optimized global Gaussian map by estimating loop constraints through Gaussian-based Generalized Iterative Closest Point (GICP) registration, followed by pose-graph optimization. In addition, we collected challenging large-scale looped outdoor SLAM sequences with hardware-synchronized LiDAR-camera-IMU and ground-truth trajectories to support realistic and comprehensive evaluation. Extensive experiments on both public datasets and our dataset demonstrate that the proposed method achieves a strong balance among real-time efficiency, localization accuracy, and rendering quality across diverse and challenging real-world scenes.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2604.12837v1">GGD-SLAM: Monocular 3DGS SLAM Powered by Generalizable Motion Model for Dynamic Environments</a></div>
-    <div class="paper-meta">
-      📅 2026-04-14
-      | 💬 8 pages, Accepted by ICRA 2026
-    </div>
-    <details class="paper-abstract">
-      Visual SLAM algorithms achieve significant improvements through the exploration of 3D Gaussian Splatting (3DGS) representations, particularly in generating high-fidelity dense maps. However, they depend on a static environment assumption and experience significant performance degradation in dynamic environments. This paper presents GGD-SLAM, a framework that employs a generalizable motion model to address the challenges of localization and dense mapping in dynamic environments - without predefined semantic annotations or depth input. Specifically, the proposed system employs a First-In-First-Out (FIFO) queue to manage incoming frames, facilitating dynamic semantic feature extraction through a sequential attention mechanism. This is integrated with a dynamic feature enhancer to separate static and dynamic components. Additionally, to minimize dynamic distractors' impact on the static components, we devise a method to fill occluded areas via static information sampling and design a distractor-adaptive Structure Similarity Index Measure (SSIM) loss tailored for dynamic environments, significantly enhancing the system's resilience. Experiments conducted on real-world dynamic datasets demonstrate that the proposed system achieves state-of-the-art performance in camera pose estimation and dense reconstruction in dynamic scenes.
     </details>
 </div>
