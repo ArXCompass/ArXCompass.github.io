@@ -756,6 +756,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2606.15647v1">Towards Next-Generation Healthcare: A Survey of Medical Embodied AI for Perception, Decision-Making, and Action</a></div>
+    <div class="paper-meta">
+      📅 2026-04-05
+      | 💬 19 pages, 9 figures
+    </div>
+    <details class="paper-abstract">
+      Foundation models have demonstrated impressive performance in enhancing healthcare efficiency across a wide range of medical applications. Nevertheless, their limited ability to perceive, understand, and interact with the physical world significantly constrains their effectiveness in real-world clinical workflows, where safety-critical decision-making and physical execution are tightly coupled. Recently, embodied artificial intelligence (AI) has emerged as a promising physical-interactive paradigm for intelligent healthcare, enabling agents to operate in complex medical environments. As research in this area rapidly expands, understanding how intelligent agents function as integrated, end-to-end systems in clinical environments becomes increasingly critical. However, existing surveys on medical embodied AI largely emphasize individual aspects or functional components, lacking a unified system-level organization of the field. To support and consolidate recent advances, we systematically survey the core components of medical embodied AI, with a particular emphasis on the coordinated integration of perception, decision-making, and action. We further review representative medical applications and relevant datasets, and we analyze the major challenges encountered in real-world clinical practice. Finally, we discuss key directions for future research in this rapidly evolving field. The associated project can be found at https://github.com/VMVLab/Medical_Embodied_AI_Paper_List.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2604.03890v1">From Prompt to Physical Action: Structured Backdoor Attacks on LLM-Mediated Robotic Control Systems</a></div>
     <div class="paper-meta">
       📅 2026-04-04
