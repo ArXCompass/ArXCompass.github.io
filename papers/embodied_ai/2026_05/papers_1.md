@@ -359,6 +359,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2606.20592v1">Empowering Embodied AI in 6G Networks: Architecture, Enablers, and Open Challenges</a></div>
+    <div class="paper-meta">
+      📅 2026-05-17
+      | 💬 This work has been submitted to the IEEE Communication Magazine for possible publication
+    </div>
+    <details class="paper-abstract">
+      Embodied artificial intelligence (AI) is emerging as a key driver of the sixth-generation (6G) wireless networks by enabling agents that continuously perceive, communicate, and act in dynamic physical environments. Unlike conventional AI systems that process disembodied data, embodied agents such as robots, autonomous vehicles, and extended reality (XR) devices operate through closed-loop perception-communication-action (PCA) interactions, where communication performance directly affects physical behavior, control stability, and task success. However, existing AI-native wireless architectures remain largely connectivity-centric and are not designed to support task-driven embodied intelligence at large scale. Therefore, we present a holistic framework for embodied AI-native 6G systems, in which communication, sensing, computation, and control are jointly designed as a unified closed-loop infrastructure. We introduce a system-level PCA architecture, discuss key enabling technologies and representative applications, and highlight major open challenges in multimodal intelligence, edge-aware deployment, evaluation, trustworthiness, and practical implementation. Our central argument is that future 6G systems must evolve from intelligent communication platforms into active enablers of embodied physical intelligence.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2605.14504v2">When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution</a></div>
     <div class="paper-meta">
       📅 2026-05-16
