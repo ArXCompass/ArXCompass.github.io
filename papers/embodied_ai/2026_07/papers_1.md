@@ -9,6 +9,25 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.00289v1">RF-HOI: Recognize Human-Object Interaction with Radio Frequency Signals</a></div>
+    <div class="paper-meta">
+      📅 2026-07-31
+      | 💬 Accepted by ACM IMWUT
+    </div>
+    <details class="paper-abstract">
+      Recognizing Human-Object Interactions (HOI) is essential for intelligent systems, underpinning applications in virtual and augmented reality, embodied AI, and assistive robotics. However, vision-based HOI methods face challenges in privacy concerns and poor light conditions. In this work, we introduce RF-HOI, the first framework that only uses radio frequency (RF) signals for HOI recognition. A key challenge of RF-HOI is that single-modality RF sensing is insufficient to recognize both actions and the objects being interacted with. RF-HOI addresses this through a novel modality fusion that combines mmWave radar and RFID, enabling simultaneous action recognition and target identification. Another challenge is limited training data across diverse setups, which impairs the generalizability of the recognition model. To overcome this, we develop a simulator that synthesizes multimodal RF data for diverse HOIs at scale, allowing us to fine-tune with only a small amount of real-world data. Experiment results show that RF-HOI outperforms all baselines, approaching vision model performance, and that our diverse synthetic training data can significantly boost our system's performance on real-world scenarios. These results highlight the potential of multimodal RF sensing for robust and privacy-preserving HOI recognition as well as the effectiveness of our RF data synthesis.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2607.29596v1">FibVLA: An Efficient Temporal Vision-Language-Action Model with Fibonacci Sampling</a></div>
+    <div class="paper-meta">
+      📅 2026-07-31
+    </div>
+    <details class="paper-abstract">
+      Vision-language-action models (VLAs), which leverage the cognition of multimodal information to infer physical-world actions, provide a generalized solution for embodied AI applications. Conventional VLAs usually concentrate on current digital cognition. While some efforts are made to enhance VLAs' reasoning capabilities by capturing temporal information, encoding the long-context history causes an efficiency-decreasing issue. To reconcile the conflict between capturing temporal information and maintaining inference efficiency in VLAs, this paper introduces FibVLA, an efficient framework featuring temporal perception of long-context history. Specifically, we leverage logarithmic hindsight sampling to both proprioceptive states and visual frames to capture long-term temporal dependencies with minimal redundancy. For the action expert, we introduce the flow matching to produce action distributions, and the Fibonacci recurrent inference strategy to generate long-range planning steps based on real-time closed-loop feedback. Experiments demonstrate that FibVLA significantly improves action smoothness and success rates without retraining large-scale visual encoders. Efficiency analysis demonstrates superior real-time responsiveness compared to video-based baselines in real-world evaluations.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2607.28625v1">ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine</a></div>
     <div class="paper-meta">
       📅 2026-07-30
@@ -82,6 +101,15 @@
     </div>
     <details class="paper-abstract">
       Vision-language models (VLMs), spanning predictive architectures to generative Multimodal Large Language Models (MLLMs), have revolutionized artificial intelligence through powerful cross-modal alignment and zero-shot generalization. However, enabling them to learn continually from non-stationary data remains a major challenge, as their cross-modal alignment and generalization capabilities are particularly vulnerable to catastrophic forgetting. Unlike traditional unimodal continual learning (CL), VLMs face unique challenges such as cross-modal feature drift, parameter interference due to shared architectures, and zero-shot capability erosion. Furthermore, generative MLLMs exhibit a unique "alignment tax," where catastrophic forgetting manifests not merely as factual amnesia, but as a systemic collapse of deep Chain-of-Thought (CoT) reasoning. This survey presents the first comprehensive diagnostic review bridging continual learning across predictive VLMs and generative MLLMs. We systematically deconstruct the aforementioned failure modes and propose a challenge-driven taxonomy comprising four core paradigms: (1) Multi-Modal Replay Strategies addressing explicit and implicit memory drift; (2) Cross-Modal Regularization enforcing topological and geometric alignment; (3) Parameter-Efficient Adaptation utilizing dynamic routing and subspace projections; and the emerging (4) Model Fusion and Decoupling paradigms. We critically analyze the evolution of evaluation protocols, highlighting the essential shift toward dual-track benchmarks (Domain vs. Ability CL). Finally, we chart a roadmap for future research, emphasizing compositional zero-shot learning, embodied AI with sensor fusion, and autonomous agentic ecosystems. All resources are available at: https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2512.03438v3">Multimodal Reinforcement Learning with Adaptive Verifier for AI Agents</a></div>
+    <div class="paper-meta">
+      📅 2026-07-30
+    </div>
+    <details class="paper-abstract">
+      Agentic reasoning models trained with multimodal reinforcement learning (MMRL) have become increasingly capable, yet they are almost universally optimized using sparse, outcome-based rewards computed based on the final answers. Richer rewards computed from the reasoning tokens can improve learning significantly by providing more fine-grained guidance. However, it is challenging to compute more informative rewards in MMRL beyond those based on outcomes since different samples may require different scoring functions and teacher models may provide noisy reward signals too. In this paper, we introduce the Argos (Agentic Reward for Grounded & Objective Scoring), a principled reward agent to train multimodal reasoning models for agentic tasks. For each sample, Argos selects from a pool of teacher-model derived and rule-based scoring functions to simultaneously evaluate: (i) final response accuracy, (ii) spatiotemporal localization of referred entities and actions, and (iii) the quality of the reasoning process. We find that by leveraging our agentic verifier across both SFT data curation and RL training, our model achieves state-of-the-art results across multiple agentic tasks such as spatial reasoning, visual hallucination as well as robotics and embodied AI benchmarks. Critically, we demonstrate that just relying on SFT post-training on highly curated reasoning data is insufficient, as agents invariably collapse to ungrounded solutions during RL without our online verification. We also show that our agentic verifier can help to reduce reward-hacking in MMRL. Finally, we also provide a theoretical justification for the effectiveness of Argos through the concept of pareto-optimality.
     </details>
 </div>
 <div class="paper-card">
