@@ -9,6 +9,94 @@
 ## Papers
 
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.30821v1">Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling</a></div>
+    <div class="paper-meta">
+      📅 2026-08-31
+      | 💬 Project Page: https://lucida-r2s.github.io/
+    </div>
+    <details class="paper-abstract">
+      Composable scene modeling aims to recover a real indoor scene as complete, editable object assets arranged as observed, giving robot simulation and embodied AI a simulation-ready replica of the real environment whose objects can be manipulated individually. Existing pipelines decompose the task into three steps---parse the observations into instances, generate an asset for each, and place each asset back---but every step presumes an input that a cluttered capture rarely provides: accurate instance geometry, unoccluded views, and assets that accurately match the observations. We propose Lucida, which keeps this order but redistributes the requirements, so each step consumes only what a real capture reliably provides and precision is reached at the end of the pipeline rather than demanded at its start. Lucida parses the video into a scene graph whose nodes carry per-instance multi-view evidence, generates a complete asset for each instance from its evidence, and places assets with GizmoAct, a VLM policy that casts placement as multi-turn GUI interaction, manipulating the object's gizmo in a closed loop and deciding itself when alignment is reached. Across scene-level 3D object detection, object pose estimation, and scene reconstruction, Lucida improves mAP over Boxer by 69% on R2S-Scene, raises ADD-SB@0.05 from 57.8% to 83.4% on CA-1M, and increases scene F-Score from 0.794 for SAM3D to 0.924.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2602.07837v4">RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2026-08-31
+      | 💬 Accepted to RSS 2026
+    </div>
+    <details class="paper-abstract">
+      Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence. Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, suggesting that real-world policy learning is not merely an algorithmic problem, but inherently a systems problem. We present USER, a \underline{U}nified and extensible \underline{S}yst\underline{E}m for real-world online policy lea\underline{R}ning. On the systems side, USER introduces a hardware abstraction layer for unified robot management and an adaptive communication plane that enables efficient cloud-edge training. On the learning side, USER adopts a fully asynchronous training framework, designs a persistent and cache-aware replay buffer, and provides extensible abstractions for rewards, algorithms, and policies. Experiments in both simulation and the real world demonstrate that USER supports multi-robot coordination, heterogeneous manipulators, cloud-edge training with large models, and long-running asynchronous training. Together, these capabilities establish USER as a unified and extensible systems foundation for real-world online policy learning.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.18734v2">CL4D: Contrastive Language-4D Pretraining for Vision-Language Reasoning in Dynamic Scenes</a></div>
+    <div class="paper-meta">
+      📅 2026-08-30
+      | 💬 Accepted at the 19th European Conference on Computer Vision (ECCV 2026)
+    </div>
+    <details class="paper-abstract">
+      4D understanding and reasoning is a fundamental capability for embodied AI agents operating in dynamic physical environments. However, existing vision encoders are largely limited to static 2D images or 3D point clouds without temporal modeling, or to 2D videos that lack accurate geometric depth reasoning. Consequently, current approaches fail to jointly capture spatial structure and motion evolution in dynamic scenes. We present CL4D, the first foundational 4D vision encoder that directly operates on dynamic point clouds, trained with a contrastive learning objective to align spatio-temporal geometric representations with natural language descriptions. By learning a shared embedding space between text and 4D scene dynamics, CL4D enables zero-shot motion-to-text and text-to-motion retrieval in dynamic environments and serves as a foundational 4D vision encoder for downstream 4D vision-language tasks. Building on this encoder, we introduce 4DVLM, a 4D vision-language model that conditions language generation on dynamic geometric representations. 4DVLM is the first VLM designed to operate directly on 4D point clouds without relying on 2D images, 2D videos, or static 3D point clouds. We train CL4D and subsequently 4DVLM on a newly constructed dataset termed DynAction4D capturing diverse human motions across varying object interactions and scene environments. Extensive experiments across multiple 4D human action benchmarks demonstrate that CL4D achieves state-of-the-art performance, with improvements of approximately ~16.75% over prior methods. Furthermore, 4DVLM outperforms frontier video VLMs such as Gemini and GPT-5 even when these models are provided with RGB video sequences corresponding to the same scenes represented as 4D point clouds for 4DVLM.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2508.13073v3">Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey</a></div>
+    <div class="paper-meta">
+      📅 2026-08-29
+      | 💬 Under Minor Revision at IEEE TPAMI, Project Page: https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation
+    </div>
+    <details class="paper-abstract">
+      Robotic manipulation, a key frontier in robotics and embodied AI, requires precise motor control and multimodal understanding, yet traditional rule-based methods fail to scale or generalize in unstructured, novel environments. In recent years, Vision-Language-Action (VLA) models, built upon Large Vision-Language Models (VLMs) pretrained on vast image-text datasets, have emerged as a transformative paradigm. This survey provides the first systematic, taxonomy-oriented review of large VLM-based VLA models for robotic manipulation. We begin by clearly defining large VLM-based VLA models and delineating two principal architectural paradigms: (1) monolithic models, encompassing single-system and dual-system designs with differing levels of integration; and (2) hierarchical models, which explicitly decouple planning from execution via interpretable intermediate representations. Building on this foundation, we present an in-depth examination of large VLM-based VLA models: (1) integration with advanced domains, including reinforcement learning, training-free optimization, learning from human videos, and world model integration; (2) synthesis of distinctive characteristics, consolidating architectural traits, operational strengths, and the datasets and benchmarks that support their development; (3) identification of promising directions, including memory mechanisms, 4D perception, efficient adaptation, multi-agent cooperation, and other emerging capabilities. This survey consolidates recent advances to resolve inconsistencies in existing taxonomies, mitigate research fragmentation, and fill a critical gap through the systematic integration of studies at the intersection of large VLMs and robotic manipulation. We provide a regularly updated project page to document ongoing progress: https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.28518v1">When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI</a></div>
+    <div class="paper-meta">
+      📅 2026-08-28
+    </div>
+    <details class="paper-abstract">
+      We investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being accepted and executed by EAI models, thereby reducing safety. We simulate ASR errors and combine them with existing safety benchmarks (SafeAgentBench and POEX) to evaluate how different errors affect embodied AI safety. We find that some of them preserve semantic structure but increase harmful ambiguity, while others weaken the model refusal behaviour and allow unsafe plans to be generated and executed. We show that in some cases automatic correction of ASR errors can reduce the risk, but this is not always effective. Overall, we show that ASR errors lead to significant safety risks for embodied AI.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2507.12297v2">RegCL: Compact Continual SAM Adaptation for Visual Grounding in Multi-Sensorial Media</a></div>
+    <div class="paper-meta">
+      📅 2026-08-28
+    </div>
+    <details class="paper-abstract">
+      Multi-sensorial media systems, including AR/VR, remote operation, and embodied AI, require visual grounding modules that remain reliable as sensing environments and application domains evolve. The Segment Anything Model (SAM) provides a strong foundation for dense visual segmentation, but its performance degrades on specialized and dynamically arriving domains such as medical imagery, camouflaged scenes, and shadow-dominant environments. Existing continual learning methods often rely on replay data or growing domain-specific modules, limiting compact deployment in evolving media pipelines. To address this issue, we propose RegCL, a non-replay continual adaptation framework that consolidates multi-domain segmentation knowledge into a single SAM adapter through incremental model merging. RegCL merges lightweight adaptation modules, e.g., LoRA-style AugModules, by optimizing prediction consistency between the merged model and domain-specific adapters while carrying forward compact historical feature statistics. Experiments across five heterogeneous segmentation datasets show that RegCL achieves strong retention and adaptation under domain-incremental learning, outperforming competitive non-replay continual learning and merging baselines. These results suggest that RegCL can serve as a compact visual adaptation component for evolving multi-sensorial media pipelines. The code is available at \href{https://github.com/Anderw-S/RegCL}{https://github.com/Anderw-S/RegCL}
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.28718v1">RoboPhys-3D: A Comprehensive Embodied World Model Evaluation via 3D Reconstruction</a></div>
+    <div class="paper-meta">
+      📅 2026-08-28
+      | 💬 66 pages, 12 figures, 55 tables
+    </div>
+    <details class="paper-abstract">
+      Video world models increasingly serve as data engines, action planners, and simulators for embodied AI, but conventional embodied world model (EWM) benchmarks lack a unified 3D-grounded protocol for establishing whether generated rollouts preserve the underlying 3D scene state or translate into executable actions. We introduce RoboPhys-3D, a 3D-grounded EWM benchmark built on RoboTwin 2.0, covering 50 manipulation tasks across four regimes, with 5,000 episodes and 25,000 multi-view ground-truth videos. A defining feature of RoboPhys-3D is that generated and ground-truth videos are processed through the same 3D reconstruction pipeline, enabling reconstruction-induced error to be distinguished from generation-induced error. The RoboPhys-3D benchmark organizes 50 complementary metrics into 18 sub-dimensions across four levels: pixel-level fidelity, 3D geometry consistency, state-level understanding, and task-level completeness. We further introduce Average Full Score, a hierarchical score averaging all 50 metrics for comprehensive evaluation, and RoboPhyscore, a compact task-aligned score averaging the metrics most strongly correlated with task success. Among the four representative video world models, Cosmos 3 achieves the highest RoboPhyscore (0.6330, 92.7% of ground truth), while state- and execution-grounded metrics reveal substantial failures that perceptual and vision-language model-based judgments fail to capture. RoboPhyscore further exhibits strong agreement with human evaluation (Pearson r = 0.9761 and Spearman \r{ho} = 0.8962), demonstrating the importance of grounded, execution-aware evaluation for EWM capability.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2509.26536v3">OceanGym: A Benchmark Environment for Underwater Embodied Agents</a></div>
+    <div class="paper-meta">
+      📅 2026-08-28
+      | 💬 EMNLP 2026
+    </div>
+    <details class="paper-abstract">
+      We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under these harsh conditions. Extensive experiments reveal substantial gaps between state-of-the-art MLLM-driven agents and human experts, highlighting the persistent difficulty of perception, planning, and adaptability in ocean underwater environments. By providing a high-fidelity, rigorously designed platform, OceanGym establishes a testbed for developing robust embodied AI and transferring these capabilities to real-world autonomous ocean underwater vehicles, marking a decisive step toward intelligent agents capable of operating in one of Earth's last unexplored frontiers. The code and data are available at https://github.com/OceanGPT/OceanGym.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.27866v1">Iron: Intent-Aligned and Retrospective Dual Learning Framework for Enhancing Generalist Virtual Agents</a></div>
+    <div class="paper-meta">
+      📅 2026-08-28
+      | 💬 11 pages, 5 figures, and 4 tables
+    </div>
+    <details class="paper-abstract">
+      Achieving virtual agents capable of automating tasks across diverse digital environments remains a pivotal challenge in Embodied AI. While Multimodal Large Language Models (MLLMs) offer enhanced visual perception and reasoning, their agentic deployment faces three challenges: costly data annotation, imprecise action-intent alignment, and inefficient exploration from discarded failed trajectories. To address these, we introduce Iron, an intent-aligned, self-improved, and annotation-efficient framework for training GUI agents. Iron employs a novel dual learning strategy that utilizes a stepwise cycle-consistent (SCC) reward to achieve fine-grained alignment between low-level actions and high-level intents, thereby improving instruction grounding and intent understanding. Concurrently, Iron introduces a hindsight reproduction mechanism to repurpose failed trajectories for training, improving both learning efficiency and task diversity. Extensive experiments demonstrate that Iron-trained generalist agents consistently improve performance on cross-environment and cross-device tasks, outperforming models trained with three times more data. Iron also achieves a substantial 25.06% relative improvement on unseen web tasks, with further gains observed on inherently complex tasks, demonstrating the feasibility of building more capable virtual agents.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2608.27407v1">Reconstructing Humans and Objects in Interaction using Large Reconstruction Models</a></div>
     <div class="paper-meta">
       📅 2026-08-27
@@ -34,6 +122,16 @@
     </div>
     <details class="paper-abstract">
       Single-image 3D scene reconstruction must complete partially observed objects and place them coherently in a shared observation-aligned scene frame. Object-level generative priors offer strong completion ability, but their centered, scale-normalized outputs are typically expressed in an object frame, creating a fundamental representation gap between object generation and scene reconstruction. We introduce SceneReGen, a generative reconstruction framework that reinterprets scene reconstruction as the generation and assembly of complete object assets in a shared observation-aligned scene frame. SceneReGen addresses the generation-reconstruction gap through selective pose factorization: each object's observed orientation is encoded directly in the generated mesh, while translation and scale are estimated from instance-level and global scene evidence. Given a scene image and instance masks, a geometry encoder extracts dense cues; learnable shape queries condition a pretrained DiT-based 3D generator to produce complete meshes in their observed orientations, while position queries fuse object and scene features to assemble them in the shared frame. On the 3D-FUTURE evaluation subset, SceneReGen achieves the best scene-level CD, scene-level F-Score, and 3D bounding-box IoU among the evaluated methods, ties the best object-level CD, and ranks second in object-level F-Score. Qualitative outputs in autonomous-driving and embodied-AI scenes further illustrate the potential of asset-centric reconstruction beyond indoor furniture.
+    </details>
+</div>
+<div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2608.28664v1">The Potential of Haptic Foundation Models</a></div>
+    <div class="paper-meta">
+      📅 2026-08-23
+      | 💬 accepted by IEEE Consumer Electronics Magazine
+    </div>
+    <details class="paper-abstract">
+      Despite the success of foundation models in language and vision, their expansion into embodied AI is bottlenecked by a lack of generalized touch sensing. This limitation is especially relevant to consumer electronics, where smartphones, wearables, VR controllers, home robots, and health monitoring devices require safe and adaptive physical interaction. Constrained by hardware heterogeneity and the necessity of active physical data collection, current haptic models remain rigidly task-specific. To overcome these limitations, this article explores the transformative potential and developmental trajectory of Haptic Foundation Models (HFMs). We detail the paradigm shift required to transition from passive Large Language Models and Vision Language Models into active HFMs across four core dimensions: action coupling, physical dynamical representation space, continuous time-series data granularity, and action-conditioned future state prediction. Furthermore, we synthesize existing large-scale tactile datasets and benchmark UniTouch, AnyTouch, T3, and Sparsh on TacBench for force estimation, slip detection, and relative pose estimation.
     </details>
 </div>
 <div class="paper-card">
