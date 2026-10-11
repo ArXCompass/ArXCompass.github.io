@@ -482,6 +482,15 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2610.10554v1">GaussianBench: Physics-Fidelity Evaluation for Gaussian Scene Representations</a></div>
+    <div class="paper-meta">
+      📅 2026-09-27
+    </div>
+    <details class="paper-abstract">
+      3D Gaussian Splatting has evolved from static reconstruction toward physics-integrated representations meant to predict how scenes change under interaction. This creates an evaluation problem: a rollout can look plausible while relying on incorrect internal mechanics, and visual agreement with observed motion does not establish a correct response to a new force, material edit, contact, or thermal intervention. We introduce GaussianBench, a physics-fidelity evaluation suite for physics-integrated Gaussian scene representations. It uses frozen file-based scenes, simulator-independent scorers, and analytical or measured references. The benchmark tests conservation, continuum response, heterogeneous-material coupling, Gaussian covariance transport and rendering, thermal phase change, and counterfactual response. Each reference declares its regime of validity, and outcomes distinguish PASS, FAIL, NA, and INVALID, separating physical failures from unsupported capabilities and invalid comparisons. We also provide GaussianFlesh, a thermomechanical reference entrant in which persistent 3D Gaussians act as both rendering primitives and continuum material points, advanced by a shared-grid MPM solver with per-particle constitutive dispatch and persistent thermal and phase state. We evaluate six released external systems: PhysGaussian, GaussianFluent, OmniPhysGS, PhysDreamer, Physics3D, and GASP. Testing every system the same way reveals failures that their original evaluations missed: a system can simulate a single material correctly but fail where two materials meet, or update its Gaussians correctly for a deformation it never produced. Matched faults and tolerance audits confirm these distinctions arise from the intended tests. Physics-integrated Gaussian systems must therefore be tested on their internal physical state, not just on whether their rollouts look plausible.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2609.32711v1">ProDyGS: Dynamic Gaussian Splatting from a Single Static Monocular Camera</a></div>
     <div class="paper-meta">
       📅 2026-09-26
@@ -952,14 +961,5 @@
     </div>
     <details class="paper-abstract">
       Gaussian Splatting has enabled real-time novel view synthesis, but its tightly coupled geometry and appearance representation often require a large number of primitives to reproduce high-frequency texture details, leading to substantial memory and optimization costs. Recent textured 2D Gaussian methods alleviate this limitation by attaching texture maps to Gaussian primitives. However, bridging the fundamental structural gap between discrete Gaussians and continuous 2D grids requires complex parameterizations that introduce severe computational overhead. This overhead fundamentally compromises the original efficiency of Gaussian Splatting, making the balance between detailed texturing and computational agility an unresolved challenge. To address these challenges, we propose LiteTex-GS, a fast and lightweight texturing framework for Gaussian Splatting. Our method initializes an extremely compact representation, assigning minimal local texture to each Gaussian and progressively allocates higher resolution only to primitives with significant reconstruction errors. To maintain a streamlined geometric scaffold, we introduce a contribution- and area-aware pruning strategy that eliminates low-utility Gaussians. Furthermore, to mitigate the gradient dilution caused by texture upsampling, we design a resolution-aware update rule that preserves rapid and stable convergence. Extensive experiments on standard novel view synthesis benchmarks demonstrate that our method achieves competitive or superior rendering quality while using substantially fewer parameters and less training time than existing textured Gaussian baselines.
-    </details>
-</div>
-<div class="paper-card">
-    <div class="paper-title"><a href="https://arxiv.org/abs/2609.23182v1">GrapeSplat: Geometry-Grounded Reconstruction via Amalgamated Pose-Free Encoding for Feed-Forward 3D Gaussian Splatting</a></div>
-    <div class="paper-meta">
-      📅 2026-09-19
-    </div>
-    <details class="paper-abstract">
-      Feed-forward 3D Gaussian Splatting now reconstructs renderable scenes from unposed, uncalibrated images. Yet, most models supervise only photometric consistency and predict Gaussians pixel by pixel, which leaves global structure fragile and ties primitive count to image resolution and view count. To this end, GrapeSplat amalgamates multi-view cues into a voxel-aligned scene representation and decodes Gaussians directly from the learned grid, requiring no per-scene optimization or post-processing. An Atlas Encoder lifts all views into pixel-wise geometry-and-appearance features anchored at predicted 3D points. PEACH-Vox compands the unbounded scene into a bounded sparse grid through a smooth per-axis map with an exact closed-form inverse. The Sparse Decoder then consolidates the grid with sparse convolutions and decodes the full scene as multiple Gaussians per occupied cell. This amalgamated representation exploits sparse voxel occupancy, where the Gaussian count follows the occupied cells and saturates as views cover the scene, while grid resolution sets its ceiling. GrapeSplat turns unposed images into a renderable Gaussian scene in a single forward pass. Trained with 2D and 3D supervision on 8-view sequences, it generalizes zero-shot from 4 to 64 views across indoor and unbounded scenes. Code and trained weights are available at https://github.com/VAISR/GrapeSplat
     </details>
 </div>
