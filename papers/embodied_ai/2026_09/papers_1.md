@@ -107,6 +107,16 @@
     </details>
 </div>
 <div class="paper-card">
+    <div class="paper-title"><a href="https://arxiv.org/abs/2610.14018v1">RoboHarness: A Simple Harness Outperforms VLA and World Actions Models</a></div>
+    <div class="paper-meta">
+      📅 2026-09-29
+      | 💬 18 pages, including references and appendices
+    </div>
+    <details class="paper-abstract">
+      The rise of large language models (LLMs) has opened a path toward generalist embodied AI, raising the question of how LLMs can act in the physical world. One straightforward approach is training the model to generate actions: collect robot-action data and video demonstration, refine LLM architecture with an action head, and train a vision-language-action (VLA) model at scale. However, we argue that coding agents have the potential to realize generalist embodied manipulation. All they need is a simple yet effective robot harness. We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks. With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks. The implementation will be released as open source.
+    </details>
+</div>
+<div class="paper-card">
     <div class="paper-title"><a href="https://arxiv.org/abs/2606.20592v2">Embodied AI in 6G Networks: From Intelligent Connectivity to Physical Intelligence</a></div>
     <div class="paper-meta">
       📅 2026-09-28
